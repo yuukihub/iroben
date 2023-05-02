@@ -58,7 +58,7 @@ export default {
     }
   },
   created() {
-    let period = 1000 * 60 * 5; // 保存期間:5分(1000ミリ秒 * 60秒 * 1分)
+    let period = 2592000000; // 30日間　保存期間:(1000ミリ秒 * 60秒 * 1分)
     // localStorageで使用するkey名
     let storage_key = 'tutorialCookie'; // 広告バナー管理で使用する値
     let storage_period_key = false; // 保存期間で使用する値
@@ -77,7 +77,7 @@ export default {
       }
     }
 
-    // 広告バナー管理の値が保存されていない場合はバナー表示
+    // チュートリアル管理の値が保存されていない場合はチュートリアルを表示
     if (localStorage.getItem(storage_key) === null) {
       this.tutorialCookie = true;
     }

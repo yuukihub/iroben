@@ -3,6 +3,7 @@
   border-radius: 5px;
   border: 1px solid map_get($color, gray03);
   max-height: 21vh;
+  height: 100%;
   overflow-y: scroll;
   background: map_get($color, white);
   margin-bottom: 16px;

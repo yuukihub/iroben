@@ -39,6 +39,9 @@
       <li>
         <img src="../../img/img/home/img_decoration_front02.png" alt="decoration">
       </li>
+      <li>
+        <img src="../../img/img/home/img_decoration_front01.png" alt="decoration">
+      </li>
     </ul>
     <ul class="back_block">
       <li>
@@ -52,6 +55,9 @@
       </li>
       <li>
         <img src="../../img/img/home/img_star02.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/home/img_decoration_back.png" alt="decoration">
       </li>
       <li>
         <img src="../../img/img/home/img_decoration_back.png" alt="decoration">
@@ -264,17 +270,6 @@ export default {
 
   li:nth-child(6) {
     animation: animate_decoration_front02 linear infinite;
-    animation-duration: 40s;
-    animation-delay: -19s;
-
-    img {
-      width: 13vw;
-      max-width: 700px;
-    }
-  }
-
-  li:nth-child(6) {
-    animation: animate_decoration_front02 linear infinite;
     animation-duration: 70s;
     animation-delay: -24s;
 
@@ -285,9 +280,20 @@ export default {
   }
 
   li:nth-child(7) {
+    animation: animate_decoration_front02 linear infinite;
+    animation-duration: 70s;
+    animation-delay: 4s;
+
+    img {
+      width: 80vw;
+      max-width: 700px;
+    }
+  }
+
+  li:nth-child(8) {
     animation: animate_decoration_front05 linear infinite;
     animation-duration: 70s;
-    animation-delay: 5s;
+    animation-delay: 13s;
 
     img {
       width: 80vw;
@@ -339,8 +345,18 @@ export default {
 
   li:nth-child(6) {
     animation: animate_decoration_back03 30s linear infinite;
-    animation-duration: 200s;
-    animation-delay: 8s;
+    animation-duration: 100s;
+    animation-delay: 5s;
+
+    img {
+      width: 80vw;
+    }
+  }
+
+  li:nth-child(7) {
+    animation: animate_decoration_back03 30s linear infinite;
+    animation-duration: 100s;
+    animation-delay: 40s;
 
     img {
       width: 80vw;
@@ -350,34 +366,30 @@ export default {
 
 .--home {
   .front_block li {
-    bottom: 51vh;
+    bottom: 46vh;
   }
 
   .back_block li {
-    bottom: 48vh;
-  }
-
-  .logo {
-    top: -50px;
+    bottom: 42vh;
   }
 
   .colorCode {
 
     img {
       &:first-child {
-        top: 10vh;
+        top: 15vh;
       }
 
       &:nth-child(2) {
-        top: 14vh;
+        top: 19vh;
       }
 
       &:nth-child(3) {
-        top: 31vh;
+        top: 36vh;
       }
 
       &:nth-child(4) {
-        top: 33vh;
+        top: 35vh;
       }
     }
   }

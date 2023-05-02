@@ -125,6 +125,7 @@ export default {
     .c-colorLists {
       overflow-y: scroll;
       max-height: 23vh;
+      height: 100%;
 
       &::-webkit-scrollbar {
         background: map_get($color, white);

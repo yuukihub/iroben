@@ -3,9 +3,12 @@
     <div class="sliders_inner">
       <ul class="sliders_lists">
         <li class="item fade">
-          <span class="slide_title">
-            1. <span>読んで、学ぶ</span>
-          </span>
+          <div class="slide_title_block">
+            <span class="slide_title">
+              1. <span>読んで、学ぶ</span>
+            </span>
+            <img class="img_character" src="../../img/img/common/img_character03_normal.svg" alt="img_character03">
+          </div>
           <span class="slide_image">
             <img class="eye_image" src="../../img/img/tutorial/img_tutorial01.gif" alt="img_tutorial01">
           </span>
@@ -15,9 +18,12 @@
           </span>
         </li>
         <li class="item fade">
-          <span class="slide_title">
-            2. <span>解いて、学ぶ</span>
-          </span>
+          <div class="slide_title_block">
+            <span class="slide_title">
+              2. <span>解いて、学ぶ</span>
+            </span>
+            <img class="img_character" src="../../img/img/common/img_character01_normal.svg" alt="img_character01">
+          </div>
           <span class="slide_image">
               <img class="eye_image" src="../../img/img/tutorial/img_tutorial02.gif" alt="img_tutorial01">
             </span>
@@ -27,9 +33,12 @@
           </span>
         </li>
         <li class="item fade">
-          <span class="slide_title">
-            3. <span>描いて、学ぶ</span>
-          </span>
+          <div class="slide_title_block">
+           <span class="slide_title">
+              3. <span>描いて、学ぶ</span>
+            </span>
+            <img class="img_character" src="../../img/img/common/img_character02_normal.svg" alt="img_character02">
+          </div>
           <span class="slide_image">
             <img class="eye_image" src="../../img/img/tutorial/img_tutorial03.gif" alt="img_tutorial01">
           </span>
@@ -146,8 +155,22 @@ export default {
   max-width: 500px;
   width: 100%;
   padding: 0 16px 0 16px;
+
   .item {
     display: none;
+  }
+
+  li{
+    .img_character {
+      position: absolute;
+      top: -28px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 40px;
+      display: block;
+      z-index: -1;
+    }
   }
 
   .slide_image {
@@ -163,6 +186,12 @@ export default {
     }
   }
 
+  .slide_title_block {
+    position: relative;
+    margin-bottom: 40px;
+    animation: fadeInUpDown 1.5s linear infinite;
+  }
+
   .slide_title {
     position: relative;
     display: block;
@@ -173,9 +202,8 @@ export default {
     background: map_get($color, white);
     width: max-content;
     padding: 16px;
-    margin: 0 auto 40px;
+    margin: 0 auto;
     border-radius: 5px;
-    animation: fadeInUpDown 1.5s linear infinite;
 
     &:before {
       content: "";
@@ -184,7 +212,7 @@ export default {
       left: 50%;
       margin-left: -15px;
       border: 15px solid transparent;
-      border-top: 15px solid map_get($color, white);
+      border-top: 12px solid map_get($color, white);
     }
 
     span {

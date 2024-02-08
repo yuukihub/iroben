@@ -4,7 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="" />
+    <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/iroben/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/.monaca/project_info.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/.monacaignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/hdpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/ldpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/mdpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/xhdpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/xxhdpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/xxxhdpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/screen/window_splashscreen_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/electron/icon/icon_electron_512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/electron/screen/electron_splash_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-50@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-72@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-83.5@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-small@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-small@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-568h@2x~iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-667h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-736h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Landscape-736h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Landscape@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Landscape~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Portrait@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Portrait~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default@2x~iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default@2x~universal~anyany.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default~iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/components/loader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/components/loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/components/monaca-cordova-loader/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/components/monaca-cordova-loader/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/components/monaca-cordova-loader/cordova-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/components/monaca-core-utils/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/components/monaca-core-utils/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/components/monaca-core-utils/monaca-core-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/index.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,19 +79,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,6 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707363717983</updated>
       <workItem from="1707363719278" duration="216000" />
+      <workItem from="1707364077862" duration="235000" />
     </task>
     <servers />
   </component>

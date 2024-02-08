@@ -5,63 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/iroben/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/.monaca/project_info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/.monacaignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/hdpi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/ldpi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/mdpi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/xhdpi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/xxhdpi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/xxxhdpi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/android/screen/window_splashscreen_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/electron/icon/icon_electron_512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/electron/screen/electron_splash_image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-1024.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-20@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-40@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-50@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-60@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-60@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-72@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-76@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-83.5@2x~ipad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-small.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-small@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-small@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-568h@2x~iphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-667h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-736h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Landscape-736h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Landscape@2x~ipad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Landscape~ipad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Portrait@2x~ipad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Portrait~ipad.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default@2x~iphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default@2x~universal~anyany.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default~iphone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/components/loader.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/components/loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/components/monaca-cordova-loader/.bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/components/monaca-cordova-loader/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/components/monaca-cordova-loader/cordova-loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/components/monaca-core-utils/.bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/components/monaca-core-utils/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/components/monaca-core-utils/monaca-core-utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/index.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +18,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2c4H1oe2jQx48Q7SLepi2uI9Fg2" />
   <component name="ProjectViewState">
@@ -101,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707363717983</updated>
       <workItem from="1707363719278" duration="216000" />
-      <workItem from="1707364077862" duration="235000" />
+      <workItem from="1707364077862" duration="537000" />
     </task>
     <servers />
   </component>

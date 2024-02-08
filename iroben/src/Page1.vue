@@ -3,7 +3,7 @@
     <custom-toolbar>Page 1</custom-toolbar>
     <p style="text-align: center">
       This is the first page
-      <v-ons-button @click="push">Push Page 2ねこねこ牛牛</v-ons-button>
+      <v-ons-button @click="pushNeko">ねこボタン</v-ons-button>
     </p>
   </v-ons-page>
 </template>
@@ -16,9 +16,9 @@
        pop(){
          this.pageStack.pop();
        },
-       push() {
+       pushNeko() {
          this.pageStack.push(page2);
-       }
+       },
      },
      props: ['pageStack'],
      components: { customToolbar },

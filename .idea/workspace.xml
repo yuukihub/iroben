@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/iroben/src/img/header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/components/TheHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/pages/home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/pages/top.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/resource/constant-router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/CustomToolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/CustomToolbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/Page1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/Page1.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +24,7 @@
       <list>
         <option value="HTML File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -78,7 +73,7 @@
       <updated>1707363717983</updated>
       <workItem from="1707363719278" duration="216000" />
       <workItem from="1707364077862" duration="1505000" />
-      <workItem from="1707366093058" duration="7331000" />
+      <workItem from="1707366093058" duration="8272000" />
     </task>
     <servers />
   </component>

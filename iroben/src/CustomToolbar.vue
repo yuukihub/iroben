@@ -4,9 +4,11 @@
       <div class="inner">
         <div class="contents">
           <div class="top"></div>
-          <v-ons-back-button :on-click="pop">
+          <v-ons-back-button :on-click="pop"></v-ons-back-button>
+          <v-ons-button @click="pop">戻る</v-ons-button>
+          <div>
             {{ backLabel }}
-          </v-ons-back-button>
+          </div>
           <slot></slot>
         </div>
         <img src="./img/header.png" alt="wave">

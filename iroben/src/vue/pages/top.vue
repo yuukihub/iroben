@@ -34,7 +34,7 @@
 
 <script>
 import customToolbar from '../../CustomToolbar.vue';
-import page2 from '../../Page2.vue';
+import home from '../../vue/pages/home.vue';
 export default {
   name: "top",
   methods: {
@@ -42,7 +42,7 @@ export default {
       this.pageStack.pop();
     },
     push() {
-      this.pageStack.push(page2);
+      this.pageStack.push(home);
     },
   },
   props: ['pageStack'],

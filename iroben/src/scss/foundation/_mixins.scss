@@ -6,8 +6,12 @@
     @media  (min-width: 768px){
       @content;
     }
-  } @else if $level == xsmall {
+  } @else if $level == sp {
     @media  (max-width: 374px){
+      @content;
+    }
+  } @else if $level == xsmall {
+    @media  (max-width: 361px){
       @content;
     }
   } @else {
@@ -16,6 +20,7 @@
     }
   }
 }
+
 
 // resetForm
 @mixin placeholder($color) {
@@ -54,3 +59,7 @@
   }
 }
 
+@mixin KintoSans() {
+  font-family: 'KintoSans', sans-serif;
+  font-weight: bold;
+}

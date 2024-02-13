@@ -151,11 +151,13 @@ body * {
 
 body {
   letter-spacing: 1px;
-  font-family: 'Sawarabi Gothic', sans-serif; }
+  font-family: 'KintoSans', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%; }
 
 a {
-  color: #0D99FF;
-  text-decoration: none; }
+  color: #0D99FF; }
 
 input::placeholder, textarea::placeholder {
   color: white; }
@@ -172,6 +174,62 @@ input:focus::placeholder {
 
 .framework7-root {
   position: relative; }
+
+.page__content {
+  padding: 0 !important; }
+
+.page--material__background,
+.page__background {
+  background-color: #FBF6F0 !important; }
+
+.c-button {
+  border-radius: 4px;
+  box-shadow: inherit;
+  display: block;
+  padding: 16px 0;
+  line-height: inherit;
+  width: 100%;
+  text-align: center; }
+
+input[type='checkbox'] {
+  appearance: none;
+  outline: none;
+  display: block;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px; }
+
+input[type='checkbox']::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: solid 1px #DAE0E6;
+  border-radius: 3px; }
+
+input[type='checkbox']:checked::before {
+  background: #0D99FF; }
+
+input[type='checkbox']::after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 4px;
+  width: 5px;
+  height: 12px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  opacity: 0; }
+
+input[type='checkbox']:checked::after {
+  opacity: 1; }
 
 @keyframes fadeInSlide {
   from {
@@ -236,13 +294,13 @@ input:focus::placeholder {
 
 .is-pc {
   display: block; }
-  @media (max-width: 767px) {
+  @media (max-width: 374px) {
     .is-pc {
       display: none; } }
 
 .is-sp {
   display: none; }
-  @media (max-width: 767px) {
+  @media (max-width: 374px) {
     .is-sp {
       display: block; } }
 
@@ -253,12 +311,7 @@ body,
   min-height: 100vh; }
 
 .inner {
-  max-width: 750px;
-  width: 100%;
-  margin: auto; }
-  @media (max-width: 767px) {
-    .inner {
-      padding: 40px 2%; } }
+  padding: 0 16px; }
 
 .clearfix::after {
   content: "";
@@ -268,19 +321,13 @@ body,
 .flex {
   display: flex; }
 
-.bg {
-  padding: 100px 0; }
-  @media (max-width: 767px) {
-    .bg {
-      padding: 50px 0; } }
-
 .section {
   padding: 100px 0; }
-  @media (max-width: 767px) {
+  @media (max-width: 374px) {
     .section {
       padding: 50px 0; } }
   .section--under .c-heading02 {
     padding: 100px 0; }
-    @media (max-width: 767px) {
+    @media (max-width: 374px) {
       .section--under .c-heading02 {
         padding: 20px 0; } }

@@ -1,6 +1,8 @@
 @import './foundation/include';
 @import './foundation/reset';
 @import './foundation/base';
+@import 'components/button';
+@import 'components/checkbox';
 @import 'utility/animation';
 @import 'utility/margin';
 @import 'utility/text';
@@ -29,12 +31,7 @@ body,
 }
 
 .inner {
-  max-width: 750px;
-  width: 100%;
-  margin: auto;
-  @include mq(sp) {
-    padding: 40px 2%;
-  }
+  padding: 0 16px;
 }
 .clearfix::after{
   content: "";
@@ -43,17 +40,6 @@ body,
 }
 .flex {
   display: flex;
-}
-.bg {
-  background: map_get($color, background);
-  padding: 100px 0;
-  @include mq(sp) {
-    padding: 50px 0;
-  }
-  &02 {
-    //background: url(../../../public/img/common/minivan_shindan_bg.gif);
-    //background-attachment: fixed;
-  }
 }
 .section {
   padding: 100px 0;

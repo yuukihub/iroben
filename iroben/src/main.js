@@ -8,6 +8,8 @@ import App from './App.vue';
 import 'onsenui/css/onsenui.css';
 import 'onsenui/css/onsen-css-components.css';
 
+import '../src/scss/foundation/font.scss';
+
 if (VueOnsen.platform.isIPhoneX()) {
   document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
   document.documentElement.setAttribute('onsflag-iphonex-landscape', '');

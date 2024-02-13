@@ -1,17 +1,18 @@
 <template>
   <!--<v-ons-toolbar>-->
     <header class="l-header">
-      <div class="inner">
-        <div class="contents">
-          <div class="top"></div>
-          <v-ons-back-button :on-click="pop"></v-ons-back-button>
-          <v-ons-button @click="pop">戻る</v-ons-button>
-          <div>
-            {{ backLabel }}
-          </div>
-          <slot></slot>
+      <div class="contents">
+        <div class="top">
+          <div class="bar"></div>
+          <img src="./img/mave-top.svg" alt="wave">
         </div>
-        <img src="./img/header.png" alt="wave">
+
+        <v-ons-back-button :on-click="pop"></v-ons-back-button>
+
+        <div>
+          {{ backLabel }}
+        </div>
+        <slot></slot>
       </div>
     </header>
 </template>
@@ -24,9 +25,6 @@
 
 <style lang="scss" scoped>
 .l-header{
-  .inner {
-    position: relative;
-  }
   .back-button{
     height: inherit;
     line-height: inherit;
@@ -40,14 +38,17 @@
     text-align: center;
   }
   .top {
-    background: white;
-    height: 55px;
-  }
-  img {
-    width: 100%;
-    position: absolute;
-    top: 55px;
-    z-index: -1;
+    position: relative;
+    .bar {
+      background: white;
+      height: 55px;
+    }
+    img {
+      width: 100%;
+      position: absolute;
+      top: 55px;
+      z-index: -1;
+    }
   }
 }
 </style>

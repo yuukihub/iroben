@@ -5,11 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/iroben/src/resource/constant-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/font/KintoSans-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/font/KintoSans-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/font/KintoSans-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/scss/components/button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/scss/components/checkbox.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/scss/foundation/font.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/CustomToolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/CustomToolbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/Page1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/Page1.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/scss/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/foundation/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/scss/foundation/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/foundation/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/scss/foundation/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/foundation/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/scss/foundation/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/top.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/top.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +63,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/matsumoto.yuki/Desktop/portfolio/iroben/iroben/src/img",
+    "last_opened_file_path": "/Users/matsumoto.yuki/Desktop/portfolio/iroben/iroben/src/font",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,6 +74,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/iroben/src/font" />
       <recent name="$PROJECT_DIR$/iroben/src/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -74,6 +93,7 @@
       <workItem from="1707363719278" duration="216000" />
       <workItem from="1707364077862" duration="1505000" />
       <workItem from="1707366093058" duration="8272000" />
+      <workItem from="1707779699159" duration="14087000" />
     </task>
     <servers />
   </component>

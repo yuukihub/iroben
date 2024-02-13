@@ -3,10 +3,6 @@ html, body {
   margin: 0;
 }
 
-html {
-  background: map_get($color,bg);
-}
-
 body * {
   box-sizing: border-box;
   transition: 0.1s;
@@ -15,13 +11,14 @@ body * {
 
 body {
   letter-spacing: 1px;
-  font-family: 'Sawarabi Gothic', sans-serif;
+  @include KintoSans;
   color: map_get($color,text01);
+  font-size: 14px;
+  line-height: 140%;
 }
 
 a {
   color: map_get($color, link);
-  text-decoration: none;
 }
 
 
@@ -36,6 +33,15 @@ input:focus::placeholder {
 
 .framework7-root {
   position: relative;
+}
+
+.page__content {
+  padding: 0 !important;
+}
+
+.page--material__background,
+.page__background{
+  background-color: map_get($color, backGroundColor) !important;
 }
 
 

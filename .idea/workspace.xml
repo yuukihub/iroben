@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/components/confetti.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/colorExam.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/CustomToolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/CustomToolbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/img/mave-bottom.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/wave-bottom.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/img/mave-top.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/wave-top.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/resource/secondExam.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/resource/secondExam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/resource/thirdExam.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/resource/thirdExam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/exam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/thirdExam.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/top.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/top.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/eye.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/icon_eye.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/colorExam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/colorExam.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
@@ -87,7 +78,7 @@
       <workItem from="1707364077862" duration="1505000" />
       <workItem from="1707366093058" duration="8272000" />
       <workItem from="1707779699159" duration="14995000" />
-      <workItem from="1708038517473" duration="24108000" />
+      <workItem from="1708038517473" duration="24788000" />
     </task>
     <servers />
   </component>

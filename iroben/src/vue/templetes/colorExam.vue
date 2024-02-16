@@ -2,7 +2,7 @@
   <div>
     <div v-if="status">
       <div class="c-examCard">
-        <img class="eyeImage" src="../../img/eye.svg" alt="目">
+        <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
         <div class="color" v-bind:style="{background: currentQuestion.colorCode}"></div>
         <div class="counter">
           {{number+1}} / {{questions.length}}
@@ -39,11 +39,11 @@
     <div class="result-wrap">
       <div v-if="correctFlag">
         <confetti></confetti>
-        正解です。
+        <img class="result_image" src="../../img/img_success.svg" alt="正解">
         <button @click="next()">{{btnTitle}}</button>
       </div>
-      <div v-if="faultFlag">
-        不正解です。。。。
+      <div class="result_image" v-if="faultFlag">
+        <img class="result_image" src="../../img/img_error.svg" alt="不正解">
         <button @click="next()">{{btnTitle}}</button>
       </div>
       <div class="l-overlay"></div>
@@ -183,6 +183,25 @@ export default {
       border: 1px solid map_get($color, gray03);
       border-radius: 100%;
     }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .result_image {
+    animation: fadeIn 0.8s ease 0.1s 0.8 normal backwards;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   .bottom {

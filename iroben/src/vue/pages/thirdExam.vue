@@ -1,17 +1,31 @@
 <template>
   <v-ons-page>
-test
+    <custom-toolbar></custom-toolbar>
+    <color-exam :questions="thirdExam"
+    >
+
+    </color-exam>
   </v-ons-page>
 </template>
 
 <script>
 import customToolbar from '../../CustomToolbar.vue';
 import top from'../pages/top.vue';
+import ColorExam from "@/vue/templetes/colorExam.vue";
+import {thirdExam} from "../../resource/thirdExam"
 
 export default {
-  name: "exam",
+  name: "thirdExam",
   components: {
+    ColorExam,
     customToolbar,
+  },
+  data() {
+    return {
+      thirdExam: thirdExam,
+      thirdTitle: "3級の問題",
+      thirdDispatchName:"addThirdFaultItems",
+    }
   },
   methods: {
     pop(){

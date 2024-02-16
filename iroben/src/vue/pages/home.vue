@@ -87,7 +87,7 @@
       <img class="character01" src="../../img/character01_art.svg" alt="character01">
     </div>
     <div class="bottom">
-      <img src="../../img/mave-bottom.svg" alt="wave">
+      <img src="../../img/wave-bottom.svg" alt="wave">
     </div>
 
   </v-ons-page>
@@ -95,7 +95,7 @@
 
 <script>
 import customToolbar from '../../CustomToolbar.vue';
-import exam from'../pages/exam.vue';
+import exam from './thirdExam.vue';
 
 
 export default {

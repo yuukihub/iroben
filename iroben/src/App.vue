@@ -6,11 +6,13 @@
 
 <script>
   import top from './vue/pages/top.vue';
+  import exam from './vue/pages/thirdExam.vue';
 
   export default {
     data() {
       return {
-        pageStack: [top]
+        //pageStack: [top]
+        pageStack: [exam]
       }
     }
   }

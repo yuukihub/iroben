@@ -1,0 +1,203 @@
+<template>
+  <div>
+    <div v-if="status">
+      <div class="c-examCard">
+        <img class="eyeImage" src="../../img/eye.svg" alt="目">
+        <div class="color" v-bind:style="{background: currentQuestion.colorCode}"></div>
+        <div class="counter">
+          {{number+1}} / {{questions.length}}
+        </div>
+      </div>
+      <div class="button_area">
+        <button
+            class="c-answerButton"
+            href="#"
+            v-for="(answer,index) in setChoice"
+            @click="selectAnswer(index)"
+        >
+          <div class="answer">{{answer}}</div>
+          <div v-if="!answerFlag">
+            <img src="../../img/icon_circle.svg" alt="アイコン">
+          </div>
+          <div v-else="answerFlag">
+            <div v-if="currentQuestion.answer == index+1">
+              <img src="../../img/icon_success.svg" alt="アイコン">
+            </div>
+            <div v-else>
+              <img src="../../img/icon_error.svg" alt="アイコン">
+            </div>
+          </div>
+        </button>
+
+
+      </div>
+    </div>
+    <div v-else>終了です。
+      {{questions.length}}問中{{correctCount}}問正解です。
+    </div>
+
+    <div class="result-wrap">
+      <div v-if="correctFlag">
+        <confetti></confetti>
+        正解です。
+        <button @click="next()">{{btnTitle}}</button>
+      </div>
+      <div v-if="faultFlag">
+        不正解です。。。。
+        <button @click="next()">{{btnTitle}}</button>
+      </div>
+      <div class="l-overlay"></div>
+    </div>
+
+    <div class="bottom">
+      <img src="../../img/wave-bottom.svg" alt="wave">
+    </div>
+  </div>
+</template>
+
+<script>
+import Confetti from "@/vue/components/confetti.vue";
+export default {
+  name: "colorExam",
+  components: {Confetti},
+  data(){
+    return {
+      number: 0,
+      correctCount: 0,
+      questionLength: this.questions.length,
+      status: true,
+      correctFlag: false,
+      faultFlag: false,
+      btnTitle: "次に進む",
+      answerFlag: false,
+    }
+  },
+  props: {
+    questions: {
+      type: Array,
+      default: '[]',
+      required: true
+    }
+  },
+  computed: {
+    currentQuestion() {
+      //最後の問題の場合
+      if (this.questionLength === 1) {
+        //ボタンの文言を変更
+        this.btnTitle = "結果を見る";
+      }
+      //問題を出題
+      return this.questions[this.number];
+    },
+    setChoice(){
+      let choicesArray = this.currentQuestion.choices;
+      for (let i = choicesArray.length - 1; i > 0; i--) {
+        let r = Math.floor(Math.random() * (i + 1))
+        let tmp = choicesArray[i]
+        choicesArray[i] = choicesArray[r]
+        choicesArray[r] = tmp
+      }
+      return choicesArray[0];
+    }
+  },
+  methods: {
+    selectAnswer(index) {
+      this.answerFlag = true;
+      if (index + 1 === this.currentQuestion.answer) {
+        this.correctCount++;
+        this.correctFlag = true;
+      } else {
+        this.currentQuestion.faultCount++;
+        this.faultFlag = true;
+      }
+
+    },
+    next() {
+      this.number++;
+      this.questionLength--;
+      this.correctFlag = false;
+      this.faultFlag = false;
+      this.answerFlag = false;
+      if(this.questionLength === 0){
+        this.status = false;
+      }
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+@import "./src/scss/foundation/variables";
+  .c-examCard {
+    position: relative;
+    background: map_get($color, white);
+    border: 1px solid map_get($color, gray03);
+    border-radius: 10px;
+    max-width: 278px;
+    width: 100%;
+    margin: auto;
+    .eyeImage {
+      position: absolute;
+      top: 13px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    .color {
+      background: #87CEEB;
+      border-radius: 10px 10px 0 0;
+      display: block;
+      margin: 3%;
+      height: 365px;
+    }
+    .counter {
+      margin: 16px 0;
+      text-align: center;
+    }
+  }
+
+  .c-answerButton {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    background: map_get($color, white);
+    border: 1px solid map_get($color, gray03);
+    border-radius: 4px;
+    max-width: 342px;
+    width: 100%;
+    padding: 10px 24px;
+    color: map_get($color, black);
+    margin: 24px auto;
+    &:focus {
+      border: 2px solid map_get($color, link);
+    }
+    .answer {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+    .circle {
+      display: block;
+      width: 24px;
+      height: 24px;
+      border: 1px solid map_get($color, gray03);
+      border-radius: 100%;
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 72vh;
+    background: white;
+    img {
+      position: absolute;
+      top: -70px;
+      left: 0;
+      right: 0;
+    }
+  }
+</style>

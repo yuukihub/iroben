@@ -12,7 +12,7 @@
       <img class="character03" src="../../img/character03.svg" alt="character03">
     </div>
     <div class="bottom">
-      <img src="../../img/mave-bottom.svg" alt="wave">
+      <img src="../../img/wave-bottom.svg" alt="wave">
       <div class="bottom_inner">
         <div class="bar">
           <p class="desc">アプリをご利用いただくには、<br>

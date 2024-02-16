@@ -1,19 +1,19 @@
 <template>
   <v-ons-page>
-    <custom-toolbar>Page 1</custom-toolbar>
+    <custom-toolbar></custom-toolbar>
     <h1>
       <img class="logo" src="../../img/logo.svg" alt="iroben">
     </h1>
 
     <img class="slider" src="../../img/iphone.png" alt="iphone">
-    <div class="characters-wrap">
+    <div class="characters_wrap">
       <img class="character01" src="../../img/character01.svg" alt="character01">
       <img class="character02" src="../../img/character02.svg" alt="character02">
       <img class="character03" src="../../img/character03.svg" alt="character03">
     </div>
     <div class="bottom">
       <img src="../../img/mave-bottom.svg" alt="wave">
-      <div class="bottom-inner">
+      <div class="bottom_inner">
         <div class="bar">
           <p class="desc">アプリをご利用いただくには、<br>
             利用規約をご確認の上ご利用ください</p>
@@ -35,6 +35,7 @@
 <script>
 import customToolbar from '../../CustomToolbar.vue';
 import home from '../../vue/pages/home.vue';
+
 export default {
   name: "top",
   methods: {
@@ -79,7 +80,7 @@ h1 {
   margin: auto;
   width: 80%;
 }
-.characters-wrap {
+.characters_wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,7 +105,7 @@ h1 {
   right: 0;
   bottom: 0;
   margin: auto;
-  &-inner {
+  &_inner {
     position: relative;
   }
   .bar {

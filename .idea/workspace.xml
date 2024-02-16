@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/iroben/src/img/character01_art.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iroben/src/img/character02_art.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iroben/src/img/character03_art.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/resource/firstExam.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/resource/secondExam.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/resource/thirdExam.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/vue/pages/exam.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/Page1.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/Page2.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/top.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/top.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
@@ -27,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -81,6 +87,7 @@
       <workItem from="1707364077862" duration="1505000" />
       <workItem from="1707366093058" duration="8272000" />
       <workItem from="1707779699159" duration="14995000" />
+      <workItem from="1708038517473" duration="15195000" />
     </task>
     <servers />
   </component>

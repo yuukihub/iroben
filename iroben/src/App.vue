@@ -5,9 +5,7 @@
 </template>
 
 <script>
-  //import page1 from './Page1.vue';
   import top from './vue/pages/top.vue';
-  import page2 from './Page2.vue';
 
   export default {
     data() {

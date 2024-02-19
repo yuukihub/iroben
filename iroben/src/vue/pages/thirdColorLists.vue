@@ -1,14 +1,13 @@
 <template>
   <v-ons-page>
     <custom-toolbar></custom-toolbar>
-    <color-lists></color-lists>
+    <color-lists :color-lists="thirdExam"></color-lists>
   </v-ons-page>
 </template>
 
 <script>
 import customToolbar from '../../CustomToolbar.vue';
 import top from'../pages/top.vue';
-import ColorExam from "@/vue/templetes/colorExam.vue";
 import {thirdExam} from "../../resource/thirdExam"
 import ColorLists from "@/vue/templetes/colorLists.vue";
 
@@ -16,7 +15,6 @@ export default {
   name: "thirdColorLists",
   components: {
     ColorLists,
-    ColorExam,
     customToolbar,
   },
   data() {

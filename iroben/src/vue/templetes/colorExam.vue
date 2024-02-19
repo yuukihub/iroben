@@ -166,7 +166,7 @@ export default {
     max-width: 342px;
     width: 100%;
     padding: 10px 24px;
-    color: map_get($color, black);
+    color: map_get($color, text);
     margin: 24px auto;
     &:focus {
       border: 2px solid map_get($color, link);

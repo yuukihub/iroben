@@ -1,13 +1,95 @@
 <template>
-  color
+  <div class="wrap">
+    <img class="wave" src="../../img/wave-bottom.svg" alt="wave">
+    <ul class="c-colorLists">
+      <a href="" v-for="item in colorLists">
+        <li>
+          <div class="left">
+            <div class="colorPanel">
+              <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
+              <div class="color" v-bind:style="{background: item.colorCode}">
+              </div>
+            </div>
+            <span class="title">
+            {{item.title}}
+          </span>
+          </div>
+          <div class="right">
+          <span class="faultItem">
+            不正解：<span class="count">1</span>回
+          </span>
+            <img src="../../img/icon_arrowRight.svg" alt="右矢印">
+          </div>
+        </li>
+      </a>
+    </ul>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "colorLists"
+  name: "colorLists",
+  props: {
+    colorLists: {
+      type: Array,
+      default: '[]',
+      required: true
+    }
+  },
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+@import "./src/scss/foundation/variables";
+.c-colorLists {
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background: map_get($color, white);
+    border-bottom: 1px solid map_get($color, gray03);
+  }
+  .colorPanel {
+    position: relative;
+    padding: 4px;
+    background: map_get($color, white);
+    border: 1px solid map_get($color, gray03);
+    border-radius: 3px;
+  }
+  .color {
+    width: 42px;
+    height: 48px;
+  }
+  .eyeImage {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 18px;
+    width: 100%;
+  }
+  a {
+    color: map_get($color, text);
+    text-decoration: none;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    .title {
+      margin-left: 16px;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    .faultItem {
+      margin-right: 8px;
+    }
+  }
+}
+.wave {
+  margin-bottom: -3px;
+}
 </style>

@@ -1,8 +1,7 @@
 <template>
   <v-ons-page>
     <custom-toolbar></custom-toolbar>
-    <color-exam :questions="thirdExam">
-    </color-exam>
+    <color-lists></color-lists>
   </v-ons-page>
 </template>
 
@@ -11,10 +10,12 @@ import customToolbar from '../../CustomToolbar.vue';
 import top from'../pages/top.vue';
 import ColorExam from "@/vue/templetes/colorExam.vue";
 import {thirdExam} from "../../resource/thirdExam"
+import ColorLists from "@/vue/templetes/colorLists.vue";
 
 export default {
-  name: "thirdExam",
+  name: "thirdColorLists",
   components: {
+    ColorLists,
     ColorExam,
     customToolbar,
   },
@@ -34,7 +35,7 @@ export default {
     },
   },
   props: ['pageStack'],
-  key: 'key_page3',
+  key: 'key_page4',
 }
 </script>
 

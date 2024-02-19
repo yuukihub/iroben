@@ -40,7 +40,8 @@
         <img src="../../img/title02.svg" alt="2級'">
       </h2>
       <div>
-        <v-ons-button class="c-button" @click="push">慣用色テスト</v-ons-button>
+        <v-ons-button class="c-button" @click="toThirdExam">慣用色テスト</v-ons-button>
+        <v-ons-button class="c-button" @click="toThirdColorLists">慣用色一覧</v-ons-button>
         <ul>
           <a href="" @click="push">
             <li>
@@ -95,7 +96,8 @@
 
 <script>
 import customToolbar from '../../CustomToolbar.vue';
-import exam from './thirdExam.vue';
+import thirdExam from './thirdExam.vue';
+import thirdColorLists from "@/vue/pages/thirdColorLists.vue";
 
 
 export default {
@@ -107,8 +109,11 @@ export default {
     pop(){
       this.pageStack.pop();
     },
-    push() {
-      this.pageStack.push(exam);
+    toThirdExam() {
+      this.pageStack.push(thirdExam);
+    },
+    toThirdColorLists() {
+      this.pageStack.push(thirdColorLists);
     },
   },
   props: ['pageStack'],

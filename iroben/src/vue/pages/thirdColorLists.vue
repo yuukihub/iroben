@@ -1,116 +1,16 @@
 <template>
-  <v-ons-page>
-    <custom-toolbar></custom-toolbar>
-    <div class="wrap">
-      <img class="wave" src="../../img/wave-bottom.svg" alt="wave">
-      <ul class="c-colorLists">
-        <li v-for="(item, index) in thirdExam" :key="index">
-          <a :href="'/product/' + item.id">
-            <div class="left">
-              <div class="colorPanel">
-                <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
-                <div class="color" v-bind:style="{background: item.colorCode}">
-                </div>
-              </div>
-              <span class="title">
-            {{item.title}}
-          </span>
-            </div>
-            <div class="right">
-          <span class="faultItem">
-            不正解：<span class="count">1</span>回
-          </span>
-              <img src="../../img/icon_arrowRight.svg" alt="右矢印">
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </v-ons-page>
+  <div id="app">
+    <!--VueRouterを呼び出し-->
+    <nav>
+      <router-link to="/">Home</router-link>
+      <router-link to="/product">Product</router-link>
+    </nav>
+    <router-view />
+  </div>
 </template>
 
 <script>
-import customToolbar from '../../CustomToolbar.vue';
-import top from'../pages/top.vue';
-import {thirdExam} from "@/resource/thirdExam"
-import ColorLists from "@/vue/templetes/colorLists.vue";
-
 export default {
-  name: "thirdColorLists",
-  components: {
-    ColorLists,
-    customToolbar,
-  },
-  data() {
-    return {
-      thirdExam: thirdExam,
-      thirdTitle: "3級の問題",
-    }
-  },
-  methods: {
-    pop(){
-      this.pageStack.pop();
-    },
-    push() {
-      this.pageStack.push(top);
-    },
-  },
-  props: ['pageStack'],
-  key: 'key_page4',
+  name: 'App',
 }
 </script>
-
-<style lang="scss" scoped>
-@import "./src/scss/foundation/variables";
-.c-colorLists {
-  li {
-    padding: 12px 24px;
-    background: map_get($color, white);
-    border-bottom: 1px solid map_get($color, gray03);
-  }
-  .colorPanel {
-    position: relative;
-    padding: 4px;
-    background: map_get($color, white);
-    border: 1px solid map_get($color, gray03);
-    border-radius: 3px;
-  }
-  .color {
-    width: 42px;
-    height: 48px;
-  }
-  .eyeImage {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    max-width: 18px;
-    width: 100%;
-  }
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: map_get($color, text);
-    text-decoration: none;
-  }
-  .left {
-    display: flex;
-    align-items: center;
-    .title {
-      margin-left: 16px;
-    }
-  }
-  .right {
-    display: flex;
-    align-items: center;
-    .faultItem {
-      margin-right: 8px;
-    }
-  }
-}
-.wave {
-  margin-bottom: -3px;
-}
-</style>

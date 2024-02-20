@@ -1,18 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import RouterTestFirst from '../RouterTestFirs.vue'
-import RouterTestSecond from '../RouterTestSecond.vue'
+import ProductList from '../ProductList.vue'
+import Product from '../Product.vue'
 
 const routes = [
-    {
-        path: '/',
-        name: 'routerTestFirst',
-        component: RouterTestFirst
-    },
-    {
-        path: '/second',
-        name: 'routerTestSecond',
-        component: RouterTestSecond
-    }
+    { path: '/product', component: ProductList},
+    { path: '/product/:id(\\d+)',
+        component: Product,
+        // propsにidとデータ型の指定をする
+        props: route => ({ id: Number(route.params.id) })},
 ]
 
 const router = createRouter({

@@ -29,8 +29,7 @@ export default {
     },
     push (value) {
       let item = JSON.stringify(value);
-      console.log(item);
-      //this.pageStack.push(thirdColorDetail);
+      this.pageStack.push(thirdColorDetail,{"item": item});
     }
   },
   props: ['pageStack'],

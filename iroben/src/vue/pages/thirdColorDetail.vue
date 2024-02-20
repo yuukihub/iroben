@@ -14,19 +14,6 @@ export default {
   name: "thirdColorDetail",
   components: {customToolbar},
   props: { id: Number },
-  computed(){
-    console.log("読み込み");
-  },
-  methods: {
-    pop(){
-      this.pageStack.pop();
-      console.log("押されました");
-    },
-    push() {
-      console.log("押されました");
-      router.push('thirdColorLists');
-    },
-  },
 }
 </script>
 

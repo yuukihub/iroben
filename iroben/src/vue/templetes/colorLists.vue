@@ -1,41 +1,45 @@
 <template>
-  <v-ons-page>
-    <div class="wrap">
-      <img class="wave" src="../../img/wave-bottom.svg" alt="wave">
-      <ul class="c-colorLists">
-        <li v-for="(item, index) in colorLists" :key="index" @click="toDetail">
-          <div class="left">
-            <div class="colorPanel">
-              <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
-              <div class="color" v-bind:style="{background: item.colorCode}">
-              </div>
+  <div class="wrap">
+    <img class="wave" src="../../img/wave-bottom.svg" alt="wave">
+    <ul class="c-colorLists">
+      <li v-for="(item, index) in colorLists" :key="index" @click="getItem(item)">
+        <div class="left">
+          <div class="colorPanel">
+            <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
+            <div class="color" v-bind:style="{background: item.colorCode}">
             </div>
-            <span class="title">
+          </div>
+          <span class="title">
               {{item.title}}
             </span>
-          </div>
-          <div class="right">
+        </div>
+        <div class="right">
             <span class="faultItem">
               不正解：<span class="count">1</span>回
             </span>
-            <img src="../../img/icon_arrowRight.svg" alt="右矢印">
-          </div>
-        </li>
-      </ul>
-    </div>
-  </v-ons-page>
+          <img src="../../img/icon_arrowRight.svg" alt="右矢印">
+        </div>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
 export default {
   name: "colorLists",
+  data () {
+    return {
+      value: String,
+    }
+  },
   methods: {
     pop(){
       this.pageStack.pop();
     },
-    toDetail() {
-      this.$emit("onClick", this.message);
-    },
+    getItem (item) {
+      this.value = item;
+      this.$emit('onClick', this.value)
+    }
   },
   props: {
     colorLists: {

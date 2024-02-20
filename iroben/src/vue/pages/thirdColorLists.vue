@@ -27,10 +27,11 @@ export default {
     pop(){
       this.pageStack.pop();
     },
-    push(value) {
-      this.pageStack.push(thirdColorDetail);
-      this.message = value;
-    },
+    push (value) {
+      let item = JSON.stringify(value);
+      console.log(item);
+      //this.pageStack.push(thirdColorDetail);
+    }
   },
   props: ['pageStack'],
 }

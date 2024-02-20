@@ -1,9 +1,9 @@
 import { createApp } from 'vue';
-
 import VueOnsen from 'vue-onsenui';
 import * as components from 'vue-onsenui/esm/components';
 
 import App from './App.vue';
+import router from './router/index'
 
 import 'onsenui/css/onsenui.css';
 import 'onsenui/css/onsen-css-components.css';
@@ -22,10 +22,11 @@ Object.values(components).forEach(component =>
   app.component(component.name, component));
 
 app.use(VueOnsen);
-
+app.use(router);
 app.mount('#app');
 
 app.config.errorHandler = (err, vm, info) => {
   console.error(e.toString());
   return false;
 }
+

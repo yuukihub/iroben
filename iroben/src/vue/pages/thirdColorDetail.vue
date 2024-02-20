@@ -1,5 +1,7 @@
 <template>
-  <p>このページは、ID.{{ $route.params.id }}の詳細を表示する</p>
+  <v-ons-page>
+    <p>このページは、ID.{{ $route.params.id }}の詳細を表示する</p>
+  </v-ons-page>
 </template>
 
 <script>

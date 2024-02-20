@@ -45,7 +45,6 @@ export default {
     return {
       thirdExam: thirdExam,
       thirdTitle: "3級の問題",
-      //thirdDispatchName:"addThirdFaultItems",
     }
   },
   methods: {

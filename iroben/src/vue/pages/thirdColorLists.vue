@@ -1,7 +1,7 @@
 <template>
   <v-ons-page>
     <custom-toolbar></custom-toolbar>
-    <color-lists :color-lists="thirdExam"></color-lists>
+    <color-lists :color-lists="thirdExam" @onClick="getMessage"></color-lists>
   </v-ons-page>
 </template>
 
@@ -26,11 +26,12 @@ export default {
     pop(){
       this.pageStack.pop();
     },
-    push() {
+    getMessage(value) {
       this.pageStack.push(top);
+      this.message = value;
     },
   },
-  //props: ['pageStack'],
+  props: ['pageStack'],
 }
 </script>
 

@@ -2,8 +2,8 @@
   <div class="wrap">
     <img class="wave" src="../../img/wave-bottom.svg" alt="wave">
     <ul class="c-colorLists">
-      <a href="" v-for="item in colorLists">
-        <li>
+        <li v-for="(item, index) in colorLists" :key="index">
+          <a :href="'/product/' + item.id">
           <div class="left">
             <div class="colorPanel">
               <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
@@ -20,8 +20,8 @@
           </span>
             <img src="../../img/icon_arrowRight.svg" alt="右矢印">
           </div>
+          </a>
         </li>
-      </a>
     </ul>
   </div>
 </template>
@@ -43,9 +43,6 @@ export default {
 @import "./src/scss/foundation/variables";
 .c-colorLists {
   li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 12px 24px;
     background: map_get($color, white);
     border-bottom: 1px solid map_get($color, gray03);
@@ -71,6 +68,9 @@ export default {
     width: 100%;
   }
   a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: map_get($color, text);
     text-decoration: none;
   }

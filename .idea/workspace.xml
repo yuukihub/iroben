@@ -5,15 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/iroben/src/RouterTestFirs.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/RouterTestSecond.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/resource/thirdExam.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/resource/thirdExam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/scss/foundation/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/scss/foundation/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorLists.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorLists.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/colorExam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/colorExam.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/colorLists.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/colorLists.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/CustomToolbar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/css/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/font/KintoSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/font/KintoSans-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/font/KintoSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/character01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/character01_art.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/character02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/character02_art.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/character03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/character03_art.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/icon_arrowLeft.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/icon_arrowRight.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/icon_circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/icon_error.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/icon_eye.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/icon_success.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img_error.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img_success.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/title01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/title02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/title03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/wave-bottom.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/wave-top.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/resource/constant-router.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/resource/firstExam.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/resource/secondExam.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/resource/thirdExam.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/common.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/components/button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/components/checkbox.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/components/header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/components/list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/foundation/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/foundation/_include.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/foundation/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/foundation/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/foundation/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/foundation/font.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/utility/_animation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/utility/_margin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/utility/_text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/TheHeader.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/confetti.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorLists.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/thirdExam.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/top.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/colorExam.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/colorLists.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/polyfills-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/polyfills-legacy.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,21 +99,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/matsumoto.yuki/Desktop/portfolio/iroben/iroben/src/font&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/matsumoto.yuki/Desktop/portfolio/iroben/iroben/src/font",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/iroben/src/font" />

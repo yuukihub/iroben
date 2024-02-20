@@ -29,7 +29,7 @@ export default {
     },
     push (value) {
       let item = JSON.stringify(value);
-      this.pageStack.push(thirdColorDetail,{"item": item});
+      this.pageStack.push(thirdColorDetail,{colorItem: item});
     }
   },
   props: ['pageStack'],

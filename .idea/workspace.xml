@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorDetail.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorLists.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorLists.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />

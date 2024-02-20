@@ -1,7 +1,7 @@
 <template>
   <v-ons-page>
     <custom-toolbar></custom-toolbar>
-    <color-lists :color-lists="thirdExam" @onClick="getMessage"></color-lists>
+    <color-lists :color-lists="thirdExam" @onClick="push"></color-lists>
   </v-ons-page>
 </template>
 
@@ -10,6 +10,7 @@ import customToolbar from '../../CustomToolbar.vue';
 import top from'../pages/top.vue';
 import {thirdExam} from "../../resource/thirdExam"
 import ColorLists from "@/vue/templetes/colorLists.vue";
+import thirdColorDetail from "@/vue/pages/thirdColorDetail.vue";
 
 export default {
   name: "thirdColorLists",
@@ -26,8 +27,8 @@ export default {
     pop(){
       this.pageStack.pop();
     },
-    getMessage(value) {
-      this.pageStack.push(top);
+    push(value) {
+      this.pageStack.push(thirdColorDetail);
       this.message = value;
     },
   },

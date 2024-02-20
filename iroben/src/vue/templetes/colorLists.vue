@@ -3,7 +3,7 @@
     <div class="wrap">
       <img class="wave" src="../../img/wave-bottom.svg" alt="wave">
       <ul class="c-colorLists">
-        <li v-for="(item, index) in colorLists" :key="index" @click="push">
+        <li v-for="(item, index) in colorLists" :key="index" @click="toDetail">
           <div class="left">
             <div class="colorPanel">
               <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
@@ -27,16 +27,13 @@
 </template>
 
 <script>
-import {thirdExam} from "@/resource/thirdExam";
-import top from "@/vue/pages/top.vue";
-
 export default {
   name: "colorLists",
   methods: {
     pop(){
       this.pageStack.pop();
     },
-    push() {
+    toDetail() {
       this.$emit("onClick", this.message);
     },
   },

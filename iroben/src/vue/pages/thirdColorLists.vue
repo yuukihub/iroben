@@ -20,8 +20,6 @@ export default {
   data() {
     return {
       thirdExam: thirdExam,
-      thirdTitle: "3級の問題",
-      //thirdDispatchName:"addThirdFaultItems",
     }
   },
   methods: {
@@ -32,8 +30,7 @@ export default {
       this.pageStack.push(top);
     },
   },
-  props: ['pageStack'],
-  key: 'key_page4',
+  //props: ['pageStack'],
 }
 </script>
 

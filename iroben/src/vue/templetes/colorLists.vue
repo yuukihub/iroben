@@ -3,24 +3,24 @@
     <img class="wave" src="../../img/wave-bottom.svg" alt="wave">
     <ul class="c-colorLists">
         <li v-for="(item, index) in colorLists" :key="index">
-          <a :href="'/product/' + item.id">
-          <div class="left">
-            <div class="colorPanel">
-              <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
-              <div class="color" v-bind:style="{background: item.colorCode}">
+          <router-link :to="`/product/${item.id}`">
+            <div class="left">
+              <div class="colorPanel">
+                <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
+                <div class="color" v-bind:style="{background: item.colorCode}">
+                </div>
               </div>
+              <span class="title">
+              {{item.title}}
+            </span>
             </div>
-            <span class="title">
-            {{item.title}}
-          </span>
-          </div>
-          <div class="right">
-          <span class="faultItem">
-            不正解：<span class="count">1</span>回
-          </span>
-            <img src="../../img/icon_arrowRight.svg" alt="右矢印">
-          </div>
-          </a>
+            <div class="right">
+            <span class="faultItem">
+              不正解：<span class="count">1</span>回
+            </span>
+              <img src="../../img/icon_arrowRight.svg" alt="右矢印">
+            </div>
+          </router-link>
         </li>
     </ul>
   </div>
@@ -34,7 +34,7 @@ export default {
       type: Array,
       default: '[]',
       required: true
-    },
+    }
   },
 }
 </script>

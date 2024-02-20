@@ -48,7 +48,6 @@ export default {
   },
   props: ['pageStack'],
   components: { customToolbar },
-  key: 'key_page1',
 }
 </script>
 

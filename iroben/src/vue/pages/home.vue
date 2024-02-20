@@ -117,7 +117,6 @@ export default {
     },
   },
   props: ['pageStack'],
-  key: 'key_page2',
 }
 </script>
 

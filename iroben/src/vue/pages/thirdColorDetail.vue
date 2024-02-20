@@ -4,7 +4,8 @@
 
 <script>
 export default {
-  name: "thirdColorDetail"
+  name: "thirdColorDetail",
+  props: []
 }
 </script>
 

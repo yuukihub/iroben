@@ -15,7 +15,8 @@
         </div>
         <div class="right">
             <span class="faultItem">
-              不正解：<span class="count">1</span>回
+              <img class="" src="../../img/icon_flag.svg" alt="flag">
+              不正解<span class="count">1</span>回
             </span>
           <img src="../../img/icon_arrowRight.svg" alt="右矢印">
         </div>
@@ -64,14 +65,14 @@ export default {
   }
   .colorPanel {
     position: relative;
-    padding: 4px;
+    padding: 0.3vh;
     background: map_get($color, white);
     border: 1px solid map_get($color, gray03);
     border-radius: 3px;
   }
   .color {
-    width: 42px;
-    height: 48px;
+    width: 5.5vh;
+    height: 6.5vh;
   }
   .eyeImage {
     position: absolute;
@@ -79,7 +80,7 @@ export default {
     left: 0;
     right: 0;
     margin: auto;
-    max-width: 18px;
+    max-width: 2.3vh;
     width: 100%;
   }
   a {
@@ -100,7 +101,12 @@ export default {
     display: flex;
     align-items: center;
     .faultItem {
+      display: flex;
+      align-items: center;
       margin-right: 8px;
+      img {
+        margin-right: 8px;
+      }
     }
   }
 }

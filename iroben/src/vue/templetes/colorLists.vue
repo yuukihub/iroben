@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <img class="wave" src="../../img/wave-bottom.svg" alt="wave">
+    <img class="wave" src="../../img/img_wave-bottom.svg" alt="wave">
     <ul class="c-colorLists">
       <li v-for="(item, index) in colorLists" :key="index" @click="getItem(item)">
         <div class="left">
@@ -55,6 +55,9 @@ export default {
 @import "./src/scss/foundation/variables";
 .c-colorLists {
   li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 12px 24px;
     background: map_get($color, white);
     border-bottom: 1px solid map_get($color, gray03);

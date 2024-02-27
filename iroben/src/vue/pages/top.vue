@@ -2,17 +2,17 @@
   <v-ons-page>
     <custom-toolbar></custom-toolbar>
     <h1>
-      <img class="logo" src="../../img/logo.svg" alt="iroben">
+      <img class="logo" src="../../img/img_logo.svg" alt="iroben">
     </h1>
 
-    <img class="slider" src="../../img/iphone.png" alt="iphone">
+    <img class="slider" src="../../img/img_iphone.png" alt="iphone">
     <div class="characters_wrap">
       <img class="character01" src="../../img/character01.svg" alt="character01">
       <img class="character02" src="../../img/character02.svg" alt="character02">
       <img class="character03" src="../../img/character03.svg" alt="character03">
     </div>
     <div class="bottom">
-      <img src="../../img/wave-bottom.svg" alt="wave">
+      <img src="../../img/img_wave-bottom.svg" alt="wave">
       <div class="bottom_inner">
         <div class="bar">
           <p class="desc">アプリをご利用いただくには、<br>

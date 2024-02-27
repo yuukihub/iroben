@@ -5,9 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/CustomToolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/CustomToolbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/iphone.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/img_iphone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/img_logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/title01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/img_title01.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/title02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/img_title02.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/title03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/img_title03.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/wave-bottom.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/img_wave-bottom.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/wave-top.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/img_wave-top.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/resource/secondExam.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/resource/secondExam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/resource/thirdExam.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/resource/thirdExam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/foundation/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/scss/foundation/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorDetail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorLists.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorLists.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/top.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/top.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/colorExam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/colorExam.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/colorLists.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/colorLists.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +96,7 @@
       <workItem from="1708038517473" duration="24788000" />
       <workItem from="1708296885923" duration="222000" />
       <workItem from="1708323743101" duration="3604000" />
+      <workItem from="1708988154212" duration="5729000" />
     </task>
     <servers />
   </component>

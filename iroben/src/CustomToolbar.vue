@@ -4,9 +4,8 @@
       <div class="contents">
         <div class="top">
           <div class="bar"></div>
-          <img src="./img/wave-top.svg" alt="wave">
         </div>
-
+        <img src="./img/img_wave-top.svg" alt="wave">
         <v-ons-back-button :on-click="pop"></v-ons-back-button>
 
         <div>
@@ -31,6 +30,13 @@
     display: flex;
     align-items: center;
     padding: 0 16px;
+    position: absolute;
+    z-index: 1;
+    top: 55px;
+    left: 0;
+  }
+  .contents {
+    position: relative;
   }
   .back-button__label {
     display: block;
@@ -45,8 +51,6 @@
     }
     img {
       width: 100%;
-      position: absolute;
-      top: 55px;
       z-index: -1;
     }
   }

@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="wrap">
     <div v-if="status">
-      <div class="c-examCard">
+      <div class="c-colorCard">
         <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
         <div class="color" v-bind:style="{background: currentQuestion.colorCode}"></div>
         <div class="counter">
@@ -15,7 +15,7 @@
             v-for="(answer,index) in setChoice"
             @click="selectAnswer(index)"
         >
-          <div class="answer">{{answer}}</div>
+          <div class="answer">{{answer.name}}</div>
           <div v-if="!answerFlag">
             <img src="../../img/icon_circle.svg" alt="アイコン">
           </div>
@@ -50,7 +50,7 @@
     </div>
 
     <div class="bottom">
-      <img src="../../img/wave-bottom.svg" alt="wave">
+      <img src="../../img/img_wave-bottom.svg" alt="wave">
     </div>
   </div>
 </template>
@@ -128,7 +128,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "./src/scss/foundation/variables";
-  .c-examCard {
+ .c-colorCard {
     position: relative;
     background: map_get($color, white);
     border: 1px solid map_get($color, gray03);
@@ -136,6 +136,7 @@ export default {
     max-width: 278px;
     width: 100%;
     margin: auto;
+   box-shadow: 0px 0px 16px -14px #161c2b;
     .eyeImage {
       position: absolute;
       top: 13px;
@@ -203,7 +204,9 @@ export default {
     right: 0;
     margin: auto;
   }
-
+.wrap {
+  margin-top: 10vh;
+}
   .bottom {
     position: absolute;
     bottom: 0;
@@ -211,7 +214,7 @@ export default {
     right: 0;
     z-index: -1;
     height: 72vh;
-    background: white;
+    background: map_get($color, white);
     img {
       position: absolute;
       top: -70px;

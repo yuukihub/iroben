@@ -32,7 +32,7 @@
     padding: 0 16px;
     position: absolute;
     z-index: 1;
-    top: 55px;
+    top: 5vh;
     left: 0;
   }
   .contents {

@@ -7,7 +7,7 @@
       @content;
     }
   } @else if $level == xsmall {
-    @media  (max-width: 361px){
+    @media  (max-width: 375px){
       @content;
     }
   } @else {

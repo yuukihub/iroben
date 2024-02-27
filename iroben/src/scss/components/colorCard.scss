@@ -1,0 +1,18 @@
+@import "./src/scss/foundation/variables";
+.c-colorCard {
+  position: relative;
+  background: map_get($color, white);
+  border: 1px solid map_get($color, gray03);
+  border-radius: 10px;
+  max-width: 278px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0px 0px 16px -14px #161c2b;
+  .eyeImage {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}

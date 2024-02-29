@@ -17,12 +17,13 @@
         <div class="right">
             <span class="faultItem">
               <img class="" src="../../img/icon_flag.svg" alt="flag">
-              不正解<span class="count">{{faultItemTest}}</span>回
+              不正解<span class="count">{{faultCountArray[item.id]}}</span>回
             </span>
           <img src="../../img/icon_arrowRight.svg" alt="右矢印">
         </div>
       </li>
     </ul>
+    {{faultItem}}
   </div>
 </template>
 
@@ -32,7 +33,8 @@ export default {
   data () {
     return {
       value: String,
-      faultItemTest: this.$store.state[this.level].faultArray,
+      faultItem: this.$store.state[this.level].faultArray,
+      faultCountArray: "",
     }
   },
   props: {
@@ -46,6 +48,23 @@ export default {
       required: true
     }
   },
+  created() {
+    let faultCountArray = [];
+    let item = JSON.parse(JSON.stringify(this.faultItem));
+    for(let key in item){
+      faultCountArray.push(item[key].id);
+    }
+    // 同じ文字を一度以上カウントしないようにユニークな配列を作成
+    const unique = Array.from(new Set(faultCountArray));
+
+    const occurrenceCount = Object.fromEntries(
+        unique.map(char => {
+          const occurrenceCount = faultCountArray.filter(c => c === char).length;
+          return [char, occurrenceCount]
+        })
+    )
+    this.faultCountArray = occurrenceCount;
+  },
   methods: {
     pop(){
       this.pageStack.pop();
@@ -56,12 +75,8 @@ export default {
     },
     clearItem(){
       let items = localStorage.getItem("faultItems");
-      let object = JSON.parse(items);
       alert("押されました");
     },
-    computed(){
-      //let level = this.level;
-    }
   },
 }
 </script>

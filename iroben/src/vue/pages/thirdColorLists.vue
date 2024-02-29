@@ -1,7 +1,7 @@
 <template>
   <v-ons-page>
     <custom-toolbar></custom-toolbar>
-    <color-lists :color-lists="thirdExam" @onClick="push"></color-lists>
+    <color-lists :color-lists="thirdExam" :level="'third'" @onClick="push"></color-lists>
   </v-ons-page>
 </template>
 
@@ -29,9 +29,6 @@ export default {
     },
     push (value) {
       let item = JSON.stringify(value);
-      //this.pageStack.push(thirdColorDetail);
-      //this.pageStack.push(thirdColorDetail,{colorItem: item});
-
       this.pageStack.push({
         extends: thirdColorDetail,
         data() {
@@ -41,9 +38,6 @@ export default {
         }
       })
     },
-    test(){
-     // alert("test");
-    }
   },
   props: ['pageStack'],
 }

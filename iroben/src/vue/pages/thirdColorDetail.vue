@@ -36,12 +36,12 @@ export default {
   components: {customToolbar},
   data(){
     return {
-      colorItem: String,
-      item: "aaa",
+      //colorItem: String,
+      item: "",
     }
   },
-mounted(){
-    this.item = JSON.parse(this.colorItem);
+  mounted(){
+      this.item = JSON.parse(this.colorItem);
   }
 }
 </script>

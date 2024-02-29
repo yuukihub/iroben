@@ -8,12 +8,13 @@
 <script>
   import top from './vue/pages/top.vue';
   import exam from './vue/pages/thirdExam.vue';
+  import list from './vue/pages/thirdColorLists.vue';
 
   export default {
     data() {
       return {
-        //pageStack: [top]
-        pageStack: [exam]
+        pageStack: [top]
+        //pageStack: [list]
       }
     }
   }

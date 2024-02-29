@@ -17,7 +17,7 @@
         <div class="right">
             <span class="faultItem">
               <img class="" src="../../img/icon_flag.svg" alt="flag">
-              不正解<span class="count">1</span>回
+              不正解<span class="count">{{faultItemTest}}</span>回
             </span>
           <img src="../../img/icon_arrowRight.svg" alt="右矢印">
         </div>
@@ -32,6 +32,18 @@ export default {
   data () {
     return {
       value: String,
+      faultItemTest: this.$store.state[this.level].faultArray,
+    }
+  },
+  props: {
+    colorLists: {
+      type: Array,
+      default: '[]',
+      required: true
+    },
+    level: {
+      type: String,
+      required: true
     }
   },
   methods: {
@@ -45,19 +57,10 @@ export default {
     clearItem(){
       let items = localStorage.getItem("faultItems");
       let object = JSON.parse(items);
-     // let faultCount = object.faultCount;
-      console.log(object.faultCount);
-      /*for(let num in items){
-
-      }*/
       alert("押されました");
-    }
-  },
-  props: {
-    colorLists: {
-      type: Array,
-      default: '[]',
-      required: true
+    },
+    computed(){
+      //let level = this.level;
     }
   },
 }

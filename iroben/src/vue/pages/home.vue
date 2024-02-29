@@ -4,7 +4,7 @@
     <section class="c-card is-disabled">
       <h2>
         <!--<img :src="'../../img/title0'+slide+'.svg'" :alt="slide+'級'">-->
-        <img src="../../img/title01.svg" alt="1級'">
+        <img src="../../img/img_title01.svg" alt="1級'">
       </h2>
       <div>
         <!--<div class="color">
@@ -37,7 +37,7 @@
     <section class="c-card">
       <h2>
         <!--<img :src="'../../img/title0'+slide+'.svg'" :alt="slide+'級'">-->
-        <img src="../../img/title02.svg" alt="2級'">
+        <img src="../../img/img_title02.svg" alt="2級'">
       </h2>
       <div>
         <v-ons-button class="c-button" @click="toThirdExam">慣用色テスト</v-ons-button>
@@ -62,7 +62,7 @@
     <section class="c-card">
       <h2>
         <!--<img :src="'../../img/title0'+slide+'.svg'" :alt="slide+'級'">-->
-        <img src="../../img/title03.svg" alt="3級'">
+        <img src="../../img/img_title03.svg" alt="3級'">
       </h2>
       <div>
         <ul>
@@ -88,7 +88,7 @@
       <img class="character01" src="../../img/character01_art.svg" alt="character01">
     </div>
     <div class="bottom">
-      <img src="../../img/wave-bottom.svg" alt="wave">
+      <img src="../../img/img_wave-bottom.svg" alt="wave">
     </div>
 
   </v-ons-page>

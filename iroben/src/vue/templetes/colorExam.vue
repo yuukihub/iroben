@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="wrap">
     <div v-if="status">
-      <div class="c-examCard">
+      <div class="c-colorCard">
         <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
         <div class="color" v-bind:style="{background: currentQuestion.colorCode}"></div>
         <div class="counter">
@@ -15,7 +15,7 @@
             v-for="(answer,index) in setChoice"
             @click="selectAnswer(index)"
         >
-          <div class="answer">{{answer}}</div>
+          <div class="answer">{{answer.name}}</div>
           <div v-if="!answerFlag">
             <img src="../../img/icon_circle.svg" alt="アイコン">
           </div>
@@ -50,7 +50,7 @@
     </div>
 
     <div class="bottom">
-      <img src="../../img/wave-bottom.svg" alt="wave">
+      <img src="../../img/img_wave-bottom.svg" alt="wave">
     </div>
   </div>
 </template>
@@ -128,95 +128,81 @@ export default {
 
 <style lang="scss" scoped>
 @import "./src/scss/foundation/variables";
-  .c-examCard {
-    position: relative;
-    background: map_get($color, white);
-    border: 1px solid map_get($color, gray03);
-    border-radius: 10px;
-    max-width: 278px;
+@import "./src/scss/components/colorCard";
+.wrap {
+  margin-top: 10vh;
+}
+.c-answerButton {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  background: map_get($color, white);
+  border: 1px solid map_get($color, gray03);
+  border-radius: 4px;
+  max-width: 342px;
+  width: 100%;
+  padding: 10px 24px;
+  color: map_get($color, text);
+  margin: 24px auto;
+  &:focus {
+    border: 2px solid map_get($color, link);
+  }
+  .answer {
+    display: block;
+    text-align: center;
     width: 100%;
-    margin: auto;
-    .eyeImage {
-      position: absolute;
-      top: 13px;
-      left: 0;
-      right: 0;
-      margin: auto;
-    }
-    .color {
-      background: #87CEEB;
-      border-radius: 10px 10px 0 0;
-      display: block;
-      margin: 3%;
-      height: 365px;
-    }
-    .counter {
-      margin: 16px 0;
-      text-align: center;
-    }
   }
-
-  .c-answerButton {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    background: map_get($color, white);
+  .circle {
+    display: block;
+    width: 24px;
+    height: 24px;
     border: 1px solid map_get($color, gray03);
-    border-radius: 4px;
-    max-width: 342px;
-    width: 100%;
-    padding: 10px 24px;
-    color: map_get($color, text);
-    margin: 24px auto;
-    &:focus {
-      border: 2px solid map_get($color, link);
-    }
-    .answer {
-      display: block;
-      text-align: center;
-      width: 100%;
-    }
-    .circle {
-      display: block;
-      width: 24px;
-      height: 24px;
-      border: 1px solid map_get($color, gray03);
-      border-radius: 100%;
-    }
+    border-radius: 100%;
   }
+}
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-  .result_image {
-    animation: fadeIn 0.8s ease 0.1s 0.8 normal backwards;
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.result_image {
+  animation: fadeIn 0.8s ease 0.1s 0.8 normal backwards;
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.color {
+  background: #87CEEB;
+  border-radius: 10px 10px 0 0;
+  display: block;
+  margin: 3%;
+  height: 365px;
+}
+.counter {
+  margin: 16px 0;
+  text-align: center;
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 72vh;
+  background: map_get($color, white);
+  img {
     position: absolute;
-    top: 8vh;
+    top: -70px;
     left: 0;
     right: 0;
-    margin: auto;
   }
-
-  .bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 72vh;
-    background: white;
-    img {
-      position: absolute;
-      top: -70px;
-      left: 0;
-      right: 0;
-    }
-  }
+}
 </style>

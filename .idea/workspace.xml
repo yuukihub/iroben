@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorDetail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorLists.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorLists.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/top.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/top.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/colorLists.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/colorLists.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,6 +75,8 @@
       <workItem from="1708038517473" duration="24788000" />
       <workItem from="1708296885923" duration="222000" />
       <workItem from="1708323743101" duration="3604000" />
+      <workItem from="1708988154212" duration="12298000" />
+      <workItem from="1709002615176" duration="17000" />
     </task>
     <servers />
   </component>

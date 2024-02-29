@@ -1,17 +1,13 @@
 // mixin設定
 
 
-@mixin mq($level: pc) {
-  @if $level == pc {
-    @media  (min-width: 768px){
-      @content;
-    }
-  } @else if $level == sp {
-    @media  (max-width: 374px){
+@mixin mq($level: sp) {
+  @if $level == sp {
+    @media  (max-width: 390px){
       @content;
     }
   } @else if $level == xsmall {
-    @media  (max-width: 361px){
+    @media  (max-width: 375px){
       @content;
     }
   } @else {

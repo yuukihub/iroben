@@ -10,9 +10,48 @@ export const thirdExam = [
         colorCode:"#f4b3c2",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"鴇色",
+                    "colorCode":"#f4b3c2"
+                },
+                {
+                    "name":"オールドローズ",
+                    "colorCode":"#da8d93"
+                },
+                {
+                    "name":"ローズピンク",
+                    "colorCode":"#f29c9f"
+                }
+            ],
+            [
+                {
+                    "name":"鴇色",
+                    "colorCode":"#f4b3c2"
+                },
+                {
+                    "name":"桜色",
+                    "colorCode":"#fdeeef"
+                },
+                {
+                    "name":"珊瑚色",
+                    "colorCode":"#F3ADA3"
+                }
+            ],
+            [
+                {
+                    "name":"鴇色",
+                    "colorCode":"#f4b3c2"
+                },
+                {
+                    "name":"韓紅色",
+                    "colorCode":"#e95464"
+                },
+                {
+                    "name":"紅梅色",
+                    "colorCode":"#f3a7a5"
+                }
+            ]
         ],
         answer:1,
         faultCount:0,
@@ -24,9 +63,48 @@ export const thirdExam = [
         colorCode:"#e95464",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"紅梅色",
+                    "colorCode":"#f3a7a5"
+                },
+                {
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
+                },
+                {
+                    "name":"韓紅色",
+                    "colorCode":"#e95464"
+                }
+            ],
+            [
+                {
+                    "name":"ポピーレッド",
+                    "colorCode":"#e9474d"
+                },
+                {
+                    "name":"オールドローズ",
+                    "colorCode":"#da8d93"
+                },
+                {
+                    "name":"韓紅色",
+                    "colorCode":"#e95464"
+                }
+            ],
+            [
+                {
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
+                },
+                {
+                    "name":"ポピーレッド",
+                    "colorCode":"#e9474d"
+                },
+                {
+                    "name":"韓紅色",
+                    "colorCode":"#e95464"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -38,9 +116,48 @@ export const thirdExam = [
         colorCode:"#9e3d3e",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"弁柄色",
+                    "colorCode":"#8f2d12"
+                },
+                {
+                    "name":"鳶色",
+                    "colorCode":"#8b4239"
+                },
+                {
+                    "name":"蘇芳",
+                    "colorCode":"#9e3d3e"
+                }
+            ],
+            [
+                {
+                    "name":"海老茶",
+                    "colorCode":"#814336"
+                },
+                {
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
+                },
+                {
+                    "name":"蘇芳",
+                    "colorCode":"#9e3d3e"
+                }
+            ],
+            [
+                {
+                    "name":"鳶色",
+                    "colorCode":"#8b4239"
+                },
+                {
+                    "name":"海老茶",
+                    "colorCode":"#814336"
+                },
+                {
+                    "name":"蘇芳",
+                    "colorCode":"#9e3d3e"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -52,11 +169,50 @@ export const thirdExam = [
         colorCode:"#8b4239",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
+                },
+                {
+                    "name":"鳶色",
+                    "colorCode":"#8b4239"
+                },
+                {
+                    "name":"栗色",
+                    "colorCode":"#762e05"
+                }
+            ],
+            [
+                {
+                    "name":"海老茶",
+                    "colorCode":"#814336"
+                },
+                {
+                    "name":"鳶色",
+                    "colorCode":"#8b4239"
+                },
+                {
+                    "name":"チョコレート",
+                    "colorCode":"#612c16"
+                }
+            ],
+            [
+                {
+                    "name":"弁柄色",
+                    "colorCode":"#8f2d12"
+                },
+                {
+                    "name":"鳶色",
+                    "colorCode":"#8b4239"
+                },
+                {
+                    "name":"蘇芳",
+                    "colorCode":"#9e3d3e"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -66,11 +222,50 @@ export const thirdExam = [
         colorCode:"#8f2d12",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"弁柄色",
+                    "colorCode":"#8f2d12"
+                },
+                {
+                    "name":"チョコレート",
+                    "colorCode":"#612c16"
+                },
+                {
+                    "name":"海老茶",
+                    "colorCode":"#814336"
+                }
+            ],
+            [
+                {
+                    "name":"弁柄色",
+                    "colorCode":"#8f2d12"
+                },
+                {
+                    "name":"蘇芳",
+                    "colorCode":"#9e3d3e"
+                },
+                {
+                    "name":"鳶色",
+                    "colorCode":"#8b4239"
+                }
+            ],
+            [
+                {
+                    "name":"弁柄色",
+                    "colorCode":"#8f2d12"
+                },
+                {
+                    "name":"海老茶",
+                    "colorCode":"#814336"
+                },
+                {
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -80,9 +275,48 @@ export const thirdExam = [
         colorCode:"#814336",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
+                },
+                {
+                    "name":"弁柄色",
+                    "colorCode":"#8f2d12"
+                },
+                {
+                    "name":"海老茶",
+                    "colorCode":"#814336"
+                }
+            ],
+            [
+                {
+                    "name":"栗色",
+                    "colorCode":"#762e05"
+                },
+                {
+                    "name":"鳶色",
+                    "colorCode":"#8b4239"
+                },
+                {
+                    "name":"海老茶",
+                    "colorCode":"#814336"
+                }
+            ],
+            [
+                {
+                    "name":"蘇芳",
+                    "colorCode":"#9e3d3e"
+                },
+                {
+                    "name":"チョコレート",
+                    "colorCode":"#612c16"
+                },
+                {
+                    "name":"海老茶",
+                    "colorCode":"#814336"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -94,11 +328,50 @@ export const thirdExam = [
         colorCode:"#da8d93",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"オールドローズ",
+                    "colorCode":"#da8d93"
+                },
+                {
+                    "name":"蘇芳",
+                    "colorCode":"#9e3d3e"
+                },
+                {
+                    "name":"ローズピンク",
+                    "colorCode":"#f29c9f"
+                }
+            ],
+            [
+                {
+                    "name":"オールドローズ",
+                    "colorCode":"#da8d93"
+                },
+                {
+                    "name":"韓紅色",
+                    "colorCode":"#e95464"
+                },
+                {
+                    "name":"紅梅色",
+                    "colorCode":"#f3a7a5"
+                }
+            ],
+            [
+                {
+                    "name":"オールドローズ",
+                    "colorCode":"#da8d93"
+                },
+                {
+                    "name":"紅梅色",
+                    "colorCode":"#f3a7a5"
+                },
+                {
+                    "name":"ローズピンク",
+                    "colorCode":"#f29c9f"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -108,11 +381,50 @@ export const thirdExam = [
         colorCode:"#e9474d",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"韓紅色",
+                    "colorCode":"#e95464"
+                },
+                {
+                    "name":"ポピーレッド",
+                    "colorCode":"#e9474d"
+                },
+                {
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
+                },
+            ],
+            [
+                {
+                    "name":"鴇色",
+                    "colorCode":"#"
+                },
+                {
+                    "name":"ポピーレッド",
+                    "colorCode":"#e9474d"
+                },
+                {
+                    "name":"紅梅色",
+                    "colorCode":"#f3a7a5"
+                }
+            ],
+            [
+                {
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
+                },
+                {
+                    "name":"ポピーレッド",
+                    "colorCode":"#e9474d"
+                },
+                {
+                    "name":"蘇芳",
+                    "colorCode":"#9e3d3e"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -122,9 +434,48 @@ export const thirdExam = [
         colorCode:"#6a1816",
         description:"マルーン（Maroon）とはスペイン産の大粒の西洋栗のことです。",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"蘇芳",
+                    "colorCode":"#9e3d3e"
+                },
+                {
+                    "name":"チョコレート",
+                    "colorCode":"#612c16"
+                },
+                {
+                    "name":"マルーン",
+                    "colorCode":"#6a1816"
+                }
+            ],
+            [
+                {
+                    "name":"海老茶",
+                    "colorCode":"#814336"
+                },
+                {
+                    "name":"バーガンディー",
+                    "colorCode":"#561620"
+                },
+                {
+                    "name":"マルーン",
+                    "colorCode":"#6a1816"
+                }
+            ],
+            [
+                {
+                    "name":"テラコッタ",
+                    "colorCode":"#be6d55"
+                },
+                {
+                    "name":"桧皮色",
+                    "colorCode":"#965036"
+                },
+                {
+                    "name":"マルーン",
+                    "colorCode":"#6a1816"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -136,11 +487,50 @@ export const thirdExam = [
         colorCode:"#be6d55",
         description:"テラコッタ（Terracotta）とはイタリア語で「焼いた（cotta）土（terra）」という意味です。",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"テラコッタ",
+                    "colorCode":"#be6d55"
+                },
+                {
+                    "name":"バーガンディー",
+                    "colorCode":"#561620"
+                },
+                {
+                    "name":"桧皮色",
+                    "colorCode":"#965036"
+                }
+            ],
+            [
+                {
+                    "name":"テラコッタ",
+                    "colorCode":"#be6d55"
+                },
+                {
+                    "name":"琥珀色",
+                    "colorCode":"#bf7834"
+                },
+                {
+                    "name":"代赭",
+                    "colorCode":"#bb541f"
+                }
+            ],
+            [
+                {
+                    "name":"テラコッタ",
+                    "colorCode":"#be6d55"
+                },
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                },
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -150,11 +540,50 @@ export const thirdExam = [
         colorCode:"#ee7948",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"柑子色",
+                    "colorCode":"#f6ad48"
+                },
+                {
+                    "name":"黄丹",
+                    "colorCode":"#ee7948"
+                },
+                {
+                    "name":"黄蘗色",
+                    "colorCode":"#fef263"
+                }
+            ],
+            [
+                {
+                    "name":"ゴールデンイエロー",
+                    "colorCode":"#f8b856"
+                },
+                {
+                    "name":"黄丹",
+                    "colorCode":"#ee7948"
+                },
+                {
+                    "name":"バーミリオン",
+                    "colorCode":"#eb613b"
+                }
+            ],
+            [
+                {
+                    "name":"マリーゴールド",
+                    "colorCode":"#f39800"
+                },
+                {
+                    "name":"黄丹",
+                    "colorCode":"#ee7948"
+                },
+                {
+                    "name":"柑子色",
+                    "colorCode":"#f6ad48"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -164,11 +593,50 @@ export const thirdExam = [
         colorCode:"#965036",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"桧皮色",
+                    "colorCode":"#965036"
+                },
+                {
+                    "name":"代赭",
+                    "colorCode":"#bb541f"
+                },
+                {
+                    "name":"バーントシェンナ",
+                    "colorCode":"#b25532"
+                }
+            ],
+            [
+                {
+                    "name":"桧皮色",
+                    "colorCode":"#965036"
+                },
+                {
+                    "name":"蘇芳",
+                    "colorCode":"#9e3d3e"
+                },
+                {
+                    "name":"マルーン",
+                    "colorCode":"#6a1816"
+                }
+            ],
+            [
+                {
+                    "name":"桧皮色",
+                    "colorCode":"#965036"
+                },
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                },
+                {
+                    "name":"バーントシェンナ",
+                    "colorCode":"#b25532"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -178,9 +646,48 @@ export const thirdExam = [
         colorCode:"#bb541f",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                },
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                },
+                {
+                    "name":"代赭",
+                    "colorCode":"#bb541f"
+                }
+            ],
+            [
+                {
+                    "name":"琥珀色",
+                    "colorCode":"#bf7834"
+                },
+                {
+                    "name":"桧皮色",
+                    "colorCode":"#965036"
+                },
+                {
+                    "name":"代赭",
+                    "colorCode":"#bb541f"
+                }
+            ],
+            [
+                {
+                    "name":"蘇芳",
+                    "colorCode":"#9e3d3e"
+                },
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                },
+                {
+                    "name":"代赭",
+                    "colorCode":"#bb541f"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -192,9 +699,48 @@ export const thirdExam = [
         colorCode:"#f6ad48",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"マリーゴールド",
+                    "colorCode":"#f39800"
+                },
+                {
+                    "name":"黄丹",
+                    "colorCode":"#ee7948"
+                },
+                {
+                    "name":"柑子色",
+                    "colorCode":"#f6ad48"
+                }
+            ],
+            [
+                {
+                    "name":"黄丹",
+                    "colorCode":"#ee7948"
+                },
+                {
+                    "name":"黄蘗色",
+                    "colorCode":"#fef263"
+                },
+                {
+                    "name":"柑子色",
+                    "colorCode":"#f6ad48"
+                }
+            ],
+            [
+                {
+                    "name":"黄蘗色",
+                    "colorCode":"#fef263"
+                },
+                {
+                    "name":"マリーゴールド",
+                    "colorCode":"#f39800"
+                },
+                {
+                    "name":"柑子色",
+                    "colorCode":"#f6ad48"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -206,11 +752,50 @@ export const thirdExam = [
         colorCode:"#ea5520",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"チャイニーズレッド",
+                    "colorCode":"#ea5520"
+                },
+                {
+                    "name":"黄丹",
+                    "colorCode":"#ee7948"
+                },
+                {
+                    "name":"バーミリオン",
+                    "colorCode":"#eb613b"
+                }
+            ],
+            [
+                {
+                    "name":"チャイニーズレッド",
+                    "colorCode":"#ea5520"
+                },
+                {
+                    "name":"柑子色",
+                    "colorCode":"#f6ad48"
+                },
+                {
+                    "name":"桧皮色",
+                    "colorCode":"#965036"
+                }
+            ],
+            [
+                {
+                    "name":"チャイニーズレッド",
+                    "colorCode":"#ea5520"
+                },
+                {
+                    "name":"マリーゴールド",
+                    "colorCode":"#f39800"
+                },
+                {
+                    "name":"黄丹",
+                    "colorCode":"#ee7948"
+                },
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -220,11 +805,50 @@ export const thirdExam = [
         colorCode:"#b25532",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"桧皮色",
+                    "colorCode":"#965036"
+                },
+                {
+                    "name":"バーントシェンナ",
+                    "colorCode":"#b25532"
+                },
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                }
+            ],
+            [
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                },
+                {
+                    "name":"バーントシェンナ",
+                    "colorCode":"#b25532"
+                },
+                {
+                    "name":"琥珀色",
+                    "colorCode":"#bf7834"
+                }
+            ],
+            [
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                },
+                {
+                    "name":"バーントシェンナ",
+                    "colorCode":"#b25532"
+                },
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -234,9 +858,48 @@ export const thirdExam = [
         colorCode:"#d98032",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"バーントシェンナ",
+                    "colorCode":"#b25532"
+                },
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                },
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                }
+            ],
+            [
+                {
+                    "name":"桧皮色",
+                    "colorCode":"#965036"
+                },
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                },
+                {
+                    "name":"琥珀色",
+                    "colorCode":"#bf7834"
+                }
+            ],
+            [
+                {
+                    "name":"テラコッタ",
+                    "colorCode":"#be6d55"
+                },
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                },
+                {
+                    "name":"ローアンバー",
+                    "colorCode":"#916f24"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -248,9 +911,48 @@ export const thirdExam = [
         colorCode:"#c1813f",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"カーキー",
+                    "colorCode":"#bb9855"
+                },
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                },
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                }
+            ],
+            [
+                {
+                    "name":"黄土色",
+                    "colorCode":"#c39043"
+                },
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                },
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                }
+            ],
+            [
+                {
+                    "name":"ローアンバー",
+                    "colorCode":"#916f24"
+                },
+                {
+                    "name":"アンバー",
+                    "colorCode":"#c28953"
+                },
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -262,11 +964,50 @@ export const thirdExam = [
         colorCode:"#bf7834",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"アンバー",
+                    "colorCode":"#c28953"
+                },
+                {
+                    "name":"琥珀色",
+                    "colorCode":"#bf7834"
+                },
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                }
+            ],
+            [
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                },
+                {
+                    "name":"琥珀色",
+                    "colorCode":"#bf7834"
+                },
+                {
+                    "name":"代赭",
+                    "colorCode":"#bb541f"
+                }
+            ],
+            [
+                {
+                    "name":"黄土色",
+                    "colorCode":"#c39043"
+                },
+                {
+                    "name":"琥珀色",
+                    "colorCode":"#bf7834"
+                },
+                {
+                    "name":"ローアンバー",
+                    "colorCode":"#916f24"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -276,11 +1017,50 @@ export const thirdExam = [
         colorCode:"#917347",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"朽葉色",
+                    "colorCode":"#917347"
+                },
+                {
+                    "name":"カーキー",
+                    "colorCode":"#bb9855"
+                },
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                }
+            ],
+            [
+                {
+                    "name":"朽葉色",
+                    "colorCode":"#917347"
+                },
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                },
+                {
+                    "name":"桧皮色",
+                    "colorCode":"#965036"
+                }
+            ],
+            [
+                {
+                    "name":"朽葉色",
+                    "colorCode":"#917347"
+                },
+                {
+                    "name":"煤竹色",
+                    "colorCode":"#6b5146"
+                },
+                {
+                    "name":"代赭",
+                    "colorCode":"#bb541f"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -290,9 +1070,48 @@ export const thirdExam = [
         colorCode:"#fabf13",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"鬱金色",
+                    "colorCode":"#fabf13"
+                },
+                {
+                    "name":"刈安色",
+                    "colorCode":"#f5e56b"
+                },
+                {
+                    "name":"ゴールデンイエロー",
+                    "colorCode":"#f8b856"
+                }
+            ],
+            [
+                {
+                    "name":"鬱金色",
+                    "colorCode":"#fabf13"
+                },
+                {
+                    "name":"ネープルスイエロー",
+                    "colorCode":"#fdd75c"
+                },
+                {
+                    "name":"ジョンブリアン",
+                    "colorCode":"#ffdc00"
+                },
+            ],
+            [
+                {
+                    "name":"黄蘗色",
+                    "colorCode":"#fef263"
+                },
+                {
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
+                },
+                {
+                    "name":"柑子色",
+                    "colorCode":"#f6ad48"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -304,9 +1123,48 @@ export const thirdExam = [
         colorCode:"#f5e56b",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"黄蘗色",
+                    "colorCode":"#fef263"
+                },
+                {
+                    "name":"刈安色",
+                    "colorCode":"#f5e56b"
+                },
+                {
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
+                }
+            ],
+            [
+                {
+                    "name":"ネープルスイエロー",
+                    "colorCode":"#fdd75c"
+                },
+                {
+                    "name":"刈安色",
+                    "colorCode":"#f5e56b"
+                },
+                {
+                    "name":"ゴールデンイエロー",
+                    "colorCode":"#f8b856"
+                }
+            ],
+            [
+                {
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
+                },
+                {
+                    "name":"刈安色",
+                    "colorCode":"#f5e56b"
+                },
+                {
+                    "name":"鬱金色",
+                    "colorCode":"#fabf13"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -318,9 +1176,48 @@ export const thirdExam = [
         colorCode:"#f8eacf",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ピーチ",
+                    "colorCode":"#fbd8b5"
+                },
+                {
+                    "name":"ネープルスイエロー",
+                    "colorCode":"#fdd75c"
+                },
+                {
+                    "name":"エクルベイジュ",
+                    "colorCode":"#f8eacf"
+                }
+            ],
+            [
+                {
+                    "name":"生成り色",
+                    "colorCode":"#fbfaf3"
+                },
+                {
+                    "name":"アイボリー",
+                    "colorCode":"#F8F5E4"
+                },
+                {
+                    "name":"エクルベイジュ",
+                    "colorCode":"#f8eacf"
+                }
+            ],
+            [
+                {
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
+                },
+                {
+                    "name":"生成り色",
+                    "colorCode":"#fbfaf3"
+                },
+                {
+                    "name":"エクルベイジュ",
+                    "colorCode":"#f8eacf"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -332,11 +1229,50 @@ export const thirdExam = [
         colorCode:"#f8b856",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"刈安色",
+                    "colorCode":"#f5e56b"
+                },
+                {
+                    "name":"ゴールデンイエロー",
+                    "colorCode":"#f8b856"
+                },
+                {
+                    "name":"ネープルスイエロー",
+                    "colorCode":"#fdd75c"
+                }
+            ],
+            [
+                {
+                    "name":"ジョンブリアン",
+                    "colorCode":"#ffdc00"
+                },
+                {
+                    "name":"ゴールデンイエロー",
+                    "colorCode":"#f8b856"
+                },
+                {
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
+                }
+            ],
+            [
+                {
+                    "name":"鬱金色",
+                    "colorCode":"#fabf13"
+                },
+                {
+                    "name":"ゴールデンイエロー",
+                    "colorCode":"#f8b856"
+                },
+                {
+                    "name":"柑子色",
+                    "colorCode":"#f6ad48"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -346,11 +1282,50 @@ export const thirdExam = [
         colorCode:"#c28953",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"アンバー",
+                    "colorCode":"#c28953"
+                },
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                },
+                {
+                    "name":"黄土色",
+                    "colorCode":"#c39043"
+                }
+            ],
+            [
+                {
+                    "name":"アンバー",
+                    "colorCode":"#c28953"
+                },
+                {
+                    "name":"琥珀色",
+                    "colorCode":"#bf7834"
+                },
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                }
+            ],
+            [
+                {
+                    "name":"アンバー",
+                    "colorCode":"#c28953"
+                },
+                {
+                    "name":"バーントアンバー",
+                    "colorCode":"#7a5e3d"
+                },
+                {
+                    "name":"代赭",
+                    "colorCode":"#bb541f"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -360,11 +1335,50 @@ export const thirdExam = [
         colorCode:"#7a5e3d",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"バーントアンバー",
+                    "colorCode":"#7a5e3d"
+                },
+                {
+                    "name":"桧皮色",
+                    "colorCode":"#965036"
+                },
+                {
+                    "name":"アンバー",
+                    "colorCode":"#c28953"
+                }
+            ],
+            [
+                {
+                    "name":"バーントアンバー",
+                    "colorCode":"#7a5e3d"
+                },
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                },
+                {
+                    "name":"テラコッタ",
+                    "colorCode":"#be6d55"
+                }
+            ],
+            [
+                {
+                    "name":"バーントアンバー",
+                    "colorCode":"#7a5e3d"
+                },
+                {
+                    "name":"琥珀色",
+                    "colorCode":"#bf7834"
+                },
+                {
+                    "name":"ローアンバー",
+                    "colorCode":"#916f24"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -374,11 +1388,50 @@ export const thirdExam = [
         colorCode:"#916f24",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                },
+                {
+                    "name":"ローアンバー",
+                    "colorCode":"#916f24"
+                },
+                {
+                    "name":"琥珀色",
+                    "colorCode":"#bf7834"
+                }
+            ],
+            [
+                {
+                    "name":"タン",
+                    "colorCode":"#c1813f"
+                },
+                {
+                    "name":"ローアンバー",
+                    "colorCode":"#916f24"
+                },
+                {
+                    "name":"バーントアンバー",
+                    "colorCode":"#7a5e3d"
+                }
+            ],
+            [
+                {
+                    "name":"ローシェンナ",
+                    "colorCode":"#d98032"
+                },
+                {
+                    "name":"ローアンバー",
+                    "colorCode":"#916f24"
+                },
+                {
+                    "name":"アンバー",
+                    "colorCode":"#c28953"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -388,9 +1441,48 @@ export const thirdExam = [
         colorCode:"#fdd75c",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"刈安色",
+                    "colorCode":"#f5e56b"
+                },
+                {
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
+                },
+                {
+                    "name":"ネープルスイエロー",
+                    "colorCode":"#fdd75c"
+                }
+            ],
+            [
+                {
+                    "name":"ジョンブリアン",
+                    "colorCode":"#ffdc00"
+                },
+                {
+                    "name":"黄蘗色",
+                    "colorCode":"#fef263"
+                },
+                {
+                    "name":"ネープルスイエロー",
+                    "colorCode":"#fdd75c"
+                }
+            ],
+            [
+                {
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
+                },
+                {
+                    "name":"ゴールデンイエロー",
+                    "colorCode":"#f8b856"
+                },
+                {
+                    "name":"ネープルスイエロー",
+                    "colorCode":"#fdd75c"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -402,11 +1494,50 @@ export const thirdExam = [
         colorCode:"#ffdc00",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
+                },
+                {
+                    "name":"ジョンブリアン",
+                    "colorCode":"#ffdc00"
+                },
+                {
+                    "name":"鬱金色",
+                    "colorCode":"#fabf13"
+                }
+            ],
+            [
+                {
+                    "name":"ゴールデンイエロー",
+                    "colorCode":"#f8b856"
+                },
+                {
+                    "name":"ジョンブリアン",
+                    "colorCode":"#ffdc00"
+                },
+                {
+                    "name":"ネープルスイエロー",
+                    "colorCode":"#fdd75c"
+                }
+            ],
+            [
+                {
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
+                },
+                {
+                    "name":"ジョンブリアン",
+                    "colorCode":"#ffdc00"
+                },
+                {
+                    "name":"ゴールデンイエロー",
+                    "colorCode":"#f8b856"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -416,11 +1547,50 @@ export const thirdExam = [
         colorCode:"#fef263",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"黄蘗色",
+                    "colorCode":"#fef263"
+                },
+                {
+                    "name":"ゴールデンイエロー",
+                    "colorCode":"#f8b856"
+                },
+                {
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
+                }
+            ],
+            [
+                {
+                    "name":"黄蘗色",
+                    "colorCode":"#fef263"
+                },
+                {
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
+                },
+                {
+                    "name":"ネープルスイエロー",
+                    "colorCode":"#fdd75c"
+                }
+            ],
+            [
+                {
+                    "name":"黄蘗色",
+                    "colorCode":"#fef263"
+                },
+                {
+                    "name":"柑子色",
+                    "colorCode":"#f6ad48"
+                },
+                {
+                    "name":"刈安色",
+                    "colorCode":"#f5e56b"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -430,9 +1600,48 @@ export const thirdExam = [
         colorCode:"#726d3f",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"鶸色",
+                    "colorCode":"#d7cf3a"
+                },
+                {
+                    "name":"グラスグリーン",
+                    "colorCode":"#7b8d41"
+                },
+                {
+                    "name":"海松色",
+                    "colorCode":"#726d3f"
+                }
+            ],
+            [
+                {
+                    "name":"鶯色",
+                    "colorCode":"#9d973b"
+                },
+                {
+                    "name":"グラスグリーン",
+                    "colorCode":"#7b8d41"
+                },
+                {
+                    "name":"海松色",
+                    "colorCode":"#726d3f"
+                }
+            ],
+            [
+                {
+                    "name":"オリーブ",
+                    "colorCode":"#72640a"
+                },
+                {
+                    "name":"鶯色",
+                    "colorCode":"#9d973b"
+                },
+                {
+                    "name":"海松色",
+                    "colorCode":"#726d3f"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -444,11 +1653,50 @@ export const thirdExam = [
         colorCode:"#d7cf3a",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"鶸色",
+                    "colorCode":"#d7cf3a"
+                },
+                {
+                    "name":"海松色",
+                    "colorCode":"#726d3f"
+                },
+                {
+                    "name":"グラスグリーン",
+                    "colorCode":"#7b8d41"
+                }
+            ],
+            [
+                {
+                    "name":"鶸色",
+                    "colorCode":"#d7cf3a"
+                },
+                {
+                    "name":"鶯色",
+                    "colorCode":"#9d973b"
+                },
+                {
+                    "name":"海松色",
+                    "colorCode":"#726d3f"
+                }
+            ],
+            [
+                {
+                    "name":"鶸色",
+                    "colorCode":"#d7cf3a"
+                },
+                {
+                    "name":"鴇色",
+                    "colorCode":"#f4b3c2"
+                },
+                {
+                    "name":"鶯色",
+                    "colorCode":"#9d973b"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -458,11 +1706,50 @@ export const thirdExam = [
         colorCode:"#d9e367",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"萌黄",
+                    "colorCode":"#AFD147"
+                },
+                {
+                    "name":"シャトルーズグリーン",
+                    "colorCode":"#d9e367"
+                },
+                {
+                    "name":"鶸色",
+                    "colorCode":"#d7cf3a"
+                }
+            ],
+            [
+                {
+                    "name":"グラスグリーン",
+                    "colorCode":"#7b8d41"
+                },
+                {
+                    "name":"シャトルーズグリーン",
+                    "colorCode":"#d9e367"
+                },
+                {
+                    "name":"リーフグリーン",
+                    "colorCode":"#9dc04c"
+                }
+            ],
+            [
+                {
+                    "name":"リーフグリーン",
+                    "colorCode":"#9dc04c"
+                },
+                {
+                    "name":"シャトルーズグリーン",
+                    "colorCode":"#d9e367"
+                },
+                {
+                    "name":"萌黄",
+                    "colorCode":"#AFD147"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -472,11 +1759,50 @@ export const thirdExam = [
         colorCode:"#9dc04c",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"リーフグリーン",
+                    "colorCode":"#9dc04c"
+                },
+                {
+                    "name":"シャトルーズグリーン",
+                    "colorCode":"#d9e367"
+                },
+                {
+                    "name":"グラスグリーン",
+                    "colorCode":"#7b8d41"
+                }
+            ],
+            [
+                {
+                    "name":"リーフグリーン",
+                    "colorCode":"#9dc04c"
+                },
+                {
+                    "name":"鶯色",
+                    "colorCode":"#9d973b"
+                },
+                {
+                    "name":"鶸色",
+                    "colorCode":"#d7cf3a"
+                }
+            ],
+            [
+                {
+                    "name":"リーフグリーン",
+                    "colorCode":"#9dc04c"
+                },
+                {
+                    "name":"萌黄",
+                    "colorCode":"#AFD147"
+                },
+                {
+                    "name":"オリーブ",
+                    "colorCode":"#72640a"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -486,9 +1812,48 @@ export const thirdExam = [
         colorCode:"#7b8d41",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"リーフグリーン",
+                    "colorCode":"#9dc04c"
+                },
+                {
+                    "name":"海松色",
+                    "colorCode":"#726d3f"
+                },
+                {
+                    "name":"グラスグリーン",
+                    "colorCode":"#7b8d41"
+                }
+            ],
+            [
+                {
+                    "name":"鶸色",
+                    "colorCode":"#d7cf3a"
+                },
+                {
+                    "name":"鶯色",
+                    "colorCode":"#9d973b"
+                },
+                {
+                    "name":"グラスグリーン",
+                    "colorCode":"#7b8d41"
+                }
+            ],
+            [
+                {
+                    "name":"オリーブ",
+                    "colorCode":"#72640a"
+                },
+                {
+                    "name":"シャトルーズグリーン",
+                    "colorCode":"#d9e367"
+                },
+                {
+                    "name":"グラスグリーン",
+                    "colorCode":"#7b8d41"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -500,11 +1865,50 @@ export const thirdExam = [
         colorCode:"#007c45",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"常磐色",
+                    "colorCode":"#007c45"
+                },
+                {
+                    "name":"ボトルグリーン",
+                    "colorCode":"#005635"
+                },
+                {
+                    "name":"グラスグリーン",
+                    "colorCode":"#7b8d41"
+                }
+            ],
+            [
+                {
+                    "name":"常磐色",
+                    "colorCode":"#007c45"
+                },
+                {
+                    "name":"マラカイトグリーン",
+                    "colorCode":"##009854"
+                },
+                {
+                    "name":"オリーブ",
+                    "colorCode":"#72640a"
+                }
+            ],
+            [
+                {
+                    "name":"常磐色",
+                    "colorCode":"#007c45"
+                },
+                {
+                    "name":"海松色",
+                    "colorCode":"#726d3f"
+                },
+                {
+                    "name":"ボトルグリーン",
+                    "colorCode":"#005635"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -514,11 +1918,50 @@ export const thirdExam = [
         colorCode:"#4f8a5d",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"鶯色",
+                    "colorCode":"#9d973b"
+                },
+                {
+                    "name":"緑青色",
+                    "colorCode":"#4f8a5d"
+                },
+                {
+                    "name":"常磐色",
+                    "colorCode":"#007c45"
+                }
+            ],
+            [
+                {
+                    "name":"コバルトグリーン",
+                    "colorCode":"#3ab483"
+                },
+                {
+                    "name":"緑青色",
+                    "colorCode":"#4f8a5d"
+                },
+                {
+                    "name":"ミントグリーン",
+                    "colorCode":"#98ce97"
+                }
+            ],
+            [
+                {
+                    "name":"ピーコックグリーン",
+                    "colorCode":"#00a496"
+                },
+                {
+                    "name":"緑青色",
+                    "colorCode":"#4f8a5d"
+                },
+                {
+                    "name":"青磁色",
+                    "colorCode":"#68b7a1"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -528,9 +1971,48 @@ export const thirdExam = [
         colorCode:"#a2cc89",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"コバルトグリーン",
+                    "colorCode":"#3ab483"
+                },
+                {
+                    "name":"シャトルーズグリーン",
+                    "colorCode":"#d9e367"
+                },
+                {
+                    "name":"アップルグリーン",
+                    "colorCode":"#a2cc89"
+                }
+            ],
+            [
+                {
+                    "name":"ピーコックグリーン",
+                    "colorCode":"#00a496"
+                },
+                {
+                    "name":"ミントグリーン",
+                    "colorCode":"#98ce97"
+                },
+                {
+                    "name":"アップルグリーン",
+                    "colorCode":"#a2cc89"
+                }
+            ],
+            [
+                {
+                    "name":"ミントグリーン",
+                    "colorCode":"#98ce97"
+                },
+                {
+                    "name":"グラスグリーン",
+                    "colorCode":"#7b8d41"
+                },
+                {
+                    "name":"アップルグリーン",
+                    "colorCode":"#a2cc89"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -542,11 +2024,50 @@ export const thirdExam = [
         colorCode:"#98ce97",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ミントグリーン",
+                    "colorCode":"#98ce97"
+                },
+                {
+                    "name":"アップルグリーン",
+                    "colorCode":"#a2cc89"
+                },
+                {
+                    "name":"シャトルーズグリーン",
+                    "colorCode":"#d9e367"
+                }
+            ],
+            [
+                {
+                    "name":"ミントグリーン",
+                    "colorCode":"#98ce97"
+                },
+                {
+                    "name":"リーフグリーン",
+                    "colorCode":"#9dc04c"
+                },
+                {
+                    "name":"ピーコックグリーン",
+                    "colorCode":"#00a496"
+                }
+            ],
+            [
+                {
+                    "name":"ミントグリーン",
+                    "colorCode":"#98ce97"
+                },
+                {
+                    "name":"緑青色",
+                    "colorCode":"#4f8a5d"
+                },
+                {
+                    "name":"アップルグリーン",
+                    "colorCode":"#a2cc89"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -556,9 +2077,48 @@ export const thirdExam = [
         colorCode:"#009854",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ピーコックグリーン",
+                    "colorCode":"#00a496"
+                },
+                {
+                    "name":"エメラルドグリーン",
+                    "colorCode":"#00aa6e"
+                },
+                {
+                    "name":"マラカイトグリーン",
+                    "colorCode":"##009854"
+                }
+            ],
+            [
+                {
+                    "name":"ピーコックグリーン",
+                    "colorCode":"#00a496"
+                },
+                {
+                    "name":"コバルトグリーン",
+                    "colorCode":"#3ab483"
+                },
+                {
+                    "name":"マラカイトグリーン",
+                    "colorCode":"##009854"
+                }
+            ],
+            [
+                {
+                    "name":"ボトルグリーン",
+                    "colorCode":"#005635"
+                },
+                {
+                    "name":"常磐色",
+                    "colorCode":"#007c45"
+                },
+                {
+                    "name":"マラカイトグリーン",
+                    "colorCode":"##009854"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -570,25 +2130,103 @@ export const thirdExam = [
         colorCode:"#005635",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ボトルグリーン",
+                    "colorCode":"#005635"
+                },
+                {
+                    "name":"エメラルドグリーン",
+                    "colorCode":"#00aa6e"
+                },
+                {
+                    "name":"常磐色",
+                    "colorCode":"#007c45"
+                }
+            ],
+            [
+                {
+                    "name":"ボトルグリーン",
+                    "colorCode":"#005635"
+                },
+                {
+                    "name":"マラカイトグリーン",
+                    "colorCode":"##009854"
+                },
+                {
+                    "name":"海松色",
+                    "colorCode":"#726d3f"
+                }
+            ],
+            [
+                {
+                    "name":"ボトルグリーン",
+                    "colorCode":"#005635"
+                },
+                {
+                    "name":"常磐色",
+                    "colorCode":"#007c45"
+                },
+                {
+                    "name":"鉄色",
+                    "colorCode":"#005242"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
         id:42,
-        title:"鉄色（てついろ）",
+        title:"鉄色",
         subTitle:"ごく暗い青緑",
         colorCode:"#005242",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ボトルグリーン",
+                    "colorCode":"#005635"
+                },
+                {
+                    "name":"鉄色",
+                    "colorCode":"#005242"
+                },
+                {
+                    "name":"常磐色",
+                    "colorCode":"#007c45"
+                }
+            ],
+            [
+                {
+                    "name":"青磁色",
+                    "colorCode":"#68b7a1"
+                },
+                {
+                    "name":"鉄色",
+                    "colorCode":"#005242"
+                },
+                {
+                    "name":"エメラルドグリーン",
+                    "colorCode":"#00aa6e"
+                }
+            ],
+            [
+                {
+                    "name":"常磐色",
+                    "colorCode":"#007c45"
+                },
+                {
+                    "name":"鉄色",
+                    "colorCode":"#005242"
+                },
+                {
+                    "name":"海松色",
+                    "colorCode":"#726d3f"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -598,11 +2236,50 @@ export const thirdExam = [
         colorCode:"#00a496",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ピーコックグリーン",
+                    "colorCode":"#00a496"
+                },
+                {
+                    "name":"ナイルブルー",
+                    "colorCode":"#259f94"
+                },
+                {
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
+                }
+            ],
+            [
+                {
+                    "name":"ピーコックグリーン",
+                    "colorCode":"#00a496"
+                },
+                {
+                    "name":"新橋色",
+                    "colorCode":"#64bcc7"
+                },
+                {
+                    "name":"群青色",
+                    "colorCode":"#4e67b0"
+                }
+            ],
+            [
+                {
+                    "name":"ピーコックグリーン",
+                    "colorCode":"#00a496"
+                },
+                {
+                    "name":"セルリアンブルー",
+                    "colorCode":"#008db7"
+                },
+                {
+                    "name":"サックスブルー",
+                    "colorCode":"#3a8daa"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -612,9 +2289,48 @@ export const thirdExam = [
         colorCode:"#259f94",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"セルリアンブルー",
+                    "colorCode":"#008db7"
+                },
+                {
+                    "name":"青磁色",
+                    "colorCode":"#68b7a1"
+                },
+                {
+                    "name":"ナイルブルー",
+                    "colorCode":"#259f94"
+                }
+            ],
+            [
+                {
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
+                },
+                {
+                    "name":"セルリアンブルー",
+                    "colorCode":"#008db7"
+                },
+                {
+                    "name":"ナイルブルー",
+                    "colorCode":"#259f94"
+                }
+            ],
+            [
+                {
+                    "name":"群青色",
+                    "colorCode":"#4e67b0"
+                },
+                {
+                    "name":"サックスブルー",
+                    "colorCode":"#3a8daa"
+                },
+                {
+                    "name":"ナイルブルー",
+                    "colorCode":"#259f94"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -626,9 +2342,48 @@ export const thirdExam = [
         colorCode:"#64bcc7",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"空色",
+                    "colorCode":"#A0D8EF"
+                },
+                {
+                    "name":"セルリアンブルー",
+                    "colorCode":"#008db7"
+                },
+                {
+                    "name":"新橋色",
+                    "colorCode":"#64bcc7"
+                }
+            ],
+            [
+                {
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
+                },
+                {
+                    "name":"甕覗",
+                    "colorCode":"#a2d7dd"
+                },
+                {
+                    "name":"新橋色",
+                    "colorCode":"#64bcc7"
+                }
+            ],
+            [
+                {
+                    "name":"甕覗",
+                    "colorCode":"#a2d7dd"
+                },
+                {
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
+                },
+                {
+                    "name":"新橋色",
+                    "colorCode":"#64bcc7"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -640,11 +2395,50 @@ export const thirdExam = [
         colorCode:"#007d92",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ナイルブルー",
+                    "colorCode":"#259f94"
+                },
+                {
+                    "name":"納戸色",
+                    "colorCode":"#007d92"
+                },
+                {
+                    "name":"青磁色",
+                    "colorCode":"#68b7a1"
+                }
+            ],
+            [
+                {
+                    "name":"サックスブルー",
+                    "colorCode":"#3a8daa"
+                },
+                {
+                    "name":"納戸色",
+                    "colorCode":"#007d92"
+                },
+                {
+                    "name":"縹色",
+                    "colorCode":"#2980af"
+                }
+            ],
+            [
+                {
+                    "name":"セルリアンブルー",
+                    "colorCode":"#008db7"
+                },
+                {
+                    "name":"納戸色",
+                    "colorCode":"#007d92"
+                },
+                {
+                    "name":"群青色",
+                    "colorCode":"#4e67b0"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -654,11 +2448,50 @@ export const thirdExam = [
         colorCode:"#a2d7dd",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"甕覗",
+                    "colorCode":"#a2d7dd"
+                },
+                {
+                    "name":"新橋色",
+                    "colorCode":"#64bcc7"
+                },
+                {
+                    "name":"セルリアンブルー",
+                    "colorCode":"#008db7"
+                }
+            ],
+            [
+                {
+                    "name":"甕覗",
+                    "colorCode":"#a2d7dd"
+                },
+                {
+                    "name":"縹色",
+                    "colorCode":"#2980af"
+                },
+                {
+                    "name":"新橋色",
+                    "colorCode":"#64bcc7"
+                }
+            ],
+            [
+                {
+                    "name":"甕覗",
+                    "colorCode":"#a2d7dd"
+                },
+                {
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
+                },
+                {
+                    "name":"青磁色",
+                    "colorCode":"#68b7a1"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -668,9 +2501,48 @@ export const thirdExam = [
         colorCode:"#2980af",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"藍色",
+                    "colorCode":"#0f5779"
+                },
+                {
+                    "name":"群青色",
+                    "colorCode":"#4e67b0"
+                },
+                {
+                    "name":"縹色",
+                    "colorCode":"#2980af"
+                }
+            ],
+            [
+                {
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
+                },
+                {
+                    "name":"納戸色",
+                    "colorCode":"#007d92"
+                },
+                {
+                    "name":"縹色",
+                    "colorCode":"#2980af"
+                }
+            ],
+            [
+                {
+                    "name":"コバルトブルー",
+                    "colorCode":"#0068b7"
+                },
+                {
+                    "name":"ナイルブルー",
+                    "colorCode":"#259f94"
+                },
+                {
+                    "name":"縹色",
+                    "colorCode":"#2980af"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -682,11 +2554,50 @@ export const thirdExam = [
         colorCode:"#008db7",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ナイルブルー",
+                    "colorCode":"#259f94"
+                },
+                {
+                    "name":"セルリアンブルー",
+                    "colorCode":"#008db7"
+                },
+                {
+                    "name":"縹色",
+                    "colorCode":"#2980af"
+                }
+            ],
+            [
+                {
+                    "name":"納戸色",
+                    "colorCode":"#007d92"
+                },
+                {
+                    "name":"セルリアンブルー",
+                    "colorCode":"#008db7"
+                },
+                {
+                    "name":"コバルトブルー",
+                    "colorCode":"#0068b7"
+                }
+            ],
+            [
+                {
+                    "name":"縹色",
+                    "colorCode":"#2980af"
+                },
+                {
+                    "name":"セルリアンブルー",
+                    "colorCode":"#008db7"
+                },
+                {
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -696,11 +2607,50 @@ export const thirdExam = [
         colorCode:"#001d42",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ミッドナイトブルー",
+                    "colorCode":"#001d42"
+                },
+                {
+                    "name":"瑠璃色",
+                    "colorCode":"#1d50a2"
+                },
+                {
+                    "name":"ネービーブルー",
+                    "colorCode":"#1f2e55"
+                }
+            ],
+            [
+                {
+                    "name":"ミッドナイトブルー",
+                    "colorCode":"#001d42"
+                },
+                {
+                    "name":"藍色",
+                    "colorCode":"#0f5779"
+                },
+                {
+                    "name":"縹色",
+                    "colorCode":"#2980af"
+                }
+            ],
+            [
+                {
+                    "name":"ミッドナイトブルー",
+                    "colorCode":"#001d42"
+                },
+                {
+                    "name":"ネービーブルー",
+                    "colorCode":"#1f2e55"
+                },
+                {
+                    "name":"納戸色",
+                    "colorCode":"#007d92"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -710,9 +2660,48 @@ export const thirdExam = [
         colorCode:"#bbb7da",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ライラック",
+                    "colorCode":"#D2BADA"
+                },
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                },
+                {
+                    "name":"藤色",
+                    "colorCode":"#bbb7da"
+                }
+            ],
+            [
+                {
+                    "name":"ウィスタリア",
+                    "colorCode":"#8e8bc2"
+                },
+                {
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
+                },
+                {
+                    "name":"藤色",
+                    "colorCode":"#bbb7da"
+                }
+            ],
+            [
+                {
+                    "name":"ライラック",
+                    "colorCode":"#D2BADA"
+                },
+                {
+                    "name":"ウィスタリア",
+                    "colorCode":"#8e8bc2"
+                },
+                {
+                    "name":"藤色",
+                    "colorCode":"#bbb7da"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -724,11 +2713,50 @@ export const thirdExam = [
         colorCode:"#8e8bc2",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
+                },
+                {
+                    "name":"ウィスタリア",
+                    "colorCode":"#8e8bc2"
+                },
+                {
+                    "name":"ライラック",
+                    "colorCode":"#D2BADA"
+                }
+            ],
+            [
+                {
+                    "name":"藤色",
+                    "colorCode":"#bbb7da"
+                },
+                {
+                    "name":"ウィスタリア",
+                    "colorCode":"#8e8bc2"
+                },
+                {
+                    "name":"ライラック",
+                    "colorCode":"#D2BADA"
+                }
+            ],
+            [
+                {
+                    "name":"藤色",
+                    "colorCode":"#bbb7da"
+                },
+                {
+                    "name":"ウィスタリア",
+                    "colorCode":"#8e8bc2"
+                },
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -738,9 +2766,48 @@ export const thirdExam = [
         colorCode:"#734e95",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"茄子紺",
+                    "colorCode":"#4b1a47"
+                },
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                },
+                {
+                    "name":"江戸紫",
+                    "colorCode":"#734e95"
+                }
+            ],
+            [
+                {
+                    "name":"古代紫",
+                    "colorCode":"#895687"
+                },
+                {
+                    "name":"桔梗色",
+                    "colorCode":"#5754A3"
+                },
+                {
+                    "name":"江戸紫",
+                    "colorCode":"#734e95"
+                }
+            ],
+            [
+                {
+                    "name":"藤色",
+                    "colorCode":"#bbb7da"
+                },
+                {
+                    "name":"古代紫",
+                    "colorCode":"#895687"
+                },
+                {
+                    "name":"江戸紫",
+                    "colorCode":"#734e95"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -752,11 +2819,50 @@ export const thirdExam = [
         colorCode:"#895687",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"江戸紫",
+                    "colorCode":"#734e95"
+                },
+                {
+                    "name":"古代紫",
+                    "colorCode":"#895687"
+                },
+                {
+                    "name":"藤色",
+                    "colorCode":"#bbb7da"
+                }
+            ],
+            [
+                {
+                    "name":"茄子紺",
+                    "colorCode":"#4b1a47"
+                },
+                {
+                    "name":"古代紫",
+                    "colorCode":"#895687"
+                },
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                }
+            ],
+            [
+                {
+                    "name":"桔梗色",
+                    "colorCode":"#5754A3"
+                },
+                {
+                    "name":"古代紫",
+                    "colorCode":"#895687"
+                },
+                {
+                    "name":"江戸紫",
+                    "colorCode":"#734e95"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -766,11 +2872,50 @@ export const thirdExam = [
         colorCode:"#D2BADA",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ライラック",
+                    "colorCode":"#D2BADA"
+                },
+                {
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
+                },
+                {
+                    "name":"ウィスタリア",
+                    "colorCode":"#8e8bc2"
+                }
+            ],
+            [
+                {
+                    "name":"ライラック",
+                    "colorCode":"#D2BADA"
+                },
+                {
+                    "name":"藤色",
+                    "colorCode":"#bbb7da"
+                },
+                {
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
+                }
+            ],
+            [
+                {
+                    "name":"ライラック",
+                    "colorCode":"#D2BADA"
+                },
+                {
+                    "name":"ウィスタリア",
+                    "colorCode":"#8e8bc2"
+                },
+                {
+                    "name":"藤色",
+                    "colorCode":"#bbb7da"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -780,9 +2925,48 @@ export const thirdExam = [
         colorCode:"#afafb0",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"シルバーグレイ",
+                    "colorCode":"#afafb0"
+                },
+                {
+                    "name":"利休鼠",
+                    "colorCode":"#7b8174"
+                },
+                {
+                    "name":"銀鼠",
+                    "colorCode":"#afafb0"
+                }
+            ],
+            [
+                {
+                    "name":"スレートグレイ",
+                    "colorCode":"#636062"
+                },
+                {
+                    "name":"シルバーグレイ",
+                    "colorCode":"#afafb0"
+                },
+                {
+                    "name":"銀鼠",
+                    "colorCode":"#afafb0"
+                }
+            ],
+            [
+                {
+                    "name":"利休鼠",
+                    "colorCode":"#7b8174"
+                },
+                {
+                    "name":"茶鼠",
+                    "colorCode":"#a99e93"
+                },
+                {
+                    "name":"銀鼠",
+                    "colorCode":"#afafb0"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -794,11 +2978,50 @@ export const thirdExam = [
         colorCode:"#a99e93",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"銀鼠",
+                    "colorCode":"#afafb0"
+                },
+                {
+                    "name":"茶鼠",
+                    "colorCode":"#a99e93"
+                },
+                {
+                    "name":"利休鼠",
+                    "colorCode":"#7b8174"
+                }
+            ],
+            [
+                {
+                    "name":"煤竹色",
+                    "colorCode":"#6b5146"
+                },
+                {
+                    "name":"茶鼠",
+                    "colorCode":"#a99e93"
+                },
+                {
+                    "name":"朽葉色",
+                    "colorCode":"#917347"
+                }
+            ],
+            [
+                {
+                    "name":"蘇芳",
+                    "colorCode":"#9e3d3e"
+                },
+                {
+                    "name":"茶鼠",
+                    "colorCode":"#a99e93"
+                },
+                {
+                    "name":"煤竹色",
+                    "colorCode":"#6b5146"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -808,9 +3031,48 @@ export const thirdExam = [
         colorCode:"#7b8174",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"鶯色",
+                    "colorCode":"#9d973b"
+                },
+                {
+                    "name":"銀鼠",
+                    "colorCode":"#afafb0"
+                },
+                {
+                    "name":"利休鼠",
+                    "colorCode":"#7b8174"
+                }
+            ],
+            [
+                {
+                    "name":"鶸色",
+                    "colorCode":"#d7cf3a"
+                },
+                {
+                    "name":"煤竹色",
+                    "colorCode":"#6b5146"
+                },
+                {
+                    "name":"利休鼠",
+                    "colorCode":"#7b8174"
+                }
+            ],
+            [
+                {
+                    "name":"茶鼠",
+                    "colorCode":"#a99e93"
+                },
+                {
+                    "name":"銀鼠",
+                    "colorCode":"#afafb0"
+                },
+                {
+                    "name":"利休鼠",
+                    "colorCode":"#7b8174"
+                }
+            ]
         ],
         answer:3,
         faultCount:0,
@@ -822,11 +3084,50 @@ export const thirdExam = [
         colorCode:"#6b5146",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"朽葉色",
+                    "colorCode":"#917347"
+                },
+                {
+                    "name":"煤竹色",
+                    "colorCode":"#6b5146"
+                },
+                {
+                    "name":"茶鼠",
+                    "colorCode":"#a99e93"
+                }
+            ],
+            [
+                {
+                    "name":"利休鼠",
+                    "colorCode":"#7b8174"
+                },
+                {
+                    "name":"煤竹色",
+                    "colorCode":"#6b5146"
+                },
+                {
+                    "name":"スレートグレイ",
+                    "colorCode":"#636062"
+                }
+            ],
+            [
+                {
+                    "name":"銀鼠",
+                    "colorCode":"#afafb0"
+                },
+                {
+                    "name":"煤竹色",
+                    "colorCode":"#6b5146"
+                },
+                {
+                    "name":"朽葉色",
+                    "colorCode":"#917347"
+                }
+            ]
         ],
-        answer:3,
+        answer:2,
         faultCount:0,
     },
     {
@@ -836,11 +3137,50 @@ export const thirdExam = [
         colorCode:"#636062",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"スレートグレイ",
+                    "colorCode":"#636062"
+                },
+                {
+                    "name":"チャコールグレイ",
+                    "colorCode":"#4e4449"
+                },
+                {
+                    "name":"茶鼠",
+                    "colorCode":"#a99e93"
+                }
+            ],
+            [
+                {
+                    "name":"スレートグレイ",
+                    "colorCode":"#636062"
+                },
+                {
+                    "name":"銀鼠",
+                    "colorCode":"#afafb0"
+                },
+                {
+                    "name":"チャコールグレイ",
+                    "colorCode":"#4e4449"
+                }
+            ],
+            [
+                {
+                    "name":"スレートグレイ",
+                    "colorCode":"#636062"
+                },
+                {
+                    "name":"チャコールグレイ",
+                    "colorCode":"#4e4449"
+                },
+                {
+                    "name":"シルバーグレイ",
+                    "colorCode":"#afafb0"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
     {
@@ -850,11 +3190,50 @@ export const thirdExam = [
         colorCode:"#24130d",
         description:"テキストが入ります",
         choices:[
-            ["","",""],
-            ["","",""],
-            ["","",""],
+            [
+                {
+                    "name":"ランプブラック",
+                    "colorCode":"#24130d"
+                },
+                {
+                    "name":"ミッドナイトブルー",
+                    "colorCode":"#001d42"
+                },
+                {
+                    "name":"スレートグレイ",
+                    "colorCode":"#636062"
+                }
+            ],
+            [
+                {
+                    "name":"ランプブラック",
+                    "colorCode":"#24130d"
+                },
+                {
+                    "name":"チャコールグレイ",
+                    "colorCode":"#4e4449"
+                },
+                {
+                    "name":"ミッドナイトブルー",
+                    "colorCode":"#001d42"
+                }
+            ],
+            [
+                {
+                    "name":"ランプブラック",
+                    "colorCode":"#24130d"
+                },
+                {
+                    "name":"煤竹色",
+                    "colorCode":"#6b5146"
+                },
+                {
+                    "name":"茄子紺",
+                    "colorCode":"#4b1a47"
+                }
+            ]
         ],
-        answer:3,
+        answer:1,
         faultCount:0,
     },
 ];

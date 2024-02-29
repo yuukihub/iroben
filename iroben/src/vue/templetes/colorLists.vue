@@ -23,7 +23,6 @@
         </div>
       </li>
     </ul>
-    {{faultItem}}
   </div>
 </template>
 

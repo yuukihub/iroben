@@ -12,8 +12,8 @@
   export default {
     data() {
       return {
-        pageStack: [top]
-        //pageStack: [exam]
+        //pageStack: [top]
+        pageStack: [exam]
       }
     }
   }

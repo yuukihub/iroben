@@ -125,12 +125,8 @@ export default {
         this.correctFlag = true;
       } else {
         //不正解の場合
-        this.currentQuestion.faultCount++;
+        this.$store.commit("addCount", { level:this.level , item: this.currentQuestion});
         this.faultFlag = true;
-        //console.log(this.level);
-        
-        //vuex練習用
-        this.$store.commit('addCount');
       }
 
     },

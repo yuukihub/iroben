@@ -1,19 +1,19 @@
-import { createApp } from 'vue';
-import VueOnsen from 'vue-onsenui';
-import * as components from 'vue-onsenui/esm/components';
+import { createApp } from "vue";
+import VueOnsen from "vue-onsenui";
+import * as components from "vue-onsenui/esm/components";
 
-import App from './App.vue';
-import router from './router/index'
-import store from './store';
+import App from "./App.vue";
+import router from "./router/index";
+import store from "./store";
 
-import 'onsenui/css/onsenui.css';
-import 'onsenui/css/onsen-css-components.css';
+import "onsenui/css/onsenui.css";
+import "onsenui/css/onsen-css-components.css";
 
-import '../src/scss/foundation/font.scss';
+import "../src/scss/foundation/font.scss";
 
 if (VueOnsen.platform.isIPhoneX()) {
-  document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
-  document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
+  document.documentElement.setAttribute("onsflag-iphonex-portrait", "");
+  document.documentElement.setAttribute("onsflag-iphonex-landscape", "");
 }
 
 const app = createApp(App);

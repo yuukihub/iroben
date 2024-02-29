@@ -86,16 +86,23 @@ export default {
         //ボタンの文言を変更
         this.btnTitle = "結果を見る";
       }
-      //問題を出題
+      //ランダムに問題を出題
+      for (let i = (this.questions.length - 1); 0 < i; i--) {
+        let random = Math.floor(Math.random() * (i + 1));
+        let selected = this.questions[i];
+        this.questions[i] = this.questions[random];
+        this.questions[random] = selected;
+      }
       return this.questions[this.number];
     },
     setChoice(){
+      //ランダムに選択肢を選定
       let choicesArray = this.currentQuestion.choices;
       for (let i = choicesArray.length - 1; i > 0; i--) {
-        let r = Math.floor(Math.random() * (i + 1))
-        let tmp = choicesArray[i]
-        choicesArray[i] = choicesArray[r]
-        choicesArray[r] = tmp
+        let random = Math.floor(Math.random() * (i + 1));
+        let tmp = choicesArray[i];
+        choicesArray[i] = choicesArray[random];
+        choicesArray[random] = tmp;
       }
       return choicesArray[0];
     }
@@ -121,7 +128,7 @@ export default {
       if(this.questionLength === 0){
         this.status = false;
       }
-    }
+    },
   }
 }
 </script>

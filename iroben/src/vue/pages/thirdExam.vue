@@ -1,7 +1,7 @@
 <template>
   <v-ons-page>
     <custom-toolbar></custom-toolbar>
-    <color-exam :questions="thirdExam">
+    <color-exam :questions="thirdExam" :level="'third'">
     </color-exam>
   </v-ons-page>
 </template>

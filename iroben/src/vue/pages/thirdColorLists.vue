@@ -40,6 +40,9 @@ export default {
           };
         }
       })
+    },
+    test(){
+     // alert("test");
     }
   },
   props: ['pageStack'],

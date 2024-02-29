@@ -109,7 +109,7 @@ export const thirdExam = [
         answer:3,
         faultCount:0,
     },
-    {
+    /*{
         id:3,
         title:"蘇芳",
         subTitle:"くすんだ赤",
@@ -3235,6 +3235,6 @@ export const thirdExam = [
         ],
         answer:1,
         faultCount:0,
-    },
+    },*/
 ];
 

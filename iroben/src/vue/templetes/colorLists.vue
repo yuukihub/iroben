@@ -1,5 +1,6 @@
 <template>
   <div class="wrap">
+    <button @click="clearItem">クリア</button>
     <img class="wave" src="../../img/img_wave-bottom.svg" alt="wave">
     <ul class="c-colorLists">
       <li v-for="(item, index) in colorLists" :key="index" @click="getItem(item)">
@@ -40,6 +41,16 @@ export default {
     getItem (item) {
       this.value = item;
       this.$emit('onClick', this.value)
+    },
+    clearItem(){
+      let items = localStorage.getItem("faultItems");
+      let object = JSON.parse(items);
+     // let faultCount = object.faultCount;
+      console.log(object.faultCount);
+      /*for(let num in items){
+
+      }*/
+      alert("押されました");
     }
   },
   props: {

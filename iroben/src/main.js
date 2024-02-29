@@ -4,6 +4,7 @@ import * as components from 'vue-onsenui/esm/components';
 
 import App from './App.vue';
 import router from './router/index'
+import store from './store';
 
 import 'onsenui/css/onsenui.css';
 import 'onsenui/css/onsen-css-components.css';
@@ -18,11 +19,11 @@ if (VueOnsen.platform.isIPhoneX()) {
 const app = createApp(App);
 
 // Register all vue-onsenui components
-Object.values(components).forEach(component =>
-  app.component(component.name, component));
+Object.values(components).forEach(component => app.component(component.name, component));
 
 app.use(VueOnsen);
 app.use(router);
+app.use(store);
 app.mount('#app');
 
 app.config.errorHandler = (err, vm, info) => {

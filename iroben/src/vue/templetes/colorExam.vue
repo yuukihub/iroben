@@ -57,9 +57,12 @@
 
 <script>
 import Confetti from "@/vue/components/confetti.vue";
+
 export default {
   name: "colorExam",
-  components: {Confetti},
+  components: {
+    Confetti
+  },
   data(){
     return {
       number: 0,
@@ -70,12 +73,17 @@ export default {
       faultFlag: false,
       btnTitle: "次に進む",
       answerFlag: false,
+      faultItemArray: [],
     }
   },
   props: {
     questions: {
       type: Array,
       default: '[]',
+      required: true
+    },
+    level: {
+      type: String,
       required: true
     }
   },
@@ -94,6 +102,7 @@ export default {
         this.questions[random] = selected;
       }
       return this.questions[this.number];
+
     },
     setChoice(){
       //ランダムに選択肢を選定
@@ -111,11 +120,17 @@ export default {
     selectAnswer(index) {
       this.answerFlag = true;
       if (index + 1 === this.currentQuestion.answer) {
+        //正解の場合
         this.correctCount++;
         this.correctFlag = true;
       } else {
+        //不正解の場合
         this.currentQuestion.faultCount++;
         this.faultFlag = true;
+        //console.log(this.level);
+        
+        //vuex練習用
+        this.$store.commit('addCount');
       }
 
     },
@@ -129,6 +144,9 @@ export default {
         this.status = false;
       }
     },
+    intRandom(min, max){
+      return Math.floor( Math.random() * (max - min + 1)) + min;
+    }
   }
 }
 </script>

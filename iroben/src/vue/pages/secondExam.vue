@@ -1,7 +1,7 @@
 <template>
   <v-ons-page>
     <custom-toolbar></custom-toolbar>
-    <color-exam :questions="thirdExam" :level="'third'">
+    <color-exam :questions="secondExam" :level="'second'">
     </color-exam>
   </v-ons-page>
 </template>
@@ -10,7 +10,7 @@
 import customToolbar from '../../CustomToolbar.vue';
 import top from'../pages/top.vue';
 import ColorExam from "@/vue/templetes/colorExam.vue";
-import {thirdExam} from "../../resource/thirdExam"
+import {secondExam} from "../../resource/second"
 
 export default {
   name: "thirdExam",
@@ -20,8 +20,8 @@ export default {
   },
   data() {
     return {
-      thirdExam: thirdExam,
-      title: "3級の問題",
+      secondExam: secondExam,
+      title: "2級の問題",
     }
   },
   methods: {

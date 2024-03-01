@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/colorLists.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/colorLists.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +85,8 @@
       <workItem from="1708988154212" duration="12298000" />
       <workItem from="1709002615176" duration="17000" />
       <workItem from="1709165980462" duration="19223000" />
+      <workItem from="1709194779374" duration="75000" />
+      <workItem from="1709263756944" duration="1353000" />
     </task>
     <servers />
   </component>

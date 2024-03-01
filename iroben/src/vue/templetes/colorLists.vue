@@ -74,7 +74,7 @@ export default {
     },
     clearItem(){
       let items = localStorage.getItem("faultItems");
-      alert("押されました");
+      this.$store.commit("reset", { level:this.level});
     },
   },
 }

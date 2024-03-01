@@ -6,8 +6,9 @@ import createPersistedState from 'vuex-persistedstate';
 const app = createApp(App);
 app.use(Vuex);
 
+
 export default new Vuex.Store({
-    state: {
+    state:{
         second: {
             faultArray: [],
         },
@@ -19,7 +20,10 @@ export default new Vuex.Store({
         addFaultItem({ commit },{ level , item }) {
             let target = this.state[level];
             target.faultArray.push(item);
-            console.log(target.faultArray);
+        },
+        reset({ state },{ level }) {
+            let target = this.state[level];
+            target.faultArray = [];
         },
     },
     plugins: [createPersistedState(

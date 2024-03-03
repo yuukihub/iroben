@@ -6,5 +6,4 @@
 *.swp
 .vscode/
 typings/
-node_modules
 package-lock.json

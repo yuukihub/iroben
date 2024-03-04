@@ -10,7 +10,7 @@
 import customToolbar from "../../CustomToolbar.vue";
 import top from "../pages/top.vue";
 import ColorExam from "@/vue/templetes/colorExam.vue";
-import {secondExam} from "../../resource/secondExam";
+import {secondExam} from "@/resource/secondExam";
 
 export default {
   name: "secondExam",
@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       secondExam: secondExam,
-      title: "3級の問題",
+      title: "2級の問題",
     }
   },
   methods: {

@@ -54,7 +54,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:2,
@@ -107,7 +106,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     /*{
         id:3,
@@ -160,7 +158,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:4,
@@ -213,7 +210,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:5,
@@ -266,7 +262,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:6,
@@ -319,7 +314,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:7,
@@ -372,7 +366,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:8,
@@ -425,7 +418,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:9,
@@ -478,7 +470,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:10,
@@ -531,7 +522,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:11,
@@ -584,7 +574,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:12,
@@ -637,7 +626,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:13,
@@ -690,7 +678,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:14,
@@ -743,7 +730,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:15,
@@ -796,7 +782,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:16,
@@ -849,7 +834,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:17,
@@ -902,7 +886,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:18,
@@ -955,7 +938,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:19,
@@ -1008,7 +990,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:20,
@@ -1061,7 +1042,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:21,
@@ -1114,7 +1094,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:22,
@@ -1167,7 +1146,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:23,
@@ -1220,7 +1198,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:24,
@@ -1273,7 +1250,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:25,
@@ -1326,7 +1302,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:26,
@@ -1379,7 +1354,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:27,
@@ -1432,7 +1406,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:28,
@@ -1485,7 +1458,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:29,
@@ -1538,7 +1510,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:30,
@@ -1591,7 +1562,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:31,
@@ -1644,7 +1614,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:32,
@@ -1697,7 +1666,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:33,
@@ -1750,7 +1718,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:34,
@@ -1803,7 +1770,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:35,
@@ -1856,7 +1822,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:36,
@@ -1909,7 +1874,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:37,
@@ -1962,7 +1926,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:38,
@@ -2015,7 +1978,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:39,
@@ -2068,7 +2030,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:40,
@@ -2121,7 +2082,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:41,
@@ -2174,7 +2134,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:42,
@@ -2227,7 +2186,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:43,
@@ -2280,7 +2238,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:44,
@@ -2333,7 +2290,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:45,
@@ -2386,7 +2342,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:46,
@@ -2439,7 +2394,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:47,
@@ -2492,7 +2446,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:48,
@@ -2545,7 +2498,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:49,
@@ -2598,7 +2550,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:50,
@@ -2651,7 +2602,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:51,
@@ -2704,7 +2654,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:52,
@@ -2757,7 +2706,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:53,
@@ -2810,7 +2758,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:54,
@@ -2863,7 +2810,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:55,
@@ -2916,7 +2862,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:56,
@@ -2969,7 +2914,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:57,
@@ -3022,7 +2966,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:58,
@@ -3075,7 +3018,6 @@ export const thirdExam = [
             ]
         ],
         answer:3,
-        faultCount:0,
     },
     {
         id:59,
@@ -3128,7 +3070,6 @@ export const thirdExam = [
             ]
         ],
         answer:2,
-        faultCount:0,
     },
     {
         id:60,
@@ -3181,7 +3122,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },
     {
         id:61,
@@ -3234,7 +3174,6 @@ export const thirdExam = [
             ]
         ],
         answer:1,
-        faultCount:0,
     },*/
 ];
 

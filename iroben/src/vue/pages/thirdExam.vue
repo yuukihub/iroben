@@ -10,7 +10,7 @@
 import customToolbar from "../../CustomToolbar.vue";
 import top from "../pages/top.vue";
 import ColorExam from "@/vue/templetes/colorExam.vue";
-import {thirdExam} from "../../resource/thirdExam";
+import {thirdExam} from "@/resource/thirdExam";
 
 export default {
   name: "thirdExam",

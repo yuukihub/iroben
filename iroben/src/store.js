@@ -20,6 +20,7 @@ export default new Vuex.Store({
         addFaultItem({ commit },{ level , item }) {
             let target = this.state[level];
             target.faultArray.push(item);
+            console.log(this.state);
         },
         reset({ state },{ level }) {
             let target = this.state[level];

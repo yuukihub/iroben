@@ -98,11 +98,11 @@
 </template>
 
 <script>
-import customToolbar from "../../CustomToolbar.vue";
-import secondExam from "./secondExam.vue";
-import secondColorLists from "@/vue/pages/secondColorLists.vue";
-import thirdExam from "./thirdExam.vue";
-import thirdColorLists from "@/vue/pages/thirdColorLists.vue";
+import customToolbar from "../components/CustomToolbar.vue";
+import secondExam from "./SecondExam.vue";
+import secondColorLists from "@/vue/pages/SecondColorLists.vue";
+import thirdExam from "./ThirdExam.vue";
+import thirdColorLists from "@/vue/pages/ThirdColorLists.vue";
 
 
 

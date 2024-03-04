@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import customToolbar from '../../CustomToolbar.vue';
-import home from '../../vue/pages/home.vue';
+import customToolbar from '../components/CustomToolbar.vue';
+import home from './Home.vue';
 
 export default {
   name: "top",

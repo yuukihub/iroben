@@ -6,10 +6,10 @@
 </template>
 
 <script>
-import customToolbar from '../../CustomToolbar.vue';
+import customToolbar from '../components/CustomToolbar.vue';
 import {thirdExam} from "@/resource/thirdExam";
-import ColorLists from "@/vue/templetes/colorLists.vue";
-import thirdColorDetail from "@/vue/pages/thirdColorDetail.vue";
+import ColorLists from "@/vue/templetes/ColorLists.vue";
+import thirdColorDetail from "@/vue/pages/ThirdColorDetail.vue";
 
 export default {
   name: "thirdColorLists",

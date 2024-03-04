@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import ColorDetail from "@/vue/templetes/colorDetail.vue";
+import ColorDetail from "@/vue/templetes/ColorDetail.vue";
 
 export default {
-  name: "thirdColorDetail",
+  name: "secondColorDetail",
   components: {ColorDetail},
   data(){
     return {

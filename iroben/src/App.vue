@@ -6,9 +6,9 @@
 </template>
 
 <script>
-  import top from './vue/pages/top.vue';
-  import exam from './vue/pages/thirdExam.vue';
-  import list from './vue/pages/thirdColorLists.vue';
+  import top from './vue/pages/Top.vue';
+  import exam from './vue/pages/ThirdExam.vue';
+  import list from './vue/pages/ThirdColorLists.vue';
 
   export default {
     data() {

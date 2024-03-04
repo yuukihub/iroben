@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import customToolbar from '../../CustomToolbar.vue';
+import customToolbar from '../components/CustomToolbar.vue';
 
 export default {
   name: "colorDetail",

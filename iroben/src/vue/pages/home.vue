@@ -40,8 +40,6 @@
         <img src="../../img/img_title02.svg" alt="2級'">
       </h2>
       <div>
-        <v-ons-button class="c-button" @click="toThirdExam">慣用色テスト</v-ons-button>
-        <v-ons-button class="c-button" @click="toThirdColorLists">慣用色一覧</v-ons-button>
         <ul>
           <a href="" @click="push">
             <li>
@@ -80,6 +78,11 @@
           </a>
         </ul>
       </div>
+      <v-ons-button class="c-button" @click="toThirdExam">3級の慣用色テスト</v-ons-button>
+      <v-ons-button class="c-button" @click="toThirdColorLists">3級の慣用色一覧</v-ons-button>
+      <br>
+      <v-ons-button class="c-button" @click="toSecondExam">2級の慣用色テスト</v-ons-button>
+      <v-ons-button class="c-button" @click="toSecondColorLists">2級の慣用色一覧</v-ons-button>
     </section>
 
     <div class="characters-wrap">
@@ -96,8 +99,13 @@
 
 <script>
 import customToolbar from '../../CustomToolbar.vue';
+
+import secondExam from './secondExam.vue'
+import secondColorLists from "@/vue/pages/secondColorLists.vue";
+
 import thirdExam from './thirdExam.vue';
 import thirdColorLists from "@/vue/pages/thirdColorLists.vue";
+
 
 
 export default {
@@ -108,6 +116,12 @@ export default {
   methods: {
     pop(){
       this.pageStack.pop();
+    },
+    toSecondExam() {
+      this.pageStack.push(secondExam);
+    },
+    toSecondColorLists() {
+      this.pageStack.push(secondColorLists);
     },
     toThirdExam() {
       this.pageStack.push(thirdExam);

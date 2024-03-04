@@ -10,10 +10,10 @@
 import customToolbar from '../../CustomToolbar.vue';
 import top from'../pages/top.vue';
 import ColorExam from "@/vue/templetes/colorExam.vue";
-import {secondExam} from "../../resource/second"
+import {secondExam} from "../../resource/secondExam"
 
 export default {
-  name: "thirdExam",
+  name: "secondExam",
   components: {
     ColorExam,
     customToolbar,
@@ -33,6 +33,6 @@ export default {
     },
   },
   props: ['pageStack'],
-  key: 'key_page3',
+  key: 'key_page4',
 }
 </script>

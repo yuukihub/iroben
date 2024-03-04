@@ -8,7 +8,7 @@
 import ColorDetail from "@/vue/templetes/colorDetail.vue";
 
 export default {
-  name: "secondColorDetail",
+  name: "testColorDetail",
   components: {ColorDetail},
   data(){
     return {

@@ -3,7 +3,7 @@
     <custom-toolbar></custom-toolbar>
     <color-exam :questions="secondExam" :level="'second'">
     </color-exam>
-  </v-ons-page>
+  </v-ons-page>second
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       secondExam: secondExam,
-      title: "2級の問題",
+      title: "3級の問題",
     }
   },
   methods: {
@@ -33,6 +33,6 @@ export default {
     },
   },
   props: ['pageStack'],
-  key: 'key_page4',
+  key: 'key_page3',
 }
 </script>

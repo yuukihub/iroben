@@ -9,11 +9,12 @@
   import top from './vue/pages/Top.vue';
   import exam from './vue/pages/ThirdExam.vue';
   import list from './vue/pages/ThirdColorLists.vue';
+  import ColorPaint from './vue/pages/ColorPaint.vue';
 
   export default {
     data() {
       return {
-        pageStack: [top]
+        pageStack: [ColorPaint]
         //pageStack: [list]
       }
     }

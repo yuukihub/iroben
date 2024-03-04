@@ -39,7 +39,7 @@ export default {
   props: {
     colorLists: {
       type: Array,
-      default: '[]',
+      default: "[]",
       required: true
     },
     level: {

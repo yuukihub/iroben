@@ -7,7 +7,7 @@
 
 <script>
 import customToolbar from '../../CustomToolbar.vue';
-import {thirdExam} from "../../resource/thirdExam"
+import {thirdExam} from "../../resource/thirdExam";
 import ColorLists from "@/vue/templetes/colorLists.vue";
 import thirdColorDetail from "@/vue/pages/thirdColorDetail.vue";
 
@@ -38,7 +38,7 @@ export default {
       })
     },
   },
-  props: ['pageStack'],
+  props: ["pageStack"],
 }
 </script>
 

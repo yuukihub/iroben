@@ -7,10 +7,10 @@
 </template>
 
 <script>
-import customToolbar from '../../CustomToolbar.vue';
-import top from'../pages/top.vue';
+import customToolbar from "../../CustomToolbar.vue";
+import top from "../pages/top.vue";
 import ColorExam from "@/vue/templetes/colorExam.vue";
-import {secondExam} from "../../resource/secondExam"
+import {secondExam} from "../../resource/secondExam";
 
 export default {
   name: "secondExam",
@@ -32,7 +32,6 @@ export default {
       this.pageStack.push(top);
     },
   },
-  props: ['pageStack'],
-  key: 'key_page3',
+  props: ["pageStack"],
 }
 </script>

@@ -38,7 +38,7 @@ export default {
       })
     },
   },
-  props: ['pageStack'],
+  props: ["pageStack"],
 }
 </script>
 

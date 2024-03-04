@@ -46,7 +46,7 @@ export default {
       this.pageStack.push(home);
     },
   },
-  props: ['pageStack'],
+  props: ["pageStack"],
   components: { customToolbar },
 }
 </script>

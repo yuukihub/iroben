@@ -14,8 +14,8 @@
   export default {
     data() {
       return {
-        pageStack: [ColorPaint]
-        //pageStack: [list]
+        //pageStack: [ColorPaint]
+        pageStack: [top]
       }
     }
   }

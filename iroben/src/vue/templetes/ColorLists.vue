@@ -49,20 +49,20 @@ export default {
   },
   created() {
     let faultCountArray = [];
-    let item = JSON.parse(JSON.stringify(this.faultItem));
-    for(let key in item){
-      faultCountArray.push(item[key].id);
+    let faultItemArray = JSON.parse(JSON.stringify(this.faultItem));
+    for(let key in faultItemArray){
+      faultCountArray.push(faultItemArray[key].id);
     }
     // 同じ文字を一度以上カウントしないようにユニークな配列を作成
     const unique = Array.from(new Set(faultCountArray));
 
-    const occurrenceCount = Object.fromEntries(
+    const faultCount = Object.fromEntries(
         unique.map(char => {
           const occurrenceCount = faultCountArray.filter(c => c === char).length;
           return [char, occurrenceCount]
         })
     )
-    this.faultCountArray = occurrenceCount;
+    this.faultCountArray = faultCount;
   },
   methods: {
     pop(){
@@ -73,7 +73,6 @@ export default {
       this.$emit('onClick', this.value)
     },
     clearItem(){
-      let items = localStorage.getItem("faultItems");
       this.$store.commit("reset", { level:this.level});
     },
   },

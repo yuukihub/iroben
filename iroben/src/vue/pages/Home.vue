@@ -83,6 +83,8 @@
       <br>
       <v-ons-button class="c-button" @click="toSecondExam">2級の慣用色テスト</v-ons-button>
       <v-ons-button class="c-button" @click="toSecondColorLists">2級の慣用色一覧</v-ons-button>
+      <br>
+      <v-ons-button class="c-button" @click="toColorPaint">ペイント</v-ons-button>
     </section>
 
     <div class="characters-wrap">
@@ -103,7 +105,7 @@ import secondExam from "./SecondExam.vue";
 import secondColorLists from "@/vue/pages/SecondColorLists.vue";
 import thirdExam from "./ThirdExam.vue";
 import thirdColorLists from "@/vue/pages/ThirdColorLists.vue";
-
+import colorPaint from "@/vue/pages/ColorPaint.vue";
 
 
 export default {
@@ -114,6 +116,9 @@ export default {
   methods: {
     pop(){
       this.pageStack.pop();
+    },
+    toColorPaint(){
+      this.pageStack.push(colorPaint);
     },
     toSecondExam() {
       this.pageStack.push(secondExam);

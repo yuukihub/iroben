@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .color {
-  width: 5.5vh;
+  width: 8vh;
   height: 6.5vh;
 }
 </style>

@@ -6,15 +6,16 @@
 </template>
 
 <script>
-  import top from './vue/pages/top.vue';
-  import exam from './vue/pages/thirdExam.vue';
-  import list from './vue/pages/thirdColorLists.vue';
+  import top from './vue/pages/Top.vue';
+  import exam from './vue/pages/ThirdExam.vue';
+  import list from './vue/pages/ThirdColorLists.vue';
+  import ColorPaint from './vue/pages/ColorPaint.vue';
 
   export default {
     data() {
       return {
+        //pageStack: [ColorPaint]
         pageStack: [top]
-        //pageStack: [list]
       }
     }
   }

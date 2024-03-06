@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import Confetti from "@/vue/components/confetti.vue";
+import Confetti from "@/vue/components/Confetti.vue";
 
 export default {
   name: "colorExam",
@@ -79,7 +79,7 @@ export default {
   props: {
     questions: {
       type: Array,
-      default: '[]',
+      default: "[]",
       required: true
     },
     level: {

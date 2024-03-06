@@ -5,7 +5,7 @@
         <div class="top">
           <div class="bar"></div>
         </div>
-        <img src="./img/img_wave-top.svg" alt="wave">
+        <img src="../../img/img_wave-top.svg" alt="wave">
         <v-ons-back-button :on-click="pop"></v-ons-back-button>
 
         <div>

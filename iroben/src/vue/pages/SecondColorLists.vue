@@ -1,26 +1,25 @@
 <template>
   <v-ons-page>
     <custom-toolbar></custom-toolbar>
-    <color-lists :color-lists="thirdExam" :level="'third'" @onClick="push"></color-lists>
+    <color-lists :color-lists="secondExam" :level="'second'" @onClick="push"></color-lists>
   </v-ons-page>
 </template>
 
 <script>
-import customToolbar from '../../CustomToolbar.vue';
-import top from'../pages/top.vue';
-import {thirdExam} from "../../resource/thirdExam"
-import ColorLists from "@/vue/templetes/colorLists.vue";
-import thirdColorDetail from "@/vue/pages/thirdColorDetail.vue";
+import customToolbar from '../components/CustomToolbar.vue';
+import {secondExam} from "../../resource/secondExam"
+import ColorLists from "@/vue/templetes/ColorLists.vue";
+import secondColorDetail from "@/vue/pages/SecondColorDetail.vue";
 
 export default {
-  name: "thirdColorLists",
+  name: "secondColorLists",
   components: {
     ColorLists,
     customToolbar,
   },
   data() {
     return {
-      thirdExam: thirdExam,
+      secondExam: secondExam,
     }
   },
   methods: {
@@ -30,7 +29,7 @@ export default {
     push (value) {
       let item = JSON.stringify(value);
       this.pageStack.push({
-        extends: thirdColorDetail,
+        extends: secondColorDetail,
         data() {
           return {
             colorItem: item
@@ -39,7 +38,7 @@ export default {
       })
     },
   },
-  props: ['pageStack'],
+  props: ["pageStack"],
 }
 </script>
 

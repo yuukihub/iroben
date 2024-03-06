@@ -3,14 +3,14 @@
     <custom-toolbar></custom-toolbar>
     <color-exam :questions="secondExam" :level="'second'">
     </color-exam>
-  </v-ons-page>
+  </v-ons-page>second
 </template>
 
 <script>
-import customToolbar from '../../CustomToolbar.vue';
-import top from'../pages/top.vue';
-import ColorExam from "@/vue/templetes/colorExam.vue";
-import {secondExam} from "../../resource/secondExam"
+import customToolbar from "../components/CustomToolbar.vue";
+import top from "./Top.vue";
+import ColorExam from "@/vue/templetes/ColorExam.vue";
+import {secondExam} from "@/resource/secondExam";
 
 export default {
   name: "secondExam",
@@ -32,7 +32,6 @@ export default {
       this.pageStack.push(top);
     },
   },
-  props: ['pageStack'],
-  key: 'key_page4',
+  props: ["pageStack"],
 }
 </script>

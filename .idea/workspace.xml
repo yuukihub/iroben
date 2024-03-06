@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/pages/secondColorDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/pages/secondColorLists.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/resource/secondExam.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/resource/secondExam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/secondExam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/secondExam.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/thirdColorDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/ColorPaint.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/ColorPaint.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
@@ -28,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -67,6 +62,7 @@
       <recent name="$PROJECT_DIR$/iroben/src/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/iroben/src/vue/components" />
       <recent name="$PROJECT_DIR$/iroben/src" />
       <recent name="$PROJECT_DIR$/iroben/src/img" />
       <recent name="$PROJECT_DIR$" />
@@ -93,7 +89,7 @@
       <workItem from="1709194779374" duration="75000" />
       <workItem from="1709263756944" duration="1830000" />
       <workItem from="1709437358367" duration="1232000" />
-      <workItem from="1709517106429" duration="1726000" />
+      <workItem from="1709517106429" duration="9873000" />
     </task>
     <servers />
   </component>

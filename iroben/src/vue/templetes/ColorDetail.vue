@@ -29,18 +29,17 @@
 </template>
 
 <script>
-import customToolbar from '../../CustomToolbar.vue';
+import customToolbar from '../components/CustomToolbar.vue';
 
 export default {
-  name: "thirdColorDetail",
+  name: "colorDetail",
   components: {customToolbar},
-  data(){
-    return {
-      item: "",
-    }
-  },
-  mounted(){
-      this.item = JSON.parse(this.colorItem);
+  props: {
+    item: {
+      type: Object,
+      default: "{}",
+      required: true
+    },
   }
 }
 </script>
@@ -59,7 +58,6 @@ export default {
     }
   }
   .color {
-    //background: #87CEEB;
     border-radius: 10px 10px 0 0;
     display: block;
     margin: 3%;

@@ -1,13 +1,18 @@
 <template>
   <v-ons-page>
     <custom-toolbar></custom-toolbar>
+    <tab :tabList="tabList">
+      <template v-slot:tabPanel-1> Content 1 </template>
+      <template v-slot:tabPanel-2> Content 2 </template>
+      <template v-slot:tabPanel-3> Content 3 </template>
+      <template v-slot:tabPanel-4> Content 4 </template>
+    </tab>
 
     <div class="toggle_wrap">
       <toggle @onClick="toggle()"></toggle>
     </div>
 
     <div v-if="isActive === false">
-      初期の内容
       <div class="c-colorLists">
         <ul>
           <li v-for="(item, index) in secondExam" :key="index">
@@ -18,7 +23,6 @@
       </div>
     </div>
     <div v-else>
-      切り替えた内容
       <div class="c-colorLists">
         <ul>
           <li v-for="(item, index) in faultCountArray" :key="index">
@@ -35,10 +39,12 @@
 import customToolbar from "../components/CustomToolbar.vue";
 import {secondExam} from "@/resource/secondExam";
 import Toggle from "@/vue/components/Toggle.vue";
+import Tab from "@/vue/components/Tab.vue";
 
 export default {
   name: "ColorPaint",
   components: {
+    Tab,
     Toggle,
     customToolbar,
   },
@@ -47,7 +53,8 @@ export default {
       faultItem: this.$store.state["second"].faultArray,
       faultCountArray: "",
       secondExam: secondExam,
-      isActive: false
+      isActive: false,
+      tabList: ["3級", "2級", "1級"],
     }
   },
   created() {

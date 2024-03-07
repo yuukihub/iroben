@@ -1,38 +1,46 @@
 <template>
   <v-ons-page>
+    <custom-toolbar></custom-toolbar>
     <div>
-      <div class="tabs">
-        <a v-on:click="activetab=1" v-bind:class="[ activetab === 1 ? 'active' : '' ]">Tab 1</a>
-        <a v-on:click="activetab=2" v-bind:class="[ activetab === 2 ? 'active' : '' ]">Tab 2</a>
-        <a v-on:click="activetab=3" v-bind:class="[ activetab === 3 ? 'active' : '' ]">Tab 3</a>
-      </div>
 
-      <div class="content">
-        <div v-if="activetab === 1">
-          Content for tab one
+      <div class="tab">
+
+        <div class="tab_menu">
+          <button v-for="(tabName,index) in tabLists"
+                  :key="index"
+                  :class="{'is-current': isCurrent === index}"
+                  class="tab_button"
+                  @click="changeTab(index)">{{tabName}}</button>
         </div>
-        <div v-if="activetab === 2">
-          <color-pallet-list
-              :level="'second'"
-              :fault-count-array="faultCountArray"
-              :is-toggle-flag="isSecondActive"
-              :color-lists="secondExam"
-              @onClick="secondToggle"
-          ></color-pallet-list>
-        </div>
-        <div v-if="activetab === 3">
-          <color-pallet-list
-              :level="'third'"
-              :fault-count-array="faultCountArray"
-              :is-toggle-flag="isThirdActive"
-              :color-lists="thirdExam"
-              @onClick="thirdToggle"
-          ></color-pallet-list>
+        <div class="tab_content">
+          <div v-show="isCurrent === 0">
+            <!--1級-->
+            1級
+          </div>
+          <div v-show="isCurrent === 1">
+            <!--2級-->
+            <color-pallet-list
+                :level="'second'"
+                :fault-count-array="faultCountArray"
+                :is-toggle-flag="checkToggleStatus('second')"
+                :color-lists="secondExam"
+                @onClick="secondToggle"
+            ></color-pallet-list>
+          </div>
+          <div v-show="isCurrent === 2">
+            <!--3級-->
+            <color-pallet-list
+                :level="'third'"
+                :fault-count-array="faultCountArray"
+                :is-toggle-flag="checkToggleStatus('third')"
+                :color-lists="thirdExam"
+                @onClick="thirdToggle"
+            ></color-pallet-list>
+          </div>
         </div>
       </div>
     </div>
 
-    <!--<custom-toolbar></custom-toolbar>-->
 
   </v-ons-page>
 </template>
@@ -42,26 +50,22 @@ import customToolbar from "../components/CustomToolbar.vue";
 import {secondExam} from "@/resource/secondExam";
 import {thirdExam} from "@/resource/thirdExam";
 import ColorPalletList from "@/vue/components/ColorPalletList.vue";
-import Tabs from "@/vue/components/Tabs.vue";
-import Tab from "@/vue/components/Tab.vue";
 
 export default {
   name: "ColorPaint",
   components: {
     ColorPalletList,
     customToolbar,
-    Tabs,
-    Tab
   },
   data(){
     return {
-      faultItem: this.$store.state["second"].faultArray,
-      faultCountArray: "",
       secondExam: secondExam,
       thirdExam: thirdExam,
-      isSecondActive: this.$store.state.toggles["second"],
-      isThirdActive: this.$store.commit("toggle", { level:"third"}),//false,
-      activetab: 1 ,
+      faultItem: this.$store.state["second"].faultArray,
+      faultCountArray: "",
+      checkToggleStatus: this.checkToggle,
+      tabLists: ["1級","2級","3級",],
+      isCurrent: 1,
     }
   },
   created() {
@@ -70,6 +74,11 @@ export default {
     this.faultCountArray = Array.from(
         new Map(faultItemArray.map((faultItemArray) => [faultItemArray.id, faultItemArray])).values()
     );
+  },
+  computed: {
+    active() {
+      return this.value === this.id ? 'active' : false
+    },
   },
   methods: {
     secondToggle() {
@@ -86,11 +95,18 @@ export default {
           }
       );
     },
+    changeTab(sectionNum) {
+      this.isCurrent = sectionNum;
+    },
+    checkToggle(level) {
+      return this.$store.state.toggles[level];
+    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
+@import "./src/scss/foundation/variables";
 .toggle_wrap {
   display: flex;
   align-items: center;
@@ -101,12 +117,15 @@ export default {
 .c-colorPallet {
   width: 100%;
 }
-.tabs{
-  display: flex;
-  font-size: 20px;
-  margin: 20px;
-  a {
-    margin-right: 50px;
+.tab_button {
+  border: none;
+  background: white;
+  padding: 8px 0;
+  width: calc(100% / 3);
+  color: map_get($color, main02);
+  font-weight: bold;
+  &.is-current {
+    border-bottom: 2px solid map_get($color, main02);
   }
 }
 </style>

@@ -1,29 +1,39 @@
 <template>
   <v-ons-page>
-    <custom-toolbar></custom-toolbar>
-    <tab :tabList="tabList">
-      <template v-slot:tabPanel-1>
-       1級
-      </template>
-      <template v-slot:tabPanel-2>
-        2級
-        <color-pallet-list
-            :fault-count-array="faultCountArray"
-            :is-toggle-flag="isSecondActive"
-            :color-lists="secondExam"
-            @onClick="secondToggle"
-            ></color-pallet-list>
-      </template>
-      <template v-slot:tabPanel-3>
-        3級
-        <color-pallet-list
-            :fault-count-array="faultCountArray"
-            :is-toggle-flag="isThirdActive"
-            :color-lists="thirdExam"
-            @onClick="thirdToggle"
-        ></color-pallet-list>
-      </template>
-    </tab>
+    <div>
+      <div class="tabs">
+        <a v-on:click="activetab=1" v-bind:class="[ activetab === 1 ? 'active' : '' ]">Tab 1</a>
+        <a v-on:click="activetab=2" v-bind:class="[ activetab === 2 ? 'active' : '' ]">Tab 2</a>
+        <a v-on:click="activetab=3" v-bind:class="[ activetab === 3 ? 'active' : '' ]">Tab 3</a>
+      </div>
+
+      <div class="content">
+        <div v-if="activetab === 1">
+          Content for tab one
+        </div>
+        <div v-if="activetab === 2">
+          <color-pallet-list
+              :level="'second'"
+              :fault-count-array="faultCountArray"
+              :is-toggle-flag="isSecondActive"
+              :color-lists="secondExam"
+              @onClick="secondToggle"
+          ></color-pallet-list>
+        </div>
+        <div v-if="activetab === 3">
+          <color-pallet-list
+              :level="'third'"
+              :fault-count-array="faultCountArray"
+              :is-toggle-flag="isThirdActive"
+              :color-lists="thirdExam"
+              @onClick="thirdToggle"
+          ></color-pallet-list>
+        </div>
+      </div>
+    </div>
+
+    <!--<custom-toolbar></custom-toolbar>-->
+
   </v-ons-page>
 </template>
 
@@ -31,17 +41,17 @@
 import customToolbar from "../components/CustomToolbar.vue";
 import {secondExam} from "@/resource/secondExam";
 import {thirdExam} from "@/resource/thirdExam";
-import Toggle from "@/vue/components/Toggle.vue";
-import Tab from "@/vue/components/Tab.vue";
 import ColorPalletList from "@/vue/components/ColorPalletList.vue";
+import Tabs from "@/vue/components/Tabs.vue";
+import Tab from "@/vue/components/Tab.vue";
 
 export default {
   name: "ColorPaint",
   components: {
     ColorPalletList,
-    Tab,
-    Toggle,
     customToolbar,
+    Tabs,
+    Tab
   },
   data(){
     return {
@@ -49,9 +59,9 @@ export default {
       faultCountArray: "",
       secondExam: secondExam,
       thirdExam: thirdExam,
-      isSecondActive: false,
-      isThirdActive: false,
-      tabList: ["1級","2級", "3級"],
+      isSecondActive: this.$store.state.toggles["second"],
+      isThirdActive: this.$store.commit("toggle", { level:"third"}),//false,
+      activetab: 1 ,
     }
   },
   created() {
@@ -63,11 +73,19 @@ export default {
   },
   methods: {
     secondToggle() {
-      this.isSecondActive = !this.isSecondActive
+      this.$store.commit("toggle",
+          { level:"second",
+            flag:this.isSecondActive = !this.isSecondActive
+          }
+      );
     },
     thirdToggle(){
-      this.isThirdActive = !this.isThirdActive
-    }
+      this.$store.commit("toggle",
+          { level:"third",
+            flag:this.isThirdActive = !this.isThirdActive
+          }
+      );
+    },
   },
 }
 </script>
@@ -83,5 +101,12 @@ export default {
 .c-colorPallet {
   width: 100%;
 }
-
+.tabs{
+  display: flex;
+  font-size: 20px;
+  margin: 20px;
+  a {
+    margin-right: 50px;
+  }
+}
 </style>

@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/vue/components/Tabs.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/Tab.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/Tab.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/Toggle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/Toggle.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/ColorPaint.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/ColorPaint.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
@@ -90,7 +94,7 @@
       <workItem from="1709194779374" duration="75000" />
       <workItem from="1709263756944" duration="1830000" />
       <workItem from="1709437358367" duration="1232000" />
-      <workItem from="1709517106429" duration="21729000" />
+      <workItem from="1709517106429" duration="25125000" />
     </task>
     <servers />
   </component>

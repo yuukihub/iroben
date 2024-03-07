@@ -1,6 +1,6 @@
 <template>
   <div>
-    <toggle @onClick="togglePush"></toggle>
+    <toggle @onClick="togglePush" :level="level"></toggle>
     <div v-if="isToggleFlag === false">
       <div class="c-colorLists">
         <ul>
@@ -45,7 +45,11 @@ export default {
       type: Array,
       default: "[]",
       required: true
-    }
+    },
+    level: {
+      type: String,
+      required: true
+    },
   },
   methods: {
     togglePush() {

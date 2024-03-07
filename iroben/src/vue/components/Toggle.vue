@@ -1,7 +1,7 @@
 <template>
   <div>
     <label class="c-toggle">
-      <input type="checkbox" @click="toggle_switch">
+      <input type="checkbox" @click="toggle_switch" v-model="checkedFlag">
       <span class="slider"></span>
       <span class="labels" data-off="OFF" data-on="ON" ></span>
     </label>
@@ -11,6 +11,17 @@
 <script>
 export default {
   name: "Toggle",
+  data(){
+    return {
+      checkedFlag: this.$store.state.toggles[this.level],
+    }
+  },
+  props: {
+    level: {
+      type: String,
+      required: true
+    },
+  },
   methods: {
     toggle_switch () {
       this.$emit('onClick');

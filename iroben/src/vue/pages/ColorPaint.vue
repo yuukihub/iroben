@@ -1,10 +1,11 @@
 <template>
   <v-ons-page>
     <custom-toolbar></custom-toolbar>
-    <div>
-
+    <div class="c-colorPalletList">
+      <div class="c-colorPallet_header">
+        <h3>カラーパレット</h3>
+      </div>
       <div class="tab">
-
         <div class="tab_menu">
           <button v-for="(tabName,index) in tabLists"
                   :key="index"
@@ -114,8 +115,23 @@ export default {
 .toggle_title {
   margin-right: 4px;
 }
-.c-colorPallet {
+.c-colorPalletList {
+  position: fixed;
+  bottom: 0;
   width: 100%;
+}
+.c-colorPallet_header {
+  background: map_get($color, main01);
+  h3 {
+    margin: 0;
+    padding: 16px 24px;
+    color: white;
+    font-size: 18px;
+  }
+}
+.tab_content {
+  background: map_get($color, white);
+  padding: 0 24px 16px 24px;
 }
 .tab_button {
   border: none;
@@ -123,6 +139,7 @@ export default {
   padding: 8px 0;
   width: calc(100% / 3);
   color: map_get($color, main02);
+  font-size: 16px;
   font-weight: bold;
   &.is-current {
     border-bottom: 2px solid map_get($color, main02);

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="c-colorPalletHeader">
+    <div class="selectedColor_header">
       <div class="selectedColor">
         <p class="title">選択色</p>
         <a v-if="colorTitleFlag" class="name" :href="`#${level}-color-${colorID}`">
@@ -102,14 +102,36 @@ export default {
 
 <style lang="scss" scoped>
 @import "./src/scss/foundation/variables";
-.c-colorPalletHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.c-colorLists{
+  ul {
+    display: grid;
+    place-items: center;
+    grid-gap: 1%;
+    justify-content: space-between;
+    grid-template-columns: 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7%;
+  }
+}
+.color {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  margin: 0 0 6px 0;
+  :focus {
+    &.is-selected {
+      border: 2px solid map_get($color, main01);
+    }
+  }
 }
 .selectedColor {
   display: flex;
   align-items: center;
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 16px;
+  }
   .title {
     margin-right: 4px;
   }
@@ -119,23 +141,6 @@ export default {
      cursor: none;
      color: map_get($color, gray01);
    }
-  }
-}
-.c-colorLists{
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-.color {
-  width: 3vh;
-  height: 3vh;
-  border-radius: 100%;
-  margin: 0 6px 6px 0;
-}
-.color:focus {
-  &.is-selected {
-    border: 2px solid map_get($color, main01);
   }
 }
 </style>

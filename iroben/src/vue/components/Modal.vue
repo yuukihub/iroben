@@ -2,7 +2,7 @@
   <div>
    <article class="c-modal" :id="modalId">
       <h2>{{title}}</h2>
-      <a href="#!" class="closeButton">✕</a>
+      <a href="#!" class="modal_close">✕</a>
       <slot></slot>
     </article>
     <a href="#!" class="overlay"></a>
@@ -56,7 +56,7 @@ export default {
     top: 0;
     left: 0;
   }
-  .closeButton{
+  .modal_close{
     position: absolute;
     top: 5px;
     right: 10px;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <article class="c-modal" id="modal">
+   <article class="c-modal" :id="modalId">
       <h2>{{title}}</h2>
       <a href="#!" class="closeButton">✕</a>
       <slot></slot>
@@ -14,6 +14,10 @@ export default {
   name: "Modal",
   props: {
     title: {
+      type: String,
+      required: true
+    },
+    modalId: {
       type: String,
       required: true
     }

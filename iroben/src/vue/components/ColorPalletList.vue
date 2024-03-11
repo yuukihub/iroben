@@ -3,7 +3,7 @@
     <div class="c-colorPalletHeader">
       <div class="selectedColor">
         <p class="title">選択色</p>
-        <a v-if="colorTitleFlag" class="name" href="#modal">
+        <a v-if="colorTitleFlag" class="name" :href="`#${level}-color-${colorID}`">
           {{colorTitle}}
         </a>
         <p v-else class="name is-disabled">
@@ -17,7 +17,7 @@
         <ul>
           <li v-for="(item, index) in colorLists" :key="index">
             <div class="color"
-                 href="#modal"
+                 :href="`#${level}-color-${index}`"
                  :tabindex="index"
                  :style="{background: item.colorCode}"
                  @click="getColorDetail(item)">
@@ -36,7 +36,8 @@
         </ul>
       </div>
     </div>
-    <modal :title="colorTitle">
+    <modal :title="colorTitle"
+           :modalId="`${level}-color-${colorID}`">
       <p>
         {{colorSubTitle}}
       </p>
@@ -56,6 +57,7 @@ export default {
   components: {Modal, Toggle},
   data(){
     return {
+      colorID: Number,
       colorTitle: "未選択",
       colorSubTitle: "",
       colorDescription: "",
@@ -89,6 +91,7 @@ export default {
     },
     getColorDetail(item){
       this.colorTitleFlag = true;
+      this.colorID = item.id;
       this.colorTitle = item.title;
       this.colorSubTitle = item.subTitle;
       this.colorDescription = item.description;

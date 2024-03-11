@@ -4,7 +4,7 @@
  */
 export const secondExam = [
     {
-        id:1,
+        id:0,
         title:"鴇色",
         subTitle:"明るい紫みの赤",
         colorCode:"#f4b3c2",
@@ -57,7 +57,7 @@ export const secondExam = [
         toneNumber:['lt24+'],
     },
     {
-        id:2,
+        id:1,
         title:"韓紅色",
         subTitle:"あざやかな赤",
         colorCode:"#ea0032",
@@ -110,7 +110,7 @@ export const secondExam = [
         toneNumber:['v1','v2'],
     },
     {
-        id:3,
+        id:2,
         title:"蘇芳",
         subTitle:"くすんだ赤",
         colorCode:"#9e3d3e",
@@ -163,7 +163,7 @@ export const secondExam = [
         toneNumber:['d2'],
     },
     {
-        id:4,
+        id:3,
         title:"鳶色",
         subTitle:"暗い黄みの赤",
         colorCode:"#8b4239",
@@ -216,7 +216,7 @@ export const secondExam = [
         toneNumber:['dk4','dk2'],
     },
     {
-        id:5,
+        id:4,
         title:"弁柄色",
         subTitle:"暗い黄みの赤",
         colorCode:"#8f2e14",
@@ -269,7 +269,7 @@ export const secondExam = [
         toneNumber:['dk4'],
     },
     {
-        id:6,
+        id:5,
         title:"海老茶",
         subTitle:"暗い黄みの赤",
         colorCode:"#6c2c2f",
@@ -322,7 +322,7 @@ export const secondExam = [
         toneNumber:['dk4'],
     },
     {
-        id:7,
+        id:6,
         title:"オールドローズ",
         subTitle:"やわらかい赤",
         colorCode:"#c58087",
@@ -375,7 +375,7 @@ export const secondExam = [
         toneNumber:['sf2'],
     },
     {
-        id:8,
+        id:7,
         title:"ポピーレッド",
         subTitle:"あざやかな赤",
         colorCode:"#e9474d",
@@ -428,7 +428,7 @@ export const secondExam = [
         toneNumber:['v2'],
     },
     {
-        id:9,
+        id:8,
         title:"マルーン",
         subTitle:"暗い赤",
         colorCode:"#6a1816",
@@ -481,7 +481,7 @@ export const secondExam = [
         toneNumber:['dk2'],
     },
     {
-        id:10,
+        id:9,
         title:"テラコッタ",
         subTitle:"くすんだ黄みの赤",
         colorCode:"#be6d55",
@@ -534,7 +534,7 @@ export const secondExam = [
         toneNumber:['d2','d4'],
     },
     {
-        id:11,
+        id:10,
         title:"黄丹",
         subTitle:"つよい黄赤",
         colorCode:"#ee7948",
@@ -587,7 +587,7 @@ export const secondExam = [
         toneNumber:['b4','v4','v5'],
     },
     {
-        id:12,
+        id:11,
         title:"桧皮色",
         subTitle:"暗い灰みの黄赤",
         colorCode:"#895d4f",
@@ -640,7 +640,7 @@ export const secondExam = [
         toneNumber:['g4'],
     },
     {
-        id:13,
+        id:12,
         title:"代赭",
         subTitle:"くすんだ黄赤",
         colorCode:"#b66438",
@@ -693,7 +693,7 @@ export const secondExam = [
         toneNumber:['d4'],
     },
     {
-        id:14,
+        id:13,
         title:"柑子色",
         subTitle:"明るい黄赤",
         colorCode:"#f6ad48",
@@ -746,7 +746,7 @@ export const secondExam = [
         toneNumber:['b6','lt6+'],
     },
     {
-        id:15,
+        id:14,
         title:"チャイニーズレッド",
         subTitle:"あざやかな黄赤",
         colorCode:"#ea5520",
@@ -799,7 +799,7 @@ export const secondExam = [
         toneNumber:['v4'],
     },
     {
-        id:16,
+        id:15,
         title:"バーントシェンナ",
         subTitle:"くすんだ黄赤",
         colorCode:"#b25532",
@@ -852,7 +852,7 @@ export const secondExam = [
         toneNumber:['d4'],
     },
     {
-        id:17,
+        id:16,
         title:"ローシェンナ",
         subTitle:"つよい黄赤",
         colorCode:"#b5652c",
@@ -905,7 +905,7 @@ export const secondExam = [
         toneNumber:['dp6'],
     },
     {
-        id:18,
+        id:17,
         title:"タン",
         subTitle:"くすんだ黄赤",
         colorCode:"#c1813f",
@@ -958,7 +958,7 @@ export const secondExam = [
         toneNumber:['d6'],
     },
     {
-        id:19,
+        id:18,
         title:"琥珀色",
         subTitle:"くすんだ赤みの黄",
         colorCode:"#bf7834",
@@ -1011,7 +1011,7 @@ export const secondExam = [
         toneNumber:['d6'],
     },
     {
-        id:20,
+        id:19,
         title:"朽葉色",
         subTitle:"灰みの赤みを帯びた黄",
         colorCode:"#917347",
@@ -1064,7 +1064,7 @@ export const secondExam = [
         toneNumber:['g6'],
     },
     {
-        id:21,
+        id:20,
         title:"鬱金色",
         subTitle:"つよい黄",
         colorCode:"#fabf13",
@@ -1117,7 +1117,7 @@ export const secondExam = [
         toneNumber:['v7','v8'],
     },
     {
-        id:22,
+        id:21,
         title:"刈安色",
         subTitle:"うすい緑みの黄",
         colorCode:"#f5e56b",
@@ -1170,7 +1170,7 @@ export const secondExam = [
         toneNumber:['lt8+'],
     },
     {
-        id:23,
+        id:22,
         title:"エクルベイジュ",
         subTitle:"うすい赤みの黄",
         colorCode:"#f8eacf",
@@ -1223,7 +1223,7 @@ export const secondExam = [
         toneNumber:['p6+'],
     },
     {
-        id:24,
+        id:23,
         title:"ゴールデンイエロー",
         subTitle:"つよい赤みの黄",
         colorCode:"#f8b856",
@@ -1276,7 +1276,7 @@ export const secondExam = [
         toneNumber:['b6'],
     },
     {
-        id:25,
+        id:24,
         title:"アンバー",
         subTitle:"くすんだ赤みの黄",
         colorCode:"#c28953",
@@ -1329,7 +1329,7 @@ export const secondExam = [
         toneNumber:['d6'],
     },
     {
-        id:26,
+        id:25,
         title:"バーントアンバー",
         subTitle:"ごく暗い赤みの黄",
         colorCode:"#59442c",
@@ -1382,7 +1382,7 @@ export const secondExam = [
         toneNumber:['dkg6','g6'],
     },
     {
-        id:27,
+        id:26,
         title:"ローアンバー",
         subTitle:"暗い黄",
         colorCode:"#554721",
@@ -1435,7 +1435,7 @@ export const secondExam = [
         toneNumber:['dk8'],
     },
     {
-        id:28,
+        id:27,
         title:"ネープルスイエロー",
         subTitle:"つよい黄",
         colorCode:"#fdd75c",
@@ -1488,7 +1488,7 @@ export const secondExam = [
         toneNumber:['lt8+'],
     },
     {
-        id:29,
+        id:28,
         title:"ジョンブリアン",
         subTitle:"あざやかな黄",
         colorCode:"#ffdc00",
@@ -1541,7 +1541,7 @@ export const secondExam = [
         toneNumber:['v8'],
     },
     {
-        id:30,
+        id:29,
         title:"黄檗色",
         subTitle:"あかるい黄緑",
         colorCode:"#dfd310",
@@ -1594,7 +1594,7 @@ export const secondExam = [
         toneNumber:['lt10+'],
     },
     {
-        id:31,
+        id:30,
         title:"海松色",
         subTitle:"暗い灰みの黄緑",
         colorCode:"#726d3f",
@@ -1647,7 +1647,7 @@ export const secondExam = [
         toneNumber:['g10'],
     },
     {
-        id:32,
+        id:31,
         title:"鶸色",
         subTitle:"つよい黄緑",
         colorCode:"#c0c14c",
@@ -1700,7 +1700,7 @@ export const secondExam = [
         toneNumber:['b10','lt10+'],
     },
     {
-        id:33,
+        id:32,
         title:"シャトルーズグリーン",
         subTitle:"明るい黄緑",
         colorCode:"#d9e367",
@@ -1753,7 +1753,7 @@ export const secondExam = [
         toneNumber:['b10'],
     },
     {
-        id:34,
+        id:33,
         title:"リーフグリーン",
         subTitle:"つよい黄緑",
         colorCode:"#9dc04c",
@@ -1806,7 +1806,7 @@ export const secondExam = [
         toneNumber:['d10','lt10+'],
     },
     {
-        id:35,
+        id:34,
         title:"グラスグリーン",
         subTitle:"くすんだ黄緑",
         colorCode:"#7b8d41",
@@ -1859,7 +1859,7 @@ export const secondExam = [
         toneNumber:['d10'],
     },
     {
-        id:36,
+        id:35,
         title:"常磐色",
         subTitle:"こい緑",
         colorCode:"#007c45",
@@ -1912,7 +1912,7 @@ export const secondExam = [
         toneNumber:['dp12'],
     },
     {
-        id:37,
+        id:36,
         title:"緑青色",
         subTitle:"くすんだ緑",
         colorCode:"#4f8a5d",
@@ -1965,7 +1965,7 @@ export const secondExam = [
         toneNumber:['d12'],
     },
     {
-        id:38,
+        id:37,
         title:"アップルグリーン",
         subTitle:"やわらかい黄みの緑",
         colorCode:"#a2cc89",
@@ -2018,7 +2018,7 @@ export const secondExam = [
         toneNumber:['sf12','lt12+'],
     },
     {
-        id:39,
+        id:38,
         title:"ミントグリーン",
         subTitle:"明るい緑",
         colorCode:"#98ce97",
@@ -2071,7 +2071,7 @@ export const secondExam = [
         toneNumber:['b12','lt12+'],
     },
     {
-        id:40,
+        id:39,
         title:"マラカイトグリーン",
         subTitle:"こい緑",
         colorCode:"#009854",
@@ -2124,7 +2124,7 @@ export const secondExam = [
         toneNumber:['dp12'],
     },
     {
-        id:41,
+        id:40,
         title:"ボトルグリーン",
         subTitle:"ごく暗い緑",
         colorCode:"#005635",
@@ -2177,7 +2177,7 @@ export const secondExam = [
         toneNumber:['dkg12','dk12'],
     },
     {
-        id:42,
+        id:41,
         title:"鉄色",
         subTitle:"ごく暗い青緑",
         colorCode:"#005242",
@@ -2230,7 +2230,7 @@ export const secondExam = [
         toneNumber:['dk14','dkg14'],
     },
     {
-        id:43,
+        id:42,
         title:"ピーコックグリーン",
         subTitle:"青緑",
         colorCode:"#00a496",
@@ -2283,7 +2283,7 @@ export const secondExam = [
         toneNumber:['v14','v15'],
     },
     {
-        id:44,
+        id:43,
         title:"ナイルブルー",
         subTitle:"くすんだ青緑",
         colorCode:"#469298",
@@ -2336,7 +2336,7 @@ export const secondExam = [
         toneNumber:['sf14'],
     },
     {
-        id:45,
+        id:44,
         title:"新橋色",
         subTitle:"明るい緑みの青",
         colorCode:"#64bcc7",
@@ -2389,7 +2389,7 @@ export const secondExam = [
         toneNumber:['lt16+','b16'],
     },
     {
-        id:46,
+        id:45,
         title:"納戸色",
         subTitle:"つよい緑みの青",
         colorCode:"#007d92",
@@ -2442,7 +2442,7 @@ export const secondExam = [
         toneNumber:['d16'],
     },
     {
-        id:47,
+        id:46,
         title:"甕覗",
         subTitle:"やわらかい緑みの青",
         colorCode:"#a2d7dd",
@@ -2495,7 +2495,7 @@ export const secondExam = [
         toneNumber:['ltg16','p16+'],
     },
     {
-        id:48,
+        id:47,
         title:"縹色",
         subTitle:"つよい青",
         colorCode:"#2980af",
@@ -2548,7 +2548,7 @@ export const secondExam = [
         toneNumber:['d18','sf18'],
     },
     {
-        id:49,
+        id:48,
         title:"セルリアンブルー",
         subTitle:"あざやかな青",
         colorCode:"#008db7",
@@ -2601,7 +2601,7 @@ export const secondExam = [
         toneNumber:['v17','b16'],
     },
     {
-        id:50,
+        id:49,
         title:"ミッドナイトブルー",
         subTitle:"ごく暗い紫みの青",
         colorCode:"#001d42",
@@ -2654,7 +2654,7 @@ export const secondExam = [
         toneNumber:['dkg18'],
     },
     {
-        id:51,
+        id:50,
         title:"藤色",
         subTitle:"明るい青紫",
         colorCode:"#bbb7da",
@@ -2707,7 +2707,7 @@ export const secondExam = [
         toneNumber:['lt20+'],
     },
     {
-        id:52,
+        id:51,
         title:"ウィスタリア",
         subTitle:"あざやかな青紫",
         colorCode:"#8e8bc2",
@@ -2760,7 +2760,7 @@ export const secondExam = [
         toneNumber:[],
     },
     {
-        id:53,
+        id:52,
         title:"江戸紫",
         subTitle:"こい青みの紫",
         colorCode:"#734e95",
@@ -2813,7 +2813,7 @@ export const secondExam = [
         toneNumber:['d20','dp20'],
     },
     {
-        id:54,
+        id:53,
         title:"古代紫",
         subTitle:"くすんだ紫",
         colorCode:"#895687",
@@ -2866,7 +2866,7 @@ export const secondExam = [
         toneNumber:['d22'],
     },
     {
-        id:55,
+        id:54,
         title:"ライラック",
         subTitle:"やわらかい紫",
         colorCode:"#D2BADA",
@@ -2919,7 +2919,7 @@ export const secondExam = [
         toneNumber:['lt22+'],
     },
     {
-        id:56,
+        id:55,
         title:"銀鼠",
         subTitle:"明るい灰色",
         colorCode:"#afafb0",
@@ -2972,7 +2972,7 @@ export const secondExam = [
         toneNumber:['Gy-6.5'],
     },
     {
-        id:57,
+        id:56,
         title:"茶鼠",
         subTitle:"黄赤みの灰色",
         colorCode:"#a99e93",
@@ -3025,7 +3025,7 @@ export const secondExam = [
         toneNumber:['ltg6','g6'],
     },
     {
-        id:58,
+        id:57,
         title:"利休鼠",
         subTitle:"緑みの灰色",
         colorCode:"#7b8174",
@@ -3078,7 +3078,7 @@ export const secondExam = [
         toneNumber:['g12'],
     },
     {
-        id:59,
+        id:58,
         title:"煤竹色",
         subTitle:"赤みを帯びた黄みの暗い灰色",
         colorCode:"#6b5146",
@@ -3131,7 +3131,7 @@ export const secondExam = [
         toneNumber:['dkg6'],
     },
     {
-        id:60,
+        id:59,
         title:"スレートグレイ",
         subTitle:"暗い灰色",
         colorCode:"#636062",
@@ -3184,7 +3184,7 @@ export const secondExam = [
         toneNumber:['Gy-3.5','g18'],
     },
     {
-        id:61,
+        id:60,
         title:"ランプブラック",
         subTitle:"黒",
         colorCode:"#24130d",
@@ -3237,7 +3237,7 @@ export const secondExam = [
         toneNumber:['Bk'],
     },
     {
-        id:62,
+        id:61,
         title:"ニコチールレッド",
         subTitle:"あざやかなニコチール黄みの赤",
         colorCode:"#c82b55",
@@ -3290,7 +3290,7 @@ export const secondExam = [
         toneNumber:['v1'],
     },
     {
-        id:63,
+        id:62,
         title:"サックスブルー",
         subTitle:"くすんだ青",
         colorCode:"#3a8daa",
@@ -3343,7 +3343,7 @@ export const secondExam = [
         toneNumber:['sf18'],
     },
     {
-        id:64,
+        id:63,
         title:"ローズピンク",
         subTitle:"明るい紫みの赤",
         colorCode:"#f29c9f",

@@ -5,29 +5,135 @@
 export const thirdExam = [
     {
         id:1,
-        title:"鴇色",
-        subTitle:"明るい紫みの赤",
-        colorCode:"#f4b3c2",
-        description:"テキストが入ります",
+        title:"桜色",
+        subTitle:"ごくうすい紫みの赤",
+        colorCode:"#fdeeef",
+        description:"満開の山桜の花のような淡いピンクの色名。平安時代を通じて最も愛好された色名であり、「古今和歌集」にも登場している。この時代以降、桜色は詩歌の中に定着した。染色の色名としては紅染めの中で最も淡い色調の色が桜色と呼ばれている。",
         choices:[
             [
                 {
-                    "name":"鴇色",
-                    "colorCode":"#f4b3c2"
+                    "name":"桜色",
+                    "colorCode":"#fdeeef"
                 },
                 {
-                    "name":"オールドローズ",
-                    "colorCode":"#da8d93"
+                    "name":"紅梅色",
+                    "colorCode":"#F3ADA3"
                 },
                 {
-                    "name":"ローズピンク",
-                    "colorCode":"#f29c9f"
+                    "name":"珊瑚色",
+                    "colorCode":"#f3a7a5"
                 }
             ],
             [
                 {
-                    "name":"鴇色",
-                    "colorCode":"#f4b3c2"
+                    "name":"桜色",
+                    "colorCode":"#fdeeef"
+                },
+                {
+                    "name":"サーモンピンク",
+                    "colorCode":"#f4a583"
+                },
+                {
+                    "name":"紅梅色",
+                    "colorCode":"#F3ADA3"
+                }
+            ],
+            [
+                {
+                    "name":"桜色",
+                    "colorCode":"#fdeeef"
+                },
+                {
+                    "name":"珊瑚色",
+                    "colorCode":"#f3a7a5"
+                },
+                {
+                    "name":"ピーチ",
+                    "colorCode":"#fbd8b5"
+                },
+            ]
+        ],
+        answer:1,
+        toneNumber:['p24+'],
+    },
+    {
+        id:2,
+        title:"紅梅色",
+        subTitle:"やわらかい赤",
+        colorCode:"#f3a7a5",
+        description:"紅梅の花のようなピンクの色名。平安時代には冬から春にかけて愛好された。色が豊富な春の盛りには、紅梅色はややくどいと感じられたのか、清少納言「すさまじき」色と見飽きのする色とも述べられている。",
+        choices:[
+            [
+                {
+                    "name":"珊瑚色",
+                    "colorCode":"#F3ADA3"
+                },
+                {
+                    "name":"紅梅色",
+                    "colorCode":"#f3a7a5"
+                },
+                {
+                    "name":"桜色",
+                    "colorCode":"#fdeeef"
+                }
+            ],
+            [
+                {
+                    "name":"サーモンピンク",
+                    "colorCode":"#f4a583"
+                },
+                {
+                    "name":"紅梅色",
+                    "colorCode":"#f3a7a5"
+                },
+                {
+                    "name":"ピーチ",
+                    "colorCode":"#fbd8b5"
+                }
+            ],
+            [
+                {
+                    "name":"茜色",
+                    "colorCode":"#b7282d"
+                },
+                {
+                    "name":"紅梅色",
+                    "colorCode":"#f3a7a5"
+                },
+                {
+                    "name":"サーモンピンク",
+                    "colorCode":"#f4a583"
+                }
+            ]
+        ],
+        answer:2,
+        toneNumber:['lt2+','lt24+'],
+    },
+    {
+        id:3,
+        title:"珊瑚色",
+        subTitle:"明るい赤",
+        colorCode:"#F3ADA3",
+        description:"珊瑚には様々な色があるが、 装飾などで特に珍重されたのがピンク系とされる。そのため明るい赤の色名になった。絵の具の色名として珊瑚朱色(さんごしゅいろ)が古くから知られていたが、後に珊瑚色という色名として慣用されるようになった。",
+        choices:[
+            [
+                {
+                    "name":"紅梅色",
+                    "colorCode":"#f3a7a5"
+                },
+                {
+                    "name":"サーモンピンク",
+                    "colorCode":"#f4a583"
+                },
+                {
+                    "name":"珊瑚色",
+                    "colorCode":"#F3ADA3"
+                }
+            ],
+            [
+                {
+                    "name":"ピーチ",
+                    "colorCode":"#fbd8b5"
                 },
                 {
                     "name":"桜色",
@@ -40,2263 +146,2202 @@ export const thirdExam = [
             ],
             [
                 {
-                    "name":"鴇色",
-                    "colorCode":"#f4b3c2"
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
                 },
                 {
-                    "name":"韓紅色",
-                    "colorCode":"#e95464"
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
                 },
                 {
-                    "name":"紅梅色",
-                    "colorCode":"#f3a7a5"
-                }
-            ]
-        ],
-        answer:1,
-    },
-    {
-        id:2,
-        title:"韓紅色",
-        subTitle:"あざやかな赤",
-        colorCode:"#e95464",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"紅梅色",
-                    "colorCode":"#f3a7a5"
-                },
-                {
-                    "name":"カーマイン",
-                    "colorCode":"#d7003a"
-                },
-                {
-                    "name":"韓紅色",
-                    "colorCode":"#e95464"
-                }
-            ],
-            [
-                {
-                    "name":"ポピーレッド",
-                    "colorCode":"#e9474d"
-                },
-                {
-                    "name":"オールドローズ",
-                    "colorCode":"#da8d93"
-                },
-                {
-                    "name":"韓紅色",
-                    "colorCode":"#e95464"
-                }
-            ],
-            [
-                {
-                    "name":"カーマイン",
-                    "colorCode":"#d7003a"
-                },
-                {
-                    "name":"ポピーレッド",
-                    "colorCode":"#e9474d"
-                },
-                {
-                    "name":"韓紅色",
-                    "colorCode":"#e95464"
+                    "name":"珊瑚色",
+                    "colorCode":"#F3ADA3"
                 }
             ]
         ],
         answer:3,
-    },
-    /*{
-        id:3,
-        title:"蘇芳",
-        subTitle:"くすんだ赤",
-        colorCode:"#9e3d3e",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"弁柄色",
-                    "colorCode":"#8f2d12"
-                },
-                {
-                    "name":"鳶色",
-                    "colorCode":"#8b4239"
-                },
-                {
-                    "name":"蘇芳",
-                    "colorCode":"#9e3d3e"
-                }
-            ],
-            [
-                {
-                    "name":"海老茶",
-                    "colorCode":"#814336"
-                },
-                {
-                    "name":"煉瓦色",
-                    "colorCode":"#a2482b"
-                },
-                {
-                    "name":"蘇芳",
-                    "colorCode":"#9e3d3e"
-                }
-            ],
-            [
-                {
-                    "name":"鳶色",
-                    "colorCode":"#8b4239"
-                },
-                {
-                    "name":"海老茶",
-                    "colorCode":"#814336"
-                },
-                {
-                    "name":"蘇芳",
-                    "colorCode":"#9e3d3e"
-                }
-            ]
-        ],
-        answer:3,
+        toneNumber:['b2','lt2+'],
     },
     {
         id:4,
-        title:"鳶色",
-        subTitle:"暗い黄みの赤",
-        colorCode:"#8b4239",
-        description:"テキストが入ります",
+        title:"茜色",
+        subTitle:"こい赤",
+        colorCode:"#b7282d",
+        description:"茜は日本の山野にも自生するつる草。その根を原料とする染料で染めた色に照りはえる、という意味の枕詞「あかねさす」 は、すでに「万葉集」日本で最古の植物染料の一つとして知られる。",
         choices:[
             [
                 {
-                    "name":"煉瓦色",
-                    "colorCode":"#a2482b"
+                    "name":"ボルドー",
+                    "colorCode":"#5B1F27"
                 },
                 {
-                    "name":"鳶色",
-                    "colorCode":"#8b4239"
+                    "name":"ワインレッド",
+                    "colorCode":"#942E44"
                 },
                 {
-                    "name":"栗色",
-                    "colorCode":"#762e05"
+                    "name":"茜色",
+                    "colorCode":"#b7282d"
                 }
             ],
             [
                 {
-                    "name":"海老茶",
-                    "colorCode":"#814336"
+                    "name":"朱色",
+                    "colorCode":"#e94709"
                 },
                 {
-                    "name":"鳶色",
-                    "colorCode":"#8b4239"
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
                 },
                 {
-                    "name":"チョコレート",
-                    "colorCode":"#612c16"
+                    "name":"茜色",
+                    "colorCode":"#b7282d"
                 }
             ],
             [
                 {
-                    "name":"弁柄色",
-                    "colorCode":"#8f2d12"
+                    "name":"マゼンタ",
+                    "colorCode":"#e4007f"
                 },
                 {
-                    "name":"鳶色",
-                    "colorCode":"#8b4239"
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
                 },
                 {
-                    "name":"蘇芳",
-                    "colorCode":"#9e3d3e"
+                    "name":"茜色",
+                    "colorCode":"#b7282d"
                 }
             ]
+
         ],
-        answer:1,
+        answer:3,
+        toneNumber:['dp2'],
     },
     {
         id:5,
-        title:"弁柄色",
-        subTitle:"暗い黄みの赤",
-        colorCode:"#8f2d12",
-        description:"テキストが入ります",
+        title:"朱色",
+        subTitle:"あざやかな黄みの赤",
+        colorCode:"#e94709",
+        description:"硫化水銀を原料とする銀朱の色を表す色名。人造朱の銀朱の色は、東洋で印鑑の朱肉の色として知られる。これで押した印を朱印といい、天子の朱印は絶大な権威の象徴で、江戸時代に将軍だけが発行する公文書を朱印状といった。",
         choices:[
             [
                 {
-                    "name":"弁柄色",
-                    "colorCode":"#8f2d12"
+                    "name":"バーミリオン",
+                    "colorCode":"#e9514e"
                 },
                 {
-                    "name":"チョコレート",
-                    "colorCode":"#612c16"
+                    "name":"スカーレット",
+                    "colorCode":"#da433a"
                 },
                 {
-                    "name":"海老茶",
-                    "colorCode":"#814336"
+                    "name":"朱色",
+                    "colorCode":"#e94709"
                 }
             ],
             [
                 {
-                    "name":"弁柄色",
-                    "colorCode":"#8f2d12"
+                    "name":"マリーゴールド",
+                    "colorCode":"#f39800"
                 },
                 {
-                    "name":"蘇芳",
-                    "colorCode":"#9e3d3e"
+                    "name":"バーミリオン",
+                    "colorCode":"#e9514e"
                 },
                 {
-                    "name":"鳶色",
-                    "colorCode":"#8b4239"
+                    "name":"朱色",
+                    "colorCode":"#e94709"
                 }
             ],
             [
                 {
-                    "name":"弁柄色",
-                    "colorCode":"#8f2d12"
+                    "name":"山吹色",
+                    "colorCode":"#f8b500"
                 },
                 {
-                    "name":"海老茶",
-                    "colorCode":"#814336"
+                    "name":"マリーゴールド",
+                    "colorCode":"#f39800"
                 },
                 {
-                    "name":"煉瓦色",
-                    "colorCode":"#a2482b"
+                    "name":"朱色",
+                    "colorCode":"#e94709"
                 }
-            ]
+            ],
         ],
-        answer:1,
+        answer:3,
+        toneNumber:['v3'],
     },
     {
         id:6,
-        title:"海老茶",
-        subTitle:"暗い黄みの赤",
-        colorCode:"#814336",
-        description:"テキストが入ります",
+        title:"ワインレッド",
+        subTitle:"こい紫みの赤",
+        colorCode:"#942E44",
+        description:"赤ワインのような色を表す英語の色名。ワインの歴史は非常に古いが、英語でこい紫みの赤の色調を表現する色名になったのは18世紀のことで比較的新しく、その当初からワインカラーといえば赤ワインの色のことであった。",
         choices:[
             [
                 {
-                    "name":"煉瓦色",
-                    "colorCode":"#a2482b"
+                    "name":"ワインレッド",
+                    "colorCode":"#942E44"
                 },
                 {
-                    "name":"弁柄色",
-                    "colorCode":"#8f2d12"
+                    "name":"ボルドー",
+                    "colorCode":"#5B1F27"
                 },
                 {
-                    "name":"海老茶",
-                    "colorCode":"#814336"
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
                 }
             ],
             [
                 {
-                    "name":"栗色",
-                    "colorCode":"#762e05"
+                    "name":"ワインレッド",
+                    "colorCode":"#942E44"
                 },
                 {
-                    "name":"鳶色",
-                    "colorCode":"#8b4239"
+                    "name":"茜色",
+                    "colorCode":"#b7282d"
                 },
                 {
-                    "name":"海老茶",
-                    "colorCode":"#814336"
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
                 }
             ],
             [
                 {
-                    "name":"蘇芳",
-                    "colorCode":"#9e3d3e"
+                    "name":"ワインレッド",
+                    "colorCode":"#942E44"
                 },
                 {
-                    "name":"チョコレート",
-                    "colorCode":"#612c16"
+                    "name":"マゼンタ",
+                    "colorCode":"#e4007f"
                 },
                 {
-                    "name":"海老茶",
-                    "colorCode":"#814336"
+                    "name":"ボルドー",
+                    "colorCode":"#5B1F27"
                 }
-            ]
+            ],
         ],
-        answer:3,
+        answer:1,
+        toneNumber:['dp24'],
     },
     {
         id:7,
-        title:"オールドローズ",
-        subTitle:"やわらかい赤",
-        colorCode:"#da8d93",
-        description:"テキストが入ります",
+        title:"ボルドー",
+        subTitle:"ごく暗い赤",
+        colorCode:"#5B1F27",
+        description:"英名のワインレッドという色名ができる200年前から、赤ワインの色を表すクラレット(caret) という英色名が使われていた。これはフランスのボルドー赤ワインのことだが、19世紀にはボルドーが国際的に通用する色名となった。",
         choices:[
             [
-                {
-                    "name":"オールドローズ",
-                    "colorCode":"#da8d93"
-                },
-                {
-                    "name":"蘇芳",
-                    "colorCode":"#9e3d3e"
-                },
-                {
-                    "name":"ローズピンク",
-                    "colorCode":"#f29c9f"
-                }
-            ],
-            [
-                {
-                    "name":"オールドローズ",
-                    "colorCode":"#da8d93"
-                },
-                {
-                    "name":"韓紅色",
-                    "colorCode":"#e95464"
-                },
-                {
-                    "name":"紅梅色",
-                    "colorCode":"#f3a7a5"
-                }
-            ],
-            [
-                {
-                    "name":"オールドローズ",
-                    "colorCode":"#da8d93"
-                },
-                {
-                    "name":"紅梅色",
-                    "colorCode":"#f3a7a5"
-                },
-                {
-                    "name":"ローズピンク",
-                    "colorCode":"#f29c9f"
-                }
-            ]
-        ],
-        answer:1,
-    },
-    {
-        id:8,
-        title:"ポピーレッド",
-        subTitle:"あざやかな赤",
-        colorCode:"#e9474d",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"韓紅色",
-                    "colorCode":"#e95464"
-                },
-                {
-                    "name":"ポピーレッド",
-                    "colorCode":"#e9474d"
-                },
-                {
-                    "name":"カーマイン",
-                    "colorCode":"#d7003a"
-                },
-            ],
-            [
-                {
-                    "name":"鴇色",
-                    "colorCode":"#"
-                },
-                {
-                    "name":"ポピーレッド",
-                    "colorCode":"#e9474d"
-                },
-                {
-                    "name":"紅梅色",
-                    "colorCode":"#f3a7a5"
-                }
-            ],
-            [
-                {
-                    "name":"カーマイン",
-                    "colorCode":"#d7003a"
-                },
-                {
-                    "name":"ポピーレッド",
-                    "colorCode":"#e9474d"
-                },
-                {
-                    "name":"蘇芳",
-                    "colorCode":"#9e3d3e"
-                }
-            ]
-        ],
-        answer:2,
-    },
-    {
-        id:9,
-        title:"マルーン",
-        subTitle:"暗い赤",
-        colorCode:"#6a1816",
-        description:"マルーン（Maroon）とはスペイン産の大粒の西洋栗のことです。",
-        choices:[
-            [
-                {
-                    "name":"蘇芳",
-                    "colorCode":"#9e3d3e"
-                },
                 {
                     "name":"チョコレート",
                     "colorCode":"#612c16"
                 },
                 {
-                    "name":"マルーン",
-                    "colorCode":"#6a1816"
+                    "name":"ボルドー",
+                    "colorCode":"#5B1F27"
+                },
+                {
+                    "name":"ワインレッド",
+                    "colorCode":"#942E44"
                 }
             ],
             [
                 {
-                    "name":"海老茶",
-                    "colorCode":"#814336"
+                    "name":"セピア",
+                    "colorCode":"#48392b"
                 },
                 {
-                    "name":"バーガンディー",
-                    "colorCode":"#561620"
+                    "name":"ボルドー",
+                    "colorCode":"#5B1F27"
                 },
                 {
-                    "name":"マルーン",
-                    "colorCode":"#6a1816"
+                    "name":"チョコレート",
+                    "colorCode":"#612c16"
                 }
             ],
             [
                 {
-                    "name":"テラコッタ",
-                    "colorCode":"#be6d55"
+                    "name":"ワインレッド",
+                    "colorCode":"#942E44"
                 },
                 {
-                    "name":"桧皮色",
-                    "colorCode":"#965036"
+                    "name":"ボルドー",
+                    "colorCode":"#5B1F27"
                 },
                 {
-                    "name":"マルーン",
-                    "colorCode":"#6a1816"
+                    "name":"茜色",
+                    "colorCode":"#b7282d"
                 }
-            ]
+            ],
+        ],
+        answer:2,
+        toneNumber:['dkg2'],
+    },
+    {
+        id:8,
+        title:"カーマイン",
+        subTitle:"ざやかな赤",
+        colorCode:"#d7003a",
+        description:"日本の真紅は紅花染めだが、 西洋の真紅は中南米のサポテンに寄生する介殻虫 (かいがらむし)のコチニールから採取された動物性染料の赤。 コロンブスの新大陸発見によってヨーロッパにもたらされた。16世紀から色名になったとされる。",
+        choices:[
+            [
+                {
+                    "name":"茜色",
+                    "colorCode":"#b7282d"
+                },
+                {
+                    "name":"紅梅色",
+                    "colorCode":"#f3a7a5"
+                },
+                {
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
+                }
+            ],
+            [
+                {
+                    "name":"ワインレッド",
+                    "colorCode":"#942E44"
+                },
+                {
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
+                },
+                {
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
+                }
+            ],
+            [
+                {
+                    "name":"ワインレッド",
+                    "colorCode":"#942E44"
+                },
+                {
+                    "name":"茜色",
+                    "colorCode":"#b7282d"
+                },
+                {
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
+                }
+            ],
         ],
         answer:3,
+        toneNumber:['v2','v1','v3'],
+    },
+    {
+        id:9,
+        title:"バーミリオン",
+        subTitle:"あざやかな黄みの赤",
+        colorCode:"#e9514e",
+        description:"硫化水銀を原料とする人造朱の銀朱の色を表す色名。人造朱は9世紀頃のアラビアの錬金術師の発見ともいわれている。16世紀の終わりには安上がりのイミテーションの朱色が登場したというが、どれも色名はバーミリオンであった。",
+        choices:[
+            [
+                {
+                    "name":"バーミリオン",
+                    "colorCode":"#e9514e"
+                },
+                {
+                    "name":"スカーレット",
+                    "colorCode":"#da433a"
+                },
+                {
+                    "name":"朱色",
+                    "colorCode":"#e94709"
+                }
+            ],
+            [
+                {
+                    "name":"バーミリオン",
+                    "colorCode":"#e9514e"
+                },
+                {
+                    "name":"マリーゴールド",
+                    "colorCode":"#f39800"
+                },
+                {
+                    "name":"スカーレット",
+                    "colorCode":"#da433a"
+                }
+            ],
+            [
+                {
+                    "name":"バーミリオン",
+                    "colorCode":"#e9514e"
+                },
+                {
+                    "name":"マリーゴールド",
+                    "colorCode":"#f39800"
+                },
+                {
+                    "name":"スカーレット",
+                    "colorCode":"#da433a"
+                }
+            ],
+        ],
+        answer:1,
+        toneNumber:['v3'],
     },
     {
         id:10,
-        title:"テラコッタ",
-        subTitle:"くすんだ黄みの赤",
-        colorCode:"#be6d55",
-        description:"テラコッタ（Terracotta）とはイタリア語で「焼いた（cotta）土（terra）」という意味です。",
+        title:"スカーレット",
+        subTitle:"あざやかな黄みの赤",
+        colorCode:"#da433a",
+        description:"英語の色名としては13世紀には誕生していた。中世ラテン語のスカルラトゥム、さらに遡れペルシャ語の織物の名前だったといわれている。日本語の緋色(ひいろ)に相当するとされている。",
         choices:[
             [
                 {
-                    "name":"テラコッタ",
-                    "colorCode":"#be6d55"
+                    "name":"朱色",
+                    "colorCode":"#e94709"
                 },
                 {
-                    "name":"バーガンディー",
-                    "colorCode":"#561620"
+                    "name":"スカーレット",
+                    "colorCode":"#da433a"
                 },
                 {
-                    "name":"桧皮色",
-                    "colorCode":"#965036"
-                }
+                    "name":"バーミリオン",
+                    "colorCode":"#e9514e"
+                },
             ],
             [
                 {
-                    "name":"テラコッタ",
-                    "colorCode":"#be6d55"
+                    "name":"サーモンピンク",
+                    "colorCode":"#f4a583"
                 },
                 {
-                    "name":"琥珀色",
-                    "colorCode":"#bf7834"
+                    "name":"スカーレット",
+                    "colorCode":"#da433a"
                 },
                 {
-                    "name":"代赭",
-                    "colorCode":"#bb541f"
-                }
+                    "name":"バーミリオン",
+                    "colorCode":"#e9514e"
+                },
             ],
             [
                 {
-                    "name":"テラコッタ",
-                    "colorCode":"#be6d55"
+                    "name":"山吹色",
+                    "colorCode":"#f8b500"
                 },
                 {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
+                    "name":"スカーレット",
+                    "colorCode":"#da433a"
                 },
                 {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
+                    "name":"朱色",
+                    "colorCode":"#e94709"
                 }
-            ]
+            ],
         ],
-        answer:1,
+        answer:2,
+        toneNumber:['v3'],
     },
     {
         id:11,
-        title:"黄丹",
-        subTitle:"つよい黄赤",
-        colorCode:"#ee7948",
-        description:"テキストが入ります",
+        title:"サーモンピンク",
+        subTitle:"やわらかい黄みの赤",
+        colorCode:"#f4a583",
+        description:"18世紀にできた色名。魚の切り身の色として最も特徴があるのはやはり鮭(さけ)の身の色であ鮭(さけ)の身のである。ほかに魚の身の色からとられた色名は、まず見あたらない。",
         choices:[
             [
                 {
-                    "name":"柑子色",
-                    "colorCode":"#f6ad48"
+                    "name":"サーモンピンク",
+                    "colorCode":"#f4a583"
                 },
                 {
-                    "name":"黄丹",
-                    "colorCode":"#ee7948"
+                    "name":"朱色",
+                    "colorCode":"#e94709"
                 },
                 {
-                    "name":"黄蘗色",
-                    "colorCode":"#fef263"
+                    "name":"珊瑚色",
+                    "colorCode":"#F3ADA3"
                 }
             ],
             [
                 {
-                    "name":"ゴールデンイエロー",
-                    "colorCode":"#f8b856"
+                    "name":"サーモンピンク",
+                    "colorCode":"#f4a583"
                 },
                 {
-                    "name":"黄丹",
-                    "colorCode":"#ee7948"
+                    "name":"珊瑚色",
+                    "colorCode":"#F3ADA3"
                 },
                 {
-                    "name":"バーミリオン",
-                    "colorCode":"#eb613b"
+                    "name":"ピーチ",
+                    "colorCode":"#fbd8b5"
                 }
             ],
             [
                 {
-                    "name":"マリーゴールド",
-                    "colorCode":"#f39800"
+                    "name":"サーモンピンク",
+                    "colorCode":"#f4a583"
                 },
-                {
-                    "name":"黄丹",
-                    "colorCode":"#ee7948"
-                },
-                {
-                    "name":"柑子色",
-                    "colorCode":"#f6ad48"
-                }
-            ]
-        ],
-        answer:2,
-    },
-    {
-        id:12,
-        title:"桧皮色",
-        subTitle:"暗い灰みの黄赤",
-        colorCode:"#965036",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"桧皮色",
-                    "colorCode":"#965036"
-                },
-                {
-                    "name":"代赭",
-                    "colorCode":"#bb541f"
-                },
-                {
-                    "name":"バーントシェンナ",
-                    "colorCode":"#b25532"
-                }
-            ],
-            [
-                {
-                    "name":"桧皮色",
-                    "colorCode":"#965036"
-                },
-                {
-                    "name":"蘇芳",
-                    "colorCode":"#9e3d3e"
-                },
-                {
-                    "name":"マルーン",
-                    "colorCode":"#6a1816"
-                }
-            ],
-            [
-                {
-                    "name":"桧皮色",
-                    "colorCode":"#965036"
-                },
-                {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
-                },
-                {
-                    "name":"バーントシェンナ",
-                    "colorCode":"#b25532"
-                }
-            ]
-        ],
-        answer:1,
-    },
-    {
-        id:13,
-        title:"代赭",
-        subTitle:"くすんだ黄赤",
-        colorCode:"#bb541f",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
-                },
-                {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
-                },
-                {
-                    "name":"代赭",
-                    "colorCode":"#bb541f"
-                }
-            ],
-            [
-                {
-                    "name":"琥珀色",
-                    "colorCode":"#bf7834"
-                },
-                {
-                    "name":"桧皮色",
-                    "colorCode":"#965036"
-                },
-                {
-                    "name":"代赭",
-                    "colorCode":"#bb541f"
-                }
-            ],
-            [
-                {
-                    "name":"蘇芳",
-                    "colorCode":"#9e3d3e"
-                },
-                {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
-                },
-                {
-                    "name":"代赭",
-                    "colorCode":"#bb541f"
-                }
-            ]
-        ],
-        answer:3,
-    },
-    {
-        id:14,
-        title:"柑子色",
-        subTitle:"明るい黄赤",
-        colorCode:"#f6ad48",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"マリーゴールド",
-                    "colorCode":"#f39800"
-                },
-                {
-                    "name":"黄丹",
-                    "colorCode":"#ee7948"
-                },
-                {
-                    "name":"柑子色",
-                    "colorCode":"#f6ad48"
-                }
-            ],
-            [
-                {
-                    "name":"黄丹",
-                    "colorCode":"#ee7948"
-                },
-                {
-                    "name":"黄蘗色",
-                    "colorCode":"#fef263"
-                },
-                {
-                    "name":"柑子色",
-                    "colorCode":"#f6ad48"
-                }
-            ],
-            [
-                {
-                    "name":"黄蘗色",
-                    "colorCode":"#fef263"
-                },
-                {
-                    "name":"マリーゴールド",
-                    "colorCode":"#f39800"
-                },
-                {
-                    "name":"柑子色",
-                    "colorCode":"#f6ad48"
-                }
-            ]
-        ],
-        answer:3,
-    },
-    {
-        id:15,
-        title:"チャイニーズレッド",
-        subTitle:"あざやかな黄赤",
-        colorCode:"#ea5520",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"チャイニーズレッド",
-                    "colorCode":"#ea5520"
-                },
-                {
-                    "name":"黄丹",
-                    "colorCode":"#ee7948"
-                },
-                {
-                    "name":"バーミリオン",
-                    "colorCode":"#eb613b"
-                }
-            ],
-            [
-                {
-                    "name":"チャイニーズレッド",
-                    "colorCode":"#ea5520"
-                },
-                {
-                    "name":"柑子色",
-                    "colorCode":"#f6ad48"
-                },
-                {
-                    "name":"桧皮色",
-                    "colorCode":"#965036"
-                }
-            ],
-            [
-                {
-                    "name":"チャイニーズレッド",
-                    "colorCode":"#ea5520"
-                },
-                {
-                    "name":"マリーゴールド",
-                    "colorCode":"#f39800"
-                },
-                {
-                    "name":"黄丹",
-                    "colorCode":"#ee7948"
-                },
-            ]
-        ],
-        answer:1,
-    },
-    {
-        id:16,
-        title:"バーントシェンナ",
-        subTitle:"くすんだ黄赤",
-        colorCode:"#b25532",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"桧皮色",
-                    "colorCode":"#965036"
-                },
-                {
-                    "name":"バーントシェンナ",
-                    "colorCode":"#b25532"
-                },
-                {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
-                }
-            ],
-            [
-                {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
-                },
-                {
-                    "name":"バーントシェンナ",
-                    "colorCode":"#b25532"
-                },
-                {
-                    "name":"琥珀色",
-                    "colorCode":"#bf7834"
-                }
-            ],
-            [
-                {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
-                },
-                {
-                    "name":"バーントシェンナ",
-                    "colorCode":"#b25532"
-                },
-                {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
-                }
-            ]
-        ],
-        answer:2,
-    },
-    {
-        id:17,
-        title:"ローシェンナ",
-        subTitle:"つよい黄赤",
-        colorCode:"#d98032",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"バーントシェンナ",
-                    "colorCode":"#b25532"
-                },
-                {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
-                },
-                {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
-                }
-            ],
-            [
-                {
-                    "name":"桧皮色",
-                    "colorCode":"#965036"
-                },
-                {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
-                },
-                {
-                    "name":"琥珀色",
-                    "colorCode":"#bf7834"
-                }
-            ],
-            [
-                {
-                    "name":"テラコッタ",
-                    "colorCode":"#be6d55"
-                },
-                {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
-                },
-                {
-                    "name":"ローアンバー",
-                    "colorCode":"#916f24"
-                }
-            ]
-        ],
-        answer:3,
-    },
-    {
-        id:18,
-        title:"タン",
-        subTitle:"くすんだ黄赤",
-        colorCode:"#c1813f",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"カーキー",
-                    "colorCode":"#bb9855"
-                },
-                {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
-                },
-                {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
-                }
-            ],
-            [
-                {
-                    "name":"黄土色",
-                    "colorCode":"#c39043"
-                },
-                {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
-                },
-                {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
-                }
-            ],
-            [
-                {
-                    "name":"ローアンバー",
-                    "colorCode":"#916f24"
-                },
-                {
-                    "name":"アンバー",
-                    "colorCode":"#c28953"
-                },
-                {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
-                }
-            ]
-        ],
-        answer:3,
-    },
-    {
-        id:19,
-        title:"琥珀色",
-        subTitle:"くすんだ赤みの黄",
-        colorCode:"#bf7834",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"アンバー",
-                    "colorCode":"#c28953"
-                },
-                {
-                    "name":"琥珀色",
-                    "colorCode":"#bf7834"
-                },
-                {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
-                }
-            ],
-            [
-                {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
-                },
-                {
-                    "name":"琥珀色",
-                    "colorCode":"#bf7834"
-                },
-                {
-                    "name":"代赭",
-                    "colorCode":"#bb541f"
-                }
-            ],
-            [
-                {
-                    "name":"黄土色",
-                    "colorCode":"#c39043"
-                },
-                {
-                    "name":"琥珀色",
-                    "colorCode":"#bf7834"
-                },
-                {
-                    "name":"ローアンバー",
-                    "colorCode":"#916f24"
-                }
-            ]
-        ],
-        answer:2,
-    },
-    {
-        id:20,
-        title:"朽葉色",
-        subTitle:"灰みの赤みを帯びた黄",
-        colorCode:"#917347",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"朽葉色",
-                    "colorCode":"#917347"
-                },
-                {
-                    "name":"カーキー",
-                    "colorCode":"#bb9855"
-                },
-                {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
-                }
-            ],
-            [
-                {
-                    "name":"朽葉色",
-                    "colorCode":"#917347"
-                },
-                {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
-                },
-                {
-                    "name":"桧皮色",
-                    "colorCode":"#965036"
-                }
-            ],
-            [
-                {
-                    "name":"朽葉色",
-                    "colorCode":"#917347"
-                },
-                {
-                    "name":"煤竹色",
-                    "colorCode":"#6b5146"
-                },
-                {
-                    "name":"代赭",
-                    "colorCode":"#bb541f"
-                }
-            ]
-        ],
-        answer:1,
-    },
-    {
-        id:21,
-        title:"鬱金色",
-        subTitle:"つよい黄",
-        colorCode:"#fabf13",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"鬱金色",
-                    "colorCode":"#fabf13"
-                },
-                {
-                    "name":"刈安色",
-                    "colorCode":"#f5e56b"
-                },
-                {
-                    "name":"ゴールデンイエロー",
-                    "colorCode":"#f8b856"
-                }
-            ],
-            [
-                {
-                    "name":"鬱金色",
-                    "colorCode":"#fabf13"
-                },
-                {
-                    "name":"ネープルスイエロー",
-                    "colorCode":"#fdd75c"
-                },
-                {
-                    "name":"ジョンブリアン",
-                    "colorCode":"#ffdc00"
-                },
-            ],
-            [
-                {
-                    "name":"黄蘗色",
-                    "colorCode":"#fef263"
-                },
-                {
-                    "name":"レモンイエロー",
-                    "colorCode":"#fff33f"
-                },
-                {
-                    "name":"柑子色",
-                    "colorCode":"#f6ad48"
-                }
-            ]
-        ],
-        answer:3,
-    },
-    {
-        id:22,
-        title:"刈安色",
-        subTitle:"うすい緑みの黄",
-        colorCode:"#f5e56b",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"黄蘗色",
-                    "colorCode":"#fef263"
-                },
-                {
-                    "name":"刈安色",
-                    "colorCode":"#f5e56b"
-                },
-                {
-                    "name":"カナリヤ",
-                    "colorCode":"#fff262"
-                }
-            ],
-            [
-                {
-                    "name":"ネープルスイエロー",
-                    "colorCode":"#fdd75c"
-                },
-                {
-                    "name":"刈安色",
-                    "colorCode":"#f5e56b"
-                },
-                {
-                    "name":"ゴールデンイエロー",
-                    "colorCode":"#f8b856"
-                }
-            ],
-            [
-                {
-                    "name":"レモンイエロー",
-                    "colorCode":"#fff33f"
-                },
-                {
-                    "name":"刈安色",
-                    "colorCode":"#f5e56b"
-                },
-                {
-                    "name":"鬱金色",
-                    "colorCode":"#fabf13"
-                }
-            ]
-        ],
-        answer:3,
-    },
-    {
-        id:23,
-        title:"エクルベイジュ",
-        subTitle:"うすい赤みの黄",
-        colorCode:"#f8eacf",
-        description:"テキストが入ります",
-        choices:[
-            [
                 {
                     "name":"ピーチ",
                     "colorCode":"#fbd8b5"
                 },
                 {
-                    "name":"ネープルスイエロー",
-                    "colorCode":"#fdd75c"
+                    "name":"珊瑚色",
+                    "colorCode":"#F3ADA3"
+                }
+            ],
+        ],
+        answer:1,
+        toneNumber:['lt4+'],
+    },
+    {
+        id:12,
+        title:"煉瓦色",
+        subTitle:"暗い黄赤",
+        colorCode:"#a2482b",
+        description:"煉瓦にはいろいろな色調のものがあるが、代表的なのは赤煉瓦の色。英語の色名でも「赤煉瓦「色」を意味するブリックレッド(brickred)が古い。日本人がこの色名になじむようになったのは明治の文明開化以降のこと。",
+        choices:[
+            [
+                {
+                    "name":"栗色",
+                    "colorCode":"#762e05"
                 },
                 {
-                    "name":"エクルベイジュ",
-                    "colorCode":"#f8eacf"
+                    "name":"チョコレート",
+                    "colorCode":"#612c16"
+                },
+                {
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
                 }
             ],
             [
                 {
-                    "name":"生成り色",
-                    "colorCode":"#fbfaf3"
+                    "name":"黄土色",
+                    "colorCode":"#c39043"
+                },
+                {
+                    "name":"栗色",
+                    "colorCode":"#762e05"
+                },
+                {
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
+                }
+            ],
+            [
+                {
+                    "name":"栗色",
+                    "colorCode":"#762e05"
+                },
+                {
+                    "name":"セピア",
+                    "colorCode":"#48392b"
+                },
+                {
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
+                }
+            ],
+        ],
+        answer:3,
+        toneNumber:['d4','dk4'],
+    },
+    {
+        id:13,
+        title:"栗色",
+        subTitle:"暗い灰みの黄赤",
+        colorCode:"#762e05",
+        description:"栗の実の皮のような色のこと。「栗皮色」という別名もあるが、これらの中世から近世にかけての呼び方。平安時代の「落栗(おちぐり)」という名称で、秋の色目だった。",
+        choices:[
+            [
+                {
+                    "name":"栗色",
+                    "colorCode":"#762e05"
+                },
+                {
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
+                },
+                {
+                    "name":"チョコレート",
+                    "colorCode":"#612c16"
+                },
+            ],
+            [
+                {
+                    "name":"栗色",
+                    "colorCode":"#762e05"
+                },
+                {
+                    "name":"セピア",
+                    "colorCode":"#48392b"
+                },
+                {
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
+                },
+            ],
+            [
+                {
+                    "name":"栗色",
+                    "colorCode":"#762e05"
+                },
+                {
+                    "name":"チョコレート",
+                    "colorCode":"#612c16"
+                },
+                {
+                    "name":"セピア",
+                    "colorCode":"#48392b"
+                }
+            ],
+        ],
+        answer:1,
+        toneNumber:['dk4','g4'],
+    },
+    {
+        id:14,
+        title:"チョコレート",
+        subTitle:"ごく暗い黄赤",
+        colorCode:"#612c16",
+        description:"コロンブスがカカオ豆をスペインに持ち帰ったのは1502年。ヨーロッパ人の好みに合うようになったのは17世紀後半で18世紀前半に色名としても使われるようになった。黒に近い色を色名になったのは20世紀の初めである。",
+        choices:[
+            [
+                {
+                    "name":"チョコレート",
+                    "colorCode":"#612c16"
+                },
+                {
+                    "name":"栗色",
+                    "colorCode":"#762e05"
+                },
+                {
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
+                }
+            ],
+            [
+                {
+                    "name":"チョコレート",
+                    "colorCode":"#612c16"
+                },
+                {
+                    "name":"チャコールグレイ",
+                    "colorCode":"#4e4449"
+                },
+                {
+                    "name":"栗色",
+                    "colorCode":"#762e05"
+                }
+            ],
+            [
+                {
+                    "name":"チョコレート",
+                    "colorCode":"#612c16"
+                },
+                {
+                    "name":"セピア",
+                    "colorCode":"#48392b"
+                },
+                {
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
+                }
+            ],
+        ],
+        answer:1,
+        toneNumber:['dkg4'],
+    },
+    {
+        id:15,
+        title:"ピーチ",
+        subTitle:"明るい灰みの黄赤",
+        colorCode:"#fbd8b5",
+        description:"日本語の桃色は花の色を表す色名。英語のピーチ、仏語のペッシュ(peche)は、どちらも桃の果肉の色を表す色名で、桃色とは色がまるで違う。色名は16世紀の終わり頃から用いられるようになった。",
+        choices:[
+            [
+                {
+                    "name":"サーモンピンク",
+                    "colorCode":"#f4a583"
+                },
+                {
+                    "name":"ピーチ",
+                    "colorCode":"#fbd8b5#"
+                },
+                {
+                    "name":"ベージュ",
+                    "colorCode":"#bfaB90"
+                }
+            ],
+            [
+                {
+                    "name":"ベージュ",
+                    "colorCode":"#bfaB90"
+                },
+                {
+                    "name":"ピーチ",
+                    "colorCode":"#fbd8b5#"
                 },
                 {
                     "name":"アイボリー",
                     "colorCode":"#F8F5E4"
-                },
-                {
-                    "name":"エクルベイジュ",
-                    "colorCode":"#f8eacf"
                 }
             ],
             [
+                {
+                    "name":"生成り色",
+                    "colorCode":"#f7efe3"
+                },
+                {
+                    "name":"ピーチ",
+                    "colorCode":"#fbd8b5#"
+                },
+                {
+                    "name":"サーモンピンク",
+                    "colorCode":"#f4a583"
+                }
+            ],
+        ],
+        answer:2,
+        toneNumber:['p4+'],
+    },
+    {
+        id:16,
+        title:"山吹色",
+        subTitle:"あざやかな赤みの黄",
+        colorCode:"#f8b500",
+        description:"山吹の花のような鮮やかな黄を表す色名。黄色の花から名づけられた伝統的な色名は山吹色くらいしかない。平安文学では黄の色相を代表する色名で、後には黄金の大判小判の形容になった。",
+        choices:[
+            [
+                {
+                    "name":"マリーゴールド",
+                    "colorCode":"#f39800"
+                },
                 {
                     "name":"カナリヤ",
                     "colorCode":"#fff262"
                 },
                 {
-                    "name":"生成り色",
-                    "colorCode":"#fbfaf3"
+                    "name":"山吹色",
+                    "colorCode":"#f8b500"
+                }
+            ],
+            [
+                {
+                    "name":"芥子色",
+                    "colorCode":"#d2b74e"
                 },
                 {
-                    "name":"エクルベイジュ",
-                    "colorCode":"#f8eacf"
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
+                },
+                {
+                    "name":"山吹色",
+                    "colorCode":"#f8b500"
                 }
-            ]
+            ],
+            [
+                {
+                    "name":"バーミリオン",
+                    "colorCode":"#e9514e"
+                },
+                {
+                    "name":"マリーゴールド",
+                    "colorCode":"#f39800"
+                },
+                {
+                    "name":"山吹色",
+                    "colorCode":"#f8b500"
+                }
+            ],
         ],
         answer:3,
+        toneNumber:['v7','v6'],
     },
     {
-        id:24,
-        title:"ゴールデンイエロー",
-        subTitle:"つよい赤みの黄",
-        colorCode:"#f8b856",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"刈安色",
-                    "colorCode":"#f5e56b"
-                },
-                {
-                    "name":"ゴールデンイエロー",
-                    "colorCode":"#f8b856"
-                },
-                {
-                    "name":"ネープルスイエロー",
-                    "colorCode":"#fdd75c"
-                }
-            ],
-            [
-                {
-                    "name":"ジョンブリアン",
-                    "colorCode":"#ffdc00"
-                },
-                {
-                    "name":"ゴールデンイエロー",
-                    "colorCode":"#f8b856"
-                },
-                {
-                    "name":"レモンイエロー",
-                    "colorCode":"#fff33f"
-                }
-            ],
-            [
-                {
-                    "name":"鬱金色",
-                    "colorCode":"#fabf13"
-                },
-                {
-                    "name":"ゴールデンイエロー",
-                    "colorCode":"#f8b856"
-                },
-                {
-                    "name":"柑子色",
-                    "colorCode":"#f6ad48"
-                }
-            ]
-        ],
-        answer:2,
-    },
-    {
-        id:25,
-        title:"アンバー",
+        id:17,
+        title:"黄土色",
         subTitle:"くすんだ赤みの黄",
-        colorCode:"#c28953",
-        description:"テキストが入ります",
+        colorCode:"#c39043",
+        description:"日本画の黄土は水酸化鉄を含む泥土からつくられた絵の具。天然の土である黄土の色の色名でもあるが、黄土は地球の北半球のほとんどでみられる。英語の色名ではイエローオーカーになる。",
         choices:[
             [
                 {
-                    "name":"アンバー",
-                    "colorCode":"#c28953"
-                },
-                {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
+                    "name":"カーキー",
+                    "colorCode":"#bb9855"
                 },
                 {
                     "name":"黄土色",
                     "colorCode":"#c39043"
+                },
+                {
+                    "name":"芥子色",
+                    "colorCode":"#d2b74e"
                 }
             ],
             [
                 {
-                    "name":"アンバー",
-                    "colorCode":"#c28953"
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
                 },
                 {
-                    "name":"琥珀色",
-                    "colorCode":"#bf7834"
+                    "name":"黄土色",
+                    "colorCode":"#c39043"
                 },
                 {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
+                    "name":"カーキー",
+                    "colorCode":"#bb9855"
                 }
             ],
             [
                 {
-                    "name":"アンバー",
-                    "colorCode":"#c28953"
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
                 },
                 {
-                    "name":"バーントアンバー",
-                    "colorCode":"#7a5e3d"
+                    "name":"黄土色",
+                    "colorCode":"#c39043"
                 },
                 {
-                    "name":"代赭",
-                    "colorCode":"#bb541f"
+                    "name":"セピア",
+                    "colorCode":"#48392b"
                 }
-            ]
+            ],
+        ],
+        answer:2,
+        toneNumber:['d6'],
+    },
+    {
+        id:18,
+        title:"芥子色",
+        subTitle:"やわらかい黄",
+        colorCode:"#d2b74e",
+        description:"おでんなどでよく使われる練りカラシの色で、ややくすんだ黄である。カラシナの種子を粉にして練ったもの。英語ではマスタードやマスタードイエローと呼ばれるが、この色名はJIS規格にはない。",
+        choices:[
+            [
+                {
+                    "name":"カーキー",
+                    "colorCode":"#bb9855"
+                },
+                {
+                    "name":"芥子色",
+                    "colorCode":"#d2b74e"
+                },
+                {
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
+                }
+            ],
+            [
+                {
+                    "name":"鶯色",
+                    "colorCode":"#6f6f44"
+                },
+                {
+                    "name":"芥子色",
+                    "colorCode":"#d2b74e"
+                },
+                {
+                    "name":"カーキー",
+                    "colorCode":"#bb9855"
+                }
+            ],
+            [
+                {
+                    "name":"鶯色",
+                    "colorCode":"#6f6f44"
+                },
+                {
+                    "name":"芥子色",
+                    "colorCode":"#d2b74e"
+                },
+                {
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
+                }
+            ],
+        ],
+        answer:2,
+        toneNumber:['sf8'],
+    },
+    {
+        id:19,
+        title:"マリーゴールド",
+        subTitle:"あざやかな赤みの黄",
+        colorCode:"#f39800",
+        description:"マリーゴールドの花のような色を表す、英米ではポピュラーな伝統的な色名。色名になったのは17世紀半ば頃。いわば西洋の山吹色であるが、色名にゴールドを含むこの色と、小判の形容になる山吹色が共通するのは黄金の色の連想である。",
+        choices:[
+            [
+                {
+                    "name":"マリーゴールド",
+                    "colorCode":"#f39800"
+                },
+                {
+                    "name":"山吹色",
+                    "colorCode":"#f8b500"
+                },
+                {
+                    "name":"朱色",
+                    "colorCode":"#e94709"
+                }
+            ],
+            [
+                {
+                    "name":"マリーゴールド",
+                    "colorCode":"#f39800"
+                },
+                {
+                    "name":"バーミリオン",
+                    "colorCode":"#e9514e"
+                },
+                {
+                    "name":"山吹色",
+                    "colorCode":"#f8b500"
+                }
+            ],
+            [
+                {
+                    "name":"マリーゴールド",
+                    "colorCode":"#f39800"
+                },
+                {
+                    "name":"朱色",
+                    "colorCode":"#e94709"
+                },
+                {
+                    "name":"スカーレット",
+                    "colorCode":"#da433a"
+                }
+            ],
         ],
         answer:1,
+        toneNumber:['v6'],
+    },
+    {
+        id:20,
+        title:"ベージュ",
+        subTitle:"明るい灰みの赤みを帯びた黄",
+        colorCode:"#bfaB90",
+        description:"ベージュは13世紀頃のフランス語で未加工、未漂白、未染色の毛織物の色の名前であった。その前はイタリア語でつめものの綿くずのことだったとも。それが19世紀には流行色の色名として、高級な色のシンボルとされるようになった。",
+        choices:[
+            [
+                {
+                    "name":"ベージュ",
+                    "colorCode":"#bfaB90"
+                },
+                {
+                    "name":"生成り色",
+                    "colorCode":"#f7efe3"
+                },
+                {
+                    "name":"アイボリー",
+                    "colorCode":"#F8F5E4"
+                }
+            ],
+            [
+                {
+                    "name":"ベージュ",
+                    "colorCode":"#bfaB90"
+                },
+                {
+                    "name":"ピーチ",
+                    "colorCode":"#fbd8b5"
+                },
+                {
+                    "name":"カーキー",
+                    "colorCode":"#bb9855"
+                }
+            ],
+            [
+                {
+                    "name":"ベージュ",
+                    "colorCode":"#bfaB90"
+                },
+                {
+                    "name":"生成り色",
+                    "colorCode":"#f7efe3"
+                },
+                {
+                    "name":"サーモンピンク",
+                    "colorCode":"#f4a583"
+                }
+            ],
+        ],
+        answer:3,
+        toneNumber:['ltg6'],
+    },
+    {
+        id:21,
+        title:"セピア",
+        subTitle:"ごく暗い赤いみの黄",
+        colorCode:"#48392b",
+        description:"イカが墨を出す墨汁嚢(のう)からつくった古代の絵の具の名前であった。もとはギリシャ語で、ラテン語を経由して英語の色名として定着した。イカ墨は古代には文字を書くインクとして広く用いられたが、今は化学製品になっている。",
+        choices:[
+            [
+                {
+                    "name":"栗色",
+                    "colorCode":"#762e05"
+                },
+                {
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
+                },
+                {
+                    "name":"セピア",
+                    "colorCode":"#48392b"
+                }
+            ],
+            [
+                {
+                    "name":"チョコレート",
+                    "colorCode":"#612c16"
+                },
+                {
+                    "name":"オリーブ",
+                    "colorCode":"#5d5426"
+                },
+                {
+                    "name":"セピア",
+                    "colorCode":"#48392b"
+                }
+            ],
+            [
+                {
+                    "name":"栗色",
+                    "colorCode":"#762e05"
+                },
+                {
+                    "name":"チョコレート",
+                    "colorCode":"#612c16"
+                },
+                {
+                    "name":"セピア",
+                    "colorCode":"#48392b"
+                }
+            ],
+        ],
+        answer:3,
+        toneNumber:['dkg6'],
+    },
+    {
+        id:22,
+        title:"カーキー",
+        subTitle:"くすんだ赤みの黄",
+        colorCode:"#bb9855",
+        description:"19世紀半ば、インドに駐在していたイギリス軍の部隊が、この色の軍服を採用し、現地の言ミリタリーカラーの始まりである。カーキーはペルシャ語、ヒンズー教でちり、ほこりのようなという意味。",
+        choices:[
+            [
+                {
+                    "name":"芥子色",
+                    "colorCode":"#d2b74e"
+                },
+                {
+                    "name":"カーキー",
+                    "colorCode":"#bb9855"
+                },
+                {
+                    "name":"鶯色",
+                    "colorCode":"#6f6f44"
+                }
+            ],
+            [
+                {
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
+                },
+                {
+                    "name":"カーキー",
+                    "colorCode":"#bb9855"
+                },
+                {
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
+                }
+            ],
+            [
+                {
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
+                },
+                {
+                    "name":"カーキー",
+                    "colorCode":"#bb9855"
+                },
+                {
+                    "name":"芥子色",
+                    "colorCode":"#d2b74e"
+                }
+            ],
+        ],
+        answer:2,
+        toneNumber:['dk8','d6'],
+    },
+    {
+        id:23,
+        title:"ブロンド",
+        subTitle:"やわらかい黄",
+        colorCode:"#ddb563",
+        description:"11世紀頃のフランス語の色名に由来するが、起源は古ゲルマン語で、単に明るい色という意味だったようである。それが主に金髪を表す特殊な色名になった。英語の色名としても15世|紀には使われていたようである。",
+        choices:[
+            [
+                {
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
+                },
+                {
+                    "name":"ベージュ",
+                    "colorCode":"#bfaB90"
+                },
+                {
+                    "name":"クリームイエロー",
+                    "colorCode":"#fff2b8"
+                },
+            ],
+            [
+                {
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
+                },
+                {
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
+                },
+                {
+                    "name":"ベージュ",
+                    "colorCode":"#bfaB90"
+                },
+            ],
+            [
+                {
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
+                },
+                {
+                    "name":"クリームイエロー",
+                    "colorCode":"#fff2b8"
+                },
+                {
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
+                }
+            ],
+        ],
+        answer:1,
+        toneNumber:['sf8'],
+    },
+    {
+        id:24,
+        title:"クリームイエロー",
+        subTitle:"ごくうすい黄",
+        colorCode:"#fff2b8",
+        description:"乳製品として広く普及しているクリームの色。中世には英、仏語ですでに色名になっていた。日本ではおそらく中国経由で酥色(そしょく)という色名が入り、月明治初年の教科書に紹介されている。クリームは今では大変一般的な色名である。",
+        choices:[
+            [
+                {
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
+                },
+                {
+                    "name":"クリームイエロー",
+                    "colorCode":"#fff2b8"
+                },
+                {
+                    "name":"ベージュ",
+                    "colorCode":"#bfaB90"
+                },
+            ],
+            [
+                {
+                    "name":"ベージュ",
+                    "colorCode":"#bfaB90"
+                },
+                {
+                    "name":"クリームイエロー",
+                    "colorCode":"#fff2b8"
+                },
+                {
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
+                },
+            ],
+            [
+                {
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
+                },
+                {
+                    "name":"クリームイエロー",
+                    "colorCode":"#fff2b8"
+                },
+                {
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
+                }
+            ],
+        ],
+        answer:2,
+        toneNumber:['p8+'],
+    },
+    {
+        id:25,
+        title:"カナリヤ",
+        subTitle:"明るい緑みの黄",
+        colorCode:"#fff262",
+        description:"大西洋上のカナリヤ、マディラ、アゾレス諸島が原産地の鳥、カナリヤの羽毛のような黄の色名。日本には18世紀、ヨーロッパには15世紀末に輸入されたが、英語の色名ができたのは18世紀の終わり頃である。",
+        choices:[
+            [
+                {
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
+                },
+                {
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
+                },
+                {
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
+                }
+            ],
+            [
+                {
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
+                },
+                {
+                    "name":"芥子色",
+                    "colorCode":"#d2b74e"
+                },
+                {
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
+                }
+            ],
+            [
+                {
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
+                },
+                {
+                    "name":"ベージュ",
+                    "colorCode":"#bfaB90"
+                },
+                {
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
+                }
+            ],
+        ],
+        answer:1,
+        toneNumber:['b8'],
     },
     {
         id:26,
-        title:"バーントアンバー",
-        subTitle:"ごく暗い赤みの黄",
-        colorCode:"#7a5e3d",
-        description:"テキストが入ります",
+        title:"オリーブ",
+        subTitle:"暗い緑みの黄",
+        colorCode:"#5d5426",
+        description:"旧約聖書の創世記にすでにオリーブの葉が出てくるように、ヨーロッパ人の生活には不可欠な植物。その実の色を表す英語の色名ができたのは18世紀。アメリカでは黄の色相の暗い色調を分類するための基本的な色名の一つとされることがある。",
         choices:[
             [
                 {
-                    "name":"バーントアンバー",
-                    "colorCode":"#7a5e3d"
+                    "name":"オリーブ",
+                    "colorCode":"#5d5426"
                 },
                 {
-                    "name":"桧皮色",
-                    "colorCode":"#965036"
+                    "name":"鶯色",
+                    "colorCode":"#6f6f44"
                 },
                 {
-                    "name":"アンバー",
-                    "colorCode":"#c28953"
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
                 }
             ],
             [
                 {
-                    "name":"バーントアンバー",
-                    "colorCode":"#7a5e3d"
+                    "name":"オリーブ",
+                    "colorCode":"#5d5426"
                 },
                 {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
+                    "name":"カーキー",
+                    "colorCode":"#bb9855"
                 },
                 {
-                    "name":"テラコッタ",
-                    "colorCode":"#be6d55"
+                    "name":"鶯色",
+                    "colorCode":"#6f6f44"
                 }
             ],
             [
                 {
-                    "name":"バーントアンバー",
-                    "colorCode":"#7a5e3d"
+                    "name":"オリーブ",
+                    "colorCode":"#5d5426"
                 },
                 {
-                    "name":"琥珀色",
-                    "colorCode":"#bf7834"
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
                 },
                 {
-                    "name":"ローアンバー",
-                    "colorCode":"#916f24"
+                    "name":"ビリジアン",
+                    "colorCode":"#046e56"
                 }
-            ]
+            ],
         ],
         answer:1,
+        toneNumber:['dk8'],
     },
     {
         id:27,
-        title:"ローアンバー",
-        subTitle:"暗い黄",
-        colorCode:"#916f24",
-        description:"テキストが入ります",
+        title:"レモンイエロー",
+        subTitle:"あざやかな緑みの黄",
+        colorCode:"#fff33f",
+        description:"レモンイエローは緑みの黄の色名であるが、この色の絵の具が登場したのは19世紀後半。この時代にクロームイエローとカドミウムイエローの絵の具が生産されるようになり、その中の緑みの黄の絵の具の色名になった。",
         choices:[
             [
                 {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
                 },
                 {
-                    "name":"ローアンバー",
-                    "colorCode":"#916f24"
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
                 },
                 {
-                    "name":"琥珀色",
-                    "colorCode":"#bf7834"
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
                 }
             ],
             [
                 {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
+                    "name":"カナリヤ",
+                    "colorCode":"#fff262"
                 },
                 {
-                    "name":"ローアンバー",
-                    "colorCode":"#916f24"
+                    "name":"クリームイエロー",
+                    "colorCode":"#fff2b8"
                 },
                 {
-                    "name":"バーントアンバー",
-                    "colorCode":"#7a5e3d"
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
                 }
             ],
             [
                 {
-                    "name":"ローシェンナ",
-                    "colorCode":"#d98032"
+                    "name":"クリームイエロー",
+                    "colorCode":"#fff2b8"
                 },
                 {
-                    "name":"ローアンバー",
-                    "colorCode":"#916f24"
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
                 },
                 {
-                    "name":"アンバー",
-                    "colorCode":"#c28953"
+                    "name":"レモンイエロー",
+                    "colorCode":"#fff33f"
                 }
-            ]
+            ],
         ],
-        answer:2,
+        answer:3,
+        toneNumber:['v9'],
     },
     {
         id:28,
-        title:"ネープルスイエロー",
-        subTitle:"つよい黄",
-        colorCode:"#fdd75c",
-        description:"テキストが入ります",
+        title:"鶯色",
+        subTitle:"くすんだ黄緑",
+        colorCode:"#6f6f44",
+        description:"鶯の羽毛のような暗い黄緑色の色名。日本語の色名には動物の毛皮から名づけられた色名は少ないが、江戸時代になると身近な鳥の羽毛の色を表す色名がよく見られるようになる。この色もその一つである。",
         choices:[
             [
                 {
-                    "name":"刈安色",
-                    "colorCode":"#f5e56b"
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
                 },
                 {
-                    "name":"カナリヤ",
-                    "colorCode":"#fff262"
+                    "name":"鶯色",
+                    "colorCode":"#6f6f44"
                 },
                 {
-                    "name":"ネープルスイエロー",
-                    "colorCode":"#fdd75c"
+                    "name":"オリーブ",
+                    "colorCode":"#5d5426"
                 }
             ],
             [
                 {
-                    "name":"ジョンブリアン",
-                    "colorCode":"#ffdc00"
+                    "name":"オリーブ",
+                    "colorCode":"#5d5426"
                 },
                 {
-                    "name":"黄蘗色",
-                    "colorCode":"#fef263"
+                    "name":"鶯色",
+                    "colorCode":"#6f6f44"
                 },
                 {
-                    "name":"ネープルスイエロー",
-                    "colorCode":"#fdd75c"
+                    "name":"カーキー",
+                    "colorCode":"#bb9855"
                 }
             ],
             [
                 {
-                    "name":"レモンイエロー",
-                    "colorCode":"#fff33f"
+                    "name":"萌黄",
+                    "colorCode":"#AFD147"
                 },
                 {
-                    "name":"ゴールデンイエロー",
-                    "colorCode":"#f8b856"
+                    "name":"鶯色",
+                    "colorCode":"#6f6f44"
                 },
                 {
-                    "name":"ネープルスイエロー",
-                    "colorCode":"#fdd75c"
+                    "name":"オリーブ",
+                    "colorCode":"#5d5426"
                 }
-            ]
+            ],
         ],
-        answer:3,
+        answer:2,
+        toneNumber:['g10','d10'],
     },
     {
         id:29,
-        title:"ジョンブリアン",
-        subTitle:"あざやかな黄",
-        colorCode:"#ffdc00",
-        description:"テキストが入ります",
+        title:"萌黄",
+        subTitle:"つよい黄緑",
+        colorCode:"#AFD147",
+        description:"春に芽吹く若葉のような黄緑色を表す伝統的な色名。萌葱とも書く。平安時代以来、新鮮さ、若々しさを象徴する黄緑色の代表的な色名だったので、今後とも後の世代に伝えていきたい色名の一つである。",
         choices:[
             [
                 {
-                    "name":"カナリヤ",
-                    "colorCode":"#fff262"
+                    "name":"若竹色",
+                    "colorCode":"#67be8d"
                 },
                 {
-                    "name":"ジョンブリアン",
-                    "colorCode":"#ffdc00"
+                    "name":"萌黄",
+                    "colorCode":"#AFD147"
                 },
                 {
-                    "name":"鬱金色",
-                    "colorCode":"#fabf13"
+                    "name":"コバルトグリーン",
+                    "colorCode":"#3ab483"
                 }
             ],
             [
                 {
-                    "name":"ゴールデンイエロー",
-                    "colorCode":"#f8b856"
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 },
                 {
-                    "name":"ジョンブリアン",
-                    "colorCode":"#ffdc00"
+                    "name":"萌黄",
+                    "colorCode":"#AFD147"
                 },
                 {
-                    "name":"ネープルスイエロー",
-                    "colorCode":"#fdd75c"
+                    "name":"若竹色",
+                    "colorCode":"#67be8d"
                 }
             ],
             [
                 {
-                    "name":"レモンイエロー",
-                    "colorCode":"#fff33f"
+                    "name":"鶯色",
+                    "colorCode":"#6f6f44"
                 },
                 {
-                    "name":"ジョンブリアン",
-                    "colorCode":"#ffdc00"
+                    "name":"萌黄",
+                    "colorCode":"#AFD147"
                 },
                 {
-                    "name":"ゴールデンイエロー",
-                    "colorCode":"#f8b856"
+                    "name":"コバルトグリーン",
+                    "colorCode":"#3ab483"
                 }
-            ]
+            ],
         ],
         answer:2,
+        toneNumber:['v10','b10'],
     },
     {
         id:30,
-        title:"黄蘗色",
-        subTitle:"あかるい黄緑",
-        colorCode:"#fef263",
-        description:"テキストが入ります",
+        title:"オリーブグリーン",
+        subTitle:"暗い灰みの黄緑",
+        colorCode:"#5f651e",
+        description:"オリーブのつく色名は、イエロー、ブラウン、グリーン、グレイなどあり、その色域はかなり広いが、17世紀に初めて英語の色名になったのはオリーブグリーンであった。これが生の実の色なのか葉の色のことなのかはわかっていない。",
         choices:[
             [
                 {
-                    "name":"黄蘗色",
-                    "colorCode":"#fef263"
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
                 },
                 {
-                    "name":"ゴールデンイエロー",
-                    "colorCode":"#f8b856"
+                    "name":"オリーブ",
+                    "colorCode":"#5d5426"
                 },
                 {
-                    "name":"カナリヤ",
-                    "colorCode":"#fff262"
-                }
+                    "name":"鶯色",
+                    "colorCode":"#6f6f44"
+                },
             ],
             [
                 {
-                    "name":"黄蘗色",
-                    "colorCode":"#fef263"
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
                 },
                 {
-                    "name":"レモンイエロー",
-                    "colorCode":"#fff33f"
+                    "name":"鶯色",
+                    "colorCode":"#6f6f44"
                 },
                 {
-                    "name":"ネープルスイエロー",
-                    "colorCode":"#fdd75c"
-                }
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
+                },
             ],
             [
                 {
-                    "name":"黄蘗色",
-                    "colorCode":"#fef263"
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
                 },
                 {
-                    "name":"柑子色",
-                    "colorCode":"#f6ad48"
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 },
                 {
-                    "name":"刈安色",
-                    "colorCode":"#f5e56b"
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 }
-            ]
+            ],
         ],
         answer:1,
+        toneNumber:['g10','dk10'],
     },
     {
         id:31,
-        title:"海松色",
-        subTitle:"暗い灰みの黄緑",
-        colorCode:"#726d3f",
-        description:"テキストが入ります",
+        title:"若竹色",
+        subTitle:"つよい緑",
+        colorCode:"#67be8d",
+        description:"竹の幹の緑を表す色名の中でも若い竹の色を表現している。成長した竹の色の青竹色、老竹色(おいたけいろ)はくすんだ緑色である。若竹色の色名は化学染料の時代になってからのもののようである。",
         choices:[
             [
                 {
-                    "name":"鶸色",
-                    "colorCode":"#d7cf3a"
+                    "name":"若竹色",
+                    "colorCode":"#76ac96"
                 },
                 {
-                    "name":"グラスグリーン",
-                    "colorCode":"#7b8d41"
+                    "name":"青磁色",
+                    "colorCode":"#76ac96"
                 },
                 {
-                    "name":"海松色",
-                    "colorCode":"#726d3f"
+                    "name":"コバルトグリーン",
+                    "colorCode":"#3ab483"
                 }
             ],
             [
                 {
-                    "name":"鶯色",
-                    "colorCode":"#9d973b"
+                    "name":"若竹色",
+                    "colorCode":"#76ac96"
                 },
                 {
-                    "name":"グラスグリーン",
-                    "colorCode":"#7b8d41"
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 },
                 {
-                    "name":"海松色",
-                    "colorCode":"#726d3f"
+                    "name":"青磁色",
+                    "colorCode":"#76ac96"
                 }
             ],
             [
                 {
-                    "name":"オリーブ",
-                    "colorCode":"#72640a"
+                    "name":"若竹色",
+                    "colorCode":"#76ac96"
                 },
                 {
-                    "name":"鶯色",
-                    "colorCode":"#9d973b"
+                    "name":"エメラルドグリーン",
+                    "colorCode":"#00aa6e"
                 },
                 {
-                    "name":"海松色",
-                    "colorCode":"#726d3f"
+                    "name":"青磁色",
+                    "colorCode":"#76ac96"
                 }
-            ]
+            ],
         ],
         answer:3,
+        toneNumber:['b12'],
     },
     {
         id:32,
-        title:"鶸色",
-        subTitle:"つよい黄緑",
-        colorCode:"#d7cf3a",
-        description:"テキストが入ります",
+        title:"青磁色",
+        subTitle:"やわらかい青みの緑",
+        colorCode:"#76ac96",
+        description:"中国の唐の時代につくられた青磁は、平安時代に日本にも知られて「秘色(ひそく)」と呼ばれていた。その青い磁器の肌のような色の染色の色名が後に青磁色と呼ばれるようになった。",
         choices:[
             [
                 {
-                    "name":"鶸色",
-                    "colorCode":"#d7cf3a"
+                    "name":"コバルトグリーン",
+                    "colorCode":"#3ab483"
                 },
                 {
-                    "name":"海松色",
-                    "colorCode":"#726d3f"
+                    "name":"若竹色",
+                    "colorCode":"#76ac96"
                 },
                 {
-                    "name":"グラスグリーン",
-                    "colorCode":"#7b8d41"
+                    "name":"青磁色",
+                    "colorCode":"#76ac96"
                 }
             ],
             [
                 {
-                    "name":"鶸色",
-                    "colorCode":"#d7cf3a"
+                    "name":"若竹色",
+                    "colorCode":"#76ac96"
                 },
                 {
-                    "name":"鶯色",
-                    "colorCode":"#9d973b"
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 },
                 {
-                    "name":"海松色",
-                    "colorCode":"#726d3f"
+                    "name":"青磁色",
+                    "colorCode":"#76ac96"
                 }
             ],
             [
                 {
-                    "name":"鶸色",
-                    "colorCode":"#d7cf3a"
+                    "name":"エメラルドグリーン",
+                    "colorCode":"#00aa6e"
                 },
                 {
-                    "name":"鴇色",
-                    "colorCode":"#f4b3c2"
+                    "name":"コバルトグリーン",
+                    "colorCode":"#3ab483"
                 },
                 {
-                    "name":"鶯色",
-                    "colorCode":"#9d973b"
+                    "name":"青磁色",
+                    "colorCode":"#76ac96"
                 }
-            ]
+            ],
         ],
-        answer:1,
+        answer:3,
+        toneNumber:['sf12'],
     },
     {
         id:33,
-        title:"シャトルーズグリーン",
-        subTitle:"明るい黄緑",
-        colorCode:"#d9e367",
-        description:"テキストが入ります",
+        title:"コバルトグリーン",
+        subTitle:"明るい緑",
+        colorCode:"#3ab483",
+        description:"ヨーロッパの画家たちがこの色の絵の具を使うことができるようになったのは19世紀中頃からのことであるが、コバルトによる色はそれ以前に実験によって発見されていた。この色名はその発見から間もない18世紀の終わりに出現している。",
         choices:[
             [
                 {
-                    "name":"萌黄",
-                    "colorCode":"#AFD147"
+                    "name":"コバルトグリーン",
+                    "colorCode":"#3ab483"
                 },
                 {
-                    "name":"シャトルーズグリーン",
-                    "colorCode":"#d9e367"
+                    "name":"エメラルドグリーン",
+                    "colorCode":"#00aa6e"
                 },
                 {
-                    "name":"鶸色",
-                    "colorCode":"#d7cf3a"
+                    "name":"青磁色",
+                    "colorCode":"#76ac96"
                 }
             ],
             [
                 {
-                    "name":"グラスグリーン",
-                    "colorCode":"#7b8d41"
+                    "name":"エメラルドグリーン",
+                    "colorCode":"#00aa6e"
                 },
                 {
-                    "name":"シャトルーズグリーン",
-                    "colorCode":"#d9e367"
+                    "name":"若竹色",
+                    "colorCode":"#76ac96"
                 },
                 {
-                    "name":"リーフグリーン",
-                    "colorCode":"#9dc04c"
+                    "name":"青磁色",
+                    "colorCode":"#"
                 }
             ],
             [
                 {
-                    "name":"リーフグリーン",
-                    "colorCode":"#9dc04c"
+                    "name":"コバルトグリーン",
+                    "colorCode":"#3ab483"
                 },
                 {
-                    "name":"シャトルーズグリーン",
-                    "colorCode":"#d9e367"
+                    "name":"若竹色",
+                    "colorCode":"#76ac96"
                 },
                 {
-                    "name":"萌黄",
-                    "colorCode":"#AFD147"
+                    "name":"青磁色",
+                    "colorCode":"#76ac96"
                 }
-            ]
+            ],
         ],
-        answer:2,
+        answer:1,
+        toneNumber:['b12'],
     },
     {
         id:34,
-        title:"リーフグリーン",
-        subTitle:"つよい黄緑",
-        colorCode:"#9dc04c",
-        description:"テキストが入ります",
+        title:"エメラルドグリーン",
+        subTitle:"つよい緑",
+        colorCode:"#00aa6e",
+        description:"緑の宝石として有名なエメラルドのような色を表す色名。この色の絵の具をつくろうとして、いろいろな緑色が試作され、それぞれがエメラルドグリーンを名のるが、結局19世紀半ばにクロームグリーンの絵の具の色名として定着した。",
         choices:[
             [
                 {
-                    "name":"リーフグリーン",
-                    "colorCode":"#9dc04c"
+                    "name":"若竹色",
+                    "colorCode":"#67be8d"
                 },
                 {
-                    "name":"シャトルーズグリーン",
-                    "colorCode":"#d9e367"
+                    "name":"コバルトグリーン",
+                    "colorCode":"#3ab483"
                 },
                 {
-                    "name":"グラスグリーン",
-                    "colorCode":"#7b8d41"
+                    "name":"エメラルドグリーン",
+                    "colorCode":"#00aa6e"
                 }
             ],
             [
                 {
-                    "name":"リーフグリーン",
-                    "colorCode":"#9dc04c"
+                    "name":"ビリジアン",
+                    "colorCode":"#046e56"
                 },
                 {
-                    "name":"鶯色",
-                    "colorCode":"#9d973b"
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 },
                 {
-                    "name":"鶸色",
-                    "colorCode":"#d7cf3a"
+                    "name":"エメラルドグリーン",
+                    "colorCode":"#00aa6e"
                 }
             ],
             [
                 {
-                    "name":"リーフグリーン",
-                    "colorCode":"#9dc04c"
+                    "name":"ビリジアン",
+                    "colorCode":"#046e56"
                 },
                 {
-                    "name":"萌黄",
-                    "colorCode":"#AFD147"
+                    "name":"コバルトグリーン",
+                    "colorCode":"#3ab483"
                 },
                 {
-                    "name":"オリーブ",
-                    "colorCode":"#72640a"
+                    "name":"エメラルドグリーン",
+                    "colorCode":"#00aa6e"
                 }
-            ]
+            ],
         ],
-        answer:1,
+        answer:3,
+        toneNumber:['b12'],
     },
     {
         id:35,
-        title:"グラスグリーン",
-        subTitle:"くすんだ黄緑",
-        colorCode:"#7b8d41",
-        description:"テキストが入ります",
+        title:"ビリジアン",
+        subTitle:"くすんだ青みの緑",
+        colorCode:"#046e56",
+        description:"フランス人のギネが1859年に製造特許を登録した水酸化クロームをもとにつくられた絵の具の緑色の名前。ラテン語の緑のヴィリディスから造語された名称である。現在ではクロームグリーンとともに緑色を代表する絵の具の色名である。",
         choices:[
             [
                 {
-                    "name":"リーフグリーン",
-                    "colorCode":"#9dc04c"
+                    "name":"エメラルドグリーン",
+                    "colorCode":"#00aa6e"
                 },
                 {
-                    "name":"海松色",
-                    "colorCode":"#726d3f"
+                    "name":"ビリジアン",
+                    "colorCode":"#046e56"
                 },
                 {
-                    "name":"グラスグリーン",
-                    "colorCode":"#7b8d41"
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
                 }
             ],
             [
                 {
-                    "name":"鶸色",
-                    "colorCode":"#d7cf3a"
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 },
                 {
-                    "name":"鶯色",
-                    "colorCode":"#9d973b"
+                    "name":"ビリジアン",
+                    "colorCode":"#046e56"
                 },
                 {
-                    "name":"グラスグリーン",
-                    "colorCode":"#7b8d41"
+                    "name":"若竹色",
+                    "colorCode":"#76ac96"
                 }
             ],
             [
                 {
-                    "name":"オリーブ",
-                    "colorCode":"#72640a"
+                    "name":"コバルトグリーン",
+                    "colorCode":"#3ab483"
                 },
                 {
-                    "name":"シャトルーズグリーン",
-                    "colorCode":"#d9e367"
+                    "name":"ビリジアン",
+                    "colorCode":"#046e56"
                 },
                 {
-                    "name":"グラスグリーン",
-                    "colorCode":"#7b8d41"
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
                 }
-            ]
+            ],
         ],
-        answer:3,
+        answer:2,
+        toneNumber:['d12'],
     },
     {
         id:36,
-        title:"常磐色",
-        subTitle:"こい緑",
-        colorCode:"#007c45",
-        description:"テキストが入ります",
+        title:"浅葱色",
+        subTitle:"あざやかな緑みの青",
+        colorCode:"#00a1ae",
+        description:"平安時代に薄い黄染めを表す浅黄という色名があり、紛らわしいとされてきた。浅葱色は葱(ねぎ)の若芽のような色という意味。葱の色より青寄りの色で、明るい藍染めの色の色名として用いられた。ターコイズとはトルコ石として知られる宝石で、青と緑の中間色相の色を表す色名としてよく用いられる。",
         choices:[
             [
                 {
-                    "name":"常磐色",
-                    "colorCode":"#007c45"
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 },
                 {
-                    "name":"ボトルグリーン",
-                    "colorCode":"#005635"
+                    "name":"若竹色",
+                    "colorCode":"#67be8d"
                 },
                 {
-                    "name":"グラスグリーン",
-                    "colorCode":"#7b8d41"
+                    "name":"青磁色",
+                    "colorCode":"#76ac96"
                 }
             ],
             [
                 {
-                    "name":"常磐色",
-                    "colorCode":"#007c45"
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 },
                 {
-                    "name":"マラカイトグリーン",
-                    "colorCode":"##009854"
+                    "name":"群青色",
+                    "colorCode":"#4e67b0"
                 },
                 {
-                    "name":"オリーブ",
-                    "colorCode":"#72640a"
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
                 }
             ],
             [
                 {
-                    "name":"常磐色",
-                    "colorCode":"#007c45"
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 },
                 {
-                    "name":"海松色",
-                    "colorCode":"#726d3f"
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
                 },
                 {
-                    "name":"ボトルグリーン",
-                    "colorCode":"#005635"
+                    "name":"若竹色",
+                    "colorCode":"#67be8d"
                 }
-            ]
+            ],
         ],
         answer:1,
+        toneNumber:['b16'],
     },
     {
         id:37,
-        title:"緑青色",
-        subTitle:"くすんだ緑",
-        colorCode:"#4f8a5d",
-        description:"テキストが入ります",
+        title:"空色",
+        subTitle:"明るい青",
+        colorCode:"#A0D8EF",
+        description:"天候により空の色は様々に変わるが、これは晴天の青空の色を表す色名。英語ではスカイブ多くの言語で明るい青は空の色と呼ばれている。古くから一般的な色名として知られている色である。",
         choices:[
             [
                 {
-                    "name":"鶯色",
-                    "colorCode":"#9d973b"
+                    "name":"ベビーブルー",
+                    "colorCode":"#bbe2f1"
                 },
                 {
-                    "name":"緑青色",
-                    "colorCode":"#4f8a5d"
+                    "name":"ターコイズブルー",
+                    "colorCode":"#00afcc"
                 },
                 {
-                    "name":"常磐色",
-                    "colorCode":"#007c45"
+                    "name":"空色",
+                    "colorCode":"#A0D8EF"
                 }
             ],
             [
                 {
-                    "name":"コバルトグリーン",
-                    "colorCode":"#3ab483"
+                    "name":"ターコイズブルー",
+                    "colorCode":"#00afcc"
                 },
                 {
-                    "name":"緑青色",
-                    "colorCode":"#4f8a5d"
+                    "name":"ベビーブルー",
+                    "colorCode":"#bbe2f1"
                 },
                 {
-                    "name":"ミントグリーン",
-                    "colorCode":"#98ce97"
+                    "name":"空色",
+                    "colorCode":"#A0D8EF"
                 }
             ],
             [
                 {
-                    "name":"ピーコックグリーン",
-                    "colorCode":"#00a496"
+                    "name":"コバルトブルー",
+                    "colorCode":"#0068b7"
                 },
                 {
-                    "name":"緑青色",
-                    "colorCode":"#4f8a5d"
+                    "name":"ベビーブルー",
+                    "colorCode":"#bbe2f1"
                 },
                 {
-                    "name":"青磁色",
-                    "colorCode":"#68b7a1"
+                    "name":"空色",
+                    "colorCode":"#A0D8EF"
                 }
-            ]
+            ],
         ],
-        answer:2,
+        answer:3,
+        toneNumber:['lt16+'],
     },
     {
         id:38,
-        title:"アップルグリーン",
-        subTitle:"やわらかい黄みの緑",
-        colorCode:"#a2cc89",
-        description:"テキストが入ります",
+        title:"藍色",
+        subTitle:"暗い青",
+        colorCode:"#0f5779",
+        description:"藍染めの起源は神話、伝説の時代に遡るほど古く、藍は人類最古の植物染料といわれる。日本ではタデアイ(藍)が用いられてきた。19世紀末に藍染めは化学染料になるが、その色と色名は昔のまま藍色、インディゴで通用する。",
         choices:[
             [
                 {
-                    "name":"コバルトグリーン",
-                    "colorCode":"#3ab483"
+                    "name":"瑠璃色",
+                    "colorCode":"#1d50a2"
                 },
                 {
-                    "name":"シャトルーズグリーン",
-                    "colorCode":"#d9e367"
+                    "name":"藍色",
+                    "colorCode":"#0f5779"
                 },
                 {
-                    "name":"アップルグリーン",
-                    "colorCode":"#a2cc89"
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
                 }
             ],
             [
                 {
-                    "name":"ピーコックグリーン",
-                    "colorCode":"#00a496"
+                    "name":"ネービーブルー",
+                    "colorCode":"#1f2e55"
                 },
                 {
-                    "name":"ミントグリーン",
-                    "colorCode":"#98ce97"
+                    "name":"藍色",
+                    "colorCode":"#0f5779"
                 },
                 {
-                    "name":"アップルグリーン",
-                    "colorCode":"#a2cc89"
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
                 }
             ],
             [
                 {
-                    "name":"ミントグリーン",
-                    "colorCode":"#98ce97"
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
                 },
                 {
-                    "name":"グラスグリーン",
-                    "colorCode":"#7b8d41"
+                    "name":"藍色",
+                    "colorCode":"#0f5779"
                 },
                 {
-                    "name":"アップルグリーン",
-                    "colorCode":"#a2cc89"
+                    "name":"瑠璃色",
+                    "colorCode":"#1d50a2"
                 }
-            ]
+            ],
         ],
-        answer:3,
+        answer:2,
+        toneNumber:['dk18','d18'],
     },
     {
         id:39,
-        title:"ミントグリーン",
-        subTitle:"明るい緑",
-        colorCode:"#98ce97",
-        description:"テキストが入ります",
+        title:"瑠璃色",
+        subTitle:"こい紫みの青",
+        colorCode:"#1d50a2",
+        description:"古代インドや中国で珍重された、青い宝石の瑠璃のような色を表す。平安初期にはこの色名が生まれている。瑠璃は仏教では七宝の一つにあげられる。おそらく瑠璃は青い宝石ラピスラズリ(lapislazul)のことである。",
         choices:[
             [
                 {
-                    "name":"ミントグリーン",
-                    "colorCode":"#98ce97"
+                    "name":"瑠璃色",
+                    "colorCode":"＃1d50a2"
                 },
                 {
-                    "name":"アップルグリーン",
-                    "colorCode":"#a2cc89"
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
                 },
                 {
-                    "name":"シャトルーズグリーン",
-                    "colorCode":"#d9e367"
+                    "name":"群青色",
+                    "colorCode":"#4e67b0"
                 }
             ],
             [
                 {
-                    "name":"ミントグリーン",
-                    "colorCode":"#98ce97"
+                    "name":"瑠璃色",
+                    "colorCode":"＃1d50a2"
                 },
                 {
-                    "name":"リーフグリーン",
-                    "colorCode":"#9dc04c"
+                    "name":"ネービーブルー",
+                    "colorCode":"#1f2e55"
                 },
                 {
-                    "name":"ピーコックグリーン",
-                    "colorCode":"#00a496"
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
                 }
             ],
             [
                 {
-                    "name":"ミントグリーン",
-                    "colorCode":"#98ce97"
+                    "name":"瑠璃色",
+                    "colorCode":"＃1d50a2"
                 },
                 {
-                    "name":"緑青色",
-                    "colorCode":"#4f8a5d"
+                    "name":"シアン",
+                    "colorCode":"#00a0e9"
                 },
                 {
-                    "name":"アップルグリーン",
-                    "colorCode":"#a2cc89"
+                    "name":"ネービーブルー",
+                    "colorCode":"#1f2e55"
                 }
-            ]
+            ],
         ],
         answer:1,
+        toneNumber:['v19','v18'],
     },
     {
         id:40,
-        title:"マラカイトグリーン",
-        subTitle:"こい緑",
-        colorCode:"#009854",
-        description:"テキストが入ります",
+        title:"群青色",
+        subTitle:"こい紫みの青",
+        colorCode:"#4e67b0",
+        description:"青の集まりを意味する伝統的な色名。群青は藍銅鉱(らんどうこう)という鉱物を原料とする、日本画の代表的な青色絵の具の色名であるが、そのような色のことも群青色という。一般的にもよく知られた色名である。",
         choices:[
             [
                 {
-                    "name":"ピーコックグリーン",
-                    "colorCode":"#00a496"
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
                 },
                 {
-                    "name":"エメラルドグリーン",
-                    "colorCode":"#00aa6e"
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
                 },
                 {
-                    "name":"マラカイトグリーン",
-                    "colorCode":"##009854"
+                    "name":"群青色",
+                    "colorCode":"#4e67b0"
                 }
             ],
             [
                 {
-                    "name":"ピーコックグリーン",
-                    "colorCode":"#00a496"
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
                 },
                 {
-                    "name":"コバルトグリーン",
-                    "colorCode":"#3ab483"
+                    "name":"瑠璃色",
+                    "colorCode":"＃1d50a2"
                 },
                 {
-                    "name":"マラカイトグリーン",
-                    "colorCode":"##009854"
+                    "name":"群青色",
+                    "colorCode":"#4e67b0"
                 }
             ],
             [
                 {
-                    "name":"ボトルグリーン",
-                    "colorCode":"#005635"
+                    "name":"シアン",
+                    "colorCode":"#00a0e9"
                 },
                 {
-                    "name":"常磐色",
-                    "colorCode":"#007c45"
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
                 },
                 {
-                    "name":"マラカイトグリーン",
-                    "colorCode":"##009854"
+                    "name":"群青色",
+                    "colorCode":"#4e67b0"
                 }
-            ]
+            ],
         ],
         answer:3,
+        toneNumber:['v19'],
     },
     {
         id:41,
-        title:"ボトルグリーン",
-        subTitle:"ごく暗い緑",
-        colorCode:"#005635",
+        title:"ターコイズブルー",
+        subTitle:"明るい緑みの青",
+        colorCode:"#00afcc",
         description:"テキストが入ります",
         choices:[
             [
                 {
-                    "name":"ボトルグリーン",
-                    "colorCode":"#005635"
+                    "name":"ターコイズブルー",
+                    "colorCode":"#00afcc"
                 },
                 {
-                    "name":"エメラルドグリーン",
-                    "colorCode":"#00aa6e"
+                    "name":"コバルトブルー",
+                    "colorCode":"#0068b7"
                 },
                 {
-                    "name":"常磐色",
-                    "colorCode":"#007c45"
+                    "name":"シアン",
+                    "colorCode":"#00a0e9"
                 }
             ],
             [
                 {
-                    "name":"ボトルグリーン",
-                    "colorCode":"#005635"
+                    "name":"ターコイズブルー",
+                    "colorCode":"#00afcc"
                 },
                 {
-                    "name":"マラカイトグリーン",
-                    "colorCode":"##009854"
+                    "name":"スカイブルー",
+                    "colorCode":"#a0d8ef"
                 },
                 {
-                    "name":"海松色",
-                    "colorCode":"#726d3f"
+                    "name":"コバルトブルー",
+                    "colorCode":"#0068b7"
                 }
             ],
             [
                 {
-                    "name":"ボトルグリーン",
-                    "colorCode":"#005635"
+                    "name":"ターコイズブルー",
+                    "colorCode":"#00afcc"
                 },
                 {
-                    "name":"常磐色",
-                    "colorCode":"#007c45"
+                    "name":"コバルトブルー",
+                    "colorCode":"#0068b7"
                 },
                 {
-                    "name":"鉄色",
-                    "colorCode":"#005242"
+                    "name":"シアン",
+                    "colorCode":"#00a0e9"
                 }
-            ]
+            ],
         ],
         answer:1,
+        toneNumber:['b16'],
     },
     {
         id:42,
-        title:"鉄色",
-        subTitle:"ごく暗い青緑",
-        colorCode:"#005242",
-        description:"テキストが入ります",
+        title:"マリンブルー",
+        subTitle:"こい緑みの青",
+        colorCode:"#006788",
+        description:"この色名の由来は、ヨーロッパ諸国の水夫、水兵などの海軍従事者が伝統的に藍染めの制服を着用していたことにある。19世紀初期には、流行色としてよく知られるようになった。近代の海軍の制服は化学染料の藍染に変わったが藍色に変わりはない。",
         choices:[
             [
                 {
-                    "name":"ボトルグリーン",
-                    "colorCode":"#005635"
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
                 },
                 {
-                    "name":"鉄色",
-                    "colorCode":"#005242"
+                    "name":"群青色",
+                    "colorCode":"#4e67b0"
                 },
                 {
-                    "name":"常磐色",
-                    "colorCode":"#007c45"
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
+                },
+            ],
+            [
+                {
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
+                },
+                {
+                    "name":"瑠璃色",
+                    "colorCode":"＃1d50a2"
+                },
+                {
+                    "name":"藍色",
+                    "colorCode":"#0f5779"
                 }
             ],
             [
                 {
-                    "name":"青磁色",
-                    "colorCode":"#68b7a1"
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
                 },
                 {
-                    "name":"鉄色",
-                    "colorCode":"#005242"
+                    "name":"藍色",
+                    "colorCode":"#0f5779"
                 },
                 {
-                    "name":"エメラルドグリーン",
-                    "colorCode":"#00aa6e"
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
                 }
             ],
-            [
-                {
-                    "name":"常磐色",
-                    "colorCode":"#007c45"
-                },
-                {
-                    "name":"鉄色",
-                    "colorCode":"#005242"
-                },
-                {
-                    "name":"海松色",
-                    "colorCode":"#726d3f"
-                }
-            ]
         ],
-        answer:2,
+        answer:1,
+        toneNumber:['dp16'],
     },
     {
         id:43,
-        title:"ピーコックグリーン",
-        subTitle:"青緑",
-        colorCode:"#00a496",
-        description:"テキストが入ります",
+        title:"シアン",
+        subTitle:"明るい青",
+        colorCode:"#00a0e9",
+        description:"古代ギリシャ語で「暗い」という意味のcyanosという言葉から派生した色名とされている。印刷、カラーフィルム、染色などの減法混色による色再現では、シアンは三原色の一つとしてあげられている。染色の色名としては青と緑の中間色相を表す。",
         choices:[
             [
                 {
-                    "name":"ピーコックグリーン",
-                    "colorCode":"#00a496"
+                    "name":"ターコイズブルー",
+                    "colorCode":"#00afcc"
                 },
                 {
-                    "name":"ナイルブルー",
-                    "colorCode":"#259f94"
+                    "name":"シアン",
+                    "colorCode":"#00a0e9"
+                },
+                {
+                    "name":"コバルトブルー",
+                    "colorCode":"#0068b7"
+                },
+            ],
+            [
+                {
+                    "name":"スカイブルー",
+                    "colorCode":"#a0d8ef"
+                },
+                {
+                    "name":"シアン",
+                    "colorCode":"#00a0e9"
+                },
+                {
+                    "name":"ターコイズブルー",
+                    "colorCode":"#00afcc"
+                },
+            ],
+            [
+                {
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
+                },
+                {
+                    "name":"シアン",
+                    "colorCode":"#00a0e9"
                 },
                 {
                     "name":"浅葱色",
                     "colorCode":"#00a1ae"
                 }
             ],
-            [
-                {
-                    "name":"ピーコックグリーン",
-                    "colorCode":"#00a496"
-                },
-                {
-                    "name":"新橋色",
-                    "colorCode":"#64bcc7"
-                },
-                {
-                    "name":"群青色",
-                    "colorCode":"#4e67b0"
-                }
-            ],
-            [
-                {
-                    "name":"ピーコックグリーン",
-                    "colorCode":"#00a496"
-                },
-                {
-                    "name":"セルリアンブルー",
-                    "colorCode":"#008db7"
-                },
-                {
-                    "name":"サックスブルー",
-                    "colorCode":"#3a8daa"
-                }
-            ]
         ],
-        answer:1,
+        answer:2,
+        toneNumber:['v16'],
     },
     {
         id:44,
-        title:"ナイルブルー",
-        subTitle:"くすんだ青緑",
-        colorCode:"#259f94",
-        description:"テキストが入ります",
+        title:"スカイブルー",
+        subTitle:"明るい青",
+        colorCode:"#a0d8ef",
+        description:"16世紀まで空色は、英語でスカイまたはスカイカラーと呼ばれていた。スカイブルーになったのは18世紀になってから。その頃、空の色を呼び分ける色名がいくつもできた。在天の神を信じる民族には、空色だけではすまなくなったのである。",
         choices:[
             [
                 {
-                    "name":"セルリアンブルー",
-                    "colorCode":"#008db7"
+                    "name":"ターコイズブルー",
+                    "colorCode":"#00afcc"
                 },
                 {
-                    "name":"青磁色",
-                    "colorCode":"#68b7a1"
+                    "name":"ベビーブルー",
+                    "colorCode":"#bbe2f1"
                 },
                 {
-                    "name":"ナイルブルー",
-                    "colorCode":"#259f94"
+                    "name":"スカイブルー",
+                    "colorCode":"#a0d8ef"
                 }
             ],
             [
                 {
-                    "name":"浅葱色",
-                    "colorCode":"#00a1ae"
+                    "name":"ベビーブルー",
+                    "colorCode":"#bbe2f1"
                 },
                 {
-                    "name":"セルリアンブルー",
-                    "colorCode":"#008db7"
+                    "name":"コバルトブルー",
+                    "colorCode":"#0068b7"
                 },
                 {
-                    "name":"ナイルブルー",
-                    "colorCode":"#259f94"
+                    "name":"スカイブルー",
+                    "colorCode":"#a0d8ef"
                 }
             ],
             [
                 {
-                    "name":"群青色",
-                    "colorCode":"#4e67b0"
+                    "name":"シアン",
+                    "colorCode":"#00a0e9"
                 },
                 {
-                    "name":"サックスブルー",
-                    "colorCode":"#3a8daa"
+                    "name":"ベビーブルー",
+                    "colorCode":"#bbe2f1"
                 },
                 {
-                    "name":"ナイルブルー",
-                    "colorCode":"#259f94"
+                    "name":"スカイブルー",
+                    "colorCode":"#a0d8ef"
                 }
-            ]
+            ],
         ],
         answer:3,
+        toneNumber:['lt16+'],
     },
     {
         id:45,
-        title:"新橋色",
-        subTitle:"明るい緑みの青",
-        colorCode:"#64bcc7",
-        description:"テキストが入ります",
+        title:"ベビーブルー",
+        subTitle:"明るい灰みの青",
+        colorCode:"#bbe2f1",
+        description:"欧米で乳幼児服の標準色として用いられてきた色の色名。ベビーピンクよりも早くから使われていたが、それでも19世紀末のこと。青は聖母マリアの色で、その色を生まれた子どもに着させたいという願いを母親が抱いていたということである。",
         choices:[
             [
                 {
@@ -2304,876 +2349,1104 @@ export const thirdExam = [
                     "colorCode":"#A0D8EF"
                 },
                 {
-                    "name":"セルリアンブルー",
-                    "colorCode":"#008db7"
+                    "name":"ベビーブルー",
+                    "colorCode":"#bbe2f1"
                 },
                 {
-                    "name":"新橋色",
-                    "colorCode":"#64bcc7"
-                }
+                    "name":"シアン",
+                    "colorCode":"#00a0e9"
+                },
             ],
             [
                 {
-                    "name":"浅葱色",
-                    "colorCode":"#00a1ae"
+                    "name":"空色",
+                    "colorCode":"#A0D8EF"
                 },
                 {
-                    "name":"甕覗",
-                    "colorCode":"#a2d7dd"
+                    "name":"ベビーブルー",
+                    "colorCode":"#bbe2f1"
                 },
                 {
-                    "name":"新橋色",
-                    "colorCode":"#64bcc7"
-                }
+                    "name":"スカイブルー",
+                    "colorCode":"#a0d8ef"
+                },
             ],
             [
                 {
-                    "name":"甕覗",
-                    "colorCode":"#a2d7dd"
+                    "name":"スカイブルー",
+                    "colorCode":"#a0d8ef"
                 },
                 {
-                    "name":"浅葱色",
-                    "colorCode":"#00a1ae"
+                    "name":"ベビーブルー",
+                    "colorCode":"#bbe2f1"
                 },
                 {
-                    "name":"新橋色",
-                    "colorCode":"#64bcc7"
+                    "name":"ターコイズブルー",
+                    "colorCode":"#00afcc"
                 }
-            ]
+            ],
         ],
-        answer:3,
+        answer:2,
+        toneNumber:['p18+'],
     },
     {
         id:46,
-        title:"納戸色",
-        subTitle:"つよい緑みの青",
-        colorCode:"#007d92",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"ナイルブルー",
-                    "colorCode":"#259f94"
-                },
-                {
-                    "name":"納戸色",
-                    "colorCode":"#007d92"
-                },
-                {
-                    "name":"青磁色",
-                    "colorCode":"#68b7a1"
-                }
-            ],
-            [
-                {
-                    "name":"サックスブルー",
-                    "colorCode":"#3a8daa"
-                },
-                {
-                    "name":"納戸色",
-                    "colorCode":"#007d92"
-                },
-                {
-                    "name":"縹色",
-                    "colorCode":"#2980af"
-                }
-            ],
-            [
-                {
-                    "name":"セルリアンブルー",
-                    "colorCode":"#008db7"
-                },
-                {
-                    "name":"納戸色",
-                    "colorCode":"#007d92"
-                },
-                {
-                    "name":"群青色",
-                    "colorCode":"#4e67b0"
-                }
-            ]
-        ],
-        answer:2,
-    },
-    {
-        id:47,
-        title:"甕覗",
-        subTitle:"やわらかい緑みの青",
-        colorCode:"#a2d7dd",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"甕覗",
-                    "colorCode":"#a2d7dd"
-                },
-                {
-                    "name":"新橋色",
-                    "colorCode":"#64bcc7"
-                },
-                {
-                    "name":"セルリアンブルー",
-                    "colorCode":"#008db7"
-                }
-            ],
-            [
-                {
-                    "name":"甕覗",
-                    "colorCode":"#a2d7dd"
-                },
-                {
-                    "name":"縹色",
-                    "colorCode":"#2980af"
-                },
-                {
-                    "name":"新橋色",
-                    "colorCode":"#64bcc7"
-                }
-            ],
-            [
-                {
-                    "name":"甕覗",
-                    "colorCode":"#a2d7dd"
-                },
-                {
-                    "name":"浅葱色",
-                    "colorCode":"#00a1ae"
-                },
-                {
-                    "name":"青磁色",
-                    "colorCode":"#68b7a1"
-                }
-            ]
-        ],
-        answer:1,
-    },
-    {
-        id:48,
-        title:"縹色",
-        subTitle:"つよい青",
-        colorCode:"#2980af",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"藍色",
-                    "colorCode":"#0f5779"
-                },
-                {
-                    "name":"群青色",
-                    "colorCode":"#4e67b0"
-                },
-                {
-                    "name":"縹色",
-                    "colorCode":"#2980af"
-                }
-            ],
-            [
-                {
-                    "name":"マリンブルー",
-                    "colorCode":"#006788"
-                },
-                {
-                    "name":"納戸色",
-                    "colorCode":"#007d92"
-                },
-                {
-                    "name":"縹色",
-                    "colorCode":"#2980af"
-                }
-            ],
-            [
-                {
-                    "name":"コバルトブルー",
-                    "colorCode":"#0068b7"
-                },
-                {
-                    "name":"ナイルブルー",
-                    "colorCode":"#259f94"
-                },
-                {
-                    "name":"縹色",
-                    "colorCode":"#2980af"
-                }
-            ]
-        ],
-        answer:3,
-    },
-    {
-        id:49,
-        title:"セルリアンブルー",
+        title:"コバルトブルー",
         subTitle:"あざやかな青",
-        colorCode:"#008db7",
-        description:"テキストが入ります",
+        colorCode:"#0068b7",
+        description:"コバルトアルミン酸塩を主成分とするこの色が1777年に発見されたときに色名が登場。多くの画家たちがこの色の絵の具を使うことができるようになったのは19世紀中頃から。印象派の画家たちが恩恵を一番受けた。海の色の形容に用いることも多い色名。",
         choices:[
             [
                 {
-                    "name":"ナイルブルー",
-                    "colorCode":"#259f94"
-                },
-                {
-                    "name":"セルリアンブルー",
-                    "colorCode":"#008db7"
-                },
-                {
-                    "name":"縹色",
-                    "colorCode":"#2980af"
-                }
-            ],
-            [
-                {
-                    "name":"納戸色",
-                    "colorCode":"#007d92"
-                },
-                {
-                    "name":"セルリアンブルー",
-                    "colorCode":"#008db7"
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
                 },
                 {
                     "name":"コバルトブルー",
                     "colorCode":"#0068b7"
-                }
-            ],
-            [
-                {
-                    "name":"縹色",
-                    "colorCode":"#2980af"
-                },
-                {
-                    "name":"セルリアンブルー",
-                    "colorCode":"#008db7"
                 },
                 {
                     "name":"マリンブルー",
                     "colorCode":"#006788"
-                }
-            ]
-        ],
-        answer:2,
-    },
-    {
-        id:50,
-        title:"ミッドナイトブルー",
-        subTitle:"ごく暗い紫みの青",
-        colorCode:"#001d42",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"ミッドナイトブルー",
-                    "colorCode":"#001d42"
                 },
+            ],
+            [
                 {
                     "name":"瑠璃色",
                     "colorCode":"#1d50a2"
                 },
                 {
-                    "name":"ネービーブルー",
-                    "colorCode":"#1f2e55"
-                }
+                    "name":"コバルトブルー",
+                    "colorCode":"#0068b7"
+                },
+                {
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
+                },
             ],
             [
                 {
-                    "name":"ミッドナイトブルー",
-                    "colorCode":"#001d42"
+                    "name":"シアン",
+                    "colorCode":"#00a0e9"
+                },
+                {
+                    "name":"コバルトブルー",
+                    "colorCode":"#0068b7"
+                },
+                {
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
+                }
+            ],
+        ],
+        answer:2,
+        toneNumber:['v18'],
+    },
+    {
+        id:47,
+        title:"ネービーブルー",
+        subTitle:"暗い紫みの青",
+        colorCode:"#1f2e55",
+        description:"イギリス海軍の制服の色といえば濃い藍染の青と決まっていたので、日本でいう紺色は19世紀には英語でネービーブルーの通称で呼ばれていた。今では海軍の色というよりは紺色の一般的な流行色の色名として知られている。",
+        choices:[
+            [
+                {
+                    "name":"瑠璃色",
+                    "colorCode":"#1d50a2"
                 },
                 {
                     "name":"藍色",
                     "colorCode":"#0f5779"
                 },
                 {
-                    "name":"縹色",
-                    "colorCode":"#2980af"
+                    "name":"ネービーブルー",
+                    "colorCode":"#1f2e55"
                 }
             ],
             [
                 {
-                    "name":"ミッドナイトブルー",
-                    "colorCode":"#001d42"
+                    "name":"藍色",
+                    "colorCode":"#0f5779"
+                },
+                {
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
                 },
                 {
                     "name":"ネービーブルー",
                     "colorCode":"#1f2e55"
+                }
+            ],
+            [
+                {
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 },
                 {
-                    "name":"納戸色",
-                    "colorCode":"#007d92"
+                    "name":"ターコイズブルー",
+                    "colorCode":"#00afcc"
+                },
+                {
+                    "name":"ネービーブルー",
+                    "colorCode":"#1f2e55"
                 }
-            ]
+            ],
         ],
-        answer:1,
+        answer:3,
+        toneNumber:['dk18'],
+    },
+    {
+        id:48,
+        title:"ウルトラマリンブルー",
+        subTitle:"こい紫みの青",
+        colorCode:"#4052a2",
+        description:"瑠璃という青い宝石は、ヨーロッパへは青い石を意味するラピスラズリとして渡来した。その粉末は貴重な着色剤になり、海の彼方から渡ってきたということを伝えるウルトラマリンという色名が生まれた。",
+        choices:[
+            [
+                {
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
+                },
+                {
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
+                },
+                {
+                    "name":"藍色",
+                    "colorCode":"#0f5779"
+                },
+            ],
+            [
+                {
+                    "name":"コバルトブルー",
+                    "colorCode":"#0068b7"
+                },
+                {
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
+                },
+                {
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
+                },
+            ],
+            [
+                {
+                    "name":"瑠璃色",
+                    "colorCode":"＃1d50a2"
+                },
+                {
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
+                },
+                {
+                    "name":"群青色",
+                    "colorCode":"#4e67b0"
+                }
+            ],
+        ],
+        answer:2,
+        toneNumber:['v19'],
+    },
+    {
+        id:49,
+        title:"桔梗色",
+        subTitle:"こい青紫",
+        colorCode:"#5045a4",
+        description:"桔梗の花のような青紫色の伝統的な色名。昔は「きかういる」とも呼ばれたそうである。近世では染色の色名として用いられてきた。旧暦の初秋の気配を感じさせる色名の一つである。",
+        choices:[
+            [
+                {
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
+                },
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                },
+                {
+                    "name":"桔梗色",
+                    "colorCode":"#5045a4"
+                }
+            ],
+            [
+                {
+                    "name":"パープル",
+                    "colorCode":"#9b68a9"
+                },
+                {
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
+                },
+                {
+                    "name":"桔梗色",
+                    "colorCode":"#5045a4"
+                }
+            ],
+            [
+                {
+                    "name":"群青色",
+                    "colorCode":"#4e67b0"
+                },
+                {
+                    "name":"パープル",
+                    "colorCode":"#9b68a9"
+                },
+                {
+                    "name":"桔梗色",
+                    "colorCode":"#5045a4"
+                }
+            ],
+        ],
+        answer:3,
+        toneNumber:['v20'],
+    },
+    {
+        id:50,
+        title:"バイオレット",
+        subTitle:"あざやかな青紫",
+        colorCode:"#714f9d",
+        description:"青紫系の英語の色名としては最も古いものの一つ。バイオレットはスミレ属の総称で、スミレの花の色を表す色名。可視スペクトルを発見したニュートンは、虹の七色の一番波長が短い色をバイオレットと呼んだ。",
+        choices:[
+            [
+                {
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
+                },
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                },
+                {
+                    "name":"パープル",
+                    "colorCode":"#9b68a9"
+                }
+            ],
+            [
+                {
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
+                },
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                },
+                {
+                    "name":"パープル",
+                    "colorCode":"#9b68a9"
+                }
+            ],
+            [
+                {
+                    "name":"桔梗色",
+                    "colorCode":"#5045a4"
+                },
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                },
+                {
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
+                }
+            ],
+        ],
+        answer:2,
+        toneNumber:['v21'],
     },
     {
         id:51,
-        title:"藤色",
-        subTitle:"明るい青紫",
-        colorCode:"#bbb7da",
-        description:"テキストが入ります",
+        title:"茄子紺",
+        subTitle:"ごく暗い紫",
+        colorCode:"#321b3a",
+        description:"黒に近い紫色から連想されるものはやはり茄子しかない。英語でも茄子を意味するエッグプラントeggplantが色名である。染色の色名であるが、近代になって流行した色名といわれている。",
         choices:[
             [
                 {
-                    "name":"ライラック",
-                    "colorCode":"#D2BADA"
+                    "name":"茄子紺",
+                    "colorCode":"#321b3a"
+                },
+                {
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
+                },
+                {
+                    "name":"桔梗色",
+                    "colorCode":"#5045a4"
+                }
+            ],
+            [
+                {
+                    "name":"茄子紺",
+                    "colorCode":"#321b3a"
                 },
                 {
                     "name":"バイオレット",
                     "colorCode":"#714f9d"
                 },
                 {
-                    "name":"藤色",
-                    "colorCode":"#bbb7da"
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
                 }
             ],
             [
                 {
-                    "name":"ウィスタリア",
-                    "colorCode":"#8e8bc2"
+                    "name":"茄子紺",
+                    "colorCode":"#321b3a"
                 },
                 {
-                    "name":"ラベンダー",
-                    "colorCode":"#C4B3D3"
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
                 },
                 {
-                    "name":"藤色",
-                    "colorCode":"#bbb7da"
-                }
-            ],
-            [
-                {
-                    "name":"ライラック",
-                    "colorCode":"#D2BADA"
-                },
-                {
-                    "name":"ウィスタリア",
-                    "colorCode":"#8e8bc2"
-                },
-                {
-                    "name":"藤色",
-                    "colorCode":"#bbb7da"
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
                 }
             ]
         ],
-        answer:3,
+        answer:1,
+        toneNumber:['dkg22'],
     },
     {
         id:52,
-        title:"ウィスタリア",
-        subTitle:"あざやかな青紫",
-        colorCode:"#8e8bc2",
-        description:"テキストが入ります",
+        title:"菖蒲色",
+        subTitle:"明るい赤みの紫",
+        colorCode:"#cc7db1",
+        description:"アヤメ科のハナアヤメの花の色である。アヤメの名は美しい文目(あやめ)があるところからきている。漢字で書くと菖蒲色となるが、同じ漢字を書くしょうぶ色はサトイモ科の多年草の花のことで、あざやかな青みの業を表す。",
         choices:[
             [
+                {
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
+                },
                 {
                     "name":"ラベンダー",
                     "colorCode":"#C4B3D3"
                 },
                 {
-                    "name":"ウィスタリア",
-                    "colorCode":"#8e8bc2"
-                },
-                {
-                    "name":"ライラック",
-                    "colorCode":"#D2BADA"
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
                 }
             ],
             [
                 {
-                    "name":"藤色",
-                    "colorCode":"#bbb7da"
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
                 },
                 {
-                    "name":"ウィスタリア",
-                    "colorCode":"#8e8bc2"
-                },
-                {
-                    "name":"ライラック",
-                    "colorCode":"#D2BADA"
-                }
-            ],
-            [
-                {
-                    "name":"藤色",
-                    "colorCode":"#bbb7da"
-                },
-                {
-                    "name":"ウィスタリア",
-                    "colorCode":"#8e8bc2"
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
                 },
                 {
                     "name":"バイオレット",
                     "colorCode":"#714f9d"
                 }
-            ]
+            ],
+            [
+                {
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
+                },
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                },
+                {
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
+                }
+            ],
         ],
-        answer:2,
+        answer:1,
+        toneNumber:['b22'],
     },
     {
         id:53,
-        title:"江戸紫",
-        subTitle:"こい青みの紫",
-        colorCode:"#734e95",
-        description:"テキストが入ります",
+        title:"ラベンダー",
+        subTitle:"灰みの青みを帯びた紫",
+        colorCode:"#C4B3D3",
+        description:"19世紀後半にできた、ラベンダーの花のような色を表す色名。この花は水浴の際の香水にいられたのでラテン語の洗うという意味のラバレ、青みのあることを表すリベレなどから名前がついたとのことである。",
         choices:[
             [
                 {
-                    "name":"茄子紺",
-                    "colorCode":"#4b1a47"
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
                 },
+                {
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
+                },
+                {
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
+                }
+            ],
+            [
                 {
                     "name":"バイオレット",
                     "colorCode":"#714f9d"
                 },
                 {
-                    "name":"江戸紫",
-                    "colorCode":"#734e95"
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
+                },
+                {
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
                 }
             ],
             [
                 {
-                    "name":"古代紫",
-                    "colorCode":"#895687"
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
                 },
                 {
-                    "name":"桔梗色",
-                    "colorCode":"#5754A3"
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
                 },
                 {
-                    "name":"江戸紫",
-                    "colorCode":"#734e95"
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
                 }
             ],
-            [
-                {
-                    "name":"藤色",
-                    "colorCode":"#bbb7da"
-                },
-                {
-                    "name":"古代紫",
-                    "colorCode":"#895687"
-                },
-                {
-                    "name":"江戸紫",
-                    "colorCode":"#734e95"
-                }
-            ]
         ],
-        answer:3,
+        answer:2,
+        toneNumber:['sf22','lt22+'],
     },
     {
         id:54,
-        title:"古代紫",
-        subTitle:"くすんだ紫",
-        colorCode:"#895687",
-        description:"テキストが入ります",
+        title:"モーブ",
+        subTitle:"つよい青みの紫",
+        colorCode:"#915da3",
+        description:"人類で初めて化学染料を発見したのはイギリスの化学者パーキンで、その紫色の染料の色をフランス語でアオイ(葵)を意味するモーブとした。英語にも同じ意味のマロー(mallow)があったが、この色はモーブの名で知られるようになった。",
         choices:[
             [
                 {
-                    "name":"江戸紫",
-                    "colorCode":"#734e95"
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
                 },
                 {
-                    "name":"古代紫",
-                    "colorCode":"#895687"
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
                 },
                 {
-                    "name":"藤色",
-                    "colorCode":"#bbb7da"
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
                 }
             ],
             [
                 {
-                    "name":"茄子紺",
-                    "colorCode":"#4b1a47"
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
                 },
                 {
-                    "name":"古代紫",
-                    "colorCode":"#895687"
+                    "name":"桔梗色",
+                    "colorCode":"#5045a4"
+                },
+                {
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
+                },
+            ],
+            [
+                {
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
+                },
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                },
+                {
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
+                },
+            ],
+        ],
+        answer:1,
+        toneNumber:['b22','v22'],
+    },
+    {
+        id:55,
+        title:"パープル",
+        subTitle:"あざやかな紫",
+        colorCode:"#9b68a9",
+        description:"パープルの語源は古代ギリシャ語のポルフォラ(porphura)、ラテン語のプルプラ(purpura)などに由来する。英語のパープルは10世紀頃に生まれたようである。色の名前が先なのか、古代紫と言われる貝紫を採取するブルブラ貝の名前が先だったのかはわからない。",
+        choices:[
+            [
+                {
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
+                },
+                {
+                    "name":"パープル",
+                    "colorCode":"#9b68a9"
+                },
+                {
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
+                }
+            ],
+            [
+                {
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
+                },
+                {
+                    "name":"パープル",
+                    "colorCode":"#9b68a9"
+                },
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                },
+            ],
+            [
+                {
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
+                },
+                {
+                    "name":"パープル",
+                    "colorCode":"#9b68a9"
+                },
+                {
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
+                },
+            ],
+        ],
+        answer:2,
+        toneNumber:['v22','b22'],
+    },
+    {
+        id:56,
+        title:"牡丹色",
+        subTitle:"あざやかな赤紫",
+        colorCode:"#cb4897",
+        description:"牡丹の花には白、紅、紫、黄などがあるが、牡丹色は紫がかった紅色の花のような色をいう。化学染料が出現する以前の伝統的な色名で、マゼンタのような華やかな赤紫色を表す和色名はこの牡丹色しかない。",
+        choices:[
+            [
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                },
+                {
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
+                },
+                {
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
+                }
+            ],
+            [
+                {
+                    "name":"菖蒲色",
+                    "colorCode":"#cc7db1"
+                },
+                {
+                    "name":"紅梅色",
+                    "colorCode":"#f3a7a5"
+                },
+                {
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
+                }
+            ],
+            [
+                {
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
+                },
+                {
+                    "name":"パープル",
+                    "colorCode":"#9b68a9"
+                },
+                {
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
+                }
+            ],
+        ],
+        answer:3,
+        toneNumber:['v24'],
+    },
+    {
+        id:57,
+        title:"マゼンタ",
+        subTitle:"あざやかな赤紫",
+        colorCode:"#e4007f",
+        description:"法混色の三原色の赤紫を表す色名。フランスでこの赤紫色の合成塗料が発見された時、イタリア統一戦争で同盟軍がマゼンタの戦場で勝利をおさめた。それを記念して、その色をイタリアの地名マゼンタの名で呼ぶようになった。",
+        choices:[
+            [
+                {
+                    "name":"マゼンタ",
+                    "colorCode":"#e4007f"
+                },
+                {
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
+                },
+                {
+                    "name":"ワインレッド",
+                    "colorCode":"#942E44"
+                }
+            ],
+            [
+                {
+                    "name":"マゼンタ",
+                    "colorCode":"#e4007f"
+                },
+                {
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
+                },
+                {
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
+                },
+            ],
+            [
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                },
+                {
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
+                },
+                {
+                    "name":"モーブ",
+                    "colorCode":"#915da3"
+                }
+            ],
+        ],
+        answer:1,
+        toneNumber:['v24'],
+    },
+    {
+        id:58,
+        title:"生成り色",
+        subTitle:"赤みの帯びた黄みの白",
+        colorCode:"#f7efe3",
+        description:"何も加工しない生地のままの繊維の色を表したごく新しい色名。素朴な自然志向の時代風潮から、自然素材の色に近いこの色の色名が一般化した。",
+        choices:[
+            [
+                {
+                    "name":"ベージュ",
+                    "colorCode":"#bfaB90"
+                },
+                {
+                    "name":"アイボリー",
+                    "colorCode":"#F8F5E4"
+                },
+                {
+                    "name":"生成り色",
+                    "colorCode":"#f7efe3"
+                }
+            ],
+            [
+                {
+                    "name":"アイボリー",
+                    "colorCode":"#F8F5E4"
+                },
+                {
+                    "name":"シルバーグレイ",
+                    "colorCode":"#afafb0"
+                },
+                {
+                    "name":"生成り色",
+                    "colorCode":"#f7efe3"
+                }
+            ],
+            [
+                {
+                    "name":"シルバーグレイ",
+                    "colorCode":"#afafb0"
+                },
+                {
+                    "name":"バイオレット",
+                    "colorCode":"#714f9d"
+                },
+                {
+                    "name":"生成り色",
+                    "colorCode":"#f7efe3"
+                }
+            ],
+        ],
+        answer:3,
+        toneNumber:['p6+','ltg6'],
+    },
+    {
+        id:59,
+        title:"アイボリー",
+        subTitle:"黄みのうすい灰色",
+        colorCode:"#F8F5E4",
+        description:"象牙色のこと。象牙は古代ローマですでに装飾や工芸品に用いられていた。英語の色名アイボリーも14世紀には使用されていたようである。フランス語のイボワール(ioire)という色名は英語より200年は早かったことになっている。",
+        choices:[
+            [
+                {
+                    "name":"生成り色",
+                    "colorCode":"#f7efe3"
+                },
+                {
+                    "name":"アイボリー",
+                    "colorCode":"#F8F5E4"
+                },
+                {
+                    "name":"ベージュ",
+                    "colorCode":"#bfaB90"
+                }
+            ],
+            [
+                {
+                    "name":"ピーチ",
+                    "colorCode":"#fbd8b5"
+                },
+                {
+                    "name":"アイボリー",
+                    "colorCode":"#F8F5E4"
+                },
+                {
+                    "name":"生成り色",
+                    "colorCode":"#f7efe3"
+                },
+            ],
+            [
+                {
+                    "name":"シルバーグレイ",
+                    "colorCode":"#afafb0"
+                },
+                {
+                    "name":"アイボリー",
+                    "colorCode":"#F8F5E4"
+                },
+                {
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
+                }
+            ],
+        ],
+        answer:2,
+        toneNumber:['ltg8'],
+    },
+    {
+        id:60,
+        title:"シルバーグレイ",
+        subTitle:"明るい灰色",
+        colorCode:"#afafb0",
+        description:"日本でも欧米でも銀は白く輝くほど値打ちがあると思われたので、シルバーは17世紀までホワイトと呼ばれたり、グレイと呼ばれたりしていたが、どちらも同じ色であった。炭酸鉛の白色の鉛白の絵の具はシルバーホワイトとされる。",
+        choices:[
+            [
+                {
+                    "name":"チャコールグレイ",
+                    "colorCode":"#4e4449"
+                },
+                {
+                    "name":"アイボリー",
+                    "colorCode":"#F8F5E4"
+                },
+                {
+                    "name":"シルバーグレイ",
+                    "colorCode":"#afafb0"
+                }
+            ],
+            [
+                {
+                    "name":"アイボリー",
+                    "colorCode":"#F8F5E4"
+                },
+                {
+                    "name":"チャコールグレイ",
+                    "colorCode":"#4e4449"
+                },
+                {
+                    "name":"シルバーグレイ",
+                    "colorCode":"#afafb0"
+                }
+            ],
+            [
+                {
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
+                },
+                {
+                    "name":"シアン",
+                    "colorCode":"#00a0e9"
+                },
+                {
+                    "name":"シルバーグレイ",
+                    "colorCode":"#afafb0"
+                }
+            ],
+        ],
+        answer:3,
+        toneNumber:['Gy-6.5'],
+    },
+    {
+        id:61,
+        title:"チャコールグレイ",
+        subTitle:"紫みの暗い灰色",
+        colorCode:"#4e4449",
+        description:"チャコールは木炭、炭の意味。日本語で消炎色(けしずみいろ)ということになるだろう。英語の色名にはチャコールグレイとチャコールブラックがあるが、どちらも同じ色で黒よりわずかに灰色を感じさせる色のことになる。",
+        choices:[
+            [
+                {
+                    "name":"チャコールグレイ",
+                    "colorCode":"#4e4449"
+                },
+                {
+                    "name":"シルバーグレイ",
+                    "colorCode":"#afafb0"
+                },
+                {
+                    "name":"茄子紺",
+                    "colorCode":"#321b3a"
+                }
+            ],
+            [
+                {
+                    "name":"チャコールグレイ",
+                    "colorCode":"#4e4449"
+                },
+                {
+                    "name":"生成り色",
+                    "colorCode":"#f7efe3"
+                },
+                {
+                    "name":"シルバーグレイ",
+                    "colorCode":"#afafb0"
+                }
+            ],
+            [
+                {
+                    "name":"チャコールグレイ",
+                    "colorCode":"#4e4449"
+                },
+                {
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
+                },
+                {
+                    "name":"生成り色",
+                    "colorCode":"#f7efe3"
+                }
+            ],
+        ],
+        answer:1,
+        toneNumber:['Gy-3.0','dkg22'],
+    },
+    {
+        id:62,
+        title:"ベビーピンク",
+        subTitle:"うすい赤",
+        colorCode:"#fadbda",
+        description:"欧米で乳幼児服の標準色として、 習慣的に用いられているピンク。色名としては比較的新しい。軟らかな雰囲気の色調で、日本でもベビー服の定番カラーとしてよく用いられるが、化粧商品のカラーラインナップなどでも見られる色である。",
+        choices:[
+            [
+                {
+                    "name":"ローズピンク",
+                    "colorCode":"#f29c9f"
+                },
+                {
+                    "name":"ベビーピンク",
+                    "colorCode":"#fadbda"
+                },
+                {
+                    "name":"オールドローズ",
+                    "colorCode":"#c58087"
+                }
+            ],
+            [
+                {
+                    "name":"珊瑚色",
+                    "colorCode":"#F3ADA3"
+                },
+                {
+                    "name":"ベビーピンク",
+                    "colorCode":"#fadbda"
+                },
+                {
+                    "name":"珊瑚色",
+                    "colorCode":"#F3ADA3"
+                }
+            ],
+            [
+                {
+                    "name":"鴇色",
+                    "colorCode":"#f4b3c2"
+                },
+                {
+                    "name":"ベビーピンク",
+                    "colorCode":"#fadbda"
+                },
+                {
+                    "name":"珊瑚色",
+                    "colorCode":"#F3ADA3"
+                }
+            ],
+        ],
+        answer:2,
+        toneNumber:['p2+'],
+    },
+    {
+        id:63,
+        title:"松葉色",
+        subTitle:"くすんだ黄緑",
+        colorCode:"#688158",
+        description:"松葉色は文字通り、松の葉のような色のこと。常緑樹である松は一年を通して緑が絶えないことから、日本では長寿の象徴と考えられている。正月の松飾りに用いられているように、縁起のよいもの、おめでたい物として松は使われるが、松の緑は特におめでたい色とされてきた。",
+        choices:[
+            [
+                {
+                    "name":"鉄色",
+                    "colorCode":"#005242"
+                },
+                {
+                    "name":"海松色",
+                    "colorCode":"#726d3f"
+                },
+                {
+                    "name":"松葉色",
+                    "colorCode":"#688158"
+                }
+            ],
+            [
+                {
+                    "name":"海松色",
+                    "colorCode":"#726d3f"
+                },
+                {
+                    "name":"オリーブ",
+                    "colorCode":"#5d5426"
+                },
+                {
+                    "name":"松葉色",
+                    "colorCode":"#688158"
+                }
+            ],
+            [
+                {
+                    "name":"鶯色",
+                    "colorCode":"#6f6f44"
+                },
+                {
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
+                },
+                {
+                    "name":"松葉色",
+                    "colorCode":"#688158"
+                }
+            ],
+        ],
+        answer:3,
+        toneNumber:['g10'],
+    },
+    {
+        id:64,
+        title:"杜若色",
+        subTitle:"鮮やかな紫みの青",
+        colorCode:"#3e62ad",
+        description:"アヤメ科の植物であるカキツバタの花のような色のこと。5~6月の初夏に咲く花で、花の色は一般的に青業とされることが多い。この花の汁を擦りつけて布を染めていたことから、古くは「書きつけ花」と呼ばれており、それが転じて杜若(かきつばた)となったといわれている。",
+        choices:[
+            [
+                {
+                    "name":"杜若色",
+                    "colorCode":"#3e62ad"
+                },
+                {
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
+                },
+                {
+                    "name":"藍色",
+                    "colorCode":"#0f5779"
+                }
+            ],
+            [
+                {
+                    "name":"杜若色",
+                    "colorCode":"#3e62ad"
+                },
+                {
+                    "name":"ウルトラマリンブルー",
+                    "colorCode":"#4052a2"
+                },
+                {
+                    "name":"群青色",
+                    "colorCode":"#4e67b0"
+                }
+            ],
+            [
+                {
+                    "name":"杜若色",
+                    "colorCode":"#3e62ad"
+                },
+                {
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
+                },
+                {
+                    "name":"瑠璃色",
+                    "colorCode":"＃1d50a2"
+                }
+            ],
+        ],
+        answer:1,
+        toneNumber:['v19','b20'],
+    },
+    {
+        id:65,
+        title:"ウイスタリア",
+        subTitle:"あざやかな青紫",
+        colorCode:"#7C6DC4",
+        description:"ウイスタリアは藤の英語名。19世紀末にこの色の化学染料ができたために出現した色名である。同じ藤の花の色を語源とする色に藤色があるが、藤色は明るい青紫、ウイスタリアは鮮やかな青紫で微妙に違う。",
+        choices:[
+            [
+                {
+                    "name":"ウイスタリア",
+                    "colorCode":"#7C6DC4"
+                },
+                {
+                    "name":"ライラック",
+                    "colorCode":"#D2BADA"
+                },
+                {
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
+                }
+            ],
+            [
+                {
+                    "name":"ウイスタリア",
+                    "colorCode":"#7C6DC4"
+                },
+                {
+                    "name":"藤色",
+                    "colorCode":"#bbb7da"
+                },
+                {
+                    "name":"ライラック",
+                    "colorCode":"#D2BADA"
+                }
+            ],
+            [
+                {
+                    "name":"ウイスタリア",
+                    "colorCode":"#7C6DC4"
+                },
+                {
+                    "name":"桔梗色",
+                    "colorCode":"#5045a4"
                 },
                 {
                     "name":"バイオレット",
                     "colorCode":"#714f9d"
                 }
             ],
-            [
-                {
-                    "name":"桔梗色",
-                    "colorCode":"#5754A3"
-                },
-                {
-                    "name":"古代紫",
-                    "colorCode":"#895687"
-                },
-                {
-                    "name":"江戸紫",
-                    "colorCode":"#734e95"
-                }
-            ]
-        ],
-        answer:2,
-    },
-    {
-        id:55,
-        title:"ライラック",
-        subTitle:"やわらかい紫",
-        colorCode:"#D2BADA",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"ライラック",
-                    "colorCode":"#D2BADA"
-                },
-                {
-                    "name":"ラベンダー",
-                    "colorCode":"#C4B3D3"
-                },
-                {
-                    "name":"ウィスタリア",
-                    "colorCode":"#8e8bc2"
-                }
-            ],
-            [
-                {
-                    "name":"ライラック",
-                    "colorCode":"#D2BADA"
-                },
-                {
-                    "name":"藤色",
-                    "colorCode":"#bbb7da"
-                },
-                {
-                    "name":"ラベンダー",
-                    "colorCode":"#C4B3D3"
-                }
-            ],
-            [
-                {
-                    "name":"ライラック",
-                    "colorCode":"#D2BADA"
-                },
-                {
-                    "name":"ウィスタリア",
-                    "colorCode":"#8e8bc2"
-                },
-                {
-                    "name":"藤色",
-                    "colorCode":"#bbb7da"
-                }
-            ]
         ],
         answer:1,
+        toneNumber:['b20','v20'],
     },
-    {
-        id:56,
-        title:"銀鼠",
-        subTitle:"明るい灰色",
-        colorCode:"#afafb0",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"シルバーグレイ",
-                    "colorCode":"#afafb0"
-                },
-                {
-                    "name":"利休鼠",
-                    "colorCode":"#7b8174"
-                },
-                {
-                    "name":"銀鼠",
-                    "colorCode":"#afafb0"
-                }
-            ],
-            [
-                {
-                    "name":"スレートグレイ",
-                    "colorCode":"#636062"
-                },
-                {
-                    "name":"シルバーグレイ",
-                    "colorCode":"#afafb0"
-                },
-                {
-                    "name":"銀鼠",
-                    "colorCode":"#afafb0"
-                }
-            ],
-            [
-                {
-                    "name":"利休鼠",
-                    "colorCode":"#7b8174"
-                },
-                {
-                    "name":"茶鼠",
-                    "colorCode":"#a99e93"
-                },
-                {
-                    "name":"銀鼠",
-                    "colorCode":"#afafb0"
-                }
-            ]
-        ],
-        answer:3,
-    },
-    {
-        id:57,
-        title:"茶鼠",
-        subTitle:"黄赤みの灰色",
-        colorCode:"#a99e93",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"銀鼠",
-                    "colorCode":"#afafb0"
-                },
-                {
-                    "name":"茶鼠",
-                    "colorCode":"#a99e93"
-                },
-                {
-                    "name":"利休鼠",
-                    "colorCode":"#7b8174"
-                }
-            ],
-            [
-                {
-                    "name":"煤竹色",
-                    "colorCode":"#6b5146"
-                },
-                {
-                    "name":"茶鼠",
-                    "colorCode":"#a99e93"
-                },
-                {
-                    "name":"朽葉色",
-                    "colorCode":"#917347"
-                }
-            ],
-            [
-                {
-                    "name":"蘇芳",
-                    "colorCode":"#9e3d3e"
-                },
-                {
-                    "name":"茶鼠",
-                    "colorCode":"#a99e93"
-                },
-                {
-                    "name":"煤竹色",
-                    "colorCode":"#6b5146"
-                }
-            ]
-        ],
-        answer:2,
-    },
-    {
-        id:58,
-        title:"利休鼠",
-        subTitle:"緑みの灰色",
-        colorCode:"#7b8174",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"鶯色",
-                    "colorCode":"#9d973b"
-                },
-                {
-                    "name":"銀鼠",
-                    "colorCode":"#afafb0"
-                },
-                {
-                    "name":"利休鼠",
-                    "colorCode":"#7b8174"
-                }
-            ],
-            [
-                {
-                    "name":"鶸色",
-                    "colorCode":"#d7cf3a"
-                },
-                {
-                    "name":"煤竹色",
-                    "colorCode":"#6b5146"
-                },
-                {
-                    "name":"利休鼠",
-                    "colorCode":"#7b8174"
-                }
-            ],
-            [
-                {
-                    "name":"茶鼠",
-                    "colorCode":"#a99e93"
-                },
-                {
-                    "name":"銀鼠",
-                    "colorCode":"#afafb0"
-                },
-                {
-                    "name":"利休鼠",
-                    "colorCode":"#7b8174"
-                }
-            ]
-        ],
-        answer:3,
-    },
-    {
-        id:59,
-        title:"煤竹色",
-        subTitle:"赤みを帯びた黄みの暗い灰色",
-        colorCode:"#6b5146",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"朽葉色",
-                    "colorCode":"#917347"
-                },
-                {
-                    "name":"煤竹色",
-                    "colorCode":"#6b5146"
-                },
-                {
-                    "name":"茶鼠",
-                    "colorCode":"#a99e93"
-                }
-            ],
-            [
-                {
-                    "name":"利休鼠",
-                    "colorCode":"#7b8174"
-                },
-                {
-                    "name":"煤竹色",
-                    "colorCode":"#6b5146"
-                },
-                {
-                    "name":"スレートグレイ",
-                    "colorCode":"#636062"
-                }
-            ],
-            [
-                {
-                    "name":"銀鼠",
-                    "colorCode":"#afafb0"
-                },
-                {
-                    "name":"煤竹色",
-                    "colorCode":"#6b5146"
-                },
-                {
-                    "name":"朽葉色",
-                    "colorCode":"#917347"
-                }
-            ]
-        ],
-        answer:2,
-    },
-    {
-        id:60,
-        title:"スレートグレイ",
-        subTitle:"暗い灰色",
-        colorCode:"#636062",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"スレートグレイ",
-                    "colorCode":"#636062"
-                },
-                {
-                    "name":"チャコールグレイ",
-                    "colorCode":"#4e4449"
-                },
-                {
-                    "name":"茶鼠",
-                    "colorCode":"#a99e93"
-                }
-            ],
-            [
-                {
-                    "name":"スレートグレイ",
-                    "colorCode":"#636062"
-                },
-                {
-                    "name":"銀鼠",
-                    "colorCode":"#afafb0"
-                },
-                {
-                    "name":"チャコールグレイ",
-                    "colorCode":"#4e4449"
-                }
-            ],
-            [
-                {
-                    "name":"スレートグレイ",
-                    "colorCode":"#636062"
-                },
-                {
-                    "name":"チャコールグレイ",
-                    "colorCode":"#4e4449"
-                },
-                {
-                    "name":"シルバーグレイ",
-                    "colorCode":"#afafb0"
-                }
-            ]
-        ],
-        answer:1,
-    },
-    {
-        id:61,
-        title:"ランプブラック",
-        subTitle:"黒",
-        colorCode:"#24130d",
-        description:"テキストが入ります",
-        choices:[
-            [
-                {
-                    "name":"ランプブラック",
-                    "colorCode":"#24130d"
-                },
-                {
-                    "name":"ミッドナイトブルー",
-                    "colorCode":"#001d42"
-                },
-                {
-                    "name":"スレートグレイ",
-                    "colorCode":"#636062"
-                }
-            ],
-            [
-                {
-                    "name":"ランプブラック",
-                    "colorCode":"#24130d"
-                },
-                {
-                    "name":"チャコールグレイ",
-                    "colorCode":"#4e4449"
-                },
-                {
-                    "name":"ミッドナイトブルー",
-                    "colorCode":"#001d42"
-                }
-            ],
-            [
-                {
-                    "name":"ランプブラック",
-                    "colorCode":"#24130d"
-                },
-                {
-                    "name":"煤竹色",
-                    "colorCode":"#6b5146"
-                },
-                {
-                    "name":"茄子紺",
-                    "colorCode":"#4b1a47"
-                }
-            ]
-        ],
-        answer:1,
-    },*/
 ];
-

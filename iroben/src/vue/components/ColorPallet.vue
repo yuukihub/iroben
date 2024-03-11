@@ -1,8 +1,6 @@
 <template>
-  <v-ons-page>
-    <custom-toolbar></custom-toolbar>
-    <div class="c-colorPalletList">
-      <div class="c-colorPallet_header">
+    <div class="c-colorPaint">
+      <div class="c-colorPaint_header">
         <h3>カラーパレット</h3>
       </div>
       <div class="tab">
@@ -41,22 +39,17 @@
         </div>
       </div>
     </div>
-
-
-  </v-ons-page>
 </template>
 
 <script>
-import customToolbar from "../components/CustomToolbar.vue";
 import {secondExam} from "@/resource/secondExam";
 import {thirdExam} from "@/resource/thirdExam";
 import ColorPalletList from "@/vue/components/ColorPalletList.vue";
 
 export default {
-  name: "ColorPaint",
+  name: "ColorPallet",
   components: {
     ColorPalletList,
-    customToolbar,
   },
   data(){
     return {
@@ -107,7 +100,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./src/scss/foundation/variables";
+@import "../../scss/foundation/variables";
 .toggle_wrap {
   display: flex;
   align-items: center;
@@ -115,12 +108,12 @@ export default {
 .toggle_title {
   margin-right: 4px;
 }
-.c-colorPalletList {
+.c-colorPaint {
   position: fixed;
   bottom: 0;
   width: 100%;
 }
-.c-colorPallet_header {
+.c-colorPaint_header {
   background: map_get($color, main01);
   h3 {
     margin: 0;

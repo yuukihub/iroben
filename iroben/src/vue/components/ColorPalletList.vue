@@ -1,23 +1,26 @@
 <template>
-  <div>
+  <div class="c-colorPalletList">
     <div class="selectedColor_header">
       <div class="selectedColor">
         <p class="title">選択色</p>
-        <a v-if="colorTitleFlag" class="name" :href="`#${level}-color-${colorID}`">
+        <a v-if="colorTitleFlag"
+           class="name"
+           @click="openModal">
           {{colorTitle}}
         </a>
         <p v-else class="name is-disabled">
           未選択
         </p>
       </div>
-      <toggle @onClick="clickToggle" :level="level"></toggle>
+      <toggle
+          @onClick="clickToggle"
+          :level="level"></toggle>
     </div>
-    <div v-if="isToggleFlag === false">
+    <div v-if="!isToggleFlag">
       <div class="c-colorLists">
         <ul>
           <li v-for="(item, index) in colorLists" :key="index">
             <div class="color"
-                 :href="`#${level}-color-${index}`"
                  :tabindex="index"
                  :style="{background: item.colorCode}"
                  @click="getColorDetail(item)">
@@ -30,14 +33,18 @@
       <div class="c-colorLists">
         <ul>
           <li v-for="(item, index) in faultCountArray" :key="index">
-            <div class="color" v-bind:style="{background: item.colorCode}">
+            <div class="color"
+                 :tabindex="index"
+                 :style="{background: item.colorCode}"
+                 @click="getColorDetail(item)">
             </div>
           </li>
         </ul>
       </div>
     </div>
-    <modal :title="colorTitle"
-           :modalId="`${level}-color-${colorID}`">
+    <modal v-show="modalFlag"
+           :title="colorTitle"
+           @closeModal="closeModal">
       <p>
         {{colorSubTitle}}
       </p>
@@ -57,11 +64,11 @@ export default {
   components: {Modal, Toggle},
   data(){
     return {
-      colorID: Number,
       colorTitle: "未選択",
       colorSubTitle: "",
       colorDescription: "",
       colorTitleFlag: false,
+      modalFlag: false,
     }
   },
   props: {
@@ -91,10 +98,15 @@ export default {
     },
     getColorDetail(item){
       this.colorTitleFlag = true;
-      this.colorID = item.id;
       this.colorTitle = item.title;
       this.colorSubTitle = item.subTitle;
       this.colorDescription = item.description;
+    },
+    openModal(){
+      this.modalFlag = true;
+    },
+    closeModal(){
+      this.modalFlag = false;
     }
   },
 }
@@ -102,6 +114,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "./src/scss/foundation/variables";
+.c-colorPalletList {
+
+}
+.c-modal {
+  top: -100%;
+}
 .c-colorLists{
   ul {
     display: grid;

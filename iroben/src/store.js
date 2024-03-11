@@ -18,6 +18,7 @@ export default new Vuex.Store({
         toggles: {
             second: false,
             third: false,
+            paint: false,
         }
     },
     mutations: {
@@ -32,8 +33,6 @@ export default new Vuex.Store({
         },
         toggle({ state },{ level , flag }){
             this.state.toggles[level] = flag;
-            //let target = this.state.toggles[level];
-            //target = !target;
         },
     },
     plugins: [createPersistedState(

@@ -1,8 +1,8 @@
 <template>
   <div>
-   <article class="c-modal" :id="modalId">
+   <article class="c-modal">
       <h2>{{title}}</h2>
-      <a href="#!" class="modal_close">✕</a>
+      <a href="#" class="modal_close" @click="closeModal">✕</a>
       <slot></slot>
     </article>
     <a href="#!" class="overlay"></a>
@@ -17,9 +17,10 @@ export default {
       type: String,
       required: true
     },
-    modalId: {
-      type: String,
-      required: true
+  },
+  methods: {
+    closeModal(){
+      this.$emit('closeModal');
     }
   }
 }
@@ -32,11 +33,12 @@ export default {
   background: map_get($color, white);
   padding: 20px;
   position: absolute;
-  top: 16vh;
+  top: 0;
   left: 0;
   right: 0;
   margin: auto;
-  &:target{
+  //display: none;
+  /*&:target{
     opacity: 1;
     visibility: visible;
     transition: opacity 0.5s, visibility 0.5s;
@@ -45,7 +47,7 @@ export default {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s, visibility 0.5s;
-  }
+  }*/
   .overlay{
     display: block;
     width: 100%;

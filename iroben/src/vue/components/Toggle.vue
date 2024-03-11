@@ -19,7 +19,7 @@ export default {
   props: {
     level: {
       type: String,
-      required: true
+      required: false
     },
   },
   methods: {
@@ -70,10 +70,10 @@ export default {
   }
 
   input:checked + .slider {
-    border-color: #2196F3;
+    border-color: map_get($color, main01);
 
     &::before {
-      border-color: #2196F3;
+      border-color: map_get($color, main01);
       background-color: #c6e5ff;
       transform: translateX(38px);
     }

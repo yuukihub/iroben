@@ -9,7 +9,7 @@
   import top from './vue/pages/Top.vue';
   import exam from './vue/pages/ThirdExam.vue';
   import list from './vue/pages/ThirdColorLists.vue';
-  import ColorPaint from './vue/pages/ColorPaint.vue';
+  import ColorPaint from './vue/components/ColorPallet.vue';
 
   export default {
     data() {

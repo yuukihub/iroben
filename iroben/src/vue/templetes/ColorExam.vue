@@ -20,7 +20,7 @@
             <img src="../../img/icon_circle.svg" alt="アイコン">
           </div>
           <div v-else="answerFlag">
-            <div v-if="currentQuestion.answer == index">
+            <div v-if="currentQuestion.answer == index+1">
               <img src="../../img/icon_success.svg" alt="アイコン">
             </div>
             <div v-else>

@@ -3,7 +3,7 @@
     <div class="c-colorPalletHeader">
       <div class="selectedColor">
         <p class="title">選択色</p>
-        <a v-if="colorNameFlag" class="name" href="#">
+        <a v-if="colorTitleFlag" class="name" href="#modal">
           {{colorTitle}}
         </a>
         <p v-else class="name is-disabled">
@@ -17,10 +17,10 @@
         <ul>
           <li v-for="(item, index) in colorLists" :key="index">
             <div class="color"
+                 href="#modal"
                  :tabindex="index"
                  :style="{background: item.colorCode}"
-                 data-colorName="item.title"
-                 @click="getColorName(item.title)">
+                 @click="getColorDetail(item)">
             </div>
           </li>
         </ul>
@@ -36,19 +36,30 @@
         </ul>
       </div>
     </div>
+    <modal :title="colorTitle">
+      <p>
+        {{colorSubTitle}}
+      </p>
+      <p>
+        {{colorDescription}}
+      </p>
+    </modal>
   </div>
 </template>
 
 <script>
 import Toggle from "@/vue/components/Toggle.vue";
+import Modal from "@/vue/components/Modal.vue";
 
 export default {
   name: "ColorPalletList",
-  components: {Toggle},
+  components: {Modal, Toggle},
   data(){
     return {
       colorTitle: "未選択",
-      colorNameFlag: false,
+      colorSubTitle: "",
+      colorDescription: "",
+      colorTitleFlag: false,
     }
   },
   props: {
@@ -76,9 +87,11 @@ export default {
     clickToggle() {
       this.$emit("onClick");
     },
-    getColorName(title){
-      this.colorNameFlag = true;
-      this.colorTitle = title;
+    getColorDetail(item){
+      this.colorTitleFlag = true;
+      this.colorTitle = item.title;
+      this.colorSubTitle = item.subTitle;
+      this.colorDescription = item.description;
     }
   },
 }

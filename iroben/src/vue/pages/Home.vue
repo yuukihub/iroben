@@ -1,11 +1,9 @@
 <template>
   <v-ons-page>
-    <color-pallet-header></color-pallet-header>
+
     <img src="../../img/img_title01.svg" alt="3級'">
     <img src="../../img/img_title02.svg" alt="2級'">
     <img src="../../img/img_title03.svg" alt="2級'">
-
-
 
     <v-ons-button class="c-button" @click="toThirdExam">3級の慣用色テスト</v-ons-button>
     <v-ons-button class="c-button" @click="toThirdColorLists">3級の慣用色一覧</v-ons-button>
@@ -35,25 +33,22 @@ import secondColorLists from "@/vue/pages/SecondColorLists.vue";
 import thirdExam from "./ThirdExam.vue";
 import thirdColorLists from "@/vue/pages/ThirdColorLists.vue";
 import colorPaint from "@/vue/pages/colorPaint.vue";
-import Toggle from "@/vue/components/Toggle.vue";
 import ColorPaint from "@/vue/pages/colorPaint.vue";
-import ColorPalletHeader from "@/vue/components/ColorPalletHeader.vue";
 
 export default {
   name: "home",
   data(){
     return {
-      //test: false
+      paintFlag: false
     }
   },
   components: {
-    ColorPalletHeader,
     ColorPaint,
     customToolbar,
   },
   methods: {
     pop(){
-      //this.pageStack.pop();
+      this.pageStack.pop();
     },
     toColorPaint(){
       this.pageStack.push(colorPaint);
@@ -70,10 +65,6 @@ export default {
     toThirdColorLists() {
       this.pageStack.push(thirdColorLists);
     },
-    checkToggleStatus() {
-      //console.log(this.test)
-      //this.test = this.$store.state.toggles['paint'];
-    }
   },
   props: ['pageStack'],
 }

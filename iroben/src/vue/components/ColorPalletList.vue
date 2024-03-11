@@ -4,6 +4,7 @@
       <div class="selectedColor">
         <p class="title">選択色</p>
         <a v-if="colorTitleFlag"
+           href="#"
            class="name"
            @click="openModal">
           {{colorTitle}}
@@ -130,14 +131,16 @@ export default {
   }
 }
 .color {
+  position: relative;
   width: 24px;
   height: 24px;
   border-radius: 100%;
   margin: 0 0 6px 0;
-  :focus {
-    &.is-selected {
-      border: 2px solid map_get($color, main01);
-    }
+  &:focus::after {
+    position: absolute;
+    top: 3.5px;
+    left: 4px;
+    content: url(../../img/icon-check.svg);
   }
 }
 .selectedColor {

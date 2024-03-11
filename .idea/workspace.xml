@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/pages/colorPaint.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/resource/secondExam.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/resource/secondExam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/foundation/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/scss/foundation/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletHeader.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/Modal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/Toggle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/Toggle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/ColorPaint.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/ColorPallet.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorExam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorExam.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/colorPaint.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/colorPaint.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
@@ -101,7 +95,7 @@
       <workItem from="1709437358367" duration="1232000" />
       <workItem from="1709517106429" duration="29547000" />
       <workItem from="1709797025296" duration="1543000" />
-      <workItem from="1710113573448" duration="17610000" />
+      <workItem from="1710113573448" duration="20730000" />
     </task>
     <servers />
   </component>

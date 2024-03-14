@@ -21,11 +21,12 @@
       <div class="c-colorLists">
         <ul>
           <li v-for="(item, index) in colorLists" :key="index">
-            <div class="color"
-                 :tabindex="index"
-                 :style="{background: item.colorCode}"
-                 @click="getColorDetail(item)">
-            </div>
+            <input type="radio"
+                   name="color"
+                   class="color"
+                   :tabindex="index"
+                   :style="{background: item.colorCode}"
+                   @click="getColorDetail(item)">
           </li>
         </ul>
       </div>
@@ -34,11 +35,12 @@
       <div class="c-colorLists">
         <ul>
           <li v-for="(item, index) in faultCountArray" :key="index">
-            <div class="color"
-                 :tabindex="index"
-                 :style="{background: item.colorCode}"
-                 @click="getColorDetail(item)">
-            </div>
+              <input type="radio"
+                     name="color"
+                     class="color"
+                     :tabindex="index"
+                     :style="{background: item.colorCode}"
+                     @click="getColorDetail(item)">
           </li>
         </ul>
       </div>
@@ -136,12 +138,15 @@ export default {
   height: 24px;
   border-radius: 100%;
   margin: 0 0 6px 0;
-  &:focus::after {
-    position: absolute;
-    top: 3.5px;
-    left: 4px;
-    content: url(../../img/icon-check.svg);
-  }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &[type="radio"]:checked:before {
+  position: absolute;
+  top: 3.5px;
+  left: 4px;
+  content: url(../../img/icon-check.svg);
+}
 }
 .selectedColor {
   display: flex;

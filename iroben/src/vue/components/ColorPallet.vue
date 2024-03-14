@@ -5,11 +5,11 @@
       </div>
       <div class="tab">
         <div class="tab_menu">
-          <button v-for="(tabName,index) in tabLists"
+          <button v-for="(obj,index) in tabLists"
                   :key="index"
                   :class="{'is-current': isCurrent === index}"
                   class="tab_button"
-                  @click="changeTab(index)">{{tabName}}</button>
+                  @click="changeTab(index,obj.level)">{{obj.title}}</button>
         </div>
         <div class="tab_content">
           <div v-show="isCurrent === 0">
@@ -55,19 +55,25 @@ export default {
     return {
       secondExam: secondExam,
       thirdExam: thirdExam,
-      faultItem: this.$store.state["second"].faultArray,
-      faultCountArray: "",
+      level:String,
+      faultCountArray: [],
       checkToggleStatus: this.checkToggle,
-      tabLists: ["1級","2級","3級",],
+      tabLists: [
+        {
+          "title":"1級",
+          "level":"first",
+        },
+        {
+          "title":"2級",
+          "level":"second",
+        },
+        {
+          "title":"3級",
+          "level":"third",
+        },
+      ],
       isCurrent: 1,
     }
-  },
-  created() {
-    //this.$store.stateのfaultArrayに重複して入っている色は削除
-    let faultItemArray = JSON.parse(JSON.stringify(this.faultItem));
-    this.faultCountArray = Array.from(
-        new Map(faultItemArray.map((faultItemArray) => [faultItemArray.id, faultItemArray])).values()
-    );
   },
   computed: {
     active() {
@@ -75,12 +81,30 @@ export default {
     },
   },
   methods: {
+    changeTab(sectionNum,level) {
+      this.isCurrent = sectionNum;
+
+      //this.$store.stateのfaultArrayに重複して入っている色は削除
+      this.checkFaultItem(level);
+    },
+    checkToggle(level) {
+      return this.$store.state.toggles[level];
+    },
+    checkFaultItem(level){
+      let faultItem = this.$store.state[level].faultArray;
+      let faultItemArray = JSON.parse(JSON.stringify(faultItem));
+      this.faultCountArray = Array.from(
+          new Map(faultItemArray.map((faultItemArray) => [faultItemArray.id, faultItemArray])).values()
+      );
+    },
     secondToggle() {
       this.$store.commit("toggle",
           { level:"second",
             flag:this.isSecondActive = !this.isSecondActive
           }
       );
+      //this.$store.stateのfaultArrayに重複して入っている色は削除
+      this.checkFaultItem('second');
     },
     thirdToggle(){
       this.$store.commit("toggle",
@@ -88,12 +112,8 @@ export default {
             flag:this.isThirdActive = !this.isThirdActive
           }
       );
-    },
-    changeTab(sectionNum) {
-      this.isCurrent = sectionNum;
-    },
-    checkToggle(level) {
-      return this.$store.state.toggles[level];
+      //this.$store.stateのfaultArrayに重複して入っている色は削除
+      this.checkFaultItem('third');
     },
   },
 }

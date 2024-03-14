@@ -1,7 +1,7 @@
 <template>
   <v-ons-page>
-    <custom-toolbar></custom-toolbar>
-    <color-pallet></color-pallet>
+    <custom-toolbar/>
+    <color-pallet/>
   </v-ons-page>
 </template>
 
@@ -15,10 +15,6 @@ export default {
   components: {
     CustomToolbar,
     ColorPallet
-  },
+  }
 }
 </script>
-
-<style scoped>
-
-</style>

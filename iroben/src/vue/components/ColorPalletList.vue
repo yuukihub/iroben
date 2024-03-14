@@ -52,6 +52,9 @@
         {{colorSubTitle}}
       </p>
       <p>
+        {{colorCode}}
+      </p>
+      <p>
         {{colorDescription}}
       </p>
     </modal>
@@ -70,6 +73,7 @@ export default {
       colorTitle: "未選択",
       colorSubTitle: "",
       colorDescription: "",
+      colorCode: "",
       colorTitleFlag: false,
       modalFlag: false,
     }
@@ -103,8 +107,10 @@ export default {
     getColorDetail(item){
       this.colorTitleFlag = true;
       this.colorTitle = item.title;
+      this.colorCode = item.colorCode;
       this.colorSubTitle = item.subTitle;
       this.colorDescription = item.description;
+      this.$emit("setColor",this.colorCode);
     },
     openModal(){
       this.modalFlag = true;
@@ -143,11 +149,12 @@ export default {
   -moz-appearance: none;
   appearance: none;
   &[type="radio"]:checked:before {
-  position: absolute;
-  top: 3.5px;
-  left: 4px;
-  content: url(../../img/icon-check.svg);
-}
+    position: absolute;
+    width: 16px;height: 16px;
+    top: 3.5px;
+    left: 4px;
+    content: url(../../img/icon-check.svg);
+  }
 }
 .selectedColor {
   display: flex;

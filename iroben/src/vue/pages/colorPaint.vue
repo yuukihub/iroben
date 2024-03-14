@@ -1,6 +1,5 @@
 <template>
   <v-ons-page>
-    <custom-toolbar/>
     <color-pallet/>
   </v-ons-page>
 </template>

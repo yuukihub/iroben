@@ -1,4 +1,7 @@
 <template>
+  <div id="stat"></div>
+  <canvas width="400" height="400" id="myCanvas"></canvas>
+
     <div class="c-colorPaint">
       <div class="c-colorPaint_header">
         <h3>カラーパレット</h3>
@@ -24,6 +27,7 @@
                 :is-toggle-flag="checkToggleStatus('second')"
                 :color-lists="secondExam"
                 @onClick="secondToggle"
+                @setColor="getPenColor"
             ></color-pallet-list>
           </div>
           <div v-show="isCurrent === 2">
@@ -73,12 +77,16 @@ export default {
         },
       ],
       isCurrent: 1,
+      penColor: "",
     }
   },
   computed: {
     active() {
       return this.value === this.id ? 'active' : false
     },
+  },
+  created() {
+    //this.draw();
   },
   methods: {
     changeTab(sectionNum,level) {
@@ -115,6 +123,55 @@ export default {
       //this.$store.stateのfaultArrayに重複して入っている色は削除
       this.checkFaultItem('third');
     },
+    getPenColor(value){
+      this.penColor = value;
+      this.draw();
+    },
+    draw(){
+
+      let drawData = {
+        drawFlag : false,
+        oldX : 0, // 直前のX座標を保存するためのもの
+        oldY : 0, // 直前のY座標を保存するためのもの
+        brushSize : 4, // ブラシサイズ
+        penColor : this.penColor
+      }
+
+      let can = document.getElementById("myCanvas");
+
+      can.addEventListener("touchmove", function (e){
+        if (!drawData.drawFlag) return;
+        let x = e.touches[0].pageX;
+        let y = e.touches[0].pageY;
+        let can = document.getElementById("myCanvas");
+        let context = can.getContext("2d");
+        context.strokeStyle = drawData.penColor;
+        context.lineWidth = drawData.brushSize;
+        context.lineJoin= "round"; // 連結部分を丸にする
+        context.lineCap = "round";
+        context.beginPath();
+        context.moveTo(drawData.oldX, drawData.oldY);
+        context.lineTo(x, y);
+        context.stroke();
+        context.closePath();
+        drawData.oldX = x;
+        drawData.oldY = y;
+      }, true);
+      can.addEventListener("touchstart", function(e){
+        drawData.drawFlag = true;
+        drawData.oldX = e.touches[0].pageX;
+        drawData.oldY = e.touches[0].pageY;
+      }, true);
+      can.addEventListener("touchend", function(){
+        this.drawData.drawFlag = false;
+      }, true);
+
+      // デフォルトのイベントを禁止
+      document.ontouchmove = function(evt){
+        evt.preventDefault();
+      }
+
+    }
   },
 }
 </script>
@@ -132,6 +189,7 @@ export default {
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 3;
 }
 .c-colorPaint_header {
   background: map_get($color, main01);
@@ -157,5 +215,12 @@ export default {
   &.is-current {
     border-bottom: 2px solid map_get($color, main02);
   }
+}
+
+#myCanvas {
+  /*z-index: 2;
+  position: absolute;
+  top: 0;
+  height: 100vh;*/
 }
 </style>

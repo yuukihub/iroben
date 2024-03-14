@@ -11,7 +11,7 @@
         <img class="wave" src="../../img/img_wave-bottom.svg" alt="wave">
       </div>
       <div class="c-colorCard">
-        <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
+        <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
         <div class="color" :style="`background-color:${item.colorCode}`"></div>
         <div class="descBlock">
           <h2>{{item.title}}</h2>

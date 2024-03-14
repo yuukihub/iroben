@@ -6,7 +6,7 @@
       <li v-for="(item, index) in colorLists" :key="index" @click="getItem(item)">
         <div class="left">
           <div class="colorPanel">
-            <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
+            <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
             <div class="color" v-bind:style="{background: item.colorCode}">
             </div>
           </div>
@@ -101,7 +101,7 @@ export default {
     width: 5.5vh;
     height: 6.5vh;
   }
-  .eyeImage {
+  .eye_image {
     position: absolute;
     top: 0px;
     left: 0;

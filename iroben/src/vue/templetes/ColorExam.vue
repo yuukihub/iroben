@@ -2,7 +2,7 @@
   <div class="wrap">
     <div v-if="status">
       <div class="c-colorCard">
-        <img class="eyeImage" src="../../img/icon_eye.svg" alt="目">
+        <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
         <div class="color" v-bind:style="{background: currentQuestion.colorCode}"></div>
         <div class="counter">
           {{number+1}} / {{questions.length}}

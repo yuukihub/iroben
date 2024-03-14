@@ -15,6 +15,11 @@ export default new Vuex.Store({
         third: {
             faultArray: [],
         },
+        toggles: {
+            second: false,
+            third: false,
+            paint: false,
+        }
     },
     mutations: {
         addFaultItem({ commit },{ level , item }) {
@@ -25,6 +30,9 @@ export default new Vuex.Store({
         reset({ state },{ level }) {
             let target = this.state[level];
             target.faultArray = [];
+        },
+        toggle({ state },{ level , flag }){
+            this.state.toggles[level] = flag;
         },
     },
     plugins: [createPersistedState(

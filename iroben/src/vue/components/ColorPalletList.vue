@@ -1,0 +1,172 @@
+<template>
+  <div class="c-colorPalletList">
+    <div class="selectedColor_header">
+      <div class="selectedColor">
+        <p class="title">選択色</p>
+        <a v-if="colorTitleFlag"
+           href="#"
+           class="name"
+           @click="openModal">
+          {{colorTitle}}
+        </a>
+        <p v-else class="name is-disabled">
+          未選択
+        </p>
+      </div>
+      <toggle
+          @onClick="clickToggle"
+          :level="level"></toggle>
+    </div>
+    <div v-if="!isToggleFlag">
+      <div class="c-colorLists">
+        <ul>
+          <li v-for="(item, index) in colorLists" :key="index">
+            <input type="radio"
+                   :name="level"
+                   class="color"
+                   :tabindex="index"
+                   :style="{background: item.colorCode}"
+                   @click="getColorDetail(item)">
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div v-else>
+      <div class="c-colorLists">
+        <ul>
+          <li v-for="(item, index) in faultCountArray" :key="index">
+              <input type="radio"
+                     :name="`${level}-fault`"
+                     class="color"
+                     :tabindex="index"
+                     :style="{background: item.colorCode}"
+                     @click="getColorDetail(item)">
+          </li>
+        </ul>
+      </div>
+    </div>
+    <modal  v-show="modalFlag"
+            @closeModal="closeModal"
+            :color-title="colorTitle"
+            :color-code="colorCode"
+            :color-sub-title="colorSubTitle"
+            :color-tone-number="colorToneNumber"
+            :color-description="colorDescription"></modal>
+  </div>
+</template>
+
+<script>
+import Toggle from "@/vue/components/Toggle.vue";
+import Modal from "@/vue/components/Modal.vue";
+
+export default {
+  name: "ColorPalletList",
+  components: {Modal, Toggle},
+  data(){
+    return {
+      colorTitle: "未選択",
+      colorCode: "",
+      colorSubTitle: "",
+      colorDescription: "",
+      colorToneNumber: [],
+      colorTitleFlag: false,
+      modalFlag: false,
+    }
+  },
+  props: {
+    colorLists: {
+      type: Object,
+      default: "{}",
+      required: true
+    },
+    isToggleFlag: {
+      type: Boolean,
+      default: false,
+      required: true
+    },
+    faultCountArray: {
+      type: Array,
+      default: "[]",
+      required: true
+    },
+    level: {
+      type: String,
+      required: true
+    },
+  },
+  methods: {
+    clickToggle() {
+      this.$emit("onClick");
+      this.colorTitleFlag = false;
+    },
+    getColorDetail(item){
+      this.colorTitleFlag = true;
+      this.colorTitle = item.title;
+      this.colorCode = item.colorCode;
+      this.colorSubTitle = item.subTitle;
+      this.colorDescription = item.description;
+      this.colorToneNumber = item.toneNumber;
+      this.$emit("setColor",this.colorCode);
+    },
+    openModal(){
+      this.modalFlag = true;
+    },
+    closeModal(){
+      this.modalFlag = false;
+    }
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+@import "./src/scss/foundation/variables";
+.c-colorLists{
+  ul {
+    display: grid;
+    place-items: center;
+    grid-gap: 1%;
+    justify-content: space-between;
+    grid-template-columns: 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7%;
+  }
+}
+.color {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  margin: 0 0 6px 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &[type="radio"]:checked:before {
+    position: absolute;
+    width: 16px;height: 16px;
+    top: 3.5px;
+    left: 4px;
+    content: url(../../img/icon-check.svg);
+  }
+}
+.selectedColor {
+  display: flex;
+  align-items: center;
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 16px;
+  }
+  .title {
+    margin-right: 4px;
+  }
+  .name {
+    cursor: pointer;
+   &.is-disabled {
+     cursor: none;
+     color: map_get($color, gray01);
+   }
+  }
+}
+</style>
+
+

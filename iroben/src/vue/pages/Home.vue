@@ -1,91 +1,18 @@
 <template>
   <v-ons-page>
 
-    <section class="c-card is-disabled">
-      <h2>
-        <!--<img :src="'../../img/title0'+slide+'.svg'" :alt="slide+'級'">-->
-        <img src="../../img/img_title01.svg" alt="1級'">
-      </h2>
-      <div>
-        <!--<div class="color">
-          <div class="title_wrap">
-            <p class="sub_title">
-              本日の1級慣用色
-            </p>
-            <h3>
-              スカイブルー
-            </h3>
-          </div>
-        </div>-->
-        <ul>
-          <a href="">
-            <li>
-              慣用色テスト
-              <img src="../../img/icon_arrowRight.svg" alt="右矢印">
-            </li>
-          </a>
-          <a href="">
-            <li>
-              慣用色一覧
-              <img src="../../img/icon_arrowRight.svg" alt="右矢印">
-            </li>
-          </a>
-        </ul>
-      </div>
-    </section>
+    <img src="../../img/img_title01.svg" alt="3級'">
+    <img src="../../img/img_title02.svg" alt="2級'">
+    <img src="../../img/img_title03.svg" alt="2級'">
 
-    <section class="c-card">
-      <h2>
-        <!--<img :src="'../../img/title0'+slide+'.svg'" :alt="slide+'級'">-->
-        <img src="../../img/img_title02.svg" alt="2級'">
-      </h2>
-      <div>
-        <ul>
-          <a href="" @click="push">
-            <li>
-              慣用色テスト
-              <img src="../../img/icon_arrowRight.svg" alt="右矢印">
-            </li>
-          </a>
-          <a href="">
-            <li>
-              慣用色一覧
-              <img src="../../img/icon_arrowRight.svg" alt="右矢印">
-            </li>
-          </a>
-        </ul>
-      </div>
-    </section>
+    <v-ons-button class="c-button" @click="toThirdExam">3級の慣用色テスト</v-ons-button>
+    <v-ons-button class="c-button" @click="toThirdColorLists">3級の慣用色一覧</v-ons-button>
+    <br>
+    <v-ons-button class="c-button" @click="toSecondExam">2級の慣用色テスト</v-ons-button>
+    <v-ons-button class="c-button" @click="toSecondColorLists">2級の慣用色一覧</v-ons-button>
+    <br>
+    <v-ons-button class="c-button" @click="toColorPaint">ペイント</v-ons-button>
 
-    <section class="c-card">
-      <h2>
-        <!--<img :src="'../../img/title0'+slide+'.svg'" :alt="slide+'級'">-->
-        <img src="../../img/img_title03.svg" alt="3級'">
-      </h2>
-      <div>
-        <ul>
-          <a href="">
-            <li>
-              慣用色テスト
-              <img src="../../img/icon_arrowRight.svg" alt="右矢印">
-            </li>
-          </a>
-          <a href="">
-            <li>
-              慣用色一覧
-              <img src="../../img/icon_arrowRight.svg" alt="右矢印">
-            </li>
-          </a>
-        </ul>
-      </div>
-      <v-ons-button class="c-button" @click="toThirdExam">3級の慣用色テスト</v-ons-button>
-      <v-ons-button class="c-button" @click="toThirdColorLists">3級の慣用色一覧</v-ons-button>
-      <br>
-      <v-ons-button class="c-button" @click="toSecondExam">2級の慣用色テスト</v-ons-button>
-      <v-ons-button class="c-button" @click="toSecondColorLists">2級の慣用色一覧</v-ons-button>
-      <br>
-      <v-ons-button class="c-button" @click="toColorPaint">ペイント</v-ons-button>
-    </section>
 
     <div class="characters-wrap">
       <img class="character03" src="../../img/character03_art.svg" alt="character03">
@@ -105,12 +32,18 @@ import secondExam from "./SecondExam.vue";
 import secondColorLists from "@/vue/pages/SecondColorLists.vue";
 import thirdExam from "./ThirdExam.vue";
 import thirdColorLists from "@/vue/pages/ThirdColorLists.vue";
-import colorPaint from "@/vue/pages/ColorPaint.vue";
-
+import colorPaint from "@/vue/pages/colorPaint.vue";
+import ColorPaint from "@/vue/pages/colorPaint.vue";
 
 export default {
   name: "home",
+  data(){
+    return {
+      paintFlag: false
+    }
+  },
   components: {
+    ColorPaint,
     customToolbar,
   },
   methods: {

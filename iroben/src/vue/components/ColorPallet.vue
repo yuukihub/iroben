@@ -1,6 +1,6 @@
 <template>
   <div id="stat"></div>
-  <canvas width="400" height="400" id="myCanvas"></canvas>
+  <canvas id="myCanvas"></canvas>
 
     <div class="c-colorPaint">
       <div class="c-colorPaint_header">
@@ -85,8 +85,8 @@ export default {
       return this.value === this.id ? 'active' : false
     },
   },
-  created() {
-    //this.draw();
+  mounted() {
+    this.resizeCanvas();
   },
   methods: {
     changeTab(sectionNum,level) {
@@ -111,6 +111,7 @@ export default {
             flag:this.isSecondActive = !this.isSecondActive
           }
       );
+
       //this.$store.stateのfaultArrayに重複して入っている色は削除
       this.checkFaultItem('second');
     },
@@ -120,6 +121,7 @@ export default {
             flag:this.isThirdActive = !this.isThirdActive
           }
       );
+
       //this.$store.stateのfaultArrayに重複して入っている色は削除
       this.checkFaultItem('third');
     },
@@ -127,24 +129,31 @@ export default {
       this.penColor = value;
       this.draw();
     },
+    resizeCanvas(){
+      let canvas = document.getElementById("myCanvas");
+      let colorPalletHeight = document.querySelector(".c-colorPaint").clientHeight;
+      let width = window.innerWidth;
+      let height = window.innerHeight - colorPalletHeight;
+      canvas.setAttribute('width',width);
+      canvas.setAttribute('height',height);
+    },
     draw(){
 
       let drawData = {
         drawFlag : false,
-        oldX : 0, // 直前のX座標を保存するためのもの
-        oldY : 0, // 直前のY座標を保存するためのもの
-        brushSize : 4, // ブラシサイズ
+        oldX : 0,
+        oldY : 0,
+        brushSize : 4,
         penColor : this.penColor
       }
 
-      let can = document.getElementById("myCanvas");
+      let canvas = document.getElementById("myCanvas");
 
-      can.addEventListener("touchmove", function (e){
+      canvas.addEventListener("touchmove", function (e){
         if (!drawData.drawFlag) return;
         let x = e.touches[0].pageX;
         let y = e.touches[0].pageY;
-        let can = document.getElementById("myCanvas");
-        let context = can.getContext("2d");
+        let context = canvas.getContext("2d");
         context.strokeStyle = drawData.penColor;
         context.lineWidth = drawData.brushSize;
         context.lineJoin= "round"; // 連結部分を丸にする
@@ -157,12 +166,12 @@ export default {
         drawData.oldX = x;
         drawData.oldY = y;
       }, true);
-      can.addEventListener("touchstart", function(e){
+      canvas.addEventListener("touchstart", function(e){
         drawData.drawFlag = true;
         drawData.oldX = e.touches[0].pageX;
         drawData.oldY = e.touches[0].pageY;
       }, true);
-      can.addEventListener("touchend", function(){
+      canvas.addEventListener("touchend", function(){
         this.drawData.drawFlag = false;
       }, true);
 

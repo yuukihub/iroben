@@ -22,7 +22,7 @@
         <ul>
           <li v-for="(item, index) in colorLists" :key="index">
             <input type="radio"
-                   name="color"
+                   :name="level"
                    class="color"
                    :tabindex="index"
                    :style="{background: item.colorCode}"
@@ -36,7 +36,7 @@
         <ul>
           <li v-for="(item, index) in faultCountArray" :key="index">
               <input type="radio"
-                     name="color"
+                     :name="`${level}-fault`"
                      class="color"
                      :tabindex="index"
                      :style="{background: item.colorCode}"
@@ -98,6 +98,7 @@ export default {
   methods: {
     clickToggle() {
       this.$emit("onClick");
+      this.colorTitleFlag = false;
     },
     getColorDetail(item){
       this.colorTitleFlag = true;

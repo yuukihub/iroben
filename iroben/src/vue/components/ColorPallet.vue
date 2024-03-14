@@ -36,6 +36,7 @@
                 :is-toggle-flag="checkToggleStatus('third')"
                 :color-lists="thirdExam"
                 @onClick="thirdToggle"
+                @setColor="getPenColor"
             ></color-pallet-list>
           </div>
         </div>

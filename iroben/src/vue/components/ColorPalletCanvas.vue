@@ -20,6 +20,10 @@ export default {
   }
 }
 </script>
-<style scoped>
 
+<style lang="scss" scoped>
+#canvas {
+  background-image: url("../../img/img_background.png") !important;
+  width: 100%;
+}
 </style>

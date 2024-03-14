@@ -2,12 +2,13 @@
   <!--<v-ons-toolbar>-->
     <header class="l-header">
       <div class="contents">
-        <div class="top">
-          <div class="bar"></div>
+        <div v-if="headerDesign">
+          <div class="top">
+            <div class="bar"></div>
+          </div>
+          <img src="../../img/img_wave-top.svg" alt="wave">
         </div>
-        <img src="../../img/img_wave-top.svg" alt="wave">
         <v-ons-back-button :on-click="pop"></v-ons-back-button>
-
         <div>
           {{ backLabel }}
         </div>
@@ -18,7 +19,13 @@
 
 <script>
   export default {
-    props: ['pop','backLabel']
+    props: {
+      headerDesign: {
+        type: Boolean,
+        default: true,
+        required: false
+      },
+    }
   }
 </script>
 

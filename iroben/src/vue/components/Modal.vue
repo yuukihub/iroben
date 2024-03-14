@@ -1,11 +1,27 @@
 <template>
   <div>
    <article class="c-modal">
-      <h2>{{title}}</h2>
-      <a href="#" class="modal_close" @click="closeModal">✕</a>
-      <slot></slot>
+     <div class="modal-color" :style="`background-color:${colorCode}`">
+       <h2 class="modal-title">
+         <p class="modal-subtitle">
+           {{colorSubTitle}}
+         </p>
+         {{colorTitle}}
+       </h2>
+       <div class="modal-toneNumber">
+         <ul>
+           <li v-for="(toneNumber, index) in colorToneNumber" :key="index">
+            ({{toneNumber}})
+           </li>
+         </ul>
+       </div>
+     </div>
+     <p class="modal-description">
+       {{colorDescription}}
+     </p>
+      <a href="#" class="modal-close" @click="closeModal">✕</a>
     </article>
-    <a href="#!" class="overlay"></a>
+    <!--<a href="#!" class="overlay"></a>-->
   </div>
 </template>
 
@@ -13,8 +29,29 @@
 export default {
   name: "Modal",
   props: {
-    title: {
+    colorTitle: {
       type: String,
+      required: true
+    },
+    colorCode: {
+      type: String,
+      required: true
+    },
+    colorSubTitle: {
+      type: String,
+      required: true
+    },
+    toneNumber: {
+      type: String,
+      required: true
+    },
+    colorDescription: {
+      type: String,
+      required: true
+    },
+    colorToneNumber: {
+      type: Array,
+      default: "[]",
       required: true
     },
   },
@@ -28,26 +65,65 @@ export default {
 
 <style lang="scss" scoped>
 @import "./src/scss/foundation/variables";
+@import "./src/scss/foundation/mixins";
 .c-modal {
-  width: 80%;
+  max-width: 280px;
+  width: 100%;
   background: map_get($color, white);
-  padding: 20px;
   position: absolute;
-  top: 0;
+  top: -50%;
   left: 0;
   right: 0;
   margin: auto;
-  //display: none;
-  /*&:target{
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.5s, visibility 0.5s;
+  border-radius: 6px;
+  @include boxShadow();
+  .modal-title {
+    display: table;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background: map_get($color, white);
+    padding: 4px;
+    margin: auto;
   }
-  &:not(:target) {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s, visibility 0.5s;
-  }*/
+  .modal-color {
+    padding: 50px;
+    border-radius: 6px 6px 0 0;
+  }
+  .modal-subtitle {
+    font-size: 12px;
+    background: map_get($color, white);
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+  }
+  .modal-toneNumber{
+    margin-top: 8px;
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+    li {
+      background: map_get($color, white);
+      padding: 4px;
+     &:not(:last-child) {
+       margin-right: -1px;
+     }
+    }
+  }
+  .modal-description {
+    padding: 16px;
+  }
+  .eye_image {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+
   .overlay{
     display: block;
     width: 100%;
@@ -55,15 +131,17 @@ export default {
     position: absolute;
     background-color: #000;
     opacity: 0.7;
-    top: 0;
+    top: -80%;
     left: 0;
   }
-  .modal_close{
+  .modal-close{
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 10px;
+    font-size: 18px;
+    color: map_get($color, white);
     text-decoration: none;
   }
-}
 
+}
 </style>

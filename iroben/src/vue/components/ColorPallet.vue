@@ -1,7 +1,5 @@
 <template>
-  <div id="stat"></div>
-  <canvas id="myCanvas"></canvas>
-
+  <color-pallet-canvas></color-pallet-canvas>
     <div class="c-colorPaint">
       <div class="c-colorPaint_header">
         <h3>カラーパレット</h3>
@@ -49,10 +47,12 @@
 import {secondExam} from "@/resource/secondExam";
 import {thirdExam} from "@/resource/thirdExam";
 import ColorPalletList from "@/vue/components/ColorPalletList.vue";
+import ColorPalletCanvas from "@/vue/components/ColorPalletCanvas.vue";
 
 export default {
   name: "ColorPallet",
   components: {
+    ColorPalletCanvas,
     ColorPalletList,
   },
   data(){
@@ -84,9 +84,6 @@ export default {
     active() {
       return this.value === this.id ? 'active' : false
     },
-  },
-  mounted() {
-    this.resizeCanvas();
   },
   methods: {
     changeTab(sectionNum,level) {
@@ -129,14 +126,6 @@ export default {
       this.penColor = value;
       this.draw();
     },
-    resizeCanvas(){
-      let canvas = document.getElementById("myCanvas");
-      let colorPalletHeight = document.querySelector(".c-colorPaint").clientHeight;
-      let width = window.innerWidth;
-      let height = window.innerHeight - colorPalletHeight;
-      canvas.setAttribute('width',width);
-      canvas.setAttribute('height',height);
-    },
     draw(){
 
       let drawData = {
@@ -147,7 +136,7 @@ export default {
         penColor : this.penColor
       }
 
-      let canvas = document.getElementById("myCanvas");
+      let canvas = document.getElementById("canvas");
 
       canvas.addEventListener("touchmove", function (e){
         if (!drawData.drawFlag) return;
@@ -172,7 +161,7 @@ export default {
         drawData.oldY = e.touches[0].pageY;
       }, true);
       canvas.addEventListener("touchend", function(){
-        this.drawData.drawFlag = false;
+        drawData.drawFlag = false;
       }, true);
 
       // デフォルトのイベントを禁止
@@ -198,7 +187,8 @@ export default {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 3;
+  height: 376px;
+  background: map_get($color, white);
 }
 .c-colorPaint_header {
   background: map_get($color, main01);
@@ -224,12 +214,5 @@ export default {
   &.is-current {
     border-bottom: 2px solid map_get($color, main02);
   }
-}
-
-#myCanvas {
-  /*z-index: 2;
-  position: absolute;
-  top: 0;
-  height: 100vh;*/
 }
 </style>

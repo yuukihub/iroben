@@ -45,19 +45,13 @@
         </ul>
       </div>
     </div>
-    <modal v-show="modalFlag"
-           :title="colorTitle"
-           @closeModal="closeModal">
-      <p>
-        {{colorSubTitle}}
-      </p>
-      <p>
-        {{colorCode}}
-      </p>
-      <p>
-        {{colorDescription}}
-      </p>
-    </modal>
+    <modal  v-show="modalFlag"
+            @closeModal="closeModal"
+            :color-title="colorTitle"
+            :color-code="colorCode"
+            :color-sub-title="colorSubTitle"
+            :color-tone-number="colorToneNumber"
+            :color-description="colorDescription"></modal>
   </div>
 </template>
 
@@ -71,9 +65,10 @@ export default {
   data(){
     return {
       colorTitle: "未選択",
+      colorCode: "",
       colorSubTitle: "",
       colorDescription: "",
-      colorCode: "",
+      colorToneNumber: [],
       colorTitleFlag: false,
       modalFlag: false,
     }
@@ -110,6 +105,7 @@ export default {
       this.colorCode = item.colorCode;
       this.colorSubTitle = item.subTitle;
       this.colorDescription = item.description;
+      this.colorToneNumber = item.toneNumber;
       this.$emit("setColor",this.colorCode);
     },
     openModal(){
@@ -124,12 +120,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "./src/scss/foundation/variables";
-.c-colorPalletList {
-
-}
-.c-modal {
-  top: -100%;
-}
 .c-colorLists{
   ul {
     display: grid;
@@ -178,4 +168,5 @@ export default {
   }
 }
 </style>
+
 

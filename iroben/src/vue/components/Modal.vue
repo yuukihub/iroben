@@ -9,11 +9,16 @@
          {{colorTitle}}
        </h2>
        <div class="modal-toneNumber">
-         <ul>
-           <li v-for="(toneNumber, index) in colorToneNumber" :key="index">
-            ({{toneNumber}})
-           </li>
-         </ul>
+         <div class="modal-toneNumber_inner">
+           <p>
+             色相番号：
+           </p>
+           <ul>
+             <li v-for="(toneNumber, index) in colorToneNumber" :key="index">
+               {{toneNumber}}
+             </li>
+           </ul>
+         </div>
        </div>
      </div>
      <p class="modal-description">
@@ -99,17 +104,25 @@ export default {
     width: 100%;
   }
   .modal-toneNumber{
+    display: flex;
+    justify-content: center;
     margin-top: 8px;
+    &_inner {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: map_get($color, white);
+      padding: 4px;
+    }
     ul {
       display: flex;
       justify-content: center;
     }
     li {
-      background: map_get($color, white);
-      padding: 4px;
-     &:not(:last-child) {
-       margin-right: -1px;
-     }
+      &:not(:last-child):after {
+        content: (",");
+        margin-right: 4px;
+      }
     }
   }
   .modal-description {

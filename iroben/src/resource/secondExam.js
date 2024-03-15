@@ -1631,7 +1631,7 @@ export const secondExam = [
             [
                 {
                     "name":"オリーブ",
-                    "colorCode":"ddb563"
+                    "colorCode":"#ddb563"
                 },
                 {
                     "name":"鶯色",
@@ -1798,7 +1798,7 @@ export const secondExam = [
                 },
                 {
                     "name":"オリーブ",
-                    "colorCode":"ddb563"
+                    "colorCode":"#ddb563"
                 }
             ]
         ],
@@ -1843,7 +1843,7 @@ export const secondExam = [
             [
                 {
                     "name":"オリーブ",
-                    "colorCode":"ddb563"
+                    "colorCode":"#ddb563"
                 },
                 {
                     "name":"シャトルーズグリーン",
@@ -1886,11 +1886,11 @@ export const secondExam = [
                 },
                 {
                     "name":"マラカイトグリーン",
-                    "colorCode":"##009854"
+                    "colorCode":"#009854"
                 },
                 {
                     "name":"オリーブ",
-                    "colorCode":"ddb563"
+                    "colorCode":"#ddb563"
                 }
             ],
             [
@@ -2088,7 +2088,7 @@ export const secondExam = [
                 },
                 {
                     "name":"マラカイトグリーン",
-                    "colorCode":"##009854"
+                    "colorCode":"#009854"
                 }
             ],
             [
@@ -2102,7 +2102,7 @@ export const secondExam = [
                 },
                 {
                     "name":"マラカイトグリーン",
-                    "colorCode":"##009854"
+                    "colorCode":"#009854"
                 }
             ],
             [
@@ -2116,7 +2116,7 @@ export const secondExam = [
                 },
                 {
                     "name":"マラカイトグリーン",
-                    "colorCode":"##009854"
+                    "colorCode":"#009854"
                 }
             ]
         ],
@@ -2151,7 +2151,7 @@ export const secondExam = [
                 },
                 {
                     "name":"マラカイトグリーン",
-                    "colorCode":"##009854"
+                    "colorCode":"#009854"
                 },
                 {
                     "name":"海松色",

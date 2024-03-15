@@ -760,7 +760,7 @@ export const thirdExam = [
                 },
                 {
                     "name":"ピーチ",
-                    "colorCode":"#fbd8b5#"
+                    "colorCode":"#fbd8b5"
                 },
                 {
                     "name":"ベージュ",
@@ -774,7 +774,7 @@ export const thirdExam = [
                 },
                 {
                     "name":"ピーチ",
-                    "colorCode":"#fbd8b5#"
+                    "colorCode":"#fbd8b5"
                 },
                 {
                     "name":"アイボリー",
@@ -788,7 +788,7 @@ export const thirdExam = [
                 },
                 {
                     "name":"ピーチ",
-                    "colorCode":"#fbd8b5#"
+                    "colorCode":"#fbd8b5"
                 },
                 {
                     "name":"サーモンピンク",
@@ -1732,7 +1732,7 @@ export const thirdExam = [
                 },
                 {
                     "name":"青磁色",
-                    "colorCode":"#"
+                    "colorCode":"#76ac96"
                 }
             ],
             [
@@ -2028,7 +2028,7 @@ export const thirdExam = [
             [
                 {
                     "name":"瑠璃色",
-                    "colorCode":"＃1d50a2"
+                    "colorCode":"#1d50a2"
                 },
                 {
                     "name":"マリンブルー",
@@ -2042,7 +2042,7 @@ export const thirdExam = [
             [
                 {
                     "name":"瑠璃色",
-                    "colorCode":"＃1d50a2"
+                    "colorCode":"#1d50a2"
                 },
                 {
                     "name":"ネービーブルー",
@@ -2056,7 +2056,7 @@ export const thirdExam = [
             [
                 {
                     "name":"瑠璃色",
-                    "colorCode":"＃1d50a2"
+                    "colorCode":"#1d50a2"
                 },
                 {
                     "name":"シアン",
@@ -2099,7 +2099,7 @@ export const thirdExam = [
                 },
                 {
                     "name":"瑠璃色",
-                    "colorCode":"＃1d50a2"
+                    "colorCode":"#1d50a2"
                 },
                 {
                     "name":"群青色",
@@ -2205,7 +2205,7 @@ export const thirdExam = [
                 },
                 {
                     "name":"瑠璃色",
-                    "colorCode":"＃1d50a2"
+                    "colorCode":"#1d50a2"
                 },
                 {
                     "name":"藍色",
@@ -2533,7 +2533,7 @@ export const thirdExam = [
             [
                 {
                     "name":"瑠璃色",
-                    "colorCode":"＃1d50a2"
+                    "colorCode":"#1d50a2"
                 },
                 {
                     "name":"ウルトラマリンブルー",
@@ -3389,7 +3389,7 @@ export const thirdExam = [
                 },
                 {
                     "name":"瑠璃色",
-                    "colorCode":"＃1d50a2"
+                    "colorCode":"#1d50a2"
                 }
             ],
         ],

@@ -1,6 +1,6 @@
 <template>
   <v-ons-page>
-    <custom-toolbar></custom-toolbar>
+    <custom-toolbar :title="this.title"></custom-toolbar>
     <color-lists :color-lists="thirdExam" :level="'third'" @onClick="push"></color-lists>
   </v-ons-page>
 </template>
@@ -20,6 +20,7 @@ export default {
   data() {
     return {
       thirdExam: thirdExam,
+      title: "3級の慣用色一覧",
     }
   },
   methods: {

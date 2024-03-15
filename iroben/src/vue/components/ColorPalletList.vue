@@ -13,9 +13,12 @@
           未選択
         </p>
       </div>
-      <toggle
-          @onClick="clickToggle"
-          :level="level"></toggle>
+      <div class="toggle_wrap">
+        <p>不正解のみ</p>
+        <toggle
+            @onClick="clickToggle"
+            :level="level"></toggle>
+      </div>
     </div>
     <div v-if="!isToggleFlag">
       <div class="c-colorLists">
@@ -142,14 +145,25 @@ export default {
     font-size: 16px;
   }
   .title {
+    font-size: 14px;
     margin-right: 4px;
   }
   .name {
+    font-size: 14px;
     cursor: pointer;
    &.is-disabled {
      cursor: none;
      color: map_get($color, gray01);
    }
+  }
+}
+.toggle_wrap {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  p {
+    font-size: 14px;
+    margin-right: 4px;
   }
 }
 </style>

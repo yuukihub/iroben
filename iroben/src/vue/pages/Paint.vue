@@ -1,16 +1,16 @@
 <template>
   <v-ons-page>
-    <custom-toolbar :header-design="false"></custom-toolbar>
+    <custom-toolbar :header-design="false" @click="resetToggleFlag"/>
     <color-pallet @openModal="setColorDetail"/>
-    <Transition appear>
+    <transition appear>
       <color-pallet-modal  v-show="openModalFlag"
                            :color-title="colorTitle"
                            :color-code="colorCode"
                            :color-sub-title="colorSubTitle"
                            :color-tone-number="colorToneNumber"
                            :color-description="colorDescription"
-                           @closeModal="closeModal"></color-pallet-modal>
-    </Transition>
+                           @closeModal="closeModal"/>
+    </transition>
   </v-ons-page>
 </template>
 
@@ -52,17 +52,22 @@ export default {
     closeModal(){
       this.openModalFlag = false;
     },
+    resetToggleFlag() {
+      this.$store.commit("toggle",
+          { level:"second",
+            flag:false,
+          }
+      );
+      this.$store.commit("toggle",
+          { level:"third",
+            flag:false,
+          }
+      );
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  .v-enter-active,
-  .v-leave-active {
-    transition: opacity 200ms ease-in-out;
-  }
-  .v-enter-from,
-  .v-leave-to {
-    opacity: 0;
-  }
+@import "./src/scss/components/transition";
 </style>

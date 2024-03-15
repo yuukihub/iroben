@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <button @click="clearItem">クリア</button>
+    <button @click="confirmModal">クリア</button>
     <img class="wave" src="../../img/img_wave-bottom.svg" alt="wave">
     <ul class="c-colorLists">
       <li v-for="(item, index) in colorLists" :key="index" @click="getItem(item)">
@@ -34,16 +34,42 @@
       </li>
     </ul>
   </div>
+  <transition appear>
+    <modal v-show="openModalFlag"
+           :buttonFlag="true"
+           :ok-label="'削除する'"
+           :cancel-label="'キャンセル'"
+           @click="closeModal"
+           @runProcess="clearItem">
+      <div class="modal-error">
+        <h4>確認</h4>
+        <p class="sub_title">不正解回数をリセットします</p>
+        <p class="desc">
+          カラーパレットに記録されている<br>
+          2級の「不正解のみ」の色も<br>
+          同時にリセットされます。
+        </p>
+        <img src="../../img/img_explain_colorPallet.png" alt="不正解のみを表示したカラーパレット">
+        <p class="desc">
+          本当に削除しますか？
+        </p>
+      </div>
+    </modal>
+  </transition>
 </template>
 
 <script>
+import Modal from "@/vue/components/Modal.vue";
+
 export default {
   name: "colorLists",
+  components: {Modal},
   data () {
     return {
       value: String,
       faultItem: this.$store.state[this.level].faultArray,
       faultCountArray: "",
+      openModalFlag: false,
     }
   },
   props: {
@@ -82,8 +108,15 @@ export default {
       this.value = item;
       this.$emit('onClick', this.value)
     },
+    confirmModal() {
+      this.openModalFlag = true;
+    },
+    closeModal(){
+      this.openModalFlag = false;
+    },
     clearItem(){
       this.$store.commit("reset", { level:this.level});
+      this.openModalFlag = false;
     },
   },
 }
@@ -91,6 +124,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "./src/scss/foundation/variables";
+@import "./src/scss/components/transition";
 .c-colorLists {
   li {
     display: flex;
@@ -157,5 +191,32 @@ export default {
 }
 .wave {
   margin-bottom: -3px;
+}
+.modal-error {
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+    background: map_get($color, error);
+    border-radius: 6px 6px 0 0;
+    color: map_get($color, white);
+    padding: 24px 0;
+    text-align: center;
+    margin: 0;
+  }
+  .sub_title {
+    text-align: center;
+    margin: 16px auto;
+    font-weight: bold;
+  }
+  .desc {
+    text-align: center;
+    padding: 0 24px;
+  }
+  img {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 16px auto;
+  }
 }
 </style>

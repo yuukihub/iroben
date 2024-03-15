@@ -8,7 +8,9 @@
         <div class="tab_menu">
           <button v-for="(obj,index) in tabLists"
                   :key="index"
-                  :class="{'is-current': isCurrent === index}"
+                  :class="{
+                    'is-disabled': index === 0,
+                    'is-current': isCurrent === index}"
                   class="tab_button"
                   @click="changeTab(index,obj.level)">{{obj.title}}</button>
         </div>
@@ -24,7 +26,7 @@
                 :fault-count-array="faultCountArray"
                 :is-toggle-flag="checkToggleStatus('second')"
                 :color-lists="secondExam"
-                @onClick="secondToggle"
+                @onClick="pushSecondToggle"
                 @setColor="getPenColor"
                 @setColorDetail="getColorDetail"
             ></color-pallet-list>
@@ -36,7 +38,7 @@
                 :fault-count-array="faultCountArray"
                 :is-toggle-flag="checkToggleStatus('third')"
                 :color-lists="thirdExam"
-                @onClick="thirdToggle"
+                @onClick="pushThirdToggle"
                 @setColor="getPenColor"
                 @setColorDetail="getColorDetail"
             ></color-pallet-list>
@@ -112,7 +114,7 @@ export default {
           new Map(faultItemArray.map((faultItemArray) => [faultItemArray.id, faultItemArray])).values()
       );
     },
-    secondToggle() {
+    pushSecondToggle() {
       this.$store.commit("toggle",
           { level:"second",
             flag:this.isSecondActive = !this.isSecondActive
@@ -122,7 +124,7 @@ export default {
       //this.$store.stateのfaultArrayに重複して入っている色は削除
       this.checkFaultItem('second');
     },
-    thirdToggle(){
+    pushThirdToggle(){
       this.$store.commit("toggle",
           { level:"third",
             flag:this.isThirdActive = !this.isThirdActive
@@ -210,7 +212,7 @@ export default {
 }
 .tab_content {
   background: map_get($color, white);
-  padding: 0 24px 16px 24px;
+  padding: 0 16px 16px 16px;
 }
 .tab_button {
   border: none;
@@ -220,6 +222,10 @@ export default {
   color: map_get($color, main02);
   font-size: 16px;
   font-weight: bold;
+  &.is-disabled {
+    pointer-events: none;
+    color: map_get($color, gray02);
+  }
   &.is-current {
     border-bottom: 2px solid map_get($color, main02);
   }

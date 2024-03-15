@@ -1,6 +1,6 @@
 <template>
   <v-ons-page>
-    <custom-toolbar></custom-toolbar>
+    <custom-toolbar :title="this.title"></custom-toolbar>
     <color-exam :questions="secondExam" :level="'second'">
     </color-exam>
   </v-ons-page>second

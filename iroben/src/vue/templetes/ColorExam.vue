@@ -3,7 +3,7 @@
     <div v-if="status">
       <div class="c-colorCard">
         <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
-        <div class="color" v-bind:style="{background: currentQuestion.colorCode}"></div>
+        <div class="color" :style="{background: currentQuestion.colorCode}"></div>
         <div class="counter">
           {{number+1}} / {{questions.length}}
         </div>
@@ -14,7 +14,12 @@
             href="#"
             v-for="(answer,index) in setChoice"
             @click="selectAnswer(index)"
-        >
+            :class="{'is-disabled':isShowIllustration}">
+          <div v-if="answerFlag">
+            <div class="answer_colorWrap" :style="{background: answer.colorCode}">
+              <div class="answer_color"></div>
+            </div>
+          </div>
           <div class="answer">{{answer.name}}</div>
           <div v-if="!answerFlag">
             <img src="../../img/icon_circle.svg" alt="アイコン">
@@ -39,12 +44,16 @@
     <div class="result-wrap">
       <div v-if="correctFlag">
         <confetti></confetti>
-        <img class="result_image" src="../../img/img_success.svg" alt="正解">
-        <button @click="next()">{{btnTitle}}</button>
+        <div class="result_image">
+          <img src="../../img/img_success.svg" alt="正解">
+          <button @click="next()">{{btnTitle}}</button>
+        </div>
       </div>
       <div class="result_image" v-if="faultFlag">
-        <img class="result_image" src="../../img/img_error.svg" alt="不正解">
-        <button @click="next()">{{btnTitle}}</button>
+        <div class="result_image">
+          <img class="result_image" src="../../img/img_error.svg" alt="不正解">
+          <button @click="next()">{{btnTitle}}</button>
+        </div>
       </div>
       <div class="l-overlay"></div>
     </div>
@@ -71,9 +80,10 @@ export default {
       status: true,
       correctFlag: false,
       faultFlag: false,
-      btnTitle: "次に進む",
+      btnTitle: "次へ進む",
       answerFlag: false,
       faultItemArray: [],
+      isShowIllustration: false,
     }
   },
   props: {
@@ -119,6 +129,8 @@ export default {
   methods: {
     selectAnswer(index) {
       this.answerFlag = true;
+      this.isShowIllustration = true;
+
       if (index + 1 === this.currentQuestion.answer) {
         //正解の場合
         this.correctCount++;
@@ -136,6 +148,8 @@ export default {
       this.correctFlag = false;
       this.faultFlag = false;
       this.answerFlag = false;
+      this.isShowIllustration = false;
+
       if(this.questionLength === 0){
         this.status = false;
       }
@@ -150,9 +164,6 @@ export default {
 <style lang="scss" scoped>
 @import "./src/scss/foundation/variables";
 @import "./src/scss/components/colorCard";
-.wrap {
-  margin-top: 10vh;
-}
 .c-answerButton {
   display: flex;
   align-items: center;
@@ -162,16 +173,30 @@ export default {
   border-radius: 4px;
   max-width: 342px;
   width: 100%;
-  padding: 10px 24px;
+  padding: 4px 24px;
+  height: 48px;
   color: map_get($color, text);
   margin: 24px auto;
   &:focus {
     border: 2px solid map_get($color, link);
   }
+  &.is-disabled {
+    pointer-events: none;
+  }
   .answer {
     display: block;
     text-align: center;
     width: 100%;
+    &_color {
+      width:28px;
+      height: 32px;
+      border-radius: 3px;
+      border: 3px solid map_get($color, white);
+    }
+    &_colorWrap {
+      border: 1px solid map_get($color, gray03);
+      border-radius: 3px;
+    }
   }
   .circle {
     display: block;
@@ -193,12 +218,42 @@ export default {
   }
 }
 .result_image {
-  animation: fadeIn 0.8s ease 0.1s 0.8 normal backwards;
-  position: absolute;
-  top: 8vh;
-  left: 0;
-  right: 0;
-  margin: auto;
+  img {
+    max-width: 160px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: -320px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: fadeIn 0.8s ease 0.1s 0.8 normal backwards;
+  }
+  button {
+    position: absolute;
+    top: -40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90px;
+    height: 40px;
+    margin: auto;
+    text-align: left;
+    background: map_get($color, white);
+    border-radius: 5px;
+    padding: 8px;
+    animation: fadeIn 0.8s ease 0.1s 0.8 normal backwards;
+    border: 1px solid map_get($color, gray03);
+    &::after {
+      content: url("../../img/icon_movingArrowRight.svg");
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 6px;
+      right: 5px;
+    }
+  }
 }
 .color {
   background: #87CEEB;

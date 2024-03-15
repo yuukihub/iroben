@@ -15,9 +15,19 @@
             </span>
         </div>
         <div class="right">
-            <span class="faultItem">
-              <img class="" src="../../img/icon_flag.svg" alt="flag">
-              不正解<span class="count">{{faultCountArray[item.id]}}</span>回
+            <span class="faultItem"
+                  :class="{'is-disabled':!faultCountArray[item.id]}">
+              <img  class="" src="../../img/icon_flag.svg"
+                    v-if="faultCountArray[item.id]"
+                    alt="flag">
+              不正解
+              <span v-if="!faultCountArray[item.id]">
+                <span class="count">0</span>
+              </span>
+              <span v-else>
+                <span class="count">{{faultCountArray[item.id]}}</span>
+              </span>
+              回
             </span>
           <img src="../../img/icon_arrowRight.svg" alt="右矢印">
         </div>
@@ -131,8 +141,16 @@ export default {
       display: flex;
       align-items: center;
       margin-right: 8px;
+      &.is-disabled {
+        color: map_get($color, gray02);
+      }
       img {
         margin-right: 8px;
+      }
+      .count {
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0 2px 0 2px;
       }
     }
   }

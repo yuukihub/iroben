@@ -1,6 +1,6 @@
 <template>
   <v-ons-page>
-    <color-detail :item="item"></color-detail>
+    <color-detail :item="item" :level="'third'"></color-detail>
   </v-ons-page>
 </template>
 

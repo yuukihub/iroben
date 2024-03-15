@@ -12,13 +12,30 @@
       </div>
       <div class="c-colorCard">
         <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
-        <div class="color" :style="`background-color:${item.colorCode}`"></div>
+        <div class="color" :style="`background-color:${item.colorCode}`">
+          <div  class="fault_count"
+                v-if="faultCountArray[item.id]">
+            <img  class="" src="../../img/icon_flag.svg" alt="flag">
+            <p>
+              不正解：<span class="count">{{faultCountArray[item.id]}}</span>回
+            </p>
+          </div>
+        </div>
         <div class="descBlock">
-          <h2>{{item.title}}</h2>
-          <p class="tornNumber">lt10+,p12+</p>
-          <p>
+          <p class="sub_title">
             {{item.subTitle}}
           </p>
+          <h2>{{item.title}}</h2>
+          <div class="tone_number">
+            <p>
+              色相番号：
+            </p>
+            <ul>
+              <li v-for="(toneNumber, index) in item.toneNumber" :key="index">
+                {{toneNumber}}
+              </li>
+            </ul>
+          </div>
           <p class="desc">
             {{item.description}}
           </p>
@@ -34,13 +51,40 @@ import customToolbar from '../components/CustomToolbar.vue';
 export default {
   name: "colorDetail",
   components: {customToolbar},
+  data(){
+    return {
+      faultItem: this.$store.state[this.level].faultArray,
+      faultCountArray: "",
+    }
+  },
+  created() {
+    let faultCountArray = [];
+    let faultItemArray = JSON.parse(JSON.stringify(this.faultItem));
+    for(let key in faultItemArray){
+      faultCountArray.push(faultItemArray[key].id);
+    }
+    // 同じ文字を一度以上カウントしないようにユニークな配列を作成
+    const unique = Array.from(new Set(faultCountArray));
+
+    const faultCount = Object.fromEntries(
+        unique.map(char => {
+          const occurrenceCount = faultCountArray.filter(c => c === char).length;
+          return [char, occurrenceCount]
+        })
+    )
+    this.faultCountArray = faultCount;
+  },
   props: {
     item: {
       type: Object,
       default: "{}",
       required: true
     },
-  }
+    level: {
+      type: String,
+      required: true
+    }
+  },
 }
 </script>
 
@@ -58,14 +102,66 @@ export default {
     }
   }
   .color {
+    position: relative;
     border-radius: 10px 10px 0 0;
     display: block;
     margin: 3%;
     height: 290px;
+    .fault_count {
+      background: white;
+      display: flex;
+      align-items: center;
+      padding: 4px;
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      font-size: 12px;
+      img {
+        margin-right: 4px;
+      }
+    }
+    .count {
+    font-weight: bold;
+  }
   }
   .descBlock {
     h2,
-    .tornNumber {
+    .tone_number {
+      display: flex;
+      justify-content: center;
+    }
+    h2 {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 4px;
+      margin: 0;
+    }
+    .tone_number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+      border-top: 1px solid map_get($color, gray03);
+      padding-top: 16px;
+      margin: 16px;
+      ul {
+        display: flex;
+        align-items: center;
+      }
+      li {
+        border: 1px solid #DAE0E6;
+        border-radius: 40px;
+        padding: 2px 10px;
+        text-align: center;
+        margin-right: 8px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .sub_title {
+      margin-top: 16px;
       text-align: center;
     }
     .desc {

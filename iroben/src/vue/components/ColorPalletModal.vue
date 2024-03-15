@@ -26,13 +26,16 @@
      </p>
       <a href="#" class="modal-close" @click="closeModal">✕</a>
     </article>
-    <!--<a href="#!" class="overlay"></a>-->
+    <overlay @closeModal="closeModal"></overlay>
   </div>
 </template>
 
 <script>
+import Overlay from "@/vue/components/Overlay.vue";
+
 export default {
-  name: "Modal",
+  name: "ColorPalletModal",
+  components: {Overlay},
   props: {
     colorTitle: {
       type: String,
@@ -76,11 +79,14 @@ export default {
   width: 100%;
   background: map_get($color, white);
   position: absolute;
-  top: -50%;
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   border-radius: 6px;
+  height: max-content;
+  z-index: 3;
   @include boxShadow();
   .modal-title {
     display: table;

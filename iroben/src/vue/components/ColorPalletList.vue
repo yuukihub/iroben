@@ -45,32 +45,35 @@
         </ul>
       </div>
     </div>
-    <modal  v-show="modalFlag"
+    <!--<color-pallet-modal  v-show="modalFlag"
             @closeModal="closeModal"
             :color-title="colorTitle"
             :color-code="colorCode"
             :color-sub-title="colorSubTitle"
             :color-tone-number="colorToneNumber"
-            :color-description="colorDescription"></modal>
+            :color-description="colorDescription"></color-pallet-modal>-->
   </div>
 </template>
 
 <script>
 import Toggle from "@/vue/components/Toggle.vue";
-import Modal from "@/vue/components/Modal.vue";
+import ColorPalletModal from "@/vue/components/ColorPalletModal.vue";
 
 export default {
   name: "ColorPalletList",
-  components: {Modal, Toggle},
+  components: {ColorPalletModal, Toggle},
   data(){
     return {
       colorTitle: "未選択",
+      colorDetail: Object,
+      colorTitleFlag: false,
+      openModalFlag: false,
+      /*
       colorCode: "",
       colorSubTitle: "",
       colorDescription: "",
       colorToneNumber: [],
-      colorTitleFlag: false,
-      modalFlag: false,
+      modalFlag: false,*/
     }
   },
   props: {
@@ -100,19 +103,22 @@ export default {
       this.colorTitleFlag = false;
     },
     getColorDetail(item){
+      this.colorDetail = item;
       this.colorTitleFlag = true;
       this.colorTitle = item.title;
+      /*
       this.colorCode = item.colorCode;
       this.colorSubTitle = item.subTitle;
       this.colorDescription = item.description;
-      this.colorToneNumber = item.toneNumber;
+      this.colorToneNumber = item.toneNumber;*/
       this.$emit("setColor",this.colorCode);
     },
     openModal(){
-      this.modalFlag = true;
+      this.openModalFlag = true;
+      this.$emit("getColorDetail",this.colorDetail,this.openModalFlag);
     },
     closeModal(){
-      this.modalFlag = false;
+      //this.modalFlag = false;
     }
   },
 }

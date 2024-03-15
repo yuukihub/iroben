@@ -26,6 +26,7 @@
                 :color-lists="secondExam"
                 @onClick="secondToggle"
                 @setColor="getPenColor"
+                @getColorDetail="getColorDetail"
             ></color-pallet-list>
           </div>
           <div v-show="isCurrent === 2">
@@ -79,6 +80,8 @@ export default {
       ],
       isCurrent: 1,
       penColor: "",
+      colorDetail: Object,
+      openModalFlag: false,
     }
   },
   computed: {
@@ -87,6 +90,11 @@ export default {
     },
   },
   methods: {
+    getColorDetail(item,flag){
+      this.colorDetail = item;
+      this.openModalFlag = flag;
+      this.$emit("openModal",this.colorDetail,this.openModalFlag);
+    },
     changeTab(sectionNum,level) {
       this.isCurrent = sectionNum;
 

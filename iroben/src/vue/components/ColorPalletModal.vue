@@ -1,38 +1,42 @@
 <template>
   <div>
-   <article class="c-modal">
-     <div class="modal-color" :style="`background-color:${colorCode}`">
-       <h2 class="modal-title">
-         <p class="modal-subtitle">
-           {{colorSubTitle}}
-         </p>
-         {{colorTitle}}
-       </h2>
-       <div class="modal-toneNumber">
-         <div class="modal-toneNumber_inner">
-           <p>
-             色相番号：
-           </p>
-           <ul>
-             <li v-for="(toneNumber, index) in colorToneNumber" :key="index">
-               {{toneNumber}}
-             </li>
-           </ul>
-         </div>
-       </div>
-     </div>
-     <p class="modal-description">
-       {{colorDescription}}
-     </p>
+    <article class="c-modal">
+      <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
+      <div class="modal-color" :style="`background-color:${colorCode}`">
+        <h2 class="modal-title">
+          <p class="modal-subtitle">
+            {{colorSubTitle}}
+          </p>
+          {{colorTitle}}
+        </h2>
+        <div class="modal-toneNumber">
+          <div class="modal-toneNumber_inner">
+            <p>
+              色相番号：
+            </p>
+            <ul>
+              <li v-for="(toneNumber, index) in colorToneNumber" :key="index">
+                {{toneNumber}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="modal-description">
+        {{colorDescription}}
+      </p>
       <a href="#" class="modal-close" @click="closeModal">✕</a>
     </article>
-    <!--<a href="#!" class="overlay"></a>-->
+    <overlay @closeModal="closeModal"></overlay>
   </div>
 </template>
 
 <script>
+import Overlay from "@/vue/components/Overlay.vue";
+
 export default {
-  name: "Modal",
+  name: "ColorPalletModal",
+  components: {Overlay},
   props: {
     colorTitle: {
       type: String,
@@ -59,6 +63,10 @@ export default {
       default: "[]",
       required: true
     },
+    openModalFlag: {
+      type: Boolean,
+      required: false
+    }
   },
   methods: {
     closeModal(){
@@ -72,16 +80,27 @@ export default {
 @import "./src/scss/foundation/variables";
 @import "./src/scss/foundation/mixins";
 .c-modal {
+  position: relative;
   max-width: 280px;
   width: 100%;
   background: map_get($color, white);
   position: absolute;
-  top: -50%;
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   border-radius: 6px;
+  height: max-content;
+  z-index: 3;
   @include boxShadow();
+  .eye_image {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
   .modal-title {
     display: table;
     text-align: center;
@@ -127,16 +146,8 @@ export default {
   }
   .modal-description {
     padding: 16px;
+    font-feature-settings: "palt";
   }
-  .eye_image {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-
-
   .overlay{
     display: block;
     width: 100%;
@@ -155,6 +166,5 @@ export default {
     color: map_get($color, white);
     text-decoration: none;
   }
-
 }
 </style>

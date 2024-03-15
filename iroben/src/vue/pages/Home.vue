@@ -32,8 +32,7 @@ import secondExam from "./SecondExam.vue";
 import secondColorLists from "@/vue/pages/SecondColorLists.vue";
 import thirdExam from "./ThirdExam.vue";
 import thirdColorLists from "@/vue/pages/ThirdColorLists.vue";
-import colorPaint from "@/vue/pages/colorPaint.vue";
-import ColorPaint from "@/vue/pages/colorPaint.vue";
+import paint from "@/vue/pages/Paint.vue";
 
 export default {
   name: "home",
@@ -43,7 +42,7 @@ export default {
     }
   },
   components: {
-    ColorPaint,
+    paint,
     customToolbar,
   },
   methods: {
@@ -51,7 +50,7 @@ export default {
       this.pageStack.pop();
     },
     toColorPaint(){
-      this.pageStack.push(colorPaint);
+      this.pageStack.push(paint);
     },
     toSecondExam() {
       this.pageStack.push(secondExam);

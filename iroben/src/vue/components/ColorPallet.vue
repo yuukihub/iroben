@@ -26,7 +26,7 @@
                 :color-lists="secondExam"
                 @onClick="secondToggle"
                 @setColor="getPenColor"
-                @getColorDetail="getColorDetail"
+                @setColorDetail="getColorDetail"
             ></color-pallet-list>
           </div>
           <div v-show="isCurrent === 2">
@@ -38,6 +38,7 @@
                 :color-lists="thirdExam"
                 @onClick="thirdToggle"
                 @setColor="getPenColor"
+                @setColorDetail="getColorDetail"
             ></color-pallet-list>
           </div>
         </div>
@@ -136,7 +137,6 @@ export default {
       this.draw();
     },
     draw(){
-
       let drawData = {
         drawFlag : false,
         oldX : 0,

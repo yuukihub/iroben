@@ -45,13 +45,6 @@
         </ul>
       </div>
     </div>
-    <!--<color-pallet-modal  v-show="modalFlag"
-            @closeModal="closeModal"
-            :color-title="colorTitle"
-            :color-code="colorCode"
-            :color-sub-title="colorSubTitle"
-            :color-tone-number="colorToneNumber"
-            :color-description="colorDescription"></color-pallet-modal>-->
   </div>
 </template>
 
@@ -68,12 +61,6 @@ export default {
       colorDetail: Object,
       colorTitleFlag: false,
       openModalFlag: false,
-      /*
-      colorCode: "",
-      colorSubTitle: "",
-      colorDescription: "",
-      colorToneNumber: [],
-      modalFlag: false,*/
     }
   },
   props: {
@@ -106,20 +93,12 @@ export default {
       this.colorDetail = item;
       this.colorTitleFlag = true;
       this.colorTitle = item.title;
-      /*
-      this.colorCode = item.colorCode;
-      this.colorSubTitle = item.subTitle;
-      this.colorDescription = item.description;
-      this.colorToneNumber = item.toneNumber;*/
-      this.$emit("setColor",this.colorCode);
+      this.$emit("setColor",this.colorDetail.colorCode);
     },
     openModal(){
       this.openModalFlag = true;
-      this.$emit("getColorDetail",this.colorDetail,this.openModalFlag);
+      this.$emit("setColorDetail",this.colorDetail,this.openModalFlag);
     },
-    closeModal(){
-      //this.modalFlag = false;
-    }
   },
 }
 </script>

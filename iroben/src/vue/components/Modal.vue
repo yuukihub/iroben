@@ -57,7 +57,6 @@ export default {
 @import "./src/scss/foundation/variables";
 @import "./src/scss/foundation/mixins";
 .c-modal {
-  position: relative;
   max-width: 280px;
   width: 100%;
   background: map_get($color, white);

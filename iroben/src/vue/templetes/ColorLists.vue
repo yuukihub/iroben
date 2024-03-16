@@ -25,7 +25,7 @@
                 <span class="count">0</span>
               </span>
               <span v-else>
-                <span class="count">{{faultCountArray[item.id]}}</span>
+                <span class="count" :id="faultCountArray[item.id]">{{faultCountArray[item.id]}}</span>
               </span>
               回
             </span>
@@ -46,30 +46,39 @@
         <p class="sub_title">不正解回数をリセットします</p>
         <p class="desc">
           カラーパレットに記録されている<br>
-          2級の「不正解のみ」の色も<br>
+          <span v-if="level === 'second'">2</span>
+          <span v-else-if="level === 'third'">3</span>
+          級の「不正解のみ」の色も<br>
           同時にリセットされます。
         </p>
-        <img src="../../img/img_explain_colorPallet.png" alt="不正解のみを表示したカラーパレット">
+        <img :src="`../../img/img_${level}_colorPallet.png`" alt="不正解のみを表示したカラーパレット">
         <p class="desc">
           本当に削除しますか？
         </p>
       </div>
     </modal>
   </transition>
+
+  <transition appear>
+    <loading v-show="deleteFlag"></loading>
+  </transition>
+
 </template>
 
 <script>
 import Modal from "@/vue/components/Modal.vue";
+import Loading from "@/vue/components/Loading.vue";
 
 export default {
   name: "colorLists",
-  components: {Modal},
+  components: {Loading, Modal},
   data () {
     return {
       value: String,
       faultItem: this.$store.state[this.level].faultArray,
       faultCountArray: "",
       openModalFlag: false,
+      deleteFlag: false,
     }
   },
   props: {
@@ -115,8 +124,18 @@ export default {
       this.openModalFlag = false;
     },
     clearItem(){
-      this.$store.commit("reset", { level:this.level});
       this.openModalFlag = false;
+      this.deleteFlag = true;
+      this.$store.commit("reset", { level:this.level});
+
+      setTimeout(() => {
+            //表記を「0回」に戻す
+            this.faultCountArray = true;
+            //ローディングを非表示
+            this.deleteFlag = false
+          }
+          ,2500
+      )
     },
   },
 }

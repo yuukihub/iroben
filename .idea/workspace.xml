@@ -104,7 +104,7 @@
       <workItem from="1710463123770" duration="80000" />
       <workItem from="1710463218478" duration="23183000" />
       <workItem from="1710597473038" duration="6660000" />
-      <workItem from="1710810857766" duration="21139000" />
+      <workItem from="1710810857766" duration="24824000" />
     </task>
     <servers />
   </component>
@@ -121,5 +121,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/iroben/src/vue/pages/Home.vue</url>
+          <line>42</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

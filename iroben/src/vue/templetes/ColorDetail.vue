@@ -122,7 +122,7 @@ export default {
     }
     .count {
     font-weight: bold;
-  }
+    }
   }
   .descBlock {
     h2,
@@ -141,7 +141,6 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 8px;
       border-top: 1px solid map_get($color, gray03);
       padding-top: 16px;
       margin: 16px;

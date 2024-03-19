@@ -2,7 +2,7 @@
  * 診断の質問リスト
  * @type {[{subTitle: string, answer: number, description: string, colorCode: string, id: number, title: string, choices: string[][], faultCount: number}]}
  */
-export const secondExam = [
+export const secondQuestion = [
     {
         id:0,
         title:"鴇色",

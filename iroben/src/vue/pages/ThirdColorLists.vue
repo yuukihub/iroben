@@ -1,6 +1,6 @@
 <template>
   <v-ons-page>
-    <color-lists :color-lists="thirdExam"
+    <color-lists :color-lists="thirdQuestion"
                  :title="title"
                  :level="'third'"
                  @onClick="push"></color-lists>
@@ -12,7 +12,7 @@ import customToolbar from '../components/CustomToolbar.vue';
 import ColorLists from "@/vue/templetes/ColorLists.vue";
 import thirdColorDetail from "@/vue/pages/ThirdColorDetail.vue";
 import {ROUTER} from "@/resource/constant-router";
-import {thirdExam} from "@/resource/thirdExam";
+import {thirdQuestion} from "@/resource/thirdQuestion";
 
 export default {
   name: "thirdColorLists",
@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      thirdExam: thirdExam,
+      thirdQuestion: thirdQuestion,
       title: ROUTER.THIRD_COLOR_LIST_TITLE,
     }
   },

@@ -35,7 +35,9 @@
               <span v-else>
                 <span class="count" :id="faultCountArray[item.id]">{{faultCountArray[item.id]}}</span>
               </span>
-              回
+              <span class="unit">
+                回
+              </span>
             </span>
           <img src="../../img/icon_arrowRight.svg" alt="右矢印">
         </div>
@@ -166,7 +168,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 24px;
+    padding: 12px 16px;
     background: map_get($color, white);
     border-bottom: 1px solid map_get($color, gray03);
   }
@@ -219,8 +221,11 @@ export default {
       }
       .count {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 16px;
         margin: 0 2px 0 2px;
+      }
+      .unit {
+        font-size: 12px;
       }
     }
   }

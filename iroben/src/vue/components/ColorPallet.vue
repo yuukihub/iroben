@@ -25,7 +25,7 @@
                 :level="'second'"
                 :fault-count-array="faultCountArray"
                 :is-toggle-flag="checkToggleStatus('second')"
-                :color-lists="secondExam"
+                :color-lists="secondQuestion"
                 @onClick="pushSecondToggle"
                 @setColor="getPenColor"
                 @setColorDetail="getColorDetail"
@@ -37,7 +37,7 @@
                 :level="'third'"
                 :fault-count-array="faultCountArray"
                 :is-toggle-flag="checkToggleStatus('third')"
-                :color-lists="thirdExam"
+                :color-lists="thirdQuestion"
                 @onClick="pushThirdToggle"
                 @setColor="getPenColor"
                 @setColorDetail="getColorDetail"
@@ -49,8 +49,8 @@
 </template>
 
 <script>
-import {secondExam} from "@/resource/secondExam";
-import {thirdExam} from "@/resource/thirdExam";
+import {secondQuestion} from "@/resource/secondQuestion";
+import {thirdQuestion} from "@/resource/thirdQuestion";
 import ColorPalletList from "@/vue/components/ColorPalletList.vue";
 import ColorPalletCanvas from "@/vue/components/ColorPalletCanvas.vue";
 
@@ -62,8 +62,8 @@ export default {
   },
   data(){
     return {
-      secondExam: secondExam,
-      thirdExam: thirdExam,
+      secondQuestion: secondQuestion,
+      thirdQuestion: thirdQuestion,
       level:String,
       faultCountArray: [],
       checkToggleStatus: this.checkToggle,

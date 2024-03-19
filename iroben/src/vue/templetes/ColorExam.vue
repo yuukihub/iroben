@@ -46,30 +46,27 @@
       </div>
       <div>
         <p class="sub_title">
-          間違えた色は
-          <template v-if="level === 'second'">
-            <a href="#">2級一覧ページ</a>
-          </template>
+          <templete v-if="level === 'second'">
+            <a href="#" @click="toColorList">2級の慣用色一覧</a>に<br>
+          </templete>
           <template v-else-if="level === 'third'">
-            <a href="#">3級一覧ページ</a>
+            <a href="#" @click="toColorList">3級の慣用色一覧</a>に<br>
           </template>
-          で確認できます。
+          間違えた回数を記録しています。
         </p>
         <p class="text">
-          また、<a href="#">ペイント機能</a>の不正解のみの<br>
-          スイッチをオンにすると、<br>
-          今まで間違えた色が表示されます。
+          また、間違えた色は<a href="#" @click="toPaint">ペイント機能</a>で<br>
+          落書きすることもできます。
         </p>
-        <img :src="`../../img/img_${level}_colorPallet.png`" alt="不正解のみを表示したカラーパレット">
+        <img :src="`../../img/img_explain_ColorPalletToggle.png`" alt="不正解のみを表示したカラーパレット">
         <p class="text">
-          ぜひ復習にご活用ください。
+          ペイント機能の「不正解のみスイッチ」を<br>
+          オンにすると、間違えた色が表示されます。<br>
         </p>
-        <v-ons-button class="c-button" @click="toThirdExam">3級の慣用色テスト</v-ons-button>
+        <p class="text">
+          復習にぜひご活用ください。
+        </p>
       </div>
-
-
-
-
     </div>
 
     <div class="result-wrap">
@@ -187,7 +184,13 @@ export default {
     },
     intRandom(min, max){
       return Math.floor( Math.random() * (max - min + 1)) + min;
-    }
+    },
+    toPaint(){
+      this.$emit('toPaint');
+    },
+    toColorList(){
+      this.$emit('toColorList');
+    },
   }
 }
 </script>
@@ -267,7 +270,7 @@ export default {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 90px;
+    width: 100px;
     height: 40px;
     margin: auto;
     text-align: left;
@@ -317,7 +320,7 @@ export default {
   margin-top: 0;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 .c-score {
   position: relative;
@@ -369,6 +372,6 @@ img {
   margin: 24px auto;
 }
 .bottom {
-  height: 56vh;
+  height: 62vh;
 }
 </style>

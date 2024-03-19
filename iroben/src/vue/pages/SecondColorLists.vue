@@ -1,6 +1,6 @@
 <template>
   <v-ons-page>
-    <color-lists :color-lists="secondExam"
+    <color-lists :color-lists="secondQuestion"
                  :title="title"
                  :level="'second'"
                  @onClick="push"></color-lists>
@@ -12,7 +12,7 @@ import customToolbar from '../components/CustomToolbar.vue';
 import ColorLists from "@/vue/templetes/ColorLists.vue";
 import secondColorDetail from "@/vue/pages/SecondColorDetail.vue";
 import {ROUTER} from "@/resource/constant-router";
-import {secondExam} from "@/resource/secondExam"
+import {secondQuestion} from "@/resource/secondQuestion"
 
 export default {
   name: "secondColorLists",
@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      secondExam: secondExam,
+      secondQuestion: secondQuestion,
       title: ROUTER.SECOND_COLOR_LIST_TITLE,
     }
   },

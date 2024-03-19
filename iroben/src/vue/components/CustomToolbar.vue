@@ -65,7 +65,7 @@
     width: 100%;
     position: absolute;
     top: 16px;
-    padding: 0 24px;
+    padding: 0 16px;
   }
   .top {
     position: relative;
@@ -98,7 +98,7 @@
     background: transparent;
     border: transparent;
     img {
-      width: 30px;
+      width: 28px;
     }
     &.is-disabled {
       pointer-events: none;

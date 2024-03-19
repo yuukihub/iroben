@@ -3,11 +3,11 @@
 
 @mixin mq($level: sp) {
   @if $level == sp {
-    @media  (max-width: 390px){
+    @media  (max-width: 375px){
       @content;
     }
   } @else if $level == xsmall {
-    @media  (max-width: 375px){
+    @media  (max-width: 280px){
       @content;
     }
   } @else {

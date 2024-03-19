@@ -58,6 +58,7 @@
 
 <style lang="scss" scoped>
 @import "./src/scss/foundation/variables";
+@import "./src/scss/foundation/mixins";
 .l-header{
   .contents {
     display: flex;
@@ -66,6 +67,9 @@
     position: absolute;
     top: 16px;
     padding: 0 16px;
+    @include mq(xsmall) {
+      padding: 0 8px;
+    }
   }
   .top {
     position: relative;

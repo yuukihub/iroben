@@ -108,6 +108,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "./src/scss/foundation/variables";
+@import "./src/scss/foundation/mixins";
 .c-colorLists{
   ul {
     display: grid;
@@ -115,6 +116,9 @@ export default {
     grid-gap: 1%;
     justify-content: space-between;
     grid-template-columns: 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7%;
+    @include mq(sp) {
+      grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+    }
   }
 }
 .color {
@@ -126,12 +130,35 @@ export default {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  @include mq(sp) {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 3px 0;
+  }
+  @include mq(xsmall) {
+    width: 16px;
+    height: 16px;
+    margin: 0 0 3px 0;
+  }
   &[type="radio"]:checked:before {
+    content: '';
+    background-image: url(../../img/icon-check.svg);
+    background-size: contain;
     position: absolute;
-    width: 16px;height: 16px;
+    width: 16px;
+    height: 16px;
     top: 3.5px;
     left: 4px;
-    content: url(../../img/icon-check.svg);
+    display: inline-block;
+    vertical-align: middle;
+    @include mq(sp){
+      top: 1.5px;
+      left: 2px;
+    }
+    @include mq(xsmall) {
+      width: 12px;
+      height: 12px;
+    }
   }
 }
 .selectedColor {

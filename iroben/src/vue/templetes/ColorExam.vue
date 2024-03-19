@@ -1,14 +1,16 @@
 <template>
   <div class="wrap">
     <div v-if="status">
-      <div class="c-colorCard">
-        <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
-        <div class="color" :style="{background: currentQuestion.colorCode}"></div>
-        <div class="counter">
-          {{number+1}} / {{questions.length}}
+      <div class="exam_inner">
+        <div class="c-colorCard">
+          <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
+          <div class="color" :style="{background: currentQuestion.colorCode}"></div>
+          <div class="counter">
+            {{number+1}} / {{questions.length}}
+          </div>
         </div>
       </div>
-      <div class="button_area">
+      <div class="exam_inner">
         <button
             class="c-answerButton"
             href="#"
@@ -25,7 +27,7 @@
             <img src="../../img/icon_circle.svg" alt="アイコン">
           </div>
           <div v-else="answerFlag">
-            <div v-if="currentQuestion.answer == index+1">
+            <div v-if="currentQuestion.answer === index+1">
               <img src="../../img/icon_success.svg" alt="アイコン">
             </div>
             <div v-else>
@@ -44,7 +46,7 @@
         </div>
         <h3 class="summary">{{questions.length}}<span class="unit">点</span></h3>
       </div>
-      <div>
+      <div class="score_wrap">
         <p class="sub_title">
           <templete v-if="level === 'second'">
             <a href="#" @click="toColorList">2級の慣用色一覧</a>に<br>
@@ -60,8 +62,10 @@
         </p>
         <img :src="`../../img/img_explain_ColorPalletToggle.png`" alt="不正解のみを表示したカラーパレット">
         <p class="text">
-          ペイント機能の「不正解のみスイッチ」を<br>
-          オンにすると、間違えた色が表示されます。<br>
+          ペイント機能の<br class="is-sp">
+          「不正解のみスイッチ」を<br>
+          オンにすると、<br class="is-sp">
+          間違えた色が表示されます。<br>
         </p>
         <p class="text">
           復習にぜひご活用ください。
@@ -241,14 +245,9 @@ export default {
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+.exam_inner {
+  @include mq(xsmall) {
+    padding: 0 16px;
   }
 }
 .result_image {
@@ -295,6 +294,9 @@ export default {
   display: block;
   margin: 3%;
   height: 365px;
+  @include mq(sp) {
+    height: 230px;
+  }
 }
 .counter {
   margin: 16px 0;
@@ -306,8 +308,11 @@ export default {
   left: 0;
   right: 0;
   z-index: -1;
-  height: 72vh;
+  height: 60vh;
   background: map_get($color, white);
+  @include mq(sp) {
+    height: 52vh;
+  }
   img {
     position: absolute;
     top: -70px;
@@ -321,6 +326,9 @@ export default {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 40px;
+}
+.score_wrap {
+  background: map_get($color, white);
 }
 .c-score {
   position: relative;
@@ -359,19 +367,29 @@ export default {
   }
 }
 .sub_title {
-  margin: 105px auto 16px;
+  margin: 85px auto 16px;
   display: block;
   text-align: center;
+  @include mq(sp) {
+    margin: 105px auto 16px;
+  }
 }
 .text {
   text-align: center;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 img {
   display: block;
-  margin: 24px auto;
+  margin: 0 auto 24px ;
 }
-.bottom {
-  height: 62vh;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>

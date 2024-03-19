@@ -22,10 +22,13 @@ $duration: 1000;
 .confetti-wrap {
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 88vw;
   height: 300px;
   overflow: hidden;
   z-index: index($z-map, confetti);

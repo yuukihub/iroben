@@ -171,6 +171,10 @@ export default {
     padding: 12px 16px;
     background: map_get($color, white);
     border-bottom: 1px solid map_get($color, gray03);
+    @include mq(xsmall) {
+      padding: 12px 8px;
+      font-size: 0.8em;
+    }
   }
   .colorPanel {
     position: relative;
@@ -182,6 +186,10 @@ export default {
   .color {
     width: 5.5vh;
     height: 6.5vh;
+    @include mq(xsmall) {
+      width: 4.5vh;
+      height: 5.5vh;
+    }
   }
   .eye_image {
     position: absolute;
@@ -204,6 +212,9 @@ export default {
     align-items: center;
     .title {
       margin-left: 16px;
+      @include mq(xsmall) {
+        margin-left: 8px;
+      }
     }
   }
   .right {
@@ -213,16 +224,26 @@ export default {
       display: flex;
       align-items: center;
       margin-right: 8px;
+      @include mq(xsmall) {
+        margin-right: 0;
+      }
       &.is-disabled {
         color: map_get($color, gray02);
       }
       img {
         margin-right: 8px;
+        @include mq(xsmall) {
+          margin-right: 4px;
+          width: 12px;
+        }
       }
       .count {
         font-weight: bold;
         font-size: 16px;
         margin: 0 2px 0 2px;
+        @include mq(xsmall) {
+          font-size: 12px;
+        }
       }
       .unit {
         font-size: 12px;

@@ -187,6 +187,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../scss/foundation/variables";
+@import "./src/scss/foundation/mixins";
 .toggle_wrap {
   display: flex;
   align-items: center;
@@ -198,7 +199,6 @@ export default {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 376px;
   background: map_get($color, white);
 }
 .c-colorPaint_header {
@@ -208,11 +208,22 @@ export default {
     padding: 16px 24px;
     color: white;
     font-size: 18px;
+    @include mq(sp) {
+      padding: 16px;
+      font-size: 0.9rem;
+    }
+    @include mq(xsmall) {
+      padding: 8px 16px;
+      font-size: 0.75rem;
+    }
   }
 }
 .tab_content {
   background: map_get($color, white);
   padding: 0 16px 16px 16px;
+  @include mq(sp) {
+    padding: 0 8px 8px 8px;
+  }
 }
 .tab_button {
   border: none;
@@ -222,6 +233,12 @@ export default {
   color: map_get($color, main02);
   font-size: 16px;
   font-weight: bold;
+  @include mq(sp) {
+    font-size: 0.9rem;
+  }
+  @include mq(xsmall) {
+    font-size: 0.75rem;
+  }
   &.is-disabled {
     pointer-events: none;
     color: map_get($color, gray02);

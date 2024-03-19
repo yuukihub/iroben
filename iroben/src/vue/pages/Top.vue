@@ -60,14 +60,20 @@ h1 {
   left: 0;
   right: 0;
   margin: 0 !important;
+  @include mq(sp){
+    top: 9vh;
+  }
 }
 .logo {
   display: block;
   max-width: 244px;
   width: 100%;
   margin: auto;
-  @include mq(xsmall) {
+  @include mq(sp) {
     max-width: 204px;
+  }
+  @include mq(xsmall) {
+    max-width: 180px;
   }
 }
 .slider {
@@ -78,6 +84,9 @@ h1 {
   right: 0;
   margin: auto;
   width: 80%;
+  @include mq(xsmall) {
+    bottom: 0;
+  }
 }
 .characters_wrap {
   display: flex;

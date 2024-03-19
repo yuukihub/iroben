@@ -95,9 +95,12 @@ export default {
 .colorDetail-wrap {
   display: inherit;
   min-height: inherit;
+  @include mq(xsmall) {
+    padding: 0 16px;
+  }
   .c-colorCard {
     margin-top: 5vh;
-    @include mq(xsmall){
+    @include mq(sp){
       margin-top: 1vh;
     }
   }
@@ -107,6 +110,12 @@ export default {
     display: block;
     margin: 3%;
     height: 290px;
+    @include mq(sp) {
+      height: 180px;
+    }
+    @include mq(xsmall) {
+      height: 160px;
+    }
     .fault_count {
       background: white;
       display: flex;
@@ -144,6 +153,10 @@ export default {
       border-top: 1px solid map_get($color, gray03);
       padding-top: 16px;
       margin: 16px;
+      @include mq(sp) {
+        padding-top: 8px;
+        margin: 8px;
+      }
       ul {
         display: flex;
         align-items: center;
@@ -162,11 +175,17 @@ export default {
     .sub_title {
       margin-top: 16px;
       text-align: center;
+      @include mq(sp) {
+        margin-top: 8px;
+      }
     }
     .desc {
       margin: 16px;
       border-top: 1px solid map_get($color, gray03);
       padding-top: 16px;
+      @include mq(sp) {
+        padding-top: 8px;
+      }
     }
   }
   .characters_wrap {

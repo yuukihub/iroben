@@ -398,7 +398,7 @@ export const secondExam = [
             [
                 {
                     "name":"鴇色",
-                    "colorCode":"#"
+                    "colorCode":"#f4b3c2"
                 },
                 {
                     "name":"ポピーレッド",

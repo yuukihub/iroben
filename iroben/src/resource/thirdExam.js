@@ -216,7 +216,7 @@ export const thirdExam = [
         answer:3,
         toneNumber:['dp2'],
     },
-    {
+    /*{
         id:4,
         title:"朱色",
         subTitle:"あざやかな黄みの赤",
@@ -3448,5 +3448,5 @@ export const thirdExam = [
         ],
         answer:1,
         toneNumber:['b20','v20'],
-    },
+    },*/
 ];

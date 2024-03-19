@@ -6,12 +6,12 @@
       </slot>
       <div v-if="buttonFlag"
            class="modal-buttons">
-        <button @click="process">
-          {{okLabel}}
-        </button>
-        <button @click="closeModal">
-          {{cancelLabel}}
-        </button>
+        <the-mini-button :label="okLabel"
+                         :buttonType="'error'"
+                         @click="process"></the-mini-button>
+        <the-mini-button :label="cancelLabel"
+                         :buttonType="''"
+                         @click="closeModal"></the-mini-button>
       </div>
       <a href="#" class="modal-close" @click="closeModal">✕</a>
     </article>
@@ -21,10 +21,11 @@
 
 <script>
 import Overlay from "@/vue/components/Overlay.vue";
+import TheMiniButton from "@/vue/components/TheMiniButton.vue";
 
 export default {
   name: "Modal",
-  components: {Overlay},
+  components: {TheMiniButton, Overlay},
   props: {
     buttonFlag: {
       type: Boolean,
@@ -96,6 +97,9 @@ export default {
     text-decoration: none;
   }
   .modal-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 16px 0;
     text-align: center;
     button:first-child {

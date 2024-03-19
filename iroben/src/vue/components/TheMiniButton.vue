@@ -2,23 +2,18 @@
   <div class="c-button">
    <template v-if="buttonType === 'error'">
      <button class="is-error">
-       <template v-if="icon">
-         <img :src="icon">
-       </template>
        {{label}}
      </button>
    </template>
     <template v-else-if="buttonType === 'disabled'">
-      <template v-if="icon">
-        <img :src="icon">
-      </template>
-      {{label}}
+      <button class="disabled">
+        {{label}}
+      </button>
     </template>
     <template v-else>
-      <template v-if="icon">
-        <img :src="icon">
-      </template>
-      {{label}}
+      <button>
+        {{label}}
+      </button>
     </template>
   </div>
 </template>
@@ -35,7 +30,7 @@ export default {
     buttonType: {
       type: String,
       default: "",
-      required: false,
+      required: true,
     },
     icon: {
       type: String,
@@ -57,19 +52,26 @@ export default {
     background: map_get($color, white);
     border-radius: 4px;
     padding: 8px;
-    border: 1px solid map_get($color, bray03);
+    border: 1px solid map_get($color, gray02);
     box-shadow: inherit;
+
     img {
       width: 32px;
       height: auto;
     }
     &.is-error {
       color: map_get($color, white);
+      border: 1px solid map_get($color, error);
       background: map_get($color, error);
     }
     &.is-disabled {
-
+      color: map_get($color, white);
+      border: 1px solid map_get($color, gray03);
+      background: map_get($color, gray03);
     }
+  }
+  &:not(:last-child) {
+    margin-right: 16px;
   }
 }
 </style>

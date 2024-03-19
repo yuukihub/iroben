@@ -1,7 +1,14 @@
 <template>
   <custom-toolbar :title="title"
+                  :custom-button-flag="true"
+                  :custom-button-disabled-flag="faultItem.length"
                   @clear="openConfirmModal"></custom-toolbar>
   <div class="wrap">
+    <div class="characters_wrap">
+      <img class="character01" src="../../img/character01_watch.svg" alt="character01">
+      <img class="character02" src="../../img/character02_watch.svg" alt="character02">
+      <img class="character03" src="../../img/character03_watch.svg" alt="character03">
+    </div>
     <img class="wave" src="../../img/img_wave-bottom.svg" alt="wave">
     <ul class="c-colorLists">
       <li v-for="(item, index) in colorLists" :key="index" @click="getItem(item)">
@@ -132,15 +139,13 @@ export default {
       this.openModalFlag = false;
     },
     clearItem(){
-      this.openModalFlag = !this.nekoFlag;
+      this.openModalFlag = false;
       this.deleteFlag = true;
       this.$store.commit("reset", { level:this.level});
 
       setTimeout(() => {
-            //表記を「0回」に戻す
-            this.faultCountArray = true;
-            //ローディングを非表示
-            this.deleteFlag = false
+            this.faultCountArray = true;        //表記を「0回」に戻す
+            this.deleteFlag = false           //ローディングを非表示
           }
           ,2500
       )
@@ -151,7 +156,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "./src/scss/foundation/variables";
+@import "./src/scss/foundation/mixins";
 @import "./src/scss/components/transition";
+.wrap {
+  position: relative;
+}
 .c-colorLists {
   li {
     display: flex;
@@ -244,6 +253,29 @@ export default {
     height: auto;
     display: block;
     margin: 16px auto;
+  }
+}
+.characters_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  @include mq(sp){
+    top: 0px;
+  }
+  .character01 {
+    width: 13%;
+    margin-top: 10px;
+  }
+  .character02 {
+    width: 9%;
+    margin-right: 4px;
+  }
+  .character03 {
+    width: 10%;
   }
 }
 </style>

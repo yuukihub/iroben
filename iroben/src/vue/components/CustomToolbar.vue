@@ -1,6 +1,6 @@
 <template>
     <header class="l-header">
-      <div v-if="headerDesign">
+      <div v-if="headerDesignFlag">
         <div class="top">
           <div class="bar"></div>
         </div>
@@ -11,7 +11,10 @@
           <v-ons-back-button :on-click="pop"></v-ons-back-button>
         </div>
         <p class="title">{{ title }}</p>
-        <button class="custom_button" @click="click">
+        <button v-if="customButtonFlag"
+                @click="click"
+                :class="{'is-disabled':customButtonDisabledFlag === 0}"
+                class="custom_button">
           <img src="../../img/icon_delete.svg" alt="削除">
         </button>
       </div>
@@ -24,7 +27,7 @@
   export default {
     components: {TheMiniButton},
     props: {
-      headerDesign: {
+      headerDesignFlag: {
         type: Boolean,
         default: true,
         required: false
@@ -34,6 +37,16 @@
         default: "",
         required: false
       },
+      customButtonFlag: {
+        type: Array,
+        default: false,
+        required: true
+      },
+      customButtonDisabledFlag: {
+        type: Boolean,
+        default: false,
+        required: false
+      }
     },
     methods: {
       click(){
@@ -86,6 +99,12 @@
     border: transparent;
     img {
       width: 30px;
+    }
+    &.is-disabled {
+      pointer-events: none;
+      img {
+        filter: brightness(0) saturate(0) invert(0) sepia(0) saturate(0) hue-rotate(352deg) brightness(0) contrast(0);
+      }
     }
   }
 }

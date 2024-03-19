@@ -126,7 +126,6 @@ export default {
       this.$emit('onClick', this.value)
     },
     openConfirmModal() {
-      console.log("a")
       this.openModalFlag = true;
     },
     closeModal(){

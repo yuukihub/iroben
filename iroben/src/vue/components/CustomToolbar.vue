@@ -11,10 +11,9 @@
           <v-ons-back-button :on-click="pop"></v-ons-back-button>
         </div>
         <p class="title">{{ title }}</p>
-        <the-mini-button :label="``"
-                         :icon="'../img/icon_delete.svg'"
-                         :button-type="'error'"
-                         @click="click"></the-mini-button>
+        <button class="custom_button" @click="click">
+          <img src="../../img/icon_delete.svg" alt="削除">
+        </button>
       </div>
     </header>
 </template>
@@ -50,10 +49,10 @@
   .contents {
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 24px;
-    //left: 16px;
     width: 100%;
+    position: absolute;
+    top: 16px;
+    padding: 0 24px;
   }
   .top {
     position: relative;
@@ -68,7 +67,6 @@
   .title {
     width: 100%;
     text-align: center;
-    //padding-right: 56px;
     font-size: 16px;
     font-weight: bold;
     color: map_get($color, text);
@@ -79,6 +77,15 @@
       display: block;
       width: 100%;
       text-align: center;
+    }
+  }
+  .custom_button {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: transparent;
+    img {
+      width: 30px;
     }
   }
 }

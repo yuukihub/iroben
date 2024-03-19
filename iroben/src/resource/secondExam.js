@@ -3387,7 +3387,8 @@ export const secondExam = [
                     "colorCode":"#fadbda"
                 },
                 {
-
+                    "name":"オールドローズ",
+                    "colorCode":"#c58087"
                 }
             ]
         ],

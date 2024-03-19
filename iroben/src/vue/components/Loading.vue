@@ -25,10 +25,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "./src/scss/foundation/variables";
 p {
   position: absolute;
   top: 0;
-  z-index: 100;
+  z-index: index($z-map, loading);
 }
 .c-loading {
   margin: auto;
@@ -40,7 +41,7 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 3;
+  z-index: index($z-map, loading);
 }
 
 .strand_h {

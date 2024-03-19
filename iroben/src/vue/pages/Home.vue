@@ -94,13 +94,6 @@ export default {
     place-items: center;
     place-content: center;
   }
-  h2 {
-    position: absolute;
-    margin: 0;
-    top: -15px;
-    left: 10px;
-    z-index: 1;
-  }
   .sub_title,
   h3 {
     background: map_get($color, white);

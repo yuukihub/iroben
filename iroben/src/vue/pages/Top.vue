@@ -52,6 +52,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "./src/scss/foundation/variables";
 @import "./src/scss/foundation/mixins";
 h1 {
   position: absolute;
@@ -59,7 +60,6 @@ h1 {
   left: 0;
   right: 0;
   margin: 0 !important;
-  z-index: 1;
 }
 .logo {
   display: block;
@@ -87,7 +87,7 @@ h1 {
   left: 0;
   right: 0;
   bottom: 196px;
-  z-index: 1;
+  z-index: index($z-map, character);
   .character01 {
     width: 12%;
   }

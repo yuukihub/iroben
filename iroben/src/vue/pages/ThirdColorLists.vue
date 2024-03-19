@@ -1,15 +1,18 @@
 <template>
   <v-ons-page>
-    <custom-toolbar :title="this.title"></custom-toolbar>
-    <color-lists :color-lists="thirdExam" :level="'third'" @onClick="push"></color-lists>
+    <color-lists :color-lists="thirdExam"
+                 :title="title"
+                 :level="'third'"
+                 @onClick="push"></color-lists>
   </v-ons-page>
 </template>
 
 <script>
 import customToolbar from '../components/CustomToolbar.vue';
-import {thirdExam} from "@/resource/thirdExam";
 import ColorLists from "@/vue/templetes/ColorLists.vue";
 import thirdColorDetail from "@/vue/pages/ThirdColorDetail.vue";
+import {ROUTER} from "@/resource/constant-router";
+import {thirdExam} from "@/resource/thirdExam";
 
 export default {
   name: "thirdColorLists",
@@ -20,7 +23,7 @@ export default {
   data() {
     return {
       thirdExam: thirdExam,
-      title: "3級の慣用色一覧",
+      title: ROUTER.THIRD_COLOR_LIST_TITLE,
     }
   },
   methods: {

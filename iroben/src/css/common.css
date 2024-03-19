@@ -182,15 +182,6 @@ input:focus::placeholder {
 .page__background {
   background-color: #FBF6F0 !important; }
 
-.c-button {
-  border-radius: 4px;
-  box-shadow: inherit;
-  display: block;
-  padding: 16px 0;
-  line-height: inherit;
-  width: 100%;
-  text-align: center; }
-
 input[type='checkbox'] {
   appearance: none;
   outline: none;

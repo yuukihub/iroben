@@ -11,6 +11,7 @@ import customToolbar from "../components/CustomToolbar.vue";
 import top from "./Top.vue";
 import ColorExam from "@/vue/templetes/ColorExam.vue";
 import {thirdExam} from "@/resource/thirdExam";
+import {ROUTER} from "@/resource/constant-router";
 
 export default {
   name: "thirdExam",
@@ -21,7 +22,7 @@ export default {
   data() {
     return {
       thirdExam: thirdExam,
-      title: "3級の問題",
+      title: ROUTER.THIRD_EXAM_TITLE,
     }
   },
   methods: {

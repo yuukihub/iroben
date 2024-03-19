@@ -5,8 +5,6 @@ import createPersistedState from 'vuex-persistedstate';
 
 const app = createApp(App);
 app.use(Vuex);
-
-
 export default new Vuex.Store({
     state:{
         second: {

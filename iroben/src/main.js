@@ -3,7 +3,7 @@ import VueOnsen from "vue-onsenui";
 import * as components from "vue-onsenui/esm/components";
 
 import App from "./App.vue";
-import router from "./router/index";
+import router from "./router";
 import store from "./store";
 
 import "onsenui/css/onsenui.css";

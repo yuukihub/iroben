@@ -1,0 +1,75 @@
+<template>
+  <div class="c-button">
+   <template v-if="buttonType === 'error'">
+     <button class="is-error">
+       <template v-if="icon">
+         <img :src="icon">
+       </template>
+       {{label}}
+     </button>
+   </template>
+    <template v-else-if="buttonType === 'disabled'">
+      <template v-if="icon">
+        <img :src="icon">
+      </template>
+      {{label}}
+    </template>
+    <template v-else>
+      <template v-if="icon">
+        <img :src="icon">
+      </template>
+      {{label}}
+    </template>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "TheMiniButton",
+  props: {
+    label: {
+      type: String,
+      default: "",
+      required: true,
+    },
+    buttonType: {
+      type: String,
+      default: "",
+      required: false,
+    },
+    icon: {
+      type: String,
+      default: "",
+      required: false,
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+@import "./src/scss/foundation/variables";
+.c-button {
+  button {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    text-align: left;
+    background: map_get($color, white);
+    border-radius: 4px;
+    padding: 8px;
+    border: 1px solid map_get($color, bray03);
+    box-shadow: inherit;
+    img {
+      width: 32px;
+      height: auto;
+    }
+    &.is-error {
+      color: map_get($color, white);
+      background: map_get($color, error);
+    }
+    &.is-disabled {
+
+    }
+  }
+}
+</style>

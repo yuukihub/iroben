@@ -29,17 +29,17 @@ export default {
     buttonFlag: {
       type: Boolean,
       default: false,
-      request: false,
+      required: false,
     },
     okLabel: {
       type: String,
       default: false,
-      request: false,
+      required: false,
     },
     cancelLabel: {
       type: String,
       default: false,
-      request: false,
+      required: false,
     },
   },
   methods: {
@@ -68,7 +68,7 @@ export default {
   margin: auto;
   border-radius: 6px;
   height: max-content;
-  z-index: 3;
+  z-index: index($z-map, modal);
   @include boxShadow();
   .eye_image {
     position: absolute;

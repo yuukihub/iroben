@@ -1,15 +1,18 @@
 <template>
   <v-ons-page>
-    <custom-toolbar  :title="this.title"></custom-toolbar>
-    <color-lists :color-lists="secondExam" :level="'second'" @onClick="push"></color-lists>
+    <color-lists :color-lists="secondExam"
+                 :title="title"
+                 :level="'second'"
+                 @onClick="push"></color-lists>
   </v-ons-page>
 </template>
 
 <script>
 import customToolbar from '../components/CustomToolbar.vue';
-import {secondExam} from "../../resource/secondExam"
 import ColorLists from "@/vue/templetes/ColorLists.vue";
 import secondColorDetail from "@/vue/pages/SecondColorDetail.vue";
+import {ROUTER} from "@/resource/constant-router";
+import {secondExam} from "@/resource/secondExam"
 
 export default {
   name: "secondColorLists",
@@ -20,7 +23,7 @@ export default {
   data() {
     return {
       secondExam: secondExam,
-      title: "2級の慣用色一覧",
+      title: ROUTER.SECOND_COLOR_LIST_TITLE,
     }
   },
   methods: {

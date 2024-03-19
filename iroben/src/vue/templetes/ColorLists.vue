@@ -1,13 +1,14 @@
 <template>
+  <custom-toolbar :title="title"
+                  @clear="openConfirmModal"></custom-toolbar>
   <div class="wrap">
-    <button @click="confirmModal">クリア</button>
     <img class="wave" src="../../img/img_wave-bottom.svg" alt="wave">
     <ul class="c-colorLists">
       <li v-for="(item, index) in colorLists" :key="index" @click="getItem(item)">
         <div class="left">
           <div class="colorPanel">
             <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
-            <div class="color" v-bind:style="{background: item.colorCode}">
+            <div class="color" :style="{background: item.colorCode}">
             </div>
           </div>
           <span class="title">
@@ -68,15 +69,18 @@
 <script>
 import Modal from "@/vue/components/Modal.vue";
 import Loading from "@/vue/components/Loading.vue";
+import TheMiniButton from "@/vue/components/TheMiniButton.vue";
+import CustomToolbar from "@/vue/components/CustomToolbar.vue";
 
 export default {
   name: "colorLists",
-  components: {Loading, Modal},
+  components: {CustomToolbar, TheMiniButton, Loading, Modal},
   data () {
     return {
       value: String,
       faultItem: this.$store.state[this.level].faultArray,
       faultCountArray: "",
+      icon: "",
       openModalFlag: false,
       deleteFlag: false,
     }
@@ -90,7 +94,11 @@ export default {
     level: {
       type: String,
       required: true
-    }
+    },
+    title: {
+      type: String,
+      required: true
+    },
   },
   created() {
     let faultCountArray = [];
@@ -117,14 +125,15 @@ export default {
       this.value = item;
       this.$emit('onClick', this.value)
     },
-    confirmModal() {
+    openConfirmModal() {
+      console.log("a")
       this.openModalFlag = true;
     },
     closeModal(){
       this.openModalFlag = false;
     },
     clearItem(){
-      this.openModalFlag = false;
+      this.openModalFlag = !this.nekoFlag;
       this.deleteFlag = true;
       this.$store.commit("reset", { level:this.level});
 

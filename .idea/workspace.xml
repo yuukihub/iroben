@@ -6,10 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/TheMiniButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/TheMiniButton.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/assets/KintoSans-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/KintoSans-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletCanvas.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletCanvas.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/CustomToolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/CustomToolbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Paint.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Paint.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorExam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorExam.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +108,8 @@
       <workItem from="1710463123770" duration="80000" />
       <workItem from="1710463218478" duration="23183000" />
       <workItem from="1710597473038" duration="6660000" />
-      <workItem from="1710810857766" duration="30311000" />
+      <workItem from="1710810857766" duration="31633000" />
+      <workItem from="1710976660303" duration="1062000" />
     </task>
     <servers />
   </component>

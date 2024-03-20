@@ -1,6 +1,8 @@
 <template>
   <v-ons-page>
-    <custom-toolbar :header-design="false" @click="resetToggleFlag"/>
+    <custom-toolbar :header-design="false"
+                    class="is-normal"
+                    @click="resetToggleFlag"/>
     <color-pallet @openModal="setColorDetail"/>
     <transition appear>
       <color-pallet-modal  v-show="openModalFlag"

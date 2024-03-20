@@ -23,7 +23,10 @@ export default {
 
 <style lang="scss" scoped>
 #canvas {
+  position: absolute;
+  top: 0;
   background-image: url("../../img/img_background.png") !important;
   width: 100%;
+  z-index: -1;
 }
 </style>

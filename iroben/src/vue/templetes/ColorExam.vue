@@ -60,7 +60,9 @@
           また、間違えた色は<a href="#" @click="toPaint">ペイント機能</a>で<br>
           落書きすることもできます。
         </p>
-        <img :src="`../../img/img_explain_ColorPalletToggle.png`" alt="不正解のみを表示したカラーパレット">
+        <img class="img_colorPallet"
+            :src="`../../img/img_explain_ColorPalletToggle.png`"
+            alt="不正解のみを表示したカラーパレット">
         <p class="text">
           ペイント機能の<br class="is-sp">
           「不正解のみスイッチ」を<br>
@@ -378,9 +380,9 @@ export default {
   text-align: center;
   padding-bottom: 24px;
 }
-img {
+.img_colorPallet {
   display: block;
-  margin: 0 auto 24px ;
+  margin: 0 auto 24px;
 }
 @keyframes fadeIn {
   from {

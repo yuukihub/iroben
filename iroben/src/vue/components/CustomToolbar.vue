@@ -60,12 +60,23 @@
 @import "./src/scss/foundation/variables";
 @import "./src/scss/foundation/mixins";
 .l-header{
+  &.is-normal {
+    img {
+      display: none;
+    }
+    .top {
+      .bar {
+        background: none;
+        height: inherit;
+      }
+    }
+  }
   .contents {
     display: flex;
     align-items: center;
     width: 100%;
     position: absolute;
-    top: 16px;
+    top: 32px;
     padding: 0 16px;
     @include mq(xsmall) {
       padding: 0 8px;

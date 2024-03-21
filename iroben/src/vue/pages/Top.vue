@@ -17,19 +17,16 @@
       <img class="character03" src="../../img/character03.svg" alt="character03">
     </div>
     <div class="bottom">
-      <img src="../../img/img_wave-bottom.svg" alt="wave">
       <div class="bottom_inner">
-        <div class="bar">
-          <p class="desc">アプリをご利用いただくには、<br>
-            利用規約をご確認の上ご利用ください</p>
-          <div class="agree">
-            <input type="checkbox">
-            <a href="#">利用規約</a>
-            <p>に同意する</p>
-          </div>
-          <div class="inner">
-            <v-ons-button class="c-button" @click="push">はじめる</v-ons-button>
-          </div>
+        <p class="desc">アプリをご利用いただくには、<br>
+          利用規約をご確認の上ご利用ください</p>
+        <div class="agree">
+          <input type="checkbox">
+          <a href="#">利用規約</a>
+          <p>に同意する</p>
+        </div>
+        <div class="inner">
+          <v-ons-button class="c-button" @click="push">はじめる</v-ons-button>
         </div>
       </div>
     </div>
@@ -57,8 +54,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./src/scss/foundation/variables";
-@import "./src/scss/foundation/mixins";
+@import "../src/scss/foundation/include";
 .l-header {
   .top {
     .bar {
@@ -111,7 +107,7 @@ h1 {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 176px;
+  bottom: 180px;
   z-index: index($z-map, character);
   .character01 {
     width: 12%;
@@ -124,36 +120,42 @@ h1 {
   }
 }
 .bottom {
+  background-image: url("../../img/img_wave-bottmBig.svg");
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   &_inner {
     position: relative;
   }
-  .bar {
-    background: white;
-  }
   img {
-    margin: -7px;
+    top: -8.5vh;
+    @include mq(sp) {
+      top: -9vh;
+    }
+    @include mq(xsmall) {
+      top: -8vh;
+    }
   }
   .desc {
     margin: 0;
-    padding: 16px 0;
+    padding: 88px 0 0 16px;
     text-align: center;
   }
   .agree {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0 16px 0;
+    margin: 0 0 24px 0;
     p {
       margin: 0;
     }
   }
   .inner {
-    padding-bottom: 24px;
+    padding-bottom: 32px;
   }
 }
 .c-button {

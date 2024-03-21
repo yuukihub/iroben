@@ -2,16 +2,19 @@
 @font-face {
   font-family: "KintoSans";
   src: url('../../font/KintoSans-Regular.ttf') format('truetype');
+  font-weight: normal;
 }
 
 /* medium */
 @font-face {
   font-family: "KintoSans";
   src: url('../../font/KintoSans-Medium.ttf') format('truetype');
+  font-weight: 500;
 }
 
 /* bold */
 @font-face {
   font-family: "KintoSans";
   src: url('../../font/KintoSans-Bold.ttf') format('truetype');
+  font-weight: bold;
 }

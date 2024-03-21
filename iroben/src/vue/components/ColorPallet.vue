@@ -186,8 +186,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../scss/foundation/variables";
-@import "./src/scss/foundation/mixins";
+@import "../src/scss/foundation/include";
 .toggle_wrap {
   display: flex;
   align-items: center;

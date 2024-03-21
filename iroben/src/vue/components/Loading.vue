@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./src/scss/foundation/variables";
+@import "../src/scss/foundation/include";
 p {
   position: absolute;
   top: 0;

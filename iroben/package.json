@@ -22,7 +22,9 @@
     "dev": "cross-env NODE_ENV=development vite",
     "watch": "cross-env NODE_ENV=development vite build --watch",
     "build": "cross-env NODE_ENV=production vite build",
-    "compile": "node-sass src/scss/common.scss www/assets/css/common.css"
+    "compile": "node-sass src/scss/common.scss www/assets/css/common.css",
+
+    "sass": "sass ./src/scss/common.scss ./src/css/common.css"
   },
   "cordova": {
     "plugins": {

@@ -9,7 +9,7 @@ import store from "./store";
 import "onsenui/css/onsenui.css";
 import "onsenui/css/onsen-css-components.css";
 
-import "../src/scss/foundation/font.scss";
+import "./scss/foundation/_font.scss";
 
 if (VueOnsen.platform.isIPhoneX()) {
   document.documentElement.setAttribute("onsflag-iphonex-portrait", "");

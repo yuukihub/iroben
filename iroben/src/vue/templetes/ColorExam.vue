@@ -202,7 +202,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./src/scss/foundation/variables";
+@import "../src/scss/foundation/include";
 @import "./src/scss/components/colorCard";
 .c-answerButton {
   display: flex;
@@ -274,7 +274,7 @@ export default {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100px;
+    width: max-content;
     height: 40px;
     margin: auto;
     text-align: left;
@@ -283,14 +283,6 @@ export default {
     padding: 8px;
     animation: fadeIn 0.8s ease 0.1s 0.8 normal backwards;
     border: 1px solid map_get($color, gray03);
-    &::after {
-      content: url("../../img/icon_movingArrowRight.svg");
-      width: 24px;
-      height: 24px;
-      position: absolute;
-      top: 6px;
-      right: 5px;
-    }
   }
 }
 .color {

@@ -1,4 +1,22 @@
 @charset "UTF-8";
+/* normal */
+@font-face {
+  font-family: "KintoSans";
+  src: url("../../font/KintoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+/* medium */
+@font-face {
+  font-family: "KintoSans";
+  src: url("../../font/KintoSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+/* bold */
+@font-face {
+  font-family: "KintoSans";
+  src: url("../../font/KintoSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
 /**
  * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
  * https://cssreset.com/
@@ -11,7 +29,8 @@
 */
 html {
   color: #000;
-  background: #FFF; }
+  background: #FFF;
+}
 
 /*
 	TODO remove settings on BODY since we can't namespace it.
@@ -47,15 +66,18 @@ th,
 td,
 figure {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 fieldset,
 img {
-  border: 0; }
+  border: 0;
+}
 
 /*
 	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
@@ -70,15 +92,18 @@ strong,
 th,
 var {
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 ol,
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 caption,
 th {
-  text-align: left; }
+  text-align: left;
+}
 
 h1,
 h2,
@@ -87,102 +112,309 @@ h4,
 h5,
 h6 {
   font-size: 100%;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 q:before,
 q:after {
-  content: ''; }
+  content: "";
+}
 
 abbr,
 acronym {
   border: 0;
-  font-variant: normal; }
+  font-variant: normal;
+}
 
 /* to preserve line-height and selector appearance */
 sup {
-  vertical-align: text-top; }
+  vertical-align: text-top;
+}
 
 sub {
-  vertical-align: text-bottom; }
+  vertical-align: text-bottom;
+}
 
 input,
 textarea,
 select {
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit; }
+  font-weight: inherit;
+}
 
 /*to enable resizing for IE*/
 input,
 textarea,
 select {
-  font-size: 100%; }
+  font-size: 100%;
+}
 
 /*because legend doesn't inherit in IE */
 legend {
-  color: #000; }
+  color: #000;
+}
 
 /* YUI CSS Detection Stamp */
 #yui3-css-stamp.cssreset {
-  display: none; }
+  display: none;
+}
 
 /*input type data*/
-input[type="date"] {
-  font: 400 15px system-ui; }
-  input[type="date"]::-webkit-inner-spin-button {
-    -webkit-appearance: none; }
-  input[type="date"]::-webkit-clear-button {
-    -webkit-appearance: none; }
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    color: transparent;
-    cursor: pointer; }
+input[type=date] {
+  font: 400 15px system-ui;
+}
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type=date]::-webkit-clear-button {
+  -webkit-appearance: none;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  cursor: pointer;
+}
 
 button:focus {
-  outline: none; }
+  outline: none;
+}
 
+/**
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * https://cssreset.com/
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+/*
+	TODO will need to remove settings on HTML since we can't namespace it.
+	TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF.
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+  font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+/*input type data*/
+input[type=date] {
+  font: 400 15px system-ui;
+}
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type=date]::-webkit-clear-button {
+  -webkit-appearance: none;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* normal */
+@font-face {
+  font-family: "KintoSans";
+  src: url("../../font/KintoSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+/* medium */
+@font-face {
+  font-family: "KintoSans";
+  src: url("../../font/KintoSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+/* bold */
+@font-face {
+  font-family: "KintoSans";
+  src: url("../../font/KintoSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
 html, body {
   height: 100%;
-  margin: 0; }
+  margin: 0;
+}
 
 body * {
   box-sizing: border-box;
   transition: 0.1s;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+}
 
 body {
   letter-spacing: 1px;
-  font-family: 'KintoSans', sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 140%; }
+  font-size: 1.05rem;
+  line-height: 140%;
+}
+
+h1, h2, h3, h4, h5 div,
+span, label, p, a {
+  font-family: "KintoSans", serif;
+  font-weight: normal;
+}
 
 a {
-  color: #0D99FF; }
+  color: #0D99FF;
+}
 
 input::placeholder, textarea::placeholder {
-  color: white; }
-
+  color: white;
+}
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: white; }
-
+  color: white;
+}
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  color: white; }
+  color: white;
+}
 
 input:focus::placeholder {
   color: transparent;
-  transition: 0.5s; }
+  transition: 0.5s;
+}
 
 .framework7-root {
-  position: relative; }
+  position: relative;
+}
 
 .page__content {
-  padding: 0 !important; }
+  padding: 0 !important;
+}
 
 .page--material__background,
 .page__background {
-  background-color: #FBF6F0 !important; }
+  background-color: #FBF6F0 !important;
+}
 
-input[type='checkbox'] {
+input[type=checkbox] {
   appearance: none;
   outline: none;
   display: block;
@@ -191,24 +423,27 @@ input[type='checkbox'] {
   cursor: pointer;
   width: 24px;
   height: 24px;
-  margin-right: 8px; }
+  margin-right: 8px;
+}
 
-input[type='checkbox']::before {
+input[type=checkbox]::before {
   display: block;
   position: absolute;
-  content: '';
+  content: "";
   width: 24px;
   height: 24px;
   background: #fff;
   border: solid 1px #DAE0E6;
-  border-radius: 3px; }
+  border-radius: 3px;
+}
 
-input[type='checkbox']:checked::before {
-  background: #0D99FF; }
+input[type=checkbox]:checked::before {
+  background: #0D99FF;
+}
 
-input[type='checkbox']::after {
+input[type=checkbox]::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   left: 9px;
   top: 4px;
@@ -217,33 +452,40 @@ input[type='checkbox']::after {
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
   transform: rotate(45deg);
-  opacity: 0; }
+  opacity: 0;
+}
 
-input[type='checkbox']:checked::after {
-  opacity: 1; }
+input[type=checkbox]:checked::after {
+  opacity: 1;
+}
 
 @keyframes fadeInSlide {
   from {
     transform: translateX(-20px);
-    opacity: 0; }
+    opacity: 0;
+  }
   to {
     transform: translateX(0px);
-    opacity: 0.4; } }
-
+    opacity: 0.4;
+  }
+}
 @keyframes fadeInSlideMv {
   from {
     transform: translateX(-100px);
-    opacity: 0; }
+    opacity: 0;
+  }
   to {
     transform: translateX(-200px);
-    opacity: 0.4; } }
-
+    opacity: 0.4;
+  }
+}
 /**
 * 画面遷移時の演出
 */
 .router-transition-enter-active {
   animation: fadeInSlide 1s;
-  opacity: 0; }
+  opacity: 0;
+}
 
 /**
  *
@@ -251,73 +493,83 @@ input[type='checkbox']:checked::after {
  */
 .fadeInSlide {
   animation: fadeInSlideMv 1s;
-  opacity: 0; }
+  opacity: 0;
+}
 
-.u-mt20 {
-  margin-top: 20px; }
+.u-mb8 {
+  margin-bottom: 8px;
+}
 
-.u-mt40 {
-  margin-top: 40px; }
+.u-mb16 {
+  margin-bottom: 16px;
+}
 
-.u-mt85 {
-  margin-top: 85px; }
-
-.u-mb20 {
-  margin-bottom: 20px; }
-
-.u-mb40 {
-  margin-bottom: 40px; }
-
-.u-ml10 {
-  margin-left: 10px; }
-
-.u-ml40 {
-  margin-left: 40px; }
-
-.u-mr20 {
-  margin-right: 20px; }
+.u-mb24 {
+  margin-bottom: 24px;
+}
 
 .u-text_center {
-  text-align: center; }
+  text-align: center;
+}
 
 .u-text_right {
-  text-align: right; }
+  text-align: right;
+}
 
 .is-pc {
-  display: block; }
-  @media (max-width: 374px) {
-    .is-pc {
-      display: none; } }
+  display: block;
+}
+@media (max-width: 375px) {
+  .is-pc {
+    display: none;
+  }
+}
 
 .is-sp {
-  display: none; }
-  @media (max-width: 374px) {
-    .is-sp {
-      display: block; } }
+  display: none;
+}
+@media (max-width: 375px) {
+  .is-sp {
+    display: block;
+  }
+}
 
 body,
 .wrap {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 .inner {
-  padding: 0 16px; }
+  padding: 0 16px;
+}
 
 .clearfix::after {
   content: "";
   display: block;
-  clear: both; }
+  clear: both;
+}
 
 .flex {
-  display: flex; }
+  display: flex;
+}
 
 .section {
-  padding: 100px 0; }
-  @media (max-width: 374px) {
-    .section {
-      padding: 50px 0; } }
+  padding: 100px 0;
+}
+@media (max-width: 375px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+.section--under .c-heading02 {
+  padding: 100px 0;
+}
+@media (max-width: 375px) {
   .section--under .c-heading02 {
-    padding: 100px 0; }
-    @media (max-width: 374px) {
-      .section--under .c-heading02 {
-        padding: 20px 0; } }
+    padding: 20px 0;
+  }
+}
+
+/*# sourceMappingURL=common.css.map */

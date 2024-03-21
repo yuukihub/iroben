@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./src/scss/foundation/variables";
+@import "../src/scss/foundation/include";
 .overlay {
   position: absolute;
   left: 0; top: 0;

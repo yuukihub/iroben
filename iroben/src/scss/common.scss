@@ -6,7 +6,6 @@
 @import 'utility/margin';
 @import 'utility/text';
 
-
 .is-pc {
   display: block;
   @include mq(sp) {

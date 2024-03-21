@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./src/scss/foundation/variables";
+@import "../src/scss/foundation/include";
 .c-toggle {
   position: relative;
   display: inline-block;

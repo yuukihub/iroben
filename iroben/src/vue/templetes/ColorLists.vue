@@ -157,8 +157,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./src/scss/foundation/variables";
-@import "./src/scss/foundation/mixins";
+@import "../src/scss/foundation/include";
 @import "./src/scss/components/transition";
 .wrap {
   position: relative;
@@ -173,7 +172,6 @@ export default {
     border-bottom: 1px solid map_get($color, gray03);
     @include mq(xsmall) {
       padding: 12px 8px;
-      font-size: 0.8em;
     }
   }
   .colorPanel {
@@ -239,14 +237,10 @@ export default {
       }
       .count {
         font-weight: bold;
-        font-size: 16px;
         margin: 0 2px 0 2px;
         @include mq(xsmall) {
           font-size: 12px;
         }
-      }
-      .unit {
-        font-size: 12px;
       }
     }
   }

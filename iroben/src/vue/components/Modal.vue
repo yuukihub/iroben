@@ -55,8 +55,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./src/scss/foundation/variables";
-@import "./src/scss/foundation/mixins";
+@import "../src/scss/foundation/include";
 .c-modal {
   max-width: 280px;
   width: 100%;

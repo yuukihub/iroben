@@ -73,11 +73,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./src/scss/foundation/variables";
+@import "../src/scss/foundation/include";
 .modal-title {
   display: table;
   text-align: center;
-  font-size: 18px;
   font-weight: bold;
   background: map_get($color, white);
   padding: 4px;
@@ -88,12 +87,12 @@ export default {
   border-radius: 6px 6px 0 0;
 }
 .modal-subtitle {
-  font-size: 12px;
   background: map_get($color, white);
   margin: 0;
   font-weight: normal;
   text-align: center;
   width: 100%;
+  font-size: 14px;
 }
 .modal-toneNumber{
   display: flex;

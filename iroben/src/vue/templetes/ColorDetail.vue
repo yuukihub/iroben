@@ -33,6 +33,9 @@
           </p>
         </div>
       </div>
+      <div class="bottom">
+        <img src="../../img/img_wave-bottom.svg" alt="wave">
+      </div>
     </div>
   </v-ons-page>
 </template>
@@ -81,8 +84,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./src/scss/foundation/variables";
-@import "./src/scss/foundation/mixins";
+@import "../src/scss/foundation/include";
 @import "./src/scss/components/colorCard";
 .colorDetail-wrap {
   display: inherit;
@@ -135,13 +137,17 @@ export default {
   .descBlock {
     h2,
     .tone_number {
+      font-family: "KintoSans", serif;
+      font-weight: normal;
+
       display: flex;
       justify-content: center;
     }
     h2 {
-      text-align: center;
-      font-size: 18px;
+      font-family: "KintoSans", serif;
       font-weight: bold;
+      text-align: center;
+      font-size: 22px;
       padding: 4px;
       margin: 0;
     }
@@ -207,6 +213,12 @@ export default {
     .character03 {
       width: 15%;
     }
+  }
+}
+.bottom {
+  img {
+    position: absolute;
+    bottom: 0;
   }
 }
 </style>

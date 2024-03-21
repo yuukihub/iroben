@@ -10,8 +10,12 @@
     @media  (max-width: 280px){
       @content;
     }
-  } @else {
-    @media  (max-width: 767px){
+  } @else if $level == regular {
+    @media  (min-width: 767px){
+      @content;
+    }
+  } @else if $level == big {
+    @media  (min-width: 820px){
       @content;
     }
   }

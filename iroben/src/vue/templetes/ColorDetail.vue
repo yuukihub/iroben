@@ -93,6 +93,8 @@ export default {
     padding: 0 16px;
   }
   .c-colorCard {
+    font-family: "KintoSans",serif;
+    color: map_get($color, text);
     @include mq(sp){
       margin-top: 1vh;
     }
@@ -112,12 +114,13 @@ export default {
     height: 30vh;
     position: relative;
     @include mq(sp) {
-      height: 27vh;
+      height: 30vh;
     }
     @include mq(xsmall) {
       height: 23vh;
     }
     .fault_count {
+      font-size: 0.9rem;
       background: white;
       display: flex;
       align-items: center;
@@ -125,13 +128,20 @@ export default {
       position: absolute;
       bottom: 16px;
       right: 16px;
-      font-size: 12px;
+      p {
+        display: flex;
+        align-items: center;
+      }
       img {
         margin-right: 4px;
       }
     }
     .count {
-    font-weight: bold;
+      font-family: "MiuraGotic",serif;
+      font-size: 1.4rem;
+      line-height: 60%;
+      letter-spacing: -2px;
+      margin-right: 4px;
     }
   }
   .descBlock {
@@ -139,13 +149,12 @@ export default {
     .tone_number {
       font-family: "KintoSans", serif;
       font-weight: normal;
-
       display: flex;
       justify-content: center;
     }
     h2 {
       font-family: "KintoSans", serif;
-      font-weight: bold;
+      font-weight: 500;
       text-align: center;
       font-size: 22px;
       padding: 4px;
@@ -155,12 +164,13 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 0.9rem;
       border-top: 1px solid map_get($color, gray03);
       padding-top: 16px;
       margin: 16px;
       @include mq(sp) {
         padding-top: 8px;
-        margin: 8px;
+        margin: 8px 8px 0 8px;
       }
       ul {
         display: flex;
@@ -169,7 +179,7 @@ export default {
       li {
         border: 1px solid #DAE0E6;
         border-radius: 40px;
-        padding: 2px 10px;
+        padding: 0 10px;
         text-align: center;
         margin-right: 8px;
         &:last-child {
@@ -189,6 +199,7 @@ export default {
       border-top: 1px solid map_get($color, gray03);
       padding-top: 16px;
       @include mq(sp) {
+        margin: 8px 16px;
         padding-top: 8px;
       }
     }
@@ -219,6 +230,7 @@ export default {
   img {
     position: absolute;
     bottom: 0;
+    z-index: -1;
   }
 }
 </style>

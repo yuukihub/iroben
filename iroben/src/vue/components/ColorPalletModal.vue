@@ -76,14 +76,15 @@ export default {
 @import "../src/scss/foundation/include";
 .modal-title {
   display: table;
+  font-size: 1.3rem;
   text-align: center;
   font-weight: bold;
   background: map_get($color, white);
-  padding: 4px;
+  padding: 8px;
   margin: auto;
 }
 .modal-color {
-  padding: 50px;
+  padding: 24px 16px;
   border-radius: 6px 6px 0 0;
 }
 .modal-subtitle {

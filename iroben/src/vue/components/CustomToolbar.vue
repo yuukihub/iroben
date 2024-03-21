@@ -94,8 +94,8 @@
   .title {
     width: 100%;
     text-align: center;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 1.14rem;
+    font-weight: 500;
     color: map_get($color, text);
   }
   .back-button {

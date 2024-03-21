@@ -24,12 +24,12 @@
                     v-if="faultCountArray[item.id]"
                     alt="flag">
               不正解
-              <span v-if="!faultCountArray[item.id]">
+              <template v-if="!faultCountArray[item.id]">
                 <span class="count">0</span>
-              </span>
-              <span v-else>
+              </template>
+              <template v-else>
                 <span class="count" :id="faultCountArray[item.id]">{{faultCountArray[item.id]}}</span>
-              </span>
+              </template>
               <span class="unit">
                 回
               </span>
@@ -158,6 +158,8 @@ export default {
   position: relative;
 }
 .c-colorLists {
+  font-family: "KintoSans",serif;
+  color: map_get($color, text);
   li {
     display: flex;
     align-items: center;
@@ -217,6 +219,10 @@ export default {
       display: flex;
       align-items: center;
       margin-right: 8px;
+      font-size: 0.85rem;
+      @include mq(sp){
+        font-size: 0.65rem;
+      }
       @include mq(xsmall) {
         margin-right: 0;
       }
@@ -231,8 +237,14 @@ export default {
         }
       }
       .count {
-        font-weight: bold;
-        margin: 0 2px 0 2px;
+        font-family: "MiuraGotic",serif;
+        font-size: 1.6rem;
+        line-height: 60%;
+        letter-spacing: -2px;
+        margin: 0 4px 0 2px;
+        @include mq(sp) {
+          font-size: 1.4rem;
+        }
         @include mq(xsmall) {
           font-size: 12px;
         }
@@ -241,7 +253,7 @@ export default {
   }
 }
 .wave {
-  margin-bottom: -3px;
+  margin-bottom: -10px;
 }
 .modal-error {
   h4 {

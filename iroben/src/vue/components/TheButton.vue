@@ -1,5 +1,5 @@
 <template>
-  <v-ons-button :class="{'button is-disabled':!isDisabledFlag,'button':isDisabledFlag}"
+  <v-ons-button :class="['button', {'is-disabled': !isDisabledFlag}]"
                 @click="click">
     <div class="c-button">
       {{label}}

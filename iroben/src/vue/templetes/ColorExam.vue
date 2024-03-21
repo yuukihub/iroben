@@ -207,10 +207,10 @@ export default {
 .c-answerButton {
   display: flex;
   align-items: center;
-  font-size: 14px;
   background: map_get($color, white);
   border: 1px solid map_get($color, gray03);
   border-radius: 4px;
+  font-size: 1.05rem;
   max-width: 342px;
   width: 100%;
   padding: 4px 24px;
@@ -283,6 +283,7 @@ export default {
     padding: 8px;
     animation: fadeIn 0.8s ease 0.1s 0.8 normal backwards;
     border: 1px solid map_get($color, gray03);
+    font-size: 1.05rem;
   }
 }
 .color {
@@ -296,8 +297,11 @@ export default {
   }
 }
 .counter {
+  font-family: "MiuraGotic",serif;
+  font-size: 1.8rem;
   margin: 16px 0;
   text-align: center;
+  color: map_get($color, text);
 }
 .bottom {
   position: absolute;
@@ -318,28 +322,34 @@ export default {
   }
 }
 .result_title {
+  font-family: "KintoSans",serif;
+  font-weight: bold;
   text-align: center;
   margin-top: 0;
   font-size: 18px;
-  font-weight: bold;
   margin-bottom: 40px;
+  color: map_get($color, text);
 }
 .score_wrap {
+  font-family: "KintoSans",serif;
+  color: map_get($color, text);
   background: map_get($color, white);
 }
 .c-score {
   position: relative;
-  width: 60px;
+  width: max-content;
   height: 100px;
   margin: 24px auto;
+  color: map_get($color, text);
   .scores {
     position: relative;
     width: 100%;
     margin: auto;
   }
   .score {
+    font-family: "MiuraGotic",serif;
+    font-size: 88px;
     display: block;
-    font-size: 48px;
     text-align: center;
     margin: 0;
   }
@@ -353,10 +363,11 @@ export default {
     transform: rotate(-30deg);
   }
   .summary {
+    font-family: "MiuraGotic",serif;
+    font-size: 40px;
     position: absolute;
     right: -32px;
-    bottom: 30px;
-    font-size: 24px;
+    bottom: 14px;
     margin: 0;
   }
   .unit {

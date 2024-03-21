@@ -91,6 +91,9 @@ h1 {
   display: block;
   width: 54vw;
   margin: auto;
+  @include mq(regular) {
+    width: 40vw;
+  }
 }
 .slider {
   position: absolute;
@@ -111,24 +114,39 @@ h1 {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 206px;
+  bottom: 216px;
   z-index: index($z-map, character);
+  @include mq(regular) {
+    bottom: 24vh;
+  }
+  @include mq(big) {
+    bottom: 19vh;
+  }
   .character01 {
-    width: 12%;
-    @include mq(sp) {
-      width: 14%;
+    width: 6vh;
+    @include mq(regular) {
+      width: 10vh;
+    }
+    @include mq(big) {
+      width: 8vh;
     }
   }
   .character02 {
-    width: 13%;
-    @include mq(sp) {
-      width: 15%;
+    width: 7vh;
+    @include mq(regular) {
+      width: 11vh;
+    }
+    @include mq(big) {
+      width: 8vh;
     }
   }
   .character03 {
-    width: 18%;
-    @include mq(sp) {
-      width: 20%;
+    width: 10vh;
+    @include mq(regular) {
+      width: 15vh;
+    }
+    @include mq(big) {
+      width: 12vh;
     }
   }
 }
@@ -155,10 +173,16 @@ h1 {
   }
   .desc {
     margin: 0;
-    padding: 10vh 0 16px 0;
+    padding: 12vh 0 16px 0;
     text-align: center;
     @include mq(sp) {
       padding: 13vh 0 16px 0;
+    }
+    @include mq(regular) {
+      padding: 20vh 0 16px 0;
+    }
+    @include mq(big) {
+      padding: 16vh 0 16px 0;
     }
   }
   .agree {
@@ -177,6 +201,9 @@ h1 {
   }
   .button_area {
     padding: 0 16px 32px 16px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
   }
 }
 </style>

@@ -89,8 +89,8 @@ export default {
   }
   .modal-close{
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: -30px;
+    right: 0;
     font-size: 24px;
     color: map_get($color, white);
     text-decoration: none;

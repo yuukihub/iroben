@@ -1,7 +1,7 @@
 <template>
   <color-pallet-canvas></color-pallet-canvas>
-    <div class="c-colorPaint">
-      <div class="c-colorPaint_header">
+    <div class="c-colorPallet">
+      <div class="c-colorPallet_header">
         <h3>カラーパレット</h3>
       </div>
       <div class="tab">
@@ -194,13 +194,14 @@ export default {
 .toggle_title {
   margin-right: 4px;
 }
-.c-colorPaint {
+.c-colorPallet {
   position: fixed;
   bottom: 0;
   width: 100%;
   background: map_get($color, white);
+  @include fadeIn();
 }
-.c-colorPaint_header {
+.c-colorPallet_header {
   background: map_get($color, main01);
   h3 {
     margin: 0;

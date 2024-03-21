@@ -9,7 +9,6 @@
     <h1>
       <img class="logo" src="../../img/img_logo.svg" alt="iroben">
     </h1>
-
     <img class="slider" src="../../img/img_iphone.png" alt="iphone">
     <div class="characters_wrap">
       <img class="character01" src="../../img/character01.svg" alt="character01">
@@ -65,6 +64,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
+@import "./src/scss/components/transition";
 .l-header {
   .top {
     .bar {
@@ -103,6 +103,7 @@ h1 {
   right: 0;
   margin: auto;
   width: 36vh;
+  @include fadeIn();
   @include mq(xsmall) {
     bottom: -30px;
   }

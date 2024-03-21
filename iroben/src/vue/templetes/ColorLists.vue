@@ -158,6 +158,7 @@ export default {
 @import "./src/scss/components/transition";
 .wrap {
   position: relative;
+  @include fadeIn;
 }
 .c-colorLists {
   font-family: "KintoSans",serif;

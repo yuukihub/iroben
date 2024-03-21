@@ -6,7 +6,10 @@
           <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
           <div class="color" :style="{background: currentQuestion.colorCode}"></div>
           <div class="counter">
-            {{number+1}} / {{questions.length}}
+            <span class="current_number">
+              {{number+1}}
+            </span>
+            / {{questions.length}}
           </div>
         </div>
       </div>
@@ -76,18 +79,16 @@
     </div>
 
     <div class="result-wrap">
-      <div v-if="correctFlag">
-        <confetti></confetti>
-        <div class="result_image">
+      <div class="result_image">
+        <template v-if="correctFlag">
+          <confetti></confetti>
           <img src="../../img/img_success.svg" alt="正解">
           <button @click="next()">{{btnTitle}}</button>
-        </div>
-      </div>
-      <div class="result_image" v-if="faultFlag">
-        <div class="result_image">
-          <img class="result_image" src="../../img/img_error.svg" alt="不正解">
+        </template>
+        <template v-if="faultFlag">
+          <img src="../../img/img_error.svg" alt="不正解">
           <button @click="next()">{{btnTitle}}</button>
-        </div>
+        </template>
       </div>
       <div class="l-overlay"></div>
     </div>
@@ -252,24 +253,22 @@ export default {
   }
 }
 .result_image {
+  position: absolute;
+  top: 223px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: min-content;
+  text-align: center;
   img {
     max-width: 160px;
     width: 100%;
     display: block;
-    position: absolute;
-    top: -320px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    margin: 0 auto 16px;
     animation: fadeIn 0.8s ease 0.1s 0.8 normal backwards;
   }
   button {
-    position: absolute;
-    top: -40px;
-    bottom: 0;
-    left: 0;
-    right: 0;
     width: max-content;
     height: 40px;
     margin: auto;
@@ -294,10 +293,15 @@ export default {
 }
 .counter {
   font-family: "MiuraGotic",serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  letter-spacing: -2px;
   margin: 16px 0;
   text-align: center;
   color: map_get($color, text);
+  .current_number {
+    font-family: "MiuraGotic", serif;
+    font-size: 2.2rem;
+  }
 }
 .result_title {
   font-family: "KintoSans",serif;

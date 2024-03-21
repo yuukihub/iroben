@@ -86,6 +86,7 @@ export default {
 <style lang="scss">
 @import "../src/scss/foundation/include";
 @import "./src/scss/components/colorCard";
+@import "./src/scss/components/transition";
 .colorDetail-wrap {
   display: inherit;
   min-height: inherit;
@@ -95,6 +96,7 @@ export default {
   .c-colorCard {
     font-family: "KintoSans",serif;
     color: map_get($color, text);
+    @include fadeIn();
     @include mq(sp){
       margin-top: 1vh;
     }

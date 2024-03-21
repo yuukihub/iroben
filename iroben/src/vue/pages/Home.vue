@@ -1,27 +1,24 @@
 <template>
   <v-ons-page>
 
-    <img src="../../img/img_title01.svg" alt="3級'">
-    <img src="../../img/img_title02.svg" alt="2級'">
-    <img src="../../img/img_title03.svg" alt="2級'">
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <v-ons-button class="c-button" @click="toThirdExam">3級の慣用色テスト</v-ons-button>
-    <v-ons-button class="c-button" @click="toThirdColorLists">3級の慣用色一覧</v-ons-button>
-    <br>
-    <v-ons-button class="c-button" @click="toSecondExam">2級の慣用色テスト</v-ons-button>
-    <v-ons-button class="c-button" @click="toSecondColorLists">2級の慣用色一覧</v-ons-button>
+    <article-card path="../../img/img_title01.svg" alt="1級">
+      <v-ons-button class="c-button" @click="toThirdExam">1級の慣用色テスト</v-ons-button>
+      <v-ons-button class="c-button" @click="toThirdColorLists">1級の慣用色一覧</v-ons-button>
+    </article-card>
+
+    <article-card path="../../img/img_title02.svg" alt="2級">
+      <v-ons-button class="c-button" @click="toSecondExam">2級の慣用色テスト</v-ons-button>
+      <v-ons-button class="c-button" @click="toSecondColorLists">2級の慣用色一覧</v-ons-button>
+    </article-card>
+
+    <article-card path="../../img/img_title03.svg" alt="3級">
+      <v-ons-button class="c-button" @click="toThirdExam">3級の慣用色テスト</v-ons-button>
+      <v-ons-button class="c-button" @click="toThirdColorLists">3級の慣用色一覧</v-ons-button>
+    </article-card>
+
+
+
     <br>
     <v-ons-button class="c-button" @click="toColorPaint">ペイント</v-ons-button>
 
@@ -45,6 +42,7 @@ import secondColorLists from "@/vue/pages/SecondColorLists.vue";
 import thirdExam from "./ThirdExam.vue";
 import thirdColorLists from "@/vue/pages/ThirdColorLists.vue";
 import paint from "@/vue/pages/Paint.vue";
+import ArticleCard from "@/vue/components/ArticleCard.vue";
 
 export default {
   name: "home",
@@ -54,6 +52,7 @@ export default {
     }
   },
   components: {
+    ArticleCard,
     paint,
     customToolbar,
   },

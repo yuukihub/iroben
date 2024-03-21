@@ -11,7 +11,6 @@ export default {
   methods: {
     resizeCanvas(){
       let canvas = document.getElementById("canvas");
-      let colorPalletHeight = document.querySelector(".c-colorPaint").clientHeight;
       let width = window.innerWidth;
       let height = window.innerHeight;
       canvas.setAttribute('width',width);

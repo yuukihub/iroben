@@ -1,6 +1,4 @@
-// mixin設定
-
-
+// media query
 @mixin mq($level: sp) {
   @if $level == sp {
     @media  (max-width: 375px){
@@ -21,6 +19,10 @@
   }
 }
 
+//fadeIn animation
+@mixin fadeIn() {
+  animation: fadeInUp 0.8s 0s ease-in-out forwards;
+}
 
 // resetForm
 @mixin placeholder($color) {
@@ -37,31 +39,6 @@
   &::-ms-input-placeholder {
     color: $color;
   }
-}
-
-
-@mixin hoverButton() {
-  &:hover {
-    top: -2px;
-    left: -2px;
-    transition: top 0.1s ease-out, left 0.1s ease-out;
-    @include mq(sp) {
-      top: -5px;
-      left: -5px;
-    }
-  }
-}
-
-@mixin hover01() {
-  &:hover {
-    opacity: 0.8;
-    transition: 0.5s;
-  }
-}
-
-@mixin KintoSans() {
-  font-family: 'KintoSans', sans-serif;
-  font-weight: bold;
 }
 
 @mixin boxShadow() {

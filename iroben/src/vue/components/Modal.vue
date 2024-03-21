@@ -60,6 +60,7 @@ export default {
   max-width: 280px;
   width: 100%;
   background: map_get($color, white);
+  color: map_get($color, text);
   position: absolute;
   top: 0;
   bottom: 0;

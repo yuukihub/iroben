@@ -47,8 +47,10 @@
            @click="closeModal"
            @runProcess="clearItem">
       <div class="modal-error">
-        <h4>確認</h4>
-        <p class="sub_title">不正解回数をリセットします</p>
+        <h3>確認</h3>
+        <h4 class="sub_title">
+          不正解回数をリセットします
+        </h4>
         <p class="desc">
           カラーパレットに記録されている<br>
           <span v-if="level === 'second'">2</span>
@@ -256,7 +258,7 @@ export default {
   margin-bottom: -10px;
 }
 .modal-error {
-  h4 {
+  h3 {
     font-size: 16px;
     font-weight: bold;
     background: map_get($color, error);
@@ -267,13 +269,13 @@ export default {
     margin: 0;
   }
   .sub_title {
+    font-family: "KintoSans",serif;
+    font-weight: 500;
     text-align: center;
-    margin: 16px auto;
-    font-weight: bold;
   }
   .desc {
     text-align: center;
-    padding: 0 24px;
+    padding: 0 8px;
   }
   img {
     width: 180px;

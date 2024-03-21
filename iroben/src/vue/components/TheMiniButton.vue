@@ -45,13 +45,15 @@ export default {
 @import "../src/scss/foundation/include";
 .--mini {
     button {
+      font-size: 1rem;
+      color: map_get($color, text);
       display: flex;
       align-items: center;
       width: max-content;
       text-align: left;
       background: map_get($color, white);
       border-radius: 4px;
-      padding: 8px;
+      padding: 12px;
       border: 1px solid map_get($color, gray02);
       box-shadow: inherit;
 

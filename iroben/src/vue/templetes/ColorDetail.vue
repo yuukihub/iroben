@@ -177,7 +177,7 @@ export default {
         align-items: center;
       }
       li {
-        border: 1px solid #DAE0E6;
+        border: 1px solid map_get($color, gray03);
         border-radius: 40px;
         padding: 0 10px;
         text-align: center;

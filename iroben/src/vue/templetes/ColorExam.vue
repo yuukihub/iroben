@@ -91,10 +91,6 @@
       </div>
       <div class="l-overlay"></div>
     </div>
-
-    <div class="bottom">
-      <img src="../../img/img_wave-bottom.svg" alt="wave">
-    </div>
   </div>
 </template>
 
@@ -303,27 +299,9 @@ export default {
   text-align: center;
   color: map_get($color, text);
 }
-.bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 60vh;
-  background: map_get($color, white);
-  @include mq(sp) {
-    height: 52vh;
-  }
-  img {
-    position: absolute;
-    top: -70px;
-    left: 0;
-    right: 0;
-  }
-}
 .result_title {
   font-family: "KintoSans",serif;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   margin-top: 0;
   font-size: 18px;
@@ -333,7 +311,11 @@ export default {
 .score_wrap {
   font-family: "KintoSans",serif;
   color: map_get($color, text);
+  max-width: 93%;
+  width: 100%;
   background: map_get($color, white);
+  margin: 0 auto 24px;
+  padding: 24px 16px;
 }
 .c-score {
   position: relative;
@@ -348,6 +330,7 @@ export default {
   }
   .score {
     font-family: "MiuraGotic",serif;
+    letter-spacing: -8px;
     font-size: 88px;
     display: block;
     text-align: center;
@@ -355,8 +338,8 @@ export default {
   }
   .slash {
     position: absolute;
-    right: -5px;
-    bottom: -20px;
+    right: -12px;
+    bottom: -26px;
     display: block;
     width: 40px;
     border: 1px solid;
@@ -365,9 +348,10 @@ export default {
   .summary {
     font-family: "MiuraGotic",serif;
     font-size: 40px;
+    letter-spacing: -3px;
     position: absolute;
-    right: -32px;
-    bottom: 14px;
+    right: -38px;
+    bottom: 9px;
     margin: 0;
   }
   .unit {
@@ -375,20 +359,19 @@ export default {
   }
 }
 .sub_title {
-  margin: 85px auto 16px;
+  margin: 0 auto 16px;
   display: block;
   text-align: center;
   @include mq(sp) {
-    margin: 105px auto 16px;
+    margin: auto;
   }
 }
 .text {
   text-align: center;
-  padding-bottom: 24px;
 }
 .img_colorPallet {
   display: block;
-  margin: 0 auto 24px;
+  margin: 24px auto;
 }
 .result_icon {
   width: 24px;

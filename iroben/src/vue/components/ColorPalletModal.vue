@@ -84,7 +84,7 @@ export default {
   margin: auto;
 }
 .modal-color {
-  padding: 24px 16px;
+  padding: 32px 16px;
   border-radius: 6px 6px 0 0;
 }
 .modal-subtitle {
@@ -111,9 +111,13 @@ export default {
     justify-content: center;
   }
   li {
-    &:not(:last-child):after {
-      content: (",");
-      margin-right: 4px;
+    border: 1px solid map_get($color, gray03);
+    border-radius: 40px;
+    padding: 0 10px;
+    text-align: center;
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

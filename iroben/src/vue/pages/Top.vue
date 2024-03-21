@@ -21,12 +21,16 @@
         <p class="desc">アプリをご利用いただくには、<br>
           利用規約をご確認の上ご利用ください</p>
         <div class="agree">
-          <input type="checkbox">
-          <a href="#">利用規約</a>
-          <p>に同意する</p>
+          <input type="checkbox"  v-model="checked">
+          <div class="agree_inner">
+            <a href="#">利用規約</a>
+            <p>に同意する</p>
+          </div>
         </div>
-        <div class="inner">
-          <v-ons-button class="c-button" @click="push">はじめる</v-ons-button>
+        <div class="button_area">
+          <the-button label="はじめる"
+                      :is-disabled-flag="checked"
+                      @click="push"></the-button>
         </div>
       </div>
     </div>
@@ -37,9 +41,15 @@
 <script>
 import customToolbar from '../components/CustomToolbar.vue';
 import home from './Home.vue';
+import TheButton from "@/vue/components/TheButton.vue";
 
 export default {
   name: "top",
+  data(){
+    return {
+      checked: false,
+    }
+  },
   methods: {
     pop(){
       this.pageStack.pop();
@@ -49,7 +59,7 @@ export default {
     },
   },
   props: ["pageStack"],
-  components: { customToolbar },
+  components: {TheButton, customToolbar },
 }
 </script>
 
@@ -81,12 +91,6 @@ h1 {
   display: block;
   width: 54vw;
   margin: auto;
-  @include mq(sp) {
-    max-width: 204px;
-  }
-  @include mq(xsmall) {
-    max-width: 180px;
-  }
 }
 .slider {
   position: absolute;
@@ -107,16 +111,25 @@ h1 {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 180px;
+  bottom: 206px;
   z-index: index($z-map, character);
   .character01 {
     width: 12%;
+    @include mq(sp) {
+      width: 14%;
+    }
   }
   .character02 {
     width: 13%;
+    @include mq(sp) {
+      width: 15%;
+    }
   }
   .character03 {
     width: 18%;
+    @include mq(sp) {
+      width: 20%;
+    }
   }
 }
 .bottom {
@@ -142,23 +155,28 @@ h1 {
   }
   .desc {
     margin: 0;
-    padding: 88px 0 0 16px;
+    padding: 10vh 0 16px 0;
     text-align: center;
+    @include mq(sp) {
+      padding: 13vh 0 16px 0;
+    }
   }
   .agree {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 0 24px 0;
+    &_inner {
+      display: flex;
+      align-items: center;
+      margin-left: 8px;
+    }
     p {
       margin: 0;
     }
   }
-  .inner {
-    padding-bottom: 32px;
+  .button_area {
+    padding: 0 16px 32px 16px;
   }
-}
-.c-button {
-  width: 100%;
 }
 </style>

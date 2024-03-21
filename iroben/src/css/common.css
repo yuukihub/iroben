@@ -375,9 +375,15 @@ body {
   font-size: 1.05rem;
   line-height: 140%;
 }
+@media (max-width: 375px) {
+  body {
+    font-size: 0.9rem;
+    line-height: 130%;
+  }
+}
 
 h1, h2, h3, h4, h5 div,
-span, label, p, a {
+span, label, p, a, button {
   font-family: "KintoSans", serif;
   font-weight: normal;
 }

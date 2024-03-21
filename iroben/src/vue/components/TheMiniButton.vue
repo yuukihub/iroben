@@ -1,5 +1,5 @@
 <template>
-  <div class="c-button">
+  <div class="c-button --mini">
    <template v-if="buttonType === 'error'">
      <button class="is-error">
        {{label}}
@@ -43,33 +43,33 @@ export default {
 
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
-.c-button {
-  button {
-    display: flex;
-    align-items: center;
-    width: max-content;
-    text-align: left;
-    background: map_get($color, white);
-    border-radius: 4px;
-    padding: 8px;
-    border: 1px solid map_get($color, gray02);
-    box-shadow: inherit;
+.--mini {
+    button {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      text-align: left;
+      background: map_get($color, white);
+      border-radius: 4px;
+      padding: 8px;
+      border: 1px solid map_get($color, gray02);
+      box-shadow: inherit;
 
-    img {
-      width: 32px;
-      height: auto;
+      img {
+        width: 32px;
+        height: auto;
+      }
+      &.is-error {
+        color: map_get($color, white);
+        border: 1px solid map_get($color, error);
+        background: map_get($color, error);
+      }
+      &.is-disabled {
+        color: map_get($color, white);
+        border: 1px solid map_get($color, gray03);
+        background: map_get($color, gray03);
+      }
     }
-    &.is-error {
-      color: map_get($color, white);
-      border: 1px solid map_get($color, error);
-      background: map_get($color, error);
-    }
-    &.is-disabled {
-      color: map_get($color, white);
-      border: 1px solid map_get($color, gray03);
-      background: map_get($color, gray03);
-    }
-  }
   &:not(:last-child) {
     margin-right: 16px;
   }

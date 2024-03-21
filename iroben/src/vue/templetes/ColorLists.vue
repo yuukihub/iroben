@@ -4,11 +4,6 @@
                   :custom-button-disabled-flag="faultItem.length"
                   @clear="openConfirmModal"></custom-toolbar>
   <div class="wrap">
-    <div class="characters_wrap">
-      <img class="character01" src="../../img/character01_watch.svg" alt="character01">
-      <img class="character02" src="../../img/character02_watch.svg" alt="character02">
-      <img class="character03" src="../../img/character03_watch.svg" alt="character03">
-    </div>
     <img class="wave" src="../../img/img_wave-bottom.svg" alt="wave">
     <ul class="c-colorLists">
       <li v-for="(item, index) in colorLists" :key="index" @click="getItem(item)">
@@ -273,29 +268,6 @@ export default {
     height: auto;
     display: block;
     margin: 16px auto;
-  }
-}
-.characters_wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -10px;
-  @include mq(sp){
-    top: 0px;
-  }
-  .character01 {
-    width: 13%;
-    margin-top: 10px;
-  }
-  .character02 {
-    width: 9%;
-    margin-right: 4px;
-  }
-  .character03 {
-    width: 10%;
   }
 }
 </style>

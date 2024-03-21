@@ -99,7 +99,6 @@ export default {
     padding: 0 16px;
   }
   .c-colorCard {
-    margin-top: 5vh;
     @include mq(sp){
       margin-top: 1vh;
     }
@@ -216,7 +215,6 @@ export default {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 77vh;
     background: map_get($color, white);
     .wave {
       position: absolute;

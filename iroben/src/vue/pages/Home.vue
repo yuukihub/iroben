@@ -5,6 +5,18 @@
     <img src="../../img/img_title02.svg" alt="2級'">
     <img src="../../img/img_title03.svg" alt="2級'">
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <v-ons-button class="c-button" @click="toThirdExam">3級の慣用色テスト</v-ons-button>
     <v-ons-button class="c-button" @click="toThirdColorLists">3級の慣用色一覧</v-ons-button>
     <br>

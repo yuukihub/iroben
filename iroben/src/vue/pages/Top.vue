@@ -1,6 +1,11 @@
 <template>
   <v-ons-page>
-    <custom-toolbar></custom-toolbar>
+    <header class="l-header">
+      <div class="top">
+        <div class="bar"></div>
+      </div>
+      <img src="../../img/img_wave-top.svg" alt="wave">
+    </header>
     <h1>
       <img class="logo" src="../../img/img_logo.svg" alt="iroben">
     </h1>
@@ -54,20 +59,31 @@ export default {
 <style lang="scss" scoped>
 @import "./src/scss/foundation/variables";
 @import "./src/scss/foundation/mixins";
+.l-header {
+  .top {
+    .bar {
+      background: white;
+      height: 2vh;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
 h1 {
   position: absolute;
-  top: 14vh;
+  bottom: 0;
   left: 0;
   right: 0;
   margin: 0 !important;
-  @include mq(sp){
-    top: 9vh;
+  top: 14vh;
+  @include mq(xsmall){
+    top: 10vh;
   }
 }
 .logo {
   display: block;
-  max-width: 244px;
-  width: 100%;
+  width: 54vw;
   margin: auto;
   @include mq(sp) {
     max-width: 204px;
@@ -83,9 +99,9 @@ h1 {
   left: 0;
   right: 0;
   margin: auto;
-  width: 80%;
+  width: 36vh;
   @include mq(xsmall) {
-    bottom: 0;
+    bottom: -30px;
   }
 }
 .characters_wrap {
@@ -95,7 +111,7 @@ h1 {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 196px;
+  bottom: 176px;
   z-index: index($z-map, character);
   .character01 {
     width: 12%;
@@ -137,7 +153,10 @@ h1 {
     }
   }
   .inner {
-    padding-bottom: 40px;
+    padding-bottom: 24px;
   }
+}
+.c-button {
+  width: 100%;
 }
 </style>

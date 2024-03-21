@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/iroben/www/assets/img_explain_ColorPalletToggle.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/icon_error.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/icon_error.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletCanvas.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletCanvas.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/CustomToolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/CustomToolbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Paint.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Paint.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorExam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorExam.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/Modal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Top.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Top.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/icon_error.svg" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/icon_error.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_explain_Colorpallet.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/img_second_colorPallet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
@@ -44,25 +50,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/matsumoto.yuki/Desktop/portfolio/iroben/iroben/src/vue/pages&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/matsumoto.yuki/Desktop/portfolio/iroben/iroben/www/assets",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/iroben/www/assets" />
       <recent name="$PROJECT_DIR$/iroben/src/vue/pages" />
       <recent name="$PROJECT_DIR$/iroben/src/font" />
       <recent name="$PROJECT_DIR$/iroben/src/img" />
@@ -109,7 +116,7 @@
       <workItem from="1710463218478" duration="23183000" />
       <workItem from="1710597473038" duration="6660000" />
       <workItem from="1710810857766" duration="31633000" />
-      <workItem from="1710976660303" duration="1062000" />
+      <workItem from="1710976660303" duration="5095000" />
     </task>
     <servers />
   </component>

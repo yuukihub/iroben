@@ -76,8 +76,8 @@
     align-items: center;
     width: 100%;
     position: absolute;
-    top: 32px;
-    padding: 0 16px;
+    top: 64px;
+    padding: 0 24px;
     @include mq(xsmall) {
       padding: 0 8px;
     }
@@ -86,7 +86,7 @@
     position: relative;
     .bar {
       background: white;
-      height: 55px;
+      height: 9vh;
     }
     img {
       width: 100%;

@@ -90,9 +90,9 @@ export default {
   }
   .modal-close{
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 18px;
+    top: 24px;
+    right: 24px;
+    font-size: 24px;
     color: map_get($color, white);
     text-decoration: none;
   }

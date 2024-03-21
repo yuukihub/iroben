@@ -2,20 +2,12 @@
   <v-ons-page>
     <custom-toolbar></custom-toolbar>
     <div class="colorDetail-wrap">
-      <div class="top">
-        <div class="characters_wrap">
-          <img class="character01" src="../../img/character01_watch.svg" alt="character01">
-          <img class="character02" src="../../img/character02_watch.svg" alt="character02">
-          <img class="character03" src="../../img/character03_watch.svg" alt="character03">
-        </div>
-        <img class="wave" src="../../img/img_wave-bottom.svg" alt="wave">
-      </div>
       <div class="c-colorCard">
         <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
         <div class="color" :style="`background-color:${item.colorCode}`">
           <div  class="fault_count"
                 v-if="faultCountArray[item.id]">
-            <img  class="" src="../../img/icon_flag.svg" alt="flag">
+            <img  src="../../img/icon_flag.svg" alt="flag">
             <p>
               不正解：<span class="count">{{faultCountArray[item.id]}}</span>回
             </p>
@@ -103,17 +95,25 @@ export default {
       margin-top: 1vh;
     }
   }
+  .eye_image {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: index($z-map, eyeImage);
+  }
   .color {
-    position: relative;
     border-radius: 10px 10px 0 0;
     display: block;
     margin: 3%;
-    height: 290px;
+    height: 30vh;
+    position: relative;
     @include mq(sp) {
-      height: 180px;
+      height: 27vh;
     }
     @include mq(xsmall) {
-      height: 160px;
+      height: 23vh;
     }
     .fault_count {
       background: white;
@@ -194,36 +194,18 @@ export default {
     position: absolute;
     left: 0;
     right: 0;
-    top: -90px;
-    @include mq(sp){
-      top: -80px;
-    }
+    top: -40px;
+    z-index: -1;
     .character01 {
-      width: 13%;
+      width: 18%;
       margin-top: 10px;
     }
     .character02 {
-      width: 9%;
+      width: 14%;
       margin-right: 4px;
     }
     .character03 {
-      width: 10%;
-    }
-  }
-  .top {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: map_get($color, white);
-    .wave {
-      position: absolute;
-      top: -80px;
-      left: 0;
-      right: 0;
-      @include mq(sp){
-        top: -69px;
-      }
+      width: 15%;
     }
   }
 }

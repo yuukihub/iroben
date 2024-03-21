@@ -24,14 +24,14 @@
           </div>
           <div class="answer">{{answer.name}}</div>
           <div v-if="!answerFlag">
-            <img src="../../img/icon_circle.svg" alt="アイコン">
+            <img class="result_icon" src="../../img/icon_circle.svg" alt="アイコン">
           </div>
           <div v-else="answerFlag">
             <div v-if="currentQuestion.answer === index+1">
-              <img src="../../img/icon_success.svg" alt="アイコン">
+              <img class="result_icon" src="../../img/icon_success.svg" alt="アイコン">
             </div>
             <div v-else>
-              <img src="../../img/icon_error.svg" alt="アイコン">
+              <img class="result_icon" src="../../img/icon_error.svg" alt="アイコン">
             </div>
           </div>
         </button>
@@ -217,6 +217,9 @@ export default {
   height: 48px;
   color: map_get($color, text);
   margin: 24px auto;
+  @include mq(sp) {
+    margin: 16px auto;
+  }
   &:focus {
     border: 2px solid map_get($color, link);
   }
@@ -295,9 +298,9 @@ export default {
   border-radius: 10px 10px 0 0;
   display: block;
   margin: 3%;
-  height: 365px;
+  height: 35vh;
   @include mq(sp) {
-    height: 230px;
+    height: 30vh;
   }
 }
 .counter {
@@ -383,6 +386,9 @@ export default {
 .img_colorPallet {
   display: block;
   margin: 0 auto 24px;
+}
+.result_icon {
+  width: 24px;
 }
 @keyframes fadeIn {
   from {

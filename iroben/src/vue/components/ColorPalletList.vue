@@ -49,13 +49,7 @@
           </ul>
         </div>
         <div class="noData_desc" v-else>
-          データがありません。
-          <div v-if="level === 'second'">
-            <a href="#" @click="toColorExam">2級慣用色の出題</a>で回答してみましょう。
-          </div>
-          <div v-else-if="level === 'third'">
-            <a href="#" @click="toColorExam">3級慣用色の出題</a>で回答してみましょう。
-          </div>
+          まだデータがありません。
         </div>
       </div>
     </div>
@@ -112,9 +106,6 @@ export default {
     openModal(){
       this.openModalFlag = true;
       this.$emit("setColorDetail",this.colorDetail,this.openModalFlag);
-    },
-    toColorExam(){
-      this.$emit('toPage');
     },
   },
 }
@@ -220,6 +211,8 @@ export default {
   }
 }
 .noData_desc {
+  font-family: "KintoSans",serif;
+  color: map_get($color, text);
   background: map_get($color, gray04);
   padding: 16px;
   text-align: center;

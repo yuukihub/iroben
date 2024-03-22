@@ -29,7 +29,6 @@
                 @toggle="pushSecondToggle"
                 @setColor="getPenColor"
                 @setColorDetail="getColorDetail"
-                @toPage="toSecondExam"
             ></color-pallet-list>
           </div>
           <div v-show="isCurrent === 2">
@@ -42,7 +41,6 @@
                 @toggle="pushThirdToggle"
                 @setColor="getPenColor"
                 @setColorDetail="getColorDetail"
-                @toPage="toThirdExam"
             ></color-pallet-list>
           </div>
         </div>
@@ -181,12 +179,6 @@ export default {
       document.ontouchmove = function(evt){
         evt.preventDefault();
       }
-    },
-    toSecondExam() {
-      this.pageStack.push(secondExam);
-    },
-    toThirdExam() {
-      this.pageStack.push(thirdExam);
     },
   },
   props: ['pageStack'],

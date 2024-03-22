@@ -2,17 +2,17 @@
   <v-ons-page>
 
 
-    <article-card path="../../img/img_title01.svg" alt="1級">
+    <article-card path="../../img/img/img_title01.svg" alt="1級">
       <v-ons-button class="c-button" @click="toThirdExam">1級の慣用色テスト</v-ons-button>
       <v-ons-button class="c-button" @click="toThirdColorLists">1級の慣用色一覧</v-ons-button>
     </article-card>
 
-    <article-card path="../../img/img_title02.svg" alt="2級">
+    <article-card path="../../img/img/img_title02.svg" alt="2級">
       <v-ons-button class="c-button" @click="toSecondExam">2級の慣用色テスト</v-ons-button>
       <v-ons-button class="c-button" @click="toSecondColorLists">2級の慣用色一覧</v-ons-button>
     </article-card>
 
-    <article-card path="../../img/img_title03.svg" alt="3級">
+    <article-card path="../../img/img/img_title03.svg" alt="3級">
       <v-ons-button class="c-button" @click="toThirdExam">3級の慣用色テスト</v-ons-button>
       <v-ons-button class="c-button" @click="toThirdColorLists">3級の慣用色一覧</v-ons-button>
     </article-card>
@@ -24,12 +24,12 @@
 
 
     <div class="characters-wrap">
-      <img class="character03" src="../../img/character03_art.svg" alt="character03">
-      <img class="character02" src="../../img/character02_art.svg" alt="character02">
-      <img class="character01" src="../../img/character01_art.svg" alt="character01">
+      <img class="character03" src="../../img/img/img_character03_art.svg" alt="character03">
+      <img class="character02" src="../../img/img/img_character02_art.svg" alt="character02">
+      <img class="character01" src="../../img/img/img_character01_art.svg" alt="character01">
     </div>
     <div class="bottom">
-      <img src="../../img/img_wave-bottom.svg" alt="wave">
+      <img src="../../img/img/img_wave_bottom.svg" alt="wave">
     </div>
 
   </v-ons-page>

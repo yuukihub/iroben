@@ -1,11 +1,11 @@
 <template>
   <div class="colorDetail-wrap">
     <div class="c-colorCard">
-      <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
+      <img class="eye_image" src="../../img/icon/icon_eye.svg" alt="目">
       <div class="color" :style="`background-color:${item.colorCode}`">
         <div  class="fault_count"
               v-if="faultCountArray[item.id]">
-          <img  src="../../img/icon_flag.svg" alt="flag">
+          <img src="../../img/icon/icon_flag.svg" alt="flag">
           <p>
             不正解：<span class="count">{{faultCountArray[item.id]}}</span>回
           </p>
@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="bottom">
-      <img src="../../img/img_wave-bottom.svg" alt="wave">
+      <img src="../../img/img/img_wave_bottom.svg" alt="wave">
     </div>
   </div>
 </template>

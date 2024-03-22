@@ -4,12 +4,12 @@
                   :custom-button-disabled-flag="faultItem.length"
                   @clear="openConfirmModal"></custom-toolbar>
   <div class="wrap">
-    <img class="wave" src="../../img/img_wave-bottom.svg" alt="wave">
+    <img class="wave" src="../../img/img/img_wave_bottom.svg" alt="wave">
     <ul class="c-colorLists">
       <li v-for="(item, index) in colorLists" :key="index" @click="getItem(item)">
         <div class="left">
           <div class="colorPanel">
-            <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
+            <img class="eye_image" src="../../img/icon/icon_eye.svg" alt="目">
             <div class="color" :style="{background: item.colorCode}">
             </div>
           </div>
@@ -20,7 +20,7 @@
         <div class="right">
             <span class="faultItem"
                   :class="{'is-disabled':!faultCountArray[item.id]}">
-              <img  class="" src="../../img/icon_flag.svg"
+              <img  class="" src="../../img/icon/icon_flag.svg"
                     v-if="faultCountArray[item.id]"
                     alt="flag">
               不正解
@@ -34,7 +34,7 @@
                 回
               </span>
             </span>
-          <img src="../../img/icon_arrowRight.svg" alt="右矢印">
+          <img src="../../img/icon/icon_arrowRight.svg" alt="右矢印">
         </div>
       </li>
     </ul>
@@ -42,10 +42,10 @@
   <transition appear>
     <modal v-show="openModalFlag"
            :buttonFlag="true"
-           :ok-label="'削除する'"
-           :cancel-label="'キャンセル'"
            @click="closeModal"
-           @runProcess="clearItem">
+           @runProcess="clearItem"
+           ok-label="削除する"
+           cancel-label="キャンセル">
       <div class="modal-error">
         <h3>確認</h3>
         <h4 class="sub_title">
@@ -58,7 +58,7 @@
           級の「不正解のみ」の色も<br>
           同時にリセットされます。
         </p>
-        <img :src="`../../img/img_${level}_colorPallet.png`" alt="不正解のみを表示したカラーパレット">
+        <img :src="`../../img/img/img_${level}_colorPallet.png`" alt="不正解のみを表示したカラーパレット">
         <p class="desc">
           本当に削除しますか？
         </p>

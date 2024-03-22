@@ -4,16 +4,16 @@
       <div class="top">
         <div class="bar"></div>
       </div>
-      <img src="../../img/img_wave-top.svg" alt="wave">
+      <img src="../../img/img/img_wave_top.svg" alt="wave">
     </header>
     <h1>
-      <img class="logo" src="../../img/img_logo.svg" alt="iroben">
+      <img class="logo" src="../../img/img/img_logo.svg" alt="iroben">
     </h1>
-    <img class="slider" src="../../img/img_iphone.png" alt="iphone">
+    <img class="slider" src="../../img/img/img_iphone.png" alt="iphone">
     <div class="characters_wrap">
-      <img class="character01" src="../../img/character01.svg" alt="character01">
-      <img class="character02" src="../../img/character02.svg" alt="character02">
-      <img class="character03" src="../../img/character03.svg" alt="character03">
+      <img class="character01" src="../../img/img/img_character01_normal.svg" alt="character01">
+      <img class="character02" src="../../img/img/img_character02_normal.svg" alt="character02">
+      <img class="character03" src="../../img/img/img_character03_normal.svg" alt="character03">
     </div>
     <div class="bottom">
       <div class="bottom_inner">
@@ -152,7 +152,7 @@ h1 {
   }
 }
 .bottom {
-  background-image: url("../../img/img_wave-bottmBig.svg");
+  background-image: url("../../img/img/img_wave_bottmBig.svg");
   position: absolute;
   left: 0;
   right: 0;

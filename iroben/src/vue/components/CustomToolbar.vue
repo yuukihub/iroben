@@ -4,7 +4,7 @@
         <div class="top">
           <div class="bar"></div>
         </div>
-        <img src="../../img/img_wave-top.svg" alt="wave">
+        <img src="../../img/img/img_wave_top.svg" alt="wave">
       </div>
       <div class="contents">
         <div>
@@ -15,7 +15,7 @@
                 @click="clear"
                 :class="{'is-disabled':customButtonDisabledFlag === 0}"
                 class="custom_button">
-          <img src="../../img/icon_delete.svg" alt="削除">
+          <img src="../../img/icon/icon_delete.svg" alt="削除">
         </button>
       </div>
     </header>

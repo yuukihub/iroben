@@ -3,7 +3,7 @@
     <div v-if="status">
       <div class="exam_inner">
         <div class="c-colorCard">
-          <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
+          <img class="eye_image" src="../../img/icon/icon_eye.svg" alt="目">
           <div class="color" :style="{background: currentQuestion.colorCode}"></div>
           <div class="counter">
             <span class="current_number">
@@ -27,14 +27,14 @@
           </div>
           <div class="answer">{{answer.name}}</div>
           <div v-if="!answerFlag">
-            <img class="result_icon" src="../../img/icon_circle.svg" alt="アイコン">
+            <img class="result_icon" src="../../img/icon/icon_circle.svg" alt="アイコン">
           </div>
           <div v-else="answerFlag">
             <div v-if="currentQuestion.answer === index+1">
-              <img class="result_icon" src="../../img/icon_success.svg" alt="アイコン">
+              <img class="result_icon" src="../../img/icon/icon_success.svg" alt="アイコン">
             </div>
             <div v-else>
-              <img class="result_icon" src="../../img/icon_error.svg" alt="アイコン">
+              <img class="result_icon" src="../../img/icon/icon_error.svg" alt="アイコン">
             </div>
           </div>
         </button>
@@ -64,13 +64,13 @@
           落書きすることもできます。
         </p>
         <img class="img_colorPallet"
-            :src="`../../img/img_explain_ColorPalletToggle.png`"
+            src="../../img/img/img_explain_ColorPalletToggle.png"
             alt="不正解のみを表示したカラーパレット">
         <p class="text">
-          ペイント機能の<br class="is-sp">
+          ペイント機能の<br>
           「不正解のみスイッチ」を<br>
-          オンにすると、<br class="is-sp">
-          間違えた色が表示されます。<br>
+          オンにすると、<br>
+          間違えた色が表示されます。
         </p>
         <p class="text">
           復習にぜひご活用ください。
@@ -82,11 +82,11 @@
       <div class="result_image">
         <template v-if="correctFlag">
           <confetti></confetti>
-          <img src="../../img/img_success.svg" alt="正解">
+          <img src="../../img/img/img_success.svg" alt="正解">
           <button @click="next()">{{btnTitle}}</button>
         </template>
         <template v-if="faultFlag">
-          <img src="../../img/img_error.svg" alt="不正解">
+          <img src="../../img/img/img_error.svg" alt="不正解">
           <button @click="next()">{{btnTitle}}</button>
         </template>
       </div>
@@ -229,7 +229,7 @@ export default {
     &_color {
       width:28px;
       height: 32px;
-      border-radius: 3px;
+      border-radius: 0;
       border: 3px solid map_get($color, white);
     }
     &_colorWrap {

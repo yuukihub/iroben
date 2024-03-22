@@ -24,7 +24,7 @@ export default {
 #canvas {
   position: absolute;
   top: 0;
-  background-image: url("../../img/img_background.png") !important;
+  background-image: url("../../img/img/img_background.png") !important;
   width: 100%;
   z-index: -1;
 }

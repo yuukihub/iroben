@@ -204,10 +204,12 @@ export default {
 .c-colorPallet_header {
   background: map_get($color, main01);
   h3 {
+    font-family: "KintoSans",serif;
+    font-weight: 500;
+    color: map_get($color, white);
     margin: 0;
     padding: 16px 24px;
-    color: white;
-    font-size: 18px;
+    font-size: 1.1rem;
     @include mq(sp) {
       padding: 16px;
       font-size: 0.9rem;

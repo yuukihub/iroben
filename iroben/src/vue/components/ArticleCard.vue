@@ -32,12 +32,12 @@ export default {
   position: relative;
   background: map_get($color, white);
   max-width: 300px;
-  margin: 0 auto 24px;
+  margin: 24px auto;
   border-radius: 6px;
   padding: 24px;
   h2 {
     position: absolute;
-    top: 0;
+    top: -30px;
     margin: inherit;
   }
 }

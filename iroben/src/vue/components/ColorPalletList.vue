@@ -36,16 +36,27 @@
     </div>
     <div v-else>
       <div class="c-colorLists">
-        <ul>
-          <li v-for="(item, index) in faultCountArray" :key="index">
+        <template v-if="faultCountArray.length">
+          <ul>
+            <li v-for="(item, index) in faultCountArray" :key="index">
               <input type="radio"
                      :name="`${level}-fault`"
                      class="color"
                      :tabindex="index"
                      :style="{background: item.colorCode}"
                      @click="getColorDetail(item)">
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </template>
+        <template v-else>
+          データがありません。<br>
+          <templete v-if="level === 'second'">
+            <a href="#" @click="toColorExam">2級慣用色の出題</a>で回答してみましょう。
+          </templete>
+          <template v-else-if="level === 'third'">
+            <a href="#" @click="toColorExam">3級慣用色の出題</a>で回答してみましょう。
+          </template>
+        </template>
       </div>
     </div>
   </div>
@@ -102,6 +113,9 @@ export default {
       this.openModalFlag = true;
       this.$emit("setColorDetail",this.colorDetail,this.openModalFlag);
     },
+    toColorExam(){
+      this.$emit('toColorList');
+    }
   },
 }
 </script>
@@ -109,6 +123,8 @@ export default {
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
 .c-colorLists{
+  font-family: "KintoSans",serif;
+  color: map_get($color, text);
   ul {
     display: grid;
     place-items: center;
@@ -168,15 +184,27 @@ export default {
     align-items: center;
     justify-content: space-between;
     padding: 8px 0;
-    font-size: 16px;
+    font-size: 1rem;
+    @include mq(sp) {
+      font-size: 0.82rem;
+    }
+    @include mq(small) {
+      font-size: 0.8rem;
+    }
   }
   .title {
-    font-size: 14px;
+    width: max-content;
     margin-right: 4px;
   }
   .name {
-    font-size: 14px;
+    width: 38vw;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    @include mq(xsmall) {
+      width: 27vw;
+    }
    &.is-disabled {
      cursor: none;
      color: map_get($color, gray01);
@@ -186,9 +214,8 @@ export default {
 .toggle_wrap {
   display: flex;
   align-items: center;
-  font-size: 14px;
   p {
-    font-size: 14px;
+    width: max-content;
     margin-right: 4px;
   }
 }

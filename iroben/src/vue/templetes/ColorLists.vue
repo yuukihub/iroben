@@ -163,6 +163,9 @@ export default {
 .c-colorLists {
   font-family: "KintoSans",serif;
   color: map_get($color, text);
+  @include mq(sp) {
+    font-size: 0.9rem;
+  }
   li {
     display: flex;
     align-items: center;

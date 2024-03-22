@@ -35,7 +35,7 @@ export default {
 .c-toggle {
   position: relative;
   display: inline-block;
-  width: 72px;
+  width: 70px;
   height: 32px;
   border-radius: 24px;
   cursor: pointer;
@@ -58,10 +58,12 @@ export default {
     &::before {
       content: "";
       position: absolute;
-      top: 2px;
+      top: 0;
+      bottom: 0;
       left: 3px;
-      width: 20px;
-      height: 20px;
+      width: 16px;
+      height: 16px;
+      margin: auto;
       border-radius: 24px;
       border: 2px solid map_get($color, gray03);
       background-color: map_get($color, white);
@@ -85,15 +87,18 @@ export default {
     width: 100%;
     height: 100%;
     color: map_get($color, text);
-    font-size: 12px;
+    font-size: 0.76rem;
     font-family: sans-serif;
     transition: all 0.4s ease-in-out;
 
     &::after {
       content: attr(data-off);
       position: absolute;
-      top: 7px;
+      top: 0;
+      bottom: 0;
       right: 12px;
+      margin: auto;
+      height: max-content;
       opacity: 1;
       transition: all 0.4s ease-in-out;
     }
@@ -101,7 +106,10 @@ export default {
     &::before {
       content: attr(data-on);
       position: absolute;
-      top: 7px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: max-content;
       left: 16px;
       opacity: 0;
       transition: all 0.4s ease-in-out;

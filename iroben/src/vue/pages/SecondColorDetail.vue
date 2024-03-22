@@ -1,15 +1,17 @@
 <template>
   <v-ons-page>
+    <custom-toolbar :custom-button-flag="false"></custom-toolbar>
     <color-detail :item="item" :level="'second'"></color-detail>
   </v-ons-page>
 </template>
 
 <script>
 import ColorDetail from "@/vue/templetes/ColorDetail.vue";
+import CustomToolbar from "@/vue/components/CustomToolbar.vue";
 
 export default {
   name: "secondColorDetail",
-  components: {ColorDetail},
+  components: {CustomToolbar, ColorDetail},
   data(){
     return {
       item: "",

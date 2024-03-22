@@ -36,7 +36,7 @@
     </div>
     <div v-else>
       <div class="c-colorLists">
-        <template v-if="faultCountArray.length">
+        <div v-if="faultCountArray.length">
           <ul>
             <li v-for="(item, index) in faultCountArray" :key="index">
               <input type="radio"
@@ -47,16 +47,16 @@
                      @click="getColorDetail(item)">
             </li>
           </ul>
-        </template>
-        <template v-else>
-          データがありません。<br>
-          <templete v-if="level === 'second'">
+        </div>
+        <div class="noData_desc" v-else>
+          データがありません。
+          <div v-if="level === 'second'">
             <a href="#" @click="toColorExam">2級慣用色の出題</a>で回答してみましょう。
-          </templete>
-          <template v-else-if="level === 'third'">
+          </div>
+          <div v-else-if="level === 'third'">
             <a href="#" @click="toColorExam">3級慣用色の出題</a>で回答してみましょう。
-          </template>
-        </template>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -100,7 +100,7 @@ export default {
   },
   methods: {
     clickToggle() {
-      this.$emit("onClick");
+      this.$emit("toggle");
       this.colorTitleFlag = false;
     },
     getColorDetail(item){
@@ -114,8 +114,8 @@ export default {
       this.$emit("setColorDetail",this.colorDetail,this.openModalFlag);
     },
     toColorExam(){
-      this.$emit('toColorList');
-    }
+      this.$emit('toPage');
+    },
   },
 }
 </script>
@@ -218,6 +218,11 @@ export default {
     width: max-content;
     margin-right: 4px;
   }
+}
+.noData_desc {
+  background: map_get($color, gray04);
+  padding: 16px;
+  text-align: center;
 }
 </style>
 

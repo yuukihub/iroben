@@ -90,7 +90,6 @@
           <button @click="next()">{{btnTitle}}</button>
         </template>
       </div>
-      <div class="l-overlay"></div>
     </div>
   </div>
 </template>

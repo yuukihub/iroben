@@ -26,9 +26,10 @@
                 :fault-count-array="faultCountArray"
                 :is-toggle-flag="checkToggleStatus('second')"
                 :color-lists="secondQuestion"
-                @onClick="pushSecondToggle"
+                @toggle="pushSecondToggle"
                 @setColor="getPenColor"
                 @setColorDetail="getColorDetail"
+                @toPage="toSecondExam"
             ></color-pallet-list>
           </div>
           <div v-show="isCurrent === 2">
@@ -38,9 +39,10 @@
                 :fault-count-array="faultCountArray"
                 :is-toggle-flag="checkToggleStatus('third')"
                 :color-lists="thirdQuestion"
-                @onClick="pushThirdToggle"
+                @toggle="pushThirdToggle"
                 @setColor="getPenColor"
                 @setColorDetail="getColorDetail"
+                @toPage="toThirdExam"
             ></color-pallet-list>
           </div>
         </div>
@@ -53,6 +55,8 @@ import {secondQuestion} from "@/resource/secondQuestion";
 import {thirdQuestion} from "@/resource/thirdQuestion";
 import ColorPalletList from "@/vue/components/ColorPalletList.vue";
 import ColorPalletCanvas from "@/vue/components/ColorPalletCanvas.vue";
+import thirdExam from "@/vue/pages/ThirdExam.vue";
+import secondExam from "@/vue/pages/SecondExam.vue";
 
 export default {
   name: "ColorPallet",
@@ -120,7 +124,6 @@ export default {
             flag:this.isSecondActive = !this.isSecondActive
           }
       );
-
       //this.$store.stateのfaultArrayに重複して入っている色は削除
       this.checkFaultItem('second');
     },
@@ -130,7 +133,6 @@ export default {
             flag:this.isThirdActive = !this.isThirdActive
           }
       );
-
       //this.$store.stateのfaultArrayに重複して入っている色は削除
       this.checkFaultItem('third');
     },
@@ -179,9 +181,15 @@ export default {
       document.ontouchmove = function(evt){
         evt.preventDefault();
       }
-
-    }
+    },
+    toSecondExam() {
+      this.pageStack.push(secondExam);
+    },
+    toThirdExam() {
+      this.pageStack.push(thirdExam);
+    },
   },
+  props: ['pageStack'],
 }
 </script>
 

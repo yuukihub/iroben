@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import customToolbar from '../components/CustomToolbar.vue';
 import ColorLists from "@/vue/templetes/ColorLists.vue";
 import secondColorDetail from "@/vue/pages/SecondColorDetail.vue";
 import {ROUTER} from "@/resource/constant-router";
@@ -18,7 +17,6 @@ export default {
   name: "secondColorLists",
   components: {
     ColorLists,
-    customToolbar,
   },
   data() {
     return {

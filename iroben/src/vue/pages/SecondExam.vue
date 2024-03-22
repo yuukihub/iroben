@@ -1,8 +1,10 @@
 <template>
   <v-ons-page>
-    <custom-toolbar :title="this.title"></custom-toolbar>
+    <custom-toolbar :title="this.title"
+                    :custom-button-flag="false"></custom-toolbar>
       <color-exam :questions="secondQuestion"
-                  :level="'second'" @toPaint="toPaint"
+                  :level="'second'"
+                  @toPaint="toPaint"
                   @toColorList="toColorList">
     </color-exam>
   </v-ons-page>

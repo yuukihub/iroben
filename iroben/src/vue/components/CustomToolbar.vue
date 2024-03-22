@@ -8,11 +8,11 @@
       </div>
       <div class="contents">
         <div>
-          <v-ons-back-button :on-click="pop"></v-ons-back-button>
+          <v-ons-back-button></v-ons-back-button>
         </div>
         <p class="title">{{ title }}</p>
         <button v-if="customButtonFlag"
-                @click="click"
+                @click="clear"
                 :class="{'is-disabled':customButtonDisabledFlag === 0}"
                 class="custom_button">
           <img src="../../img/icon_delete.svg" alt="削除">
@@ -45,13 +45,14 @@
       customButtonDisabledFlag: {
         type: Boolean,
         default: false,
-        required: false
-      }
+        required: true
+      },
+      props: ["pageStack"],
     },
     methods: {
-      click(){
+      clear(){
         this.$emit('clear');
-      }
+      },
     }
   }
 </script>

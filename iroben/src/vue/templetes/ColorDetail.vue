@@ -1,51 +1,45 @@
 <template>
-  <v-ons-page>
-    <custom-toolbar></custom-toolbar>
-    <div class="colorDetail-wrap">
-      <div class="c-colorCard">
-        <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
-        <div class="color" :style="`background-color:${item.colorCode}`">
-          <div  class="fault_count"
-                v-if="faultCountArray[item.id]">
-            <img  src="../../img/icon_flag.svg" alt="flag">
-            <p>
-              不正解：<span class="count">{{faultCountArray[item.id]}}</span>回
-            </p>
-          </div>
-        </div>
-        <div class="descBlock">
-          <p class="sub_title">
-            {{item.subTitle}}
-          </p>
-          <h2>{{item.title}}</h2>
-          <div class="tone_number">
-            <p>
-              色相番号：
-            </p>
-            <ul>
-              <li v-for="(toneNumber, index) in item.toneNumber" :key="index">
-                {{toneNumber}}
-              </li>
-            </ul>
-          </div>
-          <p class="desc">
-            {{item.description}}
+  <div class="colorDetail-wrap">
+    <div class="c-colorCard">
+      <img class="eye_image" src="../../img/icon_eye.svg" alt="目">
+      <div class="color" :style="`background-color:${item.colorCode}`">
+        <div  class="fault_count"
+              v-if="faultCountArray[item.id]">
+          <img  src="../../img/icon_flag.svg" alt="flag">
+          <p>
+            不正解：<span class="count">{{faultCountArray[item.id]}}</span>回
           </p>
         </div>
       </div>
-      <div class="bottom">
-        <img src="../../img/img_wave-bottom.svg" alt="wave">
+      <div class="descBlock">
+        <p class="sub_title">
+          {{item.subTitle}}
+        </p>
+        <h2>{{item.title}}</h2>
+        <div class="tone_number">
+          <p>
+            色相番号：
+          </p>
+          <ul>
+            <li v-for="(toneNumber, index) in item.toneNumber" :key="index">
+              {{toneNumber}}
+            </li>
+          </ul>
+        </div>
+        <p class="desc">
+          {{item.description}}
+        </p>
       </div>
     </div>
-  </v-ons-page>
+    <div class="bottom">
+      <img src="../../img/img_wave-bottom.svg" alt="wave">
+    </div>
+  </div>
 </template>
 
 <script>
-import customToolbar from '../components/CustomToolbar.vue';
-
 export default {
   name: "colorDetail",
-  components: {customToolbar},
   data(){
     return {
       faultItem: this.$store.state[this.level].faultArray,
@@ -72,7 +66,6 @@ export default {
   props: {
     item: {
       type: Object,
-      default: "{}",
       required: true
     },
     level: {

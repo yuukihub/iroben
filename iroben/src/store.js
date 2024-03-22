@@ -3,8 +3,8 @@ import App from "./App.vue";
 import Vuex from "vuex";
 import createPersistedState from 'vuex-persistedstate';
 
-const app = createApp(App);
-app.use(Vuex);
+//const app = createApp(App);
+//app.use(Vuex);
 export default new Vuex.Store({
     state:{
         second: {
@@ -34,14 +34,11 @@ export default new Vuex.Store({
     },
     plugins: [createPersistedState(
         {
-            // ストレージのキーを指定。デフォルトではvuex
-            key: 'myApp',
-            // 管理対象のステートを指定
+            key: 'iroben',
             paths: [
                 'second',
                 'third',
             ],
-            // ストレージの種類を指定。デフォルトではローカルストレージ
             storage: window.localStorage,
         }
     )]

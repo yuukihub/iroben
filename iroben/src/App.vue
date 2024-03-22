@@ -9,11 +9,11 @@
 </template>
 
 <script>
-  import top from './vue/pages/Top.vue';
+  import Home from './vue/pages/Home.vue';
   export default {
     data() {
       return {
-        pageStack: [top]
+        pageStack: [Home]
       }
     }
   }

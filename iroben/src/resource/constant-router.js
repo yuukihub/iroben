@@ -14,11 +14,11 @@ export const ROUTER = {
     //2級出題画面
     SECOND_EXAM_PATH: "/second-exam",
     SECOND_EXAM_NAME: "SecondExam",
-    SECOND_EXAM_TITLE:"2級慣用色の出題",
+    SECOND_EXAM_TITLE:"2級慣用色理解度チェック",
     //3級出題画面
     THIRD_EXAM_PATH: "/third-exam",
     THIRD_EXAM_NAME: "ThirdExam",
-    THIRD_EXAM_TITLE:"3級慣用色の出題",
+    THIRD_EXAM_TITLE:"3級慣用色理解度チェック",
     //2級慣用色一覧画面
     SECOND_COLOR_LIST_PATH: "/second-color-list",
     SECOND_COLOR_LIST_NAME: "SecondColorList",

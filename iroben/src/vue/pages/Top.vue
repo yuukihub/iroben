@@ -7,7 +7,7 @@
       <img src="../../img/img/img_wave_top.svg" alt="wave">
     </header>
     <h1>
-      <img class="logo" src="../../img/img/img_logo.svg" alt="iroben">
+      <img class="logo" src="../../img/img/img_top_title.svg" alt="iroben">
     </h1>
     <img class="slider" src="../../img/img/img_iphone.png" alt="iphone">
     <div class="characters_wrap">

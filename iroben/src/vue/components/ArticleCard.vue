@@ -1,8 +1,16 @@
 <template>
   <article class="c-articleCard">
-    <h2>
+    <div class="noteRings">
+      <img src="../../img/img/img_noteRing.svg" alt="ノートリング">
+      <img src="../../img/img/img_noteRing.svg" alt="ノートリング">
+      <img src="../../img/img/img_noteRing.svg" alt="ノートリング">
+      <img src="../../img/img/img_noteRing.svg" alt="ノートリング">
+      <img src="../../img/img/img_noteRing.svg" alt="ノートリング">
+      <img src="../../img/img/img_noteRing.svg" alt="ノートリング">
+    </div>
+    <h3>
       <img :src="`${path}`" :alt="alt">
-    </h2>
+    </h3>
     <slot></slot>
   </article>
 </template>
@@ -26,19 +34,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./src/scss/foundation/variables";
-@import "./src/scss/foundation/mixins";
+@import "./src/scss/foundation/include";
 .c-articleCard {
   position: relative;
-  background: map_get($color, white);
-  max-width: 300px;
-  margin: 24px auto;
-  border-radius: 6px;
-  padding: 24px;
-  h2 {
+  background-color: map_get($color, white);
+  width: 85vw;
+  border-radius: 8px;
+  padding: 24px 64px;
+  display: block;
+  margin: auto;
+  @include boxShadow;
+  .noteRings {
     position: absolute;
-    top: -30px;
-    margin: inherit;
+    top: 0;
+    left: 81vw;
+    z-index: 1;
+    img {
+      display: block;
+    }
+  }
+  h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    img {
+      width: 32px;
+    }
+  }
+  &.--right {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    .noteRings {
+      left: -2vw;
+      transform: rotate(180deg);
+    }
   }
 }
 </style>

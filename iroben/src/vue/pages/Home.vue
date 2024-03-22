@@ -1,36 +1,63 @@
 <template>
   <v-ons-page>
-
-
-    <article-card path="../../img/img/img_title01.svg" alt="1級">
-      <v-ons-button class="c-button" @click="toThirdExam">1級の慣用色テスト</v-ons-button>
-      <v-ons-button class="c-button" @click="toThirdColorLists">1級の慣用色一覧</v-ons-button>
-    </article-card>
-
-    <article-card path="../../img/img/img_title02.svg" alt="2級">
-      <v-ons-button class="c-button" @click="toSecondExam">2級の慣用色テスト</v-ons-button>
-      <v-ons-button class="c-button" @click="toSecondColorLists">2級の慣用色一覧</v-ons-button>
-    </article-card>
-
-    <article-card path="../../img/img/img_title03.svg" alt="3級">
-      <v-ons-button class="c-button" @click="toThirdExam">3級の慣用色テスト</v-ons-button>
-      <v-ons-button class="c-button" @click="toThirdColorLists">3級の慣用色一覧</v-ons-button>
-    </article-card>
-
-
-
-    <br>
-    <v-ons-button class="c-button" @click="toColorPaint">ペイント</v-ons-button>
-
-
-    <div class="characters-wrap">
-      <img class="character03" src="../../img/img/img_character03_art.svg" alt="character03">
-      <img class="character02" src="../../img/img/img_character02_art.svg" alt="character02">
-      <img class="character01" src="../../img/img/img_character01_art.svg" alt="character01">
+    <img class="img_logo" src="../../img/img/img_logo.svg" alt="iroben">
+    <div class="parallax"></div>
+    <div class="container">
+      <div class="decoration_wrap">
+        <img class="img_decoration01" src="../../img/img/img_decoration01.svg" alt="decoration01">
+        <img class="img_decoration02" src="../../img/img/img_decoration02.svg" alt="decoration02">
+        <img class="img_decoration03" src="../../img/img/img_decoration03.svg" alt="decoration03">
+        <img class="img_decoration04" src="../../img/img/img_decoration04.svg" alt="decoration04">
+      </div>
+      <img class="img_wave" src="../../img/img/img_wave_bottmBig.svg" alt="wave">
+      <div class="characters-wrap">
+        <img class="character03" src="../../img/img/img_character03_art.svg" alt="character03">
+        <img class="character02" src="../../img/img/img_character02_art.svg" alt="character02">
+        <img class="character01" src="../../img/img/img_character01_art.svg" alt="character01">
+      </div>
+      <section class="container_inner">
+        <heading title="Learn"></heading>
+        <p class="article_desc">
+          試験範囲の慣用色を<br>
+          確認できます
+        </p>
+        <article-card path="../../img/img/img_title03.svg" alt="3級">
+          <ul class="article_list">
+            <li>
+              <a href="#" @click="toThirdColorLists">慣用色一覧</a>
+            </li>
+            <li>
+              <a href="#" @click="toThirdExam">理解度チェック</a>
+            </li>
+          </ul>
+        </article-card>
+        <article-card class="--right"
+                      path="../../img/img/img_title02.svg"
+                      alt="2級">
+          <ul class="article_list">
+            <li @click="toSecondColorLists">
+              慣用色一覧
+            </li>
+            <li @click="toSecondExam">
+              理解度チェック
+            </li>
+          </ul>
+        </article-card>
+        <heading title="Draw"></heading>
+        <p class="article_desc">
+          色彩検定に登場する色で<br>
+          落書きしてみませんか？
+        </p>
+        <v-ons-button class="c-button" @click="toColorPaint">ペイント</v-ons-button>
+        <aside class="img_announce" >
+          <h4>
+            1級準備中
+          </h4>
+          <img src="../../img/img/img_characters_announce.svg" alt="1級は現在準備中です。少々お待ちください">
+        </aside>
+      </section>
     </div>
-    <div class="bottom">
-      <img src="../../img/img/img_wave_bottom.svg" alt="wave">
-    </div>
+
 
   </v-ons-page>
 </template>
@@ -43,6 +70,7 @@ import thirdExam from "./ThirdExam.vue";
 import thirdColorLists from "@/vue/pages/ThirdColorLists.vue";
 import paint from "@/vue/pages/Paint.vue";
 import ArticleCard from "@/vue/components/ArticleCard.vue";
+import Heading from "@/vue/components/Heading.vue";
 
 export default {
   name: "home",
@@ -52,6 +80,7 @@ export default {
     }
   },
   components: {
+    Heading,
     ArticleCard,
     paint,
     customToolbar,
@@ -80,61 +109,82 @@ export default {
 }
 </script>
 
+
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
-.top_inner {
-  display: flex;
-}
-.c-card {
-  background: map_get($color, white);
-  border: 1px solid map_get($color, gray03);
-  border-radius: 10px;
-  width: 100%;
+@import "./src/scss/components/transition";
+.container {
   position: relative;
-  .color {
-    background: #87CEEB;
-    border-radius: 10px 10px 0 0;
-    display: inline-grid;
-    place-content: center;
-    width: 97%;
-    margin: 3%;
-    height: 293px;
+}
+.container_inner {
+  background-color: map_get($color, white);
+}
+.img_logo {
+  position: absolute;
+  top: 64px;
+  left: 40px;
+}
+.decoration_wrap {
+  position: absolute;
+  top: -24vh;
+  left: 0;
+  right: 0;
+  .img_decoration01 {
+    position: absolute;
+    top: 6vh;
+    right: 20px;
+    animation: anime01 1s ease-in-out infinite alternate;
   }
-  .title_wrap {
-    display: inline-grid;
-    place-items: center;
-    place-content: center;
+  .img_decoration02 {
+    position: absolute;
+    top: 15vh;
+    left: 20px;
+    animation: anime02 1s ease-in-out infinite alternate;
   }
-  .sub_title,
-  h3 {
-    background: map_get($color, white);
-    padding: 4px;
-    display: inline-block;
+  .img_decoration03 {
+    position: absolute;
+    top: 12vh;
+    left: 20px;
+    animation: anime03 1s ease-in-out infinite alternate;
   }
-  .sub_title {
-    font-size: 10px;
+  .img_decoration04 {
+    position: absolute;
+    top: 12vh;
+    right: 105px;
+    animation: anime04 1s ease-in-out infinite alternate;
   }
-  h3 {
-    font-size: 18px;
-    margin: 10px 0 0 0;
-  }
-  &.is-disabled {
-    background: map_get($color, gray03);
-    display: inline-grid;
-    place-content: center;
-    div,ul {
-      opacity: 0;
-    }
-  }
+}
+.img_wave {
+  width: 100%;
+  position: absolute;
+  top: -14vh;
+  z-index: -1;
+}
+/* 背景画像の見えている高さ */
+.parallax {
+  height: 500px;
+}
+/* 背景画像 */
+.parallax::before {
+  //background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
 .characters-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 2vh;
+  top: -37vh;
+  z-index: 1;
   .character01 {
     width: 18%;
   }
@@ -145,18 +195,37 @@ export default {
     width: 18%;
   }
 }
-li {
-  border-top: 1px solid #ccc;
-  padding: 16px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.bottom {
-  img {
-    position: absolute;
-    bottom: 0;
+.article_list {
+  li:not(:last-child) {
+      margin-bottom: 8px;
   }
 }
-
+.article_desc {
+  font-family: "KintoSans",serif;
+  color: map_get($color, text);
+  margin: 24px 0;
+  text-align: center;
+  word-break:keep-all;
+}
+.img_announce {
+  position: fixed;
+  top: 0;
+  bottom: -70vh;
+  right: -3px;
+  height: max-content;
+  margin: auto;
+  z-index: 1;
+  h4 {
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    font-family: "KintoSans",serif;
+    font-size: 0.9rem;
+    color: map_get($color, text);
+    margin: 0;
+  }
+  img {
+    width: 100px;
+  }
+}
 </style>

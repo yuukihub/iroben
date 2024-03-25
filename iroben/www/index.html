@@ -13,10 +13,86 @@
   <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
 </head>
 <body>
-    <div id="app"></div>
+
+    <canvas id="myCanvas"></canvas>
+    <div id="app" style="display:none;"></div>
+
+    <!-- three.jsを読み込む -->
+    <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/three@0.142.0/examples/js/loaders/GLTFLoader.js"></script>
+
     
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css" />
+
+    <script>
+        window.addEventListener("DOMContentLoaded", init);
+        function init() {
+            // レンダラーを作成
+            const canvasElement = document.querySelector('#myCanvas');
+            const renderer = new THREE.WebGLRenderer({
+                antialias: true,
+                canvas: canvasElement,
+            });
+
+            // サイズ指定
+            const width = 745;
+            const height = 540;
+            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setSize(width, height);
+
+            // シーンを作成
+            const scene = new THREE.Scene();
+            scene.background = new THREE.Color( 0x87B8C0 );
+
+            // 環境光源を作成
+            const ambientLight = new THREE.AmbientLight(0xffffff);
+            ambientLight.intensity = 2;
+            scene.add(ambientLight);
+
+            // 平行光源を作成
+            const directionalLight = new THREE.DirectionalLight(0xffffff);
+            directionalLight.intensity = 2;
+            directionalLight.position.set(0, 3, 6); //x,y,zの位置を指定
+            scene.add(directionalLight);
+
+            // カメラを作成
+            const camera = new THREE.PerspectiveCamera(45, width / height, 1, 10000);
+            camera.position.set(0, 0, 1500);
+
+            // カメラコントローラーを作成
+            const controls = new THREE.OrbitControls(camera, canvasElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.2;
+
+            // 3Dモデルの読み込み
+            const loader = new THREE.GLTFLoader();
+            let model = null;
+            loader.load(
+                //3Dモデルファイルのパスを指定
+                'assets/bed1.glb',
+                function (glb) {
+                    model = glb.scene;
+                    model.name = "model_castle";
+                    model.scale.set(80.0, 80.0, 80.0);
+                    model.position.set(0,-200,0);
+                    scene.add( glb.scene );
+                },
+                function (error) {
+                    console.log(error);
+                }
+            );
+
+            // リアルタイムレンダリング
+            tick();
+            function tick() {
+                controls.update();
+                renderer.render(scene, camera);
+                requestAnimationFrame(tick);
+            }
+        }
+    </script>
   <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
   <script nomodule crossorigin id="vite-legacy-polyfill" src="./assets/polyfills-legacy.js"></script>
   <script nomodule crossorigin id="vite-legacy-entry" data-src="./assets/index-legacy.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>

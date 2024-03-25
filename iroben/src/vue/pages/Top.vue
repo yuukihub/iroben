@@ -9,6 +9,12 @@
     <h1>
       <img class="logo" src="../../img/img/img_top_title.svg" alt="iroben">
     </h1>
+    <div class="decoration_wrap">
+      <img class="img_decoration01" src="../../img/img/img_decoration01.svg" alt="decoration01">
+      <img class="img_decoration02" src="../../img/img/img_decoration02.svg" alt="decoration02">
+      <img class="img_decoration03" src="../../img/img/img_decoration03.svg" alt="decoration03">
+      <img class="img_decoration04" src="../../img/img/img_decoration04.svg" alt="decoration04">
+    </div>
     <img class="slider" src="../../img/img/img_iphone.png" alt="iphone">
     <div class="characters_wrap">
       <img class="character01" src="../../img/img/img_character01_normal.svg" alt="character01">
@@ -103,7 +109,7 @@ h1 {
   right: 0;
   margin: auto;
   width: 36vh;
-  @include fadeIn();
+  animation: fadeInUp02 1.7s 0s ease-in-out forwards;
   @include mq(xsmall) {
     bottom: -30px;
   }
@@ -115,7 +121,7 @@ h1 {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 216px;
+  bottom: 236px;
   z-index: index($z-map, character);
   @include mq(regular) {
     bottom: 24vh;
@@ -124,7 +130,7 @@ h1 {
     bottom: 19vh;
   }
   .character01 {
-    width: 6vh;
+    width: 7vh;
     @include mq(regular) {
       width: 10vh;
     }
@@ -201,10 +207,50 @@ h1 {
     }
   }
   .button_area {
-    padding: 0 16px 32px 16px;
+    padding: 0 16px 48px 16px;
     max-width: 500px;
     width: 100%;
     margin: auto;
   }
+}
+.decoration_wrap {
+  position: absolute;
+  top: -160px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: max-content;
+  z-index: 1;
+  .img_decoration01 {
+    position: absolute;
+    top: 6vh;
+    right: 20px;
+    animation: anime01 2s ease-in-out infinite alternate;
+  }
+  .img_decoration02 {
+    position: absolute;
+    top: 15vh;
+    left: 20px;
+    animation: anime02 2s ease-in-out infinite alternate;
+  }
+  .img_decoration03 {
+    position: absolute;
+    top: 12vh;
+    left: 20px;
+    animation: anime03 2s ease-in-out infinite alternate;
+  }
+  .img_decoration04 {
+    position: absolute;
+    top: 12vh;
+    right: 105px;
+    animation: anime04 2s ease-in-out infinite alternate;
+  }
+}
+.img_wave {
+  width: 100%;
+  position: absolute;
+  top: -14vh;
+  z-index: -1;
 }
 </style>

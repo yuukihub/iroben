@@ -1,22 +1,19 @@
 <template>
   <v-ons-page>
     <img class="img_logo" src="../../img/img/img_logo.svg" alt="iroben">
+
     <div class="parallax"></div>
     <div class="container">
-      <div class="decoration_wrap">
-        <img class="img_decoration01" src="../../img/img/img_decoration01.svg" alt="decoration01">
-        <img class="img_decoration02" src="../../img/img/img_decoration02.svg" alt="decoration02">
-        <img class="img_decoration03" src="../../img/img/img_decoration03.svg" alt="decoration03">
-        <img class="img_decoration04" src="../../img/img/img_decoration04.svg" alt="decoration04">
-      </div>
       <img class="img_wave" src="../../img/img/img_wave_bottmBig.svg" alt="wave">
-      <div class="characters-wrap">
+      <!--<div class="characters-wrap">
         <img class="character03" src="../../img/img/img_character03_art.svg" alt="character03">
         <img class="character02" src="../../img/img/img_character02_art.svg" alt="character02">
         <img class="character01" src="../../img/img/img_character01_art.svg" alt="character01">
-      </div>
+      </div>-->
       <section class="container_inner">
         <heading title="Learn"></heading>
+
+
         <p class="article_desc">
           試験範囲の慣用色を<br>
           確認できます
@@ -113,6 +110,11 @@ export default {
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
 @import "./src/scss/components/transition";
+
+
+
+
+
 .container {
   position: relative;
 }
@@ -123,36 +125,7 @@ export default {
   position: absolute;
   top: 64px;
   left: 40px;
-}
-.decoration_wrap {
-  position: absolute;
-  top: -24vh;
-  left: 0;
-  right: 0;
-  .img_decoration01 {
-    position: absolute;
-    top: 6vh;
-    right: 20px;
-    animation: anime01 1s ease-in-out infinite alternate;
-  }
-  .img_decoration02 {
-    position: absolute;
-    top: 15vh;
-    left: 20px;
-    animation: anime02 1s ease-in-out infinite alternate;
-  }
-  .img_decoration03 {
-    position: absolute;
-    top: 12vh;
-    left: 20px;
-    animation: anime03 1s ease-in-out infinite alternate;
-  }
-  .img_decoration04 {
-    position: absolute;
-    top: 12vh;
-    right: 105px;
-    animation: anime04 1s ease-in-out infinite alternate;
-  }
+  animation: fadeInDown01 0.6s 0s ease-in-out forwards;
 }
 .img_wave {
   width: 100%;

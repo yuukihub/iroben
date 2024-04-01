@@ -10,18 +10,30 @@
   <div class="mv">
     <ul class="front_block">
       <li>
-        <img src="../../img/img/img_star.png" alt="star">
+        <img src="../../img/img/img_star01.png" alt="star">
       </li>
       <li>
-        <img class="img_star_blur" src="../../img/img/img_star_blur.png" alt="star">
+        <img class="img_star_blur" src="../../img/img/img_star_blur01.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/img_star04.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/img_star02.png" alt="star">
       </li>
     </ul>
     <ul class="back_block">
       <li>
-        <img src="../../img/img/img_star.png" alt="star">
+        <img src="../../img/img/img_star01.png" alt="star">
       </li>
       <li>
-        <img src="../../img/img/img_star.png" alt="star">
+        <img src="../../img/img/img_star03.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/img_star01.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/img_star02.png" alt="star">
       </li>
     </ul>
   </div >
@@ -125,15 +137,17 @@ export default {
   }
   li:nth-child(3){
     animation: animate_decoration_front01  30s linear infinite;
-    animation-duration: 28s;
+    animation-duration: 36s;
+    animation-delay: 1s;
   }
   li:nth-child(4){
     animation: animate_decoration_front02 linear infinite;
-    animation-duration: 26s;
+    animation-duration: 36s;
+    animation-delay: 8s;
   }
   li:nth-child(5){
     animation: animate_decoration_front01 linear infinite;
-    animation-duration: 12s;
+    animation-duration: 32s;
   }
   li:nth-child(6){
     animation: animate_decoration_front01 linear infinite;
@@ -141,19 +155,19 @@ export default {
   }
   li:nth-child(7){
   animation: animate_decoration_front01 linear infinite;
-  animation-duration: 13s;
+  animation-duration: 33s;
   }
   li:nth-child(8){
     animation: animate_decoration_front01 linear infinite;
-    animation-duration: 13s;
+    animation-duration: 33s;
   }
   li:nth-child(9){
     animation: animate_decoration_front01 linear infinite;
-    animation-duration: 12s;
+    animation-duration: 32s;
   }
   li:nth-child(10){
     animation: animate_decoration_front01 linear infinite;
-    animation-duration: 10s;
+    animation-duration: 30s;
   }
 }
 .back_block  {
@@ -162,54 +176,59 @@ export default {
   }
   li:nth-child(1){
     animation: animate_decoration_back01 30s linear infinite;
-    animation-duration: 24s;
+    animation-duration: 34s;
   }
   li:nth-child(2){
     animation: animate_decoration_back01 60s linear infinite;
     animation-duration: 32s;
-    animation-delay: 2s;
+    animation-delay: 5s;
   }
   li:nth-child(3){
     animation: animate_decoration_back02 20s linear infinite;
-    animation-duration: 15s;
+    animation-duration: 45s;
+    animation-delay: 8s;
   }
   li:nth-child(4){
     animation: animate_decoration_back02 30s linear infinite;
-    animation-duration: 22s;
+    animation-duration: 32s;
+    animation-delay: 2s;
   }
   li:nth-child(5){
     animation: animate_decoration_back01 30s linear infinite;
-    animation-duration: 19s;
+    animation-duration: 39s;
   }
   li:nth-child(6){
     animation: animate_decoration_back01 30s linear infinite;
-    animation-duration: 18s;
+    animation-duration: 38s;
   }
   li:nth-child(7){
     animation: animate_decoration_back01 30s linear infinite;
-    animation-duration: 16s;
+    animation-duration: 36s;
   }
   li:nth-child(8){
     animation: animate_decoration_back01 30s linear infinite;
-    animation-duration: 23s;
+    animation-duration: 33s;
   }
   li:nth-child(9){
     animation: animate_decoration_back01 30s linear infinite;
-    animation-duration: 24s;
+    animation-duration: 34s;
   }
   li:nth-child(10){
     animation: animate_decoration_back01 30s linear infinite;
-    animation-duration: 20s;
+    animation-duration: 30s;
   }
 }
 
 
 @keyframes animate_decoration_front01{
-  from {
+  0% {
     transform: translateX(-500px) translateY(0px) rotate(300deg);
   }
-  to {
-    transform: translateX(0px) translateY(100px) rotate(0deg);
+  50% {
+    transform: translateX(-200px) translateY(200px) rotate(0deg);
+  }
+  50% {
+    transform: translateX(0px) translateY(-100px) rotate(0deg);
   }
 }
 

@@ -57,20 +57,22 @@ export default {
   }
   h3 {
     position: absolute;
-    top: -15px;
-    left: 32px;
+    top: -21px;
+    left: 16px;
     display: flex;
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
+    color: map_get($color, text);
     img {
-      width: 36px;
-      margin-right: 16px;
+      height: 40px;
+      margin-right: 8px;
     }
     span{
       font-family: "KintoSans";
-      font-weight: bold;
+      font-weight: 500;
       font-size: 1.4rem;
+      color: map_get($color, text);
     }
     .title {
       display: flex;
@@ -81,11 +83,6 @@ export default {
     }
     .title-text {
       font-size: 1.3rem;
-    }
-  }
-  &.--character03 {
-    img {
-      width: 32px;
     }
   }
 }

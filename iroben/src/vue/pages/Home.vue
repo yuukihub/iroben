@@ -13,7 +13,7 @@
             <transition>
               <article-card
                   title="1"
-                  path="../../img/img/img_character01_3d.svg"
+                  path="../../img/img/img_character03_watch.svg"
                   alt="1級">
                 <aside class="prepare">
                   <h5>現在準備中です。</h5>
@@ -24,7 +24,7 @@
             <transition>
               <article-card
                   title="2"
-                  path="../../img/img/img_character02_3d.svg"
+                  path="../../img/img/img_character01_watch.svg"
                   alt="2級">
                 <ul class="article_list">
                   <li @click="toThirdColorLists">
@@ -37,9 +37,8 @@
               </article-card>
             </transition>
             <transition>
-              <article-card class="--character03"
-                            title="3"
-                            path="../../img/img/img_character03_3d.svg"
+              <article-card title="3"
+                            path="../../img/img/img_character02_normal.svg"
                             alt="3級">
                 <ul class="article_list">
                   <li @click="toThirdColorLists">
@@ -193,7 +192,7 @@ main {
 }
 /* 背景画像 */
 .parallax::before {
-  background-image: url("../../img/img/img_gradation_bg.png");
+ // background-image: url("../../img/img/img_gradation_bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,6 +226,7 @@ main {
     font-family: "KintoSans";
     font-weight: 500;
     font-size: 1.2rem;
+    color: map_get($color, text);
     padding: 0 32px;
     &:first-child {
       padding-top: 40px;
@@ -242,6 +242,7 @@ main {
     font-family: "KintoSans";
     font-weight: 500;
     font-size: 1.2rem;
+    color: map_get($color, text);
     padding: 24px 0 24px 32px;
   }
 }
@@ -255,6 +256,7 @@ main {
   font-family: "KintoSans";
   font-weight: 500;
   font-size: 1.08rem;
+  color: map_get($color, text);
   background: map_get($color, gray04);
   border-radius: 5px;
   padding: 32px;

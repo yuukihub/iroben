@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/components/MainVisula.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/img/blender/bed1.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/img/blender/bed1.blend1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/img/blender/bed1.glb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/img/blender/heart.glb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/ArticleCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/ArticleCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/Heading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/Heading.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Top.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Top.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_gradation_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/img/img_gradation_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/MainVisula.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/MainVisula.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +116,7 @@
       <workItem from="1711264170523" duration="4158000" />
       <workItem from="1711331938045" duration="5070000" />
       <workItem from="1711338075714" duration="2000" />
-      <workItem from="1711419659872" duration="22509000" />
+      <workItem from="1711419659872" duration="23416000" />
     </task>
     <servers />
   </component>

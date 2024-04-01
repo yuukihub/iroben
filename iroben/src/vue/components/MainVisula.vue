@@ -8,21 +8,38 @@
     <img class="logo_n" src="../../img/img/img_logo_n.png" alt="n">
   </div>
   <div class="mv">
-    <ul class="circles">
+    <ul class="front_block">
       <li>
-        <img class="character03" src="../../img/img/img_decoration_star01.png" alt="star">
+        <img src="../../img/img/img_decoration_star01.png" alt="star">
       </li>
       <li>
-        <img class="character03" src="../../img/img/img_decoration_circle01.png" alt="star">
+        <img src="../../img/img/img_decoration_circle01.png" alt="star">
       </li>
       <li>
-        <img class="character03" src="../../img/img/img_decoration_star01.png" alt="star">
+        <img src="../../img/img/img_decoration_star01.png" alt="star">
       </li>
       <li>
-        <img class="character03" src="../../img/img/img_decoration_star01.png" alt="star">
+        <img src="../../img/img/img_decoration_star01.png" alt="star">
       </li>
       <li>
-        <img class="character03" src="../../img/img/img_decoration_circle01.png" alt="star">
+        <img src="../../img/img/img_decoration_circle01.png" alt="star">
+      </li>
+    </ul>
+    <ul class="back_block">
+      <li>
+        <img src="../../img/img/img_decoration_star01.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/img_decoration_circle01.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/img_decoration_star01.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/img_decoration_star01.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/img_decoration_circle01.png" alt="star">
       </li>
     </ul>
   </div >
@@ -37,14 +54,13 @@ export default {
 <style lang="scss" scoped>
 .logo {
   position: absolute;
-  top: -40vh;
+  top: -30vh;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   width: max-content;
   height: max-content;
-  z-index: 1;
   animation: animate_logo07 10s ease infinite;
   img {
     margin: 0 4px;
@@ -83,13 +99,12 @@ export default {
   font-size: 50px;
 }
 
-
 .mv {
   width: 100%;
   height: 100vh;
 }
-
-.circles{
+.front_block,
+.back_block {
   position: absolute;
   top: 0;
   left: 0;
@@ -97,74 +112,141 @@ export default {
   height: 100%;
   overflow: hidden;
 }
-.circles img{
+.front_block img,
+.back_block img{
   width: 60px;
 }
-.circles li{
+.front_block li,
+.back_block li{
   position: absolute;
   display: block;
   bottom: 560px;
   animation-delay: 0s;
 }
-.circles li:nth-child(1){
-  left: 82%;
-  animation: animate_decoration 30s linear infinite;
-  animation-duration: 11s;
-}
-.circles li:nth-child(2){
-  left: 80%;
-  animation: animate_decoration 30s linear infinite;
-  animation-duration: 9s;
-}
-.circles li:nth-child(3){
-  left: 89%;
-  animation: animate_decoration 30s linear infinite;
-  animation-duration: 13s;
-}
-.circles li:nth-child(4){
-  left: 84%;
-  animation: animate_decoration 30s linear infinite;
-  animation-duration: 8s;
-}
-.circles li:nth-child(5){
-  left: 86%;
-  animation: animate_decoration 30s linear infinite;
-  /*width: 20px;
-  height: 20px;*/
-  animation-duration: 12s;
-}
-.circles li:nth-child(6){
-  left: 87%;
-  animation: animate_decoration 30s linear infinite;
-  animation-duration: 9s;
-}
-.circles li:nth-child(7){
+.front_block  {
+  li:nth-child(1){
+    left: 82%;
+    animation: animate_decoration_front 30s linear infinite;
+    animation-duration: 11s;
+  }
+  li:nth-child(2){
+    left: 80%;
+    animation: animate_decoration_front 30s linear infinite;
+    animation-duration: 9s;
+  }
+  li:nth-child(3){
+    left: 89%;
+    animation: animate_decoration_front 30s linear infinite;
+    animation-duration: 13s;
+  }
+  li:nth-child(4){
+    left: 84%;
+    animation: animate_decoration_front 30s linear infinite;
+    animation-duration: 8s;
+  }
+  li:nth-child(5){
+    left: 86%;
+    animation: animate_decoration_front 30s linear infinite;
+    animation-duration: 12s;
+  }
+  li:nth-child(6){
+    left: 87%;
+    animation: animate_decoration_front 30s linear infinite;
+    animation-duration: 9s;
+  }
+  li:nth-child(7){
   left: 88%;
-  animation: animate_decoration 30s linear infinite;
+  animation: animate_decoration_front 30s linear infinite;
   animation-duration: 13s;
+  }
+  li:nth-child(8){
+    left: 79%;
+    animation: animate_decoration_front 30s linear infinite;
+    animation-duration: 13s;
+  }
+  li:nth-child(9){
+    left: 80%;
+    animation: animate_decoration_front 30s linear infinite;
+    animation-duration: 12s;
+  }
+  li:nth-child(10){
+    left: 85%;
+    animation: animate_decoration_front 30s linear infinite;
+    animation-duration: 10s;
+  }
 }
-.circles li:nth-child(8){
-  left: 79%;
-  animation: animate_decoration 30s linear infinite;
-  animation-duration: 13s;
-}
-.circles li:nth-child(9){
-  left: 80%;
-  animation: animate_decoration 30s linear infinite;
-  animation-duration: 12s;
-}
-.circles li:nth-child(10){
-  left: 85%;
-  animation: animate_decoration 30s linear infinite;
-  animation-duration: 10s;
+.back_block  {
+  li {
+    z-index: -1;
+  }
+  li:nth-child(1){
+    left: 82%;
+    animation: animate_decoration_back 30s linear infinite;
+    animation-duration: 11s;
+  }
+  li:nth-child(2){
+    left: 80%;
+    animation: animate_decoration_back 30s linear infinite;
+    animation-duration: 9s;
+  }
+  li:nth-child(3){
+    left: 89%;
+    animation: animate_decoration_back 30s linear infinite;
+    animation-duration: 13s;
+  }
+  li:nth-child(4){
+    left: 84%;
+    animation: animate_decoration_back 30s linear infinite;
+    animation-duration: 8s;
+  }
+  li:nth-child(5){
+    left: 86%;
+    animation: animate_decoration_back 30s linear infinite;
+    animation-duration: 12s;
+  }
+  li:nth-child(6){
+    left: 87%;
+    animation: animate_decoration_back 30s linear infinite;
+    animation-duration: 9s;
+  }
+  li:nth-child(7){
+    left: 88%;
+    animation: animate_decoration_back 30s linear infinite;
+    animation-duration: 13s;
+  }
+  li:nth-child(8){
+    left: 79%;
+    animation: animate_decoration_back 30s linear infinite;
+    animation-duration: 13s;
+  }
+  li:nth-child(9){
+    left: 80%;
+    animation: animate_decoration_back 30s linear infinite;
+    animation-duration: 12s;
+  }
+  li:nth-child(10){
+    left: 85%;
+    animation: animate_decoration_back 30s linear infinite;
+    animation-duration: 10s;
+  }
 }
 
-@keyframes animate_decoration {
+
+@keyframes animate_decoration_front {
   from {
     transform: translateX(-400px) translateY(0px) rotate(300deg);
   }
   to {
-    transform: translateX(100px) translateY(-100px) rotate(0deg);
+    transform: translateX(100px) translateY(-50px) rotate(0deg);
+  }
+}
+
+@keyframes animate_decoration_back {
+  from {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  to {
+    transform: translateX(-400px) translateY(-30px) rotate(300deg);
   }
 }
 

@@ -9,13 +9,12 @@
 </template>
 
 <script>
-  //import Home from './vue/pages/Home.vue';
-  import Top from './vue/pages/Top.vue';
-  import Blender from './vue/components/Blender.vue';
+  import Home from './vue/pages/Home.vue';
+  //import Top from './vue/pages/Top.vue';
   export default {
     data() {
       return {
-        pageStack: [Blender]
+        pageStack: [Home]
       }
     }
   }

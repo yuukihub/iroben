@@ -10,17 +10,21 @@
       <img class="logo" src="../../img/img/img_top_title.svg" alt="iroben">
     </h1>
     <div class="decoration_wrap">
-      <img class="img_decoration01" src="../../img/img/img_decoration01.svg" alt="decoration01">
+      <img class="img_decoration --star_left01" src="../../img/img/img_star01.png" alt="decoration01">
+      <img class="img_decoration --heart_left01" src="../../img/img/img_heart02.png" alt="decoration01">
+
+
+      <img class="img_decoration --heart_right01" src="../../img/img/img_heart01.png" alt="decoration01">
+      <img class="img_decoration --brush" src="../../img/img/img_brush.png" alt="decoration01">
+      <img class="img_decoration --star_right01" src="../../img/img/img_star02.png" alt="decoration01">
+      <img class="img_decoration --heart_right02" src="../../img/img/img_heart03.png" alt="decoration01">
+
+      <!--<img class="img_decoration01" src="../../img/img/img_decoration01.svg" alt="decoration01">
       <img class="img_decoration02" src="../../img/img/img_decoration02.svg" alt="decoration02">
       <img class="img_decoration03" src="../../img/img/img_decoration03.svg" alt="decoration03">
-      <img class="img_decoration04" src="../../img/img/img_decoration04.svg" alt="decoration04">
+      <img class="img_decoration04" src="../../img/img/img_decoration04.svg" alt="decoration04">-->
     </div>
     <img class="slider" src="../../img/img/img_iphone.png" alt="iphone">
-    <div class="characters_wrap">
-      <img class="character01" src="../../img/img/img_character01_normal.svg" alt="character01">
-      <img class="character02" src="../../img/img/img_character02_normal.svg" alt="character02">
-      <img class="character03" src="../../img/img/img_character03_normal.svg" alt="character03">
-    </div>
     <div class="bottom">
       <div class="bottom_inner">
         <p class="desc">アプリをご利用いただくには、<br>
@@ -129,33 +133,6 @@ h1 {
   @include mq(big) {
     bottom: 19vh;
   }
-  .character01 {
-    width: 7vh;
-    @include mq(regular) {
-      width: 10vh;
-    }
-    @include mq(big) {
-      width: 8vh;
-    }
-  }
-  .character02 {
-    width: 7vh;
-    @include mq(regular) {
-      width: 11vh;
-    }
-    @include mq(big) {
-      width: 8vh;
-    }
-  }
-  .character03 {
-    width: 10vh;
-    @include mq(regular) {
-      width: 15vh;
-    }
-    @include mq(big) {
-      width: 12vh;
-    }
-  }
 }
 .bottom {
   background-image: url("../../img/img/img_wave_bottmBig.svg");
@@ -215,13 +192,52 @@ h1 {
 }
 .decoration_wrap {
   position: absolute;
-  top: -160px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: max-content;
   z-index: 1;
+  @include mq(regular){
+    width: 49vh;
+  }
+  .img_decoration {
+    &.--brush {
+      position: absolute;
+      width: 68px;
+      @include mq(regular){
+        width: 120px;
+      }
+    }
+    &.--heart_left01 {
+      position: absolute;
+      width: 34px;
+      @include mq(regular){
+        width: 60px;
+        bottom: -200px;
+      }
+    }
+    &.--star_left01 {
+      position: absolute;
+      width: 62px;
+      @include mq(regular){
+        width: 120px;
+      }
+    }
+    &.--heart_right01 {
+      position: absolute;
+      width: 52px;
+      @include mq(regular){
+      }
+    }
+    &.--heart_right02 {
+      position: absolute;
+      width: 28px;
+      @include mq(regular){
+      }
+    }
+    &.--star_right01 {
+      position: absolute;
+      width: 56px;
+      @include mq(regular){
+      }
+    }
+  }
   .img_decoration01 {
     position: absolute;
     top: 6vh;

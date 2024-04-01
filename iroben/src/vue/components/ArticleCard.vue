@@ -1,15 +1,10 @@
 <template>
   <article class="c-articleCard">
-    <div class="noteRings">
-      <img src="../../img/img/img_noteRing.svg" alt="ノートリング">
-      <img src="../../img/img/img_noteRing.svg" alt="ノートリング">
-      <img src="../../img/img/img_noteRing.svg" alt="ノートリング">
-      <img src="../../img/img/img_noteRing.svg" alt="ノートリング">
-      <img src="../../img/img/img_noteRing.svg" alt="ノートリング">
-      <img src="../../img/img/img_noteRing.svg" alt="ノートリング">
-    </div>
     <h3>
       <img :src="`${path}`" :alt="alt">
+      <span class="title" v-if="titleFlag">
+        <span class="title-class">{{title}}</span><span class="title-text">級対策</span>
+      </span>
     </h3>
     <slot></slot>
   </article>
@@ -22,13 +17,23 @@ export default {
     alt: {
       type: String,
       default: "",
-      required: true
+      required: false
     },
     path: {
       type: String,
       default: "",
-      required: true
+      required: false
     },
+    title: {
+      type: String,
+      default: "",
+      required: false
+    },
+    titleFlag: {
+      type: Boolean,
+      default: true,
+      required: false
+    }
   }
 }
 </script>
@@ -40,32 +45,47 @@ export default {
   background-color: map_get($color, white);
   width: 85vw;
   border-radius: 8px;
-  padding: 24px 64px;
+  padding: 8px;
   display: block;
   margin: auto;
   @include boxShadow;
-  .noteRings {
-    position: absolute;
-    top: 0;
-    left: 81vw;
-    z-index: 1;
-    img {
-      display: block;
-    }
+  &:not(:last-child) {
+  margin: 0 auto 40px;
+  }
+  &:first-child {
+    margin: 40px auto;
   }
   h3 {
+    position: absolute;
+    top: -15px;
+    left: 32px;
+    display: flex;
+    align-items: center;
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 0;
     img {
-      width: 32px;
+      width: 36px;
+      margin-right: 16px;
+    }
+    span{
+      font-family: "KintoSans";
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+    .title {
+      display: flex;
+      align-items: baseline;
+    }
+    .title-class {
+      font-size: 1.5rem;
+    }
+    .title-text {
+      font-size: 1.3rem;
     }
   }
-  &.--right {
-    margin-top: 24px;
-    margin-bottom: 24px;
-    .noteRings {
-      left: -2vw;
-      transform: rotate(180deg);
+  &.--character03 {
+    img {
+      width: 32px;
     }
   }
 }

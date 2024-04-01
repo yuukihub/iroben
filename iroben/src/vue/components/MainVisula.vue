@@ -34,6 +34,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "./src/scss/components/transition";
 .logo {
   position: absolute;
   top: -31vh;
@@ -43,6 +44,7 @@ export default {
   margin: auto;
   width: max-content;
   height: max-content;
+  animation: fadeInUp01 1.3s 0s ease-in-out forwards;
   img {
     margin: 0 4px;
     height: 68px;

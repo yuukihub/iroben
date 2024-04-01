@@ -1,7 +1,6 @@
 <template>
   <v-ons-page>
     <main-visula></main-visula>
-    <img class="img_logo" src="../../img/img/img_logo.svg" alt="iroben">
     <div class="parallax"></div>
     <div class="container">
       <main>
@@ -136,7 +135,6 @@ export default {
 @import "../src/scss/foundation/include";
 @import "./src/scss/components/transition";
 
-
 .container {
   position: absolute;
   top: 50vh;
@@ -144,6 +142,7 @@ export default {
   right: 0;
   margin: auto;
   padding-bottom: 88px;
+  animation: fadeInUp01 1.3s 0s ease-in-out forwards;
 }
 main {
   position: absolute;
@@ -161,29 +160,6 @@ main {
   left: 0;
   right: 0;
   opacity: 0.1;
-}
-.img_logo {
-  position: absolute;
-  top: -127px;
-  left: 40px;
-  animation: fadeInDown01 0.6s 0s ease-in-out forwards;
-}
-.img_cloud01{
-  width: 130px;
-  height: max-content;
-  position: absolute;
-  top: -30px;
-  left: -180px;
-  right: 0;
-  margin: auto;
-}
-.img_cloud02{
-  width: 90px;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  right: -220px;
-  margin: auto;
 }
 /* 背景画像の見えている高さ */
 .parallax {

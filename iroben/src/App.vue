@@ -10,11 +10,11 @@
 
 <script>
   import Home from './vue/pages/Home.vue';
-  //import Top from './vue/pages/Top.vue';
+  import Top from './vue/pages/Top.vue';
   export default {
     data() {
       return {
-        pageStack: [Home]
+        pageStack: [Top]
       }
     }
   }

@@ -10,36 +10,18 @@
   <div class="mv">
     <ul class="front_block">
       <li>
-        <img src="../../img/img/img_decoration_star01.png" alt="star">
+        <img src="../../img/img/img_star.png" alt="star">
       </li>
       <li>
-        <img src="../../img/img/img_decoration_circle01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_decoration_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_decoration_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_decoration_circle01.png" alt="star">
+        <img class="img_star_blur" src="../../img/img/img_star_blur.png" alt="star">
       </li>
     </ul>
     <ul class="back_block">
       <li>
-        <img src="../../img/img/img_decoration_star01.png" alt="star">
+        <img src="../../img/img/img_star.png" alt="star">
       </li>
       <li>
-        <img src="../../img/img/img_decoration_circle01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_decoration_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_decoration_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_decoration_circle01.png" alt="star">
+        <img src="../../img/img/img_star.png" alt="star">
       </li>
     </ul>
   </div >
@@ -54,19 +36,18 @@ export default {
 <style lang="scss" scoped>
 .logo {
   position: absolute;
-  top: -30vh;
+  top: -31vh;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   width: max-content;
   height: max-content;
-  animation: animate_logo07 10s ease infinite;
   img {
     margin: 0 4px;
     height: 68px;
     &.logo_i {
-      height: 88px;
+      height: 94px;
     }
   }
   .logo_i {
@@ -107,14 +88,20 @@ export default {
 .back_block {
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.front_block img,
+.front_block {
+  img {
+    width: 40px;
+  }
+  .img_star_blur {
+    width: 48px;
+  }
+}
 .back_block img{
-  width: 60px;
+  width: 32px;
 }
 .front_block li,
 .back_block li{
@@ -122,56 +109,48 @@ export default {
   display: block;
   bottom: 560px;
   animation-delay: 0s;
+  left: 100%;
 }
 .front_block  {
   li:nth-child(1){
-    left: 82%;
-    animation: animate_decoration_front 30s linear infinite;
-    animation-duration: 11s;
+    animation: animate_decoration_front01 30s linear infinite;
+    animation-duration:28s;
   }
   li:nth-child(2){
-    left: 80%;
-    animation: animate_decoration_front 30s linear infinite;
-    animation-duration: 9s;
+    animation: animate_decoration_front02 60s linear infinite;
+    animation-duration: 36s;
+    animation-delay: 4s;
   }
   li:nth-child(3){
-    left: 89%;
-    animation: animate_decoration_front 30s linear infinite;
-    animation-duration: 13s;
+    animation: animate_decoration_front01  30s linear infinite;
+    animation-duration: 28s;
   }
   li:nth-child(4){
-    left: 84%;
-    animation: animate_decoration_front 30s linear infinite;
-    animation-duration: 8s;
+    animation: animate_decoration_front02 linear infinite;
+    animation-duration: 26s;
   }
   li:nth-child(5){
-    left: 86%;
-    animation: animate_decoration_front 30s linear infinite;
+    animation: animate_decoration_front01 linear infinite;
     animation-duration: 12s;
   }
   li:nth-child(6){
-    left: 87%;
-    animation: animate_decoration_front 30s linear infinite;
-    animation-duration: 9s;
+    animation: animate_decoration_front01 linear infinite;
+    animation-duration: 29s;
   }
   li:nth-child(7){
-  left: 88%;
-  animation: animate_decoration_front 30s linear infinite;
+  animation: animate_decoration_front01 linear infinite;
   animation-duration: 13s;
   }
   li:nth-child(8){
-    left: 79%;
-    animation: animate_decoration_front 30s linear infinite;
+    animation: animate_decoration_front01 linear infinite;
     animation-duration: 13s;
   }
   li:nth-child(9){
-    left: 80%;
-    animation: animate_decoration_front 30s linear infinite;
+    animation: animate_decoration_front01 linear infinite;
     animation-duration: 12s;
   }
   li:nth-child(10){
-    left: 85%;
-    animation: animate_decoration_front 30s linear infinite;
+    animation: animate_decoration_front01 linear infinite;
     animation-duration: 10s;
   }
 }
@@ -180,73 +159,82 @@ export default {
     z-index: -1;
   }
   li:nth-child(1){
-    left: 82%;
-    animation: animate_decoration_back 30s linear infinite;
-    animation-duration: 11s;
+    animation: animate_decoration_back01 30s linear infinite;
+    animation-duration: 24s;
   }
   li:nth-child(2){
-    left: 80%;
-    animation: animate_decoration_back 30s linear infinite;
-    animation-duration: 9s;
+    animation: animate_decoration_back01 60s linear infinite;
+    animation-duration: 32s;
+    animation-delay: 2s;
   }
   li:nth-child(3){
-    left: 89%;
-    animation: animate_decoration_back 30s linear infinite;
-    animation-duration: 13s;
+    animation: animate_decoration_back02 20s linear infinite;
+    animation-duration: 15s;
   }
   li:nth-child(4){
-    left: 84%;
-    animation: animate_decoration_back 30s linear infinite;
-    animation-duration: 8s;
+    animation: animate_decoration_back02 30s linear infinite;
+    animation-duration: 22s;
   }
   li:nth-child(5){
-    left: 86%;
-    animation: animate_decoration_back 30s linear infinite;
-    animation-duration: 12s;
+    animation: animate_decoration_back01 30s linear infinite;
+    animation-duration: 19s;
   }
   li:nth-child(6){
-    left: 87%;
-    animation: animate_decoration_back 30s linear infinite;
-    animation-duration: 9s;
+    animation: animate_decoration_back01 30s linear infinite;
+    animation-duration: 18s;
   }
   li:nth-child(7){
-    left: 88%;
-    animation: animate_decoration_back 30s linear infinite;
-    animation-duration: 13s;
+    animation: animate_decoration_back01 30s linear infinite;
+    animation-duration: 16s;
   }
   li:nth-child(8){
-    left: 79%;
-    animation: animate_decoration_back 30s linear infinite;
-    animation-duration: 13s;
+    animation: animate_decoration_back01 30s linear infinite;
+    animation-duration: 23s;
   }
   li:nth-child(9){
-    left: 80%;
-    animation: animate_decoration_back 30s linear infinite;
-    animation-duration: 12s;
+    animation: animate_decoration_back01 30s linear infinite;
+    animation-duration: 24s;
   }
   li:nth-child(10){
-    left: 85%;
-    animation: animate_decoration_back 30s linear infinite;
-    animation-duration: 10s;
+    animation: animate_decoration_back01 30s linear infinite;
+    animation-duration: 20s;
   }
 }
 
 
-@keyframes animate_decoration_front {
+@keyframes animate_decoration_front01{
   from {
-    transform: translateX(-400px) translateY(0px) rotate(300deg);
+    transform: translateX(-500px) translateY(0px) rotate(300deg);
   }
   to {
-    transform: translateX(100px) translateY(-50px) rotate(0deg);
+    transform: translateX(0px) translateY(100px) rotate(0deg);
   }
 }
 
-@keyframes animate_decoration_back {
+@keyframes animate_decoration_front02 {
+  from {
+    transform: translateX(-500px) translateY(0px);
+  }
+  to {
+    transform: translateX(0px) translateY(100px) rotate(0deg);
+  }
+}
+
+@keyframes animate_decoration_back01 {
   from {
     transform: translateX(0) translateY(0) rotate(0deg);
   }
   to {
-    transform: translateX(-400px) translateY(-30px) rotate(300deg);
+    transform: translateX(-500px) translateY(-100px) rotate(300deg);
+  }
+}
+
+@keyframes animate_decoration_back02 {
+  from {
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    transform: translateX(-500px) translateY(100px);
   }
 }
 
@@ -255,7 +243,7 @@ export default {
     transform: translateX(0px) translateY(0px);
   }
   50% {
-    transform: translateX(3px) translateY(3px);
+    transform: translateX(6px) translateY(6px);
   }
   100% {
     transform: translateX(0px) translateY(0px);
@@ -264,37 +252,37 @@ export default {
 
 @keyframes animate_logo02 {
   0% {
-    transform: translateY(3px);
+    transform: translateY(6px);
   }
   50% {
     transform: translateY(0px);
   }
   100% {
-    transform: translateY(3px);
+    transform: translateY(6px);
   }
 }
 
 @keyframes animate_logo03 {
   0% {
-    transform: translateX(-2px) translateY(-3px);
+    transform: translateX(-6px) translateY(-8px);
   }
   50% {
     transform: translateX(0) translateY(0px);
   }
   100% {
-    transform: translateX(-2px) translateY(-3px);
+    transform: translateX(-6px) translateY(-8px);
   }
 }
 
 @keyframes animate_logo04 {
   0% {
-    transform: translateX(-2px) translateY(-3px);
+    transform: translateX(-4px) translateY(-6px);
   }
   50% {
     transform: translateX(0) translateY(0px);
   }
   100% {
-    transform: translateX(-2px) translateY(-3px);
+    transform: translateX(-4px) translateY(-6px);
   }
 }
 
@@ -303,7 +291,7 @@ export default {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(3px);
+    transform: translateY(6px);
   }
   100% {
     transform: translateY(0px);
@@ -315,7 +303,7 @@ export default {
     transform: translateX(0) translateY(0px);
   }
   50% {
-    transform: translateX(-2px) translateY(-3px);
+    transform: translateX(-4px) translateY(-6px);
   }
   100% {
     transform: translateX(0) translateY(0px);
@@ -327,7 +315,7 @@ export default {
     transform: translateX(0) translateY(0px);
   }
   50% {
-    transform: translateX(-5px) translateY(10px);
+    transform: translateX(-3px) translateY(6px);
   }
   100% {
     transform: translateX(0) translateY(0px);

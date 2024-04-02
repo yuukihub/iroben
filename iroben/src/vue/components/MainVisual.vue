@@ -44,6 +44,9 @@
       <li>
         <img src="../../img/img/img_decoration_home02.png" alt="decoration">
       </li>
+      <li>
+        <img src="../../img/img/img_decoration_home02.png" alt="decoration">
+      </li>
     </ul>
   </div >
 </template>
@@ -199,6 +202,14 @@ export default {
     animation: animate_decoration_back03 30s linear infinite;
     animation-duration: 240s;
     animation-delay: -75s;
+    img {
+      width: 330px;
+    }
+  }
+  li:nth-child(6){
+    animation: animate_decoration_back03 30s linear infinite;
+    animation-duration: 240s;
+    animation-delay: 8s;
     img {
       width: 330px;
     }

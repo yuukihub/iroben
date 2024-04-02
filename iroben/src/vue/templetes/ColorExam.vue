@@ -280,16 +280,6 @@ export default {
     font-size: 1.05rem;
   }
 }
-.color {
-  background: #87CEEB;
-  border-radius: 10px 10px 0 0;
-  display: block;
-  margin: 3%;
-  height: 35vh;
-  @include mq(sp) {
-    height: 30vh;
-  }
-}
 .counter {
   font-family: "MiuraGotic",serif;
   font-size: 1.6rem;

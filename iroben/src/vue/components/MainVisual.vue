@@ -22,9 +22,6 @@
           <img src="../../img/img/img_star02.png" alt="star">
         </li>
         <li>
-          <img src="../../img/img/img_star01.png" alt="star">
-        </li>
-        <li>
           <img src="../../img/img/img_blur_decoration02.png" alt="heart">
         </li>
       </ul>
@@ -42,10 +39,10 @@
           <img src="../../img/img/img_star02.png" alt="star">
         </li>
         <li>
-          <img src="../../img/img/img_decoration_home02.png" alt="decoration">
+          <img src="../../img/img/img_decoration_home01.png" alt="decoration">
         </li>
         <li>
-          <img src="../../img/img/img_decoration_home02.png" alt="decoration">
+          <img src="../../img/img/img_decoration_home01.png" alt="decoration">
         </li>
       </ul>
     </div>
@@ -61,20 +58,21 @@ export default {
 @import "./src/scss/components/transition";
 .logo {
   position: absolute;
-  top: -50vh;
+  top: -59vh;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  width: max-content;
+  width: 100%;
   height: max-content;
+  text-align: center;
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
   z-index: 1;
   img {
     margin: 0 5px;
-    height: 58px;
+    height: 7vh;
     &.logo_i {
-      height: 84px;
+      height: 10vh;
     }
   }
   .logo_i {
@@ -109,7 +107,7 @@ export default {
 
 .mv {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
 }
 .front_block,
 .back_block {
@@ -133,7 +131,7 @@ export default {
 .back_block li{
   position: absolute;
   display: block;
-  bottom: 560px;
+  bottom: 65vh;
   animation-delay: 0s;
   left: 100%;
 }
@@ -155,7 +153,7 @@ export default {
     }
   }
   li:nth-child(3){
-    animation: animate_decoration_front03  30s linear infinite;
+    animation: animate_decoration_front01  30s linear infinite;
     animation-duration: 40s;
     animation-delay: -1s;
   }
@@ -165,23 +163,15 @@ export default {
     animation-delay: 2s;
   }
   li:nth-child(5){
-    animation: animate_decoration_front01 linear infinite;
-    animation-duration: 40s;
-    animation-delay: 5s;
-  }
-  li:nth-child(6){
     animation: animate_decoration_front02 linear infinite;
-    animation-duration: 200s;
-    animation-delay: -2s;
+    animation-duration: 40s;
+    animation-delay: -21s;
     img {
-      width: 440px;
+      width: 100vw;
     }
   }
 }
 .back_block  {
-  li {
-    z-index: -1;
-  }
   li:nth-child(1){
     animation: animate_decoration_back01 30s linear infinite;
     animation-duration: 34s;
@@ -203,18 +193,18 @@ export default {
   }
   li:nth-child(5){
     animation: animate_decoration_back03 30s linear infinite;
-    animation-duration: 240s;
-    animation-delay: -75s;
+    animation-duration: 100s;
+    animation-delay: -20s;
     img {
-      width: 330px;
+      width: 80vw;
     }
   }
   li:nth-child(6){
     animation: animate_decoration_back03 30s linear infinite;
-    animation-duration: 240s;
+    animation-duration: 100s;
     animation-delay: 8s;
     img {
-      width: 330px;
+      width: 80vw;
     }
   }
 }
@@ -222,22 +212,22 @@ export default {
 
 @keyframes animate_decoration_front01{
   0% {
-    transform: translateX(-500px) translateY(-100px) rotate(300deg);
+    transform: translateX(-120vw) translateY(2vh) rotate(300deg);
   }
   50% {
-    transform: translateX(-200px) translateY(-50px);
+    transform: translateX(-60vw) translateY(-5vh);
   }
   100% {
-    transform: translateX(0px) translateY(-100px) rotate(0deg);
+    transform: translateX(0) translateY(2vh) rotate(0deg);
   }
 }
 
 @keyframes animate_decoration_front02 {
   0% {
-    transform: translateX(-500px) translateY(0px);
+    transform: translateX(-220vw) translateY(0px);
   }
   50% {
-    transform: translateX(-200px) translateY(-50px);
+    transform: translateX(-60vw) translateY(5vh);
   }
   100% {
     transform: translateX(0px) translateY(0px);
@@ -246,55 +236,55 @@ export default {
 
 @keyframes animate_decoration_front03 {
   0% {
-    transform: translateX(-550px) translateY(-75px) rotate(-10deg);
+    transform: translateX(-120vw) translateY(0) rotate(-10deg);
   }
   50% {
-    transform: translateX(-250px) translateY(-55px);
+    transform: translateX(-60vw) translateY(4vh);
   }
   100% {
-    transform: translateX(0px) translateY(-75px) rotate(0deg);
+    transform: translateX(0px) translateY(0) rotate(0deg);
   }
 }
 
 @keyframes animate_decoration_front04 {
   0% {
-    transform: translateX(-500px) translateY(10px);
+    transform: translateX(-120vw) translateY(4vh);
   }
   50% {
-    transform: translateX(-200px) translateY(-20px);
+    transform: translateX(-60vw) translateY(0);
   }
   100% {
-    transform: translateX(0px) translateY(10px);
+    transform: translateX(0px) translateY(4vh);
   }
 }
 
 @keyframes animate_decoration_back01 {
   0% {
-    transform: translateX(0) translateY(-100px) rotate(0deg);
+    transform: translateX(0) translateY(-15vh) rotate(0deg);
   }
   50% {
-    transform: translateX(-500px) translateY(-150px) rotate(200deg);
+    transform: translateX(-60vw) translateY(-20vh) rotate(200deg);
   }
   100% {
-    transform: translateX(-500px) translateY(-100px) rotate(400deg);
+    transform: translateX(-120vw) translateY(-15vh) rotate(400deg);
   }
 }
 
 @keyframes animate_decoration_back02 {
   from {
-    transform: translateX(0) translateY(-250px) rotate(0deg);
+    transform: translateX(0) translateY(-25vh) rotate(0deg);
   }
   to {
-    transform: translateX(-500px) translateY(-100px) rotate(200deg);
+    transform: translateX(-120vw) translateY(-10vh) rotate(200deg);
   }
 }
 
 @keyframes animate_decoration_back03 {
   from {
-    transform: translateX(0) translateY(-50px);
+    transform: translateX(0) translateY(-10vh);
   }
   to {
-    transform: translateX(-1000px) translateY(0px);
+    transform: translateX(-320vw) translateY(0px);
   }
 }
 
@@ -303,7 +293,7 @@ export default {
     transform: translateX(0px) translateY(0px);
   }
   50% {
-    transform: translateX(6px) translateY(6px);
+    transform: translateX(2px) translateY(4px);
   }
   100% {
     transform: translateX(0px) translateY(0px);
@@ -312,37 +302,37 @@ export default {
 
 @keyframes animate_logo02 {
   0% {
-    transform: translateY(6px);
+    transform: translateY(2px);
   }
   50% {
     transform: translateY(0px);
   }
   100% {
-    transform: translateY(6px);
+    transform: translateY(2px);
   }
 }
 
 @keyframes animate_logo03 {
   0% {
-    transform: translateX(-6px) translateY(-8px);
+    transform: translateX(-1px) translateY(-3px);
   }
   50% {
     transform: translateX(0) translateY(0px);
   }
   100% {
-    transform: translateX(-6px) translateY(-8px);
+    transform: translateX(-1px) translateY(-3px);
   }
 }
 
 @keyframes animate_logo04 {
   0% {
-    transform: translateX(-4px) translateY(-6px);
+    transform: translateX(-2px) translateY(-2px);
   }
   50% {
     transform: translateX(0) translateY(0px);
   }
   100% {
-    transform: translateX(-4px) translateY(-6px);
+    transform: translateX(-2px) translateY(-2px);
   }
 }
 
@@ -351,7 +341,7 @@ export default {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(6px);
+    transform: translateY(3px);
   }
   100% {
     transform: translateY(0px);
@@ -363,7 +353,7 @@ export default {
     transform: translateX(0) translateY(0px);
   }
   50% {
-    transform: translateX(-4px) translateY(-6px);
+    transform: translateX(-1px) translateY(-2px);
   }
   100% {
     transform: translateX(0) translateY(0px);
@@ -375,7 +365,7 @@ export default {
     transform: translateX(0) translateY(0px);
   }
   50% {
-    transform: translateX(-3px) translateY(6px);
+    transform: translateX(-1px) translateY(3px);
   }
   100% {
     transform: translateX(0) translateY(0px);

@@ -3,7 +3,6 @@ import VueOnsen from "vue-onsenui";
 import * as components from "vue-onsenui/esm/components";
 
 import App from "./App.vue";
-//import router from "./router";
 import store from "./store";
 
 import "onsenui/css/onsenui.css";
@@ -22,7 +21,6 @@ const app = createApp(App);
 Object.values(components).forEach(component => app.component(component.name, component));
 
 app.use(VueOnsen);
-//app.use(router);
 app.use(store);
 app.mount('#app');
 

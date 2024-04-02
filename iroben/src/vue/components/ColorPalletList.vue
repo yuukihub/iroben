@@ -148,7 +148,7 @@ export default {
   }
   &[type="radio"]:checked:before {
     content: '';
-    background-image: url(../../img/icon-check.svg);
+    background-image: url(../../img/icon/icon_check.svg);
     background-size: contain;
     position: absolute;
     width: 16px;

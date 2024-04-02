@@ -1,117 +1,88 @@
 <template>
   <v-ons-page>
     <main-visual></main-visual>
-    <div class="parallax"></div>
-    <div class="container">
-      <main>
-        <div class="section_bg"></div>
-        <section>
-          <div class="section_inner">
-            <transition>
-              <article-card
-                  title="1"
-                  path="../../img/img/img_character03_watch.svg"
-                  alt="1級">
-                <aside class="prepare">
-                  <h5>現在準備中です。</h5>
-                  <p>もう少々お待ちください。</p>
-                </aside>
-              </article-card>
-            </transition>
-            <transition>
-              <article-card
-                  title="2"
-                  path="../../img/img/img_character01_watch.svg"
-                  alt="2級">
-                <ul class="article_list">
-                  <li @click="toThirdColorLists">
-                    慣用色一覧
-                  </li>
-                  <li @click="toThirdExam">
-                    理解度チェック
-                  </li>
-                </ul>
-              </article-card>
-            </transition>
-            <transition>
-              <article-card title="3"
-                            path="../../img/img/img_character02_normal.svg"
-                            alt="3級">
-                <ul class="article_list">
-                  <li @click="toThirdColorLists">
-                    慣用色一覧
-                  </li>
-                  <li @click="toThirdExam">
-                    理解度チェック
-                  </li>
-                </ul>
-              </article-card>
-            </transition>
-          </div>
-        </section>
-        <section class="section_paint">
-          <heading :title="'「描いて」\n学ぶ'"></heading>
-          <p class="article_desc">
-            色彩検定に登場する色で<br>
-            落書きしてみませんか？
-          </p>
-          <transition>
-            <div class="section_inner">
-              <article-card :title-flag="false">
-                <ul class="paint_list">
-                  <li @click="toColorPaint">
-                    落書きして学ぶ
-                  </li>
-                </ul>
-              </article-card>
-            </div>
-          </transition>
-        </section>
-      </main>
-    </div>
-
-
+    <main class="container">
+        <!--<heading :title="'解いた問題数\n学ぶ'"></heading>-->
+      <section>
+        <article-card title="1">
+          <p class="prepare_announce">現在準備中です。</p>
+        </article-card>
+        <article-card title="2">
+          <ul>
+            <li>
+              <a href="#" @click="toThirdColorLists">
+                <span>慣用色一覧</span>
+                <img src="../../img/icon/icon_arrowRight.svg" alt="右矢印">
+              </a>
+            </li>
+            <li>
+              <a href="#" @click="toThirdExam">
+                <span>理解度チェック</span>
+                <img src="../../img/icon/icon_arrowRight.svg" alt="右矢印">
+              </a>
+            </li>
+          </ul>
+        </article-card>
+        <article-card title="3"
+                      class="--last">
+          <ul>
+            <li>
+              <a href="#" @click="toSecondColorLists">
+                <span>慣用色一覧</span>
+                <img src="../../img/icon/icon_arrowRight.svg" alt="右矢印">
+              </a>
+            </li>
+            <li>
+              <a href="#" @click="toSecondExam">
+                <span>理解度チェック</span>
+                <img src="../../img/icon/icon_arrowRight.svg" alt="右矢印">
+              </a>
+            </li>
+          </ul>
+        </article-card>
+      </section>
+    </main>
   </v-ons-page>
 </template>
 
 <script>
-import customToolbar from "../components/CustomToolbar.vue";
-import secondExam from "./SecondExam.vue";
-import secondColorLists from "@/vue/pages/SecondColorLists.vue";
-import thirdExam from "./ThirdExam.vue";
+import Heading from "@/vue/components/Heading.vue";
+import MainVisual from "@/vue/components/MainVisual.vue";
+import SideNavigation from "@/vue/components/SideNavigation.vue";
+import thirdExam from "@/vue/pages/ThirdExam.vue";
 import thirdColorLists from "@/vue/pages/ThirdColorLists.vue";
 import paint from "@/vue/pages/Paint.vue";
+import secondExam from "@/vue/pages/SecondExam.vue";
+import secondColorLists from "@/vue/pages/SecondColorLists.vue";
 import ArticleCard from "@/vue/components/ArticleCard.vue";
-import Heading from "@/vue/components/Heading.vue";
-import TestBg from "@/vue/components/MainVisual.vue";
-import MainVisula from "@/vue/components/MainVisual.vue";
-import MainVisual from "@/vue/components/MainVisual.vue";
 
 export default {
   name: "home",
   data(){
     return {
-      paintFlag: false,
+      open: false
     }
   },
   components: {
-    MainVisual,
-    MainVisula,
-    TestBg,
-    Heading,
     ArticleCard,
-    paint,
-    customToolbar,
+    SideNavigation,
+    MainVisual,
+    Heading,
   },
   created() {
     window.addEventListener("scroll", this.handleScroll);
   },
+  props: ['pageStack'],
   methods: {
+    push() {
+      this.pageStack.push(home);
+    },
     pop(){
       this.pageStack.pop();
     },
     toColorPaint(){
       this.pageStack.push(paint);
+      //console.log("neko")
     },
     toSecondExam() {
       this.pageStack.push(secondExam);
@@ -126,7 +97,6 @@ export default {
       this.pageStack.push(thirdColorLists);
     },
   },
-  props: ['pageStack'],
 }
 </script>
 
@@ -136,131 +106,68 @@ export default {
 @import "./src/scss/components/transition";
 
 .container {
-  position: absolute;
-  top: 50vh;
-  left: 0;
-  right: 0;
-  margin: auto;
-  padding-bottom: 88px;
-  animation: fadeInUp01 1.3s 0s ease-in-out forwards;
+  &:before {
+    content: "";
+    background-image: url("../../img/img/img_wave_bottmBig.svg");
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 67vh;
+  }
+  &:after {
+    content: "";
+    background: map_get($color, white);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 47vh;
+  }
 }
 main {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  padding-bottom: 88px;
-}
-.section_bg {
-  height: 100vh;
-  background: rgb(251,246,240);
-  background: linear-gradient(180deg, rgba(251,246,240,1) 19%, rgba(251,246,240,0) 65%, rgba(252,218,203,0) 77%);
+  height: 67vh;
   position: absolute;
   bottom: 0;
+  width: 100%;
+}
+section {
+  position: absolute;
+  top: 14vh;
   left: 0;
   right: 0;
-  opacity: 0.1;
-}
-/* 背景画像の見えている高さ */
-.parallax {
-  position: relative;
-  height: 74vh;
-}
-/* 背景画像 */
-.parallax::before {
- // background-image: url("../../img/img/img_gradation_bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: "";
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  top: 0;
+  margin: 0 auto;
+  display: block;
   width: 100%;
-  z-index: -1;
-}
-.characters-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: -37vh;
-  z-index: 1;
-  .character01 {
-    width: 18%;
-  }
-  .character02 {
-    width: 17%;
-  }
-  .character03 {
-    width: 18%;
-  }
-}
-.article_list {
-  li {
-    font-family: "KintoSans";
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: map_get($color, text);
-    padding: 0 32px;
-    &:first-child {
-      padding-top: 40px;
-      padding-bottom: 24px;
-    }
-    &:last-child {
-      padding-bottom: 32px;
-    }
-  }
-}
-.paint_list {
-  li {
-    font-family: "KintoSans";
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: map_get($color, text);
-    padding: 24px 0 24px 32px;
-  }
-}
-.article_desc {
-  font-family: "KintoSans",serif;
-  color: map_get($color, text);
-  text-align: center;
-  word-break:keep-all;
-}
-.prepare {
-  font-family: "KintoSans";
-  font-weight: 500;
-  font-size: 1.08rem;
-  color: map_get($color, text);
-  background: map_get($color, gray04);
-  border-radius: 5px;
-  padding: 32px;
-  text-align: center;
-}
-.img_announce {
-  position: fixed;
-  top: 0;
-  bottom: -70vh;
-  right: -3px;
   height: max-content;
-  margin: auto;
-  z-index: 1;
-  h4 {
-    position: absolute;
-    top: 12px;
-    right: 17px;
+  background: map_get($color, white);
+  z-index: 2;
+  p,
+  li {
     font-family: "KintoSans",serif;
-    font-size: 0.9rem;
-    color: map_get($color, text);
-    margin: 0;
+    //color: map_get($color, text);
+    margin-bottom: 16px;
+    font-size: 1.2rem;
   }
-  img {
-    width: 100px;
+  a {
+    display: flex;
+    align-items: center;
+  }
+  .prepare_announce {
+    background: map_get($color, gray03);
+    padding: 16px;
+    text-align: center;
+    border-radius: 5px;
   }
 }
-.section_paint {
-  .c-articleCard {
+.c-articleCard {
+  &.--last {
     margin-bottom: 0;
   }
 }

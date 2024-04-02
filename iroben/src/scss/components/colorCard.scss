@@ -17,4 +17,14 @@
     right: 0;
     margin: auto;
   }
+  .color {
+    background: #87CEEB;
+    border-radius: 10px 10px 0 0;
+    display: block;
+    margin: 3%;
+    height: 35vh;
+    @include mq(sp) {
+      height: 30vh;
+    }
+  }
 }

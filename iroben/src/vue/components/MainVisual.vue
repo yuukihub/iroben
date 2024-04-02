@@ -21,6 +21,9 @@
       <li>
         <img src="../../img/img/img_star02.png" alt="star">
       </li>
+      <li>
+        <img src="../../img/img/img_star01.png" alt="star">
+      </li>
     </ul>
     <ul class="back_block">
       <li>
@@ -41,7 +44,7 @@
 
 <script>
 export default {
-  name: "MainVisula"
+  name: "MainVisual"
 }
 </script>
 
@@ -49,7 +52,7 @@ export default {
 @import "./src/scss/components/transition";
 .logo {
   position: absolute;
-  top: -31vh;
+  top: -50vh;
   bottom: 0;
   left: 0;
   right: 0;
@@ -141,33 +144,14 @@ export default {
     animation-delay: 1s;
   }
   li:nth-child(4){
-    animation: animate_decoration_front02 linear infinite;
+    animation: animate_decoration_front01 linear infinite;
     animation-duration: 36s;
     animation-delay: 8s;
   }
   li:nth-child(5){
     animation: animate_decoration_front01 linear infinite;
-    animation-duration: 32s;
-  }
-  li:nth-child(6){
-    animation: animate_decoration_front01 linear infinite;
-    animation-duration: 29s;
-  }
-  li:nth-child(7){
-  animation: animate_decoration_front01 linear infinite;
-  animation-duration: 33s;
-  }
-  li:nth-child(8){
-    animation: animate_decoration_front01 linear infinite;
-    animation-duration: 33s;
-  }
-  li:nth-child(9){
-    animation: animate_decoration_front01 linear infinite;
-    animation-duration: 32s;
-  }
-  li:nth-child(10){
-    animation: animate_decoration_front01 linear infinite;
-    animation-duration: 30s;
+    animation-duration: 36s;
+    animation-delay: 10s;
   }
 }
 .back_block  {
@@ -179,12 +163,12 @@ export default {
     animation-duration: 34s;
   }
   li:nth-child(2){
-    animation: animate_decoration_back01 60s linear infinite;
+    animation: animate_decoration_back02 40s linear infinite;
     animation-duration: 32s;
     animation-delay: 5s;
   }
   li:nth-child(3){
-    animation: animate_decoration_back02 20s linear infinite;
+    animation: animate_decoration_back01 20s linear infinite;
     animation-duration: 45s;
     animation-delay: 8s;
   }
@@ -193,69 +177,51 @@ export default {
     animation-duration: 32s;
     animation-delay: 2s;
   }
-  li:nth-child(5){
-    animation: animate_decoration_back01 30s linear infinite;
-    animation-duration: 39s;
-  }
-  li:nth-child(6){
-    animation: animate_decoration_back01 30s linear infinite;
-    animation-duration: 38s;
-  }
-  li:nth-child(7){
-    animation: animate_decoration_back01 30s linear infinite;
-    animation-duration: 36s;
-  }
-  li:nth-child(8){
-    animation: animate_decoration_back01 30s linear infinite;
-    animation-duration: 33s;
-  }
-  li:nth-child(9){
-    animation: animate_decoration_back01 30s linear infinite;
-    animation-duration: 34s;
-  }
-  li:nth-child(10){
-    animation: animate_decoration_back01 30s linear infinite;
-    animation-duration: 30s;
-  }
 }
 
 
 @keyframes animate_decoration_front01{
   0% {
-    transform: translateX(-500px) translateY(0px) rotate(300deg);
+    transform: translateX(-500px) translateY(-100px) rotate(300deg);
   }
   50% {
-    transform: translateX(-200px) translateY(200px) rotate(0deg);
+    transform: translateX(-200px) translateY(-50px);
   }
-  50% {
+  100% {
     transform: translateX(0px) translateY(-100px) rotate(0deg);
   }
 }
 
 @keyframes animate_decoration_front02 {
-  from {
-    transform: translateX(-500px) translateY(0px);
+  0% {
+    transform: translateX(-500px) translateY(-70px) rotate(30deg);
   }
-  to {
-    transform: translateX(0px) translateY(100px) rotate(0deg);
+  50% {
+    transform: translateX(-200px) translateY(-50px);
+  }
+  100% {
+    transform: translateX(0px) translateY(-70px) rotate(0deg);
   }
 }
 
 @keyframes animate_decoration_back01 {
-  from {
-    transform: translateX(0) translateY(0) rotate(0deg);
+  0% {
+    transform: translateX(0) translateY(-100px) rotate(0deg);
   }
-  to {
-    transform: translateX(-500px) translateY(-100px) rotate(300deg);
+  50% {
+    transform: translateX(-500px) translateY(-150px) rotate(150deg);
+  }
+  100% {
+    transform: translateX(-500px) translateY(0px) rotate(300deg);
   }
 }
 
 @keyframes animate_decoration_back02 {
   from {
-    transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(-150px);
   }
   to {
-    transform: translateX(-500px) translateY(100px);
+    transform: translateX(-500px) translateY(-100px);
   }
 }
 

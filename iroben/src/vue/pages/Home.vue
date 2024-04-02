@@ -1,13 +1,11 @@
 <template>
   <v-ons-page>
-    <main-visula></main-visula>
+    <main-visual></main-visual>
     <div class="parallax"></div>
     <div class="container">
       <main>
         <div class="section_bg"></div>
         <section>
-          <heading :title="'「問いて」\n学ぶ'"
-                   class="--top"></heading>
           <div class="section_inner">
             <transition>
               <article-card
@@ -85,8 +83,9 @@ import thirdColorLists from "@/vue/pages/ThirdColorLists.vue";
 import paint from "@/vue/pages/Paint.vue";
 import ArticleCard from "@/vue/components/ArticleCard.vue";
 import Heading from "@/vue/components/Heading.vue";
-import TestBg from "@/vue/components/MainVisula.vue";
-import MainVisula from "@/vue/components/MainVisula.vue";
+import TestBg from "@/vue/components/MainVisual.vue";
+import MainVisula from "@/vue/components/MainVisual.vue";
+import MainVisual from "@/vue/components/MainVisual.vue";
 
 export default {
   name: "home",
@@ -96,6 +95,7 @@ export default {
     }
   },
   components: {
+    MainVisual,
     MainVisula,
     TestBg,
     Heading,

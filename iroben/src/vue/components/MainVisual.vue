@@ -1,54 +1,54 @@
 <template>
-  <div class="logo">
-    <img class="logo_i" src="../../img/img/img_logo_i.png" alt="i">
-    <img class="logo_r" src="../../img/img/img_logo_r.png" alt="r">
-    <img class="logo_o" src="../../img/img/img_logo_o.png" alt="o">
-    <img class="logo_b" src="../../img/img/img_logo_b.png" alt="b">
-    <img class="logo_e" src="../../img/img/img_logo_e.png" alt="e">
-    <img class="logo_n" src="../../img/img/img_logo_n.png" alt="n">
-  </div>
-  <div class="mv">
-    <ul class="front_block">
-      <li>
-        <img src="../../img/img/img_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_blur_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_star02.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_blur_decoration02.png" alt="heart">
-      </li>
-    </ul>
-    <ul class="back_block">
-      <li>
-        <img src="../../img/img/img_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_star03.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_star02.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/img_decoration_home02.png" alt="decoration">
-      </li>
-      <li>
-        <img src="../../img/img/img_decoration_home02.png" alt="decoration">
-      </li>
-    </ul>
-  </div >
+    <div class="logo">
+      <img class="logo_i" src="../../img/img/img_logo_i.png" alt="i">
+      <img class="logo_r" src="../../img/img/img_logo_r.png" alt="r">
+      <img class="logo_o" src="../../img/img/img_logo_o.png" alt="o">
+      <img class="logo_b" src="../../img/img/img_logo_b.png" alt="b">
+      <img class="logo_e" src="../../img/img/img_logo_e.png" alt="e">
+      <img class="logo_n" src="../../img/img/img_logo_n.png" alt="n">
+    </div>
+    <div class="mv">
+      <ul class="front_block">
+        <li>
+          <img src="../../img/img/img_star01.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/img_blur_star01.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/img_star01.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/img_star02.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/img_star01.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/img_blur_decoration02.png" alt="heart">
+        </li>
+      </ul>
+      <ul class="back_block">
+        <li>
+          <img src="../../img/img/img_star01.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/img_star03.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/img_star01.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/img_star02.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/img_decoration_home02.png" alt="decoration">
+        </li>
+        <li>
+          <img src="../../img/img/img_decoration_home02.png" alt="decoration">
+        </li>
+      </ul>
+    </div>
 </template>
 
 <script>
@@ -69,6 +69,7 @@ export default {
   width: max-content;
   height: max-content;
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
+  z-index: 1;
   img {
     margin: 0 5px;
     height: 58px;
@@ -117,8 +118,10 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  animation: fadeInUp01 1.3s 0s ease-in-out forwards;
 }
 .front_block {
+  z-index: 2;
   img {
     width: 40px;
   }
@@ -144,11 +147,11 @@ export default {
     }
   }
   li:nth-child(2){
-    animation: animate_decoration_front02 60s linear infinite;
-    animation-duration: 34s;
+    animation: animate_decoration_front04 60s linear infinite;
+    animation-duration: 44s;
     animation-delay: -10s;
     img {
-      width: 70px;
+      width: 64px;
     }
   }
   li:nth-child(3){
@@ -250,6 +253,18 @@ export default {
   }
   100% {
     transform: translateX(0px) translateY(-75px) rotate(0deg);
+  }
+}
+
+@keyframes animate_decoration_front04 {
+  0% {
+    transform: translateX(-500px) translateY(10px);
+  }
+  50% {
+    transform: translateX(-200px) translateY(-20px);
+  }
+  100% {
+    transform: translateX(0px) translateY(10px);
   }
 }
 

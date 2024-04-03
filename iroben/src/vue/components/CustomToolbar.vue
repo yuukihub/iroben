@@ -4,7 +4,7 @@
         <div class="top">
           <div class="bar"></div>
         </div>
-        <img src="../../img/img/img_wave_top.svg" alt="wave">
+        <img src="../../img/img/common/img_wave_top.svg" alt="wave">
       </div>
       <div class="contents">
         <div>

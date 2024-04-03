@@ -45,5 +45,10 @@
   box-shadow: 0 0 16px -14px #161c2b;
 }
 
+@mixin KintoSans(){
+  font-family: "KintoSans",serif;
+  color: map_get($color, text);
+}
+
 
 

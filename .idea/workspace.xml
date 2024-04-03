@@ -5,36 +5,224 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/components/SideNavigation.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/node_modules/sass/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/node_modules/sass/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/node_modules/sass/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/node_modules/sass/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/node_modules/sass/sass.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/node_modules/sass/sass.dart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/node_modules/sass/sass.default.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/node_modules/sass/sass.default.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/node_modules/sass/sass.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/node_modules/sass/sass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/node_modules/sass/sass.node.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/node_modules/sass/sass.node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/node_modules/sass/sass.node.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/node_modules/sass/sass.node.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/node_modules/sass/types/importer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/node_modules/sass/types/importer.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/node_modules/sass/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/node_modules/sass/types/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/node_modules/sass/types/legacy/options.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/node_modules/sass/types/legacy/options.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/node_modules/sass/types/options.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/node_modules/sass/types/options.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_blur_decoration02.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/img/img_blur_decoration02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_decoration_home01.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/img/img/img_decoration_home01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/scss/components/colorCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/scss/components/colorCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/css/common.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/css/common.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/icon/icon_eye.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/1x/アセット 17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/1x/アセット 19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/1x/アセット 21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/1x/アセット 23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/1x/アセット 24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/1x/アセット 25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/Group 289779.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/SVG/98BF66259BC8B90E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/SVG/アセット 15.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/SVG/アセット 2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/image.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_blur_decoration01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_blur_decoration02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_blur_star01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_brush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_character01_3d.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_character01_art.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_character01_normal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_character01_watch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_character02_3d.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_character02_art.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_character02_normal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_character02_watch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_character03_3d.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_character03_art.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_character03_normal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_character03_watch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_characters_announce.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_cloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_decoration01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_decoration02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_decoration03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_decoration04.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_decoration05.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_decoration_circle01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_decoration_home01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_decoration_home02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_decoration_pallet01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_decoration_pallet02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_decoration_pallet03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_error.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_explain_ColorPalletToggle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_gradation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_gradation_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_gradation_bg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_heart01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_heart02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_heart03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_heart04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_heart05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_heart_blur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_logo_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_logo_e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_logo_i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_logo_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_logo_o.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_logo_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_noteRing.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_second_colorPallet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_star01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_star011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_star012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_star02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_star03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_star04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_star_blur02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_star_blur03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_success.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_third_colorPallet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_title01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_title02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_title03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_top_test.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_top_title.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_wave_bottmBig.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_wave_bottmLarge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_wave_bottom.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/img/img/img_wave_top.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/scss/foundation/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/scss/foundation/_mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/ArticleCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/ArticleCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/Blender.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/ColorPallet.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/ColorPallet.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletCanvas.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletCanvas.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/ColorPalletList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/CustomToolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/CustomToolbar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/MainVisual.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/MainVisual.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/Modal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/Modal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Top.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Top.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorDetail.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorExam.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorExam.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_blur_decoration02.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/img_blur_decoration02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorLists.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorLists.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/KintoSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/KintoSans-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/KintoSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/Material-Design-Iconic-Font.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/Material-Design-Iconic-Font.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/Material-Design-Iconic-Font.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/MiuraGotic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/bed1.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/heart.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/icon-check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/icon_arrowRight.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/icon_check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/icon_circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/icon_delete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/icon_error.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/icon_eye.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/icon_flag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/icon_success.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/image.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_blur_decoration01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_blur_decoration02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_blur_heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_blur_star01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_brush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_character01_art.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_character01_normal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_character01_watch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_character02_art.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_character02_normal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_character02_watch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_character03_art.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_character03_normal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_character03_watch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_characters_announce.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_cloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_decoration01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_decoration02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_decoration03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_decoration04.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_decoration05.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_decoration_circle01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_decoration_home01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_decoration_home02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_decoration_pallet01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_decoration_pallet02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_decoration_pallet03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_decoration_star01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_error.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_explain_ColorPalletToggle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_gradation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_gradation_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_gradation_bg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_heart01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_heart02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_heart03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_heart04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_heart05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_heart_blur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_logo_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_logo_b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_logo_e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_logo_e.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_logo_i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_logo_i.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_logo_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_logo_n.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_logo_o.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_logo_o.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_logo_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_logo_r.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_noteRing.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_second_colorPallet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_star01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_star02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_star03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_star04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_star_blur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_star_blur01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_star_blur02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_star_blur03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_success.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_third_colorPallet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_title01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_title02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_title03.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_top_test.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_top_title.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_wave_bottmBig.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_wave_bottmLarge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_wave_bottom.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/img_wave_top.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/ionicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/ionicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/ionicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/ionicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/ionicons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/polyfills-legacy.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +329,8 @@
       <workItem from="1711331938045" duration="5070000" />
       <workItem from="1711338075714" duration="2000" />
       <workItem from="1711419659872" duration="45222000" />
-      <workItem from="1712037831229" duration="12861000" />
+      <workItem from="1712037831229" duration="14555000" />
+      <workItem from="1712185264680" duration="2280000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,7 @@
 <template>
   <div class="colorDetail-wrap">
     <div class="c-colorCard">
-      <img class="eye_image" src="../../img/icon/icon_eye.svg" alt="目">
+      <img class="eye_image" src="../../img/img/common/icon_eye.svg" alt="目">
       <div class="color" :style="`background-color:${item.colorCode}`">
         <div  class="fault_count"
               v-if="faultCountArray[item.id]">
@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="bottom">
-      <img src="../../img/img/img_wave_bottom.svg" alt="wave">
+      <img src="../../img/img/common/img_wave_bottom.svg" alt="wave">
     </div>
   </div>
 </template>
@@ -87,8 +87,7 @@ export default {
     padding: 0 16px;
   }
   .c-colorCard {
-    font-family: "KintoSans",serif;
-    color: map_get($color, text);
+    @include KintoSans();
     @include fadeIn();
     @include mq(sp){
       margin-top: 1vh;

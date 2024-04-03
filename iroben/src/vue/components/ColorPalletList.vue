@@ -114,8 +114,7 @@ export default {
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
 .c-colorLists{
-  font-family: "KintoSans",serif;
-  color: map_get($color, text);
+  @include KintoSans();
   ul {
     display: grid;
     place-items: center;
@@ -211,8 +210,7 @@ export default {
   }
 }
 .noData_desc {
-  font-family: "KintoSans",serif;
-  color: map_get($color, text);
+  @include KintoSans();
   background: map_get($color, gray04);
   padding: 16px;
   text-align: center;

@@ -1,7 +1,7 @@
 <template>
   <div>
     <article class="c-modal">
-      <img class="eye_image" src="../../img/icon/icon_eye.svg" alt="目">
+      <img class="eye_image" src="../../img/img/common/icon_eye.svg" alt="目">
       <slot>
       </slot>
       <div v-if="buttonFlag"

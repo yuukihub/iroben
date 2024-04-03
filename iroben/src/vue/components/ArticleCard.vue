@@ -36,22 +36,17 @@ export default {
 @import "./src/scss/foundation/include";
 .c-articleCard {
   width: 80vw;
-  margin: 0 auto 48px;
+  margin: 0 auto 32px;
 }
 .title {
   display: flex;
   align-items: center;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   &-class,
   &-text{
-    font-family: "KintoSans",serif;
     font-weight: 500;
-    color: map_get($color, text);
-  }
-  &-class {
-    font-size: 1.43rem;
-    margin-right: 2px;
+    @include KintoSans();
   }
 }
 </style>

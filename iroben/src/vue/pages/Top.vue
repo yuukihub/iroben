@@ -4,28 +4,28 @@
       <div class="top">
         <div class="bar"></div>
       </div>
-      <img src="../../img/img/img_wave_top.svg" alt="wave">
+      <img src="../../img/img/common/img_wave_top.svg" alt="wave">
     </header>
     <h1>
-      <img class="logo" src="../../img/img/img_top_title.svg" alt="iroben">
+      <img class="logo" src="../../img/img/top/img_top_title.svg" alt="iroben">
     </h1>
     <div class="decoration_wrap">
       <!--
-      <img class="img_decoration --star_left01" src="../../img/img/img_star01.png" alt="decoration01">
-      <img class="img_decoration --heart_left01" src="../../img/img/img_heart02.png" alt="decoration01">
+      <img class="img_decoration --star_left01" src="../../img/img/top/img_star01.png" alt="decoration01">
+      <img class="img_decoration --heart_left01" src="../../img/img/top/img_heart02.png" alt="decoration01">
 
 
-      <img class="img_decoration --heart_right01" src="../../img/img/img_heart01.png" alt="decoration01">
-      <img class="img_decoration --brush" src="../../img/img/img_brush.png" alt="decoration01">
-      <img class="img_decoration --star_right01" src="../../img/img/img_star02.png" alt="decoration01">
-      <img class="img_decoration --heart_right02" src="../../img/img/img_heart03.png" alt="decoration01">-->
+      <img class="img_decoration --heart_right01" src="../../img/img/top/img_heart01.png" alt="decoration01">
+      <img class="img_decoration --brush" src="../../img/img/top/img_brush.png" alt="decoration01">
+      <img class="img_decoration --star_right01" src="../../img/img/top/img_star02.png" alt="decoration01">
+      <img class="img_decoration --heart_right02" src="../../img/img/top/img_heart03.png" alt="decoration01">-->
 
-      <!--<img class="img_decoration01" src="../../img/img/img_decoration01.svg" alt="decoration01">
-      <img class="img_decoration02" src="../../img/img/img_decoration02.svg" alt="decoration02">
-      <img class="img_decoration03" src="../../img/img/img_decoration03.svg" alt="decoration03">
-      <img class="img_decoration04" src="../../img/img/img_decoration04.svg" alt="decoration04">-->
+      <!--<img class="img_decoration01" src="../../img/img/top/img_decoration01.svg" alt="decoration01">
+      <img class="img_decoration02" src="../../img/img/top/img_decoration02.svg" alt="decoration02">
+      <img class="img_decoration03" src="../../img/img/top/img_decoration03.svg" alt="decoration03">
+      <img class="img_decoration04" src="../../img/img/top/img_decoration04.svg" alt="decoration04">-->
     </div>
-    <img class="slider" src="../../img/img/img_iphone.png" alt="iphone">
+    <img class="slider" src="../../img/img/top/img_iphone.png" alt="iphone">
     <div class="bottom">
       <div class="bottom_inner">
         <p class="desc">アプリをご利用いただくには、<br>
@@ -136,7 +136,7 @@ h1 {
   }
 }
 .bottom {
-  background-image: url("../../img/img/img_wave_bottmBig.svg");
+  background-image: url("../../img/img/common/img_wave_bottmBig.svg");
   position: absolute;
   left: 0;
   right: 0;

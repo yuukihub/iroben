@@ -1,48 +1,48 @@
 <template>
     <div class="logo">
-      <img class="logo_i" src="../../img/img/img_logo_i.png" alt="i">
-      <img class="logo_r" src="../../img/img/img_logo_r.png" alt="r">
-      <img class="logo_o" src="../../img/img/img_logo_o.png" alt="o">
-      <img class="logo_b" src="../../img/img/img_logo_b.png" alt="b">
-      <img class="logo_e" src="../../img/img/img_logo_e.png" alt="e">
-      <img class="logo_n" src="../../img/img/img_logo_n.png" alt="n">
+      <img class="logo_i" src="../../img/img/home/img_logo_i.png" alt="i">
+      <img class="logo_r" src="../../img/img/home/img_logo_r.png" alt="r">
+      <img class="logo_o" src="../../img/img/home/img_logo_o.png" alt="o">
+      <img class="logo_b" src="../../img/img/home/img_logo_b.png" alt="b">
+      <img class="logo_e" src="../../img/img/home/img_logo_e.png" alt="e">
+      <img class="logo_n" src="../../img/img/home/img_logo_n.png" alt="n">
     </div>
     <div class="mv">
       <ul class="front_block">
         <li>
-          <img src="../../img/img/img_star01.png" alt="star">
+          <img src="../../img/img/home/img_star01.png" alt="star">
         </li>
         <li>
-          <img src="../../img/img/img_blur_star01.png" alt="star">
+          <img src="../../img/img/home/img_blur_star01.png" alt="star">
         </li>
         <li>
-          <img src="../../img/img/img_star01.png" alt="star">
+          <img src="../../img/img/home/img_star01.png" alt="star">
         </li>
         <li>
-          <img src="../../img/img/img_star02.png" alt="star">
+          <img src="../../img/img/home/img_star02.png" alt="star">
         </li>
         <li>
-          <img src="../../img/img/img_blur_decoration02.png" alt="heart">
+          <img src="../../img/img/home/img_blur_decoration01.png" alt="heart">
         </li>
       </ul>
       <ul class="back_block">
         <li>
-          <img src="../../img/img/img_star01.png" alt="star">
+          <img src="../../img/img/home/img_star01.png" alt="star">
         </li>
         <li>
-          <img src="../../img/img/img_star03.png" alt="star">
+          <img src="../../img/img/home/img_star03.png" alt="star">
         </li>
         <li>
-          <img src="../../img/img/img_star01.png" alt="star">
+          <img src="../../img/img/home/img_star01.png" alt="star">
         </li>
         <li>
-          <img src="../../img/img/img_star02.png" alt="star">
+          <img src="../../img/img/home/img_star02.png" alt="star">
         </li>
         <li>
-          <img src="../../img/img/img_decoration_home01.png" alt="decoration">
+          <img src="../../img/img/home/img_decoration_back.png" alt="decoration">
         </li>
         <li>
-          <img src="../../img/img/img_decoration_home01.png" alt="decoration">
+          <img src="../../img/img/home/img_decoration_back.png" alt="decoration">
         </li>
       </ul>
     </div>
@@ -166,6 +166,7 @@ export default {
     animation: animate_decoration_front02 linear infinite;
     animation-duration: 40s;
     animation-delay: -21s;
+    z-index: 2;
     img {
       width: 100vw;
     }
@@ -194,7 +195,7 @@ export default {
   li:nth-child(5){
     animation: animate_decoration_back03 30s linear infinite;
     animation-duration: 100s;
-    animation-delay: -20s;
+    animation-delay: -30s;
     img {
       width: 80vw;
     }

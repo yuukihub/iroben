@@ -204,9 +204,9 @@ export default {
 .c-colorPallet_header {
   background: map_get($color, main01);
   h3 {
-    font-family: "KintoSans",serif;
-    font-weight: 500;
+    @include KintoSans();
     color: map_get($color, white);
+    font-weight: 500;
     margin: 0;
     padding: 16px 24px;
     font-size: 1.1rem;

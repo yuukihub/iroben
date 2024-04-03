@@ -706,35 +706,4 @@ input[type=checkbox]:checked::after {
   }
 }
 
-.inner {
-  padding: 0 16px;
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.flex {
-  display: flex;
-}
-
-.section {
-  padding: 100px 0;
-}
-@media (max-width: 375px) {
-  .section {
-    padding: 50px 0;
-  }
-}
-.section--under .c-heading02 {
-  padding: 100px 0;
-}
-@media (max-width: 375px) {
-  .section--under .c-heading02 {
-    padding: 20px 0;
-  }
-}
-
 /*# sourceMappingURL=common.css.map */

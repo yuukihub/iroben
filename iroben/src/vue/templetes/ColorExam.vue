@@ -3,7 +3,7 @@
     <div v-if="status">
       <div class="exam_inner">
         <div class="c-colorCard">
-          <img class="eye_image" src="../../img/icon/icon_eye.svg" alt="目">
+          <img class="eye_image" src="../../img/img/common/icon_eye.svg" alt="目">
           <div class="color" :style="{background: currentQuestion.colorCode}"></div>
           <div class="counter">
             <span class="current_number">
@@ -61,20 +61,12 @@
         </p>
         <p class="text">
           また、間違えた色は<a href="#" @click="toPaint">ペイント機能</a>で<br>
-          落書きすることもできます。
-        </p>
-        <img class="img_colorPallet"
-            src="../../img/img/img_explain_ColorPalletToggle.png"
-            alt="不正解のみを表示したカラーパレット">
-        <p class="text">
-          ペイント機能の<br>
-          「不正解のみスイッチ」を<br>
-          オンにすると、<br>
-          間違えた色が表示されます。
-        </p>
-        <p class="text">
+          落書きすることもできます。<br>
           復習にぜひご活用ください。
         </p>
+        <img class="img_colorPallet"
+            src="../../img/img/exam/img_explain_ColorPalletToggle.png"
+            alt="不正解のみを表示したカラーパレット">
       </div>
     </div>
 
@@ -82,11 +74,11 @@
       <div class="result_image">
         <template v-if="correctFlag">
           <confetti></confetti>
-          <img src="../../img/img/img_success.svg" alt="正解">
+          <img src="../../img/img/exam/img_success.svg" alt="正解">
           <button @click="next()">{{btnTitle}}</button>
         </template>
         <template v-if="faultFlag">
-          <img src="../../img/img/img_error.svg" alt="不正解">
+          <img src="../../img/img/exam/img_error.svg" alt="不正解">
           <button @click="next()">{{btnTitle}}</button>
         </template>
       </div>
@@ -293,17 +285,15 @@ export default {
   }
 }
 .result_title {
-  font-family: "KintoSans",serif;
+  @include KintoSans();
   font-weight: 500;
   text-align: center;
   margin-top: 0;
   font-size: 18px;
   margin-bottom: 40px;
-  color: map_get($color, text);
 }
 .score_wrap {
-  font-family: "KintoSans",serif;
-  color: map_get($color, text);
+  @include KintoSans();
   max-width: 93%;
   width: 100%;
   background: map_get($color, white);

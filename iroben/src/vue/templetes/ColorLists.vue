@@ -4,12 +4,12 @@
                   :custom-button-disabled-flag="faultItem.length"
                   @clear="openConfirmModal"></custom-toolbar>
   <div class="wrap">
-    <img class="wave" src="../../img/img/img_wave_bottom.svg" alt="wave">
+    <img class="wave" src="../../img/img/common/img_wave_bottom.svg" alt="wave">
     <ul class="c-colorLists">
       <li v-for="(item, index) in colorLists" :key="index" @click="getItem(item)">
         <div class="left">
           <div class="colorPanel">
-            <img class="eye_image" src="../../img/icon/icon_eye.svg" alt="目">
+            <img class="eye_image" src="../../img/img/common/icon_eye.svg" alt="目">
             <div class="color" :style="{background: item.colorCode}">
             </div>
           </div>
@@ -58,7 +58,7 @@
           級の「不正解のみ」の色も<br>
           同時にリセットされます。
         </p>
-        <img :src="`../../img/img/img_${level}_colorPallet.png`" alt="不正解のみを表示したカラーパレット">
+        <img :src="`../../img/img/colorList/img_${level}_colorPallet.png`" alt="不正解のみを表示したカラーパレット">
         <p class="desc">
           本当に削除しますか？
         </p>
@@ -161,8 +161,7 @@ export default {
   @include fadeIn;
 }
 .c-colorLists {
-  font-family: "KintoSans",serif;
-  color: map_get($color, text);
+  @include KintoSans();
   @include mq(sp) {
     font-size: 0.9rem;
   }
@@ -273,7 +272,7 @@ export default {
     margin: 0;
   }
   .sub_title {
-    font-family: "KintoSans",serif;
+    @include KintoSans();
     font-weight: 500;
     text-align: center;
   }

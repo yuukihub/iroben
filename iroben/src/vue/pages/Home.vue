@@ -4,8 +4,21 @@
     <main class="container">
         <!--<heading :title="'解いた問題数\n学ぶ'"></heading>-->
       <section>
-        <article-card title="1">
-          <p class="prepare_announce">現在準備中です。</p>
+        <article-card title="3">
+          <ul>
+            <li>
+              <a href="#" @click="toSecondColorLists">
+                <span>慣用色一覧</span>
+                <img src="../../img/icon/icon_arrowRight.svg" alt="右矢印">
+              </a>
+            </li>
+            <li>
+              <a href="#" @click="toSecondExam">
+                <span>理解度チェック</span>
+                <img src="../../img/icon/icon_arrowRight.svg" alt="右矢印">
+              </a>
+            </li>
+          </ul>
         </article-card>
         <article-card title="2">
           <ul>
@@ -23,22 +36,11 @@
             </li>
           </ul>
         </article-card>
-        <article-card title="3"
+        <article-card title="1"
                       class="--last">
-          <ul>
-            <li>
-              <a href="#" @click="toSecondColorLists">
-                <span>慣用色一覧</span>
-                <img src="../../img/icon/icon_arrowRight.svg" alt="右矢印">
-              </a>
-            </li>
-            <li>
-              <a href="#" @click="toSecondExam">
-                <span>理解度チェック</span>
-                <img src="../../img/icon/icon_arrowRight.svg" alt="右矢印">
-              </a>
-            </li>
-          </ul>
+          <div class="prepare_announce">
+            <h4>現在準備中です。</h4>
+          </div>
         </article-card>
       </section>
     </main>
@@ -108,7 +110,7 @@ export default {
 .container {
   &:before {
     content: "";
-    background-image: url("../../img/img/img_wave_bottmBig.svg");
+    background-image: url("../../img/img/common/img_wave_bottmBig.svg");
     position: absolute;
     left: 0;
     right: 0;
@@ -148,27 +150,36 @@ section {
   height: max-content;
   background: map_get($color, white);
   z-index: 2;
-  p,
+  h4,
   li {
-    font-family: "KintoSans",serif;
-    //color: map_get($color, text);
-    margin-bottom: 16px;
-    font-size: 1.2rem;
+    @include KintoSans();
+    margin-bottom: 8px;
+  }
+  h4 {
+    color: map_get($color, gray01);
+    margin: 0;
   }
   a {
     display: flex;
     align-items: center;
   }
-  .prepare_announce {
-    background: map_get($color, gray03);
+  ul {
     padding: 16px;
+    border-radius: 5px;
+    border: 1px solid map_get($color, gray03);
+  }
+  .prepare_announce {
+    border: 1px solid map_get($color, gray03);
+    background:map_get($color, gray04);
+    padding: 12px;
     text-align: center;
     border-radius: 5px;
+    margin: 0;
   }
-}
-.c-articleCard {
-  &.--last {
-    margin-bottom: 0;
+  .c-articleCard {
+    &.--last {
+      margin-bottom: 0;
+    }
   }
 }
 </style>

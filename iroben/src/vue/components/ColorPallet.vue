@@ -233,7 +233,7 @@ export default {
   background: white;
   padding: 8px 0;
   width: calc(100% / 3);
-  color: map_get($color, main02);
+  color: map_get($color, main01);
   font-size: 16px;
   font-weight: bold;
   @include mq(sp) {
@@ -247,7 +247,7 @@ export default {
     color: map_get($color, gray02);
   }
   &.is-current {
-    border-bottom: 2px solid map_get($color, main02);
+    border-bottom: 2px solid map_get($color, main01);
   }
 }
 </style>

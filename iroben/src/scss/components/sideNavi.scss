@@ -33,34 +33,46 @@
     @include KintoSans();
     width: 100%;
     box-sizing: border-box;
-    border-bottom: 1px solid map_get($color, gray03);
     padding: 8px 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     &.is-disabled {
       color: map_get($color, gray01);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .prepare_text {
+      font-size: 0.9rem;
+      display: block;
     }
   }
   a {
-    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-
 }
 
 .nav-title {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
-  margin: 16px 24px 0 24px;
+  font-size: 1.1rem;
+  padding: 8px 24px;
   @include KintoSans();
+  background: map_get($color, gray04);
+  @include KintoSans();
+  margin: 0;
+  background: white;
   img {
+    width: 32px;
     margin-right: 4px;
   }
 }
 
 .nav-subTitle {
-  margin: 16px 24px 0px 24px;
-  font-size: 1.1rem;
+  padding: 8px 24px;
+  margin: 0;
+  font-size: 1rem;
+  background: map_get($color, gray04);
   @include KintoSans();
+  font-weight: normal;
 }

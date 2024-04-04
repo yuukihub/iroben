@@ -1,5 +1,4 @@
-@import "./src/scss/foundation/variables";
-@import "./src/scss/foundation/mixins";
+@import "./src/scss/foundation/include";
 .c-colorCard {
   position: relative;
   background: map_get($color, white);

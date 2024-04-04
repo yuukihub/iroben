@@ -1,9 +1,96 @@
 <template>
   <v-ons-page>
+    <nav>
+      <button type="btn" class="nav-btn" v-on:click="open=!open">
+        　<i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="nav-items" v-bind:class="{ 'is-active': open }">
+        <h1>
+          ロゴ
+        </h1>
+        <h2 class="nav-title">
+          <img src="../../img/icon/icon_board_list.svg" alt="icon">
+          学ぶ
+        </h2>
+        <h3 class="nav-subTitle">
+          1級
+        </h3>
+        <ul class="nav-item">
+          <li class="is-disabled">
+            練習問題（※準備中）
+          </li>
+            <a href="#" @click="toFirstColorLists">
+              <li>
+                <span>慣用色一覧</span>
+                <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+              </li>
+            </a>
+        </ul>
+        <h3 class="nav-subTitle">
+          2級
+        </h3>
+        <ul class="nav-item">
+          <a href="#" @click="toSecondExam">
+            <li>
+              <span>練習問題</span>
+              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+            </li>
+          </a>
+          <a href="#" @click="toSecondColorLists">
+            <li>
+              <span>慣用色一覧</span>
+              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+            </li>
+          </a>
+        </ul>
+        <h3 class="nav-subTitle">
+          3級
+        </h3>
+        <ul class="nav-item">
+          <a href="#" @click="toThirdExam">
+            <li>
+              <span>練習問題</span>
+              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+            </li>
+          </a>
+          <a href="#" @click="toThirdColorLists">
+            <li>
+              <span>慣用色一覧</span>
+              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+            </li>
+          </a>
+        </ul>
+        <h2 class="nav-title">
+          <img src="../../img/icon/icon_paint.svg" alt="icon">
+          描く
+        </h2>
+        <ul class="nav-item">
+          <a href="#" @click="toColorPaint">
+            <li>
+              <span>ペイント</span>
+              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+            </li>
+          </a>
+        </ul>
+        <h2 class="nav-title">
+          <img src="../../img/icon/icon_paint.svg" alt="icon">
+          その他
+        </h2>
+        <ul class="nav-item">
+          <a href="#" @click="toColorPaint">
+            <li>
+              <span>利用規約</span>
+              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+            </li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+
     <main-visual></main-visual>
     <main class="container">
       <section>
-        <heading :title="'問いて学ぶ'"></heading>
+        <!--<heading :title="'問いて学ぶ'"></heading>
         <article-card title="1級"
                       img-path="../../img/icon/icon_board_list.svg">
           <ul>
@@ -54,7 +141,7 @@
               <span>ペイント</span>
             </a>
           </ul>
-        </article-card>
+        </article-card>-->
       </section>
     </main>
   </v-ons-page>
@@ -119,7 +206,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
-@import "./src/scss/components/transition";
+@import "../src/scss/components/transition";
+@import "../src/scss/components/sideNavi";
 
 .container {
   &:before {

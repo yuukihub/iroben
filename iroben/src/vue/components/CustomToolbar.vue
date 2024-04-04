@@ -86,7 +86,7 @@
     position: relative;
     .bar {
       background: white;
-      height: 9vh;
+      height: 12vh;
     }
     img {
       width: 100%;

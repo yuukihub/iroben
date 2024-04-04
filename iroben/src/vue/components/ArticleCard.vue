@@ -1,9 +1,11 @@
 <template>
   <article class="c-articleCard">
     <h3 class="title">
-      <span v-if="titleFlag">
-        <span class="title-class">{{title}}</span><span class="title-text">級対策</span>
-      </span>
+      <img v-if="title"
+          class="icon_list"
+           :src="imgPath"
+           alt="list">
+      <span class="title-text">{{title}}</span>
     </h3>
     <slot></slot>
   </article>
@@ -23,9 +25,9 @@ export default {
       default: "",
       required: false
     },
-    titleFlag: {
-      type: Boolean,
-      default: true,
+    imgPath: {
+      type: String,
+      default: "",
       required: false
     }
   }
@@ -46,7 +48,11 @@ export default {
   &-class,
   &-text{
     font-weight: 500;
+    font-size: 1.1rem;
     @include KintoSans();
+  }
+  img {
+    margin-right: 4px;
   }
 }
 </style>

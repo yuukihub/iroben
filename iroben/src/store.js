@@ -7,6 +7,9 @@ import createPersistedState from 'vuex-persistedstate';
 //app.use(Vuex);
 export default new Vuex.Store({
     state:{
+        first: {
+            faultArray: [],
+        },
         second: {
             faultArray: [],
         },
@@ -36,6 +39,7 @@ export default new Vuex.Store({
         {
             key: 'iroben',
             paths: [
+                'first',
                 'second',
                 'third',
             ],

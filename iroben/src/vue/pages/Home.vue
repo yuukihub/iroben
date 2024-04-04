@@ -2,45 +2,58 @@
   <v-ons-page>
     <main-visual></main-visual>
     <main class="container">
-        <!--<heading :title="'解いた問題数\n学ぶ'"></heading>-->
       <section>
-        <article-card title="3">
+        <heading :title="'問いて学ぶ'"></heading>
+        <article-card title="1級"
+                      img-path="../../img/icon/icon_board_list.svg">
           <ul>
             <li>
-              <a href="#" @click="toSecondColorLists">
-                <span>慣用色一覧</span>
-                <img src="../../img/icon/icon_arrowRight.svg" alt="右矢印">
-              </a>
+              練習問題（現在準備中です）
             </li>
             <li>
-              <a href="#" @click="toSecondExam">
-                <span>理解度チェック</span>
-                <img src="../../img/icon/icon_arrowRight.svg" alt="右矢印">
+              <a href="#" @click="toFirstColorLists">
+                <span>慣用色一覧</span>
               </a>
             </li>
           </ul>
         </article-card>
-        <article-card title="2">
+        <article-card title="2級"
+                      img-path="../../img/icon/icon_board_list.svg">
           <ul>
+            <li>
+              <a href="#" @click="toThirdExam">
+                <span>練習問題</span>
+              </a>
+            </li>
             <li>
               <a href="#" @click="toThirdColorLists">
                 <span>慣用色一覧</span>
-                <img src="../../img/icon/icon_arrowRight.svg" alt="右矢印">
-              </a>
-            </li>
-            <li>
-              <a href="#" @click="toThirdExam">
-                <span>理解度チェック</span>
-                <img src="../../img/icon/icon_arrowRight.svg" alt="右矢印">
               </a>
             </li>
           </ul>
         </article-card>
-        <article-card title="1"
-                      class="--last">
-          <div class="prepare_announce">
-            <h4>現在準備中です。</h4>
-          </div>
+        <article-card title="3級"
+                      img-path="../../img/icon/icon_board_list.svg">
+          <ul>
+            <li>
+              <a href="#" @click="toSecondExam">
+                <span>練習問題</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" @click="toSecondColorLists">
+                <span>慣用色一覧</span>
+              </a>
+            </li>
+          </ul>
+        </article-card>
+        <heading :title="'描いて学ぶ'"></heading>
+        <article-card>
+          <ul>
+            <a href="#" @click="toColorPaint">
+              <span>ペイント</span>
+            </a>
+          </ul>
         </article-card>
       </section>
     </main>
@@ -50,12 +63,12 @@
 <script>
 import Heading from "@/vue/components/Heading.vue";
 import MainVisual from "@/vue/components/MainVisual.vue";
-import SideNavigation from "@/vue/components/SideNavigation.vue";
 import thirdExam from "@/vue/pages/ThirdExam.vue";
 import thirdColorLists from "@/vue/pages/ThirdColorLists.vue";
 import paint from "@/vue/pages/Paint.vue";
 import secondExam from "@/vue/pages/SecondExam.vue";
 import secondColorLists from "@/vue/pages/SecondColorLists.vue";
+import firstColorLists from "@/vue/pages/FirstColorLists.vue";
 import ArticleCard from "@/vue/components/ArticleCard.vue";
 
 export default {
@@ -67,7 +80,6 @@ export default {
   },
   components: {
     ArticleCard,
-    SideNavigation,
     MainVisual,
     Heading,
   },
@@ -84,7 +96,9 @@ export default {
     },
     toColorPaint(){
       this.pageStack.push(paint);
-      //console.log("neko")
+    },
+    toFirstColorLists() {
+      this.pageStack.push(firstColorLists);
     },
     toSecondExam() {
       this.pageStack.push(secondExam);
@@ -153,33 +167,29 @@ section {
   h4,
   li {
     @include KintoSans();
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   h4 {
     color: map_get($color, gray01);
     margin: 0;
+    text-align: center;
   }
   a {
     display: flex;
     align-items: center;
+    img {
+      margin-right: 4px;
+    }
   }
   ul {
     padding: 16px;
     border-radius: 5px;
     border: 1px solid map_get($color, gray03);
-  }
-  .prepare_announce {
-    border: 1px solid map_get($color, gray03);
-    background:map_get($color, gray04);
-    padding: 12px;
-    text-align: center;
-    border-radius: 5px;
-    margin: 0;
-  }
-  .c-articleCard {
-    &.--last {
-      margin-bottom: 0;
-    }
+    max-height: 220px;
+    overflow-y: scroll;
   }
 }
 </style>

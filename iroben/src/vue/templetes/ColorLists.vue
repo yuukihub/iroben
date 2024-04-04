@@ -20,9 +20,6 @@
         <div class="right">
             <span class="faultItem"
                   :class="{'is-disabled':!faultCountArray[item.id]}">
-              <img  class="" src="../../img/icon/icon_flag.svg"
-                    v-if="faultCountArray[item.id]"
-                    alt="flag">
               不正解
               <template v-if="!faultCountArray[item.id]">
                 <span class="count">0</span>

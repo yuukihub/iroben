@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/iroben/src/resource/firstQuestion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/pages/FirstColorLists.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iroben/src/vue/pages/firstColorDetail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Agreement.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/resource/constant-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/resource/constant-router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/ArticleCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/ArticleCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/CustomToolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/CustomToolbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/Heading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/components/Heading.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/components/SideNavigation.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorLists.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/templetes/ColorLists.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Paint.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Paint.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Top.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Top.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/firstColorDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/FirstColorDetail.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
@@ -127,7 +122,7 @@
       <workItem from="1711338075714" duration="2000" />
       <workItem from="1711419659872" duration="45222000" />
       <workItem from="1712037831229" duration="14555000" />
-      <workItem from="1712185264680" duration="10118000" />
+      <workItem from="1712185264680" duration="13759000" />
     </task>
     <servers />
   </component>

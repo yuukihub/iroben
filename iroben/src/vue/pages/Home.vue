@@ -141,7 +141,6 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
     height: 47vh;

@@ -1,12 +1,6 @@
 <template>
     <header class="l-header">
-      <div v-if="headerDesignFlag">
-        <div class="top">
-          <div class="bar"></div>
-        </div>
-        <img src="../../img/img/common/img_wave_top.svg" alt="wave">
-      </div>
-      <div class="contents">
+      <div class="contents" :class="{'--bg':headerDesignFlag}">
         <div>
           <v-ons-back-button></v-ons-back-button>
         </div>
@@ -18,6 +12,7 @@
           <img src="../../img/icon/icon_delete.svg" alt="削除">
         </button>
       </div>
+      <img src="../../img/img/common/img_wave_top.svg" alt="wave">
     </header>
 </template>
 
@@ -64,22 +59,17 @@
     img {
       display: none;
     }
-    .top {
-      .bar {
-        background: none;
-        height: inherit;
-      }
-    }
   }
   .contents {
     display: flex;
     align-items: center;
     width: 100%;
-    position: absolute;
-    top: 64px;
-    padding: 0 24px;
+    padding: 40px 24px 0;
     @include mq(xsmall) {
       padding: 0 8px;
+    }
+    &.--bg {
+      background: map_get($color, white);
     }
   }
   .top {

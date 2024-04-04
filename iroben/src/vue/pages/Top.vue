@@ -33,14 +33,14 @@
         <div class="agree">
           <input type="checkbox"  v-model="checked">
           <div class="agree_inner">
-            <a href="#">利用規約</a>
+            <a href="#" @click="toAgreement">利用規約</a>
             <p>に同意する</p>
           </div>
         </div>
         <div class="button_area">
           <the-button label="はじめる"
                       :is-disabled-flag="checked"
-                      @click="push"></the-button>
+                      @click="toHome"></the-button>
         </div>
       </div>
     </div>
@@ -51,6 +51,7 @@
 <script>
 import customToolbar from '../components/CustomToolbar.vue';
 import home from './Home.vue';
+import agreement from "@/vue/pages/Agreement.vue";
 import TheButton from "@/vue/components/TheButton.vue";
 
 export default {
@@ -64,9 +65,12 @@ export default {
     pop(){
       this.pageStack.pop();
     },
-    push() {
+    toHome() {
       this.pageStack.push(home);
     },
+    toAgreement(){
+      this.pageStack.push(agreement);
+    }
   },
   props: ["pageStack"],
   components: {TheButton, customToolbar },

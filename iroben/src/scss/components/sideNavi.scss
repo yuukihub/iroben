@@ -1,11 +1,13 @@
 @import "./src/scss/foundation/include";
 .nav-btn {
+  border: transparent;
+  background: transparent;
+  padding: 0;
+  width: 32px;
   position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  background: #333;
-  color: #fff;
+  top: 40px;
+  left: 20px;
+  color: map_get($color, text);
   z-index: 4;
 }
 
@@ -17,8 +19,8 @@
   height: 100vh;
   z-index: 3;
   background: white;
-  transform: translateX(-50vw); /*x方向に移動*/
-  transition:  all 0.4s linear;   /*１秒掛けて開く。速度は一定*/
+  transform: translateX(-50vw);
+  transition:  all 0.2s linear;
   @include KintoSans();
   &.is-active {
     transform: translateX(0vw);
@@ -50,7 +52,7 @@
   display: flex;
   align-items: center;
   font-size: 1.2rem;
-  margin: 16px 24px 0px 24px;
+  margin: 16px 24px 0 24px;
   @include KintoSans();
   img {
     margin-right: 4px;

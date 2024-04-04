@@ -3,6 +3,7 @@
     <color-lists :color-lists="thirdQuestion"
                  :title="title"
                  :level="'first'"
+                 :display-fault-count-flag="false"
                  @onClick="push"></color-lists>
   </v-ons-page>
 </template>
@@ -44,6 +45,5 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
 </style>

@@ -19,6 +19,7 @@
         </div>
         <div class="right">
             <span class="faultItem"
+                  v-if="displayFaultCountFlag"
                   :class="{'is-disabled':!faultCountArray[item.id]}">
               不正解
               <template v-if="!faultCountArray[item.id]">
@@ -102,6 +103,11 @@ export default {
       type: String,
       required: true
     },
+    displayFaultCountFlag: {
+      type: Boolean,
+      default: true,
+      required: false
+    }
   },
   created() {
     let faultCountArray = [];

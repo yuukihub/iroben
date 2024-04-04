@@ -1,7 +1,7 @@
 <template>
   <v-ons-page>
     <nav>
-      <button type="btn" class="nav-btn" v-on:click="open=!open">
+      <button type="button" class="nav-btn" v-on:click="open=!open">
         　<i class="fas fa-bars" aria-hidden="true"></i>
       </button>
       <div class="nav-items" v-bind:class="{ 'is-active': open }">
@@ -90,58 +90,31 @@
     <main-visual></main-visual>
     <main class="container">
       <section>
-        <!--<heading :title="'問いて学ぶ'"></heading>
-        <article-card title="1級"
+        <article-card title="お知らせ"
                       img-path="../../img/icon/icon_board_list.svg">
-          <ul>
+          <ul class="notice_lists">
             <li>
-              練習問題（現在準備中です）
+              <span class="date">2024/4/30</span>
+              <span><a href="#">特設ページ</a>を公開しました</span>
             </li>
             <li>
-              <a href="#" @click="toFirstColorLists">
-                <span>慣用色一覧</span>
-              </a>
+              <span class="date">2024/4/29</span>
+              <span>Google Storeにリリースしました</span>
+            </li>
+            <li>
+              <span class="date">2024/4/28</span>
+              <span>Apple Storeにリリースしました</span>
             </li>
           </ul>
         </article-card>
-        <article-card title="2級"
+        <article-card title="お問い合わせ"
                       img-path="../../img/icon/icon_board_list.svg">
-          <ul>
-            <li>
-              <a href="#" @click="toThirdExam">
-                <span>練習問題</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" @click="toThirdColorLists">
-                <span>慣用色一覧</span>
-              </a>
-            </li>
-          </ul>
+          <a href="">こちら</a>からご連絡ください。
         </article-card>
-        <article-card title="3級"
+        <article-card title="SNSシェア"
                       img-path="../../img/icon/icon_board_list.svg">
-          <ul>
-            <li>
-              <a href="#" @click="toSecondExam">
-                <span>練習問題</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" @click="toSecondColorLists">
-                <span>慣用色一覧</span>
-              </a>
-            </li>
-          </ul>
+
         </article-card>
-        <heading :title="'描いて学ぶ'"></heading>
-        <article-card>
-          <ul>
-            <a href="#" @click="toColorPaint">
-              <span>ペイント</span>
-            </a>
-          </ul>
-        </article-card>-->
       </section>
     </main>
   </v-ons-page>
@@ -264,19 +237,32 @@ section {
     margin: 0;
     text-align: center;
   }
-  a {
-    display: flex;
-    align-items: center;
-    img {
-      margin-right: 4px;
-    }
+  p {
+    @include KintoSans();
   }
-  ul {
+  .notice_lists {
     padding: 16px;
     border-radius: 5px;
     border: 1px solid map_get($color, gray03);
-    max-height: 220px;
+    max-height: 33vh;
     overflow-y: scroll;
+    li {
+      border-bottom: 1px solid map_get($color, gray03);
+    }
+    span {
+      display: block;
+      margin-bottom: 4px;
+    }
+    a {
+      display: inline;
+    }
+  }
+  .characters_wrap {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 60px;
+    }
   }
 }
 </style>

@@ -1,4 +1,5 @@
 @import "./src/scss/foundation/include";
+@import "../src/scss/components/transition";
 .c-colorCard {
   position: relative;
   background: map_get($color, white);
@@ -9,6 +10,7 @@
   margin: auto;
   @include fadeIn;
   @include boxShadow();
+
   .eye_image {
     position: absolute;
     top: 13px;

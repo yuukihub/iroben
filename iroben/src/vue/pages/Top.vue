@@ -27,6 +27,11 @@
     </div>
     <img class="slider" src="../../img/img/top/img_iphone.png" alt="iphone">
     <div class="bottom">
+      <div class="characters_wrap">
+        <img src="../../img/img/common/img_character02_normal.svg" alt="chara02">
+        <img src="../../img/img/common/img_character01_normal.svg" alt="chara01">
+        <img src="../../img/img/common/img_character03_normal.svg" alt="chara03">
+      </div>
       <div class="bottom_inner">
         <p class="desc">アプリをご利用いただくには、<br>
           利用規約をご確認の上ご利用ください</p>
@@ -130,13 +135,23 @@ h1 {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 236px;
+  bottom: 246px;
   z-index: index($z-map, character);
   @include mq(regular) {
     bottom: 24vh;
   }
   @include mq(big) {
     bottom: 19vh;
+  }
+  img {
+    height: 60px;
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:nth-child(2) {
+      height: 50px;
+    }
   }
 }
 .bottom {
@@ -193,79 +208,6 @@ h1 {
     max-width: 500px;
     width: 100%;
     margin: auto;
-  }
-}
-.decoration_wrap {
-  position: absolute;
-  z-index: 1;
-  @include mq(regular){
-    width: 49vh;
-  }
-  .img_decoration {
-    &.--brush {
-      position: absolute;
-      width: 68px;
-      @include mq(regular){
-        width: 120px;
-      }
-    }
-    &.--heart_left01 {
-      position: absolute;
-      width: 34px;
-      @include mq(regular){
-        width: 60px;
-        bottom: -200px;
-      }
-    }
-    &.--star_left01 {
-      position: absolute;
-      width: 62px;
-      @include mq(regular){
-        width: 120px;
-      }
-    }
-    &.--heart_right01 {
-      position: absolute;
-      width: 52px;
-      @include mq(regular){
-      }
-    }
-    &.--heart_right02 {
-      position: absolute;
-      width: 28px;
-      @include mq(regular){
-      }
-    }
-    &.--star_right01 {
-      position: absolute;
-      width: 56px;
-      @include mq(regular){
-      }
-    }
-  }
-  .img_decoration01 {
-    position: absolute;
-    top: 6vh;
-    right: 20px;
-    animation: anime01 2s ease-in-out infinite alternate;
-  }
-  .img_decoration02 {
-    position: absolute;
-    top: 15vh;
-    left: 20px;
-    animation: anime02 2s ease-in-out infinite alternate;
-  }
-  .img_decoration03 {
-    position: absolute;
-    top: 12vh;
-    left: 20px;
-    animation: anime03 2s ease-in-out infinite alternate;
-  }
-  .img_decoration04 {
-    position: absolute;
-    top: 12vh;
-    right: 105px;
-    animation: anime04 2s ease-in-out infinite alternate;
   }
 }
 .img_wave {

@@ -76,7 +76,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../src/scss/foundation/include";
 @import "./src/scss/components/colorCard";
 @import "./src/scss/components/transition";

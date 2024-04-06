@@ -1,11 +1,19 @@
 <template>
   <v-ons-page>
     <nav>
-      <button type="button" class="nav-btn" v-on:click="open=!open">
-        　<i class="fas fa-bars" aria-hidden="true"></i>
-      </button>
+      <div class="nav-btn"
+           v-on:click="open=!open"
+           v-bind:class="{ 'is-active': open }">
+        <span></span>
+        <span></span>
+        <span></span>
+        <p class="nav-btn-menu">MENU</p>
+        <p class="nav-btn-close">CLOSE</p>
+      </div>
+
       <div class="nav-items" v-bind:class="{ 'is-active': open }">
         <h2 class="nav-title">
+          <img src="../../img/icon/icon_board_list.svg" alt="list">
           学ぶ
         </h2>
         <div class="nav-learn">
@@ -18,7 +26,6 @@
             <li>
               <a href="#" @click="toFirstColorLists">
               <span>
-                <img src="../../img/icon/icon_board_list.svg" alt="list">
                 慣用色一覧
               </span>
                 <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
@@ -34,7 +41,6 @@
             <li>
               <a href="#" @click="toSecondColorLists">
               <span>
-                <img src="../../img/icon/icon_board_list.svg" alt="list">
                 慣用色一覧
               </span>
                 <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
@@ -43,7 +49,6 @@
             <li>
               <a href="#" @click="toSecondExam">
               <span>
-                <img src="../../img/icon/icon_board_check.svg" alt="list">
                 練習問題
               </span>
                 <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
@@ -59,7 +64,6 @@
             <li>
               <a href="#" @click="toThirdColorLists">
               <span>
-                <img src="../../img/icon/icon_board_list.svg" alt="list">
                 慣用色一覧
               </span>
                 <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
@@ -68,7 +72,6 @@
             <li>
               <a href="#" @click="toThirdExam">
               <span>
-                <img src="../../img/icon/icon_board_check.svg" alt="list">
                 練習問題
               </span>
                 <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
@@ -76,14 +79,14 @@
             </li>
           </ul>
         </div>
-        <h2 class="nav-title --draw">
+        <h2 class="nav-title">
+          <img src="../../img/icon/icon_paint.svg" alt="icon">
           描く
         </h2>
         <ul class="nav-item">
           <li>
             <a href="#" @click="toColorPaint">
               <span>
-                <img src="../../img/icon/icon_paint.svg" alt="icon">
                 ペイント
               </span>
               <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
@@ -91,13 +94,13 @@
           </li>
         </ul>
         <h2 class="nav-title">
+          <img src="../../img/icon/icon_message.svg" alt="icon">
           規約
         </h2>
         <ul class="nav-item">
           <li>
             <a href="#" @click="toAgreement">
               <span>
-                <img src="../../img/icon/icon_message.svg" alt="icon">
                 利用規約
               </span>
               <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
@@ -106,7 +109,6 @@
         </ul>
       </div>
     </nav>
-
    <main-visual></main-visual>
     <main class="container">
       <section>
@@ -129,10 +131,18 @@
         </article-card>
         <article-card title="今後の予定"
                       img-path="../../img/icon/icon_focus.svg">
-          <p>
-            1級の練習問題は現在準備中です。<br>
-            リリースは「2024年秋」を予定しております。少々お待ちください。
+          <p class="info_message">
+            <span>1級</span>の以下の機能は現在準備中です。<br>
+            公開は<span>2024年秋頃</span>を予定しています。
           </p>
+          <ul class="info_lists">
+            <li>
+              ・練習問題
+            </li>
+            <li>
+              ・<a href="#" @click="toColorPaint">ペイント</a>の不正解のみ表示機能
+            </li>
+          </ul>
         </article-card>
       </section>
     </main>
@@ -168,32 +178,33 @@ export default {
   },
   props: ['pageStack'],
   methods: {
-    push() {
-      this.pageStack.push(home);
-    },
-    pop(){
-      this.pageStack.pop();
-    },
     toColorPaint(){
       this.pageStack.push(paint);
+      this.open = false;
     },
     toFirstColorLists() {
       this.pageStack.push(firstColorLists);
+      this.open = false;
     },
     toSecondExam() {
       this.pageStack.push(secondExam);
+      this.open = false;
     },
     toSecondColorLists() {
       this.pageStack.push(secondColorLists);
+      this.open = false;
     },
     toThirdExam() {
       this.pageStack.push(thirdExam);
+      this.open = false;
     },
     toThirdColorLists() {
       this.pageStack.push(thirdColorLists);
+      this.open = false;
     },
     toAgreement(){
       this.pageStack.push(agreement);
+      this.open = false;
     }
   },
 }
@@ -216,7 +227,7 @@ export default {
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    height: 67vh;
+    height: 68vh;
   }
   &:after {
     content: "";
@@ -289,6 +300,22 @@ section {
       display: inline;
     }
   }
+  .info_lists {
+    padding: 16px;
+    border: 1px solid map_get($color, gray03);
+    border-radius: 5px;
+    li {
+      margin-bottom: 0;
+      @include KintoSans();
+    }
+  }
+  .info_message {
+    margin-bottom: 16px;
+    @include KintoSans();
+    span {
+      background:linear-gradient(transparent 60%, #fed32b 60%);
+    }
+  }
   .characters_wrap {
     display: flex;
     justify-content: center;
@@ -297,4 +324,5 @@ section {
     }
   }
 }
+
 </style>

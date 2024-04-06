@@ -1,51 +1,57 @@
 <template>
-    <div class="logo">
-      <img class="logo_i" src="../../img/img/home/img_logo_i.png" alt="i">
-      <img class="logo_r" src="../../img/img/home/img_logo_r.png" alt="r">
-      <img class="logo_o" src="../../img/img/home/img_logo_o.png" alt="o">
-      <img class="logo_b" src="../../img/img/home/img_logo_b.png" alt="b">
-      <img class="logo_e" src="../../img/img/home/img_logo_e.png" alt="e">
-      <img class="logo_n" src="../../img/img/home/img_logo_n.png" alt="n">
-    </div>
-    <div class="mv">
-      <ul class="front_block">
-        <li>
-          <img src="../../img/img/home/img_star01.png" alt="star">
-        </li>
-        <li>
-          <img src="../../img/img/home/img_blur_star01.png" alt="star">
-        </li>
-        <li>
-          <img src="../../img/img/home/img_star01.png" alt="star">
-        </li>
-        <li>
-          <img src="../../img/img/home/img_star02.png" alt="star">
-        </li>
-        <li>
-          <img src="../../img/img/home/img_blur_decoration01.png" alt="heart">
-        </li>
-      </ul>
-      <ul class="back_block">
-        <li>
-          <img src="../../img/img/home/img_star01.png" alt="star">
-        </li>
-        <li>
-          <img src="../../img/img/home/img_star03.png" alt="star">
-        </li>
-        <li>
-          <img src="../../img/img/home/img_star01.png" alt="star">
-        </li>
-        <li>
-          <img src="../../img/img/home/img_star02.png" alt="star">
-        </li>
-        <li>
-          <img src="../../img/img/home/img_decoration_back.png" alt="decoration">
-        </li>
-        <li>
-          <img src="../../img/img/home/img_decoration_back.png" alt="decoration">
-        </li>
-      </ul>
-    </div>
+  <div class="logo">
+    <img class="logo_i" src="../../img/img/home/img_logo_i.png" alt="i">
+    <img class="logo_r" src="../../img/img/home/img_logo_r.png" alt="r">
+    <img class="logo_o" src="../../img/img/home/img_logo_o.png" alt="o">
+    <img class="logo_b" src="../../img/img/home/img_logo_b.png" alt="b">
+    <img class="logo_e" src="../../img/img/home/img_logo_e.png" alt="e">
+    <img class="logo_n" src="../../img/img/home/img_logo_n.png" alt="n">
+  </div>
+  <div class="colorCode">
+    <img src="../../img/img/home/img_colorCode01.png" alt="colorCode">
+    <img src="../../img/img/home/img_colorCode02.png" alt="colorCode">
+    <img src="../../img/img/home/img_colorCode03.png" alt="colorCode">
+    <img src="../../img/img/home/img_colorCode04.png" alt="colorCode">
+  </div>
+  <div class="mv">
+    <ul class="front_block">
+      <li>
+        <img src="../../img/img/home/img_star01.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/home/img_blur_star01.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/home/img_star01.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/home/img_star02.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/home/img_blur_decoration01.png" alt="heart">
+      </li>
+    </ul>
+    <ul class="back_block">
+      <li>
+        <img src="../../img/img/home/img_star01.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/home/img_star03.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/home/img_star01.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/home/img_star02.png" alt="star">
+      </li>
+      <li>
+        <img src="../../img/img/home/img_decoration_back.png" alt="decoration">
+      </li>
+      <li>
+        <img src="../../img/img/home/img_decoration_back.png" alt="decoration">
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -108,6 +114,39 @@ export default {
 .mv {
   width: 100%;
   height: 50vh;
+}
+.colorCode {
+  img {
+    position: absolute;
+    width: 40px;
+    right: 0;
+    z-index: 2;
+    animation: fadeInUp01 1.3s 0s ease-in-out forwards;
+    &:first-child{
+      left: 70px;
+      margin: auto;
+      top: 11vh;
+      animation: animate_logo01 6s ease infinite;
+    }
+    &:nth-child(2){
+      left: -70px;
+      margin: auto;
+      top: 8vh;
+      animation: animate_logo06 4s ease infinite;
+    }
+    &:nth-child(3){
+      left: -140px;
+      margin: auto;
+      top: 27vh;
+      animation: animate_logo02 4s ease infinite;
+    }
+    &:nth-child(4){
+      right: 80px;
+      margin: auto;
+      top: 29vh;
+      animation: animate_logo03 4s ease infinite;
+    }
+  }
 }
 .front_block,
 .back_block {

@@ -88,9 +88,9 @@ export default {
     height: 100%;
     color: map_get($color, text);
     font-size: 0.76rem;
-    font-family: sans-serif;
+    @include KintoSans();
+    font-weight: 500;
     transition: all 0.4s ease-in-out;
-
     &::after {
       content: attr(data-off);
       position: absolute;
@@ -130,12 +130,12 @@ export default {
 .is-disabled {
   .c-toggle {
     pointer-events: none;
-    background: map_get($color, gray04);
+    background: map_get($color, gray03);
     span {
       color: map_get($color, gray01);
     }
     .slider::before {
-      background: map_get($color, gray03);
+      background: map_get($color, gray01);
     }
   }
 }

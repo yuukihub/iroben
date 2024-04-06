@@ -27,5 +27,6 @@ export default {
   background-image: url("../../img/img/paint/img_background.png") !important;
   width: 100%;
   z-index: -1;
+  height: 100vh;
 }
 </style>

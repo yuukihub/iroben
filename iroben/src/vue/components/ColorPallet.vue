@@ -1,56 +1,62 @@
 <template>
   <color-pallet-canvas></color-pallet-canvas>
-    <div class="c-colorPallet">
-      <div class="c-colorPallet_header">
-        <h3>カラーパレット</h3>
+  <div class="c-colorPallet">
+    <div class="characters_wrap">
+      <img src="../../img/img/common/img_character02_art.svg" alt="character02">
+      <img src="../../img/img/common/img_character03_art.svg" alt="character03">
+      <img src="../../img/img/common/img_character01_art.svg" alt="character01">
+    </div>
+    <div class="c-colorPallet_header">
+      <h3>カラーパレット</h3>
+    </div>
+    <div class="tab">
+      <div class="tab_menu">
+        <button v-for="(obj,index) in tabLists"
+                :key="index"
+                :class="{
+                  'is-current': isCurrent === index}"
+                class="tab_button"
+                @click="changeTab(index,obj.level)">{{obj.title}}</button>
       </div>
-      <div class="tab">
-        <div class="tab_menu">
-          <button v-for="(obj,index) in tabLists"
-                  :key="index"
-                  :class="{
-                    'is-current': isCurrent === index}"
-                  class="tab_button"
-                  @click="changeTab(index,obj.level)">{{obj.title}}</button>
+      <div class="tab_content">
+        <div v-show="isCurrent === 0">
+          <!--3級-->
+          <color-pallet-list
+              :level="'third'"
+              :fault-count-array="faultCountArray"
+              :is-toggle-flag="checkToggleStatus('third')"
+              :color-lists="thirdQuestion"
+              @toggle="pushThirdToggle"
+              @setColor="getPenColor"
+              @setColorDetail="getColorDetail"
+          ></color-pallet-list>
         </div>
-        <div class="tab_content">
-          <div v-show="isCurrent === 0">
-            <!--3級-->
-            <color-pallet-list
-                :level="'third'"
-                :fault-count-array="faultCountArray"
-                :is-toggle-flag="checkToggleStatus('third')"
-                :color-lists="thirdQuestion"
-                @toggle="pushThirdToggle"
-                @setColor="getPenColor"
-                @setColorDetail="getColorDetail"
-            ></color-pallet-list>
-          </div>
-          <div v-show="isCurrent === 1">
-            <!--2級-->
-            <color-pallet-list
-                :level="'second'"
-                :fault-count-array="faultCountArray"
-                :is-toggle-flag="checkToggleStatus('second')"
-                :color-lists="secondQuestion"
-                @toggle="pushSecondToggle"
-                @setColor="getPenColor"
-                @setColorDetail="getColorDetail"
-            ></color-pallet-list>
-          </div>
-          <div v-show="isCurrent === 2">
-            <!--1級-->
-            <color-pallet-list
-                :level="'second'"
-                :color-lists="firstQuestion()"
-                :is-toggle-disabled="true"
-                @setColor="getPenColor"
-                @setColorDetail="getColorDetail"
-            ></color-pallet-list>
-          </div>
+        <div v-show="isCurrent === 1">
+          <!--2級-->
+          <color-pallet-list
+              :level="'second'"
+              :fault-count-array="faultCountArray"
+              :is-toggle-flag="checkToggleStatus('second')"
+              :color-lists="secondQuestion"
+              @toggle="pushSecondToggle"
+              @setColor="getPenColor"
+              @setColorDetail="getColorDetail"
+          ></color-pallet-list>
+        </div>
+        <div v-show="isCurrent === 2">
+          <!--1級-->
+          <color-pallet-list
+              class="--firstClass"
+              :level="'second'"
+              :color-lists="firstQuestion()"
+              :is-toggle-disabled="true"
+              @setColor="getPenColor"
+              @setColorDetail="getColorDetail"
+          ></color-pallet-list>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -204,6 +210,30 @@ export default {
 .toggle_title {
   margin-right: 4px;
 }
+.characters_wrap {
+  position: absolute;
+  width: max-content;
+  top: -65px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+  img {
+    height: 60px;
+    &:first-child {
+      height: 80px;
+      animation: animate_chara02 3s linear infinite;
+    }
+    &:nth-child(2) {
+      animation: animate_chara01 3s linear infinite;
+    }
+    &:last-child {
+      height: 50px;
+      animation: animate_chara03 3s linear infinite;
+      margin-left: 10px;
+    }
+  }
+}
 .c-colorPallet {
   position: fixed;
   bottom: 0;
@@ -221,7 +251,7 @@ export default {
     padding: 16px 24px;
     font-size: 1.1rem;
     @include mq(sp) {
-      padding: 16px;
+      padding: 8px 16px;
       font-size: 0.9rem;
     }
     @include mq(xsmall) {
@@ -232,10 +262,6 @@ export default {
 }
 .tab_content {
   background: map_get($color, white);
-  padding: 0 16px 16px 16px;
-  @include mq(sp) {
-    padding: 0 8px 8px 8px;
-  }
 }
 .tab_button {
   border: none;

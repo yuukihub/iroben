@@ -37,6 +37,7 @@ export default {
 <style lang="scss" scoped>
 @import "./src/scss/foundation/include";
 .c-articleCard {
+  max-width: 440px;
   width: 80vw;
   margin: 0 auto 32px;
 }

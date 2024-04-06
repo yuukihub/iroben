@@ -1,25 +1,80 @@
 @import "./src/scss/foundation/include";
-.nav-btn {
-  border: transparent;
-  background: transparent;
-  padding: 0;
-  width: 32px;
-  position: fixed;
-  top: 40px;
-  left: 20px;
-  color: map_get($color, text);
-  z-index: 4;
-}
 
+.nav-btn{
+  position:fixed;
+  z-index: 9999;/*ボタンを最前面に*/
+  top:40px;
+  left: 8px;
+  cursor: pointer;
+  width: 50px;
+  height:50px;
+  &-close {
+    display: none;
+  }
+  span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 16px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: map_get($color, text);
+    width: 45%;
+    &:nth-of-type(1) {
+      top:15px;
+    }
+    &:nth-of-type(2) {
+      top:23px;
+    }
+    &:nth-of-type(3) {
+      top:31px;
+    }
+  }
+  p {
+    position: absolute;
+    top: 40px;
+    left: 8px;
+    font-family: "MiuraGotic", serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0px;
+  }
+  &.is-active {
+    span {
+      &:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+      }
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+      &:nth-of-type(3){
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+      }
+    }
+    .nav-btn-menu {
+      display: none;
+    }
+    .nav-btn-close {
+      display: block;
+    }
+  }
+}
 .nav-items {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 3;
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
   transform: translateX(-50vw);
   transition:  all 0.2s linear;
-  padding-top:80px;
+  padding-top:110px;
   @include KintoSans();
   height: 100vh;
   width: 50vw;
@@ -30,7 +85,6 @@
     transform: translateX(0vw);
   }
 }
-
 .nav-item {
   margin: 0 8px;
   @include mq(xsmall) {
@@ -40,13 +94,7 @@
     @include KintoSans();
     width: 100%;
     box-sizing: border-box;
-    padding: 16px;
-    @include mq(xsmall) {
-      padding: 16px 8px;
-    }
-    &:nth-child(2) {
-      padding-top: 0;
-    }
+    padding: 8px;
   }
   a {
     display: flex;
@@ -58,32 +106,29 @@
   span {
     display: flex;
     align-items: center;
-  }
-  img {
-    width: 20px;
-    margin-right: 4px;
+    text-decoration: underline;
+    color: map_get($color, link);
   }
 }
-
 .nav-title {
   display: flex;
   align-items: center;
   @include KintoSans();
   font-size: 0.9rem;
   font-weight: bold;
-  padding: 8px 24px;
-  margin: 0;
-  background: rgba(228, 227, 232, .4);
+  padding: 8px 16px;
+  margin: 8px 0;
+  background: rgba(0, 0, 0, 0.05);
   @include mq(xsmall) {
     padding: 8px;
   }
-  &.--draw {
-    margin-top: 8px;
+  img {
+    width: 20px;
+    margin-right: 4px;
   }
 }
-
 .nav-subTitle {
-  padding: 0 24px 0 24px;
+  padding: 0 16px;
   margin: 0;
   @include mq(xsmall) {
     padding: 0 8px 0 8px;
@@ -92,12 +137,9 @@
     font-size: 0.8rem;
     @include KintoSans();
     color: map_get($color, text);
-    padding: 4px;
-    border-radius: 4px;
     font-weight: bold;
   }
 }
-
 .nav-learn {
   margin-top: 16px;
 }

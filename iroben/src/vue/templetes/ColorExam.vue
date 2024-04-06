@@ -205,6 +205,9 @@ export default {
   height: 48px;
   color: map_get($color, text);
   margin: 24px auto;
+  @include mq(regular) {
+    max-width: 440px;
+  }
   @include mq(sp) {
     margin: 16px auto;
   }

@@ -10,6 +10,9 @@
   margin: auto;
   @include fadeIn;
   @include boxShadow();
+  @include mq(regular) {
+    max-width: 440px;
+  }
 
   .eye_image {
     position: absolute;

@@ -111,6 +111,7 @@ h1 {
   display: block;
   width: 54vw;
   margin: auto;
+  animation: fadeInUp02 1s 0s ease-in-out forwards;
   @include mq(regular) {
     width: 40vw;
   }
@@ -123,7 +124,8 @@ h1 {
   right: 0;
   margin: auto;
   width: 36vh;
-  animation: fadeInUp02 1.7s 0s ease-in-out forwards;
+  animation: fadeInUp02 2.7s 0s ease-in-out forwards;
+  animation-delay: 0.1s;
   @include mq(xsmall) {
     bottom: -30px;
   }
@@ -148,9 +150,14 @@ h1 {
     margin-left: 10px;
     &:first-child {
       margin-left: 0;
+      animation: animate_chara01 3s linear infinite;
     }
     &:nth-child(2) {
       height: 50px;
+      animation: animate_chara02 3s linear infinite;
+    }
+    &:last-child {
+      animation: animate_chara03 3s linear infinite;
     }
   }
 }
@@ -218,4 +225,5 @@ h1 {
   top: -14vh;
   z-index: -1;
 }
+
 </style>

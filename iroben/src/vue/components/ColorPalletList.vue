@@ -119,18 +119,41 @@ export default {
 
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
+.c-colorPalletList{
+  &.--firstClass {
+    .c-colorLists{
+      overflow-y: scroll;
+      max-height: 23vh;
+      &::-webkit-scrollbar {
+        background: map_get($color, white);
+        width: 1.5vw;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: map_get($color, gray03);
+        border: 1px solid map_get($color, gray03);
+        border-radius: 10px;
+      }
+    }
+  }
+}
 .c-colorLists{
   @include KintoSans();
+  padding: 8px;
+  border: 1px solid map_get($color, gray03);
+  border-radius: 6px;
+  margin: 8px 8px 24px 8px;
   ul {
     display: grid;
     place-items: center;
     grid-gap: 1%;
     justify-content: space-between;
     grid-template-columns: 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7%;
-    overflow-y: scroll;
-    max-height: 22vh;
     @include mq(sp) {
-      grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+      grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+    }
+    @include mq(regular) {
+      width: 91%;
+      grid-template-columns: 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4% 4%;
     }
   }
 }
@@ -139,38 +162,31 @@ export default {
   width: 24px;
   height: 24px;
   border-radius: 100%;
-  margin: 0 0 6px 0;
+  margin: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  @include mq(sp) {
-    width: 20px;
-    height: 20px;
-    margin: 0 0 3px 0;
-  }
   @include mq(xsmall) {
-    width: 16px;
-    height: 16px;
-    margin: 0 0 3px 0;
+    width: 18px;
+    height: 18px;
   }
   &[type="radio"]:checked:before {
     content: '';
     background-image: url(../../img/icon/icon_check.svg);
+    background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     width: 16px;
     height: 16px;
-    top: 3.5px;
+    top: 4px;
     left: 4px;
     display: inline-block;
     vertical-align: middle;
-    @include mq(sp){
-      top: 1.5px;
-      left: 2px;
-    }
     @include mq(xsmall) {
-      width: 12px;
-      height: 12px;
+      width: 14px;
+      height: 14px;
+      top: 2px;
+      left: 2px;
     }
   }
 }
@@ -181,12 +197,12 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 0;
     font-size: 1rem;
+    padding: 8px 8px 4px 8px;
     @include mq(sp) {
       font-size: 0.82rem;
     }
-    @include mq(small) {
+    @include mq(xsmall) {
       font-size: 0.8rem;
     }
   }

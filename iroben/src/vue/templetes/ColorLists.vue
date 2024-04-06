@@ -47,14 +47,14 @@
       <div class="modal-error">
         <h3>確認</h3>
         <h4 class="sub_title">
-          不正解回数をリセットします
+          不正解回数を「0」にします
         </h4>
         <p class="desc">
           カラーパレットに記録されている<br>
           <span v-if="level === 'second'">2</span>
           <span v-else-if="level === 'third'">3</span>
           級の「不正解のみ」の色も<br>
-          同時にリセットされます。
+          同時にクリアされます。
         </p>
         <img :src="`../../img/img/colorList/img_${level}_colorPallet.png`" alt="不正解のみを表示したカラーパレット">
         <p class="desc">

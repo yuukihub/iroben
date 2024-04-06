@@ -1,14 +1,12 @@
 <template>
   <div>
     <div class="c-loading">
-      <div id="h">
-        <div class="strand_h" id="blue"></div>
-        <div class="strand_h" id="pink"></div>
-      </div>
-
-      <div id="v">
-        <div class="strand_v" id="green"></div>
-        <div class="strand_v" id="yellow"></div>
+      <p>削除中...</p>
+      <div class="loading_wrap">
+        <div class="loading_img">
+          <img class="img_character03" src="../../img/img/common/img_character03_normal.svg" alt="character03">
+          <img class="img_eraser" src="../../img/img/common/img_eraser.svg" alt="eraser">
+        </div>
       </div>
     </div>
     <overlay></overlay>
@@ -26,12 +24,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
-p {
-  position: absolute;
-  top: 0;
-  z-index: index($z-map, loading);
-}
-.c-loading {
+@import "../src/scss/components/transition";
+.loading_wrap {
   margin: auto;
   height: 50px;
   width: 50px;
@@ -41,138 +35,47 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: index($z-map, loading);
+  z-index: index($z-map, loadingImg);
 }
-
-.strand_h {
-  height: 10px;
-  width: 50px;
-  border-radius: 10px;
-  opacity: 0.8;
+p {
+  position: absolute;
+  top: -107px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: max-content;
+  height: max-content;
+  z-index: index($z-map, loadingImg);
+  color: map_get($color, white);
 }
-
-#blue {
-  margin-top: 8px;
-  background-color: #6dcadc;
-  animation: blue 2s infinite;
-}
-
-#pink {
-  margin-top: 9px;
-  background-color: #e01463;
-  animation: pink 2s infinite;
-}
-
-@keyframes blue {
-  0% {
-    transform: translateX(0);
-    width: 10px;
-  }
-  35% {
-    width: 50px;
-    transform: translateX(0);
-  }
-  65%{
-    transform: translateX(40px);
-    width: 10px;
-  }
-  100% {
-    transform: translateX(0);
-    width: 10px;
-  }
-}
-
-@keyframes pink {
-  0% {
-    transform: translateX(40px);
-    width: 10px;
-  }
-  35% {
-    width: 50px;
-    transform: translateX(0);
-  }
-  65%{
-    transform: translateX(0px);
-    width: 10px;
-  }
-  100% {
-    transform: translateX(40px);
-    width: 10px;
-  }
-}
-
-#v {
+.loading_img {
   position: relative;
-  top: -40px;
+  animation: animate_chara03 0.5s 0s ease-in-out infinite;
+  img {
+    position: absolute;
+  }
+  .img_character03 {
+    width: 60px;
+    transform: rotate(20deg);
+  }
+  .img_eraser {
+    transform: rotate(11deg);
+    top: -7px;
+    left: -17px;
+    width: 45px;
+    animation: animate_eraser 0.5s 0s ease-in-out infinite;
+  }
 }
-
-.strand_v {
-  height: 50px;
-  width: 10px;
-  border-radius: 10px;
-  opacity: 0.8;
-}
-
-#green {
-  margin-left: 9px;
-  display: inline-block;
-  background-color: #3db991;
-  animation: green 2s infinite;
-}
-
-#yellow {
-  display: inline-block;
-  margin-left: 8px;
-  background-color: #e9a81f;
-  animation: yellow 2s infinite;
-}
-
-@keyframes green {
+@keyframes animate_eraser {
   0% {
-    transform: translateY(40px);
-    height: 10px;
+    transform: rotate(11deg);
   }
-  35% {
-    height: 50px;
-    transform: translateY(0);
-  }
-  65%{
-    transform: translateY(0);
-    height: 10px;
+  50% {
+    transform: rotate(20deg);
   }
   100% {
-    transform: translateY(40px);
-    height: 10px;
+    transform: rotate(11deg);
   }
-}
-
-@keyframes yellow {
-  0% {
-    transform: translateY(0);
-    height: 10px;
-  }
-  35% {
-    height: 50px;
-    transform: translateY(0);
-  }
-  65%{
-    transform: translateY(40px);
-    height: 10px;
-  }
-  100% {
-    transform: translateY(0px);
-    height: 10px;
-  }
-}
-
-a,
-a:visited {
-  text-decoration: none;
-  color: #6dcadc;
-}
-
-a:focus,
-a:hover {
-  color: #e01463;
 }
 </style>

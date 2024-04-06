@@ -127,4 +127,17 @@ export default {
   }
 }
 
+.is-disabled {
+  .c-toggle {
+    pointer-events: none;
+    background: map_get($color, gray04);
+    span {
+      color: map_get($color, gray01);
+    }
+    .slider::before {
+      background: map_get($color, gray03);
+    }
+  }
+}
+
 </style>

@@ -133,9 +133,9 @@ h1 {
   align-items: center;
   justify-content: center;
   position: absolute;
+  top: 10px;
   left: 0;
   right: 0;
-  bottom: 246px;
   z-index: index($z-map, character);
   @include mq(regular) {
     bottom: 24vh;
@@ -179,6 +179,7 @@ h1 {
     margin: 0;
     padding: 12vh 0 16px 0;
     text-align: center;
+    @include KintoSans();
     @include mq(sp) {
       padding: 13vh 0 16px 0;
     }
@@ -194,6 +195,7 @@ h1 {
     align-items: center;
     justify-content: center;
     margin: 0 0 24px 0;
+    @include KintoSans();
     &_inner {
       display: flex;
       align-items: center;

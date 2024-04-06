@@ -44,7 +44,7 @@ export default {
   display: flex;
   align-items: center;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   &-class,
   &-text{
     font-weight: 500;

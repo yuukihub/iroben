@@ -9,15 +9,22 @@
           <button v-for="(obj,index) in tabLists"
                   :key="index"
                   :class="{
-                    'is-disabled': index === 0,
                     'is-current': isCurrent === index}"
                   class="tab_button"
                   @click="changeTab(index,obj.level)">{{obj.title}}</button>
         </div>
         <div class="tab_content">
           <div v-show="isCurrent === 0">
-            <!--1級-->
-            1級
+            <!--3級-->
+            <color-pallet-list
+                :level="'third'"
+                :fault-count-array="faultCountArray"
+                :is-toggle-flag="checkToggleStatus('third')"
+                :color-lists="thirdQuestion"
+                @toggle="pushThirdToggle"
+                @setColor="getPenColor"
+                @setColorDetail="getColorDetail"
+            ></color-pallet-list>
           </div>
           <div v-show="isCurrent === 1">
             <!--2級-->
@@ -32,13 +39,11 @@
             ></color-pallet-list>
           </div>
           <div v-show="isCurrent === 2">
-            <!--3級-->
+            <!--1級-->
             <color-pallet-list
-                :level="'third'"
-                :fault-count-array="faultCountArray"
-                :is-toggle-flag="checkToggleStatus('third')"
-                :color-lists="thirdQuestion"
-                @toggle="pushThirdToggle"
+                :level="'second'"
+                :color-lists="firstQuestion()"
+                :is-toggle-disabled="true"
                 @setColor="getPenColor"
                 @setColorDetail="getColorDetail"
             ></color-pallet-list>
@@ -55,6 +60,7 @@ import ColorPalletList from "@/vue/components/ColorPalletList.vue";
 import ColorPalletCanvas from "@/vue/components/ColorPalletCanvas.vue";
 import thirdExam from "@/vue/pages/ThirdExam.vue";
 import secondExam from "@/vue/pages/SecondExam.vue";
+import {firstQuestion} from "@/resource/firstQuestion";
 
 export default {
   name: "ColorPallet",
@@ -71,19 +77,19 @@ export default {
       checkToggleStatus: this.checkToggle,
       tabLists: [
         {
-          "title":"1級",
-          "level":"first",
+          "title":"3級",
+          "level":"third",
         },
         {
           "title":"2級",
           "level":"second",
         },
         {
-          "title":"3級",
-          "level":"third",
+          "title":"1級",
+          "level":"first",
         },
       ],
-      isCurrent: 1,
+      isCurrent: 0,
       penColor: "",
       colorDetail: Object,
       openModalFlag: false,
@@ -95,6 +101,9 @@ export default {
     },
   },
   methods: {
+    firstQuestion() {
+      return firstQuestion
+    },
     getColorDetail(item,flag){
       this.colorDetail = item;
       this.openModalFlag = flag;

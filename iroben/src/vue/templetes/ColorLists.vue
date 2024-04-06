@@ -9,7 +9,7 @@
       <li v-for="(item, index) in colorLists" :key="index" @click="getItem(item)">
         <div class="left">
           <div class="colorPanel">
-            <img class="eye_image" src="../../img/img/common/icon_eye.svg" alt="目">
+            <img class="eye_image" src="../../img/img/common/img_eye.svg" alt="目">
             <div class="color" :style="{background: item.colorCode}">
             </div>
           </div>

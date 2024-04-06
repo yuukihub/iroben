@@ -3,7 +3,7 @@
     <div v-if="status">
       <div class="exam_inner">
         <div class="c-colorCard">
-          <img class="eye_image" src="../../img/img/common/icon_eye.svg" alt="目">
+          <img class="eye_image" src="../../img/img/common/img_eye.svg" alt="目">
           <div class="color" :style="{background: currentQuestion.colorCode}"></div>
           <div class="counter">
             <span class="current_number">

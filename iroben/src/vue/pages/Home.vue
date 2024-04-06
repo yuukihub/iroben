@@ -5,79 +5,101 @@
         　<i class="fas fa-bars" aria-hidden="true"></i>
       </button>
       <div class="nav-items" v-bind:class="{ 'is-active': open }">
-        <h1>
-          ロゴ
-        </h1>
         <h2 class="nav-title">
           学ぶ
         </h2>
-        <h3 class="nav-subTitle">
-          1級
-        </h3>
-        <ul class="nav-item">
-          <li>
-            <a href="#" @click="toFirstColorLists">
-              <span>慣用色一覧</span>
-              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
-            </a>
-          </li>
-          <li class="is-disabled">
-            <span>練習問題<span class="prepare_text">※現在準備中</span></span>
-            <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
-          </li>
-        </ul>
-        <h3 class="nav-subTitle">
-          2級
-        </h3>
-        <ul class="nav-item">
-          <li>
-            <a href="#" @click="toSecondColorLists">
-              <span>慣用色一覧</span>
-              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
-            </a>
-          </li>
-          <li>
-            <a href="#" @click="toSecondExam">
-              <span>練習問題</span>
-              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
-            </a>
-          </li>
-        </ul>
-        <h3 class="nav-subTitle">
-          3級
-        </h3>
-        <ul class="nav-item">
-          <li>
-            <a href="#" @click="toThirdColorLists">
-              <span>慣用色一覧</span>
-              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
-            </a>
-          </li>
-          <li>
-            <a href="#" @click="toThirdExam">
-              <span>練習問題</span>
-              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
-            </a>
-          </li>
-        </ul>
-        <h2 class="nav-title">
+        <div class="nav-learn">
+          <h3 class="nav-subTitle">
+          <span>
+            1級
+          </span>
+          </h3>
+          <ul class="nav-item">
+            <li>
+              <a href="#" @click="toFirstColorLists">
+              <span>
+                <img src="../../img/icon/icon_board_list.svg" alt="list">
+                慣用色一覧
+              </span>
+                <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+              </a>
+            </li>
+          </ul>
+          <h3 class="nav-subTitle">
+          <span>
+            2級
+          </span>
+          </h3>
+          <ul class="nav-item">
+            <li>
+              <a href="#" @click="toSecondColorLists">
+              <span>
+                <img src="../../img/icon/icon_board_list.svg" alt="list">
+                慣用色一覧
+              </span>
+                <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+              </a>
+            </li>
+            <li>
+              <a href="#" @click="toSecondExam">
+              <span>
+                <img src="../../img/icon/icon_board_check.svg" alt="list">
+                練習問題
+              </span>
+                <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+              </a>
+            </li>
+          </ul>
+          <h3 class="nav-subTitle">
+          <span>
+            3級
+          </span>
+          </h3>
+          <ul class="nav-item">
+            <li>
+              <a href="#" @click="toThirdColorLists">
+              <span>
+                <img src="../../img/icon/icon_board_list.svg" alt="list">
+                慣用色一覧
+              </span>
+                <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+              </a>
+            </li>
+            <li>
+              <a href="#" @click="toThirdExam">
+              <span>
+                <img src="../../img/icon/icon_board_check.svg" alt="list">
+                練習問題
+              </span>
+                <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <h2 class="nav-title --draw">
           描く
         </h2>
         <ul class="nav-item">
           <li>
             <a href="#" @click="toColorPaint">
-              <span>ペイント</span>
+              <span>
+                <img src="../../img/icon/icon_paint.svg" alt="icon">
+                ペイント
+              </span>
               <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
             </a>
           </li>
         </ul>
         <h2 class="nav-title">
-          その他
+          規約
         </h2>
         <ul class="nav-item">
           <li>
-            <a href="#" @click="toColorPaint">
-              <span>利用規約</span>
+            <a href="#" @click="toAgreement">
+              <span>
+                <img src="../../img/icon/icon_message.svg" alt="icon">
+                利用規約
+              </span>
               <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
             </a>
           </li>
@@ -85,33 +107,32 @@
       </div>
     </nav>
 
-   <!-- <main-visual></main-visual>-->
+   <main-visual></main-visual>
     <main class="container">
       <section>
         <article-card title="お知らせ"
-                      img-path="../../img/icon/icon_board_list.svg">
+                      img-path="../../img/icon/icon_notice.svg">
           <ul class="notice_lists">
             <li>
               <span class="date">2024/4/30</span>
-              <span><a href="#">特設ページ</a>を公開しました</span>
+              <span>Androidアプリをリリースしました</span>
             </li>
             <li>
               <span class="date">2024/4/29</span>
-              <span>Google Storeにリリースしました</span>
+              <span>iPadOSアプリをリリースしました</span>
             </li>
             <li>
               <span class="date">2024/4/28</span>
-              <span>Apple Storeにリリースしました</span>
+              <span>iOSアプリをリリースしました</span>
             </li>
           </ul>
         </article-card>
-        <article-card title="お問い合わせ"
-                      img-path="../../img/icon/icon_board_list.svg">
-          <a href="">こちら</a>からご連絡ください。
-        </article-card>
-        <article-card title="SNSシェア"
-                      img-path="../../img/icon/icon_board_list.svg">
-
+        <article-card title="今後の予定"
+                      img-path="../../img/icon/icon_focus.svg">
+          <p>
+            1級の練習問題は現在準備中です。<br>
+            リリースは「2024年秋」を予定しております。少々お待ちください。
+          </p>
         </article-card>
       </section>
     </main>
@@ -128,6 +149,7 @@ import secondExam from "@/vue/pages/SecondExam.vue";
 import secondColorLists from "@/vue/pages/SecondColorLists.vue";
 import firstColorLists from "@/vue/pages/FirstColorLists.vue";
 import ArticleCard from "@/vue/components/ArticleCard.vue";
+import agreement from "@/vue/pages/Agreement.vue";
 
 export default {
   name: "home",
@@ -170,6 +192,9 @@ export default {
     toThirdColorLists() {
       this.pageStack.push(thirdColorLists);
     },
+    toAgreement(){
+      this.pageStack.push(agreement);
+    }
   },
 }
 </script>
@@ -222,10 +247,13 @@ section {
   height: max-content;
   background: map_get($color, white);
   z-index: 2;
+  @include mq(regular) {
+    padding-top: 40px;
+  }
   h4,
   li {
     @include KintoSans();
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     &:last-child {
       margin-bottom: 0;
     }
@@ -237,6 +265,7 @@ section {
   }
   p {
     @include KintoSans();
+    font-size: 1rem;
   }
   .notice_lists {
     padding: 16px;
@@ -246,10 +275,15 @@ section {
     overflow-y: scroll;
     li {
       border-bottom: 1px solid map_get($color, gray03);
+      font-size: 1rem;
     }
     span {
       display: block;
-      margin-bottom: 4px;
+      margin-bottom: 8px;
+    }
+    .date {
+      font-size: 0.85rem;
+      margin-bottom: 2px;
     }
     a {
       display: inline;

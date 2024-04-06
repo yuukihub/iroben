@@ -1,7 +1,7 @@
 <template>
   <div class="colorDetail-wrap">
     <div class="c-colorCard">
-      <img class="eye_image" src="../../img/img/common/icon_eye.svg" alt="目">
+      <img class="eye_image" src="../../img/img/common/img_eye.svg" alt="目">
       <div class="color" :style="`background-color:${item.colorCode}`">
         <div  class="fault_count"
               v-if="faultCountArray[item.id]">

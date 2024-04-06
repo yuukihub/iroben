@@ -12,67 +12,92 @@
 }
 
 .nav-items {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 50vw;
-  height: 100vh;
   z-index: 3;
-  background: white;
+  backdrop-filter: blur(24px);
   transform: translateX(-50vw);
   transition:  all 0.2s linear;
+  padding-top:80px;
   @include KintoSans();
+  height: 100vh;
+  width: 50vw;
+  @include mq(regular) {
+    width: 30vw;
+  }
   &.is-active {
     transform: translateX(0vw);
-    width: 50vw;
   }
 }
 
 .nav-item {
+  margin: 0 8px;
+  @include mq(xsmall) {
+    margin: 0;
+  }
   li {
     @include KintoSans();
     width: 100%;
     box-sizing: border-box;
-    padding: 8px 24px;
-    &.is-disabled {
-      color: map_get($color, gray01);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    padding: 16px;
+    @include mq(xsmall) {
+      padding: 16px 8px;
     }
-    .prepare_text {
-      font-size: 0.9rem;
-      display: block;
+    &:nth-child(2) {
+      padding-top: 0;
     }
   }
   a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: map_get($color, text);
+    text-decoration: none;
+  }
+  span {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 20px;
+    margin-right: 4px;
   }
 }
 
 .nav-title {
   display: flex;
   align-items: center;
-  font-size: 1.1rem;
+  @include KintoSans();
+  font-size: 0.9rem;
+  font-weight: bold;
   padding: 8px 24px;
-  @include KintoSans();
-  background: map_get($color, gray04);
-  @include KintoSans();
   margin: 0;
-  background: white;
-  img {
-    width: 32px;
-    margin-right: 4px;
+  background: rgba(228, 227, 232, .4);
+  @include mq(xsmall) {
+    padding: 8px;
+  }
+  &.--draw {
+    margin-top: 8px;
   }
 }
 
 .nav-subTitle {
-  padding: 8px 24px;
+  padding: 0 24px 0 24px;
   margin: 0;
-  font-size: 1rem;
-  background: map_get($color, gray04);
-  @include KintoSans();
-  font-weight: normal;
+  @include mq(xsmall) {
+    padding: 0 8px 0 8px;
+  }
+  span {
+    font-size: 0.8rem;
+    @include KintoSans();
+    color: map_get($color, text);
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+}
+
+.nav-learn {
+  margin-top: 16px;
 }

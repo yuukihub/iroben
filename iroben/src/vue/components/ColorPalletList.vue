@@ -16,6 +16,7 @@
       <div class="toggle_wrap">
         <p>不正解のみ</p>
         <toggle
+            :class="{'is-disabled':isToggleDisabled}"
             @onClick="clickToggle"
             :level="level"></toggle>
       </div>
@@ -82,6 +83,11 @@ export default {
       default: false,
       required: true
     },
+    isToggleDisabled: {
+      type: Boolean,
+      default: false,
+      required: false
+    },
     faultCountArray: {
       type: Array,
       default: "[]",
@@ -121,6 +127,8 @@ export default {
     grid-gap: 1%;
     justify-content: space-between;
     grid-template-columns: 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7%;
+    overflow-y: scroll;
+    max-height: 22vh;
     @include mq(sp) {
       grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
     }

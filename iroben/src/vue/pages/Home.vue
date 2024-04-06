@@ -228,6 +228,7 @@ export default {
     background-size: contain;
     width: 100%;
     height: 68vh;
+    z-index: -1;
   }
   &:after {
     content: "";

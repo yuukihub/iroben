@@ -2,7 +2,7 @@
 
 .nav-btn{
   position:fixed;
-  z-index: 9999;/*ボタンを最前面に*/
+  z-index: index($z-map, sideMenuButton);
   top:40px;
   left: 8px;
   cursor: pointer;
@@ -69,7 +69,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: index($z-map, sideMenu);
   backdrop-filter: blur(60px);
   -webkit-backdrop-filter: blur(60px);
   transform: translateX(-50vw);

@@ -61,6 +61,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "./src/scss/foundation/include";
 @import "./src/scss/components/transition";
 .logo {
   position: absolute;
@@ -73,7 +74,7 @@ export default {
   height: max-content;
   text-align: center;
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
-  z-index: 1;
+  z-index: index($z-map, topLogo);
   img {
     margin: 0 5px;
     height: 7vh;
@@ -116,12 +117,12 @@ export default {
   height: 50vh;
 }
 .colorCode {
+  animation: fadeInUp01 1.3s 0s ease-in-out forwards;
   img {
     position: absolute;
     width: 40px;
     right: 0;
-    z-index: 2;
-    animation: fadeInUp01 1.3s 0s ease-in-out forwards;
+    z-index: index($z-map, topColorCodeDecoration);
     &:first-child{
       left: 70px;
       margin: auto;
@@ -158,7 +159,7 @@ export default {
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
 }
 .front_block {
-  z-index: 2;
+  z-index: index($z-map, topFrontDecoration);
   img {
     width: 40px;
   }
@@ -187,6 +188,7 @@ export default {
     animation: animate_decoration_front04 60s linear infinite;
     animation-duration: 44s;
     animation-delay: -10s;
+    z-index: index($z-map, topFrontDecoration);
     img {
       width: 64px;
     }
@@ -205,13 +207,14 @@ export default {
     animation: animate_decoration_front02 linear infinite;
     animation-duration: 40s;
     animation-delay: -21s;
-    z-index: 2;
+    z-index: index($z-map, topFrontDecoration);
     img {
-      width: 100vw;
+      width: 120vw;
     }
   }
 }
 .back_block  {
+  z-index: -1;
   li:nth-child(1){
     animation: animate_decoration_back01 30s linear infinite;
     animation-duration: 34s;
@@ -321,10 +324,10 @@ export default {
 
 @keyframes animate_decoration_back03 {
   from {
-    transform: translateX(0) translateY(-10vh);
+    transform: translateX(0) translateY(-10vh) rotate(0deg);
   }
   to {
-    transform: translateX(-320vw) translateY(0px);
+    transform: translateX(-320vw) translateY(0px) rotate(10deg);
   }
 }
 

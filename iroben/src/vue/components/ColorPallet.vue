@@ -150,29 +150,31 @@ export default {
       this.checkFaultItem('third');
     },
     getPenColor(value){
-      this.penColor = value;
+      let canvas = document.getElementById("canvas");
+      let context = canvas.getContext("2d");
+      context.strokeStyle = value;
       this.draw();
     },
     draw(){
+      let canvas = document.getElementById("canvas");
+
       let drawData = {
         drawFlag : false,
+        brushSize: 5,
+        lineJoin: "round",
+        lineCap: "round",
         oldX : 0,
         oldY : 0,
-        brushSize : 10,
-        penColor : this.penColor
       }
-
-      let canvas = document.getElementById("canvas");
 
       canvas.addEventListener("touchmove", function (e){
         if (!drawData.drawFlag) return;
         let x = e.touches[0].pageX;
         let y = e.touches[0].pageY;
         let context = canvas.getContext("2d");
-        context.strokeStyle = drawData.penColor;
         context.lineWidth = drawData.brushSize;
-        context.lineJoin= "round"; // 連結部分を丸にする
-        context.lineCap = "round";
+        context.lineJoin= drawData.lineJoin;
+        context.lineCap = drawData.lineCap;
         context.beginPath();
         context.moveTo(drawData.oldX, drawData.oldY);
         context.lineTo(x, y);
@@ -185,7 +187,6 @@ export default {
         drawData.drawFlag = true;
         drawData.oldX = e.touches[0].pageX;
         drawData.oldY = e.touches[0].pageY;
-        console.log("2:"+JSON.stringify(drawData));
       }, true);
       canvas.addEventListener("touchend", function(){
         drawData.drawFlag = false;

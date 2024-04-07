@@ -114,7 +114,7 @@ export default {
       height: 23vh;
     }
     .fault_count {
-      font-size: 0.9rem;
+      font-size: 14px;
       background: white;
       display: flex;
       align-items: center;
@@ -132,7 +132,7 @@ export default {
     }
     .count {
       font-family: "MiuraGotic",serif;
-      font-size: 1.4rem;
+      font-size: 24px;
       line-height: 60%;
       letter-spacing: -2px;
       margin-right: 4px;
@@ -158,7 +158,7 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.9rem;
+      font-size: 16px;
       border-top: 1px solid map_get($color, gray03);
       padding-top: 16px;
       margin: 16px;
@@ -176,6 +176,7 @@ export default {
         padding: 0 10px;
         text-align: center;
         margin-right: 8px;
+        font-size: 14px;
         &:last-child {
           margin-right: 0;
         }

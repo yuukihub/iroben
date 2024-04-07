@@ -7,20 +7,14 @@
         <span></span>
         <span></span>
         <span></span>
-        <p class="nav-btn-menu">MENU</p>
-        <p class="nav-btn-close">CLOSE</p>
       </div>
 
       <div class="nav-items" v-bind:class="{ 'is-active': open }">
-        <h2 class="nav-title">
-          <img src="../../img/icon/icon_board_list.svg" alt="list">
-          学ぶ
-        </h2>
         <div class="nav-learn">
-          <h3 class="nav-subTitle">
-          <span>
-            1級
-          </span>
+          <h3 class="nav-title">
+            <span>
+              1級
+            </span>
           </h3>
           <ul class="nav-item">
             <li>
@@ -32,10 +26,10 @@
               </a>
             </li>
           </ul>
-          <h3 class="nav-subTitle">
-          <span>
-            2級
-          </span>
+          <h3 class="nav-title">
+            <span>
+              2級
+            </span>
           </h3>
           <ul class="nav-item">
             <li>
@@ -55,10 +49,10 @@
               </a>
             </li>
           </ul>
-          <h3 class="nav-subTitle">
-          <span>
-            3級
-          </span>
+          <h3 class="nav-title">
+            <span>
+              3級
+            </span>
           </h3>
           <ul class="nav-item">
             <li>
@@ -79,10 +73,11 @@
             </li>
           </ul>
         </div>
-        <h2 class="nav-title">
-          <img src="../../img/icon/icon_paint.svg" alt="icon">
-          描く
-        </h2>
+        <h3 class="nav-title">
+          <span>
+            その他
+          </span>
+        </h3>
         <ul class="nav-item">
           <li>
             <a href="#" @click="toColorPaint">
@@ -92,12 +87,6 @@
               <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
             </a>
           </li>
-        </ul>
-        <h2 class="nav-title">
-          <img src="../../img/icon/icon_message.svg" alt="icon">
-          規約
-        </h2>
-        <ul class="nav-item">
           <li>
             <a href="#" @click="toAgreement">
               <span>
@@ -150,7 +139,6 @@
 </template>
 
 <script>
-import Heading from "@/vue/components/Heading.vue";
 import MainVisual from "@/vue/components/MainVisual.vue";
 import thirdExam from "@/vue/pages/ThirdExam.vue";
 import thirdColorLists from "@/vue/pages/ThirdColorLists.vue";
@@ -171,7 +159,6 @@ export default {
   components: {
     ArticleCard,
     MainVisual,
-    Heading,
   },
   created() {
     window.addEventListener("scroll", this.handleScroll);
@@ -227,7 +214,7 @@ export default {
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    height: 68vh;
+    height: 57vh;
     z-index: -1;
   }
   &:after {
@@ -250,7 +237,7 @@ main {
 }
 section {
   position: absolute;
-  top: 14vh;
+  top: 22vh;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -277,7 +264,7 @@ section {
   }
   p {
     @include KintoSans();
-    font-size: 1rem;
+    font-size: 16px;
   }
   .notice_lists {
     padding: 16px;
@@ -287,14 +274,14 @@ section {
     overflow-y: scroll;
     li {
       border-bottom: 1px solid map_get($color, gray03);
-      font-size: 1rem;
+      font-size: 16px;
     }
     span {
       display: block;
       margin-bottom: 8px;
     }
     .date {
-      font-size: 0.85rem;
+      font-size: 14px;
       margin-bottom: 2px;
     }
     a {
@@ -312,6 +299,7 @@ section {
   }
   .info_message {
     margin-bottom: 16px;
+    font-size: 16px;
     @include KintoSans();
     span {
       background:linear-gradient(transparent 60%, #fed32b 60%);

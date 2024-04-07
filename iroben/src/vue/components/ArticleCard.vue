@@ -45,11 +45,11 @@ export default {
   display: flex;
   align-items: center;
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   &-class,
   &-text{
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 16px;
     @include KintoSans();
   }
   img {

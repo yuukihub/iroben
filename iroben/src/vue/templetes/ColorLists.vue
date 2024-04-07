@@ -166,7 +166,7 @@ export default {
 .c-colorLists {
   @include KintoSans();
   @include mq(sp) {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
   li {
     display: flex;
@@ -227,9 +227,9 @@ export default {
       display: flex;
       align-items: center;
       margin-right: 8px;
-      font-size: 0.85rem;
+      font-size: 14px;
       @include mq(sp){
-        font-size: 0.65rem;
+        font-size: 12px;
       }
       @include mq(xsmall) {
         margin-right: 0;
@@ -246,12 +246,12 @@ export default {
       }
       .count {
         font-family: "MiuraGotic",serif;
-        font-size: 1.6rem;
+        font-size: 24px;
         line-height: 60%;
         letter-spacing: -2px;
         margin: 0 4px 0 2px;
         @include mq(sp) {
-          font-size: 1.4rem;
+          font-size: 26px;
         }
         @include mq(xsmall) {
           font-size: 12px;

@@ -45,7 +45,7 @@ export default {
 @import "../src/scss/foundation/include";
 .--mini {
     button {
-      font-size: 1rem;
+      font-size: 16px;
       color: map_get($color, text);
       display: flex;
       align-items: center;

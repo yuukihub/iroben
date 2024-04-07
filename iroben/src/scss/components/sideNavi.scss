@@ -18,7 +18,7 @@
     left: 16px;
     height: 3px;
     border-radius: 2px;
-    background-color: map_get($color, text);
+    background-color: rgb(0, 118, 255);
     width: 45%;
     &:nth-of-type(1) {
       top:15px;
@@ -29,15 +29,6 @@
     &:nth-of-type(3) {
       top:31px;
     }
-  }
-  p {
-    position: absolute;
-    top: 40px;
-    left: 8px;
-    font-family: "MiuraGotic", serif;
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0px;
   }
   &.is-active {
     span {
@@ -70,23 +61,25 @@
   top: 0;
   left: 0;
   z-index: index($z-map, sideMenu);
-  backdrop-filter: blur(60px);
-  -webkit-backdrop-filter: blur(60px);
+  background: #fffcf9;
   transform: translateX(-50vw);
   transition:  all 0.2s linear;
   padding-top:110px;
   @include KintoSans();
   height: 100vh;
   width: 50vw;
+  box-shadow: 0 0 20px -7px map_get($color, gray03);
   @include mq(regular) {
     width: 30vw;
+  }
+  @include mq(xsmall) {
+    width: 60vw;
   }
   &.is-active {
     transform: translateX(0vw);
   }
 }
 .nav-item {
-  margin: 0 8px;
   @include mq(xsmall) {
     margin: 0;
   }
@@ -94,7 +87,12 @@
     @include KintoSans();
     width: 100%;
     box-sizing: border-box;
-    padding: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid map_get($color, gray03);
+    background: white;
+    &:first-child {
+      border-top: 1px solid map_get($color, gray03);
+    }
   }
   a {
     display: flex;
@@ -106,40 +104,18 @@
   span {
     display: flex;
     align-items: center;
-    text-decoration: underline;
-    color: map_get($color, link);
+    margin-left: 32px;
+  }
+  img {
+    margin-right: 16px;
   }
 }
 .nav-title {
-  display: flex;
-  align-items: center;
-  @include KintoSans();
-  font-size: 0.9rem;
-  font-weight: bold;
-  padding: 8px 16px;
-  margin: 8px 0;
-  background: rgba(0, 0, 0, 0.05);
-  @include mq(xsmall) {
-    padding: 8px;
-  }
-  img {
-    width: 20px;
-    margin-right: 4px;
-  }
-}
-.nav-subTitle {
-  padding: 0 16px;
+  padding-left: 24px;
   margin: 0;
-  @include mq(xsmall) {
-    padding: 0 8px 0 8px;
-  }
   span {
-    font-size: 0.8rem;
+    font-size: 13px;
     @include KintoSans();
-    color: map_get($color, text);
     font-weight: bold;
   }
-}
-.nav-learn {
-  margin-top: 16px;
 }

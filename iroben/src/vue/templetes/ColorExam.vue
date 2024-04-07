@@ -198,7 +198,7 @@ export default {
   background: map_get($color, white);
   border: 1px solid map_get($color, gray03);
   border-radius: 4px;
-  font-size: 1.05rem;
+  font-size: 16px;
   max-width: 342px;
   width: 100%;
   padding: 4px 24px;
@@ -272,19 +272,19 @@ export default {
     padding: 8px;
     animation: fadeIn 0.8s ease 0.1s 0.8 normal backwards;
     border: 1px solid map_get($color, gray03);
-    font-size: 1.05rem;
+    font-size: 16px;
   }
 }
 .counter {
   font-family: "MiuraGotic",serif;
-  font-size: 1.6rem;
+  font-size: 24px;
   letter-spacing: -2px;
   margin: 16px 0;
   text-align: center;
   color: map_get($color, text);
   .current_number {
     font-family: "MiuraGotic", serif;
-    font-size: 2.2rem;
+    font-size: 32px;
   }
 }
 .result_title {

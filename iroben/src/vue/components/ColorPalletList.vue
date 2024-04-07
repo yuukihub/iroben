@@ -197,13 +197,13 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1rem;
+    font-size: 16px;
     padding: 8px 8px 4px 8px;
     @include mq(sp) {
-      font-size: 0.82rem;
+      font-size: 14px;
     }
     @include mq(xsmall) {
-      font-size: 0.8rem;
+      font-size: 12px;
     }
   }
   .title {

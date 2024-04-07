@@ -87,7 +87,7 @@ export default {
     width: 100%;
     height: 100%;
     color: map_get($color, text);
-    font-size: 0.76rem;
+    font-size: 12px;
     @include KintoSans();
     font-weight: 500;
     transition: all 0.4s ease-in-out;

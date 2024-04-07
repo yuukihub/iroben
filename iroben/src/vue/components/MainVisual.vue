@@ -65,7 +65,7 @@ export default {
 @import "./src/scss/components/transition";
 .logo {
   position: absolute;
-  top: -59vh;
+  top: -49vh;
   bottom: 0;
   left: 0;
   right: 0;
@@ -126,26 +126,26 @@ export default {
     &:first-child{
       left: 70px;
       margin: auto;
-      top: 11vh;
+      top: 13vh;
       animation: animate_logo01 6s ease infinite;
     }
     &:nth-child(2){
-      left: -70px;
+      left: -101px;
       margin: auto;
-      top: 8vh;
+      top: 11vh;
       animation: animate_logo06 4s ease infinite;
     }
     &:nth-child(3){
-      left: -140px;
+      left: -160px;
       margin: auto;
-      top: 27vh;
+      top: 35vh;
       animation: animate_logo02 4s ease infinite;
     }
     &:nth-child(4){
-      right: 80px;
+      right: 120px;
       margin: auto;
-      top: 29vh;
-      animation: animate_logo03 4s ease infinite;
+      top: 36vh;
+      animation: animate_logo06 4s ease infinite;
     }
   }
 }
@@ -171,11 +171,14 @@ export default {
 .back_block li{
   position: absolute;
   display: block;
-  bottom: 65vh;
+  bottom: 50vh;
   animation-delay: 0s;
   left: 100%;
 }
 .front_block  {
+  li {
+    bottom: 60vh;
+  }
   li:nth-child(1){
     animation: animate_decoration_front01 30s linear infinite;
     animation-duration:40s;

@@ -76,7 +76,7 @@ export default {
 @import "../src/scss/foundation/include";
 .modal-title {
   display: table;
-  font-size: 1.3rem;
+  font-size: 18px;
   text-align: center;
   font-weight: bold;
   background: map_get($color, white);

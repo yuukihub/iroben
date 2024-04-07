@@ -85,7 +85,7 @@
   .title {
     width: 100%;
     text-align: center;
-    font-size: 1.14rem;
+    font-size: 18px;
     font-weight: 500;
     color: map_get($color, text);
   }

@@ -118,7 +118,7 @@ section {
     @include KintoSans();
   }
   h2 {
-    font-size: 1.3rem;
+    font-size: 18px;
     margin-top: 24px;
     border-bottom: 1px solid map_get($color, text);
     padding-bottom: 8px;

@@ -538,12 +538,12 @@ body * {
 
 body {
   letter-spacing: 1px;
-  font-size: 1.05rem;
+  font-size: 16px;
   line-height: 140%;
 }
 @media (max-width: 375px) {
   body {
-    font-size: 0.9rem;
+    font-size: 16px;
     line-height: 130%;
   }
 }

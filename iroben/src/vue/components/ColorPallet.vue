@@ -158,7 +158,7 @@ export default {
         drawFlag : false,
         oldX : 0,
         oldY : 0,
-        brushSize : 4,
+        brushSize : 10,
         penColor : this.penColor
       }
 
@@ -185,6 +185,7 @@ export default {
         drawData.drawFlag = true;
         drawData.oldX = e.touches[0].pageX;
         drawData.oldY = e.touches[0].pageY;
+        console.log("2:"+JSON.stringify(drawData));
       }, true);
       canvas.addEventListener("touchend", function(){
         drawData.drawFlag = false;
@@ -249,14 +250,14 @@ export default {
     font-weight: 500;
     margin: 0;
     padding: 16px 24px;
-    font-size: 1.1rem;
+    font-size: 16px;
     @include mq(sp) {
       padding: 8px 16px;
-      font-size: 0.9rem;
+      font-size: 14px;
     }
     @include mq(xsmall) {
       padding: 8px 16px;
-      font-size: 0.75rem;
+      font-size: 12px;
     }
   }
 }
@@ -272,10 +273,7 @@ export default {
   font-size: 16px;
   font-weight: bold;
   @include mq(sp) {
-    font-size: 0.9rem;
-  }
-  @include mq(xsmall) {
-    font-size: 0.75rem;
+    font-size: 14px;
   }
   &.is-disabled {
     pointer-events: none;

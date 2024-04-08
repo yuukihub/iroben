@@ -8,9 +8,6 @@
   cursor: pointer;
   width: 50px;
   height:50px;
-  &-close {
-    display: none;
-  }
   span{
     display: inline-block;
     transition: all .4s;
@@ -50,12 +47,6 @@
         transform: translateY(-6px) rotate(45deg);
         width: 30%;
       }
-    }
-    .nav-btn-menu {
-      display: none;
-    }
-    .nav-btn-close {
-      display: block;
     }
   }
 }

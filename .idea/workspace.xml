@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/scss/common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/src/scss/components/sideNavi.scss" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/scss/components/sideNavi.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Top.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Top.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

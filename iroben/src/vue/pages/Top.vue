@@ -67,6 +67,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
+@import '../src/scss/components/checkbox';
 @import "./src/scss/components/transition";
 
 .l-header {

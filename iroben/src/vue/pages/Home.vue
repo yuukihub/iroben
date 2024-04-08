@@ -1,7 +1,7 @@
 <template>
   <v-ons-page>
-    <div class="c-navi">
-      <input id="nav-input" type="checkbox" class="nav-hidden">
+    <div class="c-navi" :class="{'is-show':open}">
+      <input id="nav-input" type="checkbox" @click="open=!open">
       <label id="menu_btn" for="nav-input">
         <div class="nav-btn">
           <span class="navi-icon"></span>
@@ -9,7 +9,7 @@
           <span class="navi-icon"></span>
         </div>
       </label>
-      <nav v-bind:class="{ 'is-active': open }">
+      <nav>
         <div class="nav-items">
           <div class="nav-learn">
             <h3 class="nav-title">
@@ -137,7 +137,7 @@ export default {
   name: "home",
   data() {
     return {
-      pen: false,
+      open: false,
     }
   },
   components: {
@@ -176,7 +176,7 @@ export default {
     toAgreement() {
       this.pageStack.push(agreement);
       this.open = false;
-    }
+    },
   },
 }
 </script>

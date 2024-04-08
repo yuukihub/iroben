@@ -586,51 +586,6 @@ input:focus::placeholder {
   background-color: #FBF6F0 !important;
 }
 
-input[type=checkbox] {
-  appearance: none;
-  outline: none;
-  display: block;
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-}
-
-input[type=checkbox]::before {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 24px;
-  height: 24px;
-  background: #fff;
-  border: solid 1px #DAE0E6;
-  border-radius: 3px;
-}
-
-input[type=checkbox]:checked::before {
-  background: #0D99FF;
-}
-
-input[type=checkbox]::after {
-  display: block;
-  content: "";
-  position: absolute;
-  left: 9px;
-  top: 4px;
-  width: 5px;
-  height: 12px;
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  transform: rotate(45deg);
-  opacity: 0;
-}
-
-input[type=checkbox]:checked::after {
-  opacity: 1;
-}
-
 @keyframes fadeInSlide {
   from {
     transform: translateX(-20px);

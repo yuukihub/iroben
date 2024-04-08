@@ -12,6 +12,7 @@
     cursor: pointer;
     width: 50px;
     height: 50px;
+
     .navi-icon {
       display: inline-block;
       transition: all .4s;
@@ -62,6 +63,10 @@
     @include mq(xsmall) {
       width: 60vw;
       transform: translateX(-60vw);
+    }
+
+    &.is-hide {
+
     }
   }
 
@@ -114,32 +119,31 @@
     }
   }
 
-  #nav-input:checked ~ nav {
-    transform: translateX(0vw);
-  }
-
-  #nav-input:checked + #menu_btn .navi-icon  {
-    &:nth-of-type(1) {
-      top: 18px;
-      left: 18px;
-      transform: translateY(6px) rotate(-45deg);
-      width: 30%;
+  &.is-show {
+    #nav-input:checked ~ nav {
+      transform: translateX(0vw);
     }
 
-    &:nth-of-type(2) {
-      opacity: 0;
-    }
+    #nav-input:checked + #menu_btn .navi-icon {
+      &:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+      }
 
-    &:nth-of-type(3) {
-      top: 30px;
-      left: 18px;
-      transform: translateY(-6px) rotate(45deg);
-      width: 30%;
-    }
-  }
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
 
-  .nav-hidden {
-    transform: translateX(-50vw);
+      &:nth-of-type(3) {
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+      }
+    }
   }
 
 }
+

@@ -5,7 +5,6 @@
       <div class="color" :style="`background-color:${item.colorCode}`">
         <div  class="fault_count"
               v-if="faultCountArray[item.id]">
-          <img src="../../img/icon/icon_flag.svg" alt="flag">
           <p>
             不正解：<span class="count">{{faultCountArray[item.id]}}</span>回
           </p>
@@ -31,9 +30,9 @@
         </p>
       </div>
     </div>
-    <div class="bottom">
-      <img src="../../img/img/common/img_wave_bottom.svg" alt="wave">
-    </div>
+  </div>
+  <div class="bottom">
+    <img src="../../img/img/common/img_wave_bottom.svg" alt="wave">
   </div>
 </template>
 
@@ -89,6 +88,7 @@ export default {
   .c-colorCard {
     @include KintoSans();
     @include fadeIn();
+    margin-bottom: 56px;
     @include mq(sp){
       margin-top: 1vh;
     }
@@ -221,11 +221,14 @@ export default {
     }
   }
 }
-.bottom {
-  img {
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-  }
+.bottom img {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: max-content;
+  z-index: -1;
 }
 </style>

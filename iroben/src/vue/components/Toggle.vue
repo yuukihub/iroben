@@ -3,7 +3,7 @@
     <label class="c-toggle">
       <input type="checkbox" @click="toggle_switch" v-model="checkedFlag">
       <span class="slider"></span>
-      <span class="labels" data-off="OFF" data-on="ON" ></span>
+      <span class="labels" data-off="OFF" data-on="ON"></span>
     </label>
   </div>
 </template>
@@ -11,7 +11,7 @@
 <script>
 export default {
   name: "Toggle",
-  data(){
+  data() {
     return {
       checkedFlag: this.$store.state.toggles[this.level],
     }
@@ -23,7 +23,7 @@ export default {
     },
   },
   methods: {
-    toggle_switch () {
+    toggle_switch() {
       this.$emit('onClick');
     },
   }
@@ -32,6 +32,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
+
 .c-toggle {
   position: relative;
   display: inline-block;
@@ -91,6 +92,7 @@ export default {
     @include KintoSans();
     font-weight: 500;
     transition: all 0.4s ease-in-out;
+
     &::after {
       content: attr(data-off);
       position: absolute;
@@ -131,9 +133,11 @@ export default {
   .c-toggle {
     pointer-events: none;
     background: map_get($color, gray03);
+
     span {
       color: map_get($color, gray01);
     }
+
     .slider::before {
       background: map_get($color, gray01);
     }

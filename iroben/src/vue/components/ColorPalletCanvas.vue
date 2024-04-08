@@ -9,12 +9,12 @@ export default {
     this.resizeCanvas();
   },
   methods: {
-    resizeCanvas(){
+    resizeCanvas() {
       let canvas = document.getElementById("canvas");
       let width = window.innerWidth;
       let height = window.innerHeight;
-      canvas.setAttribute('width',width);
-      canvas.setAttribute('height',height);
+      canvas.setAttribute('width', width);
+      canvas.setAttribute('height', height);
     },
   }
 }

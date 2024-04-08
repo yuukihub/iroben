@@ -24,6 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "./src/scss/foundation/variables";
+
 $yellow: #ffd300;
 $blue: #17d3ff;
 $pink: #ff4e91;

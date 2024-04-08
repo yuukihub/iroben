@@ -3,7 +3,7 @@
 .nav-btn{
   position:fixed;
   z-index: index($z-map, sideMenuButton);
-  top:40px;
+  top:56px;
   left: 8px;
   cursor: pointer;
   width: 50px;
@@ -20,6 +20,9 @@
     border-radius: 2px;
     background-color: rgb(0, 118, 255);
     width: 45%;
+    @include mq(xsmall) {
+      width: 40%;
+    }
     &:nth-of-type(1) {
       top:15px;
     }
@@ -71,9 +74,11 @@
   box-shadow: 0 0 20px -7px map_get($color, gray03);
   @include mq(regular) {
     width: 30vw;
+    transform: translateX(-30vw);
   }
   @include mq(xsmall) {
     width: 60vw;
+    transform: translateX(-60vw);
   }
   &.is-active {
     transform: translateX(0vw);
@@ -87,7 +92,7 @@
     @include KintoSans();
     width: 100%;
     box-sizing: border-box;
-    padding: 8px 0;
+    padding: 12px 0;
     border-bottom: 1px solid map_get($color, gray03);
     background: white;
     &:first-child {
@@ -111,7 +116,7 @@
   }
 }
 .nav-title {
-  padding-left: 24px;
+  padding: 4px 0 4px 24px;
   margin: 0;
   span {
     font-size: 13px;

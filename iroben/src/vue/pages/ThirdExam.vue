@@ -32,7 +32,7 @@ export default {
     }
   },
   methods: {
-    pop(){
+    pop() {
       this.pageStack.pop();
     },
     push() {

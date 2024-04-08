@@ -4,18 +4,19 @@
                v-for="page in pageStack"
                :key="page.key"
                :page-stack="pageStack"></component>
-    <router-view />
+    <router-view/>
   </v-ons-navigator>
 </template>
 
 <script>
-  import Home from './vue/pages/Home.vue';
-  import Top from './vue/pages/Top.vue';
-  export default {
-    data() {
-      return {
-        pageStack: [Top]
-      }
+import Home from './vue/pages/Home.vue';
+import Top from './vue/pages/Top.vue';
+
+export default {
+  data() {
+    return {
+      pageStack: [Top]
     }
   }
+}
 </script>

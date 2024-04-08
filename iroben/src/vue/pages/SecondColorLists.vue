@@ -25,10 +25,10 @@ export default {
     }
   },
   methods: {
-    pop(){
+    pop() {
       this.pageStack.pop();
     },
-    push (value) {
+    push(value) {
       let item = JSON.stringify(value);
       this.pageStack.push({
         extends: secondColorDetail,

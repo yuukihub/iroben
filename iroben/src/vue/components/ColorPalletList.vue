@@ -7,7 +7,7 @@
            href="#"
            class="name"
            @click="openModal">
-          {{colorTitle}}
+          {{ colorTitle }}
         </a>
         <p v-else class="name is-disabled">
           未選択
@@ -64,7 +64,7 @@ import ColorPalletModal from "@/vue/components/ColorPalletModal.vue";
 export default {
   name: "ColorPalletList",
   components: {ColorPalletModal, Toggle},
-  data(){
+  data() {
     return {
       colorTitle: "未選択",
       colorDetail: Object,
@@ -103,15 +103,15 @@ export default {
       this.$emit("toggle");
       this.colorTitleFlag = false;
     },
-    getColorDetail(item){
+    getColorDetail(item) {
       this.colorDetail = item;
       this.colorTitleFlag = true;
       this.colorTitle = item.title;
-      this.$emit("setColor",this.colorDetail.colorCode);
+      this.$emit("setColor", this.colorDetail.colorCode);
     },
-    openModal(){
+    openModal() {
       this.openModalFlag = true;
-      this.$emit("setColorDetail",this.colorDetail,this.openModalFlag);
+      this.$emit("setColorDetail", this.colorDetail, this.openModalFlag);
     },
   },
 }
@@ -119,15 +119,18 @@ export default {
 
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
-.c-colorPalletList{
+
+.c-colorPalletList {
   &.--firstClass {
-    .c-colorLists{
+    .c-colorLists {
       overflow-y: scroll;
       max-height: 23vh;
+
       &::-webkit-scrollbar {
         background: map_get($color, white);
         width: 1.5vw;
       }
+
       &::-webkit-scrollbar-thumb {
         background-color: map_get($color, gray03);
         border: 1px solid map_get($color, gray03);
@@ -136,12 +139,14 @@ export default {
     }
   }
 }
-.c-colorLists{
+
+.c-colorLists {
   @include KintoSans();
   padding: 8px;
   border: 1px solid map_get($color, gray03);
   border-radius: 6px;
   margin: 8px 8px 24px 8px;
+
   ul {
     display: grid;
     place-items: center;
@@ -157,6 +162,7 @@ export default {
     }
   }
 }
+
 .color {
   position: relative;
   width: 24px;
@@ -166,12 +172,17 @@ export default {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  @include mq(big) {
+    width: 32px;
+    height: 32px;
+  }
   @include mq(xsmall) {
     width: 18px;
     height: 18px;
   }
+
   &[type="radio"]:checked:before {
-    content: '';
+    content: "";
     background-image: url(../../img/icon/icon_check.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -182,6 +193,10 @@ export default {
     left: 4px;
     display: inline-block;
     vertical-align: middle;
+    @include mq(big) {
+      width: 24px;
+      height: 24px;
+    }
     @include mq(xsmall) {
       width: 14px;
       height: 14px;
@@ -190,9 +205,11 @@ export default {
     }
   }
 }
+
 .selectedColor {
   display: flex;
   align-items: center;
+
   &_header {
     display: flex;
     align-items: center;
@@ -206,10 +223,12 @@ export default {
       font-size: 12px;
     }
   }
+
   .title {
     width: max-content;
     margin-right: 4px;
   }
+
   .name {
     width: 38vw;
     cursor: pointer;
@@ -219,20 +238,24 @@ export default {
     @include mq(xsmall) {
       width: 27vw;
     }
-   &.is-disabled {
-     cursor: none;
-     color: map_get($color, gray01);
-   }
+
+    &.is-disabled {
+      cursor: none;
+      color: map_get($color, gray01);
+    }
   }
 }
+
 .toggle_wrap {
   display: flex;
   align-items: center;
+
   p {
     width: max-content;
     margin-right: 4px;
   }
 }
+
 .noData_desc {
   @include KintoSans();
   background: map_get($color, gray04);

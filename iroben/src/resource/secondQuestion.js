@@ -93,8 +93,8 @@ export const secondQuestion = [
             ],
             [
                 {
-                    "name":"カーマイン",
-                    "colorCode":"#d7003a"
+                    "name":"チャイニーズレッド",
+                    "colorCode":"#ea5520"
                 },
                 {
                     "name":"ポピーレッド",
@@ -212,7 +212,7 @@ export const secondQuestion = [
                 }
             ]
         ],
-        answer:1,
+        answer:2,
         toneNumber:['dk4','dk2'],
     },
     {
@@ -256,8 +256,8 @@ export const secondQuestion = [
                     "colorCode":"#8f2e14"
                 },
                 {
-                    "name":"海老茶",
-                    "colorCode":"#6c2c2f"
+                    "name":"チャイニーズレッド",
+                    "colorCode":"#ea5520"
                 },
                 {
                     "name":"煉瓦色",
@@ -338,9 +338,9 @@ export const secondQuestion = [
                     "colorCode":"#9e3d3e"
                 },
                 {
-                    "name":"ローズピンク",
-                    "colorCode":"#f29c9f"
-                }
+                    "name":"チャイニーズレッド",
+                    "colorCode":"#ea5520"
+                },
             ],
             [
                 {
@@ -366,8 +366,8 @@ export const secondQuestion = [
                     "colorCode":"#f3a7a5"
                 },
                 {
-                    "name":"ローズピンク",
-                    "colorCode":"#f29c9f"
+                    "name":"鴇色",
+                    "colorCode":"#f4b3c2"
                 }
             ]
         ],
@@ -391,8 +391,8 @@ export const secondQuestion = [
                     "colorCode":"#e9474d"
                 },
                 {
-                    "name":"カーマイン",
-                    "colorCode":"#d7003a"
+                    "name":"チャイニーズレッド",
+                    "colorCode":"#ea5520"
                 },
             ],
             [
@@ -648,8 +648,8 @@ export const secondQuestion = [
         choices:[
             [
                 {
-                    "name":"ローシェンナ",
-                    "colorCode":"#b5652c"
+                    "name":"チャイニーズレッド",
+                    "colorCode":"#ea5520"
                 },
                 {
                     "name":"タン",
@@ -901,7 +901,7 @@ export const secondQuestion = [
                 }
             ]
         ],
-        answer:3,
+        answer:2,
         toneNumber:['dp6'],
     },
     {
@@ -931,8 +931,8 @@ export const secondQuestion = [
                     "colorCode":"#c39043"
                 },
                 {
-                    "name":"ローシェンナ",
-                    "colorCode":"#b5652c"
+                    "name":"チャイニーズレッド",
+                    "colorCode":"#ea5520"
                 },
                 {
                     "name":"タン",
@@ -966,16 +966,16 @@ export const secondQuestion = [
         choices:[
             [
                 {
-                    "name":"アンバー",
-                    "colorCode":"#c28953"
+                    "name":"チャイニーズレッド",
+                    "colorCode":"#ea5520"
                 },
                 {
                     "name":"琥珀色",
                     "colorCode":"#bf7834"
                 },
                 {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
+                    "name":"鬱金色",
+                    "colorCode":"#fabf13"
                 }
             ],
             [
@@ -1100,8 +1100,8 @@ export const secondQuestion = [
             ],
             [
                 {
-                    "name":"黄檗色",
-                    "colorCode":"#dfd310"
+                    "name":"鬱金色",
+                    "colorCode":"#fabf13"
                 },
                 {
                     "name":"レモンイエロー",
@@ -1113,7 +1113,7 @@ export const secondQuestion = [
                 }
             ]
         ],
-        answer:3,
+        answer:1,
         toneNumber:['v7','v8'],
     },
     {
@@ -1133,8 +1133,8 @@ export const secondQuestion = [
                     "colorCode":"#f5e56b"
                 },
                 {
-                    "name":"カナリヤ",
-                    "colorCode":"#fff262"
+                    "name":"柑子色",
+                    "colorCode":"#f6ad48"
                 }
             ],
             [
@@ -1166,7 +1166,7 @@ export const secondQuestion = [
                 }
             ]
         ],
-        answer:3,
+        answer:2,
         toneNumber:['lt8+'],
     },
     {
@@ -1196,8 +1196,8 @@ export const secondQuestion = [
                     "colorCode":"#f7efe3"
                 },
                 {
-                    "name":"アイボリー",
-                    "colorCode":"#F8F5E4"
+                    "name":"刈安色",
+                    "colorCode":"#f5e56b"
                 },
                 {
                     "name":"エクルベイジュ",
@@ -1292,8 +1292,8 @@ export const secondQuestion = [
                     "colorCode":"#b5652c"
                 },
                 {
-                    "name":"黄土色",
-                    "colorCode":"#c39043"
+                    "name":"柑子色",
+                    "colorCode":"#f6ad48"
                 }
             ],
             [
@@ -1306,8 +1306,8 @@ export const secondQuestion = [
                     "colorCode":"#bf7834"
                 },
                 {
-                    "name":"タン",
-                    "colorCode":"#c1813f"
+                    "name":"桧皮色",
+                    "colorCode":"#895d4f"
                 }
             ],
             [
@@ -1373,8 +1373,8 @@ export const secondQuestion = [
                     "colorCode":"#bf7834"
                 },
                 {
-                    "name":"ローアンバー",
-                    "colorCode":"#554721"
+                    "name":"鬱金色",
+                    "colorCode":"#fabf13"
                 }
             ]
         ],
@@ -1398,8 +1398,8 @@ export const secondQuestion = [
                     "colorCode":"#554721"
                 },
                 {
-                    "name":"琥珀色",
-                    "colorCode":"#bf7834"
+                    "name":"鬱金色",
+                    "colorCode":"#fabf13"
                 }
             ],
             [
@@ -1412,8 +1412,8 @@ export const secondQuestion = [
                     "colorCode":"#554721"
                 },
                 {
-                    "name":"バーントアンバー",
-                    "colorCode":"#59442c"
+                    "name":"エクルベイジュ",
+                    "colorCode":"#f8eacf"
                 }
             ],
             [
@@ -1447,8 +1447,8 @@ export const secondQuestion = [
                     "colorCode":"#f5e56b"
                 },
                 {
-                    "name":"カナリヤ",
-                    "colorCode":"#fff262"
+                    "name":"エクルベイジュ",
+                    "colorCode":"#f8eacf"
                 },
                 {
                     "name":"ネープルスイエロー",
@@ -1616,8 +1616,8 @@ export const secondQuestion = [
             ],
             [
                 {
-                    "name":"鶯色",
-                    "colorCode":"#6f6f44"
+                    "name":"エクルベイジュ",
+                    "colorCode":"#f8eacf"
                 },
                 {
                     "name":"グラスグリーン",
@@ -1634,8 +1634,8 @@ export const secondQuestion = [
                     "colorCode":"#ddb563"
                 },
                 {
-                    "name":"鶯色",
-                    "colorCode":"#6f6f44"
+                    "name":"ローシェンナ",
+                    "colorCode":"#b5652c"
                 },
                 {
                     "name":"海松色",
@@ -1663,8 +1663,8 @@ export const secondQuestion = [
                     "colorCode":"#726d3f"
                 },
                 {
-                    "name":"グラスグリーン",
-                    "colorCode":"#7b8d41"
+                    "name":"エクルベイジュ",
+                    "colorCode":"#f8eacf"
                 }
             ],
             [
@@ -1677,8 +1677,8 @@ export const secondQuestion = [
                     "colorCode":"#6f6f44"
                 },
                 {
-                    "name":"海松色",
-                    "colorCode":"#726d3f"
+                    "name":"シャトルーズグリーン",
+                    "colorCode":"#d9e367"
                 }
             ],
             [
@@ -1716,8 +1716,8 @@ export const secondQuestion = [
                     "colorCode":"#d9e367"
                 },
                 {
-                    "name":"鶸色",
-                    "colorCode":"#c0c14c"
+                    "name":"ローシェンナ",
+                    "colorCode":"#b5652c"
                 }
             ],
             [
@@ -1736,8 +1736,8 @@ export const secondQuestion = [
             ],
             [
                 {
-                    "name":"リーフグリーン",
-                    "colorCode":"#9dc04c"
+                    "name":"刈安色",
+                    "colorCode":"#f5e56b"
                 },
                 {
                     "name":"シャトルーズグリーン",
@@ -1793,8 +1793,8 @@ export const secondQuestion = [
                     "colorCode":"#9dc04c"
                 },
                 {
-                    "name":"萌黄",
-                    "colorCode":"#AFD147"
+                    "name":"刈安色",
+                    "colorCode":"#f5e56b"
                 },
                 {
                     "name":"オリーブ",
@@ -2030,8 +2030,8 @@ export const secondQuestion = [
                     "colorCode":"#98ce97"
                 },
                 {
-                    "name":"アップルグリーン",
-                    "colorCode":"#a2cc89"
+                    "name":"ローシェンナ",
+                    "colorCode":"#b5652c"
                 },
                 {
                     "name":"シャトルーズグリーン",
@@ -2164,8 +2164,8 @@ export const secondQuestion = [
                     "colorCode":"#005635"
                 },
                 {
-                    "name":"常磐色",
-                    "colorCode":"#007c45"
+                    "name":"ローシェンナ",
+                    "colorCode":"#b5652c"
                 },
                 {
                     "name":"鉄色",
@@ -2376,8 +2376,8 @@ export const secondQuestion = [
                     "colorCode":"#a2d7dd"
                 },
                 {
-                    "name":"浅葱色",
-                    "colorCode":"#00a1ae"
+                    "name":"ローシェンナ",
+                    "colorCode":"#b5652c"
                 },
                 {
                     "name":"新橋色",
@@ -2443,7 +2443,7 @@ export const secondQuestion = [
     },
     {
         id:46,
-        title:"甕覗",
+        title:"甕覗き",
         subTitle:"やわらかい緑みの青",
         colorCode:"#a2d7dd",
         description:"別名「のぞきいろ(覗き色)」。糸や布が藍がめをちょっとのぞいただけという意味。当然、ご薄い藍染めの青になる。中世には薄い藍色を一入染(ひとしおそめ)といった。これは藍がめの中に1回布をくぐらせただけという染色であった。",
@@ -2517,8 +2517,8 @@ export const secondQuestion = [
             ],
             [
                 {
-                    "name":"マリンブルー",
-                    "colorCode":"#006788"
+                    "name":"ローシェンナ",
+                    "colorCode":"#b5652c"
                 },
                 {
                     "name":"納戸色",
@@ -2564,8 +2564,8 @@ export const secondQuestion = [
                     "colorCode":"#008db7"
                 },
                 {
-                    "name":"縹色",
-                    "colorCode":"#2980af"
+                    "name":"刈安色",
+                    "colorCode":"#f5e56b"
                 }
             ],
             [
@@ -2584,8 +2584,8 @@ export const secondQuestion = [
             ],
             [
                 {
-                    "name":"縹色",
-                    "colorCode":"#2980af"
+                    "name":"ローシェンナ",
+                    "colorCode":"#b5652c"
                 },
                 {
                     "name":"セルリアンブルー",
@@ -2715,8 +2715,8 @@ export const secondQuestion = [
         choices:[
             [
                 {
-                    "name":"ラベンダー",
-                    "colorCode":"#C4B3D3"
+                    "name":"ローシェンナ",
+                    "colorCode":"#b5652c"
                 },
                 {
                     "name":"ウィスタリア",
@@ -2772,8 +2772,8 @@ export const secondQuestion = [
                     "colorCode":"#321b3a"
                 },
                 {
-                    "name":"バイオレット",
-                    "colorCode":"#714f9d"
+                    "name":"ローシェンナ",
+                    "colorCode":"#b5652c"
                 },
                 {
                     "name":"江戸紫",
@@ -2878,8 +2878,8 @@ export const secondQuestion = [
                     "colorCode":"#D2BADA"
                 },
                 {
-                    "name":"ラベンダー",
-                    "colorCode":"#C4B3D3"
+                    "name":"煤竹色",
+                    "colorCode":"#6b5146"
                 },
                 {
                     "name":"ウィスタリア",
@@ -2896,8 +2896,8 @@ export const secondQuestion = [
                     "colorCode":"#bbb7da"
                 },
                 {
-                    "name":"ラベンダー",
-                    "colorCode":"#C4B3D3"
+                    "name":"鶸色",
+                    "colorCode":"#c0c14c"
                 }
             ],
             [
@@ -2910,8 +2910,8 @@ export const secondQuestion = [
                     "colorCode":"#8e8bc2"
                 },
                 {
-                    "name":"藤色",
-                    "colorCode":"#bbb7da"
+                    "name": "利休鼠",
+                    "colorCode": "#7b8174"
                 }
             ]
         ],
@@ -2927,8 +2927,8 @@ export const secondQuestion = [
         choices:[
             [
                 {
-                    "name":"シルバーグレイ",
-                    "colorCode":"#afafb0"
+                    "name":"ウィスタリア",
+                    "colorCode":"#8e8bc2"
                 },
                 {
                     "name":"利休鼠",
@@ -2945,8 +2945,8 @@ export const secondQuestion = [
                     "colorCode":"#636062"
                 },
                 {
-                    "name":"シルバーグレイ",
-                    "colorCode":"#afafb0"
+                    "name":"煤竹色",
+                    "colorCode":"#6b5146"
                 },
                 {
                     "name":"銀鼠",
@@ -3161,8 +3161,8 @@ export const secondQuestion = [
                     "colorCode":"#afafb0"
                 },
                 {
-                    "name":"チャコールグレイ",
-                    "colorCode":"#4e4449"
+                    "name":"ウィスタリア",
+                    "colorCode":"#8e8bc2"
                 }
             ],
             [
@@ -3302,8 +3302,8 @@ export const secondQuestion = [
                     "colorCode":"#3a8daa"
                 },
                 {
-                    "name":"ナイルブルー",
-                    "colorCode":"#469298"
+                    "name":"ウィスタリア",
+                    "colorCode":"#8e8bc2"
                 },
                 {
                     "name":"浅葱色",
@@ -3359,8 +3359,8 @@ export const secondQuestion = [
                     "colorCode":"#fdeeef"
                 },
                 {
-                    "name":"珊瑚色",
-                    "colorCode":"#F3ADA3"
+                    "name":"ウィスタリア",
+                    "colorCode":"#8e8bc2"
                 }
             ],
             [

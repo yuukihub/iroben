@@ -1,11 +1,7 @@
 <template>
   <article class="c-articleCard">
     <h3 class="title">
-      <img v-if="title"
-          class="icon_list"
-           :src="imgPath"
-           alt="list">
-      <span class="title-text">{{title}}</span>
+      <span class="title-text">{{ title }}</span>
     </h3>
     <slot></slot>
   </article>
@@ -25,33 +21,33 @@ export default {
       default: "",
       required: false
     },
-    imgPath: {
-      type: String,
-      default: "",
-      required: false
-    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "./src/scss/foundation/include";
+
 .c-articleCard {
   max-width: 440px;
   width: 80vw;
-  margin: 0 auto 32px;
+  margin: 0 auto 48px;
+  @include mq(xsmall) {
+    width: 90vw;
+  }
 }
+
 .title {
-  display: flex;
-  align-items: center;
+  text-align: center;
   margin-top: 0;
-  margin-bottom: 8px;
-  &-class,
-  &-text{
+  margin-bottom: 24px;
+
+  &-text {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     @include KintoSans();
   }
+
   img {
     margin-right: 4px;
   }

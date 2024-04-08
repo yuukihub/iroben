@@ -2,10 +2,10 @@
   <v-ons-page>
     <custom-toolbar :title="this.title"
                     :custom-button-flag="false"></custom-toolbar>
-      <color-exam :questions="secondQuestion"
-                  :level="'second'"
-                  @toPaint="toPaint"
-                  @toColorList="toColorList">
+    <color-exam :questions="secondQuestion"
+                :level="'second'"
+                @toPaint="toPaint"
+                @toColorList="toColorList">
     </color-exam>
   </v-ons-page>
 </template>
@@ -32,7 +32,7 @@ export default {
     }
   },
   methods: {
-    pop(){
+    pop() {
       this.pageStack.pop();
     },
     push() {

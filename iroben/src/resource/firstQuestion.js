@@ -6,9 +6,9 @@ export const firstQuestion = [
     {
         id:0,
         title:"モーニングスターブルー",
-        subTitle:"",
+        subTitle:"明るい緑みの青",
         colorCode:"#1C87AE",
-        description:"",
+        description:"1950年代、カラー映像（シネマ）がファッションのお手本となり、シネモードやシネカラーと呼ばれる流行が生まれた。映画「初恋」からは主人公の名前とドレスの色にちなんだモーニングスターブルーの流行色が生まれた。",
         choices:[],
         answer:1,
         toneNumber:['b16'],

@@ -5,13 +5,13 @@
                     @click="resetToggleFlag"/>
     <color-pallet @openModal="setColorDetail"/>
     <transition appear>
-      <color-pallet-modal  v-show="openModalFlag"
-                           :color-title="colorTitle"
-                           :color-code="colorCode"
-                           :color-sub-title="colorSubTitle"
-                           :color-tone-number="colorToneNumber"
-                           :color-description="colorDescription"
-                           @closeModal="closeModal"/>
+      <color-pallet-modal v-show="openModalFlag"
+                          :color-title="colorTitle"
+                          :color-code="colorCode"
+                          :color-sub-title="colorSubTitle"
+                          :color-tone-number="colorToneNumber"
+                          :color-description="colorDescription"
+                          @closeModal="closeModal"/>
     </transition>
   </v-ons-page>
 </template>
@@ -29,7 +29,7 @@ export default {
     CustomToolbar,
     ColorPallet
   },
-  data(){
+  data() {
     return {
       openModalFlag: false,
       colorDetail: "",
@@ -41,7 +41,7 @@ export default {
     }
   },
   methods: {
-    setColorDetail(item,flag){
+    setColorDetail(item, flag) {
       this.openModalFlag = flag;
 
       this.colorDetail = item;
@@ -51,18 +51,20 @@ export default {
       this.colorToneNumber = item.toneNumber;
       this.colorDescription = item.description;
     },
-    closeModal(){
+    closeModal() {
       this.openModalFlag = false;
     },
     resetToggleFlag() {
       this.$store.commit("toggle",
-          { level:"second",
-            flag:false,
+          {
+            level: "second",
+            flag: false,
           }
       );
       this.$store.commit("toggle",
-          { level:"third",
-            flag:false,
+          {
+            level: "third",
+            flag: false,
           }
       );
     }

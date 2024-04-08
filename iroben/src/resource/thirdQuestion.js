@@ -44,8 +44,8 @@ export const thirdQuestion = [
                     "colorCode":"#fdeeef"
                 },
                 {
-                    "name":"珊瑚色",
-                    "colorCode":"#f3a7a5"
+                    "name":"ワインレッド",
+                    "colorCode":"#942E44"
                 },
                 {
                     "name":"ピーチ",
@@ -69,8 +69,8 @@ export const thirdQuestion = [
                     "colorCode":"#F3ADA3"
                 },
                 {
-                    "name":"紅梅色",
-                    "colorCode":"#f3a7a5"
+                    "name":"桔梗色",
+                    "colorCode":"#5045a4"
                 },
                 {
                     "name":"桜色",
@@ -118,12 +118,12 @@ export const thirdQuestion = [
         choices:[
             [
                 {
-                    "name":"紅梅色",
-                    "colorCode":"#f3a7a5"
+                    "name":"茜色",
+                    "colorCode":"#b7282d"
                 },
                 {
-                    "name":"サーモンピンク",
-                    "colorCode":"#f4a583"
+                    "name":"カーマイン",
+                    "colorCode":"#d7003a"
                 },
                 {
                     "name":"珊瑚色",
@@ -216,7 +216,7 @@ export const thirdQuestion = [
         answer:3,
         toneNumber:['dp2'],
     },
-    /*{
+    {
         id:4,
         title:"朱色",
         subTitle:"あざやかな黄みの赤",
@@ -253,8 +253,8 @@ export const thirdQuestion = [
             ],
             [
                 {
-                    "name":"山吹色",
-                    "colorCode":"#f8b500"
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
                 },
                 {
                     "name":"マリーゴールド",
@@ -473,8 +473,8 @@ export const thirdQuestion = [
                     "colorCode":"#f39800"
                 },
                 {
-                    "name":"スカーレット",
-                    "colorCode":"#da433a"
+                    "name":"ピーチ",
+                    "colorCode":"#fbd8b5"
                 }
             ],
         ],
@@ -989,8 +989,8 @@ export const thirdQuestion = [
                     "colorCode":"#e9514e"
                 },
                 {
-                    "name":"山吹色",
-                    "colorCode":"#f8b500"
+                    "name":"芥子色",
+                    "colorCode":"#d2b74e"
                 }
             ],
             [
@@ -1268,8 +1268,8 @@ export const thirdQuestion = [
                     "colorCode":"#fff2b8"
                 },
                 {
-                    "name":"ブロンド",
-                    "colorCode":"#ddb563"
+                    "name":"芥子色",
+                    "colorCode":"#d2b74e"
                 }
             ],
         ],
@@ -1307,8 +1307,8 @@ export const thirdQuestion = [
                     "colorCode":"#d2b74e"
                 },
                 {
-                    "name":"レモンイエロー",
-                    "colorCode":"#fff33f"
+                    "name":"オリーブ",
+                    "colorCode":"#5d5426"
                 }
             ],
             [
@@ -1321,8 +1321,8 @@ export const thirdQuestion = [
                     "colorCode":"#bfaB90"
                 },
                 {
-                    "name":"レモンイエロー",
-                    "colorCode":"#fff33f"
+                    "name":"芥子色",
+                    "colorCode":"#d2b74e"
                 }
             ],
         ],
@@ -1458,8 +1458,8 @@ export const thirdQuestion = [
             ],
             [
                 {
-                    "name":"オリーブ",
-                    "colorCode":"#5d5426"
+                    "name":"芥子色",
+                    "colorCode":"#d2b74e"
                 },
                 {
                     "name":"鶯色",
@@ -1578,12 +1578,12 @@ export const thirdQuestion = [
             ],
             [
                 {
-                    "name":"オリーブグリーン",
-                    "colorCode":"#5f651e"
+                    "name":"若竹色",
+                    "colorCode":"#76ac96"
                 },
                 {
-                    "name":"浅葱色",
-                    "colorCode":"#00a1ae"
+                    "name":"芥子色",
+                    "colorCode":"#d2b74e"
                 },
                 {
                     "name":"浅葱色",
@@ -1607,8 +1607,8 @@ export const thirdQuestion = [
                     "colorCode":"#76ac96"
                 },
                 {
-                    "name":"青磁色",
-                    "colorCode":"#76ac96"
+                    "name":"カーキー",
+                    "colorCode":"#bb9855"
                 },
                 {
                     "name":"コバルトグリーン",
@@ -1625,9 +1625,9 @@ export const thirdQuestion = [
                     "colorCode":"#00a1ae"
                 },
                 {
-                    "name":"青磁色",
-                    "colorCode":"#76ac96"
-                }
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
+                },
             ],
             [
                 {
@@ -1639,12 +1639,12 @@ export const thirdQuestion = [
                     "colorCode":"#00aa6e"
                 },
                 {
-                    "name":"青磁色",
-                    "colorCode":"#76ac96"
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
                 }
             ],
         ],
-        answer:3,
+        answer:1,
         toneNumber:['b12'],
     },
     {
@@ -1660,8 +1660,8 @@ export const thirdQuestion = [
                     "colorCode":"#3ab483"
                 },
                 {
-                    "name":"若竹色",
-                    "colorCode":"#76ac96"
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
                 },
                 {
                     "name":"青磁色",
@@ -1670,8 +1670,8 @@ export const thirdQuestion = [
             ],
             [
                 {
-                    "name":"若竹色",
-                    "colorCode":"#76ac96"
+                    "name":"ビリジアン",
+                    "colorCode":"#046e56"
                 },
                 {
                     "name":"浅葱色",
@@ -1688,8 +1688,8 @@ export const thirdQuestion = [
                     "colorCode":"#00aa6e"
                 },
                 {
-                    "name":"コバルトグリーン",
-                    "colorCode":"#3ab483"
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
                 },
                 {
                     "name":"青磁色",
@@ -1731,8 +1731,8 @@ export const thirdQuestion = [
                     "colorCode":"#76ac96"
                 },
                 {
-                    "name":"青磁色",
-                    "colorCode":"#76ac96"
+                    "name":"ビリジアン",
+                    "colorCode":"#046e56"
                 }
             ],
             [
@@ -1741,8 +1741,8 @@ export const thirdQuestion = [
                     "colorCode":"#3ab483"
                 },
                 {
-                    "name":"若竹色",
-                    "colorCode":"#76ac96"
+                    "name":"ブロンド",
+                    "colorCode":"#ddb563"
                 },
                 {
                     "name":"青磁色",
@@ -1766,8 +1766,8 @@ export const thirdQuestion = [
                     "colorCode":"#67be8d"
                 },
                 {
-                    "name":"コバルトグリーン",
-                    "colorCode":"#3ab483"
+                    "name":"鶯色",
+                    "colorCode":"#6f6f44"
                 },
                 {
                     "name":"エメラルドグリーン",
@@ -1790,8 +1790,8 @@ export const thirdQuestion = [
             ],
             [
                 {
-                    "name":"ビリジアン",
-                    "colorCode":"#046e56"
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
                 },
                 {
                     "name":"コバルトグリーン",
@@ -1921,8 +1921,8 @@ export const thirdQuestion = [
         choices:[
             [
                 {
-                    "name":"ベビーブルー",
-                    "colorCode":"#bbe2f1"
+                    "name":"ビリジアン",
+                    "colorCode":"#046e56"
                 },
                 {
                     "name":"ターコイズブルー",
@@ -1939,8 +1939,8 @@ export const thirdQuestion = [
                     "colorCode":"#00afcc"
                 },
                 {
-                    "name":"ベビーブルー",
-                    "colorCode":"#bbe2f1"
+                    "name":"煉瓦色",
+                    "colorCode":"#a2482b"
                 },
                 {
                     "name":"空色",
@@ -1953,8 +1953,8 @@ export const thirdQuestion = [
                     "colorCode":"#0068b7"
                 },
                 {
-                    "name":"ベビーブルー",
-                    "colorCode":"#bbe2f1"
+                    "name":"マリンブルー",
+                    "colorCode":"#006788"
                 },
                 {
                     "name":"空色",
@@ -2094,8 +2094,8 @@ export const thirdQuestion = [
             ],
             [
                 {
-                    "name":"ウルトラマリンブルー",
-                    "colorCode":"#4052a2"
+                    "name":"シアン",
+                    "colorCode":"#00a0e9"
                 },
                 {
                     "name":"瑠璃色",
@@ -2190,8 +2190,8 @@ export const thirdQuestion = [
                     "colorCode":"#006788"
                 },
                 {
-                    "name":"群青色",
-                    "colorCode":"#4e67b0"
+                    "name":"シアン",
+                    "colorCode":"#00a0e9"
                 },
                 {
                     "name":"ウルトラマリンブルー",
@@ -2214,8 +2214,8 @@ export const thirdQuestion = [
             ],
             [
                 {
-                    "name":"マリンブルー",
-                    "colorCode":"#006788"
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 },
                 {
                     "name":"藍色",
@@ -2296,8 +2296,8 @@ export const thirdQuestion = [
                     "colorCode":"#00afcc"
                 },
                 {
-                    "name":"ベビーブルー",
-                    "colorCode":"#bbe2f1"
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 },
                 {
                     "name":"スカイブルー",
@@ -2367,8 +2367,8 @@ export const thirdQuestion = [
                     "colorCode":"#bbe2f1"
                 },
                 {
-                    "name":"スカイブルー",
-                    "colorCode":"#a0d8ef"
+                    "name":"浅葱色",
+                    "colorCode":"#00a1ae"
                 },
             ],
             [
@@ -2412,8 +2412,8 @@ export const thirdQuestion = [
             ],
             [
                 {
-                    "name":"瑠璃色",
-                    "colorCode":"#1d50a2"
+                    "name":"ネービーブルー",
+                    "colorCode":"#1f2e55"
                 },
                 {
                     "name":"コバルトブルー",
@@ -2483,8 +2483,8 @@ export const thirdQuestion = [
                     "colorCode":"#00a1ae"
                 },
                 {
-                    "name":"ターコイズブルー",
-                    "colorCode":"#00afcc"
+                    "name":"オリーブ",
+                    "colorCode":"#5d5426"
                 },
                 {
                     "name":"ネービーブルー",
@@ -2540,8 +2540,8 @@ export const thirdQuestion = [
                     "colorCode":"#4052a2"
                 },
                 {
-                    "name":"群青色",
-                    "colorCode":"#4e67b0"
+                    "name":"セピア",
+                    "colorCode":"#48392b"
                 }
             ],
         ],
@@ -2575,8 +2575,8 @@ export const thirdQuestion = [
                     "colorCode":"#9b68a9"
                 },
                 {
-                    "name":"モーブ",
-                    "colorCode":"#915da3"
+                    "name":"ラベンダー",
+                    "colorCode":"#C4B3D3"
                 },
                 {
                     "name":"桔梗色",
@@ -2610,8 +2610,8 @@ export const thirdQuestion = [
         choices:[
             [
                 {
-                    "name":"モーブ",
-                    "colorCode":"#915da3"
+                    "name":"セピア",
+                    "colorCode":"#48392b"
                 },
                 {
                     "name":"バイオレット",
@@ -2685,8 +2685,8 @@ export const thirdQuestion = [
                     "colorCode":"#714f9d"
                 },
                 {
-                    "name":"モーブ",
-                    "colorCode":"#915da3"
+                    "name":"セピア",
+                    "colorCode":"#48392b"
                 }
             ],
             [
@@ -2783,8 +2783,8 @@ export const thirdQuestion = [
             ],
             [
                 {
-                    "name":"バイオレット",
-                    "colorCode":"#714f9d"
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
                 },
                 {
                     "name":"ラベンダー",
@@ -2854,8 +2854,8 @@ export const thirdQuestion = [
                     "colorCode":"#915da3"
                 },
                 {
-                    "name":"バイオレット",
-                    "colorCode":"#714f9d"
+                    "name":"桔梗色",
+                    "colorCode":"#5045a4"
                 },
                 {
                     "name":"ラベンダー",
@@ -2883,14 +2883,14 @@ export const thirdQuestion = [
                     "colorCode":"#9b68a9"
                 },
                 {
-                    "name":"モーブ",
-                    "colorCode":"#915da3"
+                    "name":"セピア",
+                    "colorCode":"#48392b"
                 }
             ],
             [
                 {
-                    "name":"モーブ",
-                    "colorCode":"#915da3"
+                    "name":"牡丹色",
+                    "colorCode":"#cb4897"
                 },
                 {
                     "name":"パープル",
@@ -3268,8 +3268,8 @@ export const thirdQuestion = [
                     "colorCode":"#fadbda"
                 },
                 {
-                    "name":"珊瑚色",
-                    "colorCode":"#F3ADA3"
+                    "name":"セピア",
+                    "colorCode":"#48392b"
                 }
             ],
             [
@@ -3282,8 +3282,8 @@ export const thirdQuestion = [
                     "colorCode":"#fadbda"
                 },
                 {
-                    "name":"珊瑚色",
-                    "colorCode":"#F3ADA3"
+                    "name":"鉄色",
+                    "colorCode":"#005242"
                 }
             ],
         ],
@@ -3313,8 +3313,8 @@ export const thirdQuestion = [
             ],
             [
                 {
-                    "name":"海松色",
-                    "colorCode":"#726d3f"
+                    "name":"杜若色",
+                    "colorCode":"#3e62ad"
                 },
                 {
                     "name":"オリーブ",
@@ -3356,8 +3356,8 @@ export const thirdQuestion = [
                     "colorCode":"#3e62ad"
                 },
                 {
-                    "name":"マリンブルー",
-                    "colorCode":"#006788"
+                    "name":"オリーブグリーン",
+                    "colorCode":"#5f651e"
                 },
                 {
                     "name":"藍色",
@@ -3396,57 +3396,4 @@ export const thirdQuestion = [
         answer:1,
         toneNumber:['v19','b20'],
     },
-    {
-        id:64,
-        title:"ウイスタリア",
-        subTitle:"あざやかな青紫",
-        colorCode:"#7C6DC4",
-        description:"ウイスタリアは藤の英語名。19世紀末にこの色の化学染料ができたために出現した色名である。同じ藤の花の色を語源とする色に藤色があるが、藤色は明るい青紫、ウイスタリアは鮮やかな青紫で微妙に違う。",
-        choices:[
-            [
-                {
-                    "name":"ウイスタリア",
-                    "colorCode":"#7C6DC4"
-                },
-                {
-                    "name":"ライラック",
-                    "colorCode":"#D2BADA"
-                },
-                {
-                    "name":"ラベンダー",
-                    "colorCode":"#C4B3D3"
-                }
-            ],
-            [
-                {
-                    "name":"ウイスタリア",
-                    "colorCode":"#7C6DC4"
-                },
-                {
-                    "name":"藤色",
-                    "colorCode":"#bbb7da"
-                },
-                {
-                    "name":"ライラック",
-                    "colorCode":"#D2BADA"
-                }
-            ],
-            [
-                {
-                    "name":"ウイスタリア",
-                    "colorCode":"#7C6DC4"
-                },
-                {
-                    "name":"桔梗色",
-                    "colorCode":"#5045a4"
-                },
-                {
-                    "name":"バイオレット",
-                    "colorCode":"#714f9d"
-                }
-            ],
-        ],
-        answer:1,
-        toneNumber:['b20','v20'],
-    },*/
 ];

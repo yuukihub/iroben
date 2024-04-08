@@ -12,12 +12,12 @@ import CustomToolbar from "@/vue/components/CustomToolbar.vue";
 export default {
   name: "firstColorDetail",
   components: {CustomToolbar, ColorDetail},
-  data(){
+  data() {
     return {
       item: "",
     }
   },
-  mounted(){
+  mounted() {
     this.item = JSON.parse(this.colorItem);
   },
 }

@@ -63,6 +63,7 @@ export default {
 <style lang="scss" scoped>
 @import "./src/scss/foundation/include";
 @import "./src/scss/components/transition";
+
 .logo {
   position: absolute;
   top: -49vh;
@@ -75,38 +76,48 @@ export default {
   text-align: center;
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
   z-index: index($z-map, topLogo);
+
   img {
     margin: 0 5px;
     height: 7vh;
+
     &.logo_i {
       height: 10vh;
     }
   }
+
   .logo_i {
     animation: animate_logo01 6s ease infinite;
   }
+
   .logo_r {
     animation: animate_logo02 4s ease infinite;
   }
+
   .logo_o {
     animation: animate_logo03 6s ease infinite;
   }
+
   .logo_b {
     animation: animate_logo04 5s ease infinite;
   }
+
   .logo_e {
     animation: animate_logo05 4s ease infinite;
   }
+
   .logo_n {
     animation: animate_logo06 4s ease infinite;
   }
 }
+
 .context {
   width: 100%;
   position: absolute;
-  top:50vh;
+  top: 50vh;
 }
-.context h1{
+
+.context h1 {
   text-align: center;
   color: #fff;
   font-size: 50px;
@@ -116,32 +127,38 @@ export default {
   width: 100%;
   height: 50vh;
 }
+
 .colorCode {
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
+
   img {
     position: absolute;
     width: 40px;
     right: 0;
     z-index: index($z-map, topColorCodeDecoration);
-    &:first-child{
+
+    &:first-child {
       left: 70px;
       margin: auto;
       top: 13vh;
       animation: animate_logo01 6s ease infinite;
     }
-    &:nth-child(2){
+
+    &:nth-child(2) {
       left: -101px;
       margin: auto;
       top: 11vh;
       animation: animate_logo06 4s ease infinite;
     }
-    &:nth-child(3){
+
+    &:nth-child(3) {
       left: -160px;
       margin: auto;
       top: 35vh;
       animation: animate_logo02 4s ease infinite;
     }
-    &:nth-child(4){
+
+    &:nth-child(4) {
       right: 120px;
       margin: auto;
       top: 36vh;
@@ -149,6 +166,7 @@ export default {
     }
   }
 }
+
 .front_block,
 .back_block {
   position: absolute;
@@ -158,97 +176,119 @@ export default {
   overflow: hidden;
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
 }
+
 .front_block {
   z-index: index($z-map, topFrontDecoration);
+
   img {
     width: 40px;
   }
 }
-.back_block img{
+
+.back_block img {
   width: 32px;
 }
+
 .front_block li,
-.back_block li{
+.back_block li {
   position: absolute;
   display: block;
-  bottom: 50vh;
+  bottom: 55vh;
   animation-delay: 0s;
   left: 100%;
 }
-.front_block  {
+
+.front_block {
   li {
     bottom: 60vh;
   }
-  li:nth-child(1){
+
+  li:nth-child(1) {
     animation: animate_decoration_front01 30s linear infinite;
-    animation-duration:40s;
+    animation-duration: 40s;
     animation-delay: -23s;
+
     img {
       width: 48px;
     }
   }
-  li:nth-child(2){
+
+  li:nth-child(2) {
     animation: animate_decoration_front04 60s linear infinite;
     animation-duration: 44s;
     animation-delay: -10s;
     z-index: index($z-map, topFrontDecoration);
+
     img {
       width: 64px;
     }
   }
-  li:nth-child(3){
-    animation: animate_decoration_front01  30s linear infinite;
+
+  li:nth-child(3) {
+    animation: animate_decoration_front01 30s linear infinite;
     animation-duration: 40s;
     animation-delay: -1s;
   }
-  li:nth-child(4){
+
+  li:nth-child(4) {
     animation: animate_decoration_front03 linear infinite;
     animation-duration: 40s;
     animation-delay: 2s;
   }
-  li:nth-child(5){
+
+  li:nth-child(5) {
     animation: animate_decoration_front02 linear infinite;
     animation-duration: 40s;
     animation-delay: -21s;
     z-index: index($z-map, topFrontDecoration);
+
     img {
       width: 120vw;
     }
   }
 }
-.back_block  {
+
+.back_block {
   z-index: -1;
-  li:nth-child(1){
+
+  li:nth-child(1) {
     animation: animate_decoration_back01 30s linear infinite;
     animation-duration: 34s;
   }
-  li:nth-child(2){
+
+  li:nth-child(2) {
     animation: animate_decoration_back01 40s linear infinite;
     animation-duration: 32s;
     animation-delay: 5s;
   }
-  li:nth-child(3){
+
+  li:nth-child(3) {
     animation: animate_decoration_back01 30s linear infinite;
     animation-duration: 45s;
     animation-delay: 8s;
   }
-  li:nth-child(4){
+
+  li:nth-child(4) {
     animation: animate_decoration_back01 30s linear infinite;
     animation-duration: 32s;
     animation-delay: 2s;
   }
-  li:nth-child(5){
+
+  li:nth-child(5) {
     animation: animate_decoration_back03 30s linear infinite;
     animation-duration: 100s;
     animation-delay: -30s;
+
     img {
       width: 80vw;
     }
   }
-  li:nth-child(6){
+
+  li:nth-child(6) {
     animation: animate_decoration_back03 30s linear infinite;
     animation-duration: 100s;
     animation-delay: 8s;
+
     img {
       width: 80vw;
     }
@@ -256,7 +296,7 @@ export default {
 }
 
 
-@keyframes animate_decoration_front01{
+@keyframes animate_decoration_front01 {
   0% {
     transform: translateX(-120vw) translateY(2vh) rotate(300deg);
   }

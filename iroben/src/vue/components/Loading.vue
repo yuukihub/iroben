@@ -25,6 +25,7 @@ export default {
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
 @import "../src/scss/components/transition";
+
 .loading_wrap {
   margin: auto;
   height: 50px;
@@ -37,6 +38,7 @@ export default {
   right: 0;
   z-index: index($z-map, loadingImg);
 }
+
 p {
   position: absolute;
   top: -107px;
@@ -49,24 +51,29 @@ p {
   z-index: index($z-map, loadingImg);
   color: map_get($color, white);
 }
+
 .loading_img {
   position: relative;
   animation: animate_chara03 0.5s 0s ease-in-out infinite;
+
   img {
     position: absolute;
   }
+
   .img_character03 {
-    width: 60px;
+    width: 40px;
     transform: rotate(20deg);
   }
+
   .img_eraser {
     transform: rotate(11deg);
-    top: -7px;
-    left: -17px;
-    width: 45px;
+    top: 1px;
+    left: -7px;
+    width: 25px;
     animation: animate_eraser 0.5s 0s ease-in-out infinite;
   }
 }
+
 @keyframes animate_eraser {
   0% {
     transform: rotate(11deg);

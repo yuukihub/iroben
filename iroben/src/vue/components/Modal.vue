@@ -44,10 +44,10 @@ export default {
     },
   },
   methods: {
-    closeModal(){
+    closeModal() {
       this.$emit('closeModal');
     },
-    process(){
+    process() {
       this.$emit('runProcess');
     }
   }
@@ -56,6 +56,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
+
 .c-modal {
   max-width: 280px;
   width: 100%;
@@ -71,6 +72,7 @@ export default {
   height: max-content;
   z-index: index($z-map, modal);
   @include boxShadow();
+
   .eye_image {
     position: absolute;
     top: -5px;
@@ -78,7 +80,8 @@ export default {
     right: 0;
     margin: auto;
   }
-  .overlay{
+
+  .overlay {
     display: block;
     width: 100%;
     height: 100%;
@@ -88,7 +91,8 @@ export default {
     top: -80%;
     left: 0;
   }
-  .modal-close{
+
+  .modal-close {
     position: absolute;
     top: -30px;
     right: 0;
@@ -96,12 +100,14 @@ export default {
     color: map_get($color, white);
     text-decoration: none;
   }
+
   .modal-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 16px 0;
     text-align: center;
+
     button:first-child {
       margin-right: 16px;
     }

@@ -7,9 +7,9 @@
           <div class="color" :style="{background: currentQuestion.colorCode}"></div>
           <div class="counter">
             <span class="current_number">
-              {{number+1}}
+              {{ number + 1 }}
             </span>
-            / {{questions.length}}
+            / {{ questions.length }}
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
               <div class="answer_color"></div>
             </div>
           </div>
-          <div class="answer">{{answer.name}}</div>
+          <div class="answer">{{ answer.name }}</div>
           <div v-if="!answerFlag">
             <img class="result_icon" src="../../img/icon/icon_circle.svg" alt="アイコン">
           </div>
@@ -44,10 +44,10 @@
       <h2 class="result_title">結果発表</h2>
       <div class="c-score">
         <div class="scores">
-          <h2 class="score">{{correctCount}}</h2>
+          <h2 class="score">{{ correctCount }}</h2>
           <span class="slash"></span>
         </div>
-        <h3 class="summary">{{questions.length}}<span class="unit">点</span></h3>
+        <h3 class="summary">{{ questions.length }}<span class="unit">点</span></h3>
       </div>
       <div class="score_wrap">
         <p class="sub_title">
@@ -65,8 +65,8 @@
           復習にぜひご活用ください。
         </p>
         <img class="img_colorPallet"
-            src="../../img/img/exam/img_explain_ColorPalletToggle.png"
-            alt="不正解のみを表示したカラーパレット">
+             src="../../img/img/exam/img_explain_ColorPalletToggle.png"
+             alt="不正解のみを表示したカラーパレット">
       </div>
     </div>
 
@@ -75,11 +75,11 @@
         <template v-if="correctFlag">
           <confetti></confetti>
           <img src="../../img/img/exam/img_success.svg" alt="正解">
-          <button @click="next()">{{btnTitle}}</button>
+          <button @click="next()">{{ btnTitle }}</button>
         </template>
         <template v-if="faultFlag">
           <img src="../../img/img/exam/img_error.svg" alt="不正解">
-          <button @click="next()">{{btnTitle}}</button>
+          <button @click="next()">{{ btnTitle }}</button>
         </template>
       </div>
     </div>
@@ -94,7 +94,7 @@ export default {
   components: {
     Confetti
   },
-  data(){
+  data() {
     return {
       number: 0,
       correctCount: 0,
@@ -136,7 +136,7 @@ export default {
       return this.questions[this.number];
 
     },
-    setChoice(){
+    setChoice() {
       //ランダムに選択肢を選定
       let choicesArray = this.currentQuestion.choices;
       for (let i = choicesArray.length - 1; i > 0; i--) {
@@ -159,7 +159,7 @@ export default {
         this.correctFlag = true;
       } else {
         //不正解の場合
-        this.$store.commit("addFaultItem", { level:this.level , item: this.currentQuestion});
+        this.$store.commit("addFaultItem", {level: this.level, item: this.currentQuestion});
         this.faultFlag = true;
       }
 
@@ -172,17 +172,17 @@ export default {
       this.answerFlag = false;
       this.isShowIllustration = false;
 
-      if(this.questionLength === 0){
+      if (this.questionLength === 0) {
         this.status = false;
       }
     },
-    intRandom(min, max){
-      return Math.floor( Math.random() * (max - min + 1)) + min;
+    intRandom(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
     },
-    toPaint(){
+    toPaint() {
       this.$emit('toPaint');
     },
-    toColorList(){
+    toColorList() {
       this.$emit('toColorList');
     },
   }
@@ -192,6 +192,7 @@ export default {
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
 @import "./src/scss/components/colorCard";
+
 .c-answerButton {
   display: flex;
   align-items: center;
@@ -202,36 +203,48 @@ export default {
   max-width: 342px;
   width: 100%;
   padding: 4px 24px;
-  height: 48px;
   color: map_get($color, text);
   margin: 24px auto;
+  min-height: 48px;
   @include mq(regular) {
     max-width: 440px;
   }
   @include mq(sp) {
     margin: 16px auto;
+    max-width: 278px;
+    width: 100%;
   }
+
   &:focus {
     border: 2px solid map_get($color, link);
   }
+
+  &:last-child {
+    margin-bottom: 56px;
+  }
+
   &.is-disabled {
     pointer-events: none;
   }
+
   .answer {
     display: block;
     text-align: center;
     width: 100%;
+
     &_color {
-      width:28px;
-      height: 32px;
+      width: 40px;
+      height: 48px;
       border-radius: 0;
       border: 3px solid map_get($color, white);
     }
+
     &_colorWrap {
       border: 1px solid map_get($color, gray03);
       border-radius: 3px;
     }
   }
+
   .circle {
     display: block;
     width: 24px;
@@ -246,6 +259,7 @@ export default {
     padding: 0 16px;
   }
 }
+
 .result_image {
   position: absolute;
   top: 223px;
@@ -255,6 +269,7 @@ export default {
   margin: 0 auto;
   height: min-content;
   text-align: center;
+
   img {
     max-width: 160px;
     width: 100%;
@@ -262,6 +277,7 @@ export default {
     margin: 0 auto 16px;
     animation: fadeIn 0.8s ease 0.1s 0.8 normal backwards;
   }
+
   button {
     width: max-content;
     height: 40px;
@@ -275,18 +291,21 @@ export default {
     font-size: 16px;
   }
 }
+
 .counter {
-  font-family: "MiuraGotic",serif;
+  font-family: "MiuraGotic", serif;
   font-size: 24px;
   letter-spacing: -2px;
   margin: 16px 0;
   text-align: center;
   color: map_get($color, text);
+
   .current_number {
     font-family: "MiuraGotic", serif;
     font-size: 32px;
   }
 }
+
 .result_title {
   @include KintoSans();
   font-weight: 500;
@@ -295,33 +314,54 @@ export default {
   font-size: 18px;
   margin-bottom: 40px;
 }
+
 .score_wrap {
+  position: relative;
   @include KintoSans();
   max-width: 93%;
   width: 100%;
   background: map_get($color, white);
-  margin: 0 auto 24px;
+  margin: 64px auto 24px;
   padding: 24px 16px;
+
+  &::before {
+    content: "";
+    background-image: url("../../img/img/exam/img_characters_watch.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -53px;
+    left: 0;
+    right: 0;
+    width: 160px;
+    height: 90px;
+    margin: auto;
+    z-index: -1;
+  }
 }
+
 .c-score {
   position: relative;
   width: max-content;
   height: 100px;
   margin: 24px auto;
   color: map_get($color, text);
+
   .scores {
     position: relative;
     width: 100%;
     margin: auto;
   }
+
   .score {
-    font-family: "MiuraGotic",serif;
+    font-family: "MiuraGotic", serif;
     letter-spacing: -8px;
     font-size: 88px;
     display: block;
     text-align: center;
     margin: 0;
   }
+
   .slash {
     position: absolute;
     right: -12px;
@@ -331,8 +371,9 @@ export default {
     border: 1px solid;
     transform: rotate(-30deg);
   }
+
   .summary {
-    font-family: "MiuraGotic",serif;
+    font-family: "MiuraGotic", serif;
     font-size: 40px;
     letter-spacing: -3px;
     position: absolute;
@@ -340,10 +381,12 @@ export default {
     bottom: 9px;
     margin: 0;
   }
+
   .unit {
     font-size: 14px;
   }
 }
+
 .sub_title {
   margin: 0 auto 16px;
   display: block;
@@ -352,16 +395,20 @@ export default {
     margin: auto;
   }
 }
+
 .text {
   text-align: center;
 }
+
 .img_colorPallet {
   display: block;
   margin: 24px auto;
 }
+
 .result_icon {
   width: 24px;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;

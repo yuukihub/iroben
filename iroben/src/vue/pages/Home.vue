@@ -98,11 +98,10 @@
         </ul>
       </div>
     </nav>
-   <main-visual></main-visual>
+    <main-visual></main-visual>
     <main class="container">
       <section>
-        <article-card title="お知らせ"
-                      img-path="../../img/icon/icon_notice.svg">
+        <article-card title="お知らせ">
           <ul class="notice_lists">
             <li>
               <span class="date">2024/4/30</span>
@@ -118,11 +117,9 @@
             </li>
           </ul>
         </article-card>
-        <article-card title="今後の予定"
-                      img-path="../../img/icon/icon_focus.svg">
+        <article-card title="今後の予定">
           <p class="info_message">
-            <span>1級</span>の以下の機能は現在準備中です。<br>
-            公開は<span>2024年秋頃</span>を予定しています。
+            1級の以下の機能は現在準備中です。
           </p>
           <ul class="info_lists">
             <li>
@@ -132,6 +129,9 @@
               ・<a href="#" @click="toColorPaint">ペイント</a>の不正解のみ表示機能
             </li>
           </ul>
+          <p class="info_message">
+            公開は<span>2024年秋頃</span>を予定しています。
+          </p>
         </article-card>
       </section>
     </main>
@@ -151,7 +151,7 @@ import agreement from "@/vue/pages/Agreement.vue";
 
 export default {
   name: "home",
-  data(){
+  data() {
     return {
       open: false
     }
@@ -165,7 +165,7 @@ export default {
   },
   props: ['pageStack'],
   methods: {
-    toColorPaint(){
+    toColorPaint() {
       this.pageStack.push(paint);
       this.open = false;
     },
@@ -189,7 +189,7 @@ export default {
       this.pageStack.push(thirdColorLists);
       this.open = false;
     },
-    toAgreement(){
+    toAgreement() {
       this.pageStack.push(agreement);
       this.open = false;
     }
@@ -214,9 +214,14 @@ export default {
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    height: 57vh;
+    height: 59vh;
     z-index: -1;
+
+    @include mq(big) {
+      height: 62vh;
+    }
   }
+
   &:after {
     content: "";
     background: map_get($color, white);
@@ -226,15 +231,17 @@ export default {
     bottom: 0;
     background-size: contain;
     width: 100%;
-    height: 47vh;
+    height: 37vh;
   }
 }
+
 main {
   height: 67vh;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
+
 section {
   position: absolute;
   top: 22vh;
@@ -245,71 +252,78 @@ section {
   width: 100%;
   height: max-content;
   background: map_get($color, white);
-  z-index: 2;
-  @include mq(regular) {
-    padding-top: 40px;
-  }
+  z-index: index($z-map, topSection);
+  padding-bottom: 56px;
+  padding-top: 16px;
+
   h4,
   li {
     @include KintoSans();
     margin-bottom: 8px;
+
     &:last-child {
       margin-bottom: 0;
     }
   }
+
   h4 {
     color: map_get($color, gray01);
     margin: 0;
     text-align: center;
   }
+
   p {
     @include KintoSans();
     font-size: 16px;
   }
+
   .notice_lists {
     padding: 16px;
     border-radius: 5px;
     border: 1px solid map_get($color, gray03);
     max-height: 33vh;
     overflow-y: scroll;
+
     li {
       border-bottom: 1px solid map_get($color, gray03);
       font-size: 16px;
     }
+
     span {
       display: block;
       margin-bottom: 8px;
     }
+
     .date {
       font-size: 14px;
       margin-bottom: 2px;
     }
+
     a {
       display: inline;
     }
   }
+
   .info_lists {
-    padding: 16px;
-    border: 1px solid map_get($color, gray03);
-    border-radius: 5px;
+    max-width: 250px;
+    width: 100%;
+    margin: auto;
+    padding: 8px 0 16px 0;
+    font-size: 16px;
+
     li {
       margin-bottom: 0;
       @include KintoSans();
     }
   }
+
   .info_message {
-    margin-bottom: 16px;
     font-size: 16px;
+    text-align: center;
     @include KintoSans();
+
     span {
-      background:linear-gradient(transparent 60%, #fed32b 60%);
-    }
-  }
-  .characters_wrap {
-    display: flex;
-    justify-content: center;
-    img {
-      width: 60px;
+      background: linear-gradient(transparent 60%, #fed32b 60%);
     }
   }
 }

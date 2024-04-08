@@ -1,6 +1,6 @@
 <template>
   <v-ons-page>
-    <custom-toolbar class="is-normal"
+    <custom-toolbar :wave-image-flag="false"
                     @click="resetToggleFlag"/>
     <color-pallet @openModal="setColorDetail"/>
     <transition appear>

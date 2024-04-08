@@ -93,6 +93,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 12px 0;
+    margin-bottom: 0;
     border-bottom: 1px solid map_get($color, gray03);
     background: white;
     &:first-child {

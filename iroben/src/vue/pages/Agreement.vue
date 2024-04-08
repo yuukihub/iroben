@@ -125,7 +125,7 @@ export default {
 @import "./src/scss/components/transition";
 
 section {
-  margin-top: 112px;
+  margin-top: 128px;
   padding: 0 24px 24px 24px;
   animation: fadeInUp01 1.7s 0s ease-in-out forwards;
 
@@ -134,7 +134,7 @@ section {
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 24px;
     border-bottom: 1px solid map_get($color, text);
     padding-bottom: 8px;

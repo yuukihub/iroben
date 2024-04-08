@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 #canvas {
-  position: absolute;
+  position: fixed;
   top: 0;
   background-image: url("../../img/img/paint/img_background.png") !important;
   width: 100%;

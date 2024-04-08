@@ -12,7 +12,7 @@
         <img src="../../img/icon/icon_delete.svg" alt="削除">
       </button>
     </div>
-    <img class="img_wave" src="../../img/img/common/img_wave_top_header.svg" alt="wave">
+    <img v-show="waveImageFlag" class="img_wave" src="../../img/img/common/img_wave_top_header.svg" alt="wave">
   </header>
 </template>
 
@@ -37,6 +37,11 @@ export default {
       default: false,
       required: true
     },
+    waveImageFlag: {
+      type: Boolean,
+      default: true,
+      required: false
+    },
     props: ["pageStack"],
   },
   methods: {
@@ -56,8 +61,6 @@ export default {
   width: 100%;
   z-index: 2;
   .contents {
-    display: flex;
-    align-items: center;
     width: 100%;
     padding: 16px 24px 0;
     @include mq(xsmall) {
@@ -82,7 +85,12 @@ export default {
 
   .title {
     width: 100%;
-    text-align: center;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: max-content;
     font-size: 16px;
     font-weight: 500;
     color: map_get($color, text);
@@ -106,7 +114,9 @@ export default {
     margin: 0;
     background: transparent;
     border: transparent;
-
+    position: absolute;
+    right: 24px;
+    top: 16px;
     img {
       width: 28px;
       @include mq(xsmall) {

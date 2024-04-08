@@ -264,7 +264,7 @@ export default {
 
 .result_image {
   position: absolute;
-  top: 223px;
+  top: 153px;
   bottom: 0;
   left: 0;
   right: 0;

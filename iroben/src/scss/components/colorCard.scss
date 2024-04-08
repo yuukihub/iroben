@@ -10,6 +10,7 @@
   margin: auto;
   @include fadeIn;
   @include boxShadow();
+  margin-top: 136px;
   @include mq(regular) {
     max-width: 440px;
   }
@@ -26,6 +27,6 @@
     border-radius: 10px 10px 0 0;
     display: block;
     margin: 3%;
-    height: 28vh;
+    height: 32vh;
   }
 }

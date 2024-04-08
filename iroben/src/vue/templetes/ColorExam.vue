@@ -192,7 +192,9 @@ export default {
 <style lang="scss" scoped>
 @import "../src/scss/foundation/include";
 @import "./src/scss/components/colorCard";
-
+.wrap {
+  margin-top: 112px;
+}
 .c-answerButton {
   display: flex;
   align-items: center;

@@ -1,19 +1,22 @@
 <template>
-  <div class="logo">
-    <img class="logo_i" src="../../img/img/home/img_logo_i.png" alt="i">
-    <img class="logo_r" src="../../img/img/home/img_logo_r.png" alt="r">
-    <img class="logo_o" src="../../img/img/home/img_logo_o.png" alt="o">
-    <img class="logo_b" src="../../img/img/home/img_logo_b.png" alt="b">
-    <img class="logo_e" src="../../img/img/home/img_logo_e.png" alt="e">
-    <img class="logo_n" src="../../img/img/home/img_logo_n.png" alt="n">
-  </div>
-  <div class="colorCode">
-    <img src="../../img/img/home/img_colorCode01.png" alt="colorCode">
-    <img src="../../img/img/home/img_colorCode02.png" alt="colorCode">
-    <img src="../../img/img/home/img_colorCode03.png" alt="colorCode">
-    <img src="../../img/img/home/img_colorCode04.png" alt="colorCode">
-  </div>
+  <img class="img_wave" src="../../img/img/common/img_wave_top_header.svg" alt="wave">
   <div class="mv">
+    <div class="img_centerItems">
+      <div class="logo">
+        <img class="logo_i" src="../../img/img/home/img_logo_i.png" alt="i">
+        <img class="logo_r" src="../../img/img/home/img_logo_r.png" alt="r">
+        <img class="logo_o" src="../../img/img/home/img_logo_o.png" alt="o">
+        <img class="logo_b" src="../../img/img/home/img_logo_b.png" alt="b">
+        <img class="logo_e" src="../../img/img/home/img_logo_e.png" alt="e">
+        <img class="logo_n" src="../../img/img/home/img_logo_n.png" alt="n">
+      </div>
+      <div class="colorCode">
+        <img src="../../img/img/home/img_colorCode01.png" alt="colorCode">
+        <img src="../../img/img/home/img_colorCode02.png" alt="colorCode">
+        <img src="../../img/img/home/img_colorCode03.png" alt="colorCode">
+        <img src="../../img/img/home/img_colorCode04.png" alt="colorCode">
+      </div>
+    </div>
     <ul class="front_block">
       <li>
         <img src="../../img/img/home/img_star01.png" alt="star">
@@ -63,10 +66,18 @@ export default {
 <style lang="scss" scoped>
 @import "./src/scss/foundation/include";
 @import "./src/scss/components/transition";
-
+.img_wave {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.img_centerItems{
+  position: relative;
+  height: 100%;
+}
 .logo {
   position: absolute;
-  top: -32vh;
+  top: 11vh;
   bottom: 0;
   left: 0;
   right: 0;
@@ -154,14 +165,14 @@ export default {
     &:nth-child(3) {
       left: -40vw;
       margin: auto;
-      top: 47vh;
+      top: 37vh;
       animation: animate_logo02 4s ease infinite;
     }
 
     &:nth-child(4) {
-      right: 40vw;
+      right: 37vw;
       margin: auto;
-      top: 46vh;
+      top: 39vh;
       animation: animate_logo06 4s ease infinite;
     }
   }
@@ -244,6 +255,7 @@ export default {
 
     img {
       width: 120vw;
+      max-width: 700px;
     }
   }
 }

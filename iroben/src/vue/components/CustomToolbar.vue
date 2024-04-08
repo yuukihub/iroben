@@ -1,6 +1,6 @@
 <template>
   <header class="l-header">
-    <div class="contents" :class="{'--bg':headerDesignFlag}">
+    <div class="contents">
       <div>
         <v-ons-back-button></v-ons-back-button>
       </div>
@@ -12,7 +12,7 @@
         <img src="../../img/icon/icon_delete.svg" alt="削除">
       </button>
     </div>
-    <img src="../../img/img/common/img_wave_top.svg" alt="wave">
+    <img class="img_wave" src="../../img/img/common/img_wave_top_header.svg" alt="wave">
   </header>
 </template>
 
@@ -22,11 +22,6 @@ import TheMiniButton from "@/vue/components/TheMiniButton.vue";
 export default {
   components: {TheMiniButton},
   props: {
-    headerDesignFlag: {
-      type: Boolean,
-      default: true,
-      required: false
-    },
     title: {
       type: String,
       default: "",
@@ -56,26 +51,20 @@ export default {
 @import "../src/scss/foundation/include";
 
 .l-header {
-
-  &.is-normal {
-    img {
-      display: none;
-    }
-  }
-
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
   .contents {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 56px 24px 0;
+    padding: 16px 24px 0;
     @include mq(xsmall) {
       padding-left: 8px;
       padding-right: 8px;
     }
 
-    &.--bg {
-      background: map_get($color, white);
-    }
   }
 
   .top {
@@ -94,7 +83,7 @@ export default {
   .title {
     width: 100%;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: map_get($color, text);
     @include mq(xsmall) {
@@ -129,5 +118,11 @@ export default {
       display: none;
     }
   }
+}
+.img_wave {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
 }
 </style>

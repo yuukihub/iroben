@@ -31,7 +31,7 @@ export default {
 .c-articleCard {
   max-width: 440px;
   width: 80vw;
-  margin: 0 auto 48px;
+  margin: 3vh auto 0;
   @include mq(xsmall) {
     width: 90vw;
   }

@@ -1,8 +1,7 @@
 <template>
   <ons-page>
-    <custom-toolbar></custom-toolbar>
+    <custom-toolbar title="利用規約"></custom-toolbar>
     <section>
-      <h1>利用規約</h1>
       <p>
         この利用規約（以下、「本規約」といいます。）は、iroben（以下、「当社」といいます。）が提供するサービスの利用条件を定めるものです。登録ユーザーの皆さま（以下、「ユーザー」といいます。）には、本規約に従って、本サービスをご利用いただきます。</p>
       <h2>第1条（適用）</h2>
@@ -126,10 +125,11 @@ export default {
 @import "./src/scss/components/transition";
 
 section {
+  margin-top: 112px;
   padding: 0 24px 24px 24px;
   animation: fadeInUp01 1.7s 0s ease-in-out forwards;
 
-  h1, h2, ol, p {
+  h2, ol, p {
     @include KintoSans();
   }
 

@@ -100,40 +100,22 @@
     </nav>
     <main-visual></main-visual>
     <main class="container">
-      <section>
-        <article-card title="お知らせ">
-          <ul class="notice_lists">
-            <li>
-              <span class="date">2024/4/30</span>
-              <span>Androidアプリをリリースしました</span>
-            </li>
-            <li>
-              <span class="date">2024/4/29</span>
-              <span>iPadOSアプリをリリースしました</span>
-            </li>
-            <li>
-              <span class="date">2024/4/28</span>
-              <span>iOSアプリをリリースしました</span>
-            </li>
-          </ul>
-        </article-card>
-        <article-card title="今後の予定">
-          <p class="info_message">
-            1級の以下の機能は現在準備中です。
-          </p>
-          <ul class="info_lists">
-            <li>
-              ・練習問題
-            </li>
-            <li>
-              ・<a href="#" @click="toColorPaint">ペイント</a>の不正解のみ表示機能
-            </li>
-          </ul>
-          <p class="info_message">
-            公開は<span>2024年秋頃</span>を予定しています。
-          </p>
-        </article-card>
-      </section>
+      <article-card title="お知らせ">
+        <ul class="notice_lists">
+          <li>
+            <span class="date">2024/4/30</span>
+            <span>Androidアプリをリリースしました</span>
+          </li>
+          <li>
+            <span class="date">2024/4/29</span>
+            <span>iPadOSアプリをリリースしました</span>
+          </li>
+          <li>
+            <span class="date">2024/4/28</span>
+            <span>iOSアプリをリリースしました</span>
+          </li>
+        </ul>
+      </article-card>
     </main>
   </v-ons-page>
 </template>
@@ -203,128 +185,54 @@ export default {
 @import "../src/scss/components/transition";
 @import "../src/scss/components/sideNavi";
 
-.container {
-  &:after {
-    content: "";
-    background: map_get($color, white);
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: contain;
-    width: 100%;
-    height: 37vh;
+h4,
+li {
+  @include KintoSans();
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
-main {
-  height: 57vh;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+h4 {
+  color: map_get($color, gray01);
+  margin: 0;
+  text-align: center;
 }
 
-section {
-  position: absolute;
-  top: 22vh;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  display: block;
-  width: 100%;
-  height: max-content;
+p {
+  @include KintoSans();
+  font-size: 16px;
+}
+
+.notice_lists {
+  padding: 16px;
+  border-radius: 5px;
+  border: 1px solid map_get($color, gray03);
+  max-height: 33vh;
+  overflow-y: scroll;
   background: map_get($color, white);
-  z-index: index($z-map, topSection);
-  padding-bottom: 56px;
-  padding-top: 16px;
-  &:before {
-    content: "";
-    background-image: url("../../img/img/common/img_wave_bottom.svg");
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 22vw;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100vw;
-    height: 100%;
-    z-index: -1;
 
-    @include mq(big) {
-      height: 62vh;
-    }
-  }
-
-  h4,
   li {
-    @include KintoSans();
+    border-bottom: 1px solid map_get($color, gray03);
+    font-size: 16px;
+  }
+
+  span {
+    display: block;
     margin-bottom: 8px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
-  h4 {
-    color: map_get($color, gray01);
-    margin: 0;
-    text-align: center;
+  .date {
+    font-size: 14px;
+    margin-bottom: 2px;
   }
 
-  p {
-    @include KintoSans();
-    font-size: 16px;
-  }
-
-  .notice_lists {
-    padding: 16px;
-    border-radius: 5px;
-    border: 1px solid map_get($color, gray03);
-    max-height: 33vh;
-    overflow-y: scroll;
-
-    li {
-      border-bottom: 1px solid map_get($color, gray03);
-      font-size: 16px;
-    }
-
-    span {
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    .date {
-      font-size: 14px;
-      margin-bottom: 2px;
-    }
-
-    a {
-      display: inline;
-    }
-  }
-
-  .info_lists {
-    max-width: 250px;
-    width: 100%;
-    margin: auto;
-    padding: 8px 0 16px 0;
-    font-size: 16px;
-
-    li {
-      margin-bottom: 0;
-      @include KintoSans();
-    }
-  }
-
-  .info_message {
-    font-size: 16px;
-    text-align: center;
-    @include KintoSans();
-
-    span {
-      background: linear-gradient(transparent 60%, #fed32b 60%);
-    }
+  a {
+    display: inline;
   }
 }
+
 
 </style>

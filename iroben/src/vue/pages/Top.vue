@@ -96,7 +96,7 @@ h1 {
 
 .logo {
   display: block;
-  width: 54vw;
+  width: 48vw;
   margin: auto;
   animation: fadeInUp02 1s 0s ease-in-out forwards;
   @include mq(regular) {

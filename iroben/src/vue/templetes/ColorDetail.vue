@@ -31,9 +31,6 @@
       </div>
     </div>
   </div>
-  <div class="bottom">
-    <img src="../../img/img/common/img_wave_bottom.svg" alt="wave">
-  </div>
 </template>
 
 <script>
@@ -80,6 +77,7 @@ export default {
 @import "./src/scss/components/colorCard";
 @import "./src/scss/components/transition";
 .colorDetail-wrap {
+  margin-top: 136px;
   display: inherit;
   min-height: inherit;
   @include mq(xsmall) {
@@ -216,18 +214,6 @@ export default {
     .character03 {
       width: 15%;
     }
-  }
-}
-.bottom {
-  position: fixed;
-  bottom: -10px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: -1;
-  img {
-    width: 100vw;
-    height: max-content;
   }
 }
 </style>

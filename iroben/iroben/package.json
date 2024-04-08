@@ -1,0 +1,47 @@
+{
+  "name": "onsenui-v2-vue3-navigation",
+  "version": "2.0.1",
+  "description": "",
+  "engines": {
+    "node": ">=18.16"
+  },
+  "dependencies": {
+    "monaca-plugin-monaca-core": "3.3.1",
+    "onsenui": "2.12.8",
+    "vue": "3.3.7",
+    "vue-onsenui": "3.0.0",
+    "vue-router": "^4.3.0",
+    "vue3-carousel": "^0.3.1",
+    "vuex": "^4.1.0",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "scripts": {
+    "monaca:preview": "npm run dev & npm run watch",
+    "monaca:transpile": "npm run build",
+    "monaca:debug": "npm run watch",
+    "dev": "cross-env NODE_ENV=development vite",
+    "watch": "cross-env NODE_ENV=development vite build --watch",
+    "build": "cross-env NODE_ENV=production vite build",
+    "compile": "node-sass src/scss/common.scss www/assets/css/common.css",
+    "sass": "sass ./src/scss/common.scss ./src/css/common.css"
+  },
+  "cordova": {
+    "plugins": {
+      "monaca-plugin-monaca-core": {}
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^4.1.1",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "cordova": "^12.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.52.0",
+    "eslint-plugin-vue": "^9.18.1",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.3",
+    "sass": "^1.70.0",
+    "terser": "^5.24.0",
+    "vite": "^4.5.0",
+    "yargs": "^17.7.2"
+  }
+}

@@ -1,103 +1,112 @@
 <template>
   <v-ons-page>
-    <nav>
-      <div class="nav-btn"
-           v-on:click="open=!open"
-           v-bind:class="{ 'is-active': open }">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <div class="nav-items" v-bind:class="{ 'is-active': open }">
-        <div class="nav-learn">
+    <div class="c-navi">
+      <input id="nav-input" type="checkbox" class="nav-hidden">
+      <label id="menu_btn" for="nav-input">
+        <div class="nav-btn">
+          <span class="navi-icon"></span>
+          <span class="navi-icon"></span>
+          <span class="navi-icon"></span>
+        </div>
+      </label>
+      <nav>
+        <label id="menu_btn" for="nav-input">
+          <div class="nav-btn">
+            <span class="navi-icon"></span>
+            <span class="navi-icon"></span>
+            <span class="navi-icon"></span>
+          </div>
+        </label>
+        <div class="nav-items">
+          <div class="nav-learn">
+            <h3 class="nav-title">
+              <span>
+                1級
+              </span>
+            </h3>
+            <ul class="nav-item">
+              <li>
+                <a href="#" @click="toFirstColorLists">
+                <span>
+                  慣用色一覧
+                </span>
+                  <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+                </a>
+              </li>
+            </ul>
+            <h3 class="nav-title">
+              <span>
+                2級
+              </span>
+            </h3>
+            <ul class="nav-item">
+              <li>
+                <a href="#" @click="toSecondColorLists">
+                <span>
+                  慣用色一覧
+                </span>
+                  <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#" @click="toSecondExam">
+                <span>
+                  練習問題
+                </span>
+                  <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+                </a>
+              </li>
+            </ul>
+            <h3 class="nav-title">
+              <span>
+                3級
+              </span>
+            </h3>
+            <ul class="nav-item">
+              <li>
+                <a href="#" @click="toThirdColorLists">
+                <span>
+                  慣用色一覧
+                </span>
+                  <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+                </a>
+              </li>
+              <li>
+                <a href="#" @click="toThirdExam">
+                <span>
+                  練習問題
+                </span>
+                  <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+                </a>
+              </li>
+            </ul>
+          </div>
           <h3 class="nav-title">
             <span>
-              1級
+              その他
             </span>
           </h3>
           <ul class="nav-item">
             <li>
-              <a href="#" @click="toFirstColorLists">
-              <span>
-                慣用色一覧
-              </span>
-                <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
-              </a>
-            </li>
-          </ul>
-          <h3 class="nav-title">
-            <span>
-              2級
-            </span>
-          </h3>
-          <ul class="nav-item">
-            <li>
-              <a href="#" @click="toSecondColorLists">
-              <span>
-                慣用色一覧
-              </span>
+              <a href="#" @click="toColorPaint">
+                <span>
+                  ペイント
+                </span>
                 <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
               </a>
             </li>
             <li>
-              <a href="#" @click="toSecondExam">
-              <span>
-                練習問題
-              </span>
-                <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
-              </a>
-            </li>
-          </ul>
-          <h3 class="nav-title">
-            <span>
-              3級
-            </span>
-          </h3>
-          <ul class="nav-item">
-            <li>
-              <a href="#" @click="toThirdColorLists">
-              <span>
-                慣用色一覧
-              </span>
-                <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
-              </a>
-            </li>
-            <li>
-              <a href="#" @click="toThirdExam">
-              <span>
-                練習問題
-              </span>
+              <a href="#" @click="toAgreement">
+                <span>
+                  利用規約
+                </span>
                 <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
               </a>
             </li>
           </ul>
         </div>
-        <h3 class="nav-title">
-          <span>
-            その他
-          </span>
-        </h3>
-        <ul class="nav-item">
-          <li>
-            <a href="#" @click="toColorPaint">
-              <span>
-                ペイント
-              </span>
-              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
-            </a>
-          </li>
-          <li>
-            <a href="#" @click="toAgreement">
-              <span>
-                利用規約
-              </span>
-              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <main-visual></main-visual>
     <main class="container">
       <article-card title="お知らせ">
@@ -135,7 +144,7 @@ export default {
   name: "home",
   data() {
     return {
-      open: false
+      pen: false,
     }
   },
   components: {

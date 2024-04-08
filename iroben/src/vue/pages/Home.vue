@@ -9,14 +9,7 @@
           <span class="navi-icon"></span>
         </div>
       </label>
-      <nav>
-        <label id="menu_btn" for="nav-input">
-          <div class="nav-btn">
-            <span class="navi-icon"></span>
-            <span class="navi-icon"></span>
-            <span class="navi-icon"></span>
-          </div>
-        </label>
+      <nav v-bind:class="{ 'is-active': open }">
         <div class="nav-items">
           <div class="nav-learn">
             <h3 class="nav-title">

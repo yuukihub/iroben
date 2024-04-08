@@ -12,12 +12,7 @@
     cursor: pointer;
     width: 50px;
     height: 50px;
-
-    &-close {
-      display: none;
-    }
-
-    span {
+    .navi-icon {
       display: inline-block;
       transition: all .4s;
       position: absolute;
@@ -40,36 +35,6 @@
 
       &:nth-of-type(3) {
         top: 31px;
-      }
-    }
-
-    &.is-active {
-      span {
-        &:nth-of-type(1) {
-          top: 18px;
-          left: 18px;
-          transform: translateY(6px) rotate(-45deg);
-          width: 30%;
-        }
-
-        &:nth-of-type(2) {
-          opacity: 0;
-        }
-
-        &:nth-of-type(3) {
-          top: 30px;
-          left: 18px;
-          transform: translateY(-6px) rotate(45deg);
-          width: 30%;
-        }
-      }
-
-      .nav-btn-menu {
-        display: none;
-      }
-
-      .nav-btn-close {
-        display: block;
       }
     }
   }
@@ -97,10 +62,6 @@
     @include mq(xsmall) {
       width: 60vw;
       transform: translateX(-60vw);
-    }
-
-    &.is-active {
-      transform: translateX(0vw);
     }
   }
 
@@ -155,6 +116,26 @@
 
   #nav-input:checked ~ nav {
     transform: translateX(0vw);
+  }
+
+  #nav-input:checked + #menu_btn .navi-icon  {
+    &:nth-of-type(1) {
+      top: 18px;
+      left: 18px;
+      transform: translateY(6px) rotate(-45deg);
+      width: 30%;
+    }
+
+    &:nth-of-type(2) {
+      opacity: 0;
+    }
+
+    &:nth-of-type(3) {
+      top: 30px;
+      left: 18px;
+      transform: translateY(-6px) rotate(45deg);
+      width: 30%;
+    }
   }
 
   .nav-hidden {

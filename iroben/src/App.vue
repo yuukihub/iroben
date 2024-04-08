@@ -4,7 +4,6 @@
                v-for="page in pageStack"
                :key="page.key"
                :page-stack="pageStack"></component>
-    <router-view/>
   </v-ons-navigator>
 </template>
 
@@ -20,3 +19,4 @@ export default {
   }
 }
 </script>
+

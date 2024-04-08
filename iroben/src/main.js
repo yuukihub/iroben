@@ -20,7 +20,7 @@ const app = createApp(App);
 // Register all vue-onsenui components
 Object.values(components).forEach(component => app.component(component.name, component));
 
-//app.use(VueOnsen);
+app.use(VueOnsen);
 
 
 app.use(store);

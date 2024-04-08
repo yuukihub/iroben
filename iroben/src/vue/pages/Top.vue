@@ -9,8 +9,6 @@
     <h1>
       <img class="logo" src="../../img/img/top/img_top_title.svg" alt="iroben">
     </h1>
-    <div class="decoration_wrap">
-    </div>
     <img class="slider" src="../../img/img/top/img_iphone.png" alt="iphone">
     <div class="bottom">
       <div class="characters_wrap">
@@ -35,7 +33,6 @@
         </div>
       </div>
     </div>
-
   </v-ons-page>
 </template>
 

@@ -77,7 +77,7 @@ export default {
 }
 .logo {
   position: absolute;
-  top: 11vh;
+  top: 70px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -86,6 +86,7 @@ export default {
   height: max-content;
   text-align: center;
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
+  animation-delay: 1s;
   z-index: index($z-map, topLogo);
 
   img {
@@ -141,7 +142,7 @@ export default {
 
 .colorCode {
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
-
+  animation-delay: 1s;
   img {
     position: absolute;
     width: 40px;
@@ -151,7 +152,7 @@ export default {
     &:first-child {
       left: 19vw;
       margin: auto;
-      top: 24vh;
+      top: 16vh;
       animation: animate_logo01 6s ease infinite;
     }
 
@@ -186,6 +187,7 @@ export default {
   height: 100%;
   overflow: hidden;
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
 .front_block {
@@ -204,14 +206,13 @@ export default {
 .back_block li {
   position: absolute;
   display: block;
-  bottom: 38vh;
   animation-delay: 0s;
   left: 100%;
 }
 
 .front_block {
   li {
-    bottom: 49vh;
+    bottom: 44vh;
   }
 
   li:nth-child(1) {
@@ -262,6 +263,10 @@ export default {
 
 .back_block {
   z-index: -1;
+
+  li {
+    bottom: 38vh;
+  }
 
   li:nth-child(1) {
     animation: animate_decoration_back01 30s linear infinite;

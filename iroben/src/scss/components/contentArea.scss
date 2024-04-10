@@ -1,0 +1,67 @@
+.bottom {
+  background-image: url("../../img/img/common/img_wave_bottmBig.svg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 10;
+
+  &_inner {
+    position: relative;
+  }
+
+  img {
+    top: -8.5vh;
+    @include mq(sp) {
+      top: -9vh;
+    }
+    @include mq(xsmall) {
+      top: -8vh;
+    }
+  }
+
+  .desc {
+    margin: 0;
+    padding: 88px 0 16px 0;
+    text-align: center;
+    @include KintoSans();
+    @include mq(sp) {
+      padding: 13vh 0 16px 0;
+    }
+    @include mq(big) {
+      padding: 16vh 0 16px 0;
+    }
+  }
+
+  .agree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 24px 0;
+    @include KintoSans();
+
+    @include mq(big) {
+      margin: 0 0 64px 0;
+    }
+
+    &_inner {
+      display: flex;
+      align-items: center;
+      margin-left: 8px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .button_area {
+    padding: 0 16px 24px 16px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+  }
+}

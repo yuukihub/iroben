@@ -31,7 +31,7 @@ export default {
 .c-articleCard {
   max-width: 440px;
   width: 80vw;
-  margin: 3vh auto 0;
+  margin: -30px auto 0;
   @include mq(xsmall) {
     width: 90vw;
   }
@@ -39,7 +39,7 @@ export default {
 
 .title {
   text-align: center;
-  margin-top: 0;
+  margin-top: 136px;
   margin-bottom: 24px;
 
   &-text {

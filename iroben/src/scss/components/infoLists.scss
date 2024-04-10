@@ -1,0 +1,31 @@
+.info_lists {
+  padding: 16px;
+  border-radius: 5px;
+  border: 1px solid map_get($color, gray03);
+  max-height: 22vh;
+  overflow-y: scroll;
+  background: map_get($color, white);
+  margin-bottom: 16px;
+  @include mq(sp){
+    max-height: 15vh;
+  }
+
+  li {
+    border-bottom: 1px solid map_get($color, gray03);
+    font-size: 16px;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .date {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+
+  a {
+    display: inline;
+  }
+}

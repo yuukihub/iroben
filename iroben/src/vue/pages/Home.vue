@@ -1,5 +1,8 @@
 <template>
   <v-ons-page>
+    <header class="l-header">
+      <img src="../../img/img/common/img_wave_top.svg" alt="wave">
+    </header>
     <nav>
       <div class="nav-btn"
            v-on:click="open=!open"
@@ -98,25 +101,32 @@
         </ul>
       </div>
     </nav>
-    <main-visual></main-visual>
-    <main class="container">
-      <article-card title="お知らせ">
-        <ul class="notice_lists">
-          <li>
-            <span class="date">2024/4/30</span>
-            <span>Androidアプリをリリースしました</span>
-          </li>
-          <li>
-            <span class="date">2024/4/29</span>
-            <span>iPadOSアプリをリリースしました</span>
-          </li>
-          <li>
-            <span class="date">2024/4/28</span>
-            <span>iOSアプリをリリースしました</span>
-          </li>
-        </ul>
-      </article-card>
-    </main>
+    <img class="slider" src="../../img/img/top/img_iphone.svg" alt="iphone">
+    <div class="bottom">
+      <div class="characters_wrap">
+        <img src="../../img/img/common/img_character02_normal.svg" alt="chara02">
+        <img src="../../img/img/common/img_character01_normal.svg" alt="chara01">
+        <img src="../../img/img/common/img_character03_flag.svg" alt="chara03">
+      </div>
+      <div class="bottom_inner">
+        <article-card title="お知らせ">
+          <ul class="info_lists">
+            <li>
+              <span class="date">2024/4/30</span>
+              <span>Androidアプリをリリースしました</span>
+            </li>
+            <li>
+              <span class="date">2024/4/29</span>
+              <span>iPadOSアプリをリリースしました</span>
+            </li>
+            <li>
+              <span class="date">2024/4/28</span>
+              <span>iOSアプリをリリースしました</span>
+            </li>
+          </ul>
+        </article-card>
+      </div>
+    </div>
   </v-ons-page>
 </template>
 
@@ -184,6 +194,14 @@ export default {
 @import "../src/scss/foundation/include";
 @import "../src/scss/components/transition";
 @import "../src/scss/components/sideNavi";
+@import "./src/scss/components/contentArea";
+@import "./src/scss/components/infoLists";
+
+.l-header {
+  img {
+    width: 100%;
+  }
+}
 
 h4,
 li {
@@ -206,33 +224,54 @@ p {
   font-size: 16px;
 }
 
-.notice_lists {
-  padding: 16px;
-  border-radius: 5px;
-  border: 1px solid map_get($color, gray03);
-  max-height: 33vh;
-  overflow-y: scroll;
-  background: map_get($color, white);
-
-  li {
-    border-bottom: 1px solid map_get($color, gray03);
-    font-size: 16px;
+.characters_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 3vh;
+  left: 0;
+  right: 0;
+  z-index: index($z-map, character);
+  @include mq(xsmall) {
+    top: 30px;
+  }
+  @include mq(big) {
+    bottom: 21vh;
   }
 
-  span {
-    display: block;
-    margin-bottom: 8px;
-  }
+  img {
+    height: 7vh;
+    margin-left: 10px;
 
-  .date {
-    font-size: 14px;
-    margin-bottom: 2px;
-  }
+    &:first-child {
+      margin-left: 0;
+      animation: animate_chara01 3s linear infinite;
+    }
 
-  a {
-    display: inline;
+    &:nth-child(2) {
+      height: 6vh;
+      animation: animate_chara02 3s linear infinite;
+    }
+
+    &:last-child {
+      animation: animate_chara03 3s linear infinite;
+    }
   }
 }
 
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 36vh;
+  animation: fadeInUp01 1.3s 0s ease-in-out forwards;
+  @include mq(xsmall) {
+    bottom: -30px;
+  }
+}
 
 </style>

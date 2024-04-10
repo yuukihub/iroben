@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon_114.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon_120.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon_144.png" afterDir="false" />
@@ -137,6 +138,14 @@
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-1024-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-1024.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-1024.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Top.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Top.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
+>>>>>>> feature/#ビルドエラー対応
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,11 +201,19 @@
       <recent name="$PROJECT_DIR$/iroben/src/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="$PROJECT_DIR$/iroben/res/electron/screen" />
       <recent name="$PROJECT_DIR$/iroben/res/android/screen" />
       <recent name="$PROJECT_DIR$/iroben/res/ios/screen" />
       <recent name="$PROJECT_DIR$/iroben/res/android/icon" />
       <recent name="$PROJECT_DIR$/iroben/res/electron/icon" />
+=======
+      <recent name="$PROJECT_DIR$/iroben/res/ios/icon" />
+      <recent name="$PROJECT_DIR$/iroben/src/img/img/home" />
+      <recent name="$PROJECT_DIR$/iroben/src/img/img" />
+      <recent name="$PROJECT_DIR$/iroben/src/img/icon" />
+      <recent name="$PROJECT_DIR$/iroben/src/img" />
+>>>>>>> feature/#ビルドエラー対応
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -246,10 +263,14 @@
       <workItem from="1712037831229" duration="14555000" />
       <workItem from="1712185264680" duration="59048000" />
       <workItem from="1712484875216" duration="30394000" />
+<<<<<<< HEAD
       <workItem from="1712623285644" duration="153000" />
       <workItem from="1712718130142" duration="816000" />
       <workItem from="1712723064540" duration="976000" />
       <workItem from="1712727169597" duration="1069000" />
+=======
+      <workItem from="1712734975326" duration="408000" />
+>>>>>>> feature/#ビルドエラー対応
     </task>
     <servers />
   </component>

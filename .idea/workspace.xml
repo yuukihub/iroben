@@ -5,7 +5,138 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc49380e-eccb-410d-a4dd-ed0c888562ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/src/vue/pages/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon_114.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon_120.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon_144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon_152.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon_180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon_57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon_60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon_72.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon_76.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/android/icon/hdpi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/android/icon/ldpi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/android/icon/mdpi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/android/icon/xhdpi-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/android/icon/xhdpi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/android/icon/xxhdpi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/android/icon/xxxhdpi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/electron/icon/icon_electron_512.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-100.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-1024-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-1024.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-114.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-120.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-144.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-152.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-167.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-180.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-20.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-20@2x-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-20@2x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-29.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-40.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-40@2x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-50.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-50@2x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-57.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-58.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-60.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-60@2x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-60@3x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-72.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-72@2x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-76.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-76@2x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-80.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-83.5@2x~ipad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-87.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-small.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-small@2x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon-small@3x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iroben/res/ios/icon/icon@2x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/android/icon/ldpi.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/android/icon/ldpi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/android/icon/mdpi.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/android/icon/mdpi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/android/icon/xhdpi.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/android/icon/xhdpi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/android/icon/xxxhdpi.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/android/icon/xxxhdpi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/electron/icon/icon_electron_512.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/electron/icon/icon_electron_512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-1024.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-1024.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-114.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-114.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-120.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-120.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-144.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-144.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-152.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-152.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-167.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-167.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-180.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-180.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-20.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-20@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-20@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-29.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-29.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-40.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-50.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-50.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-57.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-57.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-58.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-58.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-60.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-60.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-72.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-72.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-76.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-76.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-80.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-80.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-87.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon-87.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/iroben/res/ios/icon/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/hdpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/ldpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/mdpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/xhdpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/xxhdpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/icon/xxxhdpi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/android/screen/window_splashscreen_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/res/android/screen/window_splashscreen_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/electron/icon/icon_electron_512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/electron/screen/electron_splash_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/res/electron/screen/electron_splash_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-167.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-50@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-72@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-83.5@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-small@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon-small@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/icon/icon@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-568h@2x~iphone.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/res/ios/screen/Default-568h@2x~iphone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-667h.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/res/ios/screen/Default-667h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-736h.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/res/ios/screen/Default-736h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Landscape-736h.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Landscape-736h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Landscape~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Landscape~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Portrait@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Portrait@2x~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Portrait~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/res/ios/screen/Default-Portrait~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default@2x~iphone.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/res/ios/screen/Default@2x~iphone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/res/ios/screen/Default~iphone.png" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/res/ios/screen/Default~iphone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index-legacy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iroben/www/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iroben/www/assets/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +192,11 @@
       <recent name="$PROJECT_DIR$/iroben/src/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/iroben/src/img/img/home" />
-      <recent name="$PROJECT_DIR$/iroben/src/img/img" />
-      <recent name="$PROJECT_DIR$/iroben/src/img/icon" />
-      <recent name="$PROJECT_DIR$/iroben/src/img" />
-      <recent name="$PROJECT_DIR$/iroben/src" />
+      <recent name="$PROJECT_DIR$/iroben/res/electron/screen" />
+      <recent name="$PROJECT_DIR$/iroben/res/android/screen" />
+      <recent name="$PROJECT_DIR$/iroben/res/ios/screen" />
+      <recent name="$PROJECT_DIR$/iroben/res/android/icon" />
+      <recent name="$PROJECT_DIR$/iroben/res/electron/icon" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -115,6 +246,10 @@
       <workItem from="1712037831229" duration="14555000" />
       <workItem from="1712185264680" duration="59048000" />
       <workItem from="1712484875216" duration="30394000" />
+      <workItem from="1712623285644" duration="153000" />
+      <workItem from="1712718130142" duration="816000" />
+      <workItem from="1712723064540" duration="976000" />
+      <workItem from="1712727169597" duration="1069000" />
     </task>
     <servers />
   </component>

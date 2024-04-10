@@ -137,7 +137,7 @@ h1 {
   }
 
   img {
-    height: 6vh;
+    height: 7vh;
     margin-left: 10px;
 
     &:first-child {
@@ -146,7 +146,7 @@ h1 {
     }
 
     &:nth-child(2) {
-      height: 5vh;
+      height: 6vh;
       animation: animate_chara02 3s linear infinite;
     }
 

@@ -127,7 +127,7 @@ export default {
 section {
   margin-top: 128px;
   padding: 0 24px 24px 24px;
-  animation: fadeInUp01 1.7s 0s ease-in-out forwards;
+  animation: fadeInUp01 1s 0s ease-in-out forwards;
 
   h2, ol, p {
     @include KintoSans();

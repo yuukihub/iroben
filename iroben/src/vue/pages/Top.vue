@@ -104,7 +104,6 @@ h1 {
   width: 48vw;
   margin: auto;
   animation: fadeInUp02 1s 0s ease-in-out forwards;
-  animation-delay: 1s;
   @include mq(regular) {
     width: 40vw;
   }

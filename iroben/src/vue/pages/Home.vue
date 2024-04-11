@@ -268,7 +268,7 @@ p {
   right: 0;
   margin: auto;
   width: 36vh;
-  animation: fadeInUp01 1.3s 0s ease-in-out forwards;
+  animation: fadeInUp01 1s 0s ease-in-out forwards;
   @include mq(xsmall) {
     bottom: -30px;
   }

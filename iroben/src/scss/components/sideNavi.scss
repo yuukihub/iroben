@@ -1,7 +1,7 @@
 @import "./src/scss/foundation/include";
 
 .nav-btn{
-  position:fixed;
+  position: absolute;
   z-index: index($z-map, sideMenuButton);
   top:16px;
   left: 8px;
@@ -60,7 +60,8 @@
   }
 }
 .nav-items {
-  position: fixed;
+  //position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: index($z-map, sideMenu);

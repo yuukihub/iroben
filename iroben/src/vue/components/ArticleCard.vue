@@ -40,7 +40,7 @@ export default {
 .title {
   text-align: center;
   margin-top: 136px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 
   &-text {
     font-weight: 500;

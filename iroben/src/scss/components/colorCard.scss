@@ -7,10 +7,9 @@
   border-radius: 10px;
   max-width: 278px;
   width: 100%;
-  margin: auto;
-  @include fadeIn;
+  margin: 136px auto 0;
+//  @include fadeIn;
   @include boxShadow();
-  margin-top: 136px;
   @include mq(regular) {
     max-width: 440px;
   }

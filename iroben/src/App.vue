@@ -10,6 +10,7 @@
 <script>
 import Home from './vue/pages/Home.vue';
 import Top from './vue/pages/Top.vue';
+import Tutorial from './vue/pages/Tutorial.vue';
 
 export default {
   data() {

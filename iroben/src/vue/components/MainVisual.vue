@@ -86,7 +86,6 @@ export default {
   height: max-content;
   text-align: center;
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
-  animation-delay: 1s;
   z-index: index($z-map, topLogo);
 
   img {
@@ -142,7 +141,6 @@ export default {
 
 .colorCode {
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
-  animation-delay: 1s;
   img {
     position: absolute;
     width: 40px;
@@ -187,7 +185,6 @@ export default {
   height: 100%;
   overflow: hidden;
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
-  animation-delay: 1s;
 }
 
 .front_block {

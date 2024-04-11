@@ -69,8 +69,8 @@ export const thirdQuestion = [
                     "colorCode":"#F3ADA3"
                 },
                 {
-                    "name":"桔梗色",
-                    "colorCode":"#5045a4"
+                    "name":"紅梅色",
+                    "colorCode":"#f3a7a5"
                 },
                 {
                     "name":"桜色",

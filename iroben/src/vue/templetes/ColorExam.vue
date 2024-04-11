@@ -1,87 +1,97 @@
 <template>
   <div class="wrap">
     <div v-if="status">
-      <div class="exam_inner">
-        <div class="c-colorCard">
-          <img class="eye_image" src="../../img/img/common/img_eye.svg" alt="目">
-          <div class="color" :style="{background: currentQuestion.colorCode}"></div>
-          <div class="counter">
-            <span class="current_number">
-              {{ number + 1 }}
-            </span>
-            / {{ questions.length }}
-          </div>
-        </div>
-      </div>
-      <div class="exam_inner">
-        <button
-            class="c-answerButton"
-            href="#"
-            v-for="(answer,index) in setChoice"
-            @click="selectAnswer(index)"
-            :class="{'is-disabled':isShowIllustration}">
-          <div v-if="answerFlag">
-            <div class="answer_colorWrap" :style="{background: answer.colorCode}">
-              <div class="answer_color"></div>
-            </div>
-          </div>
-          <div class="answer">{{ answer.name }}</div>
-          <div v-if="!answerFlag">
-            <img class="result_icon" src="../../img/icon/icon_circle.svg" alt="アイコン">
-          </div>
-          <div v-else="answerFlag">
-            <div v-if="currentQuestion.answer === index+1">
-              <img class="result_icon" src="../../img/icon/icon_success.svg" alt="アイコン">
-            </div>
-            <div v-else>
-              <img class="result_icon" src="../../img/icon/icon_error.svg" alt="アイコン">
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div v-else>
-      <h2 class="result_title">結果発表</h2>
-      <div class="c-score">
-        <div class="scores">
-          <h2 class="score">{{ correctCount }}</h2>
-          <span class="slash"></span>
-        </div>
-        <h3 class="summary">{{ questions.length }}<span class="unit">点</span></h3>
-      </div>
-      <div class="score_wrap">
-        <p class="sub_title">
-          <templete v-if="level === 'second'">
-            <a href="#" @click="toColorList">2級の慣用色一覧</a>に<br>
-          </templete>
-          <template v-else-if="level === 'third'">
-            <a href="#" @click="toColorList">3級の慣用色一覧</a>に<br>
-          </template>
-          間違えた回数を記録しています。
-        </p>
-        <p class="text">
-          また、間違えた色は<a href="#" @click="toPaint">ペイント機能</a>で<br>
-          落書きすることもできます。<br>
-          復習にぜひご活用ください。
-        </p>
-        <img class="img_colorPallet"
-             src="../../img/img/exam/img_explain_ColorPalletToggle.png"
-             alt="不正解のみを表示したカラーパレット">
-      </div>
-    </div>
+              <div class="c-colorCard">
+                <img class="eye_image" src="../../img/img/common/img_eye.svg" alt="目">
+                <div class="color" :style="{background: currentQuestion.colorCode}"></div>
+                <div class="counter">
+                  <span class="current_number">
+                    {{ number + 1 }}
+                  </span>
+                  / {{ questions.length }}
+                </div>
+              </div>
+<!--      <div class="exam_inner">-->
+<!--        <div class="c-colorCard">-->
+<!--          <img class="eye_image" src="../../img/img/common/img_eye.svg" alt="目">-->
+<!--          <div class="color" :style="{background: currentQuestion.colorCode}"></div>-->
+<!--          <div class="counter">-->
+<!--            <span class="current_number">-->
+<!--              {{ number + 1 }}-->
+<!--            </span>-->
+<!--            / {{ questions.length }}-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="exam_inner">-->
+<!--        <button-->
+<!--            class="c-answerButton"-->
+<!--            href="#"-->
+<!--            v-for="(answer,index) in setChoice"-->
+<!--            @click="selectAnswer(index)"-->
+<!--            :class="{'is-disabled':isShowIllustration}">-->
+<!--          <div v-if="answerFlag">-->
+<!--            <div class="answer_colorWrap" :style="{background: answer.colorCode}">-->
+<!--              <div class="answer_color"></div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="answer">{{ answer.name }}</div>-->
+<!--          <div v-if="!answerFlag">-->
+<!--            <img class="result_icon" src="../../img/icon/icon_circle.svg" alt="アイコン">-->
+<!--          </div>-->
+<!--          <div v-else="answerFlag">-->
+<!--            <div v-if="currentQuestion.answer === index+1">-->
+<!--              <img class="result_icon" src="../../img/icon/icon_success.svg" alt="アイコン">-->
+<!--            </div>-->
+<!--            <div v-else>-->
+<!--              <img class="result_icon" src="../../img/icon/icon_error.svg" alt="アイコン">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div v-else>-->
+<!--      <h2 class="result_title">結果発表</h2>-->
+<!--      <div class="c-score">-->
+<!--        <div class="scores">-->
+<!--          <h2 class="score">{{ correctCount }}</h2>-->
+<!--          <span class="slash"></span>-->
+<!--        </div>-->
+<!--        <h3 class="summary">{{ questions.length }}<span class="unit">点</span></h3>-->
+<!--      </div>-->
+<!--      <div class="score_wrap">-->
+<!--        <p class="sub_title">-->
+<!--          <templete v-if="level === 'second'">-->
+<!--            <a href="#" @click="toColorList">2級の慣用色一覧</a>に<br>-->
+<!--          </templete>-->
+<!--          <template v-else-if="level === 'third'">-->
+<!--            <a href="#" @click="toColorList">3級の慣用色一覧</a>に<br>-->
+<!--          </template>-->
+<!--          間違えた回数を記録しています。-->
+<!--        </p>-->
+<!--        <p class="text">-->
+<!--          また、間違えた色は<a href="#" @click="toPaint">ペイント機能</a>で<br>-->
+<!--          落書きすることもできます。<br>-->
+<!--          復習にぜひご活用ください。-->
+<!--        </p>-->
+<!--        <img class="img_colorPallet"-->
+<!--             src="../../img/img/exam/img_explain_ColorPalletToggle.png"-->
+<!--             alt="不正解のみを表示したカラーパレット">-->
+<!--      </div>-->
+<!--    </div>-->
 
-    <div class="result-wrap">
-      <div class="result_image">
-        <template v-if="correctFlag">
-          <confetti></confetti>
-          <img src="../../img/img/exam/img_success.svg" alt="正解">
-          <button @click="next()">{{ btnTitle }}</button>
-        </template>
-        <template v-if="faultFlag">
-          <img src="../../img/img/exam/img_error.svg" alt="不正解">
-          <button @click="next()">{{ btnTitle }}</button>
-        </template>
-      </div>
+<!--    <div class="result-wrap">-->
+<!--      <div class="result_image">-->
+<!--        <template v-if="correctFlag">-->
+<!--          <confetti></confetti>-->
+<!--          <img src="../../img/img/exam/img_success.svg" alt="正解">-->
+<!--          <button @click="next()">{{ btnTitle }}</button>-->
+<!--        </template>-->
+<!--        <template v-if="faultFlag">-->
+<!--          <img src="../../img/img/exam/img_error.svg" alt="不正解">-->
+<!--          <button @click="next()">{{ btnTitle }}</button>-->
+<!--        </template>-->
+<!--      </div>-->
     </div>
   </div>
 </template>
@@ -291,6 +301,7 @@ export default {
     animation: fadeIn 0.8s ease 0.1s 0.8 normal backwards;
     border: 1px solid map_get($color, gray03);
     font-size: 16px;
+    z-index: index($z-map, examNextButton);
   }
 }
 

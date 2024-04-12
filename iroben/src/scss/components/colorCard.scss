@@ -8,7 +8,7 @@
   max-width: 278px;
   width: 100%;
   margin: 136px auto 0;
-//  @include fadeIn;
+  @include fadeIn;
   @include boxShadow();
   @include mq(regular) {
     max-width: 440px;

@@ -47,7 +47,8 @@ $duration: 1000;
 
 .confetti-wrap {
   position: absolute;
-  top: -73px;
+  z-index: index($z-map, confetti);
+  top: -133px;
   left: 0;
   right: 0;
   margin: auto;

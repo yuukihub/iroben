@@ -125,6 +125,10 @@
             </li>
           </ul>
         </article-card>
+        <iframe id="inline-frame"
+                src="https://webliker.info/"
+                sandbox>
+        </iframe>
       </div>
     </div>
   </v-ons-page>

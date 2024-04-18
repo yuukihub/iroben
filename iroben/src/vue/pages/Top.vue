@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-    <transition appear>
+    <transition>
       <div v-if="tutorialCookie"
            class="tutorial_container">
         <div class="tutorial_inner">
@@ -60,14 +60,13 @@ export default {
     }
   },
   created() {
-    // cookieのセット
+    // チュートリアルのセット
+    let today = new Date();
+    // Cookie有効期限
+    today.setDate(today.getDate() + 30);
     if (navigator.cookieEnabled) {
       this.tutorialCookie = true;
       if (document.cookie.indexOf("tutorialCookie=") === -1) {
-        console.log(document.cookie.indexOf("tutorialCookie="))
-        // name, countの有効期限は10秒後をセット
-        let today = new Date();
-        today.setMinutes(today.getSeconds()  + 10);
         document.cookie = "tutorialCookie=" + false + ";expires=" + today.toUTCString();
 
       } else {
@@ -81,9 +80,7 @@ export default {
           }
         }
       }
-
-     // alert("訪問回数は" + this.tutorialCookie + "です。");
-      document.cookie = "tutorialCookie=" + false + "; max-age=2";
+      document.cookie = "tutorialCookie=" + false + ";expires=" + today.toUTCString();
     }
 
 
@@ -114,19 +111,7 @@ export default {
 @import '../src/scss/components/checkbox';
 @import "./src/scss/components/transition";
 @import "./src/scss/components/contentArea";
-
-.l-header {
-  .top {
-    .bar {
-      background: white;
-      height: 2vh;
-    }
-
-    img {
-      width: 100%;
-    }
-  }
-}
+@import "./src/scss/components/topWaveHeder";
 
 h1 {
   position: absolute;

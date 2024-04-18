@@ -45,17 +45,9 @@
         <span class="dot" @click="currentSlide(3)"></span>
       </div>
     </div>
-
-    <template v-if="!topPageFlag">
-      <a class="prev" @click="plusSlides(-1)">
-        <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
-      </a>
-      <a class="next" @click="plusSlides(1)">
-        <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
-      </a>
-    </template>
-    <template v-else>
-      <div v-if="slideIndex < 3">
+    <template v-if="topPageFlag">
+      <div v-if="slideIndex < 3"
+           class="button_area">
         <custom-button label="次へ"
                        :is-disabled-flag="false"
                        @click="plusSlides(1)"></custom-button>
@@ -68,6 +60,15 @@
       <a href="#" class="slide_skip"
          @click="hideTutorial">
         スキップ
+        <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+      </a>
+    </template>
+    <template v-else
+              class="button_area">
+      <a class="prev" @click="plusSlides(-1)">
+        <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+      </a>
+      <a class="next" @click="plusSlides(1)">
         <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
       </a>
     </template>
@@ -131,8 +132,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../../src/scss/foundation/_include.scss";
-@import "./src/scss/components/contentArea";
 @import "../src/scss/components/transition";
+@import "../src/scss/components/topWaveHeder";
 
 .c-tutorialSlider {
   position: absolute;
@@ -141,6 +142,8 @@ export default {
   right: 0;
   left: 0;
   margin: auto;
+  max-width: 500px;
+  width: 100%;
   height: max-content;
   padding: 0 16px 24px 16px;
   .item {
@@ -205,7 +208,6 @@ export default {
 
   .slide_dot {
     text-align: center;
-    margin-bottom: 48px;
   }
 
   .slide_skip {
@@ -257,6 +259,10 @@ export default {
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
+  }
+
+  .button_area {
+    margin-top: 48px;
   }
 }
 

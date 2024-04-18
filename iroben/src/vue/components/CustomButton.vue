@@ -37,6 +37,7 @@ export default {
   width: 100%;
   text-align: center;
   padding: 8px;
+  max-width: 500px;
 }
 
 .is-disabled {

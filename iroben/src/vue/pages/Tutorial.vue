@@ -1,7 +1,8 @@
 <template>
   <v-ons-page>
-    <custom-header :title="this.title"
-                    :custom-button-flag="false"></custom-header>
+    <custom-header :top-page-flag="false"
+                   :title="this.title"
+                   :custom-button-flag="false"></custom-header>
     <tutorial-slider></tutorial-slider>
     <div class="bottom">
       <div class="bottom_inner">

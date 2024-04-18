@@ -1,5 +1,5 @@
 <template>
-  <v-ons-button :class="['button', {'is-disabled': !isDisabledFlag}]"
+  <v-ons-button :class="['button', {'is-disabled': isDisabledFlag}]"
                 @click="click">
     <div class="c-button">
       {{ label }}
@@ -14,7 +14,7 @@ export default {
     isDisabledFlag: {
       type: Boolean,
       default: false,
-      required: false,
+      required: true,
     },
     label: {
       type: String,
@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     click() {
-      this.$emit('onClick');
+      this.$emit("onClick");
     }
   }
 }

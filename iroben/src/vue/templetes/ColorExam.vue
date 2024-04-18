@@ -152,6 +152,7 @@ export default {
       } else {
         //不正解の場合
         this.$store.commit("addFaultItem", {level: this.level, item: this.currentQuestion});
+        console.log(this.$store)
         this.faultFlag = true;
       }
 

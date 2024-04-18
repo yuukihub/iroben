@@ -43,9 +43,9 @@ export default new Vuex.Store({
         {
             key: 'iroben',
             paths: [
-                'first',
-                'second',
-                'third',
+                'questions.first',
+                'questions.second',
+                'questions.third',
             ],
             storage: window.localStorage,
         }

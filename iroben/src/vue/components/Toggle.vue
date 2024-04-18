@@ -13,7 +13,7 @@ export default {
   name: "Toggle",
   data() {
     return {
-      checkedFlag: this.$store.state.toggles[this.level],
+      checkedFlag: this.$store.state.tools.toggles[this.level],
     }
   },
   props: {

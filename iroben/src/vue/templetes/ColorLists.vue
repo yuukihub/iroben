@@ -81,7 +81,7 @@ export default {
   data() {
     return {
       value: String,
-      faultItem: this.$store.state[this.level].faultArray,
+      faultItem: this.$store.state.questions[this.level].faultArray,
       faultCountArray: "",
       icon: "",
       openModalFlag: false,

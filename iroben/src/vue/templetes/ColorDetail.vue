@@ -38,7 +38,7 @@ export default {
   name: "ColorDetail",
   data(){
     return {
-      faultItem: this.$store.state[this.level].faultArray,
+      faultItem: this.$store.state.questions[this.level].faultArray,
       faultCountArray: "",
     }
   },

@@ -119,10 +119,10 @@ export default {
       this.checkFaultItem(level);
     },
     checkToggle(level) {
-      return this.$store.state.toggles[level];
+      return this.$store.state.tools.toggles[level];
     },
     checkFaultItem(level) {
-      let faultItem = this.$store.state[level].faultArray;
+      let faultItem = this.$store.state.questions[level].faultArray;
       let faultItemArray = JSON.parse(JSON.stringify(faultItem));
       this.faultCountArray = Array.from(
           new Map(faultItemArray.map((faultItemArray) => [faultItemArray.id, faultItemArray])).values()

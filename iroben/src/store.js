@@ -7,32 +7,36 @@ import createPersistedState from 'vuex-persistedstate';
 //app.use(Vuex);
 export default new Vuex.Store({
     state:{
-        first: {
-            faultArray: [],
+        questions: {
+            first: {
+                faultArray: [],
+            },
+            second: {
+                faultArray: [],
+            },
+            third: {
+                faultArray: [],
+            },
         },
-        second: {
-            faultArray: [],
-        },
-        third: {
-            faultArray: [],
-        },
-        toggles: {
-            second: false,
-            third: false,
-            paint: false,
+        tools: {
+            toggles: {
+                second: false,
+                third: false,
+                paint: false,
+            }
         },
     },
     mutations: {
         addFaultItem({ commit },{ level , item }) {
-            let target = this.state[level];
+            let target = this.state.questions[level];
             target.faultArray.push(item);
         },
         reset({ state },{ level }) {
-            let target = this.state[level];
+            let target = this.state.questions[level];
             target.faultArray = [];
         },
         toggle({ state },{ level , flag }){
-            this.state.toggles[level] = flag;
+            this.state.tools.toggles[level] = flag;
         },
     },
     plugins: [createPersistedState(

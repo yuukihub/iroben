@@ -23,16 +23,14 @@
         </div>
         <div class="button_area">
           <custom-button label="はじめる"
-                      :is-disabled-flag="!checked"
-                      @click="toHome"></custom-button>
+                         :is-disabled-flag="!checked"
+                         @click="toHome"></custom-button>
         </div>
-        {{tutorialCookie}}
       </div>
     </div>
     <transition>
       <div v-if="tutorialCookie"
            class="tutorial_container">
-        {{tutorialCookie}}
         <tutorial-slider :top-page-flag="true"
                          @onClick="hideTutorial"></tutorial-slider>
       </div>
@@ -60,49 +58,61 @@ export default {
     }
   },
   created() {
-    // チュートリアルのセット
-    let today = new Date();
-    // Cookie有効期限
-    today.setDate(today.getDate() + 30);
-    if (navigator.cookieEnabled) {
-      this.tutorialCookie = true;
-      if (document.cookie.indexOf("tutorialCookie=") === -1) {
-        document.cookie = "tutorialCookie=" + false + ";expires=" + today.toUTCString();
+    let period = 1000 * 30 * 1; // 保存期間:1分(1000ミリ秒 * 60秒 * 1分)
+    // localStorageで使用するkey名
+    let storage_key = 'tutorialCookie'; // 広告バナー管理で使用する値
+    let storage_period_key = false; // 保存期間で使用する値
 
-      } else {
-        let cookies = document.cookie.split("; ");
-        for (let i = 0; i < cookies.length; i++) {
-          let cookie = cookies[i].split("=");
-          switch(cookie[0]) {
-            case "tutorialCookie" :
-              this.tutorialCookie = JSON.parse(cookie[1]);
-              break;
-          }
-        }
-      }
-      document.cookie = "tutorialCookie=" + false + ";expires=" + today.toUTCString();
-    }
-
-
-  },
-  methods: {
-    pop() {
-      this.pageStack.pop();
-    },
-    toTop() {
-      this.pageStack.push(Top);
-    },
-    toHome() {
-      this.pageStack.push(Home);
-    },
-    toAgreement() {
-      this.pageStack.push(Agreement);
-    },
-    hideTutorial(){
+    // 保存期間の値が保存されている場合
+    if (localStorage.getItem(storage_period_key) !== null) {
+      // 保存されている値と現在の値の差を見て、期間を過ぎていないか確認
+      let df = Date.now() - parseFloat(localStorage.getItem(storage_period_key));
       this.tutorialCookie = false;
+
+      if (df > period) {
+        // 期間を過ぎている場合はlocalStorageの値を削除
+        localStorage.removeItem(storage_key);
+        localStorage.removeItem(storage_period_key);
+        this.tutorialCookie = true;
+      }
     }
-  },
-  props: ["pageStack"],
+
+    // 広告バナー管理の値が保存されていない場合はバナー表示
+    if (localStorage.getItem(storage_key) === null) {
+      this.tutorialCookie = true;
+    }
+
+    localStorage.setItem(storage_key, this.tutorialCookie);
+    localStorage.setItem(storage_period_key, Date.now());
+},
+methods: {
+  pop()
+  {
+    this.pageStack.pop();
+  }
+,
+  toTop()
+  {
+    this.pageStack.push(Top);
+  }
+,
+  toHome()
+  {
+    this.pageStack.push(Home);
+  }
+,
+  toAgreement()
+  {
+    this.pageStack.push(Agreement);
+  }
+,
+  hideTutorial()
+  {
+    this.tutorialCookie = false;
+  }
+}
+,
+props: ["pageStack"],
 }
 </script>
 

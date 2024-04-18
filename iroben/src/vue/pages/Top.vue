@@ -134,12 +134,10 @@ h1 {
 
 .logo {
   display: block;
-  width: 48vw;
-  margin: auto;
+  max-width: 180px;
+  width: 100%;
+  margin: 3vh auto 0;
   animation: fadeInUp02 1s 0s ease-in-out forwards;
-  @include mq(regular) {
-    width: 40vw;
-  }
 }
 
 .tutorial_inner {

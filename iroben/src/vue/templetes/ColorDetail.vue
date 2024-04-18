@@ -77,7 +77,7 @@ export default {
 @import "./src/scss/components/colorCard";
 @import "./src/scss/components/transition";
 .colorDetail-wrap {
-  margin-top: 136px;
+  margin-top: 20vh;
   display: inherit;
   min-height: inherit;
   @include mq(xsmall) {

@@ -172,7 +172,7 @@ export default {
     padding: 16px;
     margin: 0 auto 40px;
     border-radius: 5px;
-    animation: fadeInUpDown 3s linear infinite;
+    animation: fadeInUpDown 1.5s linear infinite;
 
     &:before {
       content: "";

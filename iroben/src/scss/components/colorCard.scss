@@ -7,13 +7,12 @@
   border-radius: 10px;
   max-width: 278px;
   width: 100%;
-  margin: 20vh auto 0;
+  margin: 0 auto;
   @include fadeIn;
   @include boxShadow();
   @include mq(regular) {
     max-width: 440px;
   }
-
   .eye_image {
     position: absolute;
     top: 13px;

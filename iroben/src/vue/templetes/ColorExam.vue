@@ -186,7 +186,13 @@ export default {
 @import "./src/scss/components/colorCard";
 
 .wrap {
-  margin-top: 112px;
+  margin-top: 120px;
+  @include mq(regular) {
+    margin-top: 240px;
+  }
+  @include mq(big) {
+    margin-top: 340px;
+  }
 }
 
 .c-answerButton {
@@ -265,6 +271,10 @@ export default {
   margin: 0 auto;
   height: min-content;
   text-align: center;
+  z-index: index($z-map, resultImage);
+  @include mq(regular) {
+    top: 27vh;
+  }
 
   img {
     max-width: 160px;
@@ -285,7 +295,6 @@ export default {
     animation: fadeIn 0.8s ease 0.1s 0.8 normal backwards;
     border: 1px solid map_get($color, gray03);
     font-size: 16px;
-    z-index: index($z-map, examNextButton);
   }
 }
 

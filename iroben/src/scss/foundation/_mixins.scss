@@ -9,7 +9,7 @@
       @content;
     }
   } @else if $level == regular {
-    @media  (min-width: 767px){
+    @media  (min-width: 711px){
       @content;
     }
   } @else if $level == big {

@@ -52,7 +52,8 @@
                        :is-disabled-flag="false"
                        @click="plusSlides(1)"></custom-button>
       </div>
-      <div v-else>
+      <div v-else
+           class="button_area">
         <custom-button label="irobeを始める"
                        :is-disabled-flag="false"
                        @click="hideTutorial"></custom-button>
@@ -63,8 +64,7 @@
         <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
       </a>
     </template>
-    <template v-else
-              class="button_area">
+    <template v-else>
       <a class="prev" @click="plusSlides(-1)">
         <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
       </a>
@@ -136,16 +136,19 @@ export default {
 @import "../src/scss/components/topWaveHeder";
 
 .c-tutorialSlider {
+  margin: auto;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  margin: auto;
+  height: max-content;
   max-width: 500px;
   width: 100%;
-  height: max-content;
-  padding: 0 16px 24px 16px;
+  padding: 0 16px 0 16px;
+  @include mq(sp) {
+    margin: 2vh auto 0;
+  }
   .item {
     display: none;
   }
@@ -190,9 +193,6 @@ export default {
       @include KintoSans();
     }
 
-    @include mq(xsmall) {
-      font-size: 16px;
-    }
   }
 
   .slide_text {
@@ -201,9 +201,6 @@ export default {
     text-align: center;
     display: block;
     margin: 24px 0;
-    @include mq(xsmall) {
-      font-size: 14px;
-    }
   }
 
   .slide_dot {

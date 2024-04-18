@@ -125,9 +125,13 @@ export default {
 @import "./src/scss/components/transition";
 
 section {
-  margin-top: 128px;
+  margin-top: 18vh;
   padding: 0 24px 24px 24px;
   animation: fadeInUp01 1s 0s ease-in-out forwards;
+
+  @include mq(regular) {
+    margin-top: 22vh;
+  }
 
   h2, ol, p {
     @include KintoSans();

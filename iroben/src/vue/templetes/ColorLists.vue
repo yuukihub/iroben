@@ -163,6 +163,9 @@ export default {
   margin-top: 96px;
   position: relative;
   @include fadeIn;
+  @include mq(regular) {
+    margin-top: 200px;
+  }
 }
 
 .c-colorLists {

@@ -26,15 +26,15 @@
                       :is-disabled-flag="!checked"
                       @click="toHome"></custom-button>
         </div>
+        {{tutorialCookie}}
       </div>
     </div>
     <transition>
       <div v-if="tutorialCookie"
            class="tutorial_container">
-        <div class="tutorial_inner">
-          <tutorial-slider :top-page-flag="true"
-              @onClick="hideTutorial"></tutorial-slider>
-        </div>
+        {{tutorialCookie}}
+        <tutorial-slider :top-page-flag="true"
+                         @onClick="hideTutorial"></tutorial-slider>
       </div>
     </transition>
   </v-ons-page>
@@ -140,7 +140,7 @@ h1 {
   animation: fadeInUp02 1s 0s ease-in-out forwards;
 }
 
-.tutorial_inner {
+.tutorial_container {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -148,14 +148,10 @@ h1 {
   left: 0;
   margin: auto;
   z-index: 100;
+  background: map_get($color, backGroundColor);
 }
 
-.tutorial_container {
-  background: map_get($color, backGroundColor);
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  z-index: 99;
+.page__content {
+  overflow: hidden !important;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <v-ons-page>
-    <custom-toolbar :title="this.title"
-                    :custom-button-flag="false"></custom-toolbar>
+    <custom-header :title="this.title"
+                    :custom-button-flag="false"></custom-header>
     <color-exam :questions="thirdQuestion"
                 :level="'third'" @toPaint="toPaint"
                 @toColorList="toColorList">
@@ -10,24 +10,24 @@
 </template>
 
 <script>
-import customToolbar from "../components/CustomToolbar.vue";
-import top from "./Top.vue";
+import CustomHeader from "../components/CustomHeader.vue";
+import Top from "./Top.vue";
 import ColorExam from "@/vue/templetes/ColorExam.vue";
-import {thirdQuestion} from "@/resource/thirdQuestion";
-import {ROUTER} from "@/resource/constant-router";
 import Paint from "@/vue/pages/Paint.vue";
-import thirdColorLists from "@/vue/pages/ThirdColorLists.vue";
+import ThirdColorLists from "@/vue/pages/ThirdColorLists.vue";
+import {THIRDQUESTIONS} from "@/resource/thirdQuestion";
+import {ROUTER} from "@/resource/constant-router";
 
 
 export default {
-  name: "thirdExam",
+  name: "ThirdExam",
   components: {
     ColorExam,
-    customToolbar,
+    CustomHeader,
   },
   data() {
     return {
-      thirdQuestion: thirdQuestion,
+      thirdQuestion: THIRDQUESTIONS,
       title: ROUTER.THIRD_EXAM_TITLE,
     }
   },
@@ -36,10 +36,10 @@ export default {
       this.pageStack.pop();
     },
     push() {
-      this.pageStack.push(top);
+      this.pageStack.push(Top);
     },
     toColorList() {
-      this.pageStack.push(thirdColorLists);
+      this.pageStack.push(ThirdColorLists);
     },
     toPaint() {
       this.pageStack.push(Paint);

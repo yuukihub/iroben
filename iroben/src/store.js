@@ -20,7 +20,7 @@ export default new Vuex.Store({
             second: false,
             third: false,
             paint: false,
-        }
+        },
     },
     mutations: {
         addFaultItem({ commit },{ level , item }) {

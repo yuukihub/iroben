@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "TheButton",
+  name: "CustomButton",
   props: {
     isDisabledFlag: {
       type: Boolean,

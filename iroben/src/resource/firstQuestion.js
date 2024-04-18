@@ -2,7 +2,7 @@
  * 診断の質問リスト
  * @type {[{subTitle: string, answer: number, description: string, colorCode: string, id: number, title: string, choices: string[][], faultCount: number}]}
  */
-export const firstQuestion = [
+export const FIRSTQUESTIONS = [
     {
         id:0,
         title:"モーニングスターブルー",
@@ -2686,7 +2686,7 @@ export const firstQuestion = [
             ],
             [
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -2704,7 +2704,7 @@ export const firstQuestion = [
                     "colorCode":"#D2BADA"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -2718,10 +2718,10 @@ export const firstQuestion = [
     },
     {
         id:52,
-        title:"ウィスタリア",
+        title:"ウイスタリア",
         subTitle:"あざやかな青紫",
         colorCode:"#8e8bc2",
-        description:"テキストが入ります",
+        description:"ウイスタリアは藤の英語名。19世紀末にこの色の化学染料ができたために出現した色名である。同じ藤の花の色を語源とする色に藤色があるが、藤色は明るい青紫、ウイスタリアは鮮やかな青紫で微妙に違う。",
         choices:[
             [
                 {
@@ -2729,7 +2729,7 @@ export const firstQuestion = [
                     "colorCode":"#C4B3D3"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -2743,7 +2743,7 @@ export const firstQuestion = [
                     "colorCode":"#bbb7da"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -2757,7 +2757,7 @@ export const firstQuestion = [
                     "colorCode":"#bbb7da"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -2892,7 +2892,7 @@ export const firstQuestion = [
                     "colorCode":"#C4B3D3"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 }
             ],
@@ -2916,7 +2916,7 @@ export const firstQuestion = [
                     "colorCode":"#D2BADA"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -5584,7 +5584,7 @@ export const firstQuestion = [
         title:"ターコイズブルー",
         subTitle:"明るい緑みの青",
         colorCode:"#00afcc",
-        description:"テキストが入ります",
+        description:"ターコイズとはトルコ石として知らせる宝石で、青と緑の中間色相の色を表す色名としてよく用いられる。英語の色名になったのは16世後半のことで、ターコイズはブルーとグリーンの両方の色名に使われてきた。",
         choices:[
             [
                 {
@@ -6855,7 +6855,7 @@ export const firstQuestion = [
         id:130,
         title:"ウイスタリア",
         subTitle:"あざやかな青紫",
-        colorCode:"#7C6DC4",
+        colorCode:"#8e8bc2",
         description:"ウイスタリアは藤の英語名。19世紀末にこの色の化学染料ができたために出現した色名である。同じ藤の花の色を語源とする色に藤色があるが、藤色は明るい青紫、ウイスタリアは鮮やかな青紫で微妙に違う。",
         choices:[
             [

@@ -1,7 +1,7 @@
 <template>
   <v-ons-page>
-    <custom-toolbar :title="this.title"
-                    :custom-button-flag="false"></custom-toolbar>
+    <custom-header :title="this.title"
+                    :custom-button-flag="false"></custom-header>
     <color-exam :questions="secondQuestion"
                 :level="'second'"
                 @toPaint="toPaint"
@@ -11,23 +11,23 @@
 </template>
 
 <script>
-import customToolbar from "../components/CustomToolbar.vue";
-import top from "./Top.vue";
+import CustomHeader from "../components/CustomHeader.vue";
+import Top from "./Top.vue";
 import ColorExam from "@/vue/templetes/ColorExam.vue";
-import {secondQuestion} from "@/resource/secondQuestion"
-import {ROUTER} from "@/resource/constant-router";
-import secondColorLists from "@/vue/pages/SecondColorLists.vue";
+import SecondColorLists from "@/vue/pages/SecondColorLists.vue";
 import Paint from "@/vue/pages/Paint.vue";
+import {SECONDQUESTIONS} from "@/resource/secondQuestion"
+import {ROUTER} from "@/resource/constant-router";
 
 export default {
-  name: "secondExam",
+  name: "SecondExam",
   components: {
     ColorExam,
-    customToolbar,
+    CustomHeader,
   },
   data() {
     return {
-      secondQuestion: secondQuestion,
+      secondQuestion: SECONDQUESTIONS,
       title: ROUTER.SECOND_EXAM_TITLE,
     }
   },
@@ -36,10 +36,10 @@ export default {
       this.pageStack.pop();
     },
     push() {
-      this.pageStack.push(top);
+      this.pageStack.push(Top);
     },
     toColorList() {
-      this.pageStack.push(secondColorLists);
+      this.pageStack.push(SecondColorLists);
     },
     toPaint() {
       this.pageStack.push(Paint);

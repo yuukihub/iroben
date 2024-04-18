@@ -33,6 +33,12 @@
       <li>
         <img src="../../img/img/home/img_blur_decoration01.png" alt="heart">
       </li>
+      <li>
+        <img src="../../img/img/home/img_decoration_front01.png" alt="decoration">
+      </li>
+      <li>
+        <img src="../../img/img/home/img_decoration_front02.png" alt="decoration">
+      </li>
     </ul>
     <ul class="back_block">
       <li>
@@ -250,12 +256,45 @@ export default {
     animation-duration: 40s;
     animation-delay: -21s;
     z-index: index($z-map, topFrontDecoration);
-
     img {
       width: 120vw;
       max-width: 700px;
     }
   }
+
+  li:nth-child(6) {
+    animation: animate_decoration_front02 linear infinite;
+    animation-duration: 40s;
+    animation-delay: -19s;
+
+    img {
+      width: 13vw;
+      max-width: 700px;
+    }
+  }
+
+  li:nth-child(6) {
+    animation: animate_decoration_front02 linear infinite;
+    animation-duration: 70s;
+    animation-delay: -24s;
+
+    img {
+      width: 80vw;
+      max-width: 700px;
+    }
+  }
+
+  li:nth-child(7) {
+    animation: animate_decoration_front05 linear infinite;
+    animation-duration: 70s;
+    animation-delay: 5s;
+
+    img {
+      width: 80vw;
+      max-width: 700px;
+    }
+  }
+
 }
 
 .back_block {
@@ -300,11 +339,46 @@ export default {
 
   li:nth-child(6) {
     animation: animate_decoration_back03 30s linear infinite;
-    animation-duration: 100s;
+    animation-duration: 200s;
     animation-delay: 8s;
 
     img {
       width: 80vw;
+    }
+  }
+}
+
+.--home {
+  .front_block li {
+    bottom: 51vh;
+  }
+
+  .back_block li {
+    bottom: 48vh;
+  }
+
+  .logo {
+    top: -50px;
+  }
+
+  .colorCode {
+
+    img {
+      &:first-child {
+        top: 10vh;
+      }
+
+      &:nth-child(2) {
+        top: 14vh;
+      }
+
+      &:nth-child(3) {
+        top: 31vh;
+      }
+
+      &:nth-child(4) {
+        top: 33vh;
+      }
     }
   }
 }
@@ -318,19 +392,19 @@ export default {
     transform: translateX(-60vw) translateY(-5vh);
   }
   100% {
-    transform: translateX(0) translateY(2vh) rotate(0deg);
+    transform: translateX(0) translateY(2vh) rotate(0);
   }
 }
 
 @keyframes animate_decoration_front02 {
   0% {
-    transform: translateX(-220vw) translateY(0px);
+    transform: translateX(-220vw) translateY(0);
   }
   50% {
     transform: translateX(-60vw) translateY(5vh);
   }
   100% {
-    transform: translateX(0px) translateY(0px);
+    transform: translateX(0px) translateY(0);
   }
 }
 
@@ -357,6 +431,19 @@ export default {
     transform: translateX(0px) translateY(4vh);
   }
 }
+
+@keyframes animate_decoration_front05 {
+  0% {
+    transform: translateX(-200vw) translateY(4vh) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(-60vw) translateY(0);
+  }
+  100% {
+    transform: translateX(0px) translateY(4vh) rotate(0deg);
+  }
+}
+
 
 @keyframes animate_decoration_back01 {
   0% {

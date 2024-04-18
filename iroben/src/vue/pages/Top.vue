@@ -22,9 +22,9 @@
           </div>
         </div>
         <div class="button_area">
-          <the-button label="はじめる"
+          <custom-button label="はじめる"
                       :is-disabled-flag="checked"
-                      @click="toHome"></the-button>
+                      @click="toHome"></custom-button>
         </div>
       </div>
     </div>
@@ -32,32 +32,82 @@
 </template>
 
 <script>
-import customToolbar from '../components/CustomToolbar.vue';
-import home from './Home.vue';
-import agreement from "@/vue/pages/Agreement.vue";
-import TheButton from "@/vue/components/TheButton.vue";
+import customToolbar from '../components/CustomHeader.vue';
+import CustomButton from "@/vue/components/CustomButton.vue";
+import Home from './Home.vue';
+import Agreement from "@/vue/pages/Agreement.vue";
 import MainVisual from "@/vue/components/MainVisual.vue";
+import Tutorial from "@/vue/pages/Tutorial.vue";
 
 export default {
   name: "top",
+  components: {CustomButton, Tutorial, MainVisual, customToolbar},
   data() {
     return {
       checked: false,
+      today: "",
+      timestamp:"",
+      expire:30,
+      showTutorialFlag: true,
     }
+  },
+  beforeCreate() {
+    // 現在の日付データを取得
+    //this.today = new Date();
+
+    //30日後の日付データを作成
+    //this.today.setTime(this.today.getTime() + this.expire*24*60*60*1000);
+
+    //GMT形式に変換して変数date2に格納する
+    //this.timestamp = this.today.toGMTString();
+
+
+
+
+
+    if (navigator.cookieEnabled) {
+      var name, count = 1;
+      if (document.cookie.indexOf("name=") === -1) { // cookieのセットを確認する。
+        name = window.prompt("名前の入力", ""); // cookieがない場合、画面から入力する。
+        // name, countの有効期限は5分後をセット
+        var now = new Date();
+        now.setMinutes(now.getMinutes() + 5);
+        document.cookie = "name=" + encodeURIComponent(name) + ";expires=" + now.toUTCString();
+        document.cookie = "count=1; max-age=300";
+      } else {
+        var cookies = document.cookie.split("; "); // cookieを"; "で分割し配列に変換する
+        for (var i = 0; i < cookies.length; i++) {
+          var cookie = cookies[i].split("="); // "="で分割して名前と値に分割する
+          switch(cookie[0]) {
+            case "name" :
+              name = cookie[1];
+              break;
+            case "count" :
+              count = cookie[1];
+              break;
+          }
+        }
+      }
+
+      alert("名前は" + decodeURIComponent(name) + "です。訪問回数は" + count + "回です。");
+      count = parseInt(count) + 1;  // 訪問回数に１加算する
+      document.cookie = "count=" + count + "; max-age=300";
+    }
+
+
   },
   methods: {
     pop() {
       this.pageStack.pop();
     },
     toHome() {
-      this.pageStack.push(home);
+      this.pageStack.push(Home);
     },
     toAgreement() {
-      this.pageStack.push(agreement);
+      this.pageStack.push(Agreement);
     }
   },
   props: ["pageStack"],
-  components: {MainVisual, TheButton, customToolbar},
 }
 </script>
 

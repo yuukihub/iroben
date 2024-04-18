@@ -91,6 +91,14 @@
             </a>
           </li>
           <li>
+            <a href="#" @click="toTutorial">
+              <span>
+                チュートリアル
+              </span>
+              <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+            </a>
+          </li>
+          <li>
             <a href="#" @click="toAgreement">
               <span>
                 利用規約
@@ -101,7 +109,9 @@
         </ul>
       </div>
     </nav>
-    <img class="slider" src="../../img/img/top/img_iphone.svg" alt="iphone">
+    <div class="--home">
+      <main-visual></main-visual>
+    </div>
     <div class="bottom">
       <div class="characters_wrap">
         <img src="../../img/img/common/img_character02_normal.svg" alt="chara02">
@@ -125,10 +135,6 @@
             </li>
           </ul>
         </article-card>
-        <iframe id="inline-frame"
-                src="https://webliker.info/"
-                sandbox>
-        </iframe>
       </div>
     </div>
   </v-ons-page>
@@ -136,17 +142,18 @@
 
 <script>
 import MainVisual from "@/vue/components/MainVisual.vue";
-import thirdExam from "@/vue/pages/ThirdExam.vue";
-import thirdColorLists from "@/vue/pages/ThirdColorLists.vue";
-import paint from "@/vue/pages/Paint.vue";
-import secondExam from "@/vue/pages/SecondExam.vue";
-import secondColorLists from "@/vue/pages/SecondColorLists.vue";
-import firstColorLists from "@/vue/pages/FirstColorLists.vue";
+import ThirdExam from "@/vue/pages/ThirdExam.vue";
+import ThirdColorLists from "@/vue/pages/ThirdColorLists.vue";
+import Paint from "@/vue/pages/Paint.vue";
+import SecondExam from "@/vue/pages/SecondExam.vue";
+import SecondColorLists from "@/vue/pages/SecondColorLists.vue";
+import FirstColorLists from "@/vue/pages/FirstColorLists.vue";
 import ArticleCard from "@/vue/components/ArticleCard.vue";
-import agreement from "@/vue/pages/Agreement.vue";
+import Agreement from "@/vue/pages/Agreement.vue";
+import Tutorial from "@/vue/pages/Tutorial.vue";
 
 export default {
-  name: "home",
+  name: "Home",
   data() {
     return {
       open: false
@@ -162,31 +169,35 @@ export default {
   props: ['pageStack'],
   methods: {
     toColorPaint() {
-      this.pageStack.push(paint);
+      this.pageStack.push(Paint);
       this.open = false;
     },
     toFirstColorLists() {
-      this.pageStack.push(firstColorLists);
+      this.pageStack.push(FirstColorLists);
       this.open = false;
     },
     toSecondExam() {
-      this.pageStack.push(secondExam);
+      this.pageStack.push(SecondExam);
       this.open = false;
     },
     toSecondColorLists() {
-      this.pageStack.push(secondColorLists);
+      this.pageStack.push(SecondColorLists);
       this.open = false;
     },
     toThirdExam() {
-      this.pageStack.push(thirdExam);
+      this.pageStack.push(ThirdExam);
       this.open = false;
     },
     toThirdColorLists() {
-      this.pageStack.push(thirdColorLists);
+      this.pageStack.push(ThirdColorLists);
+      this.open = false;
+    },
+    toTutorial(){
+      this.pageStack.push(Tutorial);
       this.open = false;
     },
     toAgreement() {
-      this.pageStack.push(agreement);
+      this.pageStack.push(Agreement);
       this.open = false;
     }
   },
@@ -277,5 +288,6 @@ p {
     bottom: -30px;
   }
 }
+
 
 </style>

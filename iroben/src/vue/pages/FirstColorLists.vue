@@ -1,6 +1,6 @@
 <template>
   <v-ons-page>
-    <color-lists :color-lists="thirdQuestion"
+    <color-lists :color-lists="firstQuestion"
                  :title="title"
                  :level="'first'"
                  :display-fault-count-flag="false"
@@ -10,9 +10,9 @@
 
 <script>
 import ColorLists from "@/vue/templetes/ColorLists.vue";
-import {firstQuestion} from "@/resource/firstQuestion";
+import FirstColorDetail from "@/vue/pages/FirstColorDetail.vue";
+import {FIRSTQUESTIONS} from "@/resource/firstQuestion";
 import {ROUTER} from "@/resource/constant-router";
-import firstColorDetail from "@/vue/pages/FirstColorDetail.vue";
 
 export default {
   name: "FirstColorLists",
@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      thirdQuestion: firstQuestion,
+      firstQuestion: FIRSTQUESTIONS,
       title: ROUTER.FIRST_COLOR_LIST_TITLE,
     }
   },
@@ -32,7 +32,7 @@ export default {
     push(value) {
       let item = JSON.stringify(value);
       this.pageStack.push({
-        extends: firstColorDetail,
+        extends: FirstColorDetail,
         data() {
           return {
             colorItem: item

@@ -88,7 +88,7 @@
 import Confetti from "@/vue/components/Confetti.vue";
 
 export default {
-  name: "colorExam",
+  name: "ColorExam",
   components: {
     Confetti
   },

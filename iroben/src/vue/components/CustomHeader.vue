@@ -17,10 +17,9 @@
 </template>
 
 <script>
-import TheMiniButton from "@/vue/components/TheMiniButton.vue";
 
 export default {
-  components: {TheMiniButton},
+  name: "CustomHeader",
   props: {
     title: {
       type: String,

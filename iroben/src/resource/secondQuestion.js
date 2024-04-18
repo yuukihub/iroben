@@ -2,7 +2,7 @@
  * 診断の質問リスト
  * @type {[{subTitle: string, answer: number, description: string, colorCode: string, id: number, title: string, choices: string[][], faultCount: number}]}
  */
-export const secondQuestion = [
+export const SECONDQUESTIONS = [
     {
         id:0,
         title:"鴇色",
@@ -2676,7 +2676,7 @@ export const secondQuestion = [
             ],
             [
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -2694,7 +2694,7 @@ export const secondQuestion = [
                     "colorCode":"#D2BADA"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -2708,10 +2708,10 @@ export const secondQuestion = [
     },
     {
         id:51,
-        title:"ウィスタリア",
+        title:"ウイスタリア",
         subTitle:"あざやかな青紫",
         colorCode:"#8e8bc2",
-        description:"テキストが入ります",
+        description:"ウイスタリアは藤の英語名。19世紀末にこの色の化学染料ができたために出現した色名である。同じ藤の花の色を語源とする色に藤色があるが、藤色は明るい青紫、ウイスタリアは鮮やかな青紫で微妙に違う。",
         choices:[
             [
                 {
@@ -2719,7 +2719,7 @@ export const secondQuestion = [
                     "colorCode":"#b5652c"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -2733,7 +2733,7 @@ export const secondQuestion = [
                     "colorCode":"#bbb7da"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -2747,7 +2747,7 @@ export const secondQuestion = [
                     "colorCode":"#bbb7da"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -2882,7 +2882,7 @@ export const secondQuestion = [
                     "colorCode":"#6b5146"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 }
             ],
@@ -2906,7 +2906,7 @@ export const secondQuestion = [
                     "colorCode":"#D2BADA"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -2927,7 +2927,7 @@ export const secondQuestion = [
         choices:[
             [
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -3161,7 +3161,7 @@ export const secondQuestion = [
                     "colorCode":"#afafb0"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 }
             ],
@@ -3302,7 +3302,7 @@ export const secondQuestion = [
                     "colorCode":"#3a8daa"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 },
                 {
@@ -3359,7 +3359,7 @@ export const secondQuestion = [
                     "colorCode":"#fdeeef"
                 },
                 {
-                    "name":"ウィスタリア",
+                    "name":"ウイスタリア",
                     "colorCode":"#8e8bc2"
                 }
             ],

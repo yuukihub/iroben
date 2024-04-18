@@ -1,8 +1,8 @@
 <template>
-  <custom-toolbar :title="title"
+  <custom-header :title="title"
                   :custom-button-flag="true"
                   :custom-button-disabled-flag="faultItem.length"
-                  @clear="openConfirmModal"></custom-toolbar>
+                  @clear="openConfirmModal"></custom-header>
   <div class="wrap">
     <img class="wave" src="../../img/img/common/img_wave_bottom.svg" alt="wave">
     <ul class="c-colorLists">
@@ -73,12 +73,11 @@
 <script>
 import Modal from "@/vue/components/Modal.vue";
 import Loading from "@/vue/components/Loading.vue";
-import TheMiniButton from "@/vue/components/TheMiniButton.vue";
-import CustomToolbar from "@/vue/components/CustomToolbar.vue";
+import CustomHeader from "@/vue/components/CustomHeader.vue";
 
 export default {
-  name: "colorLists",
-  components: {CustomToolbar, TheMiniButton, Loading, Modal},
+  name: "ColorLists",
+  components: {CustomHeader, Loading, Modal},
   data() {
     return {
       value: String,

@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "confetti"
+  name: "Confetti"
 }
 </script>
 

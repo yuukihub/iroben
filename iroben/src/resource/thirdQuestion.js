@@ -2,7 +2,7 @@
  * 診断の質問リスト
  * @type {[{subTitle: string, answer: number, description: string, colorCode: string, id: number, title: string, choices: string[][], faultCount: number}]}
  */
-export const thirdQuestion = [
+export const THIRDQUESTIONS = [
     {
         id:0,
         title:"桜色",
@@ -2129,7 +2129,7 @@ export const thirdQuestion = [
         title:"ターコイズブルー",
         subTitle:"明るい緑みの青",
         colorCode:"#00afcc",
-        description:"テキストが入ります",
+        description:"ターコイズとはトルコ石として知らせる宝石で、青と緑の中間色相の色を表す色名としてよく用いられる。英語の色名になったのは16世後半のことで、ターコイズはブルーとグリーンの両方の色名に使われてきた。",
         choices:[
             [
                 {

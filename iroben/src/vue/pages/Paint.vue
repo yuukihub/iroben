@@ -1,6 +1,6 @@
 <template>
   <v-ons-page>
-    <custom-toolbar :wave-image-flag="false"
+    <custom-header :wave-image-flag="false"
                     @click="resetToggleFlag"/>
     <color-pallet @openModal="setColorDetail"/>
     <transition appear>
@@ -18,14 +18,14 @@
 <script>
 
 import ColorPallet from "@/vue/components/ColorPallet.vue";
-import CustomToolbar from "@/vue/components/CustomToolbar.vue";
 import ColorPalletModal from "@/vue/components/ColorPalletModal.vue";
+import CustomHeader from "@/vue/components/CustomHeader.vue";
 
 export default {
   name: "Paint",
   components: {
+    CustomHeader,
     ColorPalletModal,
-    CustomToolbar,
     ColorPallet
   },
   data() {

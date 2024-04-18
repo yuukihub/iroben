@@ -11,6 +11,14 @@ export const ROUTER = {
     PAINT_PATH: "/paint",
     PAINT_NAME: "Paint",
     PAINT_TITLE:"ペイント",
+    //利用規約画面
+    AGREEMENT_PATH: "/agreement",
+    AGREEMENT_NAME: "Agreement",
+    AGREEMENT_TITLE:"利用規約",
+    //使い方画面
+    TUTORIAL_PATH: "/tutorial",
+    TUTORIAL_NAME: "Tutorial",
+    TUTORIAL_TITLE:"チュートリアル",
     //2級出題画面
     SECOND_EXAM_PATH: "/second-exam",
     SECOND_EXAM_NAME: "SecondExam",

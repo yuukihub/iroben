@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: "TheMiniButton",
+  name: "CustomMiniButton",
   props: {
     label: {
       type: String,

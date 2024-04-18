@@ -1,6 +1,6 @@
 <template>
   <ons-page>
-    <custom-toolbar title="利用規約"></custom-toolbar>
+    <custom-header title="利用規約"></custom-header>
     <section>
       <p>
         この利用規約（以下、「本規約」といいます。）は、iroben（以下、「当社」といいます。）が提供するサービスの利用条件を定めるものです。登録ユーザーの皆さま（以下、「ユーザー」といいます。）には、本規約に従って、本サービスをご利用いただきます。</p>
@@ -112,11 +112,11 @@
 </template>
 
 <script>
-import CustomToolbar from "@/vue/components/CustomToolbar.vue";
+import CustomHeader from "@/vue/components/CustomHeader.vue";
 
 export default {
   name: "Agreement",
-  components: {CustomToolbar}
+  components: {CustomHeader}
 }
 </script>
 

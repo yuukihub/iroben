@@ -9,18 +9,18 @@
 
 <script>
 import ColorLists from "@/vue/templetes/ColorLists.vue";
-import thirdColorDetail from "@/vue/pages/ThirdColorDetail.vue";
+import ThirdColorDetail from "@/vue/pages/ThirdColorDetail.vue";
 import {ROUTER} from "@/resource/constant-router";
-import {thirdQuestion} from "@/resource/thirdQuestion";
+import {THIRDQUESTIONS} from "@/resource/thirdQuestion";
 
 export default {
-  name: "thirdColorLists",
+  name: "ThirdColorLists",
   components: {
     ColorLists,
   },
   data() {
     return {
-      thirdQuestion: thirdQuestion,
+      thirdQuestion: THIRDQUESTIONS,
       title: ROUTER.THIRD_COLOR_LIST_TITLE,
     }
   },
@@ -31,7 +31,7 @@ export default {
     push(value) {
       let item = JSON.stringify(value);
       this.pageStack.push({
-        extends: thirdColorDetail,
+        extends: ThirdColorDetail,
         data() {
           return {
             colorItem: item

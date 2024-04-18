@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  name: "colorDetail",
+  name: "ColorDetail",
   data(){
     return {
       faultItem: this.$store.state[this.level].faultArray,

@@ -49,7 +49,7 @@
           <color-pallet-list
               class="--firstClass"
               :level="'second'"
-              :color-lists="firstQuestion()"
+              :color-lists="firstQuestion"
               :is-toggle-disabled="true"
               @setColor="getPenColor"
               @setColorDetail="getColorDetail"
@@ -61,13 +61,11 @@
 </template>
 
 <script>
-import {secondQuestion} from "@/resource/secondQuestion";
-import {thirdQuestion} from "@/resource/thirdQuestion";
 import ColorPalletList from "@/vue/components/ColorPalletList.vue";
 import ColorPalletCanvas from "@/vue/components/ColorPalletCanvas.vue";
-import thirdExam from "@/vue/pages/ThirdExam.vue";
-import secondExam from "@/vue/pages/SecondExam.vue";
-import {firstQuestion} from "@/resource/firstQuestion";
+import {FIRSTQUESTIONS} from "@/resource/firstQuestion";
+import {SECONDQUESTIONS} from "@/resource/secondQuestion";
+import {THIRDQUESTIONS} from "@/resource/thirdQuestion";
 
 export default {
   name: "ColorPallet",
@@ -77,8 +75,9 @@ export default {
   },
   data() {
     return {
-      secondQuestion: secondQuestion,
-      thirdQuestion: thirdQuestion,
+      firstQuestion: FIRSTQUESTIONS,
+      secondQuestion: SECONDQUESTIONS,
+      thirdQuestion: THIRDQUESTIONS,
       level: String,
       faultCountArray: [],
       checkToggleStatus: this.checkToggle,
@@ -108,9 +107,6 @@ export default {
     },
   },
   methods: {
-    firstQuestion() {
-      return firstQuestion
-    },
     getColorDetail(item, flag) {
       this.colorDetail = item;
       this.openModalFlag = flag;

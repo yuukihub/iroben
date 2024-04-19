@@ -14,10 +14,11 @@
         </div>
         <button
             class="c-answerButton"
-            href="#"
+            ref="#"
             v-for="(answer,index) in setChoice"
             @click="selectAnswer(index)"
-            :class="{'is-disabled':isShowIllustration}">
+            :class="{'is-disabled':isShowIllustration}"
+            ontouchstart>
           <div v-if="answerFlag">
             <div class="answer_colorWrap" :style="{background: answer.colorCode}">
               <div class="answer_color"></div>
@@ -27,7 +28,7 @@
           <div v-if="!answerFlag">
             <img class="result_icon" src="../../img/icon/icon_circle.svg" alt="アイコン">
           </div>
-          <div v-else="answerFlag">
+          <div v-else>
             <div v-if="currentQuestion.answer === index+1">
               <img class="result_icon" src="../../img/icon/icon_success.svg" alt="アイコン">
             </div>
@@ -104,6 +105,7 @@ export default {
       answerFlag: false,
       faultItemArray: [],
       isShowIllustration: false,
+      askedQuestions: [],
     }
   },
   props: {
@@ -124,9 +126,32 @@ export default {
         //ボタンの文言を変更
         this.btnTitle = "結果を見る";
       }
-      //ランダムに問題を出題
-      let random = Math.floor(Math.random() * (this.questionLength + 1));
-      return this.questions[random];
+
+      //ランダムに出題
+      //初回の場合のみ乱数を作成
+      if(this.questionLength === this.questions.length){
+        //出題する問題を乱数で選定しインデックスを格納
+        let random = Math.floor(Math.random() * (this.questionLength + 1));
+        this.askedQuestions.push(random);
+        return this.questions[random];
+      }
+
+      //Proxy型からArray型に変換
+      //全ての問題のインデックス
+      let allQuestionsIndexArray = [];
+      for(let index in this.questions){
+        allQuestionsIndexArray.push(index);
+      }
+      //出題済の問題のインデックス
+      let askedString = String(this.askedQuestions).split(",");
+      let askedIndexArray = Array.from(askedString);
+
+      //未出題の問題のインデックス
+      let unaskedIndexArray = allQuestionsIndexArray.filter(i => askedIndexArray.indexOf(i) === -1)
+      let unaskedIndex = unaskedIndexArray[Math.floor(Math.random() * unaskedIndexArray.length)];
+      this.askedQuestions.push(unaskedIndex);
+
+      return this.questions[unaskedIndex];
     },
     setChoice() {
       //ランダムに選択肢を選定
@@ -152,7 +177,6 @@ export default {
       } else {
         //不正解の場合
         this.$store.commit("addFaultItem", {level: this.level, item: this.currentQuestion});
-        console.log(this.$store)
         this.faultFlag = true;
       }
 
@@ -168,9 +192,6 @@ export default {
       if (this.questionLength === 0) {
         this.status = false;
       }
-      },
-    intRandom(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
     },
     toPaint() {
       this.$emit('toPaint');
@@ -178,6 +199,20 @@ export default {
     toColorList() {
       this.$emit('toColorList');
     },
+    limitRandom(array, num) {
+      var a = array;
+      var t = [];
+      var r = [];
+      var l = a.length;
+      var n = num < l ? num : l;
+      while (n-- > 0) {
+        var i = Math.random() * l | 0;
+        r[n] = t[i] || a[i];
+        --l;
+        t[i] = t[l] || a[l];
+      }
+      return r;
+    }
   }
 }
 </script>

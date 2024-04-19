@@ -298,9 +298,7 @@ export default {
     display: none;
   }
 
-
 }
-
 
 .tab_content {
   background: map_get($color, white);

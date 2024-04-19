@@ -27,20 +27,20 @@ export default {
 @import "../src/scss/components/transition";
 
 .loading_wrap {
-  margin: auto;
-  height: 50px;
-  width: 50px;
-  transform: rotate(-16deg);
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-16deg);
   z-index: index($z-map, loadingImg);
 }
 
 p {
-  position: absolute;
+  position: fixed;
   top: -107px;
   bottom: 0;
   left: 0;

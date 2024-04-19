@@ -37,7 +37,7 @@
       </li>
     </ul>
   </div>
-  <transition appear>
+  <transition>
     <modal v-show="openModalFlag"
            :buttonFlag="true"
            @click="closeModal"
@@ -163,6 +163,7 @@ export default {
   margin-top: 96px;
   position: relative;
   @include fadeIn;
+  z-index: -1;
   @include mq(regular) {
     margin-top: 200px;
   }

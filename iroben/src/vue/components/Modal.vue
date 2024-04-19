@@ -58,11 +58,7 @@ export default {
 @import "../src/scss/foundation/include";
 
 .c-modal {
-  max-width: 280px;
-  width: 100%;
-  background: map_get($color, white);
-  color: map_get($color, text);
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -70,6 +66,10 @@ export default {
   margin: auto;
   border-radius: 6px;
   height: max-content;
+  max-width: 280px;
+  width: 100%;
+  background: map_get($color, white);
+  color: map_get($color, text);
   z-index: index($z-map, modal);
   @include boxShadow();
 

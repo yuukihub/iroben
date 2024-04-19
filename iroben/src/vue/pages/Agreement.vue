@@ -125,9 +125,11 @@ export default {
 @import "./src/scss/components/transition";
 
 section {
+  position: inherit;
   margin-top: 18vh;
   padding: 0 24px 24px 24px;
   animation: fadeInUp01 1s 0s ease-in-out forwards;
+  z-index: -1;
 
   @include mq(regular) {
     margin-top: 22vh;

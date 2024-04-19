@@ -122,10 +122,7 @@ export default {
   computed: {
     currentQuestion() {
       //最後の問題の場合
-      if (this.questionLength === 1) {
-        //ボタンの文言を変更
-        this.btnTitle = "結果を見る";
-      }
+      this.changeButton();
 
       //ランダムに出題
       //初回の場合のみ乱数を作成
@@ -137,24 +134,25 @@ export default {
       }
 
       //Proxy型からArray型に変換
-      //全ての問題のインデックス
+      //全件取得
       let allQuestionsIndexArray = [];
       for(let index in this.questions){
         allQuestionsIndexArray.push(index);
       }
-      //出題済の問題のインデックス
+      //出題済を取得
       let askedString = String(this.askedQuestions).split(",");
       let askedIndexArray = Array.from(askedString);
 
-      //未出題の問題のインデックス
+      //未出題分を取得
       let unaskedIndexArray = allQuestionsIndexArray.filter(i => askedIndexArray.indexOf(i) === -1)
       let unaskedIndex = unaskedIndexArray[Math.floor(Math.random() * unaskedIndexArray.length)];
       this.askedQuestions.push(unaskedIndex);
 
+      //重複しない問題を返す
       return this.questions[unaskedIndex];
     },
     setChoice() {
-      //ランダムに選択肢を選定
+      //選択肢をランダムに表示
       let choicesArray = this.currentQuestion.choices;
       for (let i = choicesArray.length - 1; i > 0; i--) {
         let random = Math.floor(Math.random() * (i + 1));
@@ -193,26 +191,18 @@ export default {
         this.status = false;
       }
     },
+    changeButton(){
+      if (this.questionLength === 1) {
+        //ボタンの文言を変更
+        this.btnTitle = "結果を見る";
+      }
+    },
     toPaint() {
       this.$emit('toPaint');
     },
     toColorList() {
       this.$emit('toColorList');
     },
-    limitRandom(array, num) {
-      var a = array;
-      var t = [];
-      var r = [];
-      var l = a.length;
-      var n = num < l ? num : l;
-      while (n-- > 0) {
-        var i = Math.random() * l | 0;
-        r[n] = t[i] || a[i];
-        --l;
-        t[i] = t[l] || a[l];
-      }
-      return r;
-    }
   }
 }
 </script>

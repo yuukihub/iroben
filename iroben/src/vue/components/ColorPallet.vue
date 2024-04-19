@@ -6,8 +6,16 @@
       <img src="../../img/img/common/img_character03_art.svg" alt="character03">
       <img src="../../img/img/common/img_character01_art.svg" alt="character01">
     </div>
-    <div class="c-colorPallet_header">
+    <div class="c-colorPallet_header"
+         @click="closeColorPallet"
+         :class="{'is-close':closeColorPalletFlag}">
       <h3>カラーパレット</h3>
+      <template v-if="closeColorPalletFlag">
+        <img src="../../img/icon/icon_arrowBottom_white.svg" alt="下矢印">
+      </template>
+      <template v-else>
+        <img src="../../img/icon/icon_arrowTop_white.svg" alt="上矢印">
+      </template>
     </div>
     <div class="tab">
       <div class="tab_menu">
@@ -99,6 +107,7 @@ export default {
       penColor: "",
       colorDetail: Object,
       openModalFlag: false,
+      closeColorPalletFlag: false,
     }
   },
   computed: {
@@ -196,6 +205,10 @@ export default {
         evt.preventDefault();
       }
     },
+
+    closeColorPallet() {
+      this.closeColorPalletFlag = !this.closeColorPalletFlag;
+    }
   },
   props: ['pageStack'],
 }
@@ -253,6 +266,8 @@ export default {
 
 .c-colorPallet_header {
   background: map_get($color, main01);
+  display: flex;
+  justify-content: space-between;
 
   h3 {
     @include KintoSans();
@@ -270,7 +285,19 @@ export default {
       font-size: 12px;
     }
   }
+
+  img {
+    width: 32px;
+    margin-right: 24px;
+  }
+
+  &.is-close + .tab {
+    display: none;
+  }
+
+
 }
+
 
 .tab_content {
   background: map_get($color, white);

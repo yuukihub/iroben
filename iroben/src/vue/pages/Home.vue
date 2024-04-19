@@ -113,11 +113,11 @@
       <main-visual></main-visual>
     </div>
     <div class="bottom">
-      <div class="characters_wrap">
-        <img src="../../img/img/common/img_character02_normal.svg" alt="chara02">
-        <img src="../../img/img/common/img_character01_normal.svg" alt="chara01">
-        <img src="../../img/img/common/img_character03_flag.svg" alt="chara03">
-      </div>
+<!--      <div class="characters_wrap">-->
+<!--        <img src="../../img/img/common/img_character02_normal.svg" alt="chara02">-->
+<!--        <img src="../../img/img/common/img_character01_normal.svg" alt="chara01">-->
+<!--        <img src="../../img/img/common/img_character03_flag.svg" alt="chara03">-->
+<!--      </div>-->
       <div class="bottom_inner">
         <article-card title="お知らせ">
           <ul class="info_lists">
@@ -239,55 +239,42 @@ p {
   font-size: 16px;
 }
 
-.characters_wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 3vh;
-  left: 0;
-  right: 0;
-  z-index: index($z-map, character);
-  @include mq(xsmall) {
-    top: 30px;
-  }
-  @include mq(big) {
-    bottom: 21vh;
-  }
+//.characters_wrap {
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  position: absolute;
+//  top: 3vh;
+//  left: 0;
+//  right: 0;
+//  z-index: index($z-map, character);
+//  @include mq(xsmall) {
+//    top: 30px;
+//  }
+//  @include mq(big) {
+//    bottom: 21vh;
+//  }
+//
+//  img {
+//    height: 7vh;
+//    margin-left: 10px;
+//
+//    &:first-child {
+//      margin-left: 0;
+//      animation: animate_chara01 3s linear infinite;
+//    }
+//
+//    &:nth-child(2) {
+//      height: 6vh;
+//      animation: animate_chara02 3s linear infinite;
+//    }
+//
+//    &:last-child {
+//      animation: animate_chara03 3s linear infinite;
+//    }
+//  }
+//}
 
-  img {
-    height: 7vh;
-    margin-left: 10px;
-
-    &:first-child {
-      margin-left: 0;
-      animation: animate_chara01 3s linear infinite;
-    }
-
-    &:nth-child(2) {
-      height: 6vh;
-      animation: animate_chara02 3s linear infinite;
-    }
-
-    &:last-child {
-      animation: animate_chara03 3s linear infinite;
-    }
-  }
-}
-
-.slider {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 36vh;
-  animation: fadeInUp01 1s 0s ease-in-out forwards;
-  @include mq(xsmall) {
-    bottom: -30px;
-  }
-}
 
 
 </style>

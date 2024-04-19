@@ -61,12 +61,12 @@
       <a href="#" class="slide_skip"
          @click="hideTutorial">
         スキップ
-        <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+        <img src="../../img/icon/icon_arrowRight_blue.svg" alt="icon">
       </a>
     </template>
     <template v-else>
       <a class="prev" @click="plusSlides(-1)">
-        <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
+        <img src="../../img/icon/icon_arrowLeft.svg" alt="icon">
       </a>
       <a class="next" @click="plusSlides(1)">
         <img src="../../img/icon/icon_arrowRight.svg" alt="icon">
@@ -146,9 +146,6 @@ export default {
   max-width: 500px;
   width: 100%;
   padding: 0 16px 0 16px;
-  @include mq(sp) {
-    margin: 2vh auto 0;
-  }
   .item {
     display: none;
   }
@@ -160,6 +157,9 @@ export default {
       width: 240px;
       margin: auto;
       display: block;
+      @include mq(xsmall) {
+        width: 170px;
+      }
     }
   }
 
@@ -201,6 +201,9 @@ export default {
     text-align: center;
     display: block;
     margin: 24px 0;
+    @include mq(xsmall) {
+      font-size: 14px;
+    }
   }
 
   .slide_dot {
@@ -212,6 +215,9 @@ export default {
     align-items: center;
     margin-top: 16px;
     justify-content: end;
+    img {
+      margin-left: 8px;
+    }
   }
 
   .prev, .next {
@@ -224,13 +230,6 @@ export default {
       width: 32px;
     }
   }
-
-  .prev {
-    img {
-      transform: rotate(-180deg);
-    }
-  }
-
 
   .next {
     right: 0;

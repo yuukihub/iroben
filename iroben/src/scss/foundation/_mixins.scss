@@ -5,7 +5,7 @@
       @content;
     }
   } @else if $level == xsmall {
-    @media  (max-width: 280px){
+    @media  (max-width: 320px){
       @content;
     }
   } @else if $level == regular {

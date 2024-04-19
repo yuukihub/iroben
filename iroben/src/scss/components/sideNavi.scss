@@ -77,8 +77,8 @@
     transform: translateX(-30vw);
   }
   @include mq(xsmall) {
-    width: 60vw;
-    transform: translateX(-60vw);
+    width: 62vw;
+    transform: translateX(-62vw);
   }
   &.is-active {
     transform: translateX(0vw);

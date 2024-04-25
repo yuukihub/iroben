@@ -171,6 +171,9 @@ export default {
       display: block;
       z-index: -1;
     }
+    &:nth-child(2) .img_character {
+      width: 45px;
+    }
   }
 
   .slide_image {

@@ -15,7 +15,7 @@ import Top from "./Top.vue";
 import ColorExam from "@/vue/templetes/ColorExam.vue";
 import Paint from "@/vue/pages/Paint.vue";
 import ThirdColorLists from "@/vue/pages/ThirdColorLists.vue";
-import {THIRDQUESTIONS} from "@/resource/thirdQuestion";
+import {THIRD_QUESTIONS} from "@/resource/third-questions";
 import {ROUTER} from "@/resource/constant-router";
 
 
@@ -27,7 +27,7 @@ export default {
   },
   data() {
     return {
-      thirdQuestion: THIRDQUESTIONS,
+      thirdQuestion: THIRD_QUESTIONS,
       title: ROUTER.THIRD_EXAM_TITLE,
     }
   },

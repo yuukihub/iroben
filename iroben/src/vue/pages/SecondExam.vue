@@ -16,7 +16,7 @@ import Top from "./Top.vue";
 import ColorExam from "@/vue/templetes/ColorExam.vue";
 import SecondColorLists from "@/vue/pages/SecondColorLists.vue";
 import Paint from "@/vue/pages/Paint.vue";
-import {SECONDQUESTIONS} from "@/resource/secondQuestion"
+import {SECOND_QUESTIONS} from "@/resource/second-questions"
 import {ROUTER} from "@/resource/constant-router";
 
 export default {
@@ -27,7 +27,7 @@ export default {
   },
   data() {
     return {
-      secondQuestion: SECONDQUESTIONS,
+      secondQuestion: SECOND_QUESTIONS,
       title: ROUTER.SECOND_EXAM_TITLE,
     }
   },

@@ -72,9 +72,9 @@
 <script>
 import ColorPalletList from "@/vue/components/ColorPalletList.vue";
 import ColorPalletCanvas from "@/vue/components/ColorPalletCanvas.vue";
-import {FIRSTQUESTIONS} from "@/resource/firstQuestion";
-import {SECONDQUESTIONS} from "@/resource/secondQuestion";
-import {THIRDQUESTIONS} from "@/resource/thirdQuestion";
+import {FIRST_QUESTIONS} from "@/resource/first-questions";
+import {SECOND_QUESTIONS} from "@/resource/second-questions";
+import {THIRD_QUESTIONS} from "@/resource/third-questions";
 
 export default {
   name: "ColorPallet",
@@ -84,9 +84,9 @@ export default {
   },
   data() {
     return {
-      firstQuestion: FIRSTQUESTIONS,
-      secondQuestion: SECONDQUESTIONS,
-      thirdQuestion: THIRDQUESTIONS,
+      firstQuestion: FIRST_QUESTIONS,
+      secondQuestion: SECOND_QUESTIONS,
+      thirdQuestion: THIRD_QUESTIONS,
       level: String,
       faultCountArray: [],
       checkToggleStatus: this.checkToggle,

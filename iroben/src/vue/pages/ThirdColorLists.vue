@@ -11,7 +11,7 @@
 import ColorLists from "@/vue/templetes/ColorLists.vue";
 import ThirdColorDetail from "@/vue/pages/ThirdColorDetail.vue";
 import {ROUTER} from "@/resource/constant-router";
-import {THIRDQUESTIONS} from "@/resource/thirdQuestion";
+import {THIRD_QUESTIONS} from "@/resource/third-questions";
 
 export default {
   name: "ThirdColorLists",
@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      thirdQuestion: THIRDQUESTIONS,
+      thirdQuestion: THIRD_QUESTIONS,
       title: ROUTER.THIRD_COLOR_LIST_TITLE,
     }
   },

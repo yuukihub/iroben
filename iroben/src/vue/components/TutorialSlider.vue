@@ -43,8 +43,7 @@
             <img class="eye_image" src="../../img/img/tutorial/img_tutorial03.gif" alt="img_tutorial01">
           </span>
           <span class="slide_text">
-            「ペイント」メニューでは、<br>
-            遊び感覚であなたの学びをサポートします。
+            「ペイント」メニューでは、遊び感覚であなたの学びをサポートします。
           </span>
         </li>
       </ul>
@@ -96,7 +95,7 @@ export default {
       slideIndex: 1,
       title: ROUTER.TUTORIAL_TITLE,
       slides: document.getElementsByClassName("item"),
-      dots: document.getElementsByClassName("dot")
+      dots: document.getElementsByClassName("dot"),
     }
   },
   props: {
@@ -158,9 +157,6 @@ export default {
 
   .item {
     display: none;
-  }
-
-  li{
     .img_character {
       position: absolute;
       top: -28px;

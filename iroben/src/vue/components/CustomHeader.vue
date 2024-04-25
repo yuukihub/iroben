@@ -58,6 +58,7 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: index($z-map, header);
   .contents {
     width: 100%;
     padding: 16px 24px 0;

@@ -11,7 +11,7 @@
 <script>
 import ColorLists from "@/vue/templetes/ColorLists.vue";
 import FirstColorDetail from "@/vue/pages/FirstColorDetail.vue";
-import {FIRSTQUESTIONS} from "@/resource/firstQuestion";
+import {FIRST_QUESTIONS} from "@/resource/first-questions";
 import {ROUTER} from "@/resource/constant-router";
 
 export default {
@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      firstQuestion: FIRSTQUESTIONS,
+      firstQuestion: FIRST_QUESTIONS,
       title: ROUTER.FIRST_COLOR_LIST_TITLE,
     }
   },

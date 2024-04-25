@@ -11,7 +11,7 @@
 import ColorLists from "@/vue/templetes/ColorLists.vue";
 import SecondColorDetail from "@/vue/pages/SecondColorDetail.vue";
 import {ROUTER} from "@/resource/constant-router";
-import {SECONDQUESTIONS} from "@/resource/secondQuestion"
+import {SECOND_QUESTIONS} from "@/resource/second-questions"
 
 export default {
   name: "SecondColorLists",
@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      secondQuestion: SECONDQUESTIONS,
+      secondQuestion: SECOND_QUESTIONS,
       title: ROUTER.SECOND_COLOR_LIST_TITLE,
     }
   },

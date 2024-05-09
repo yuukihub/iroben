@@ -1,8 +1,5 @@
 <template>
   <v-ons-page>
-    <header class="l-header">
-      <img src="../../img/img/common/img_wave_top.svg" alt="wave">
-    </header>
     <nav>
       <div class="nav-btn"
            v-on:click="open=!open"

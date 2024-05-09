@@ -62,7 +62,7 @@
       </div>
       <div v-else
            class="button_area">
-        <custom-button label="irobeを始める"
+        <custom-button label="irobenを始める"
                        :is-disabled-flag="false"
                        @click="hideTutorial"></custom-button>
       </div>

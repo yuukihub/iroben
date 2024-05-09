@@ -38,6 +38,9 @@ export default {
   text-align: center;
   padding: 8px;
   max-width: 500px;
+  @include KintoSans();
+  color: map_get($color, white);
+  height: 52px;
 }
 
 .is-disabled {

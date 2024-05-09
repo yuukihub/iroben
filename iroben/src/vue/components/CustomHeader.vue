@@ -13,6 +13,7 @@
       </button>
     </div>
     <img v-show="waveImageFlag" class="img_wave" src="../../img/img/common/img_wave_top_header.svg" alt="wave">
+    <img v-show="waveImageFlag" class="img_wave --ipad" src="../../img/img/common/img_wave_top_header.svg" alt="wave">
   </header>
 </template>
 
@@ -58,10 +59,12 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: index($z-map, header);
+  //z-index: index($z-map, header);
   .contents {
+    display: flex;
+    align-items: center;
     width: 100%;
-    padding: 16px 24px 0;
+    padding: 32px 24px 0;
     @include mq(xsmall) {
       padding-left: 8px;
       padding-right: 8px;
@@ -83,10 +86,6 @@ export default {
   }
 
   .title {
-    position: absolute;
-    top: 24px;
-    left: 0;
-    right: 0;
     margin: auto;
     width: max-content;
     font-size: 16px;
@@ -112,9 +111,6 @@ export default {
     margin: 0;
     background: transparent;
     border: transparent;
-    position: absolute;
-    right: 24px;
-    top: 16px;
     img {
       width: 28px;
       @include mq(xsmall) {
@@ -132,5 +128,10 @@ export default {
   top: 0;
   z-index: -1;
   width: 100%;
+  &.--ipad {
+    @include mq(regular) {
+      display: block;
+    }
+  }
 }
 </style>

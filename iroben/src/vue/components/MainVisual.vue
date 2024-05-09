@@ -3,67 +3,67 @@
   <div class="mv">
     <div class="img_centerItems">
       <div class="logo">
-        <img class="logo_i" src="../../img/img/home/img_logo_i.png" alt="i">
-        <img class="logo_r" src="../../img/img/home/img_logo_r.png" alt="r">
-        <img class="logo_o" src="../../img/img/home/img_logo_o.png" alt="o">
-        <img class="logo_b" src="../../img/img/home/img_logo_b.png" alt="b">
-        <img class="logo_e" src="../../img/img/home/img_logo_e.png" alt="e">
-        <img class="logo_n" src="../../img/img/home/img_logo_n.png" alt="n">
+        <img class="logo_i" src="../../img/img/common/img_logo_i.png" alt="i">
+        <img class="logo_r" src="../../img/img/common/img_logo_r.png" alt="r">
+        <img class="logo_o" src="../../img/img/common/img_logo_o.png" alt="o">
+        <img class="logo_b" src="../../img/img/common/img_logo_b.png" alt="b">
+        <img class="logo_e" src="../../img/img/common/img_logo_e.png" alt="e">
+        <img class="logo_n" src="../../img/img/common/img_logo_n.png" alt="n">
       </div>
       <div class="colorCode">
-        <img src="../../img/img/home/img_colorCode01.png" alt="colorCode">
-        <img src="../../img/img/home/img_colorCode02.png" alt="colorCode">
-        <img src="../../img/img/home/img_colorCode03.png" alt="colorCode">
-        <img src="../../img/img/home/img_colorCode04.png" alt="colorCode">
+        <img src="../../img/img/common/img_colorCode01.png" alt="colorCode">
+        <img src="../../img/img/common/img_colorCode02.png" alt="colorCode">
+        <img src="../../img/img/common/img_colorCode03.png" alt="colorCode">
+        <img src="../../img/img/common/img_colorCode04.png" alt="colorCode">
       </div>
     </div>
     <ul class="front_block">
       <li>
-        <img src="../../img/img/home/img_star01.png" alt="star">
+        <img src="../../img/img/common/img_star01.png" alt="star">
       </li>
       <li>
-        <img src="../../img/img/home/img_blur_star01.png" alt="star">
+        <img src="../../img/img/common/img_blur_star01.png" alt="star">
       </li>
       <li>
-        <img src="../../img/img/home/img_star01.png" alt="star">
+        <img src="../../img/img/common/img_star01.png" alt="star">
       </li>
       <li>
-        <img src="../../img/img/home/img_star02.png" alt="star">
+        <img src="../../img/img/common/img_star02.png" alt="star">
       </li>
       <li>
-        <img src="../../img/img/home/img_blur_decoration01.png" alt="heart">
+        <img src="../../img/img/common/img_blur_decoration01.png" alt="heart">
       </li>
       <li>
-        <img src="../../img/img/home/img_decoration_front01.png" alt="decoration">
+        <img src="../../img/img/common/img_decoration_front01.png" alt="decoration">
       </li>
       <li>
-        <img src="../../img/img/home/img_decoration_front02.png" alt="decoration">
+        <img src="../../img/img/common/img_decoration_front02.png" alt="decoration">
       </li>
       <li>
-        <img src="../../img/img/home/img_decoration_front01.png" alt="decoration">
+        <img src="../../img/img/common/img_decoration_front01.png" alt="decoration">
       </li>
     </ul>
     <ul class="back_block">
       <li>
-        <img src="../../img/img/home/img_star01.png" alt="star">
+        <img src="../../img/img/common/img_star01.png" alt="star">
       </li>
       <li>
-        <img src="../../img/img/home/img_star03.png" alt="star">
+        <img src="../../img/img/common/img_star03.png" alt="star">
       </li>
       <li>
-        <img src="../../img/img/home/img_star01.png" alt="star">
+        <img src="../../img/img/common/img_star01.png" alt="star">
       </li>
       <li>
-        <img src="../../img/img/home/img_star02.png" alt="star">
+        <img src="../../img/img/common/img_star02.png" alt="star">
       </li>
       <li>
-        <img src="../../img/img/home/img_decoration_back.png" alt="decoration">
+        <img src="../../img/img/common/img_decoration_back.png" alt="decoration">
       </li>
       <li>
-        <img src="../../img/img/home/img_decoration_back.png" alt="decoration">
+        <img src="../../img/img/common/img_decoration_back.png" alt="decoration">
       </li>
       <li>
-        <img src="../../img/img/home/img_decoration_back.png" alt="decoration">
+        <img src="../../img/img/common/img_decoration_back.png" alt="decoration">
       </li>
     </ul>
   </div>
@@ -78,18 +78,21 @@ export default {
 <style lang="scss" scoped>
 @import "./src/scss/foundation/include";
 @import "./src/scss/components/transition";
+
 .img_wave {
   position: fixed;
   top: 0;
   width: 100%;
 }
-.img_centerItems{
+
+.img_centerItems {
   position: relative;
   height: 100%;
 }
+
 .logo {
   position: absolute;
-  top: 70px;
+  top: -40px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -134,6 +137,7 @@ export default {
   }
 }
 
+
 .context {
   width: 100%;
   position: absolute;
@@ -148,11 +152,42 @@ export default {
 
 .mv {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  margin: auto;
+}
+
+.--home {
+  .logo {
+    top: -10vh;
+  }
+
+  .colorCode {
+    top: -7vh;
+  }
+
+  .front_block {
+    top: 22vh;
+  }
+
+  .back_block {
+    top: 40vh;
+  }
 }
 
 .colorCode {
+  height: 25vh;
+  width: 100%;
+  top: -30px;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
+
   img {
     position: absolute;
     width: 40px;
@@ -162,28 +197,26 @@ export default {
     &:first-child {
       left: 19vw;
       margin: auto;
-      top: 16vh;
       animation: animate_logo01 6s ease infinite;
     }
 
     &:nth-child(2) {
       left: -21vw;
       margin: auto;
-      top: 20vh;
       animation: animate_logo06 4s ease infinite;
     }
 
     &:nth-child(3) {
       left: -40vw;
       margin: auto;
-      top: 37vh;
+      bottom: 10px;
       animation: animate_logo02 4s ease infinite;
     }
 
     &:nth-child(4) {
       right: 37vw;
       margin: auto;
-      top: 39vh;
+      bottom: 0;
       animation: animate_logo06 4s ease infinite;
     }
   }
@@ -195,20 +228,23 @@ export default {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
 }
 
 .front_block {
   z-index: index($z-map, topFrontDecoration);
+  top: 30vh;
 
   img {
     width: 40px;
   }
 }
 
-.back_block img {
-  width: 32px;
+.back_block{
+  top: 51vh;
+  img {
+    width: 32px;
+  }
 }
 
 .front_block li,
@@ -220,9 +256,6 @@ export default {
 }
 
 .front_block {
-  li {
-    bottom: 44vh;
-  }
 
   li:nth-child(1) {
     animation: animate_decoration_front01 30s linear infinite;
@@ -237,7 +270,7 @@ export default {
   li:nth-child(2) {
     animation: animate_decoration_front04 60s linear infinite;
     animation-duration: 44s;
-    animation-delay: -10s;
+    animation-delay: -2s;
     z-index: index($z-map, topFrontDecoration);
 
     img {
@@ -260,8 +293,9 @@ export default {
   li:nth-child(5) {
     animation: animate_decoration_front02 linear infinite;
     animation-duration: 40s;
-    animation-delay: -21s;
+    animation-delay: -18s;
     z-index: index($z-map, topFrontDecoration);
+
     img {
       width: 120vw;
       max-width: 700px;
@@ -276,6 +310,9 @@ export default {
     img {
       width: 80vw;
       max-width: 700px;
+      @include mq(regular) {
+        width: 50vw;
+      }
     }
   }
 
@@ -287,6 +324,9 @@ export default {
     img {
       width: 80vw;
       max-width: 700px;
+      @include mq(big) {
+        width: 50vw;
+      }
     }
   }
 
@@ -305,10 +345,6 @@ export default {
 
 .back_block {
   z-index: -1;
-
-  li {
-    bottom: 38vh;
-  }
 
   li:nth-child(1) {
     animation: animate_decoration_back01 30s linear infinite;
@@ -364,37 +400,17 @@ export default {
   }
 }
 
-.--home {
-  .front_block li {
-    bottom: 46vh;
-  }
 
-  .back_block li {
-    bottom: 42vh;
-  }
-
-  .colorCode {
-
-    img {
-      &:first-child {
-        top: 15vh;
-      }
-
-      &:nth-child(2) {
-        top: 19vh;
-      }
-
-      &:nth-child(3) {
-        top: 36vh;
-      }
-
-      &:nth-child(4) {
-        top: 35vh;
-      }
-    }
-  }
+.img_book {
+  width: 100%;
+  max-width: 680px;
+  position: absolute;
+  top: 170px;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
-
 
 @keyframes animate_decoration_front01 {
   0% {

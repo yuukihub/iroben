@@ -2,9 +2,9 @@
   <color-pallet-canvas></color-pallet-canvas>
   <div class="c-colorPallet">
     <div class="characters_wrap">
-      <img src="../../img/img/common/img_character02_art.svg" alt="character02">
-      <img src="../../img/img/common/img_character03_art.svg" alt="character03">
-      <img src="../../img/img/common/img_character01_art.svg" alt="character01">
+      <img src="../../img/img/paint/img_character02_art.svg" alt="character02">
+      <img src="../../img/img/paint/img_character03_art.svg" alt="character03">
+      <img src="../../img/img/paint/img_character01_art.svg" alt="character01">
     </div>
     <div class="c-colorPallet_header"
          :class="{'is-close':closeColorPalletFlag}">

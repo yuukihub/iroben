@@ -56,7 +56,7 @@
           級の「不正解のみ」の色も<br>
           同時にクリアされます。
         </p>
-        <img :src="`../../img/img/colorList/img_${level}_colorPallet.png`" alt="不正解のみを表示したカラーパレット">
+        <img src="../../img/img/exam/img_explain_ColorPalletToggle.png" alt="不正解のみを表示したカラーパレット">
         <p class="desc">
           本当に削除しますか？
         </p>

@@ -130,6 +130,7 @@ h1 {
   right: 0;
   margin: 0 !important;
   top: 14vh;
+  z-index: 1;
   @include mq(xsmall) {
     top: 10vh;
   }
@@ -164,4 +165,11 @@ h1 {
 .page__content {
   overflow: hidden !important;
 }
+
+.button--material {
+  box-shadow: none;
+  font-size: 17px;
+  line-height: 32px;
+}
+
 </style>

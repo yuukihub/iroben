@@ -2,8 +2,6 @@
 @import './foundation/reset';
 @import './foundation/base';
 @import 'utility/animation';
-@import 'utility/margin';
-@import 'utility/text';
 
 .is-pc {
   display: block;
@@ -18,4 +16,3 @@
     display: block;
   }
 }
-

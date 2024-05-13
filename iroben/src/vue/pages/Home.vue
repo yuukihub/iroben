@@ -112,20 +112,8 @@
     <div class="bottom">
       <div class="bottom_inner">
         <article-card title="お知らせ">
-          <ul class="info_lists">
-            <li>
-              <span class="date">2024/4/30</span>
-              <span>Androidアプリをリリースしました</span>
-            </li>
-            <li>
-              <span class="date">2024/4/29</span>
-              <span>iPadOSアプリをリリースしました</span>
-            </li>
-            <li>
-              <span class="date">2024/4/28</span>
-              <span>iOSアプリをリリースしました</span>
-            </li>
-          </ul>
+          <iframe src="https://iroben-info.web.app/"
+                  scrolling="yes"></iframe>
         </article-card>
       </div>
     </div>
@@ -202,7 +190,6 @@ export default {
 @import "../src/scss/components/transition";
 @import "../src/scss/components/sideNavi";
 @import "./src/scss/components/contentArea";
-@import "./src/scss/components/infoLists";
 
 .l-header {
   img {
@@ -210,8 +197,7 @@ export default {
   }
 }
 
-h4,
-li {
+h4{
   @include KintoSans();
   margin-bottom: 8px;
 
@@ -226,9 +212,19 @@ h4 {
   text-align: center;
 }
 
-p {
-  @include KintoSans();
-  font-size: 16px;
+
+iframe {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid map_get($color, gray03);
+  margin: 0;
+  padding: 16px 8px 0;
+  background: map_get($color, white);
+  margin-bottom: 16px;
+  height: 180px;
+  @include mq(sp){
+    max-height: 90px;
+  }
 }
 
 </style>

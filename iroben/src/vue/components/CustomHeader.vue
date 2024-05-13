@@ -13,7 +13,6 @@
       </button>
     </div>
     <img v-show="waveImageFlag" class="img_wave" src="../../img/img/common/img_wave_top_header.svg" alt="wave">
-    <img v-show="waveImageFlag" class="img_wave --ipad" src="../../img/img/common/img_wave_top_header.svg" alt="wave">
   </header>
 </template>
 
@@ -128,10 +127,8 @@ export default {
   top: 0;
   z-index: -1;
   width: 100%;
-  &.--ipad {
-    @include mq(regular) {
-      display: block;
-    }
+  @include mq(regular) {
+    top: -60px;
   }
 }
 </style>

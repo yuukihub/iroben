@@ -83,6 +83,9 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
+  @include mq(regular) {
+    top: -60px;
+  }
 }
 
 .img_centerItems {
@@ -180,7 +183,7 @@ export default {
 .colorCode {
   height: 25vh;
   width: 100%;
-  top: -30px;
+  top: -10px;
   bottom: 0;
   position: absolute;
   right: 0;

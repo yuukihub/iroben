@@ -32,6 +32,9 @@ export default {
   max-width: 440px;
   width: 80vw;
   margin: -30px auto 0;
+  @include mq(regular) {
+    margin: 0 auto 0;
+  }
   @include mq(xsmall) {
     width: 90vw;
   }

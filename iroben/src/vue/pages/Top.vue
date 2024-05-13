@@ -147,8 +147,11 @@ h1 {
   display: block;
   max-width: 180px;
   width: 100%;
-  margin: 3vh auto 0;
   animation: fadeInUp02 1s 0s ease-in-out forwards;
+  margin: 3vh auto 0;
+  @include mq(regular){
+    margin-top: 10vh;
+  }
 }
 
 .tutorial_container {

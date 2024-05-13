@@ -31,8 +31,8 @@
     @include mq(sp) {
       padding: 13vh 0 16px 0;
     }
-    @include mq(big) {
-      padding: 16vh 0 16px 0;
+    @include mq(regular) {
+      padding: 12vh 0 16px 0;
     }
   }
 

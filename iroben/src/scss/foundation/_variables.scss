@@ -1,0 +1,49 @@
+// PATH
+$image_path: "/img/";
+
+// COLOR
+$color: (
+  　　　　//有彩色
+        main01:#0D99FF,
+        main02:#4DC9FF,
+        backGroundColor:#FBF6F0,
+        succuess01:#4DCD9D,
+        success02:#F0F9EE,
+        error:#FA3F33,
+        link: #0D99FF,
+        linkHover:#4DC9FF,
+        //無彩色
+        text:#183153,
+        white: #fff,
+        gray01:#7B99B7,
+        gray02:#BDCCDB,
+        gray03:#DAE0E6,
+        gray04:#FAFAFA,
+);
+
+$letterSpace: (
+        default: 2px,
+);
+
+$fontSize: (
+        default: 1.1em,
+);
+
+$fontFamily: (
+        FontAwesome: "FontAwesome",
+        Montserrat: "Montserrat",
+);
+
+// z-index
+// 基本的に normal もしくは z-index:1を利用
+// 1以上の値が必要な場合はこちらで定義
+$z-map: (
+  normal,
+  pageTop,
+  drop,
+  header,
+  menu,
+  modal__overlay,
+  modal,
+);
+

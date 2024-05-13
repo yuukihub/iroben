@@ -1,0 +1,10 @@
+.c-button {
+  background: map_get($color, main01);
+  border-radius: 4px;
+  box-shadow: inherit;
+  display: block;
+  padding: 16px 0;
+  line-height: inherit;
+  width: 100%;
+  text-align: center;
+}

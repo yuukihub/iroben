@@ -1,22 +1,28 @@
-// mixin設定
-
-
+// media query
 @mixin mq($level: sp) {
   @if $level == sp {
-    @media  (max-width: 390px){
-      @content;
-    }
-  } @else if $level == xsmall {
     @media  (max-width: 375px){
       @content;
     }
-  } @else {
-    @media  (max-width: 767px){
+  } @else if $level == xsmall {
+    @media  (max-width: 320px){
+      @content;
+    }
+  } @else if $level == regular {
+    @media  (min-width: 711px){
+      @content;
+    }
+  } @else if $level == big {
+    @media  (min-width: 820px){
       @content;
     }
   }
 }
 
+//fadeIn animation
+@mixin fadeIn() {
+  animation: fadeInUp01 0.8s 0s ease-in-out forwards;
+}
 
 // resetForm
 @mixin placeholder($color) {
@@ -35,27 +41,14 @@
   }
 }
 
-
-@mixin hoverButton() {
-  &:hover {
-    top: -2px;
-    left: -2px;
-    transition: top 0.1s ease-out, left 0.1s ease-out;
-    @include mq(sp) {
-      top: -5px;
-      left: -5px;
-    }
-  }
+@mixin boxShadow() {
+  box-shadow: 0 0 16px -14px #161c2b;
 }
 
-@mixin hover01() {
-  &:hover {
-    opacity: 0.8;
-    transition: 0.5s;
-  }
+@mixin KintoSans(){
+  font-family: "KintoSans",serif;
+  color: map_get($color, text);
 }
 
-@mixin KintoSans() {
-  font-family: 'KintoSans', sans-serif;
-  font-weight: bold;
-}
+
+

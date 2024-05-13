@@ -1,0 +1,129 @@
+@import "./src/scss/foundation/include";
+
+.nav-btn{
+  position: fixed;
+  z-index: index($z-map, sideMenuButton);
+  top: 32px;
+  left: 8px;
+  cursor: pointer;
+  width: 50px;
+  height:50px;
+  &-close {
+    display: none;
+  }
+  span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 16px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: rgb(0, 118, 255);
+    width: 45%;
+    @include mq(xsmall) {
+      width: 40%;
+    }
+    &:nth-of-type(1) {
+      top:15px;
+    }
+    &:nth-of-type(2) {
+      top:23px;
+    }
+    &:nth-of-type(3) {
+      top:31px;
+    }
+  }
+  &.is-active {
+    span {
+      &:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+      }
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+      &:nth-of-type(3){
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+      }
+    }
+    .nav-btn-menu {
+      display: none;
+    }
+    .nav-btn-close {
+      display: block;
+    }
+  }
+}
+.nav-items {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: index($z-map, sideMenu);
+  background: #fffcf9;
+  transform: translateX(-52vw);
+  transition:  all 0.2s linear;
+  padding-top: 72px;
+  @include KintoSans();
+  height: 100vh;
+  width: 52vw;
+  box-shadow: 0 0 20px -7px map_get($color, gray03);
+  @include mq(regular) {
+    width: 30vw;
+    transform: translateX(-30vw);
+  }
+  @include mq(xsmall) {
+    width: 62vw;
+    transform: translateX(-62vw);
+  }
+  &.is-active {
+    transform: translateX(0vw);
+  }
+}
+.nav-item {
+  @include mq(xsmall) {
+    margin: 0;
+  }
+  li {
+    @include KintoSans();
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid map_get($color, gray03);
+    background: white;
+    &:first-child {
+      border-top: 1px solid map_get($color, gray03);
+    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: map_get($color, text);
+    text-decoration: none;
+    transform: translate3d(-10px, 0, 0);
+    transition: 1s;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+  }
+  img {
+    margin-right: 16px;
+  }
+}
+.nav-title {
+  padding: 4px 0 4px 24px;
+  margin: 0;
+  span {
+    font-size: 13px;
+    @include KintoSans();
+    font-weight: bold;
+  }
+}

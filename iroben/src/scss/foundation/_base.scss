@@ -1,3 +1,5 @@
+@import "include";
+
 html, body {
   height: 100%;
   margin: 0;
@@ -11,10 +13,19 @@ body * {
 
 body {
   letter-spacing: 1px;
-  @include KintoSans;
   color: map_get($color,text01);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 140%;
+  @include mq(sp) {
+    font-size: 14px;
+    line-height: 130%;
+  }
+}
+
+h1,h2,h3,h4,h5
+div,span,label,p,a,button {
+  font-family: "KintoSans", serif;
+  font-weight: normal;
 }
 
 a {
@@ -43,5 +54,4 @@ input:focus::placeholder {
 .page__background{
   background-color: map_get($color, backGroundColor) !important;
 }
-
 

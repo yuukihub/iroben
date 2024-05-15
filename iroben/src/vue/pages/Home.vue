@@ -112,7 +112,7 @@
     <div class="bottom">
       <div class="bottom_inner">
         <article-card title="お知らせ">
-          <iframe src="https://iroben-info.web.app/?1"></iframe>
+          <iframe src="https://iroben-infomation.web.app"></iframe>
         </article-card>
       </div>
     </div>

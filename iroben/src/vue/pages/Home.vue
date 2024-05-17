@@ -1,5 +1,6 @@
 <template>
   <v-ons-page>
+    <img class="img_wave_top" src="../../img/img/common/img_wave_top_header.svg" alt="wave">
     <nav>
       <div class="nav-btn"
            v-on:click="open=!open"
@@ -106,21 +107,18 @@
         </ul>
       </div>
     </nav>
-    <div class="--home">
-      <main-visual></main-visual>
+    <div class="top_mainVisual">
+      <logo class="--home"></logo>
+      <img class="img_balloon" src="../../img/img/common/img_balloon.png" alt="balloon">
+      <img class="img_text01" src="../../img/img/common/img_text01.png" alt="全130色掲載">
+      <img class="img_text02" src="../../img/img/common/img_text02.png" alt="最新版！">
+      <img class="img_park" src="../../img/img/common/img_park.png" alt="park">
     </div>
-    <div class="bottom">
-      <div class="bottom_inner">
-        <article-card title="お知らせ">
-          <iframe src="https://iroben-infomation.web.app"></iframe>
-        </article-card>
-      </div>
-    </div>
+    <img class="img_wave_bottom" src="../../img/img/common/img_wave_top_header.svg" alt="wave">
   </v-ons-page>
 </template>
 
 <script>
-import MainVisual from "@/vue/components/MainVisual.vue";
 import ThirdExam from "@/vue/pages/ThirdExam.vue";
 import ThirdColorLists from "@/vue/pages/ThirdColorLists.vue";
 import Paint from "@/vue/pages/Paint.vue";
@@ -130,6 +128,7 @@ import FirstColorLists from "@/vue/pages/FirstColorLists.vue";
 import ArticleCard from "@/vue/components/ArticleCard.vue";
 import Agreement from "@/vue/pages/Agreement.vue";
 import Tutorial from "@/vue/pages/Tutorial.vue";
+import Logo from "@/vue/components/Logo.vue";
 
 export default {
   name: "Home",
@@ -140,7 +139,7 @@ export default {
   },
   components: {
     ArticleCard,
-    MainVisual,
+    Logo
   },
   created() {
     window.addEventListener("scroll", this.handleScroll);
@@ -185,10 +184,9 @@ export default {
 
 
 <style lang="scss" scoped>
-@import "../src/scss/foundation/include";
-@import "../src/scss/components/transition";
+@import "./src/scss/foundation/include";
+@import "./src/scss/components/transition";
 @import "../src/scss/components/sideNavi";
-@import "./src/scss/components/contentArea";
 
 .l-header {
   img {
@@ -196,34 +194,80 @@ export default {
   }
 }
 
-h4{
-  @include KintoSans();
-  margin-bottom: 8px;
-
-  &:last-child {
-    margin-bottom: 0;
+.img_wave {
+  &_top {
+    width: 100%;
+  }
+  &_bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transform: rotate(180deg);
   }
 }
 
-h4 {
-  color: map_get($color, gray01);
-  margin: 0;
-  text-align: center;
-}
-
-
-iframe {
-  width: 100%;
-  border-radius: 3px;
-  border: 1px solid map_get($color, gray03);
-  margin: 0;
-  padding: 16px 8px 0;
-  background: map_get($color, white);
-  margin-bottom: 16px;
-  height: 180px;
-  @include mq(sp){
-    max-height: 90px;
+.top_mainVisual {
+  position: relative;
+  height: 77vh;
+  animation: fadeInUp01 1.3s 0s ease-in-out forwards;
+  .img_park {
+    width: 94vw;
+    position: absolute;
+    top: 22vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: animate_logo05 6s ease infinite;
+    @include mq(regular) {
+      width: 70vw;
+    }
   }
 }
+
+.c-logo {
+  top: 10vh;
+  margin: inherit;
+  @include mq(regular) {
+    top: 3vh;
+  }
+}
+.img_balloon {
+  position: absolute;
+  width: 50px;
+  top: 21vh;
+  left: 40px;
+  margin: auto;
+  z-index: 1;
+  animation: animate_logo01 6s ease infinite;
+  @include mq(regular) {
+    width: 90px;
+    left: 120px;
+  }
+}
+.img_text01 {
+  width: 20vw;
+  position: absolute;
+  top: 24vh;
+  right: 100px;
+  z-index: 1;
+  animation: animate_logo03 6s ease infinite;
+  @include mq(regular) {
+    width: 14vw;
+    right: 240px;
+  }
+}
+.img_text02 {
+  width: 20vw;
+  position: absolute;
+  top: 22vh;
+  left: 100px;
+  z-index: 1;
+  animation: animate_logo06 6s ease infinite;
+  @include mq(regular) {
+    width: 14vw;
+    left: 240px;
+  }
+}
+
 
 </style>

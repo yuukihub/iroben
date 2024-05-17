@@ -2,14 +2,7 @@
   <img class="img_wave" src="../../img/img/common/img_wave_top_header.svg" alt="wave">
   <div class="mv">
     <div class="img_centerItems">
-      <div class="logo">
-        <img class="logo_i" src="../../img/img/common/img_logo_i.png" alt="i">
-        <img class="logo_r" src="../../img/img/common/img_logo_r.png" alt="r">
-        <img class="logo_o" src="../../img/img/common/img_logo_o.png" alt="o">
-        <img class="logo_b" src="../../img/img/common/img_logo_b.png" alt="b">
-        <img class="logo_e" src="../../img/img/common/img_logo_e.png" alt="e">
-        <img class="logo_n" src="../../img/img/common/img_logo_n.png" alt="n">
-      </div>
+      <logo></logo>
       <div class="colorCode">
         <img src="../../img/img/common/img_colorCode01.png" alt="colorCode">
         <img src="../../img/img/common/img_colorCode02.png" alt="colorCode">
@@ -70,8 +63,11 @@
 </template>
 
 <script>
+import Logo from "@/vue/components/Logo.vue";
+
 export default {
-  name: "MainVisual"
+  name: "MainVisual",
+  components: {Logo}
 }
 </script>
 
@@ -105,16 +101,7 @@ export default {
   text-align: center;
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
   z-index: index($z-map, topLogo);
-
-  img {
-    margin: 0 5px;
-    height: 7vh;
-
-    &.logo_i {
-      height: 10vh;
-    }
-  }
-
+  
   .logo_i {
     animation: animate_logo01 6s ease infinite;
   }
@@ -160,24 +147,6 @@ export default {
   overflow: hidden;
   bottom: 0;
   margin: auto;
-}
-
-.--home {
-  .logo {
-    top: -10vh;
-  }
-
-  .colorCode {
-    top: -7vh;
-  }
-
-  .front_block {
-    top: 22vh;
-  }
-
-  .back_block {
-    top: 40vh;
-  }
 }
 
 .colorCode {
@@ -302,6 +271,9 @@ export default {
     img {
       width: 120vw;
       max-width: 700px;
+      @include mq(regular){
+        width: 70vw;
+      }
     }
   }
 
@@ -327,8 +299,8 @@ export default {
     img {
       width: 80vw;
       max-width: 700px;
-      @include mq(big) {
-        width: 50vw;
+      @include mq(regular) {
+        width: 60vw;
       }
     }
   }
@@ -341,6 +313,9 @@ export default {
     img {
       width: 80vw;
       max-width: 700px;
+      @include mq(regular){
+        width: 35vw;
+      }
     }
   }
 
@@ -376,9 +351,16 @@ export default {
     animation: animate_decoration_back03 30s linear infinite;
     animation-duration: 100s;
     animation-delay: -30s;
+    @include mq(regular){
+      animation-duration: 200s;
+      animation-delay: -35s;
+    }
 
     img {
       width: 80vw;
+      @include mq(regular){
+        width: 35vw;
+      }
     }
   }
 
@@ -387,8 +369,16 @@ export default {
     animation-duration: 100s;
     animation-delay: 5s;
 
+    @include mq(regular){
+      animation-duration: 200s;
+      animation-delay: -10s;
+    }
+
     img {
       width: 80vw;
+      @include mq(regular){
+        width: 35vw;
+      }
     }
   }
 
@@ -397,8 +387,16 @@ export default {
     animation-duration: 100s;
     animation-delay: 40s;
 
+    @include mq(regular){
+      animation-duration: 200s;
+      animation-delay: 0s;
+    }
+
     img {
       width: 80vw;
+      @include mq(regular){
+        width: 35vw;
+      }
     }
   }
 }
@@ -413,180 +411,5 @@ export default {
   left: 0;
   right: 0;
   margin: auto;
-}
-
-@keyframes animate_decoration_front01 {
-  0% {
-    transform: translateX(-120vw) translateY(2vh) rotate(300deg);
-  }
-  50% {
-    transform: translateX(-60vw) translateY(-5vh);
-  }
-  100% {
-    transform: translateX(0) translateY(2vh) rotate(0);
-  }
-}
-
-@keyframes animate_decoration_front02 {
-  0% {
-    transform: translateX(-220vw) translateY(0);
-  }
-  50% {
-    transform: translateX(-60vw) translateY(5vh);
-  }
-  100% {
-    transform: translateX(0px) translateY(0);
-  }
-}
-
-@keyframes animate_decoration_front03 {
-  0% {
-    transform: translateX(-120vw) translateY(0) rotate(-10deg);
-  }
-  50% {
-    transform: translateX(-60vw) translateY(4vh);
-  }
-  100% {
-    transform: translateX(0px) translateY(0) rotate(0deg);
-  }
-}
-
-@keyframes animate_decoration_front04 {
-  0% {
-    transform: translateX(-120vw) translateY(4vh);
-  }
-  50% {
-    transform: translateX(-60vw) translateY(0);
-  }
-  100% {
-    transform: translateX(0px) translateY(4vh);
-  }
-}
-
-@keyframes animate_decoration_front05 {
-  0% {
-    transform: translateX(-200vw) translateY(4vh) rotate(-5deg);
-  }
-  50% {
-    transform: translateX(-60vw) translateY(0);
-  }
-  100% {
-    transform: translateX(0px) translateY(4vh) rotate(0deg);
-  }
-}
-
-
-@keyframes animate_decoration_back01 {
-  0% {
-    transform: translateX(0) translateY(-15vh) rotate(0deg);
-  }
-  50% {
-    transform: translateX(-60vw) translateY(-20vh) rotate(200deg);
-  }
-  100% {
-    transform: translateX(-120vw) translateY(-15vh) rotate(400deg);
-  }
-}
-
-@keyframes animate_decoration_back02 {
-  from {
-    transform: translateX(0) translateY(-25vh) rotate(0deg);
-  }
-  to {
-    transform: translateX(-120vw) translateY(-10vh) rotate(200deg);
-  }
-}
-
-@keyframes animate_decoration_back03 {
-  from {
-    transform: translateX(0) translateY(-10vh) rotate(0deg);
-  }
-  to {
-    transform: translateX(-320vw) translateY(0px) rotate(10deg);
-  }
-}
-
-@keyframes animate_logo01 {
-  0% {
-    transform: translateX(0px) translateY(0px);
-  }
-  50% {
-    transform: translateX(2px) translateY(4px);
-  }
-  100% {
-    transform: translateX(0px) translateY(0px);
-  }
-}
-
-@keyframes animate_logo02 {
-  0% {
-    transform: translateY(2px);
-  }
-  50% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(2px);
-  }
-}
-
-@keyframes animate_logo03 {
-  0% {
-    transform: translateX(-1px) translateY(-3px);
-  }
-  50% {
-    transform: translateX(0) translateY(0px);
-  }
-  100% {
-    transform: translateX(-1px) translateY(-3px);
-  }
-}
-
-@keyframes animate_logo04 {
-  0% {
-    transform: translateX(-2px) translateY(-2px);
-  }
-  50% {
-    transform: translateX(0) translateY(0px);
-  }
-  100% {
-    transform: translateX(-2px) translateY(-2px);
-  }
-}
-
-@keyframes animate_logo05 {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(3px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes animate_logo06 {
-  0% {
-    transform: translateX(0) translateY(0px);
-  }
-  50% {
-    transform: translateX(-1px) translateY(-2px);
-  }
-  100% {
-    transform: translateX(0) translateY(0px);
-  }
-}
-
-@keyframes animate_logo07 {
-  0% {
-    transform: translateX(0) translateY(0px);
-  }
-  50% {
-    transform: translateX(-1px) translateY(3px);
-  }
-  100% {
-    transform: translateX(0) translateY(0px);
-  }
 }
 </style>

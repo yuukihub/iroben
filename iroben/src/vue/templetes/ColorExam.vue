@@ -353,7 +353,7 @@ export default {
   max-width: 93%;
   width: 100%;
   background: map_get($color, white);
-  margin: 64px auto 24px;
+  margin: 40px auto 24px;
   padding: 24px 16px;
 
   &::before {

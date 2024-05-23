@@ -101,7 +101,7 @@ export default {
   text-align: center;
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
   z-index: index($z-map, topLogo);
-  
+
   .logo_i {
     animation: animate_logo01 6s ease infinite;
   }
@@ -232,7 +232,7 @@ export default {
   li:nth-child(1) {
     animation: animate_decoration_front01 30s linear infinite;
     animation-duration: 40s;
-    animation-delay: -23s;
+    animation-delay: -30s;
 
     img {
       width: 48px;

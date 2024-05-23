@@ -31,17 +31,6 @@ export default {
   animation: fadeInUp01 1.3s 0s ease-in-out forwards;
   z-index: index($z-map, topLogo);
 
-  &.--home {
-    img {
-      margin: 0 3px;
-      height: 6vh;
-      &.logo_i {
-        height: 7vh;
-      }
-    }
-  }
-
-
   img {
     margin: 0 5px;
     height: 7vh;
@@ -53,6 +42,22 @@ export default {
       height: 10vh;
       @include mq(sp) {
         height: 8vh;
+      }
+    }
+  }
+
+  &.--home {
+    img {
+      margin: 0 3px;
+      height: 6vh;
+      @include mq(regular) {
+        height: 8vh;
+      }
+      &.logo_i {
+        height: 7vh;
+        @include mq(regular) {
+          height: 10vh;
+        }
       }
     }
   }

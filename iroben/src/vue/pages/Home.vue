@@ -109,7 +109,6 @@
     </nav>
     <div class="top_mainVisual">
       <logo class="--home"></logo>
-      <img class="img_balloon" src="../../img/img/common/img_balloon.png" alt="balloon">
       <img class="img_text01" src="../../img/img/common/img_text01.png" alt="全130色掲載">
       <img class="img_text02" src="../../img/img/common/img_text02.png" alt="最新版！">
       <img class="img_park" src="../../img/img/common/img_park.png" alt="park">
@@ -125,7 +124,6 @@ import Paint from "@/vue/pages/Paint.vue";
 import SecondExam from "@/vue/pages/SecondExam.vue";
 import SecondColorLists from "@/vue/pages/SecondColorLists.vue";
 import FirstColorLists from "@/vue/pages/FirstColorLists.vue";
-import ArticleCard from "@/vue/components/ArticleCard.vue";
 import Agreement from "@/vue/pages/Agreement.vue";
 import Tutorial from "@/vue/pages/Tutorial.vue";
 import Logo from "@/vue/components/Logo.vue";
@@ -138,7 +136,6 @@ export default {
     }
   },
   components: {
-    ArticleCard,
     Logo
   },
   created() {
@@ -196,6 +193,7 @@ export default {
 
 .img_wave {
   &_top {
+    position: fixed;
     width: 100%;
   }
   &_bottom {
@@ -209,15 +207,11 @@ export default {
 .top_mainVisual {
   position: relative;
   height: 77vh;
-  animation: fadeInUp01 1.3s 0s ease-in-out forwards;
   .img_park {
-    width: 94vw;
+    width: 95vw;
     position: absolute;
-    top: 22vh;
+    top: 30vh;
     left: 0;
-    right: 0;
-    margin: auto;
-    animation: animate_logo05 6s ease infinite;
     @include mq(regular) {
       width: 70vw;
     }
@@ -225,34 +219,22 @@ export default {
 }
 
 .c-logo {
-  top: 10vh;
+  top: 27vh;
   margin: inherit;
   @include mq(regular) {
-    top: 3vh;
-  }
-}
-.img_balloon {
-  position: absolute;
-  width: 50px;
-  top: 21vh;
-  left: 40px;
-  margin: auto;
-  z-index: 1;
-  animation: animate_logo01 6s ease infinite;
-  @include mq(regular) {
-    width: 90px;
-    left: 120px;
+    top: 31vh;
   }
 }
 .img_text01 {
   width: 20vw;
   position: absolute;
-  top: 24vh;
-  right: 100px;
+  top: 23vh;
+  right: 30vw;
   z-index: 1;
   animation: animate_logo03 6s ease infinite;
   @include mq(regular) {
     width: 14vw;
+    top: 27vh;
     right: 240px;
   }
 }
@@ -260,11 +242,12 @@ export default {
   width: 20vw;
   position: absolute;
   top: 22vh;
-  left: 100px;
+  left: 25vw;
   z-index: 1;
   animation: animate_logo06 6s ease infinite;
   @include mq(regular) {
     width: 14vw;
+    top: 25vh;
     left: 240px;
   }
 }

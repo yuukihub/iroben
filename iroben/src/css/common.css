@@ -577,10 +577,6 @@ input:focus::placeholder {
   position: relative;
 }
 
-.page__content {
-  padding: 0 !important;
-}
-
 .page--material__background,
 .page__background {
   background-color: #FBF6F0 !important;

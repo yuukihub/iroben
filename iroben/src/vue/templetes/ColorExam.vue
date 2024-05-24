@@ -212,7 +212,7 @@ export default {
 @import "./src/scss/components/colorCard";
 
 .wrap {
-  margin-top: 140px;
+  margin-top: 24vh;
   @include mq(regular) {
     margin-top: 240px;
   }

@@ -18,6 +18,7 @@ export default {
 <style lang="scss" scoped>
 @import "./src/scss/foundation/include";
 @import "./src/scss/components/transition";
+
 .c-logo {
   position: absolute;
   top: -40px;
@@ -34,30 +35,23 @@ export default {
   img {
     margin: 0 5px;
     height: 7vh;
+    @include mq(regular) {
+      height: 6vh;
+    }
     @include mq(sp) {
-      height: 7vh;
+      height: 6vh;
     }
 
     &.logo_i {
-      height: 10vh;
-      @include mq(sp) {
-        height: 8vh;
-      }
-    }
-  }
-
-  &.--home {
-    img {
-      margin: 0 3px;
-      height: 6vh;
+      height: 9vh;
       @include mq(regular) {
         height: 8vh;
       }
-      &.logo_i {
+      @include mq(sp) {
         height: 7vh;
-        @include mq(regular) {
-          height: 10vh;
-        }
+      }
+      @include mq(xsmall) {
+        height: 9vh;
       }
     }
   }

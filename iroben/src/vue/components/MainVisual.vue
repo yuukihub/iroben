@@ -1,64 +1,66 @@
 <template>
-  <img class="img_wave" src="../../img/img/common/img_wave_top_header.svg" alt="wave">
-  <div class="mv">
-    <div class="img_centerItems">
-      <logo></logo>
-      <div class="colorCode">
-        <img src="../../img/img/common/img_colorCode01.png" alt="colorCode">
-        <img src="../../img/img/common/img_colorCode02.png" alt="colorCode">
-        <img src="../../img/img/common/img_colorCode03.png" alt="colorCode">
-        <img src="../../img/img/common/img_colorCode04.png" alt="colorCode">
+  <div>
+    <img class="img_wave" src="../../img/img/common/img_wave_top_header.svg" alt="wave">
+    <div class="mv">
+      <div class="img_centerItems">
+        <logo></logo>
+        <div class="colorCode">
+          <img src="../../img/img/common/img_colorCode01.png" alt="colorCode">
+          <img src="../../img/img/common/img_colorCode02.png" alt="colorCode">
+          <img src="../../img/img/common/img_colorCode03.png" alt="colorCode">
+          <img src="../../img/img/common/img_colorCode04.png" alt="colorCode">
+        </div>
       </div>
+      <ul class="front_block">
+        <li>
+          <img src="../../img/img/common/img_star01.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/common/img_blur_star01.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/common/img_star01.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/common/img_star02.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/common/img_blur_decoration01.png" alt="heart">
+        </li>
+        <li>
+          <img src="../../img/img/common/img_decoration_front01.png" alt="decoration">
+        </li>
+        <li>
+          <img src="../../img/img/common/img_decoration_front02.png" alt="decoration">
+        </li>
+        <li>
+          <img src="../../img/img/common/img_decoration_front01.png" alt="decoration">
+        </li>
+      </ul>
+      <ul class="back_block">
+        <li>
+          <img src="../../img/img/common/img_star01.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/common/img_star03.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/common/img_star01.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/common/img_star02.png" alt="star">
+        </li>
+        <li>
+          <img src="../../img/img/common/img_decoration_back.png" alt="decoration">
+        </li>
+        <li>
+          <img src="../../img/img/common/img_decoration_back.png" alt="decoration">
+        </li>
+        <li>
+          <img src="../../img/img/common/img_decoration_back.png" alt="decoration">
+        </li>
+      </ul>
     </div>
-    <ul class="front_block">
-      <li>
-        <img src="../../img/img/common/img_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/common/img_blur_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/common/img_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/common/img_star02.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/common/img_blur_decoration01.png" alt="heart">
-      </li>
-      <li>
-        <img src="../../img/img/common/img_decoration_front01.png" alt="decoration">
-      </li>
-      <li>
-        <img src="../../img/img/common/img_decoration_front02.png" alt="decoration">
-      </li>
-      <li>
-        <img src="../../img/img/common/img_decoration_front01.png" alt="decoration">
-      </li>
-    </ul>
-    <ul class="back_block">
-      <li>
-        <img src="../../img/img/common/img_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/common/img_star03.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/common/img_star01.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/common/img_star02.png" alt="star">
-      </li>
-      <li>
-        <img src="../../img/img/common/img_decoration_back.png" alt="decoration">
-      </li>
-      <li>
-        <img src="../../img/img/common/img_decoration_back.png" alt="decoration">
-      </li>
-      <li>
-        <img src="../../img/img/common/img_decoration_back.png" alt="decoration">
-      </li>
-    </ul>
   </div>
 </template>
 
@@ -80,7 +82,7 @@ export default {
   top: 0;
   width: 100%;
   @include mq(regular) {
-    top: -60px;
+    top: -120px;
   }
 }
 
@@ -401,15 +403,19 @@ export default {
   }
 }
 
-
-.img_book {
-  width: 100%;
-  max-width: 680px;
-  position: absolute;
-  top: 170px;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  margin: auto;
+.--home {
+  .c-logo {
+    top: -24vh;
+  }
+  .colorCode {
+    top: -24vh;
+  }
+  .front_block {
+    top: 42vh;
+  }
+  .back_block {
+    top: 50vh;
+  }
 }
+
 </style>

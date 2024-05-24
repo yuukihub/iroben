@@ -160,12 +160,15 @@ export default {
 @import "./src/scss/components/transition";
 
 .wrap {
-  margin-top: 96px;
+  margin-top: 20vh;
   position: relative;
   @include fadeIn;
   z-index: -1;
   @include mq(regular) {
     margin-top: 200px;
+  }
+  @include mq(big) {
+    margin-top: 340px;
   }
 }
 

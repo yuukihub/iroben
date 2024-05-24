@@ -3,7 +3,7 @@
 .nav-btn{
   position: fixed;
   z-index: index($z-map, sideMenuButton);
-  top: 32px;
+  top: 5vh;
   left: 8px;
   cursor: pointer;
   width: 50px;
@@ -65,12 +65,12 @@
   left: 0;
   z-index: index($z-map, sideMenu);
   background: #fffcf9;
-  transform: translateX(-52vw);
+  transform: translateX(-60vw);
   transition:  all 0.2s linear;
-  padding-top: 72px;
+  padding-top: 13vh;
   @include KintoSans();
   height: 100vh;
-  width: 52vw;
+  width: 60vw;
   box-shadow: 0 0 20px -7px map_get($color, gray03);
   @include mq(regular) {
     width: 30vw;

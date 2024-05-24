@@ -3,7 +3,9 @@
     <custom-header :top-page-flag="false"
                    :title="this.title"
                    :custom-button-flag="false"></custom-header>
-    <tutorial-slider></tutorial-slider>
+    <div class="wrap">
+      <tutorial-slider></tutorial-slider>
+    </div>
     <div class="bottom">
       <div class="bottom_inner">
       </div>
@@ -32,10 +34,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import "../../../src/scss/foundation/_include.scss";
 
 .bottom_inner {
   height: 17vh;
+}
+
+.c-tutorialSlider {
+  @include mq(sp) {
+    top:100px;
+  }
 }
 
 

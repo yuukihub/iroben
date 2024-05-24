@@ -126,13 +126,13 @@ export default {
 
 section {
   position: inherit;
-  margin-top: 18vh;
+  margin-top: 25vh;
   padding: 0 24px 24px 24px;
   animation: fadeInUp01 1s 0s ease-in-out forwards;
   z-index: -1;
 
   @include mq(regular) {
-    margin-top: 22vh;
+    margin-top: 25vh;
   }
 
   h2, ol, p {

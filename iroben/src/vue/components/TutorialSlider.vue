@@ -7,10 +7,9 @@
             <span class="slide_title">
               1. <span>読んで、学ぶ</span>
             </span>
-            <img class="img_character" src="../../img/img/tutorial/img_character03_watch.svg" alt="img_character03">
           </div>
           <span class="slide_image">
-            <img class="eye_image" src="../../img/img/tutorial/img_tutorial01.gif" alt="img_tutorial01">
+            <img src="../../img/img/tutorial/img_tutorial01.gif" alt="img_tutorial01">
           </span>
           <span class="slide_text">
             各級の「慣用色一覧」メニューから<br>
@@ -22,10 +21,9 @@
             <span class="slide_title">
               2. <span>解いて、学ぶ</span>
             </span>
-            <img class="img_character" src="../../img/img/tutorial/img_character01_watch.svg" alt="img_character01">
           </div>
           <span class="slide_image">
-              <img class="eye_image" src="../../img/img/tutorial/img_tutorial02.gif" alt="img_tutorial01">
+              <img src="../../img/img/tutorial/img_tutorial02.gif" alt="img_tutorial01">
             </span>
           <span class="slide_text">
             「練習問題」を繰り返し解くことで<br>
@@ -37,12 +35,12 @@
            <span class="slide_title">
               3. <span>描いて、学ぶ</span>
             </span>
-            <img class="img_character" src="../../img/img/tutorial/img_character02_watch.svg" alt="img_character02">
           </div>
           <span class="slide_image">
-            <img class="eye_image" src="../../img/img/tutorial/img_tutorial03.gif" alt="img_tutorial01">
+            <img src="../../img/img/tutorial/img_tutorial03.gif" alt="img_tutorial01">
           </span>
           <span class="slide_text">
+            「ペイント」メニューでは、遊び感覚であなたの学びをサポートします。
             「ペイント」メニューでは、遊び感覚であなたの学びをサポートします。
           </span>
         </li>

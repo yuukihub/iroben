@@ -58,12 +58,11 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
-  //z-index: index($z-map, header);
   .contents {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 32px 24px 0;
+    padding: 5vh 24px 0;
     @include mq(xsmall) {
       padding-left: 8px;
       padding-right: 8px;
@@ -126,9 +125,12 @@ export default {
   position: absolute;
   top: 0;
   z-index: -1;
-  width: 100%;
+  width: 120%;
   @include mq(regular) {
     top: -60px;
+  }
+  @include mq(big) {
+    top: -100px;
   }
 }
 </style>
